@@ -70,6 +70,8 @@ namespace ESCP_RaceTools
             }
             listing_Standard.Gap();
 
+            listing_Standard.GapLine();
+
             //reset
             Rect rectDefault = listing_Standard.GetRect(30f);
             TooltipHandler.TipRegion(rectDefault, "ESCP_Reset".Translate());
