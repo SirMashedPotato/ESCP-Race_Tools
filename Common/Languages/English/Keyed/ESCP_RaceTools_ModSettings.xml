@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+	
+	<!-- General -->
+
+	<ESCP_RaceTools_ModName>ESCP - Race Tools</ESCP_RaceTools_ModName>
+	<ESCP_Reset>Rest all settings</ESCP_Reset>
+	
+	<ESCP_PageGeneral>General settings</ESCP_PageGeneral>
+	<ESCP_PageGeneralReset>Reset general settings</ESCP_PageGeneralReset>
+	
+	<!-- General settings -->
+	
+	<ESCP_StuffKnowledgeLogging>Enable log messages for stuff knowledge</ESCP_StuffKnowledgeLogging>
+	<ESCP_StuffKnowledgeLoggingTooltip>Enables a few log messages for the stuff knowledge Harmony patch. This will appear in the log during crafting, as well as an additional one on game start, and can help diagnose any issues that may be occuring.</ESCP_StuffKnowledgeLoggingTooltip>
+    <ESCP_RaceTools_EnableStuffKnowledge>Enable the stuff knowledge Harmony patch</ESCP_RaceTools_EnableStuffKnowledge>
+    <ESCP_RaceTools_EnableStuffKnowledgeTooltip>If enabled, allows races with stuff knowledge to craft gear that is one quality level higher than normal, assuming any prerequisites are met.\n\nChanging this setting will require a restart to take effect.</ESCP_RaceTools_EnableStuffKnowledgeTooltip>
+
+</LanguageData>
