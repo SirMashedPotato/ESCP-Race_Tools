@@ -1,3 +1,3 @@
 Check the GitWiki for more info
 
-<Link>
+(Coming soon(tm))
