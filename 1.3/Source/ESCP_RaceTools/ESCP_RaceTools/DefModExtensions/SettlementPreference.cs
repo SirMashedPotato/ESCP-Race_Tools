@@ -29,8 +29,10 @@ namespace ESCP_RaceTools
         public float rainfallRangeMin;
         public float rainfallRangeMax;
         //list of strings corresponding to biome defNames, only settle if tile biome is listed
+        //make sure to use MayRequire, or patch in, biomes that are added by other mods
         public List<string> likedBiomeList;
         //list of strings corresponding to biome defNames, only settle if tile biome is not listed
+        //dislikedBiomeList doesn't need MayRequire or a patch for biomes from other mods
         public List<string> dislikedBiomeList;
         //list of strings corresponding to hilliness levels, only settle if tile biome has a listed hilliness
         public List<Hilliness> requiredHillLevels;

@@ -163,7 +163,7 @@ namespace ESCP_RaceTools
 
             if (ModSettingsUtility.ESCP_SettlementPreferenceLogging()) Log.Error("Failed to find faction base tile for " + faction + ", using ESCP_RaceTools.SettlementPreference. Defaulting to standard selection.");
 
-            return defaultToVanilla;
+            return true;
         }
 
         public static bool FinalCheckTileIsValid(int tile, StringBuilder reason = null)
