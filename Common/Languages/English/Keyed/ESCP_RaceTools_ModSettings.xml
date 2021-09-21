@@ -13,9 +13,21 @@
 	
 	<!-- General settings -->
 	
-	<ESCP_StuffKnowledgeLogging>Enable log messages for stuff knowledge</ESCP_StuffKnowledgeLogging>
-	<ESCP_StuffKnowledgeLoggingTooltip>Enables a few log messages for the stuff knowledge Harmony patch. This will appear in the log during crafting, as well as an additional one on game start, and can help diagnose any issues that may be occuring.</ESCP_StuffKnowledgeLoggingTooltip>
+	<ESCP_RaceTools_StuffKnowledgeLogging>Enable log messages for stuff knowledge</ESCP_RaceTools_StuffKnowledgeLogging>
+	<ESCP_RaceTools_StuffKnowledgeLoggingTooltip>Enables a few log messages for the stuff knowledge Harmony patch. These will appear in the log during crafting, as well as an additional one on game start, and can help diagnose any issues that may be occuring.</ESCP_RaceTools_StuffKnowledgeLoggingTooltip>
     <ESCP_RaceTools_EnableStuffKnowledge>Enable the stuff knowledge Harmony patch</ESCP_RaceTools_EnableStuffKnowledge>
     <ESCP_RaceTools_EnableStuffKnowledgeTooltip>If enabled, allows races with stuff knowledge to craft gear that is one quality level higher than normal, assuming any prerequisites are met.\n\nChanging this setting will require a restart to take effect.</ESCP_RaceTools_EnableStuffKnowledgeTooltip>
+
+	<ESCP_RaceTools_SettlementPreferenceLogging>Enable log messages for settlement preference</ESCP_RaceTools_SettlementPreferenceLogging>
+	<ESCP_RaceTools_SettlementPreferenceLoggingTooltip>Enables a few log messages for the settlement preference Harmony patch. These will appear during world creation, when factions are settling the world, and can help diagnose any issues that may be occuring.</ESCP_RaceTools_SettlementPreferenceLoggingTooltip>
+	<ESCP_RaceTools_SettlementPreferenceLoggingExtended>Enable additonal log messages for settlement preference</ESCP_RaceTools_SettlementPreferenceLoggingExtended>
+	<ESCP_RaceTools_SettlementPreferenceLoggingExtendedTooltip>Enables additional log messages for the settlement preference Harmony patch. These will appear during world creation, when factions are settling the world, and can help diagnose any issues that may be occuring.\n\nThese messages will quickly fill up the log. It is recommended that only a single faction is enabled at a time when using this.</ESCP_RaceTools_SettlementPreferenceLoggingExtendedTooltip>
+	<ESCP_RaceTools_EnableSettlementPreference>Enable the settlement preference Harmony patch</ESCP_RaceTools_EnableSettlementPreference>
+	<ESCP_RaceTools_EnableSettlementPreferenceTooltip>If enabled, factions that have the settlement preference mod extension will be more likely to settle in specific locations.\n\nThis can be toggled at any time, but will obviously require a new world to take effect.</ESCP_RaceTools_EnableSettlementPreferenceTooltip>
+
+	<ESCP_RaceTools_BeastMasterLogging>Enable log messages for beast masters</ESCP_RaceTools_BeastMasterLogging>
+	<ESCP_RaceTools_BeastMasterLoggingTooltip>Enables a few log messages for the beast master mechanic. These will appear when a beast master pawn appears, and can help diagnose any issues that may be occuring.</ESCP_RaceTools_BeastMasterLoggingTooltip>
+    <ESCP_RaceTools_EnableBeastMaster>Enable the beast master mechanic</ESCP_RaceTools_EnableBeastMaster>
+    <ESCP_RaceTools_EnableBeastMasterTooltip>If enabled, allows certain pawn kinds to generate additional pawns when they are created.\n\nThis can be toggled at any time.</ESCP_RaceTools_EnableBeastMasterTooltip>
 
 </LanguageData>

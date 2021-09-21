@@ -120,7 +120,34 @@ namespace ESCP_RaceTools
 
             if (Prefs.DevMode)
             {
-                listing_Standard.CheckboxLabeled("ESCP_StuffKnowledgeLogging".Translate(), ref settings.ESCP_StuffKnowledgeLogging, "ESCP_StuffKnowledgeLoggingTooltip".Translate());
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_StuffKnowledgeLogging".Translate(), ref settings.ESCP_RaceTools_StuffKnowledgeLogging, "ESCP_RaceTools_StuffKnowledgeLoggingTooltip".Translate());
+                listing_Standard.Gap();
+            }
+
+            listing_Standard.GapLine();
+
+            /* settlement preference */
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableSettlementPreference".Translate(), ref settings.ESCP_RaceTools_EnableSettlementPreference, "ESCP_RaceTools_EnableSettlementPreferenceTooltip".Translate());
+            listing_Standard.Gap();
+
+            if (Prefs.DevMode)
+            {
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_SettlementPreferenceLogging".Translate(), ref settings.ESCP_RaceTools_SettlementPreferenceLogging, "ESCP_RaceTools_SettlementPreferenceLoggingTooltip".Translate());
+                listing_Standard.Gap();
+
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_SettlementPreferenceLoggingExtended".Translate(), ref settings.ESCP_RaceTools_SettlementPreferenceLoggingExtended, "ESCP_RaceTools_SettlementPreferenceLoggingExtendedTooltip".Translate());
+                listing_Standard.Gap();
+            }
+
+            listing_Standard.GapLine();
+
+            /* beast master */
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableBeastMaster".Translate(), ref settings.ESCP_RaceTools_EnableBeastMaster, "ESCP_RaceTools_EnableBeastMasterTooltip".Translate());
+            listing_Standard.Gap();
+
+            if (Prefs.DevMode)
+            {
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_BeastMasterLogging".Translate(), ref settings.ESCP_RaceTools_BeastMasterLogging, "ESCP_RaceTools_BeastMasterLoggingTooltip".Translate());
                 listing_Standard.Gap();
             }
 
