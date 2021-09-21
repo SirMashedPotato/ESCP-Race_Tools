@@ -7,9 +7,9 @@ namespace ESCP_RaceTools
 {
     public class SettlementPreference : DefModExtension
     {
-        //determines the chance a settlement actually follows any defined rules
+        //determines the chance a settlement actually follows the defined rules
         public float chance = 1f;
-        //if not null, faction bases can only spawn on biomes with this keyword in their defName. Case sensitive
+        //if not null, faction bases can only spawn on biomes with on of these keywords in their defName. Case sensitive
         //Probably don't mix this with dis/likedBiomeList
         public List<string> biomeKeyWords;
         //range for temperature, only settle on tile if temperature is within range
