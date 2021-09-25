@@ -14,5 +14,6 @@ namespace ESCP_RaceTools
 		}
 
 		public static HediffDef ESCP_BeastMasterTraining;
+		public static HediffDef ESCP_HiddenBeastMaster;
 	}
 }

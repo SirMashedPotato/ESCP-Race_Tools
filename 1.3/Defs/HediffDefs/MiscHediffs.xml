@@ -17,5 +17,21 @@
 		  </li>
 		</comps>
 	</HediffDef>
+	
+	<HediffDef>
+		<defName>ESCP_HiddenBeastMaster</defName>
+		<label>hidden beast master</label>
+		<description>This pawn is a beast master.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>0.5</initialSeverity>
+		<stages>
+			<li>
+				<label>spawned</label>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
  
 </Defs>

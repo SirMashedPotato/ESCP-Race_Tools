@@ -33,7 +33,7 @@ namespace ESCP_RaceTools
         private static readonly float ESCP_RaceTools_SettlementPreferenceIterations_def = 500f;
 
         /* beast master */
-        private static readonly bool ESCP_RaceTools_EnableBeastMaster_def = false;
+        private static readonly bool ESCP_RaceTools_EnableBeastMaster_def = true;
         private static readonly bool ESCP_RaceTools_BeastMasterLogging_def = false;
 
         //save settings
