@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>ESCP_BeastMasterTraining</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>beast master training</label>
+		<description>This animal has been trained by a beast master, and may act differently in combat.</description>
+		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+		<makesSickThought>false</makesSickThought>
+		<cureAllAtOnceIfCuredByItem>true</cureAllAtOnceIfCuredByItem>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+		  <li>
+			<compClass>ESCP_RaceTools.HediffComp_BeastMaster</compClass>
+		  </li>
+		</comps>
+	</HediffDef>
+ 
+</Defs>

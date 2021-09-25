@@ -16,7 +16,7 @@ namespace ESCP_RaceTools
         }
 
         /* settlement preference */
-        public static bool ESCP_SettlementPreference()
+        public static bool ESCP_EnableSettlementPreference()
         {
             return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_EnableSettlementPreference;
         }
@@ -31,7 +31,12 @@ namespace ESCP_RaceTools
             return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_SettlementPreferenceLoggingExtended && Prefs.DevMode;
         }
 
-        /* beat master */
+        public static float ESCP_RaceTools_SettlementPreferenceIterations()
+        {
+            return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_SettlementPreferenceIterations;
+        }
+
+        /* beast master */
         public static bool ESCP_RaceTools_EnableBeastMaster()
         {
             return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_EnableBeastMaster;

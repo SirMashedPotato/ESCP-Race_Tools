@@ -2,7 +2,6 @@
 using RimWorld;
 using System.Collections.Generic;
 
-
 namespace ESCP_RaceTools
 {
     public class StuffKnowledge : DefModExtension

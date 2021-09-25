@@ -18,7 +18,7 @@ namespace ESCP_RaceTools
             var modExt = SettlementPreference.Get(faction.def);
 
             /* modified from  TileFinder.RandomSettlementTileFor */
-            for (int i = 0; i < 500; i++)
+            for (int i = 0; i < ModSettingsUtility.ESCP_RaceTools_SettlementPreferenceIterations(); i++)
             {
                 int num;
                 if ((from _ in Enumerable.Range(0, 100) select Rand.Range(0, Find.WorldGrid.TilesCount)).TryRandomElementByWeight(delegate (int x)

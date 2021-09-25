@@ -45,6 +45,10 @@ namespace ESCP_RaceTools
         public bool onlyRiver = false;
         public bool onlyRoad = false;
 
+        /*potential additons
+         * diseaseChance
+         */
+
         public bool IgnoreBiomeSelectionWeight = true;
 
         public static SettlementPreference Get(Def def)

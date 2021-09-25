@@ -17,42 +17,68 @@ namespace ESCP_RaceTools
 		{
 			base.CompTick();
 			Pawn pawn = this.parent as Pawn;
-			//check
 			if (/*pawn.health.hediffSet.HasHediff(RimWorld.HediffDefOf.BloodLoss) &&*/ pawn.health.hediffSet.PainTotal >= 0.6 && PawnIsValid(pawn))
 			{
 				//check if pawn is likely a rescue target, then return
 				if (pawn.Faction == null && !pawn.AnimalOrWildMan()) return;
-				//do beserker
-				if (Props.enableAugments)
+				ActivateRage(pawn);
+			}
+		}
+
+		public void ActivateRage(Pawn pawn)
+        {
+			//do beserker
+			if (Props.enableAugments)
+			{
+				//enables belts for 1.2
+				if (!pawn.health.hediffSet.HasHediff(Props.hediffDef))
 				{
-					//enables belts for 1.2
-					if (!pawn.health.hediffSet.HasHediff(Props.hediffDef))
+					if (!pawn.health.hediffSet.hediffs.Any(x => Props.augments.Contains(x.def)))
 					{
-						if (!pawn.health.hediffSet.hediffs.Any(x => Props.augments.Contains(x.def)))
+						for (int i = 0; i != Props.totems.Count; i++)
 						{
-							for (int i = 0; i != Props.totems.Count; i++)
+							if (pawn.apparel.WornApparel.Any(x => x.def == Props.totems[i]))
 							{
-								if (pawn.apparel.WornApparel.Any(x => x.def == Props.totems[i]))
-								{
-									pawn.health.AddHediff(Props.augments[i]).Severity = 1;
-									IncrementRedord(pawn);
-									return;
-								}
+								pawn.health.AddHediff(Props.augments[i]).Severity = 1;
+								IncrementRedord(pawn);
+								return;
 							}
-							pawn.health.AddHediff(Props.hediffDef).Severity = 1f;
-
-							IncrementRedord(pawn);
-							return;
 						}
-					}
-
-				}
-				else
-				{
-					if (!pawn.health.hediffSet.HasHediff(Props.hediffDef))
-					{
 						pawn.health.AddHediff(Props.hediffDef).Severity = 1f;
+
 						IncrementRedord(pawn);
+						return;
+					}
+				}
+
+			}
+			else
+			{
+				if (!pawn.health.hediffSet.HasHediff(Props.hediffDef))
+				{
+					pawn.health.AddHediff(Props.hediffDef).Severity = 1f;
+					IncrementRedord(pawn);
+				}
+			}
+		}
+
+		public void ResetRage(Pawn pawn)
+		{
+			Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(Props.hediffDef);
+            if (hediff != null)
+            {
+				hediff.Severity = 1f;
+				return;
+            }
+			if (Props.enableAugments)
+			{
+                foreach (HediffDef h in Props.augments)
+                {
+					hediff = pawn.health.hediffSet.GetFirstHediffOfDef(h);
+					if (hediff != null)
+					{
+						hediff.Severity = 1f;
+						return;
 					}
 				}
 			}

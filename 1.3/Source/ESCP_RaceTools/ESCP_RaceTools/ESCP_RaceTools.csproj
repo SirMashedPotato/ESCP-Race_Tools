@@ -57,16 +57,33 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompAbility\CompProperties_ControlAnimal.cs" />
+    <Compile Include="CompAbility\CompAbilityEffect_GiveHediffAndStun.cs" />
+    <Compile Include="CompAbility\CompEffect_AbilityCharmTarget.cs" />
+    <Compile Include="CompAbility\Properties\CompProperties_AbilityEffectCameraShakerOneOff.cs" />
+    <Compile Include="CompAbility\Properties\CompProperties_AbilityEnterBeserk.cs" />
+    <Compile Include="CompAbility\Properties\CompProperties_CharmTarget.cs" />
+    <Compile Include="CompAbility\Properties\CompProperties_ControlAnimal.cs" />
     <Compile Include="CompAbility\CompAbilityEffect_ControlAnimal.cs" />
+    <Compile Include="CompAbility\CompEffect_AbilityEnterBeserk.cs" />
+    <Compile Include="CompAbility\CompEffect_AbilityCameraShakerOneOff.cs" />
+    <Compile Include="Comp\CompProperties_BeastMasterSpawnInit.cs" />
     <Compile Include="Comp\CompProperties_BeserkerRage.cs" />
+    <Compile Include="Comp\Comp_BeastMasterInit.cs" />
     <Compile Include="Comp\Comp_BeserkerRage.cs" />
+    <Compile Include="DefModExtensions\BeastMaster.cs" />
+    <Compile Include="DefOf\DutyDefOf.cs" />
+    <Compile Include="DefOf\HediffDefOf.cs" />
+    <Compile Include="DefOf\ThoughtDefOf.cs" />
     <Compile Include="Harmony\Harmony.cs" />
     <Compile Include="DefModExtensions\SettlementPreference.cs" />
     <Compile Include="DefModExtensions\StuffKnowledge.cs" />
+    <Compile Include="HediffComp\HediffComp_BeastMaster.cs" />
     <Compile Include="ModSettings\ESCP_RaceTools_Mod.cs" />
     <Compile Include="ModSettings\ESCP_RaceTools_ModSettings.cs" />
     <Compile Include="ModSettings\ModSettingsUtility.cs" />
+    <Compile Include="StockGenerator\StockGenerator_SlavesCustom.cs" />
+    <Compile Include="StockGenerator\TraderSlaveRecord.cs" />
+    <Compile Include="Utility\BeastMasterUtility.cs" />
     <Compile Include="Utility\ESCP_AbilityUtility.cs" />
     <Compile Include="HediffComp\HediffCompProperties_GiveHediffsInRange.cs" />
     <Compile Include="HediffComp\HediffCompProperties_UntameOnEnd.cs" />
@@ -77,7 +94,10 @@
     <Compile Include="Utility\SettlementPreferenceUtility.cs" />
     <Compile Include="Utility\StuffKnowledgeUtility.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Def\" />
+    <Folder Include="JobDriver\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

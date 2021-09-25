@@ -2,6 +2,8 @@
 using RimWorld;
 using System.Reflection;
 using Verse;
+using Verse.AI;
+using Verse.AI.Group;
 using System;
 using System.Collections.Generic;
 using System.Reflection.Emit;
@@ -75,7 +77,7 @@ namespace ESCP_RaceTools
         [HarmonyPrefix]
         public static bool SettlementPatch(ref int __result, Faction faction)
         {
-            if (ModSettingsUtility.ESCP_SettlementPreference())
+            if (ModSettingsUtility.ESCP_EnableSettlementPreference())
             {
                 if (faction != null && SettlementPreference.Get(faction.def) != null && Rand.Chance(SettlementPreference.Get(faction.def).chance))
                 {
@@ -86,4 +88,25 @@ namespace ESCP_RaceTools
             return true;
         }
     }
+
+    /*
+     * Patch to prevent beast master summoned pawns from running away randomly
+     * Original patch made by Sarg, basically the same, as there isnt really that much to modify
+    */
+    /*
+    [HarmonyPatch(typeof(PawnUtility))]
+    [HarmonyPatch("IsFighting")]
+    public static class PawnUtility_IsFighting_Patch
+    {
+        [HarmonyPostfix]
+        public static void BeastMasterPawnPatch(Pawn pawn, ref bool __result)
+        {
+            if (pawn != null && pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.ESCP_BeastMasterTraining) != null && pawn.CurJob != null && pawn.mindState.duty != null)
+            {
+                Log.Message("triggered for pawn: " + pawn);
+                __result = true;
+            }
+        }
+    }
+    */
 }

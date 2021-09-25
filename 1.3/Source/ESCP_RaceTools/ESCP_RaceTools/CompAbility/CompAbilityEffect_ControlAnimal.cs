@@ -16,8 +16,8 @@ namespace ESCP_RaceTools
 
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
-			if(target != null)
-            {
+			if(target != null && CanApplyOn(target, dest))
+			{
 				//add the hediff
 				Pawn pawn = target.Pawn;
 				Hediff hediff = HediffMaker.MakeHediff(this.Props.hediffDef, pawn, this.Props.onlyBrain ? pawn.health.hediffSet.GetBrain() : null);
@@ -58,7 +58,5 @@ namespace ESCP_RaceTools
 		{
 			return AbilityUtility.ValidateNoMentalState(target.Pawn, false) && ESCP_AbilityUtility.ValidateMustBeFactionless(target.Pawn, false) && base.CanApplyOn(target, dest);
 		}
-
-		
 	}
 }
