@@ -6,7 +6,7 @@
 	<supportedVersions>
     	<li>1.3</li>
 	</supportedVersions>
-	<description>A core mod that is required for the ESCP races. Make sure it is loaded before all of them.\n\n-Supports Vanilla Achievements Expanded\n-Requires Harmony\n-Requires Humanoid Alien Races 2.0\n-Includes several patches to add welwa and echatere to modded biomes.\n-Based on the 'Elder Scrolls' series by Bethesda Game Studios.
+	<description>A core mod that is required for the ESCP races. Make sure it is loaded before all of them.\n\n-Supports Vanilla Achievements Expanded, with some additional trackers.\n-Requires Harmony\n-Includes a modified version of MorrowRim Leather Thoughts by Razza, thanks bunches!.
 	</description>
 	<modDependencies>
 	  <li>
@@ -27,6 +27,7 @@
 	<loadBefore>
 	</loadBefore>
 	<incompatibleWith>
+		<li>razza0.MorrowRimLeatherThoughts</li>
     </incompatibleWith>
 
 </ModMetaData>

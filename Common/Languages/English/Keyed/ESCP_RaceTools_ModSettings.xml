@@ -10,6 +10,9 @@
 	
 	<ESCP_PageGeneral>General settings</ESCP_PageGeneral>
 	<ESCP_PageGeneralReset>Reset general settings</ESCP_PageGeneralReset>
+
+	<ESCP_PageLeather>Leather settings</ESCP_PageLeather>
+	<ESCP_PageLeatherReset>Reset leather settings</ESCP_PageLeatherReset>
 	
 	<!-- General settings -->
 	
@@ -20,7 +23,7 @@
 
 	<ESCP_RaceTools_SettlementPreferenceLogging>Enable log messages for settlement preference</ESCP_RaceTools_SettlementPreferenceLogging>
 	<ESCP_RaceTools_SettlementPreferenceLoggingTooltip>Enables a few log messages for the settlement preference Harmony patch. These will appear during world creation, when factions are settling the world, and can help diagnose any issues that may be occuring.</ESCP_RaceTools_SettlementPreferenceLoggingTooltip>
-	<ESCP_RaceTools_SettlementPreferenceLoggingExtended>Enable additonal log messages for settlement preference</ESCP_RaceTools_SettlementPreferenceLoggingExtended>
+	<ESCP_RaceTools_SettlementPreferenceLoggingExtended>Enable additional log messages for settlement preference</ESCP_RaceTools_SettlementPreferenceLoggingExtended>
 	<ESCP_RaceTools_SettlementPreferenceLoggingExtendedTooltip>Enables additional log messages for the settlement preference Harmony patch. These will appear during world creation, when factions are settling the world, and can help diagnose any issues that may be occuring.\n\nThese messages will quickly fill up the log. It is recommended that only a single faction is enabled at a time when using this.</ESCP_RaceTools_SettlementPreferenceLoggingExtendedTooltip>
 	<ESCP_RaceTools_EnableSettlementPreference>Enable the settlement preference Harmony patch</ESCP_RaceTools_EnableSettlementPreference>
 	<ESCP_RaceTools_EnableSettlementPreferenceTooltip>If enabled, factions that have the settlement preference mod extension will be more likely to settle in specific locations.\n\nThis can be toggled at any time, but will obviously require a new world to take effect.</ESCP_RaceTools_EnableSettlementPreferenceTooltip>
@@ -28,8 +31,20 @@
 	<ESCP_RaceTools_SettlementPreferenceIterationsTooltip>If settlement preference is unable to find a desirable tile within this number of iterations, it will revert control to RimWorld.\n\nDecreasing this may improve world generation times, while increasing it may allow for more desirable settlement locations.</ESCP_RaceTools_SettlementPreferenceIterationsTooltip>
 
 	<ESCP_RaceTools_BeastMasterLogging>Enable log messages for beast masters</ESCP_RaceTools_BeastMasterLogging>
-	<ESCP_RaceTools_BeastMasterLoggingTooltip>Enables a few log messages for the beast master mechanic. These will appear when a beast master pawn appears, and can help diagnose any issues that may be occuring.</ESCP_RaceTools_BeastMasterLoggingTooltip>
+	<ESCP_RaceTools_BeastMasterLoggingTooltip>Enables a few log messages for the beast master mechanic. These will appear when a beast master pawn appears, and can help diagnose any issues that may be occurring.</ESCP_RaceTools_BeastMasterLoggingTooltip>
     <ESCP_RaceTools_EnableBeastMaster>Enable the beast master mechanic</ESCP_RaceTools_EnableBeastMaster>
     <ESCP_RaceTools_EnableBeastMasterTooltip>If enabled, allows certain pawn kinds to generate additional pawns when they are created.\n\nThis can be toggled at any time.</ESCP_RaceTools_EnableBeastMasterTooltip>
+
+	<!-- Leather thought settings -->
+	<ESCP_RaceTools_LeatherThoughtMer>Enable generic Mer leather thoughts</ESCP_RaceTools_LeatherThoughtMer>
+	<ESCP_RaceTools_LeatherThoughtMerTooltip>This will consolidate all Mer leather thoughts into a single thought, overwriting any choices below in the process.\n\nNote that you will need at least on Mer mod active for this to actually do anything.</ESCP_RaceTools_LeatherThoughtMerTooltip>
+	
+	<ESCP_RaceTools_LeatherThoughtGoblinKen>Enable generic Goblin-ken leather thoughts</ESCP_RaceTools_LeatherThoughtGoblinKen>
+	<ESCP_RaceTools_LeatherThoughtGoblinKenTooltip>This will consolidate all Goblin-ken leather thoughts into a single thought, overwriting any choices below in the process.\n\nNote that you will need at least on Goblin-ken mod active for this to actually do anything.</ESCP_RaceTools_LeatherThoughtGoblinKenTooltip>
+	
+	<ESCP_RaceTools_LeatherThoughtBeastfolk>Enable generic Beastfolk leather thoughts</ESCP_RaceTools_LeatherThoughtBeastfolk>
+	<ESCP_RaceTools_LeatherThoughtBeastfolkTooltip>This will consolidate all Beastfolk leather thoughts into a single thought, overwriting any choices below in the process.\n\nNote that you will need at least on Beastfolk mod active for this to actually do anything.</ESCP_RaceTools_LeatherThoughtBeastfolkTooltip>
+	
+	<ESCP_RaceTools_LeatherThought>Enable leather thoughts for {0}</ESCP_RaceTools_LeatherThought>
 
 </LanguageData>

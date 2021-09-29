@@ -78,6 +78,28 @@
     <Compile Include="DefModExtensions\SettlementPreference.cs" />
     <Compile Include="DefModExtensions\StuffKnowledge.cs" />
     <Compile Include="HediffComp\HediffComp_BeastMaster.cs" />
+    <Compile Include="LeatherThoughtWorkers\Beastfolk\ThoughtWorker_ArgonianLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\Beastfolk\ThoughtWorker_ImgaLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\Beastfolk\ThoughtWorker_KhajiitLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\Beastfolk\ThoughtWorker_LamiaLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\Beastfolk\ThoughtWorker_LilmothiitLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\Beastfolk\ThoughtWorker_NagaLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\Consolidated\ThoughtWorker_BeastfolkLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\Consolidated\ThoughtWorker_GoblinKenLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\GolbinKen\ThoughtWorker_GoblinLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\GolbinKen\ThoughtWorker_RieklingLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\GolbinKen\ThoughtWorker_RiekrLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\Mer\ThoughtWorker_AltmerLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\Mer\ThoughtWorker_AyliedLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\Mer\ThoughtWorker_BosmerLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\Mer\ThoughtWorker_ChimerLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\Mer\ThoughtWorker_DunmerLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\Mer\ThoughtWorker_DwemerLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\Mer\ThoughtWorker_FalmerLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\Mer\ThoughtWorker_MaomerLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\Consolidated\ThoughtWorker_MerLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\Mer\ThoughtWorker_OrsimerLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\Other\ThoughtWorker_SloadLeatherApparel.cs" />
     <Compile Include="ModSettings\ESCP_RaceTools_Mod.cs" />
     <Compile Include="ModSettings\ESCP_RaceTools_ModSettings.cs" />
     <Compile Include="ModSettings\ModSettingsUtility.cs" />
@@ -91,12 +113,14 @@
     <Compile Include="HediffComp\HediffComp_UntameOnEnd.cs" />
     <Compile Include="Ideo\RoleRequirement_Race.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\RaceToolsUtility.cs" />
     <Compile Include="Utility\SettlementPreferenceUtility.cs" />
     <Compile Include="Utility\StuffKnowledgeUtility.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Def\" />
     <Folder Include="JobDriver\" />
+    <Folder Include="LeatherThoughtWorkers\Daedra\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

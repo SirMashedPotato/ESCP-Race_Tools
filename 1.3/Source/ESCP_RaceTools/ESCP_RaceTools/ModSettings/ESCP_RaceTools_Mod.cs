@@ -38,7 +38,11 @@ namespace ESCP_RaceTools
                     listing_Standard = SettingsPage_General(listing_Standard);
                     break;
 
-   
+                case 1:
+                    listing_Standard = SettingsPage_Leather(listing_Standard);
+                    break;
+
+
                 default:
                     listing_Standard = SettingsPage_General(listing_Standard);
                     break;
@@ -67,6 +71,14 @@ namespace ESCP_RaceTools
             if (Widgets.ButtonText(rectPageDefault, "ESCP_PageGeneral".Translate(), true, true, true))
             {
                 page = 0;
+            }
+            listing_Standard.Gap();
+
+            Rect rectPageLeather = listing_Standard.GetRect(30f);
+            TooltipHandler.TipRegion(rectPageLeather, "ESCP_PageLeather".Translate());
+            if (Widgets.ButtonText(rectPageLeather, "ESCP_PageLeather".Translate(), true, true, true))
+            {
+                page = 1;
             }
             listing_Standard.Gap();
 
@@ -99,6 +111,16 @@ namespace ESCP_RaceTools
                     }
                     break;
 
+                case 1:
+                    listing_Standard.Gap();
+                    TooltipHandler.TipRegion(rectDefault, "ESCP_PageLeatherReset".Translate());
+                    if (Widgets.ButtonText(rectDefault, "ESCP_PageLeatherReset".Translate(), true, true, true))
+                    {
+                        ESCP_RaceTools_ModSettings.ResetSettings_Leather(settings);
+                    }
+                    break;
+
+
                 default:
                     break;
             }
@@ -125,6 +147,7 @@ namespace ESCP_RaceTools
             }
 
             listing_Standard.GapLine();
+            listing_Standard.Gap();
 
             /* settlement preference */
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableSettlementPreference".Translate(), ref settings.ESCP_RaceTools_EnableSettlementPreference, "ESCP_RaceTools_EnableSettlementPreferenceTooltip".Translate());
@@ -144,6 +167,7 @@ namespace ESCP_RaceTools
             }
 
             listing_Standard.GapLine();
+            listing_Standard.Gap();
 
             /* beast master */
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableBeastMaster".Translate(), ref settings.ESCP_RaceTools_EnableBeastMaster, "ESCP_RaceTools_EnableBeastMasterTooltip".Translate());
@@ -156,6 +180,169 @@ namespace ESCP_RaceTools
             }
 
             listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            return listing_Standard;
+        }
+
+        private Listing_Standard SettingsPage_Leather(Listing_Standard listing_Standard)
+        {
+            listing_Standard.Label("ESCP_PageLeather".Translate());
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            //settings
+
+            /* Mer */
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThoughtMer".Translate(), ref settings.ESCP_RaceTools_LeatherThoughtMer, "ESCP_RaceTools_LeatherThoughtMerTooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.Gap();
+
+            /* individual mer checks */
+
+            if (RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Altmer", "ESCP - Altmer"))
+            {
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThought".Translate(DefDatabase<ThingDef>.GetNamedSilentFail("ESCP_LeatherAltmer").label), ref settings.ESCP_RaceTools_LeatherThoughtAltmer);
+                listing_Standard.Gap();
+            }
+
+            if (RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Aylied", "ESCP - Aylied"))
+            {
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThought".Translate(DefDatabase<ThingDef>.GetNamedSilentFail("ESCP_LeatherAylied").label), ref settings.ESCP_RaceTools_LeatherThoughtAylied);
+                listing_Standard.Gap();
+            }
+
+            if (RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Bosmer", "ESCP - Bosmer"))
+            {
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThought".Translate(DefDatabase<ThingDef>.GetNamedSilentFail("ESCP_LeatherBosmer").label), ref settings.ESCP_RaceTools_LeatherThoughtBosmer);
+                listing_Standard.Gap();
+            }
+
+            if (RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Chimer", "ESCP - Chimer"))
+            {
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThought".Translate(DefDatabase<ThingDef>.GetNamedSilentFail("ESCP_LeatherChimer").label), ref settings.ESCP_RaceTools_LeatherThoughtChimer);
+                listing_Standard.Gap();
+            }
+
+            if (RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Dunmer", "ESCP - Dunmer"))
+            {
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThought".Translate(DefDatabase<ThingDef>.GetNamedSilentFail("ESCP_LeatherDunmer").label), ref settings.ESCP_RaceTools_LeatherThoughtDunmer);
+                listing_Standard.Gap();
+            }
+
+            if (RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Dwemer", "ESCP - Dwemer"))
+            {
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThought".Translate(DefDatabase<ThingDef>.GetNamedSilentFail("ESCP_LeatherDwemer").label), ref settings.ESCP_RaceTools_LeatherThoughtDwemer);
+                listing_Standard.Gap();
+            }
+
+            if (RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Falmer", "ESCP - Falmer"))
+            {
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThought".Translate(DefDatabase<ThingDef>.GetNamedSilentFail("ESCP_LeatherFalmer").label), ref settings.ESCP_RaceTools_LeatherThoughtFalmer);
+                listing_Standard.Gap();
+            }
+
+            if (RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Maomer", "ESCP - Maomer"))
+            {
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThought".Translate(DefDatabase<ThingDef>.GetNamedSilentFail("ESCP_LeatherMaomer").label), ref settings.ESCP_RaceTools_LeatherThoughtMaomer);
+                listing_Standard.Gap();
+            }
+
+            if (RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Orsimer", "ESCP - Orsimer"))
+            {
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThought".Translate(DefDatabase<ThingDef>.GetNamedSilentFail("ESCP_LeatherOrsimer").label), ref settings.ESCP_RaceTools_LeatherThoughtOrsimer);
+                listing_Standard.Gap();
+            }
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            /* Beastfolk */
+
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThoughtBeastfolk".Translate(), ref settings.ESCP_RaceTools_LeatherThoughtBeastfolk, "ESCP_RaceTools_LeatherThoughtBeastfolkTooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.Gap();
+
+            /* individual bestfolk checks */
+
+            if (RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Argonian", "ESCP - Argonian"))
+            {
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThought".Translate(DefDatabase<ThingDef>.GetNamedSilentFail("ESCP_LeatherArgonian").label), ref settings.ESCP_RaceTools_LeatherThoughtArgonian);
+                listing_Standard.Gap();
+            }
+
+            if (RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Khajiit", "ESCP - Khajiit"))
+            {
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThought".Translate(DefDatabase<ThingDef>.GetNamedSilentFail("ESCP_LeatherKhajiit").label), ref settings.ESCP_RaceTools_LeatherThoughtKhajiit);
+                listing_Standard.Gap();
+            }
+
+            if (RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Imga", "ESCP - Imga"))
+            {
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThought".Translate(DefDatabase<ThingDef>.GetNamedSilentFail("ESCP_LeatherImga").label), ref settings.ESCP_RaceTools_LeatherThoughtImga);
+                listing_Standard.Gap();
+            }
+
+            if (RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Lamia", "ESCP - Lamia"))
+            {
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThought".Translate(DefDatabase<ThingDef>.GetNamedSilentFail("ESCP_LeatherLamia").label), ref settings.ESCP_RaceTools_LeatherThoughtLamia);
+                listing_Standard.Gap();
+            }
+
+            if (RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Lilmothiit", "ESCP - Lilmothiit"))
+            {
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThought".Translate(DefDatabase<ThingDef>.GetNamedSilentFail("ESCP_LeatherLilmothiit").label), ref settings.ESCP_RaceTools_LeatherThoughtLilmothiit);
+                listing_Standard.Gap();
+            }
+
+            if (RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Naga", "ESCP - Naga"))
+            {
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThought".Translate(DefDatabase<ThingDef>.GetNamedSilentFail("ESCP_LeatherNaga").label), ref settings.ESCP_RaceTools_LeatherThoughtNaga);
+                listing_Standard.Gap();
+            }
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            /* Goblin-ken */
+
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThoughtGoblinKen".Translate(), ref settings.ESCP_RaceTools_LeatherThoughtGoblinKen, "ESCP_RaceTools_LeatherThoughtGoblinKenTooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.Gap();
+
+            /* individual goblin-ken checks */
+
+            if (RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Goblin", "ESCP - Goblin"))
+            {
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThought".Translate(DefDatabase<ThingDef>.GetNamedSilentFail("ESCP_LeatherGoblin").label), ref settings.ESCP_RaceTools_LeatherThoughtGoblin);
+                listing_Standard.Gap();
+            }
+
+            if (RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Riekling", "ESCP - Riekling"))
+            {
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThought".Translate(DefDatabase<ThingDef>.GetNamedSilentFail("ESCP_LeatherRiekling").label), ref settings.ESCP_RaceTools_LeatherThoughtRiekling);
+                listing_Standard.Gap();
+            }
+
+            if (RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Riekr", "ESCP - Riekr"))
+            {
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThought".Translate(DefDatabase<ThingDef>.GetNamedSilentFail("ESCP_LeatherRiekr").label), ref settings.ESCP_RaceTools_LeatherThoughtRiekr);
+                listing_Standard.Gap();
+            }
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            /* Extra */
+
+            if (RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Sload", "ESCP - Sload"))
+            {
+                listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThought".Translate(DefDatabase<ThingDef>.GetNamedSilentFail("ESCP_LeatherSload").label), ref settings.ESCP_RaceTools_LeatherThoughtSload);
+                listing_Standard.Gap();
+            }
 
             return listing_Standard;
         }

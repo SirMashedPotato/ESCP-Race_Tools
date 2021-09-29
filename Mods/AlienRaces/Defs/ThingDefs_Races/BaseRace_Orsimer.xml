@@ -59,7 +59,9 @@
 			<chanceFactor>0.2</chanceFactor>
 		  </li>
 		</tools>
-		
+		<statBases>
+		  <LeatherAmount>75</LeatherAmount>
+		</statBases>
 		<race>
 			<thinkTreeMain>Humanlike</thinkTreeMain>
 			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
