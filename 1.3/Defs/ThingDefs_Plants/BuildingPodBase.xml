@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="PlantBaseNonEdible" Name="ESCP_BuildingPodBase" Abstract="True">
+		<statBases>
+		  <MaxHitPoints>195</MaxHitPoints>
+		  <Nutrition>0</Nutrition>
+		</statBases>
+		<altitudeLayer>Building</altitudeLayer>
+		<graphicData>
+		  <texPath>Things/Plant/ESCP_BuildingPlantPod</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		  <shadowData>
+			<volume>(0.3, 0.25, 0.13)</volume>
+			<offset>(-0.03,0,-0.44)</offset>
+		  </shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<pathCost>130</pathCost>
+		<blockWind>false</blockWind>
+		<ingestible>
+		</ingestible>
+		<plant>
+		  <sowWork>200</sowWork>
+		  <dieIfLeafless>false</dieIfLeafless>
+		  <sowTags>
+			<li>Ground</li>
+		  </sowTags>
+		  <blockAdjacentSow>false</blockAdjacentSow>
+		  <sowResearchPrerequisites>
+		  </sowResearchPrerequisites>
+		  <topWindExposure>0.0</topWindExposure>
+		  <neverBlightable>true</neverBlightable>
+		  <growDays>1</growDays>
+		  <visualSizeRange>1.8~2.2</visualSizeRange>
+		  <wildOrder>2</wildOrder>
+		  <harvestAfterGrowth>1</harvestAfterGrowth>
+		  <harvestMinGrowth>1</harvestMinGrowth>
+		  <interferesWithRoof>false</interferesWithRoof>
+		</plant>
+		<comps>
+			<!-- Make sure to add this to the actual plant
+			<li Class="ESCP_RaceTools.CompProperties_ReplaceOnMature">
+				<MatureInto>Wall</MatureInto>
+			</li>
+			-->
+		</comps>
+	</ThingDef>
+	
+</Defs>

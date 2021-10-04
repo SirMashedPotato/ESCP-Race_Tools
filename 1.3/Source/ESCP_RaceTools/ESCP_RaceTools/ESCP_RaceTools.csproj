@@ -66,10 +66,12 @@
     <Compile Include="CompAbility\CompAbilityEffect_ControlAnimal.cs" />
     <Compile Include="CompAbility\CompEffect_AbilityEnterBeserk.cs" />
     <Compile Include="CompAbility\CompEffect_AbilityCameraShakerOneOff.cs" />
-    <Compile Include="Comp\CompProperties_BeastMasterSpawnInit.cs" />
-    <Compile Include="Comp\CompProperties_BeserkerRage.cs" />
+    <Compile Include="Comp\Comp_ReplaceOnMature.cs" />
+    <Compile Include="Comp\Properties\CompProperties_BeastMasterSpawnInit.cs" />
+    <Compile Include="Comp\Properties\CompProperties_BeserkerRage.cs" />
     <Compile Include="Comp\Comp_BeastMasterInit.cs" />
     <Compile Include="Comp\Comp_BeserkerRage.cs" />
+    <Compile Include="Comp\Properties\CompProperties_ReplaceOnMature.cs" />
     <Compile Include="DefModExtensions\BeastMaster.cs" />
     <Compile Include="DefOf\DutyDefOf.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />
