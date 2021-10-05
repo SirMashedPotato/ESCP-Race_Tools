@@ -90,23 +90,73 @@ namespace ESCP_RaceTools
     }
 
     /*
-     * Patch to prevent beast master summoned pawns from running away randomly
-     * Original patch made by Sarg, basically the same, as there isnt really that much to modify
+     * Patches that swap out the quadrum names to elder scrollsy ones
+     * Names made by Kriana
     */
-    /*
-    [HarmonyPatch(typeof(PawnUtility))]
-    [HarmonyPatch("IsFighting")]
-    public static class PawnUtility_IsFighting_Patch
+
+    [HarmonyPatch(typeof(QuadrumUtility))]
+    [HarmonyPatch("Label")]
+    public static class QuadrumUtility_Label_Patch
     {
-        [HarmonyPostfix]
-        public static void BeastMasterPawnPatch(Pawn pawn, ref bool __result)
+        [HarmonyPrefix]
+        public static bool QuadramNamePatch(Quadrum quadrum, ref string __result)
         {
-            if (pawn != null && pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.ESCP_BeastMasterTraining) != null && pawn.CurJob != null && pawn.mindState.duty != null)
+            if (ModSettingsUtility.ESCP_RaceTools_ElderScrollsQuadrums())
             {
-                Log.Message("triggered for pawn: " + pawn);
-                __result = true;
+                switch (quadrum)
+                {
+                    case Quadrum.Aprimay:
+                        __result = "ESCP_QuadrumAprimay".Translate();
+                        return false;
+                    case Quadrum.Jugust:
+                        __result = "ESCP_QuadrumJugust".Translate();
+                        return false;
+                    case Quadrum.Septober:
+                        __result = "ESCP_QuadrumSeptober".Translate();
+                        return false;
+                    case Quadrum.Decembary:
+                        __result = "ESCP_QuadrumDecembary".Translate();
+                        return false;
+                    default:
+                        __result = "Unknown quadrum";
+                        return false;
+
+                }
             }
+            return true;
         }
     }
-    */
+
+    [HarmonyPatch(typeof(QuadrumUtility))]
+    [HarmonyPatch("LabelShort")]
+    public static class QuadrumUtility_LabelShort_Patch
+    {
+        [HarmonyPrefix]
+        public static bool QuadramNamePatch(Quadrum quadrum, ref string __result)
+        {
+            if (ModSettingsUtility.ESCP_RaceTools_ElderScrollsQuadrums())
+            {
+                switch (quadrum)
+                {
+                    case Quadrum.Aprimay:
+                        __result = "ESCP_QuadrumAprimay_Short".Translate();
+                        return false;
+                    case Quadrum.Jugust:
+                        __result = "ESCP_QuadrumJugust_Short".Translate();
+                        return false;
+                    case Quadrum.Septober:
+                        __result = "ESCP_QuadrumSeptober_Short".Translate();
+                        return false;
+                    case Quadrum.Decembary:
+                        __result = "ESCP_QuadrumDecembary_Short".Translate();
+                        return false;
+                    default:
+                        __result = "Unknown quadrum";
+                        return false;
+
+                }
+            }
+            return true;
+        }
+    }
 }

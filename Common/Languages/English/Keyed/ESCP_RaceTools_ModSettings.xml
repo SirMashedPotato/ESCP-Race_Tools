@@ -16,6 +16,9 @@
 	
 	<!-- General settings -->
 	
+	<ESCP_RaceTools_ElderScrollsQuadrums>Switch quadrum names to something more flavourful.</ESCP_RaceTools_ElderScrollsQuadrums>
+	<ESCP_RaceTools_ElderScrollsQuadrumsTooltip>This may not take affect immediately if switched mid-save.</ESCP_RaceTools_ElderScrollsQuadrumsTooltip>
+	
 	<ESCP_RaceTools_StuffKnowledgeLogging>Enable log messages for stuff knowledge</ESCP_RaceTools_StuffKnowledgeLogging>
 	<ESCP_RaceTools_StuffKnowledgeLoggingTooltip>Enables a few log messages for the stuff knowledge Harmony patch. These will appear in the log during crafting, as well as an additional one on game start, and can help diagnose any issues that may be occuring.</ESCP_RaceTools_StuffKnowledgeLoggingTooltip>
     <ESCP_RaceTools_EnableStuffKnowledge>Enable the stuff knowledge Harmony patch</ESCP_RaceTools_EnableStuffKnowledge>

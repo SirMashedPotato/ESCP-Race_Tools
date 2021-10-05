@@ -47,6 +47,13 @@ namespace ESCP_RaceTools
             return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_BeastMasterLogging && Prefs.DevMode;
         }
 
+        /* misc */
+
+        public static bool ESCP_RaceTools_ElderScrollsQuadrums()
+        {
+            return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_ElderScrollsQuadrums;
+        }
+
         /* leather thoughts */
 
         //mer

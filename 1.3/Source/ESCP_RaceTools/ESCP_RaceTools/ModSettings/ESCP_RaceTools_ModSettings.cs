@@ -20,6 +20,9 @@ namespace ESCP_RaceTools
         public bool ESCP_RaceTools_EnableBeastMaster = ESCP_RaceTools_EnableBeastMaster_def;
         public bool ESCP_RaceTools_BeastMasterLogging = ESCP_RaceTools_BeastMasterLogging_def;
 
+        /* misc */
+        public bool ESCP_RaceTools_ElderScrollsQuadrums = ESCP_RaceTools_ElderScrollsQuadrums_def;
+
         /* leather thoughts */
         //mer
         public bool ESCP_RaceTools_LeatherThoughtMer = ESCP_RaceTools_LeatherThoughtMer_def;
@@ -67,6 +70,9 @@ namespace ESCP_RaceTools
         private static readonly bool ESCP_RaceTools_EnableBeastMaster_def = true;
         private static readonly bool ESCP_RaceTools_BeastMasterLogging_def = false;
 
+        /* misc */
+        private static readonly bool ESCP_RaceTools_ElderScrollsQuadrums_def = false;
+
         /* leather thoughts */
         //mer
         private static readonly bool ESCP_RaceTools_LeatherThoughtMer_def = false;
@@ -113,6 +119,9 @@ namespace ESCP_RaceTools
             /* beast master */
             Scribe_Values.Look(ref ESCP_RaceTools_EnableBeastMaster, "ESCP_RaceTools_EnableBeastMaster", ESCP_RaceTools_EnableBeastMaster_def);
             Scribe_Values.Look(ref ESCP_RaceTools_BeastMasterLogging, "ESCP_RaceTools_BeastMasterLogging", ESCP_RaceTools_BeastMasterLogging_def);
+
+            /* misc */
+            Scribe_Values.Look(ref ESCP_RaceTools_ElderScrollsQuadrums, "ESCP_RaceTools_ElderScrollsQuadrums", ESCP_RaceTools_ElderScrollsQuadrums_def);
 
             /* leather thoughts */
             //mer
@@ -165,6 +174,8 @@ namespace ESCP_RaceTools
             /* beast master */
             settings.ESCP_RaceTools_EnableBeastMaster = ESCP_RaceTools_EnableBeastMaster_def;
             settings.ESCP_RaceTools_BeastMasterLogging = ESCP_RaceTools_BeastMasterLogging_def;
+            /* misc */
+            settings.ESCP_RaceTools_ElderScrollsQuadrums = ESCP_RaceTools_ElderScrollsQuadrums_def;
         }
 
         public static void ResetSettings_Leather(ESCP_RaceTools_ModSettings settings)

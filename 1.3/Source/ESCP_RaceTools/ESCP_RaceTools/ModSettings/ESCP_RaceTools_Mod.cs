@@ -136,6 +136,13 @@ namespace ESCP_RaceTools
 
             //settings
 
+            /* misc */
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_ElderScrollsQuadrums".Translate(), ref settings.ESCP_RaceTools_ElderScrollsQuadrums, "ESCP_RaceTools_ElderScrollsQuadrumsTooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
             /* stuff knowledge */
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableStuffKnowledge".Translate(), ref settings.ESCP_RaceTools_EnableStuffKnowledge, "ESCP_RaceTools_EnableStuffKnowledgeTooltip".Translate());
             listing_Standard.Gap();

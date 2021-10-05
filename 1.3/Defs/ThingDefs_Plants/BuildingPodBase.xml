@@ -39,13 +39,13 @@
 		  <harvestMinGrowth>1</harvestMinGrowth>
 		  <interferesWithRoof>false</interferesWithRoof>
 		</plant>
-		<comps>
-			<!-- Make sure to add this to the actual plant
-			<li Class="ESCP_RaceTools.CompProperties_ReplaceOnMature">
-				<matureInto>Wall</matureInto>
-			</li>
+		<modExtensions>
+			<!--
+			<li Class="ESCP_RaceTools.PlantProperties">
+                <matureInto>ESCP_BosmerPlant_Wall</matureInto>
+            </li>
 			-->
-		</comps>
+		</modExtensions>
 	</ThingDef>
 	
 </Defs>

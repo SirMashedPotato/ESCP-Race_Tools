@@ -7,5 +7,16 @@
 	<ESCP_AbilityMustBeFactionless>Target must not belong to a faction</ESCP_AbilityMustBeFactionless>
 	
 	<ESCP_BosmerControlAnimal>{0} has temporarily joined your colony</ESCP_BosmerControlAnimal>
+	
+	<!-- quadrums -->
+	<ESCP_QuadrumAprimay>Rain's Seed</ESCP_QuadrumAprimay>
+	<ESCP_QuadrumJugust>Sun's Seed</ESCP_QuadrumJugust>
+	<ESCP_QuadrumSeptober>Hearthfall</ESCP_QuadrumSeptober>
+	<ESCP_QuadrumDecembary>Sun's Star</ESCP_QuadrumDecembary>
+	
+	<ESCP_QuadrumAprimay_Short>Rain</ESCP_QuadrumAprimay_Short>
+	<ESCP_QuadrumJugust_Short>Sun</ESCP_QuadrumJugust_Short>
+	<ESCP_QuadrumSeptober_Short>Hearth</ESCP_QuadrumSeptober_Short>
+	<ESCP_QuadrumDecembary_Short>Star</ESCP_QuadrumDecembary_Short>
 
 </LanguageData>

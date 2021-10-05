@@ -41,7 +41,7 @@ namespace ESCP_RaceTools
             {
 				IntVec3 loc = this.Position;
 				Map map = this.Map;
-				//plant.Destroy;
+				//this.Destroy();
 				GenSpawn.Spawn(modExt.matureInto, loc, map);
 				return;
 			}
