@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+
+	<ESCP_RaceRequirementRace>Race</ESCP_RaceRequirementRace>
+	<ESCP_AbilityMustBeFactionless>Target must not belong to a faction</ESCP_AbilityMustBeFactionless>
+	
+	<ESCP_BosmerControlAnimal>{0} has temporarily joined your colony</ESCP_BosmerControlAnimal>
+
+</LanguageData>

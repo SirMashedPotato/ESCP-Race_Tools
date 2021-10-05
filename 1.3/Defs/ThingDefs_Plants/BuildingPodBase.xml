@@ -2,9 +2,9 @@
 <Defs>
 
 	<ThingDef ParentName="PlantBaseNonEdible" Name="ESCP_BuildingPodBase" Abstract="True">
+		<thingClass>ESCP_RaceTools.PlantBuildingPod</thingClass>
 		<statBases>
-		  <MaxHitPoints>195</MaxHitPoints>
-		  <Nutrition>0</Nutrition>
+		  <MaxHitPoints>85</MaxHitPoints>
 		</statBases>
 		<altitudeLayer>Building</altitudeLayer>
 		<graphicData>
@@ -15,12 +15,11 @@
 			<offset>(-0.03,0,-0.44)</offset>
 		  </shadowData>
 		</graphicData>
+		<minifiedDef IsNull="True" />
 		<passability>PassThroughOnly</passability>
 		<selectable>true</selectable>
 		<pathCost>130</pathCost>
 		<blockWind>false</blockWind>
-		<ingestible>
-		</ingestible>
 		<plant>
 		  <sowWork>200</sowWork>
 		  <dieIfLeafless>false</dieIfLeafless>
@@ -32,8 +31,9 @@
 		  </sowResearchPrerequisites>
 		  <topWindExposure>0.0</topWindExposure>
 		  <neverBlightable>true</neverBlightable>
+		  <burnedThingDef IsNull="True" />
 		  <growDays>1</growDays>
-		  <visualSizeRange>1.8~2.2</visualSizeRange>
+		  <visualSizeRange>0.7~1.3</visualSizeRange>
 		  <wildOrder>2</wildOrder>
 		  <harvestAfterGrowth>1</harvestAfterGrowth>
 		  <harvestMinGrowth>1</harvestMinGrowth>
@@ -42,7 +42,7 @@
 		<comps>
 			<!-- Make sure to add this to the actual plant
 			<li Class="ESCP_RaceTools.CompProperties_ReplaceOnMature">
-				<MatureInto>Wall</MatureInto>
+				<matureInto>Wall</matureInto>
 			</li>
 			-->
 		</comps>
