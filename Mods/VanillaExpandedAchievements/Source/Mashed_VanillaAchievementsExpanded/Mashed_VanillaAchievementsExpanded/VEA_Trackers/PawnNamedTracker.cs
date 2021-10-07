@@ -62,7 +62,6 @@ namespace Mashed_VanillaAchievementsExpanded
             if (key == raceDef && param.Name != null)
             {
                 NameTriple name = param.Name as NameTriple;
-                Log.Message("Pawn " + name.First + ", " + name.Nick + ", " + name.Last);
                 if ((firstName == null || name.First == firstName) && (lastName == null || name.Last == lastName) && (nickName == null || name.Nick == nickName))
                 {
                     return true;

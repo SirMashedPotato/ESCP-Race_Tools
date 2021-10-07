@@ -9,7 +9,7 @@ using AchievementsExpanded;
 
 namespace Mashed_VanillaAchievementsExpanded
 {
-    public class ResearchTracker__WithTab : ResearchTracker
+    public class ResearchTracker_WithTab : ResearchTracker
     {
 
         /* Notes:
@@ -24,12 +24,12 @@ namespace Mashed_VanillaAchievementsExpanded
 
         protected override string[] DebugText => new string[] { $"Tech: {tech}", $"Project: {def?.defName ?? "None"}", $"CoreOnly: {coreModsOnly}", $"researchTabDef: {researchTabDef}" };
 
-        public ResearchTracker__WithTab()
+        public ResearchTracker_WithTab()
         {
 
         }
 
-        public ResearchTracker__WithTab(ResearchTracker__WithTab reference) : base(reference)
+        public ResearchTracker_WithTab(ResearchTracker_WithTab reference) : base(reference)
         {
             researchTabDef = reference.researchTabDef;
         }
