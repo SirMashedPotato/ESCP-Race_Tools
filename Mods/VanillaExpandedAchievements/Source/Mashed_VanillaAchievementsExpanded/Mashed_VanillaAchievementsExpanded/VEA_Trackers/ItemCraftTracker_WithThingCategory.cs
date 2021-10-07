@@ -3,8 +3,9 @@ using System.Reflection;
 using HarmonyLib;
 using RimWorld;
 using Verse;
+using AchievementsExpanded;
 
-namespace AchievementsExpanded
+namespace Mashed_VanillaAchievementsExpanded
 {
     public class ItemCraftTracker_WithThingCategory : ItemCraftTracker
     {

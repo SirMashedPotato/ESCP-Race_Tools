@@ -5,8 +5,9 @@ using System.Linq;
 using HarmonyLib;
 using Verse;
 using RimWorld;
+using AchievementsExpanded;
 
-namespace AchievementsExpanded
+namespace Mashed_VanillaAchievementsExpanded
 {
     public class ResearchTracker__WithTab : ResearchTracker
     {

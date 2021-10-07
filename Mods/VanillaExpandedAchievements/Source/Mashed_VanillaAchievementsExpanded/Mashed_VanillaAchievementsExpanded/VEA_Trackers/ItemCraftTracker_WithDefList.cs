@@ -4,8 +4,9 @@ using HarmonyLib;
 using RimWorld;
 using Verse;
 using System.Collections.Generic;
+using AchievementsExpanded;
 
-namespace AchievementsExpanded
+namespace Mashed_VanillaAchievementsExpanded
 {
     public class ItemCraftTracker_WithDefList : ItemCraftTracker
     {
