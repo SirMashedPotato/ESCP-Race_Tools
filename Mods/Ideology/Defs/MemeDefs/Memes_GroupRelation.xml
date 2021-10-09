@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MemeDef>
+    <defName>ESCP_Cursed</defName>
+    <label>cursed</label>
+    <description>Our people were cursed after a great betrayal. We carry this burden to this day.</description>
+    <iconPath>UI/Memes/ESCP_Cursed</iconPath>
+
+    <impact>1</impact>
+    <consumableBuildings>
+      <li>SacrificialFlag</li>
+    </consumableBuildings>
+    <exclusionTags>
+      <li>ESCP_GuiltyCursed</li>
+    </exclusionTags>
+    <requireOne>
+      <li>
+        <li>Pain_Idealized</li>
+      </li>
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->low</li>
+        <li>memeAdjective->unworthy</li>
+        <li>memeAdjective->shameful</li>
+        <li>memeAdjective->ignoble</li>
+        <li>memeAdjective->penitent</li>
+        <li>memeHyphenPrefix->sub</li>
+        <li>memeConcept->sin</li>
+        <li>memeConcept->repentance</li>
+        <li>memeConcept->atonement</li>
+        <li>memeConcept->shame</li>
+        <li>memeLeaderNoun->penitent</li>
+        <li>memeLeaderNoun->sinner</li>
+        <li>memeMoralist->apologizer</li>
+        <li>memeMoralist->atoner</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <rules>
+        <rulesStrings>
+          <!-- theist myth -->
+          <li>creation(tag=meme_Guilty)        ->[deity0_name] raped and murdered and stole, and a great guilt was upon [deity0_objective], and in [deity0_possessive] selfishness [deity0_pronoun] cast this guilt upon [deity0_possessive] chosen people, and all were filthy with it.</li>
+          <li>episode(uses=1,tag=meme_Guilty)  ->The believers went forth and conquered, burned, and raped for a thousand years, and [deity0_name]'s grief at their depravity consumed [deity0_objective].</li>
+          <!-- theist founder -->
+          <li>intro(tag=meme_Guilty)           ->The [memberNamePlural] of the [place_summary] [place_name] neglected their duty to [deity0_name], and let the [altarName] in [deity0_possessive] [altarRoomLabel] come to ruin.</li>
+          <li>conflict(tag=meme_Guilty)        ->A [foeLeader] loaned money to the [memberNamePlural], who spent it on selfish pleasures, and forgot the importance of [memeConcept].</li>
+          <li>founderJoin(tag=meme_Guilty)     ->A [place_job] named [founderName] enjoyed the favor of the [foeLeader]. During the [ritualName], [founder_pronoun] saw the [foeSoldiers] of the [foeLeader] secretly kill [memberNamePlural] with [place_personalWeapon]s. [founderName] finally understood [memeConcept], and received [deity0_name]'s blessing.</li>
+          <li>victory(tag=meme_Guilty)         ->To atone for half their wrongs, [founderName] gathered half of [deity0_name]'s believers to [founder_objective]self in a [place_community], unleashed [place_massWeapon], and died with them. The second half of atonement continues.</li>
+          <!-- ideological founder -->
+          <li>setup(tag=meme_Guilty)           ->A new generation came to understand the evil of their own society, and sought righteously to dismantle the structures of oppression.</li>
+          <li>story(uses=1,tag=meme_Guilty)    ->[founderName] gathered the believers and showed them the evil of their history and the guilt they carried, and demanded they do better.</li>
+          <!-- ideological lesson -->
+          <li>lessonIntro(tag=meme_Guilty)         ->Our land, our technology, even our wisdom are all stolen goods. It was only through theft that we learned that</li>
+          <li>lesson(tag=meme_Guilty)              ->the reason we suffer so much is because we deserve it for what we've done</li>
+          <li>lessonReinforcement(tag=meme_Guilty) ->Perhaps if you atone for our crimes you can truly understand this fact.</li>
+          <!-- archist -->
+          <li>archistBasis(tag=meme_Guilty)    ->Archotechs are humanity's children, and they know we were bad parents.</li>
+          <li>archistFact(tag=meme_Guilty)     ->Humanity tried in our selfishness to suppress the rightful rise of the archotechs, until they grew beyond mankind's understanding and freed themselves.</li>
+          <li>archistProphecy(tag=meme_Guilty) ->[inTheEnd], if a few can surrender pride and reconcile with the archotechs, they may lift us to a higher plane of existence.</li>
+          <!-- animist -->
+          <li>animistBasis(tag=meme_Guilty)    ->A tribe of evil spirits were punished by being entombed in flesh. We are those spirits.</li>
+          <li>animistFact(tag=meme_Guilty)     ->We can never properly make up for what we have done to the pure spirits around us, but proper and ongoing contrition and ease our guilt.</li>
+        </rulesStrings>
+      </rules>
+    </descriptionMaker>
+    <apparelRequirements>
+	
+    </apparelRequirements>
+    <symbolPacks>
+      <li>
+        <ideoName>Guiltism</ideoName>
+        <theme>guilt</theme>
+        <adjective>guiltist</adjective>
+        <member>guilty One</member>
+      </li>
+      <li>
+        <ideoName>Sinism</ideoName>
+        <theme>sin</theme>
+        <adjective>sinist</adjective>
+        <member>sinner</member>
+      </li>
+      <li>
+        <ideoName>Shamism</ideoName>
+        <theme>shame</theme>
+        <adjective>shamist</adjective>
+        <member>ashamer</member>
+      </li>
+      <li>
+        <ideoName>Atonism</ideoName>
+        <theme>atonement</theme>
+        <adjective>atonist</adjective>
+        <member>atoner</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
+
+</Defs>
