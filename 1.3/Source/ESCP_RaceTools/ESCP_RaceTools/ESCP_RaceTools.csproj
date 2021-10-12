@@ -79,6 +79,8 @@
     <Compile Include="DefModExtensions\SettlementPreference.cs" />
     <Compile Include="DefModExtensions\StuffKnowledge.cs" />
     <Compile Include="HediffComp\HediffComp_BeastMaster.cs" />
+    <Compile Include="Ideo\RoleRequirement_PsychicSensitivity.cs" />
+    <Compile Include="Ideo\RoleRequirement_RaceMulti.cs" />
     <Compile Include="LeatherThoughtWorkers\Beastfolk\ThoughtWorker_ArgonianLeatherApparel.cs" />
     <Compile Include="LeatherThoughtWorkers\Beastfolk\ThoughtWorker_ImgaLeatherApparel.cs" />
     <Compile Include="LeatherThoughtWorkers\Beastfolk\ThoughtWorker_KhajiitLeatherApparel.cs" />

@@ -7,23 +7,23 @@ using RimWorld;
 
 namespace ESCP_RaceTools
 {
-    class RoleRequirement_Race : RoleRequirement
+    class RoleRequirement_RaceMulti : RoleRequirement
     {
         public override string GetLabel(Precept_Role role)
         {
             if (this.labelCached == null)
             {
-                 this.labelCached = "ESCP_IdeoRequirementRace".Translate() + ": " + race.label;
+                this.labelCached = "ESCP_IdeoRequirementRace".Translate() + ": " + races[0].label;
             }
             return labelCached;
         }
 
         public override bool Met(Pawn p, Precept_Role role)
         {
-            return p.def == race;
+            return races.Contains(p.def);
         }
 
-        public ThingDef race;
+        public List<ThingDef> races;
 
         [NoTranslate]
         private string labelCached;
