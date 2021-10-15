@@ -54,6 +54,9 @@ namespace ESCP_RaceTools
         //extra
         public bool ESCP_RaceTools_LeatherThoughtSload = ESCP_RaceTools_LeatherThoughtSload_def;
 
+        /* Dunmer */
+        public bool ESCP_RaceTools_DunmerGraveWhispering = ESCP_RaceTools_DunmerGraveWhispering_def;
+
         //defaults
 
         /* stuff knowledge */
@@ -104,6 +107,9 @@ namespace ESCP_RaceTools
         //extra
         private static readonly bool ESCP_RaceTools_LeatherThoughtSload_def = true;
 
+        /* Dunmer */
+        private static readonly bool ESCP_RaceTools_DunmerGraveWhispering_def = true;
+
         //save settings
         public override void ExposeData()
         {
@@ -151,6 +157,9 @@ namespace ESCP_RaceTools
             //extra
             Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtSload, "ESCP_RaceTools_LeatherThoughtSload", ESCP_RaceTools_LeatherThoughtSload_def);
 
+            /* Dunmer */
+            Scribe_Values.Look(ref ESCP_RaceTools_DunmerGraveWhispering, "ESCP_RaceTools_DunmerGraveWhispering", ESCP_RaceTools_DunmerGraveWhispering_def);
+
             base.ExposeData();
         }
 
@@ -159,6 +168,7 @@ namespace ESCP_RaceTools
         {
             ResetSettings_General(settings);
             ResetSettings_Leather(settings);
+            ResetSettings_Dunmer(settings);
         }
 
         public static void ResetSettings_General(ESCP_RaceTools_ModSettings settings)
@@ -209,6 +219,11 @@ namespace ESCP_RaceTools
 
             //extra
             settings.ESCP_RaceTools_LeatherThoughtSload = ESCP_RaceTools_LeatherThoughtSload_def;
+        }
+
+        public static void ResetSettings_Dunmer(ESCP_RaceTools_ModSettings settings)
+        {
+            settings.ESCP_RaceTools_DunmerGraveWhispering = ESCP_RaceTools_DunmerGraveWhispering_def;
         }
     }
 }

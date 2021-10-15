@@ -66,6 +66,8 @@
     <Compile Include="CompAbility\CompAbilityEffect_ControlAnimal.cs" />
     <Compile Include="CompAbility\CompEffect_AbilityEnterBeserk.cs" />
     <Compile Include="CompAbility\CompEffect_AbilityCameraShakerOneOff.cs" />
+    <Compile Include="Comp\Comp_DunmerGraveWhisper.cs" />
+    <Compile Include="Comp\Properties\CompProperties_DunmerGraveWhisper.cs" />
     <Compile Include="Comp\Properties\CompProperties_BeastMasterSpawnInit.cs" />
     <Compile Include="Comp\Properties\CompProperties_BeserkerRage.cs" />
     <Compile Include="Comp\Comp_BeastMasterInit.cs" />

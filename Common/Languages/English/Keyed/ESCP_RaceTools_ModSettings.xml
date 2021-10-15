@@ -14,6 +14,9 @@
 	<ESCP_PageLeather>Leather settings</ESCP_PageLeather>
 	<ESCP_PageLeatherReset>Reset leather settings</ESCP_PageLeatherReset>
 	
+	<ESCP_PageDunmer>Dunmer settings</ESCP_PageDunmer>
+	<ESCP_PageDunmerReset>Reset Dunmer settings</ESCP_PageDunmerReset>
+	
 	<!-- General settings -->
 	
 	<ESCP_RaceTools_ElderScrollsQuadrums>Switch quadrum names to something more flavourful.</ESCP_RaceTools_ElderScrollsQuadrums>
@@ -49,5 +52,9 @@
 	<ESCP_RaceTools_LeatherThoughtBeastfolkTooltip>This will consolidate all Beastfolk leather thoughts into a single thought, overwriting any choices below in the process.\n\nNote that you will need at least on Beastfolk mod active for this to actually do anything.</ESCP_RaceTools_LeatherThoughtBeastfolkTooltip>
 	
 	<ESCP_RaceTools_LeatherThought>Enable leather thoughts for {0}</ESCP_RaceTools_LeatherThought>
+	
+	<!-- Dunmer specific -->
+	
+	<ESCP_RaceTools_DunmerGraveWhispering>Enable filled ash burial pit whispers.</ESCP_RaceTools_DunmerGraveWhispering>
 
 </LanguageData>

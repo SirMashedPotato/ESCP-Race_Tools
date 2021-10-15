@@ -41,6 +41,9 @@ namespace ESCP_RaceTools
                 case 1:
                     listing_Standard = SettingsPage_Leather(listing_Standard);
                     break;
+                case 2:
+                    listing_Standard = SettingsPage_Dunmer(listing_Standard);
+                    break;
 
 
                 default:
@@ -82,6 +85,14 @@ namespace ESCP_RaceTools
             }
             listing_Standard.Gap();
 
+            Rect rectPageDunmer = listing_Standard.GetRect(30f);
+            TooltipHandler.TipRegion(rectPageDunmer, "ESCP_PageDunmer".Translate());
+            if (Widgets.ButtonText(rectPageDunmer, "ESCP_PageDunmer".Translate(), true, true, true))
+            {
+                page = 2;
+            }
+            listing_Standard.Gap();
+
             listing_Standard.GapLine();
 
             //reset
@@ -117,6 +128,15 @@ namespace ESCP_RaceTools
                     if (Widgets.ButtonText(rectDefault, "ESCP_PageLeatherReset".Translate(), true, true, true))
                     {
                         ESCP_RaceTools_ModSettings.ResetSettings_Leather(settings);
+                    }
+                    break;
+
+                case 2:
+                    listing_Standard.Gap();
+                    TooltipHandler.TipRegion(rectDefault, "ESCP_PageDunmerReset".Translate());
+                    if (Widgets.ButtonText(rectDefault, "ESCP_PageDunmerReset".Translate(), true, true, true))
+                    {
+                        ESCP_RaceTools_ModSettings.ResetSettings_Dunmer(settings);
                     }
                     break;
 
@@ -350,6 +370,24 @@ namespace ESCP_RaceTools
                 listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThought".Translate(DefDatabase<ThingDef>.GetNamedSilentFail("ESCP_LeatherSload").label), ref settings.ESCP_RaceTools_LeatherThoughtSload);
                 listing_Standard.Gap();
             }
+
+            return listing_Standard;
+        }
+
+        private Listing_Standard SettingsPage_Dunmer(Listing_Standard listing_Standard)
+        {
+            listing_Standard.Label("ESCP_PageDunmer".Translate());
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            //settings
+
+            /* misc */
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_DunmerGraveWhispering".Translate(), ref settings.ESCP_RaceTools_DunmerGraveWhispering);
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
 
             return listing_Standard;
         }
