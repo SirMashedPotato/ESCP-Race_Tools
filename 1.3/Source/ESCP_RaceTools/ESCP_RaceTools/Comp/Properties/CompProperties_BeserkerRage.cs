@@ -17,5 +17,7 @@ namespace ESCP_RaceTools
 		public List<ThingDef> totems;
 		public List<HediffDef> augments;
 		public bool enableTracker = true;
+		public SkillDef manualSkill;	//defaults to melee if left null
+		public int manualSkillLevel = 13;
 	}
 }

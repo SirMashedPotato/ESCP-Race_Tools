@@ -30,6 +30,7 @@ namespace ESCP_RaceTools
                     {
                         return 0f;
                     }
+
                     /* modExt checks */
                     if (!modExt.biomeKeyWords.NullOrEmpty() && !modExt.biomeKeyWords.Any(y=> tile.biome.defName.Contains(y)))
                     {

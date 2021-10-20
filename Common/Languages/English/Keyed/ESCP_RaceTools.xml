@@ -9,6 +9,9 @@
 	
 	<ESCP_BosmerControlAnimal>{0} has temporarily joined your colony</ESCP_BosmerControlAnimal>
 	
+	<ESCP_EnterBeserkRage>Enter Beserker Rage</ESCP_EnterBeserkRage>
+	<ESCP_EnterBeserkRageTooltip>Cause the pawn to enter a beserker rage</ESCP_EnterBeserkRageTooltip>
+	
 	<!-- quadrums -->
 	<ESCP_QuadrumAprimay>Rain's Seed</ESCP_QuadrumAprimay>
 	<ESCP_QuadrumJugust>Sun's Seed</ESCP_QuadrumJugust>

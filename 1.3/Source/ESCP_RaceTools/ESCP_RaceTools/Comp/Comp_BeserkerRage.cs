@@ -1,5 +1,7 @@
 ﻿using RimWorld;
+using System.Collections.Generic;
 using Verse;
+using UnityEngine;
 
 namespace ESCP_RaceTools
 {
@@ -25,7 +27,47 @@ namespace ESCP_RaceTools
 			}
 		}
 
-		public void ActivateRage(Pawn pawn)
+        public override IEnumerable<Gizmo> CompGetGizmosExtra()
+        {
+			foreach (Gizmo gizmo in base.CompGetGizmosExtra())
+			{
+				yield return gizmo;
+			}
+
+			Pawn pawn = this.parent as Pawn;
+			if (PawnIsValid(pawn) && pawn.Faction != null && pawn.Faction.IsPlayer && !pawn.NonHumanlikeOrWildMan())
+            {
+                if (pawn.skills.GetSkill(Props.manualSkill != null ? Props.manualSkill : SkillDefOf.Melee).Level >= Props.manualSkillLevel && CheckRage(pawn))
+                {
+					yield return new Command_Action
+					{
+						defaultLabel = "ESCP_EnterBeserkRage".Translate(),
+						activateSound = SoundDefOf.Interact_Ignite,
+						defaultDesc = "ESCP_EnterBeserkRageTooltip".Translate(),
+						icon = ContentFinder<Texture2D>.Get("UI/Gizmos/ESCP_BeserkerRage", true),
+						action = delegate ()
+						{
+							ActivateRage(pawn);
+						}
+					};
+				}
+            }
+		}
+
+		public bool CheckRage(Pawn pawn)
+		{
+			if (!pawn.health.hediffSet.HasHediff(Props.hediffDef))
+			{
+				if (pawn.health.hediffSet.hediffs.Any(x => Props.augments.Contains(x.def)))
+				{
+					return false;
+				}
+				return true;
+			}
+			return false;
+		}
+
+        public void ActivateRage(Pawn pawn)
         {
 			//do beserker
 			if (Props.enableAugments)
