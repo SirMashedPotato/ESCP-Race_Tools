@@ -42,7 +42,6 @@ namespace ESCP_RaceTools
 					yield return new Command_Action
 					{
 						defaultLabel = "ESCP_EnterBeserkRage".Translate(),
-						activateSound = SoundDefOf.Interact_Ignite,
 						defaultDesc = "ESCP_EnterBeserkRageTooltip".Translate(),
 						icon = ContentFinder<Texture2D>.Get("UI/Gizmos/ESCP_BeserkerRage", true),
 						action = delegate ()
