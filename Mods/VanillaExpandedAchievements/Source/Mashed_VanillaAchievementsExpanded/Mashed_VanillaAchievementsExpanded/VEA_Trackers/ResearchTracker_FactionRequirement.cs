@@ -6,23 +6,11 @@ using HarmonyLib;
 using Verse;
 using RimWorld;
 using AchievementsExpanded;
-
+/* Stupid
 namespace Mashed_VanillaAchievementsExpanded
 {
     public class ResearchTracker_FactionRequirement : ResearchTracker
     {
-
-        /* Notes:
-         * Checks if all research on a tab is completed.
-         * Can limit to a certain tech level, haven't actually tested but should work.
-         * Should not use with specific defs, kind of defeats the purpose.
-         * Doesn't check coreModsOnly, there is no point.
-         */
-
-        //Don't include this, it breaks the tracker, leaving this as a reminder
-        //public override string Key => "ResearchTracker__WithTab";
-
-        //protected override string[] DebugText => new string[] { $"Tech: {tech}", $"Project: {def?.defName ?? "None"}", $"CoreOnly: {coreModsOnly}"};
 
         public ResearchTracker_FactionRequirement()
         {
@@ -65,3 +53,4 @@ namespace Mashed_VanillaAchievementsExpanded
         public List<FactionDef> factionsList;
     }
 }
+*/
