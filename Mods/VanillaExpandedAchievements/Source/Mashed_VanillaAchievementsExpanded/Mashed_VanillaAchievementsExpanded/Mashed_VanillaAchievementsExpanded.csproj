@@ -69,6 +69,7 @@
     <Compile Include="VEA_Trackers\ItemCraftTracker_WithThingCategory.cs" />
     <Compile Include="VEA_Trackers\PawnNamedTracker.cs" />
     <Compile Include="VEA_Trackers\PawnNamedTracker_WithList.cs" />
+    <Compile Include="VEA_Trackers\ResearchTracker_FactionRequirement.cs" />
     <Compile Include="VEA_Trackers\ResearchTracker_WithTab.cs" />
   </ItemGroup>
   <ItemGroup>
