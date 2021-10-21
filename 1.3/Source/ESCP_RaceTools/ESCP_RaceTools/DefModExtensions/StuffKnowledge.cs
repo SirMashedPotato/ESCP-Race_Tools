@@ -25,7 +25,7 @@ namespace ESCP_RaceTools
                                             //however make sure that atleast one of the required options is not null if allOrNothing is set to false
         public TraitDef requiredTrait = null;
         public HediffDef requiredHediff = null;
-        public Backstory requiredBackstory = null;
+        public string requiredBackstory = null;
         public float chance = 1f;
     }
 }

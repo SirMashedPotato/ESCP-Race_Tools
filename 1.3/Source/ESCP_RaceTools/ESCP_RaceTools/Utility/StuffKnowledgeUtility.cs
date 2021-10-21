@@ -46,14 +46,14 @@ namespace ESCP_RaceTools
             return (h == null && nullIsTrue) || (p.health.hediffSet.GetFirstHediffOfDef(h) != null);
         }
 
-        public static bool RequiredBackstory(Pawn p, Backstory b, bool nullIsTrue = true)
+        public static bool RequiredBackstory(Pawn p, string b, bool nullIsTrue = true)
         {
             return (b == null && nullIsTrue)
-                || (p.story.GetBackstory(BackstorySlot.Childhood) != null && p.story.GetBackstory(BackstorySlot.Childhood) == b)
-                || (p.story.GetBackstory(BackstorySlot.Adulthood) != null && p.story.GetBackstory(BackstorySlot.Adulthood) == b);
+                || (p.story.GetBackstory(BackstorySlot.Childhood) != null && p.story.GetBackstory(BackstorySlot.Childhood).ToString() == b)
+                || (p.story.GetBackstory(BackstorySlot.Adulthood) != null && p.story.GetBackstory(BackstorySlot.Adulthood).ToString() == b);
         }
 
-        public static bool OnlyOneCheck(Pawn p, TraitDef t, HediffDef h, Backstory b)
+        public static bool OnlyOneCheck(Pawn p, TraitDef t, HediffDef h, string b)
         {
             return ((RequiredTrait(p, t, false) || RequiredHediff(p, h, false) || RequiredBackstory(p, b, false))
                 || (RequiredTrait(p, t) && RequiredHediff(p, h) && RequiredBackstory(p, b)));
