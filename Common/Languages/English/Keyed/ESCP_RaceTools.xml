@@ -12,6 +12,8 @@
 	<ESCP_EnterBeserkRage>Enter Beserker Rage</ESCP_EnterBeserkRage>
 	<ESCP_EnterBeserkRageTooltip>Cause the pawn to enter a beserker rage</ESCP_EnterBeserkRageTooltip>
 	
+	<ESCP_StuffKnowledgeNotification>{0} has created a {1} of higher quality due to their knowledge</ESCP_StuffKnowledgeNotification>
+	
 	<!-- quadrums -->
 	<ESCP_QuadrumAprimay>Rain's Seed</ESCP_QuadrumAprimay>
 	<ESCP_QuadrumJugust>Sun's Seed</ESCP_QuadrumJugust>

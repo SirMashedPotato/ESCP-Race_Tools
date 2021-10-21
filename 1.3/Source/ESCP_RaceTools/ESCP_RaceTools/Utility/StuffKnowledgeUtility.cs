@@ -48,9 +48,10 @@ namespace ESCP_RaceTools
 
         public static bool RequiredBackstory(Pawn p, string b, bool nullIsTrue = true)
         {
+            Log.Message("boobs: " + b + ", " + p.story.GetBackstory(BackstorySlot.Adulthood).ToString());
             return (b == null && nullIsTrue)
-                || (p.story.GetBackstory(BackstorySlot.Childhood) != null && p.story.GetBackstory(BackstorySlot.Childhood).ToString() == b)
-                || (p.story.GetBackstory(BackstorySlot.Adulthood) != null && p.story.GetBackstory(BackstorySlot.Adulthood).ToString() == b);
+                || (p.story.GetBackstory(BackstorySlot.Childhood) != null && p.story.GetBackstory(BackstorySlot.Childhood).identifier.ToString() == b)
+                || (p.story.GetBackstory(BackstorySlot.Adulthood) != null && p.story.GetBackstory(BackstorySlot.Adulthood).identifier.ToString() == b);
         }
 
         public static bool OnlyOneCheck(Pawn p, TraitDef t, HediffDef h, string b)
@@ -77,6 +78,7 @@ namespace ESCP_RaceTools
                         if (RightSkill(recipe, stuffKnowledge.skillList) && (MadeOfStuff(thing, stuffKnowledge.stuffList) || (stuffKnowledge.notJustStuff && MadeOfThing(thing, stuffKnowledge.stuffList))) && ChanceIncrease(stuffKnowledge.chance))
                         {
                             if (ModSettingsUtility.ESCP_StuffKnowledgeLogging()) Log.Message("Initial quality of  " + thing + " = " + initial + ", improved quality = " + (initial + 1)); ;
+                            Messages.Message("ESCP_StuffKnowledgeNotification".Translate(worker, thing), thing, MessageTypeDefOf.PositiveEvent, true);
                             return initial + 1;
                         }
                     }
