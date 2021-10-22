@@ -22,6 +22,7 @@ namespace ESCP_RaceTools
 
         /* misc */
         public bool ESCP_RaceTools_ElderScrollsQuadrums = ESCP_RaceTools_ElderScrollsQuadrums_def;
+        public bool ESCP_RaceTools_EnableApparelThoughtProtection = ESCP_RaceTools_EnableApparelThoughtProtection_def;
 
         /* leather thoughts */
         //mer
@@ -75,6 +76,7 @@ namespace ESCP_RaceTools
 
         /* misc */
         private static readonly bool ESCP_RaceTools_ElderScrollsQuadrums_def = false;
+        private static readonly bool ESCP_RaceTools_EnableApparelThoughtProtection_def = true;
 
         /* leather thoughts */
         //mer
@@ -128,6 +130,7 @@ namespace ESCP_RaceTools
 
             /* misc */
             Scribe_Values.Look(ref ESCP_RaceTools_ElderScrollsQuadrums, "ESCP_RaceTools_ElderScrollsQuadrums", ESCP_RaceTools_ElderScrollsQuadrums_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_EnableApparelThoughtProtection, "ESCP_RaceTools_EnableApparelThoughtProtection", ESCP_RaceTools_EnableApparelThoughtProtection_def);
 
             /* leather thoughts */
             //mer
@@ -186,6 +189,7 @@ namespace ESCP_RaceTools
             settings.ESCP_RaceTools_BeastMasterLogging = ESCP_RaceTools_BeastMasterLogging_def;
             /* misc */
             settings.ESCP_RaceTools_ElderScrollsQuadrums = ESCP_RaceTools_ElderScrollsQuadrums_def;
+            settings.ESCP_RaceTools_EnableApparelThoughtProtection = ESCP_RaceTools_EnableApparelThoughtProtection_def;
         }
 
         public static void ResetSettings_Leather(ESCP_RaceTools_ModSettings settings)

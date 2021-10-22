@@ -72,11 +72,16 @@
     <Compile Include="Comp\Properties\CompProperties_BeserkerRage.cs" />
     <Compile Include="Comp\Comp_BeastMasterInit.cs" />
     <Compile Include="Comp\Comp_BeserkerRage.cs" />
+    <Compile Include="DefModExtensions\ApparelProperties.cs" />
     <Compile Include="DefModExtensions\BeastMaster.cs" />
     <Compile Include="DefModExtensions\PlantProperties.cs" />
     <Compile Include="DefOf\DutyDefOf.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />
     <Compile Include="DefOf\ThoughtDefOf.cs" />
+    <Compile Include="Harmony\ApparelThoughtProtectionPatch.cs" />
+    <Compile Include="Harmony\QuadrumNamesPatch.cs" />
+    <Compile Include="Harmony\SettlementPreferencePatch.cs" />
+    <Compile Include="Harmony\StuffKnowledgePatch.cs" />
     <Compile Include="Harmony\Harmony.cs" />
     <Compile Include="DefModExtensions\SettlementPreference.cs" />
     <Compile Include="DefModExtensions\StuffKnowledge.cs" />
