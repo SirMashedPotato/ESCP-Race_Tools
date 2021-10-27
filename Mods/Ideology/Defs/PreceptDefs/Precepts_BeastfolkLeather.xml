@@ -173,7 +173,7 @@
   <!-- Acceptable -->
 
   <PreceptDef>
-    <defName>ESCP_BeastfolkLeather__Acceptable</defName>
+    <defName>ESCP_BeastfolkLeather_Acceptable</defName>
     <issue>ESCP_BeastfolkLeather</issue>
     <label>acceptable</label>
     <description>Beastfolk leather is just leather, like any other.</description>
