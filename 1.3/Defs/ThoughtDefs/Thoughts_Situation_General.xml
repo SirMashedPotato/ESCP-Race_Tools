@@ -5,7 +5,7 @@
 
 	<ThoughtDef>
 		<defName>ESCP_MerLeatherApparelSad</defName>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_MerLeatherApparel</workerClass>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_MerLeatherApparel</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 		  <li>
@@ -30,6 +30,7 @@
 		  </li>
 		</stages>
 		<nullifyingTraits>
+		  <li>Psychopath</li>
 		  <li>Bloodlust</li>
 		  <li>Cannibal</li>
 		</nullifyingTraits>
@@ -71,7 +72,7 @@
 
 	<ThoughtDef>
 		<defName>ESCP_BeastfolkLeatherApparelSad</defName>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_BeastfolkLeatherApparel</workerClass>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_BeastfolkLeatherApparel</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 		  <li>
@@ -96,6 +97,7 @@
 		  </li>
 		</stages>
 		<nullifyingTraits>
+		  <li>Psychopath</li>
 		  <li>Bloodlust</li>
 		  <li>Cannibal</li>
 		</nullifyingTraits>
@@ -137,7 +139,7 @@
 
 	<ThoughtDef>
 		<defName>ESCP_GoblinKenLeatherApparelSad</defName>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_GoblinKenLeatherApparel</workerClass>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_GoblinKenLeatherApparel</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 		  <li>
@@ -162,6 +164,7 @@
 		  </li>
 		</stages>
 		<nullifyingTraits>
+		  <li>Psychopath</li>
 		  <li>Bloodlust</li>
 		  <li>Cannibal</li>
 		</nullifyingTraits>

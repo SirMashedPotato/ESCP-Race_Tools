@@ -46,16 +46,18 @@
     <ESCP_RaceTools_EnableBeastMasterTooltip>If enabled, allows certain pawn kinds to generate additional pawns when they are created.\n\nThis can be toggled at any time.</ESCP_RaceTools_EnableBeastMasterTooltip>
 
 	<!-- Leather thought settings -->
-	<ESCP_RaceTools_LeatherThoughtMer>Enable generic Mer leather thoughts</ESCP_RaceTools_LeatherThoughtMer>
-	<ESCP_RaceTools_LeatherThoughtMerTooltip>This will consolidate all Mer leather thoughts into a single thought, overwriting any choices below in the process.\n\nNote that you will need at least on Mer mod active for this to actually do anything.</ESCP_RaceTools_LeatherThoughtMerTooltip>
+	<ESCP_RaceTools_LeatherThoughtMer>Enable Mer leather thoughts</ESCP_RaceTools_LeatherThoughtMer>
+	<ESCP_RaceTools_LeatherThoughtMerTooltip>This is a consolidated thought that accounts for all Mer leather.\n\nNote that you will need at least on Mer mod active for this to actually do anything.</ESCP_RaceTools_LeatherThoughtMerTooltip>
 	
-	<ESCP_RaceTools_LeatherThoughtGoblinKen>Enable generic Goblin-ken leather thoughts</ESCP_RaceTools_LeatherThoughtGoblinKen>
-	<ESCP_RaceTools_LeatherThoughtGoblinKenTooltip>This will consolidate all Goblin-ken leather thoughts into a single thought, overwriting any choices below in the process.\n\nNote that you will need at least on Goblin-ken mod active for this to actually do anything.</ESCP_RaceTools_LeatherThoughtGoblinKenTooltip>
+	<ESCP_RaceTools_LeatherThoughtGoblinKen>Enable Goblin-ken leather thoughts</ESCP_RaceTools_LeatherThoughtGoblinKen>
+	<ESCP_RaceTools_LeatherThoughtGoblinKenTooltip>This is a consolidated thought that accounts for all Goblin-ken leather.\n\nNote that you will need at least on Goblin-ken mod active for this to actually do anything.</ESCP_RaceTools_LeatherThoughtGoblinKenTooltip>
 	
-	<ESCP_RaceTools_LeatherThoughtBeastfolk>Enable generic Beastfolk leather thoughts</ESCP_RaceTools_LeatherThoughtBeastfolk>
-	<ESCP_RaceTools_LeatherThoughtBeastfolkTooltip>This will consolidate all Beastfolk leather thoughts into a single thought, overwriting any choices below in the process.\n\nNote that you will need at least on Beastfolk mod active for this to actually do anything.</ESCP_RaceTools_LeatherThoughtBeastfolkTooltip>
+	<ESCP_RaceTools_LeatherThoughtBeastfolk>Enable Beastfolk leather thoughts</ESCP_RaceTools_LeatherThoughtBeastfolk>
+	<ESCP_RaceTools_LeatherThoughtBeastfolkTooltip>This is a consolidated thought that accounts for all Beastfolk leather.\n\nNote that you will need at least on Beastfolk mod active for this to actually do anything.</ESCP_RaceTools_LeatherThoughtBeastfolkTooltip>
 	
 	<ESCP_RaceTools_LeatherThought>Enable leather thoughts for {0}</ESCP_RaceTools_LeatherThought>
+	
+	<ESCP_RaceTools_OrsimerAreMer>Orsimer leather is counted as Mer leather, as opposed to Goblin-ken leather.</ESCP_RaceTools_OrsimerAreMer>
 	
 	<!-- Dunmer specific -->
 	

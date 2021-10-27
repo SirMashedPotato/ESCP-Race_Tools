@@ -27,32 +27,15 @@ namespace ESCP_RaceTools
         /* leather thoughts */
         //mer
         public bool ESCP_RaceTools_LeatherThoughtMer = ESCP_RaceTools_LeatherThoughtMer_def;
-        public bool ESCP_RaceTools_LeatherThoughtAltmer = ESCP_RaceTools_LeatherThoughtAltmer_def;
-        public bool ESCP_RaceTools_LeatherThoughtAylied = ESCP_RaceTools_LeatherThoughtAylied_def;
-        public bool ESCP_RaceTools_LeatherThoughtBosmer = ESCP_RaceTools_LeatherThoughtBosmer_def;
-        public bool ESCP_RaceTools_LeatherThoughtChimer = ESCP_RaceTools_LeatherThoughtChimer_def;
-        public bool ESCP_RaceTools_LeatherThoughtDunmer = ESCP_RaceTools_LeatherThoughtDunmer_def;
-        public bool ESCP_RaceTools_LeatherThoughtDwemer = ESCP_RaceTools_LeatherThoughtDwemer_def;
-        public bool ESCP_RaceTools_LeatherThoughtFalmer = ESCP_RaceTools_LeatherThoughtFalmer_def;
-        public bool ESCP_RaceTools_LeatherThoughtMaomer = ESCP_RaceTools_LeatherThoughtMaomer_def;
-        public bool ESCP_RaceTools_LeatherThoughtOrsimer = ESCP_RaceTools_LeatherThoughtOrsimer_def;
 
         //beastfolk
         public bool ESCP_RaceTools_LeatherThoughtBeastfolk = ESCP_RaceTools_LeatherThoughtBeastfolk_def;
-        public bool ESCP_RaceTools_LeatherThoughtArgonian = ESCP_RaceTools_LeatherThoughtArgonian_def;
-        public bool ESCP_RaceTools_LeatherThoughtKhajiit = ESCP_RaceTools_LeatherThoughtKhajiit_def;
-        public bool ESCP_RaceTools_LeatherThoughtImga = ESCP_RaceTools_LeatherThoughtImga_def;
-        public bool ESCP_RaceTools_LeatherThoughtLamia = ESCP_RaceTools_LeatherThoughtLamia_def;
-        public bool ESCP_RaceTools_LeatherThoughtLilmothiit = ESCP_RaceTools_LeatherThoughtLilmothiit_def;
-        public bool ESCP_RaceTools_LeatherThoughtNaga = ESCP_RaceTools_LeatherThoughtNaga_def;
 
         //Goblin-ken
         public bool ESCP_RaceTools_LeatherThoughtGoblinKen = ESCP_RaceTools_LeatherThoughtGoblinKen_def;
-        public bool ESCP_RaceTools_LeatherThoughtGoblin = ESCP_RaceTools_LeatherThoughtGoblin_def;
-        public bool ESCP_RaceTools_LeatherThoughtRiekling = ESCP_RaceTools_LeatherThoughtRiekling_def;
-        public bool ESCP_RaceTools_LeatherThoughtRiekr = ESCP_RaceTools_LeatherThoughtRiekr_def;
 
         //extra
+        public bool ESCP_RaceTools_OrsimerAreMer = ESCP_RaceTools_OrsimerAreMer_def;
         public bool ESCP_RaceTools_LeatherThoughtSload = ESCP_RaceTools_LeatherThoughtSload_def;
 
         /* Dunmer */
@@ -80,33 +63,16 @@ namespace ESCP_RaceTools
 
         /* leather thoughts */
         //mer
-        private static readonly bool ESCP_RaceTools_LeatherThoughtMer_def = false;
-        private static readonly bool ESCP_RaceTools_LeatherThoughtAltmer_def = true;
-        private static readonly bool ESCP_RaceTools_LeatherThoughtAylied_def = true;
-        private static readonly bool ESCP_RaceTools_LeatherThoughtBosmer_def = true;
-        private static readonly bool ESCP_RaceTools_LeatherThoughtChimer_def = true;
-        private static readonly bool ESCP_RaceTools_LeatherThoughtDunmer_def = true;
-        private static readonly bool ESCP_RaceTools_LeatherThoughtDwemer_def = true;
-        private static readonly bool ESCP_RaceTools_LeatherThoughtFalmer_def = true;
-        private static readonly bool ESCP_RaceTools_LeatherThoughtMaomer_def = true;
-        private static readonly bool ESCP_RaceTools_LeatherThoughtOrsimer_def = true;
+        private static readonly bool ESCP_RaceTools_LeatherThoughtMer_def = true;
 
         //beastfolk
-        private static readonly bool ESCP_RaceTools_LeatherThoughtBeastfolk_def = false;
-        private static readonly bool ESCP_RaceTools_LeatherThoughtArgonian_def = true;
-        private static readonly bool ESCP_RaceTools_LeatherThoughtKhajiit_def = true;
-        private static readonly bool ESCP_RaceTools_LeatherThoughtImga_def = true;
-        private static readonly bool ESCP_RaceTools_LeatherThoughtLamia_def = true;
-        private static readonly bool ESCP_RaceTools_LeatherThoughtLilmothiit_def = true;
-        private static readonly bool ESCP_RaceTools_LeatherThoughtNaga_def = true;
+        private static readonly bool ESCP_RaceTools_LeatherThoughtBeastfolk_def = true;
 
         //Goblin-ken
-        private static readonly bool ESCP_RaceTools_LeatherThoughtGoblinKen_def = false;
-        private static readonly bool ESCP_RaceTools_LeatherThoughtGoblin_def = true;
-        private static readonly bool ESCP_RaceTools_LeatherThoughtRiekling_def = true;
-        private static readonly bool ESCP_RaceTools_LeatherThoughtRiekr_def = true;
+        private static readonly bool ESCP_RaceTools_LeatherThoughtGoblinKen_def = true;
 
         //extra
+        private static readonly bool ESCP_RaceTools_OrsimerAreMer_def = true;
         private static readonly bool ESCP_RaceTools_LeatherThoughtSload_def = true;
 
         /* Dunmer */
@@ -135,29 +101,12 @@ namespace ESCP_RaceTools
             /* leather thoughts */
             //mer
             Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtMer, "ESCP_RaceTools_LeatherThoughtMer", ESCP_RaceTools_LeatherThoughtMer_def);
-            Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtAltmer, "ESCP_RaceTools_LeatherThoughtAltmer", ESCP_RaceTools_LeatherThoughtAltmer_def);
-            Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtAylied, "ESCP_RaceTools_LeatherThoughtAylied", ESCP_RaceTools_LeatherThoughtAylied_def);
-            Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtBosmer, "ESCP_RaceTools_LeatherThoughtBosmer", ESCP_RaceTools_LeatherThoughtBosmer_def);
-            Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtChimer, "ESCP_RaceTools_LeatherThoughtChimer", ESCP_RaceTools_LeatherThoughtChimer_def);
-            Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtDunmer, "ESCP_RaceTools_LeatherThoughtDunmer", ESCP_RaceTools_LeatherThoughtDunmer_def);
-            Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtDwemer, "ESCP_RaceTools_LeatherThoughtDwemer", ESCP_RaceTools_LeatherThoughtDwemer_def);
-            Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtFalmer, "ESCP_RaceTools_LeatherThoughtFalmer", ESCP_RaceTools_LeatherThoughtFalmer_def);
-            Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtMaomer, "ESCP_RaceTools_LeatherThoughtMaomer", ESCP_RaceTools_LeatherThoughtMaomer_def);
-            Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtOrsimer, "ESCP_RaceTools_LeatherThoughtOrsimer", ESCP_RaceTools_LeatherThoughtOrsimer_def);
             //beastfolk
             Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtBeastfolk, "ESCP_RaceTools_LeatherThoughtMer", ESCP_RaceTools_LeatherThoughtBeastfolk_def);
-            Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtArgonian, "ESCP_RaceTools_LeatherThoughtArgonian", ESCP_RaceTools_LeatherThoughtArgonian_def);
-            Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtKhajiit, "ESCP_RaceTools_LeatherThoughtKhajiit", ESCP_RaceTools_LeatherThoughtKhajiit_def);
-            Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtImga, "ESCP_RaceTools_LeatherThoughtImga", ESCP_RaceTools_LeatherThoughtImga_def);
-            Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtLamia, "ESCP_RaceTools_LeatherThoughtLamia", ESCP_RaceTools_LeatherThoughtLamia_def);
-            Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtLilmothiit, "ESCP_RaceTools_LeatherThoughtLilmothiit", ESCP_RaceTools_LeatherThoughtLilmothiit_def);
-            Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtNaga, "ESCP_RaceTools_LeatherThoughtNaga", ESCP_RaceTools_LeatherThoughtNaga_def);
             //Goblin-ken
             Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtGoblinKen, "ESCP_RaceTools_LeatherThoughtGoblinKen", ESCP_RaceTools_LeatherThoughtGoblinKen_def);
-            Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtGoblin, "ESCP_RaceTools_LeatherThoughtGoblin", ESCP_RaceTools_LeatherThoughtGoblin_def);
-            Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtRiekling, "ESCP_RaceTools_LeatherThoughtRiekling", ESCP_RaceTools_LeatherThoughtRiekling_def);
-            Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtRiekr, "ESCP_RaceTools_LeatherThoughtRiekr", ESCP_RaceTools_LeatherThoughtRiekr_def);
             //extra
+            Scribe_Values.Look(ref ESCP_RaceTools_OrsimerAreMer, "ESCP_RaceTools_OrsimerAreMer", ESCP_RaceTools_OrsimerAreMer_def);
             Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtSload, "ESCP_RaceTools_LeatherThoughtSload", ESCP_RaceTools_LeatherThoughtSload_def);
 
             /* Dunmer */
@@ -196,32 +145,15 @@ namespace ESCP_RaceTools
         {
             //mer
             settings.ESCP_RaceTools_LeatherThoughtMer = ESCP_RaceTools_LeatherThoughtMer_def;
-            settings.ESCP_RaceTools_LeatherThoughtAltmer = ESCP_RaceTools_LeatherThoughtAltmer_def;
-            settings.ESCP_RaceTools_LeatherThoughtAylied = ESCP_RaceTools_LeatherThoughtAylied_def;
-            settings.ESCP_RaceTools_LeatherThoughtBosmer = ESCP_RaceTools_LeatherThoughtBosmer_def;
-            settings.ESCP_RaceTools_LeatherThoughtChimer = ESCP_RaceTools_LeatherThoughtChimer_def;
-            settings.ESCP_RaceTools_LeatherThoughtDunmer = ESCP_RaceTools_LeatherThoughtDunmer_def;
-            settings.ESCP_RaceTools_LeatherThoughtDwemer = ESCP_RaceTools_LeatherThoughtDwemer_def;
-            settings.ESCP_RaceTools_LeatherThoughtFalmer = ESCP_RaceTools_LeatherThoughtFalmer_def;
-            settings.ESCP_RaceTools_LeatherThoughtMaomer = ESCP_RaceTools_LeatherThoughtMaomer_def;
-            settings.ESCP_RaceTools_LeatherThoughtNaga = ESCP_RaceTools_LeatherThoughtNaga_def;
 
             //beastfolk
             settings.ESCP_RaceTools_LeatherThoughtBeastfolk = ESCP_RaceTools_LeatherThoughtBeastfolk_def;
-            settings.ESCP_RaceTools_LeatherThoughtArgonian = ESCP_RaceTools_LeatherThoughtArgonian_def;
-            settings.ESCP_RaceTools_LeatherThoughtKhajiit = ESCP_RaceTools_LeatherThoughtKhajiit_def;
-            settings.ESCP_RaceTools_LeatherThoughtImga = ESCP_RaceTools_LeatherThoughtImga_def;
-            settings.ESCP_RaceTools_LeatherThoughtLamia = ESCP_RaceTools_LeatherThoughtLamia_def;
-            settings.ESCP_RaceTools_LeatherThoughtLilmothiit = ESCP_RaceTools_LeatherThoughtLilmothiit_def;
-            settings.ESCP_RaceTools_LeatherThoughtNaga = ESCP_RaceTools_LeatherThoughtNaga_def;
 
             //Goblin-ken
             settings.ESCP_RaceTools_LeatherThoughtGoblinKen = ESCP_RaceTools_LeatherThoughtGoblinKen_def;
-            settings.ESCP_RaceTools_LeatherThoughtGoblin = ESCP_RaceTools_LeatherThoughtGoblin_def;
-            settings.ESCP_RaceTools_LeatherThoughtRiekling = ESCP_RaceTools_LeatherThoughtRiekling_def;
-            settings.ESCP_RaceTools_LeatherThoughtRiekr = ESCP_RaceTools_LeatherThoughtRiekr_def;
 
             //extra
+            settings.ESCP_RaceTools_OrsimerAreMer = ESCP_RaceTools_OrsimerAreMer_def;
             settings.ESCP_RaceTools_LeatherThoughtSload = ESCP_RaceTools_LeatherThoughtSload_def;
         }
 

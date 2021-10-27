@@ -11,7 +11,7 @@ namespace ESCP_RaceTools
         public static List<string> leatherList = new List<string>() 
         {
             "ESCP_LeatherAldmer", "ESCP_LeatherAltmer", "ESCP_LeatherAylied", "ESCP_LeatherBosmer", "ESCP_LeatherChimer", 
-            "ESCP_LeatherDunmer", "ESCP_LeatherDwemer", "ESCP_LeatherFalmer", "ESCP_LeatherMaomer", "ESCP_LeatherOrsimer"
+            "ESCP_LeatherDunmer", "ESCP_LeatherDwemer", "ESCP_LeatherFalmer", "ESCP_LeatherMaomer"
         };
 
         public static ThoughtState CurrentThoughtState(Pawn p)
@@ -22,12 +22,17 @@ namespace ESCP_RaceTools
                 return ThoughtState.Inactive;
             }
 
+            if (ModSettingsUtility.ESCP_RaceTools_OrsimerAreMer())
+            {
+				leatherList.Add("ESCP_LeatherOrsimer");
+            }
+
 			string text = null;
 			int num = 0;
 			List<Apparel> wornApparel = p.apparel.WornApparel;
 			for (int i = 0; i < wornApparel.Count; i++)
 			{
-				if (leatherList.Contains(wornApparel[i].Stuff.defName))
+				if (wornApparel[i].Stuff != null && leatherList.Contains(wornApparel[i].Stuff.defName))
 				{
 					if (text == null)
 					{

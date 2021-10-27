@@ -6,14 +6,24 @@ using System.Collections.Generic;
 
 namespace ESCP_RaceTools
 {
-	public class ThoughtWorker_ChimerLeatherApparel : ThoughtWorker
+	public class ThoughtWorker_GoblinKenLeatherApparel : ThoughtWorker
 	{
+		public static List<string> leatherList = new List<string>()
+		{
+			"ESCP_LeatherGoblin", "ESCP_LeatherRiekling", "ESCP_LeatherRiekr"
+		};
+
 		public static ThoughtState CurrentThoughtState(Pawn p)
 		{
 			//settings check
-			if (!ModSettingsUtility.ESCP_RaceTools_LeatherThoughtChimer() || ModSettingsUtility.ESCP_RaceTools_LeatherThoughtMer())
+			if (!ModSettingsUtility.ESCP_RaceTools_LeatherThoughtGoblinKen())
 			{
 				return ThoughtState.Inactive;
+			}
+
+			if (!ModSettingsUtility.ESCP_RaceTools_OrsimerAreMer())
+			{
+				leatherList.Add("ESCP_LeatherOrsimer");
 			}
 
 			string text = null;
@@ -21,7 +31,7 @@ namespace ESCP_RaceTools
 			List<Apparel> wornApparel = p.apparel.WornApparel;
 			for (int i = 0; i < wornApparel.Count; i++)
 			{
-				if (wornApparel[i].Stuff != null && wornApparel[i].Stuff == DefDatabase<ThingDef>.GetNamedSilentFail("ESCP_LeatherChimer"))
+				if (wornApparel[i].Stuff != null && leatherList.Contains(wornApparel[i].Stuff.defName))
 				{
 					if (text == null)
 					{
@@ -43,7 +53,7 @@ namespace ESCP_RaceTools
 
 		protected override ThoughtState CurrentStateInternal(Pawn p)
 		{
-			return ThoughtWorker_ChimerLeatherApparel.CurrentThoughtState(p);
+			return ThoughtWorker_GoblinKenLeatherApparel.CurrentThoughtState(p);
 		}
 	}
 }

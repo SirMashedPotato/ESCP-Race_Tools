@@ -6,17 +6,18 @@ using System.Collections.Generic;
 
 namespace ESCP_RaceTools
 {
-	public class ThoughtWorker_GoblinKenLeatherApparel : ThoughtWorker
+	public class ThoughtWorker_BeastfolkLeatherApparel : ThoughtWorker
 	{
 		public static List<string> leatherList = new List<string>()
 		{
-			"ESCP_LeatherGoblin", "ESCP_LeatherRiekling", "ESCP_LeatherRiekr"
+			"ESCP_LeatherArgonian", "ESCP_LeatherKhajiit", "ESCP_LeatherImga", 
+			"ESCP_LeatherLamia", "ESCP_LeatherLilmothiit", "ESCP_LeatherNaga"
 		};
 
 		public static ThoughtState CurrentThoughtState(Pawn p)
 		{
 			//settings check
-			if (!ModSettingsUtility.ESCP_RaceTools_LeatherThoughtGoblinKen())
+			if (!ModSettingsUtility.ESCP_RaceTools_LeatherThoughtBeastfolk())
 			{
 				return ThoughtState.Inactive;
 			}
@@ -26,7 +27,7 @@ namespace ESCP_RaceTools
 			List<Apparel> wornApparel = p.apparel.WornApparel;
 			for (int i = 0; i < wornApparel.Count; i++)
 			{
-				if (leatherList.Contains(wornApparel[i].Stuff.defName))
+				if (wornApparel[i].Stuff != null && leatherList.Contains(wornApparel[i].Stuff.defName))
 				{
 					if (text == null)
 					{
@@ -48,7 +49,7 @@ namespace ESCP_RaceTools
 
 		protected override ThoughtState CurrentStateInternal(Pawn p)
 		{
-			return ThoughtWorker_GoblinKenLeatherApparel.CurrentThoughtState(p);
+			return ThoughtWorker_BeastfolkLeatherApparel.CurrentThoughtState(p);
 		}
 	}
 }
