@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!-- beast master shite -->
+
 	<HediffDef>
 		<defName>ESCP_BeastMasterTraining</defName>
 		<hediffClass>HediffWithComps</hediffClass>

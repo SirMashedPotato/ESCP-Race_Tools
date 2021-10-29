@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- khajiit eye -->
+	
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>ESCP_KhajiitEye</defName>
+		<label>khajiit eye</label>
+		<labelNoun>a khajiit eye</labelNoun>
+		<description>An implanted khajiit eye.</description>
+		<descriptionHyperlinks><ThingDef>ESCP_KhajiitEye</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>ESCP_KhajiitEye</spawnThingOnRemoved>
+		<woundAnchorRange>0</woundAnchorRange>
+		<displayWound>false</displayWound>
+		<addedPartProps>
+		  <solid>true</solid>
+		  <partEfficiency>1.0</partEfficiency>
+		  <betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<stages>
+			<li>
+				<minSeverity>0.0</minSeverity>
+			</li>
+			<li>
+				<label>night eye</label>
+				<minSeverity>1.0</minSeverity>
+				<capMods>
+				  <li>
+					<capacity>Sight</capacity>
+					<offset>0.15</offset>
+				  </li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="ESCP_RaceTools.HediffCompProperties_NightEye">
+				<lightLevelRequired>0.3</lightLevelRequired>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartNaturalBase">
+		<defName>ESCP_KhajiitEye</defName>
+		<label>khajiit eye</label>
+		<description>A khajiit eye. Fairly similar to any ordinary eye, except that it is more efficient in low-light situations.</description>
+		<descriptionHyperlinks><RecipeDef>ESCP_InstallKhajiitEye</RecipeDef></descriptionHyperlinks>
+		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<statBases>
+		  <MarketValue>500</MarketValue>
+		  <Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>ESCP_InstallKhajiitEye</defName>
+		<label>install khajiit eye</label>
+		<description>Install a khajiit eye.</description>
+		<descriptionHyperlinks>
+		  <ThingDef>ESCP_KhajiitEye</ThingDef>
+		  <HediffDef>ESCP_KhajiitEye</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing khajiit eye.</jobString>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ESCP_KhajiitEye</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>ESCP_KhajiitEye</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+		  <li>Eye</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ESCP_KhajiitEye</addsHediff>
+	</RecipeDef>
+
+ 
+</Defs>

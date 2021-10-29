@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <HediffGiverSetDef>
+        <defName>ESCP_Khajiit</defName>
+        <hediffGivers>
+            <li Class = "ESCP_RaceTools.HediffGiver_OnCreation">
+                <hediff>ESCP_KhajiitEye</hediff>
+                <partsToAffect>
+                    <li>Eye</li>
+                </partsToAffect>
+                <countToAffect>2</countToAffect>
+            </li>
+        </hediffGivers>
+    </HediffGiverSetDef>
+	
+</Defs>
