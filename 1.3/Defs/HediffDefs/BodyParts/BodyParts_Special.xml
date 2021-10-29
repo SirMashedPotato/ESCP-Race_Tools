@@ -7,7 +7,7 @@
 		<defName>ESCP_KhajiitEye</defName>
 		<label>khajiit eye</label>
 		<labelNoun>a khajiit eye</labelNoun>
-		<description>An implanted khajiit eye.</description>
+		<description>A khajiit eye.</description>
 		<descriptionHyperlinks><ThingDef>ESCP_KhajiitEye</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>ESCP_KhajiitEye</spawnThingOnRemoved>
 		<woundAnchorRange>0</woundAnchorRange>
@@ -53,8 +53,8 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>ESCP_InstallKhajiitEye</defName>
-		<label>install khajiit eye</label>
-		<description>Install a khajiit eye.</description>
+		<label>implant khajiit eye</label>
+		<description>Implant a khajiit eye.</description>
 		<descriptionHyperlinks>
 		  <ThingDef>ESCP_KhajiitEye</ThingDef>
 		  <HediffDef>ESCP_KhajiitEye</HediffDef>
