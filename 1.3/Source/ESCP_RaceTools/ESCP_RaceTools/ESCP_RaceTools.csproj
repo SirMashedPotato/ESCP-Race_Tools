@@ -75,10 +75,13 @@
     <Compile Include="DefModExtensions\ApparelProperties.cs" />
     <Compile Include="DefModExtensions\BeastMaster.cs" />
     <Compile Include="DefModExtensions\PlantProperties.cs" />
+    <Compile Include="DefModExtensions\RaceProperties.cs" />
     <Compile Include="DefOf\DutyDefOf.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />
     <Compile Include="DefOf\ThoughtDefOf.cs" />
     <Compile Include="Harmony\ApparelThoughtProtectionPatch.cs" />
+    <Compile Include="Harmony\HeatstrokeSwitchPatch.cs" />
+    <Compile Include="Harmony\HypothermiaSwitchPatch.cs" />
     <Compile Include="Harmony\QuadrumNamesPatch.cs" />
     <Compile Include="Harmony\SettlementPreferencePatch.cs" />
     <Compile Include="Harmony\StuffKnowledgePatch.cs" />

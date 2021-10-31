@@ -163,7 +163,13 @@ namespace ESCP_RaceTools
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableApparelThoughtProtection".Translate(), ref settings.ESCP_RaceTools_EnableApparelThoughtProtection);
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableApparelThoughtProtection".Translate(), ref settings.ESCP_RaceTools_EnableApparelThoughtProtection, "ESCP_RaceTools_EnableApparelThoughtProtection_Tooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableHeatstrokeSwitch".Translate(), ref settings.ESCP_RaceTools_EnableHeatstrokeSwitch, "ESCP_RaceTools_EnableHeatstrokeSwitchTooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableHypothermiaSwitch".Translate(), ref settings.ESCP_RaceTools_EnableHypothermiaSwitch, "ESCP_RaceTools_EnableHypothermiaSwitchTooltip".Translate());
             listing_Standard.Gap();
 
             listing_Standard.GapLine();

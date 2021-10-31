@@ -23,6 +23,8 @@ namespace ESCP_RaceTools
         /* misc */
         public bool ESCP_RaceTools_ElderScrollsQuadrums = ESCP_RaceTools_ElderScrollsQuadrums_def;
         public bool ESCP_RaceTools_EnableApparelThoughtProtection = ESCP_RaceTools_EnableApparelThoughtProtection_def;
+        public bool ESCP_RaceTools_EnableHeatstrokeSwitch = ESCP_RaceTools_EnableHeatstrokeSwitch_def;
+        public bool ESCP_RaceTools_EnableHypothermiaSwitch = ESCP_RaceTools_EnableHypothermiaSwitch_def;
 
         /* leather thoughts */
         //mer
@@ -60,6 +62,8 @@ namespace ESCP_RaceTools
         /* misc */
         private static readonly bool ESCP_RaceTools_ElderScrollsQuadrums_def = false;
         private static readonly bool ESCP_RaceTools_EnableApparelThoughtProtection_def = true;
+        private static readonly bool ESCP_RaceTools_EnableHeatstrokeSwitch_def = true;
+        private static readonly bool ESCP_RaceTools_EnableHypothermiaSwitch_def = true;
 
         /* leather thoughts */
         //mer
@@ -97,6 +101,8 @@ namespace ESCP_RaceTools
             /* misc */
             Scribe_Values.Look(ref ESCP_RaceTools_ElderScrollsQuadrums, "ESCP_RaceTools_ElderScrollsQuadrums", ESCP_RaceTools_ElderScrollsQuadrums_def);
             Scribe_Values.Look(ref ESCP_RaceTools_EnableApparelThoughtProtection, "ESCP_RaceTools_EnableApparelThoughtProtection", ESCP_RaceTools_EnableApparelThoughtProtection_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_EnableHeatstrokeSwitch, "ESCP_RaceTools_EnableHeatstrokeSwitch", ESCP_RaceTools_EnableHeatstrokeSwitch_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_EnableHypothermiaSwitch, "ESCP_RaceTools_EnableHypothermiaSwitch", ESCP_RaceTools_EnableHypothermiaSwitch_def);
 
             /* leather thoughts */
             //mer
@@ -139,6 +145,8 @@ namespace ESCP_RaceTools
             /* misc */
             settings.ESCP_RaceTools_ElderScrollsQuadrums = ESCP_RaceTools_ElderScrollsQuadrums_def;
             settings.ESCP_RaceTools_EnableApparelThoughtProtection = ESCP_RaceTools_EnableApparelThoughtProtection_def;
+            settings.ESCP_RaceTools_EnableHeatstrokeSwitch = ESCP_RaceTools_EnableHeatstrokeSwitch_def;
+            settings.ESCP_RaceTools_EnableHypothermiaSwitch = ESCP_RaceTools_EnableHypothermiaSwitch_def;
         }
 
         public static void ResetSettings_Leather(ESCP_RaceTools_ModSettings settings)

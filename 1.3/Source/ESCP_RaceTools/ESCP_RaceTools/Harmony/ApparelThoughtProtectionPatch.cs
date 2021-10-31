@@ -25,30 +25,33 @@ namespace ESCP_RaceTools
             [HarmonyPrefix]
             public static bool ThoughtsPatch(ThoughtDef mem, ref Pawn ___pawn)
             {
-                foreach (Apparel apparel in ___pawn.apparel.WornApparel.ToList())
+                if (ModSettingsUtility.ESCP_RaceTools_EnableApparelThoughtProtection())
                 {
-                    var props = ApparelProperties.Get(apparel.def);
-                    if (props != null && props.negatedThoughts != null)
+                    foreach (Apparel apparel in ___pawn.apparel.WornApparel.ToList())
                     {
-                        if (props.linkedApparel != null && props.negatedThoughts.Contains(mem.defName.ToString()))
+                        var props = ApparelProperties.Get(apparel.def);
+                        if (props != null && props.negatedThoughts != null)
                         {
-                            int count = 0;
-                            int i = props.requiredItems == -1 ? props.linkedApparel.Count() : props.requiredItems;
-                            foreach (Apparel linked in ___pawn.apparel.WornApparel.ToList())
+                            if (props.linkedApparel != null && props.negatedThoughts.Contains(mem.defName.ToString()))
                             {
-                                if (props.linkedApparel.Contains(linked.def))
+                                int count = 0;
+                                int i = props.requiredItems == -1 ? props.linkedApparel.Count() : props.requiredItems;
+                                foreach (Apparel linked in ___pawn.apparel.WornApparel.ToList())
                                 {
-                                    count++;
+                                    if (props.linkedApparel.Contains(linked.def))
+                                    {
+                                        count++;
+                                    }
+                                }
+                                if (count >= i)
+                                {
+                                    return false;
                                 }
                             }
-                            if (count >= i)
+                            if (props.linkedApparel == null)
                             {
                                 return false;
                             }
-                        }
-                        if (props.linkedApparel == null)
-                        {
-                            return false;
                         }
                     }
                 }

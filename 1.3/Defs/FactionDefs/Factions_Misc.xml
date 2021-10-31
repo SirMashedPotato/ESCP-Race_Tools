@@ -62,6 +62,8 @@
       </points>
     </raidCommonalityFromPointsCurve>
     <raidLootMaker>TribeRaidLootMaker</raidLootMaker>
+	<pawnGroupMakers Inherit="false">
+	</pawnGroupMakers>
     <maxPawnCostPerTotalPointsCurve>
       <points>
         <li>(0,35)</li>

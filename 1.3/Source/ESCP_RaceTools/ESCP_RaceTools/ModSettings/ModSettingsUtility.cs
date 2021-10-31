@@ -59,6 +59,16 @@ namespace ESCP_RaceTools
             return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_EnableApparelThoughtProtection;
         }
 
+        public static bool ESCP_RaceTools_EnableHeatstrokeSwitch()
+        {
+            return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_EnableHeatstrokeSwitch;
+        }
+
+        public static bool ESCP_RaceTools_EnableHypothermiaSwitch()
+        {
+            return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_EnableHypothermiaSwitch;
+        }
+
         /* leather thoughts */
 
         //mer
