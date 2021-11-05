@@ -286,6 +286,14 @@ namespace ESCP_RaceTools
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
+            /* only if ideo and royalty are enabled */
+            if (ModsConfig.RoyaltyActive && ModsConfig.IdeologyActive)
+            {
+                listing_Standard.Label("ESCP_RaceTools_SeancePsylinkChance".Translate() + " (" + settings.ESCP_RaceTools_SeancePsylinkChance * 100 + "%)");
+                settings.ESCP_RaceTools_SeancePsylinkChance = (float)Math.Round(listing_Standard.Slider(settings.ESCP_RaceTools_SeancePsylinkChance, 0f, 1f) * 20) / 20;
+                listing_Standard.Gap();
+            }
+
             return listing_Standard;
         }
     }

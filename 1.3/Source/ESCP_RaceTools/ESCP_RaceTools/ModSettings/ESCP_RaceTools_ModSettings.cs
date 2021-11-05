@@ -42,6 +42,7 @@ namespace ESCP_RaceTools
 
         /* Dunmer */
         public bool ESCP_RaceTools_DunmerGraveWhispering = ESCP_RaceTools_DunmerGraveWhispering_def;
+        public float ESCP_RaceTools_SeancePsylinkChance = ESCP_RaceTools_SeancePsylinkChance_def;
 
         //defaults
 
@@ -81,6 +82,7 @@ namespace ESCP_RaceTools
 
         /* Dunmer */
         private static readonly bool ESCP_RaceTools_DunmerGraveWhispering_def = true;
+        private static readonly float ESCP_RaceTools_SeancePsylinkChance_def = 0.5f;
 
         //save settings
         public override void ExposeData()
@@ -117,6 +119,7 @@ namespace ESCP_RaceTools
 
             /* Dunmer */
             Scribe_Values.Look(ref ESCP_RaceTools_DunmerGraveWhispering, "ESCP_RaceTools_DunmerGraveWhispering", ESCP_RaceTools_DunmerGraveWhispering_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_SeancePsylinkChance, "ESCP_RaceTools_SeancePsylinkChance", ESCP_RaceTools_SeancePsylinkChance_def);
 
             base.ExposeData();
         }
@@ -168,6 +171,7 @@ namespace ESCP_RaceTools
         public static void ResetSettings_Dunmer(ESCP_RaceTools_ModSettings settings)
         {
             settings.ESCP_RaceTools_DunmerGraveWhispering = ESCP_RaceTools_DunmerGraveWhispering_def;
+            settings.ESCP_RaceTools_SeancePsylinkChance = ESCP_RaceTools_SeancePsylinkChance_def;
         }
     }
 }

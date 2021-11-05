@@ -24,5 +24,11 @@
 	<ESCP_QuadrumJugust_Short>Sun</ESCP_QuadrumJugust_Short>
 	<ESCP_QuadrumSeptober_Short>Hearth</ESCP_QuadrumSeptober_Short>
 	<ESCP_QuadrumDecembary_Short>Star</ESCP_QuadrumDecembary_Short>
+	
+	<!-- Dunmer seance stuff -->
+	<ESCP_DunmerRitualTargetSeanceInfo>A filled burial pit, burial urn or Ashlander mummy</ESCP_DunmerRitualTargetSeanceInfo>
+
+	<ESCP_DunmerRitualOutcomeExtraDesc_SeancePsylink>Thanks to a enlightening seance ritual, {PAWN_labelShort} gained a psylink level!</ESCP_DunmerRitualOutcomeExtraDesc_SeancePsylink>
+	<ESCP_DunmerRitualOutcomeExtraDesc_SeancePsylinkAbility>With a new pyslink level {PAWN_pronoun} gained a {0} psycast.</ESCP_DunmerRitualOutcomeExtraDesc_SeancePsylinkAbility>
 
 </LanguageData>

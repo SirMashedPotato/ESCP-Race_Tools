@@ -69,5 +69,6 @@
 	<!-- Dunmer specific -->
 	
 	<ESCP_RaceTools_DunmerGraveWhispering>Enable filled ash burial pit whispers.</ESCP_RaceTools_DunmerGraveWhispering>
+	<ESCP_RaceTools_SeancePsylinkChance>The chance a random pawn gains a psylink from an ancestral seance ritual.</ESCP_RaceTools_SeancePsylinkChance>
 
 </LanguageData>

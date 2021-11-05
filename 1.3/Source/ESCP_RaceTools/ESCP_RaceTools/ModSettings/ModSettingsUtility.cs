@@ -105,13 +105,5 @@ namespace ESCP_RaceTools
             return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_LeatherThoughtSload &&
                 RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Sload", "ESCP - Sload");
         }
-
-        /* Dunmer */
-
-        public static bool ESCP_RaceTools_DunmerGraveWhispering()
-        {
-            return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_DunmerGraveWhispering;
-        }
-
     }
 }

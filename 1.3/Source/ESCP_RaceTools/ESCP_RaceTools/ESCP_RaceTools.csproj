@@ -104,6 +104,10 @@
     <Compile Include="ModSettings\ESCP_RaceTools_Mod.cs" />
     <Compile Include="ModSettings\ESCP_RaceTools_ModSettings.cs" />
     <Compile Include="ModSettings\ModSettingsUtility.cs" />
+    <Compile Include="ModSettings\ModSettingsUtility_Dunmer.cs" />
+    <Compile Include="Rituals\RitualAttachableOutcomeEffectWorker_DunmerAncestorKnowledge.cs" />
+    <Compile Include="Rituals\RitualObligationTargetWorker_FilledDunmerGrave.cs" />
+    <Compile Include="Rituals\RitualOutcomeEffectWorker_DunmerSeance.cs" />
     <Compile Include="StockGenerator\StockGenerator_SlavesCustom.cs" />
     <Compile Include="StockGenerator\TraderSlaveRecord.cs" />
     <Compile Include="ThingClass\PlantBuildingPod.cs" />
