@@ -59,7 +59,7 @@
 	<ESCP_RaceTools_IdeologyOverrideTooltip>This can be changed at any time, however the requirement tooltip will remain unchanged until the game is restarted. This doesn't mean it hasn't worked.</ESCP_RaceTools_IdeologyOverrideTooltip>
 	<ESCP_RaceTools_IdeologyOverrideRace>Override the race requirement for Ideo roles.</ESCP_RaceTools_IdeologyOverrideRace>
 	<ESCP_RaceTools_IdeologyOverridePsychSens>Override the minimum psychic sensitivity requirement for Ideo roles.</ESCP_RaceTools_IdeologyOverridePsychSens>
-	<ESCP_RaceTools_IdeologyOverridePsychSensValue>The required psychic sensitivity for relevant Ideo roles.</ESCP_RaceTools_IdeologyOverridePsychSensValue>
+	<ESCP_RaceTools_IdeologyOverridePsychSensValue>The required minimum psychic sensitivity for relevant Ideo roles.</ESCP_RaceTools_IdeologyOverridePsychSensValue>
 
 	<!-- Leather thought settings -->
 	<ESCP_RaceTools_LeatherThoughtMer>Enable Mer leather thoughts</ESCP_RaceTools_LeatherThoughtMer>
