@@ -26,6 +26,11 @@ namespace ESCP_RaceTools
         public bool ESCP_RaceTools_EnableHeatstrokeSwitch = ESCP_RaceTools_EnableHeatstrokeSwitch_def;
         public bool ESCP_RaceTools_EnableHypothermiaSwitch = ESCP_RaceTools_EnableHypothermiaSwitch_def;
 
+        /* Ideology */
+        public bool ESCP_RaceTools_IdeologyOverrideRace = ESCP_RaceTools_IdeologyOverrideRace_def;
+        public bool ESCP_RaceTools_IdeologyOverridePsychSens = ESCP_RaceTools_IdeologyOverridePsychSens_def;
+        public float ESCP_RaceTools_IdeologyOverridePsychSensValue = ESCP_RaceTools_IdeologyOverridePsychSensValue_def;
+
         /* leather thoughts */
         //mer
         public bool ESCP_RaceTools_LeatherThoughtMer = ESCP_RaceTools_LeatherThoughtMer_def;
@@ -65,6 +70,11 @@ namespace ESCP_RaceTools
         private static readonly bool ESCP_RaceTools_EnableApparelThoughtProtection_def = true;
         private static readonly bool ESCP_RaceTools_EnableHeatstrokeSwitch_def = true;
         private static readonly bool ESCP_RaceTools_EnableHypothermiaSwitch_def = true;
+
+        /* Ideology */
+        private static readonly bool ESCP_RaceTools_IdeologyOverrideRace_def = false;
+        private static readonly bool ESCP_RaceTools_IdeologyOverridePsychSens_def = false;
+        private static readonly float ESCP_RaceTools_IdeologyOverridePsychSensValue_def = 1.2f;
 
         /* leather thoughts */
         //mer
@@ -106,6 +116,11 @@ namespace ESCP_RaceTools
             Scribe_Values.Look(ref ESCP_RaceTools_EnableHeatstrokeSwitch, "ESCP_RaceTools_EnableHeatstrokeSwitch", ESCP_RaceTools_EnableHeatstrokeSwitch_def);
             Scribe_Values.Look(ref ESCP_RaceTools_EnableHypothermiaSwitch, "ESCP_RaceTools_EnableHypothermiaSwitch", ESCP_RaceTools_EnableHypothermiaSwitch_def);
 
+            /* Ideology */
+            Scribe_Values.Look(ref ESCP_RaceTools_IdeologyOverrideRace, "ESCP_RaceTools_IdeologyOverrideRace", ESCP_RaceTools_IdeologyOverrideRace_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_IdeologyOverridePsychSens, "ESCP_RaceTools_IdeologyOverridePsychSens", ESCP_RaceTools_IdeologyOverridePsychSens_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_IdeologyOverridePsychSensValue, "ESCP_RaceTools_IdeologyOverridePsychSensValue", ESCP_RaceTools_IdeologyOverridePsychSensValue_def);
+
             /* leather thoughts */
             //mer
             Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtMer, "ESCP_RaceTools_LeatherThoughtMer", ESCP_RaceTools_LeatherThoughtMer_def);
@@ -128,6 +143,7 @@ namespace ESCP_RaceTools
         public static void ResetSettings(ESCP_RaceTools_ModSettings settings)
         {
             ResetSettings_General(settings);
+            ResetSettings_Ideology(settings);
             ResetSettings_Leather(settings);
             ResetSettings_Dunmer(settings);
         }
@@ -150,6 +166,13 @@ namespace ESCP_RaceTools
             settings.ESCP_RaceTools_EnableApparelThoughtProtection = ESCP_RaceTools_EnableApparelThoughtProtection_def;
             settings.ESCP_RaceTools_EnableHeatstrokeSwitch = ESCP_RaceTools_EnableHeatstrokeSwitch_def;
             settings.ESCP_RaceTools_EnableHypothermiaSwitch = ESCP_RaceTools_EnableHypothermiaSwitch_def;
+        }
+
+        public static void ResetSettings_Ideology(ESCP_RaceTools_ModSettings settings)
+        {
+            settings.ESCP_RaceTools_IdeologyOverrideRace = ESCP_RaceTools_IdeologyOverrideRace_def;
+            settings.ESCP_RaceTools_IdeologyOverridePsychSens = ESCP_RaceTools_IdeologyOverridePsychSens_def;
+            settings.ESCP_RaceTools_IdeologyOverridePsychSensValue = ESCP_RaceTools_IdeologyOverridePsychSensValue_def;
         }
 
         public static void ResetSettings_Leather(ESCP_RaceTools_ModSettings settings)

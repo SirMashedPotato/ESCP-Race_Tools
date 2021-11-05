@@ -13,14 +13,24 @@ namespace ESCP_RaceTools
         {
             if (this.labelCached == null)
             {
-                this.labelCached = "ESCP_IdeoRequirementPsychic".Translate() + ": " + sensitivity*100 +"%";
+                if (ModSettingsUtility_Ideo.ESCP_RaceTools_IdeologyOverridePsychSens())
+                {
+                    this.labelCached = "ESCP_IdeoRequirementRace".Translate() + ": " + ModSettingsUtility_Ideo.ESCP_RaceTools_IdeologyOverridePsychSensValue() * 100 + "%";
+                }
+                else
+                {
+                    this.labelCached = "ESCP_IdeoRequirementPsychic".Translate() + ": " + sensitivity * 100 + "%";
+                }
+
             }
             return labelCached;
         }
 
         public override bool Met(Pawn p, Precept_Role role)
         {
-            return p.GetStatValue(StatDefOf.PsychicSensitivity) >= sensitivity;
+            return p.GetStatValue(StatDefOf.PsychicSensitivity) >= sensitivity 
+                || (ModSettingsUtility_Ideo.ESCP_RaceTools_IdeologyOverridePsychSens() 
+                && p.GetStatValue(StatDefOf.PsychicSensitivity) >= ModSettingsUtility_Ideo.ESCP_RaceTools_IdeologyOverridePsychSensValue());
         }
 
         public float sensitivity;

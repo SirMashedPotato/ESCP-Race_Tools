@@ -37,11 +37,13 @@ namespace ESCP_RaceTools
                 case 0:
                     listing_Standard = SettingsPage_General(listing_Standard);
                     break;
-
                 case 1:
-                    listing_Standard = SettingsPage_Leather(listing_Standard);
+                    listing_Standard = SettingsPage_Ideology(listing_Standard);
                     break;
                 case 2:
+                    listing_Standard = SettingsPage_Leather(listing_Standard);
+                    break;
+                case 3:
                     listing_Standard = SettingsPage_Dunmer(listing_Standard);
                     break;
 
@@ -77,11 +79,19 @@ namespace ESCP_RaceTools
             }
             listing_Standard.Gap();
 
+            Rect rectPageIdeology = listing_Standard.GetRect(30f);
+            TooltipHandler.TipRegion(rectPageIdeology, "ESCP_PageIdeology".Translate());
+            if (Widgets.ButtonText(rectPageIdeology, "ESCP_PageIdeology".Translate(), true, true, true))
+            {
+                page = 1;
+            }
+            listing_Standard.Gap();
+
             Rect rectPageLeather = listing_Standard.GetRect(30f);
             TooltipHandler.TipRegion(rectPageLeather, "ESCP_PageLeather".Translate());
             if (Widgets.ButtonText(rectPageLeather, "ESCP_PageLeather".Translate(), true, true, true))
             {
-                page = 1;
+                page = 2;
             }
             listing_Standard.Gap();
 
@@ -89,7 +99,7 @@ namespace ESCP_RaceTools
             TooltipHandler.TipRegion(rectPageDunmer, "ESCP_PageDunmer".Translate());
             if (Widgets.ButtonText(rectPageDunmer, "ESCP_PageDunmer".Translate(), true, true, true))
             {
-                page = 2;
+                page = 3;
             }
             listing_Standard.Gap();
 
@@ -124,6 +134,15 @@ namespace ESCP_RaceTools
 
                 case 1:
                     listing_Standard.Gap();
+                    TooltipHandler.TipRegion(rectDefault, "ESCP_PageIdeologyReset".Translate());
+                    if (Widgets.ButtonText(rectDefault, "ESCP_PageIdeologyReset".Translate(), true, true, true))
+                    {
+                        ESCP_RaceTools_ModSettings.ResetSettings_Ideology(settings);
+                    }
+                    break;
+
+                case 2:
+                    listing_Standard.Gap();
                     TooltipHandler.TipRegion(rectDefault, "ESCP_PageLeatherReset".Translate());
                     if (Widgets.ButtonText(rectDefault, "ESCP_PageLeatherReset".Translate(), true, true, true))
                     {
@@ -131,7 +150,7 @@ namespace ESCP_RaceTools
                     }
                     break;
 
-                case 2:
+                case 3:
                     listing_Standard.Gap();
                     TooltipHandler.TipRegion(rectDefault, "ESCP_PageDunmerReset".Translate());
                     if (Widgets.ButtonText(rectDefault, "ESCP_PageDunmerReset".Translate(), true, true, true))
@@ -219,6 +238,31 @@ namespace ESCP_RaceTools
             }
 
             listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            return listing_Standard;
+        }
+
+        private Listing_Standard SettingsPage_Ideology(Listing_Standard listing_Standard)
+        {
+            listing_Standard.Label("ESCP_PageIdeology".Translate());
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            //settings
+
+            /* misc */
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_IdeologyOverrideRace".Translate(), ref settings.ESCP_RaceTools_IdeologyOverrideRace, "ESCP_RaceTools_IdeologyOverrideTooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_IdeologyOverridePsychSens".Translate(), ref settings.ESCP_RaceTools_IdeologyOverridePsychSens, "ESCP_RaceTools_IdeologyOverrideTooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.Label("ESCP_RaceTools_IdeologyOverridePsychSensValue".Translate() + " (" + settings.ESCP_RaceTools_IdeologyOverridePsychSensValue * 100 + "%)");
+            settings.ESCP_RaceTools_IdeologyOverridePsychSensValue = (float)Math.Round(listing_Standard.Slider(settings.ESCP_RaceTools_IdeologyOverridePsychSensValue, 0f, 10f) * 20) / 20;
             listing_Standard.Gap();
 
             return listing_Standard;

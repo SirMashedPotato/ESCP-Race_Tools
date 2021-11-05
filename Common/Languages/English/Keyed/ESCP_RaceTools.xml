@@ -4,6 +4,7 @@
     xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
 
 	<ESCP_IdeoRequirementRace>Race</ESCP_IdeoRequirementRace>
+	<ESCP_IdeoRequirementRaceAny>Any</ESCP_IdeoRequirementRaceAny>
 	<ESCP_IdeoRequirementPsychic>Min psychic sensitivity</ESCP_IdeoRequirementPsychic>
 	<ESCP_AbilityMustBeFactionless>Target must not belong to a faction</ESCP_AbilityMustBeFactionless>
 	

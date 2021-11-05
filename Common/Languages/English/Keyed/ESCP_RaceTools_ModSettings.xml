@@ -10,6 +10,9 @@
 	
 	<ESCP_PageGeneral>General settings</ESCP_PageGeneral>
 	<ESCP_PageGeneralReset>Reset general settings</ESCP_PageGeneralReset>
+	
+	<ESCP_PageIdeology>Ideology settings</ESCP_PageIdeology>
+	<ESCP_PageIdeologyReset>Reset Ideology settings</ESCP_PageIdeologyReset>
 
 	<ESCP_PageLeather>Leather settings</ESCP_PageLeather>
 	<ESCP_PageLeatherReset>Reset leather settings</ESCP_PageLeatherReset>
@@ -51,6 +54,12 @@
 	<ESCP_RaceTools_BeastMasterLoggingTooltip>Enables a few log messages for the beast master mechanic. These will appear when a beast master pawn appears, and can help diagnose any issues that may be occurring.</ESCP_RaceTools_BeastMasterLoggingTooltip>
     <ESCP_RaceTools_EnableBeastMaster>Enable the beast master mechanic</ESCP_RaceTools_EnableBeastMaster>
     <ESCP_RaceTools_EnableBeastMasterTooltip>If enabled, allows certain pawn kinds to generate additional pawns when they are created.\n\nThis can be toggled at any time.</ESCP_RaceTools_EnableBeastMasterTooltip>
+	
+	<!-- Ideology settings -->
+	<ESCP_RaceTools_IdeologyOverrideTooltip>This can be changed at any time, however the requirement tooltip will remain unchanged until the game is restarted. This doesn't mean it hasn't worked.</ESCP_RaceTools_IdeologyOverrideTooltip>
+	<ESCP_RaceTools_IdeologyOverrideRace>Override the race requirement for Ideo roles.</ESCP_RaceTools_IdeologyOverrideRace>
+	<ESCP_RaceTools_IdeologyOverridePsychSens>Override the minimum psychic sensitivity requirement for Ideo roles.</ESCP_RaceTools_IdeologyOverridePsychSens>
+	<ESCP_RaceTools_IdeologyOverridePsychSensValue>The required psychic sensitivity for relevant Ideo roles.</ESCP_RaceTools_IdeologyOverridePsychSensValue>
 
 	<!-- Leather thought settings -->
 	<ESCP_RaceTools_LeatherThoughtMer>Enable Mer leather thoughts</ESCP_RaceTools_LeatherThoughtMer>

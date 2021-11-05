@@ -13,14 +13,25 @@ namespace ESCP_RaceTools
         {
             if (this.labelCached == null)
             {
-                this.labelCached = "ESCP_IdeoRequirementRace".Translate() + ": " + races[0].label;
+                if (ModSettingsUtility_Ideo.ESCP_RaceTools_IdeologyOverrideRace())
+                {
+                    this.labelCached = "ESCP_IdeoRequirementRace".Translate() + ": " + "ESCP_IdeoRequirementRaceAny".Translate();
+                }
+                else
+                {
+                    this.labelCached = "ESCP_IdeoRequirementRace".Translate() + ": ";
+                    foreach(ThingDef def in races)
+                    {
+                        this.labelCached.Concat(races[0].label + ", ");
+                    }
+                }
             }
             return labelCached;
         }
 
         public override bool Met(Pawn p, Precept_Role role)
         {
-            return races.Contains(p.def);
+            return races.Contains(p.def) || ModSettingsUtility_Ideo.ESCP_RaceTools_IdeologyOverrideRace();
         }
 
         public List<ThingDef> races;

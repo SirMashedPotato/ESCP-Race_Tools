@@ -105,6 +105,7 @@
     <Compile Include="ModSettings\ESCP_RaceTools_ModSettings.cs" />
     <Compile Include="ModSettings\ModSettingsUtility.cs" />
     <Compile Include="ModSettings\ModSettingsUtility_Dunmer.cs" />
+    <Compile Include="ModSettings\ModSettingsUtility_Ideo.cs" />
     <Compile Include="Rituals\RitualAttachableOutcomeEffectWorker_DunmerAncestorKnowledge.cs" />
     <Compile Include="Rituals\RitualObligationTargetWorker_FilledDunmerGrave.cs" />
     <Compile Include="Rituals\RitualOutcomeEffectWorker_DunmerSeance.cs" />
