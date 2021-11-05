@@ -13,7 +13,7 @@ namespace ESCP_RaceTools
         {
             if (this.labelCached == null)
             {
-                this.labelCached = "ESCP_IdeoRequirementPsychic".Translate() + ": " + sensitivity;
+                this.labelCached = "ESCP_IdeoRequirementPsychic".Translate() + ": " + sensitivity*100 +"%";
             }
             return labelCached;
         }
