@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using Verse;
 using RimWorld;
+using System.Text;
 
 namespace ESCP_RaceTools
 {
@@ -19,10 +20,20 @@ namespace ESCP_RaceTools
                 }
                 else
                 {
-                    this.labelCached = "ESCP_IdeoRequirementRace".Translate() + ": ";
-                    foreach(ThingDef def in races)
+                    if (races.Count == 1)
                     {
-                        this.labelCached.Concat(races[0].label + ", ");
+                        this.labelCached = "ESCP_IdeoRequirementRace".Translate() + ": " + races[0].label;
+                    }
+                    else
+                    {
+                        this.labelCached = "ESCP_IdeoRequirementRace".Translate() + ": ";
+                        StringBuilder stringBuilder = new StringBuilder();
+                        stringBuilder.AppendLine(races[0].label);
+                        for (int i = 1; i < races.Count; i++)
+                        {
+                            stringBuilder.AppendLine(", " + races[i].label);
+                        }
+                        this.labelCached += stringBuilder.ToString();
                     }
                 }
             }
