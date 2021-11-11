@@ -12,6 +12,9 @@
 	
 	<ESCP_EnterBeserkRage>Enter Beserker Rage</ESCP_EnterBeserkRage>
 	<ESCP_EnterBeserkRageTooltip>Cause the pawn to enter a beserker rage</ESCP_EnterBeserkRageTooltip>
+	<ESCP_EnterBeserkRageCooldown>This pawn is either already in, or recovering from, a beserker rage.</ESCP_EnterBeserkRageCooldown>
+	
+	<ESCP_IsDamaged>Cannot transform as the building is damaged</ESCP_IsDamaged>
 	
 	<ESCP_StuffKnowledgeNotification>{0} has created a {1} of higher quality due to their knowledge</ESCP_StuffKnowledgeNotification>
 	

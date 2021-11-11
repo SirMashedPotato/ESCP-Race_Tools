@@ -9,7 +9,8 @@ namespace ESCP_RaceTools
     {
         private List<HediffDef> hediffDefs = new List<HediffDef> 
         { 
-            HediffDef.Named("ESCP_DunmerAncestralGuidance"), HediffDef.Named("ESCP_DunmerAncestralProtection"), HediffDef.Named("ESCP_DunmerAncestralSight"), HediffDef.Named("ESCP_DunmerAncestralWisdom")
+            HediffDef.Named("ESCP_DunmerAncestralGuidance"), HediffDef.Named("ESCP_DunmerAncestralProtection"), HediffDef.Named("ESCP_DunmerAncestralSight"), HediffDef.Named("ESCP_DunmerAncestralWisdom"),
+                HediffDef.Named("ESCP_DunmerAncestralHealing")
         };
 
         public override void Apply(Dictionary<Pawn, int> totalPresence, LordJob_Ritual jobRitual, OutcomeChance outcome, out string extraOutcomeDesc, ref LookTargets letterLookTargets)

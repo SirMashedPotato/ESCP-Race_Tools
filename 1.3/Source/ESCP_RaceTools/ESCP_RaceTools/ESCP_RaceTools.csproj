@@ -72,6 +72,8 @@
     <Compile Include="Comp\Properties\CompProperties_BeserkerRage.cs" />
     <Compile Include="Comp\Comp_BeastMasterInit.cs" />
     <Compile Include="Comp\Comp_BeserkerRage.cs" />
+    <Compile Include="Comp\Properties\CompProperties_TurnToThing.cs" />
+    <Compile Include="Comp\Comp_TurnToThing.cs" />
     <Compile Include="DefModExtensions\ApparelProperties.cs" />
     <Compile Include="DefModExtensions\BeastMaster.cs" />
     <Compile Include="DefModExtensions\PlantProperties.cs" />

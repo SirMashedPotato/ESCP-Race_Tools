@@ -37,13 +37,15 @@ namespace ESCP_RaceTools
 			Pawn pawn = this.parent as Pawn;
 			if (PawnIsValid(pawn) && pawn.Faction != null && pawn.Faction.IsPlayer && !pawn.NonHumanlikeOrWildMan())
             {
-                if (pawn.skills.GetSkill(Props.manualSkill != null ? Props.manualSkill : SkillDefOf.Melee).Level >= Props.manualSkillLevel && CheckRage(pawn))
+                if (pawn.skills.GetSkill(Props.manualSkill != null ? Props.manualSkill : SkillDefOf.Melee).Level >= Props.manualSkillLevel)
                 {
 					yield return new Command_Action
 					{
 						defaultLabel = "ESCP_EnterBeserkRage".Translate(),
 						defaultDesc = "ESCP_EnterBeserkRageTooltip".Translate(),
 						icon = ContentFinder<Texture2D>.Get("UI/Gizmos/ESCP_BeserkerRage", true),
+						disabled = !CheckRage(pawn),
+						disabledReason = "ESCP_EnterBeserkRageCooldown".Translate(),
 						action = delegate ()
 						{
 							ActivateRage(pawn);
