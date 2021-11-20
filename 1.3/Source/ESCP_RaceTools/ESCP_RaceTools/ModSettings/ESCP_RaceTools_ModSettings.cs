@@ -30,6 +30,7 @@ namespace ESCP_RaceTools
         public bool ESCP_RaceTools_IdeologyOverrideRace = ESCP_RaceTools_IdeologyOverrideRace_def;
         public bool ESCP_RaceTools_IdeologyOverridePsychSens = ESCP_RaceTools_IdeologyOverridePsychSens_def;
         public float ESCP_RaceTools_IdeologyOverridePsychSensValue = ESCP_RaceTools_IdeologyOverridePsychSensValue_def;
+        public bool ESCP_RaceTools_DeityNameFix = ESCP_RaceTools_DeityNameFix_def;
 
         /* leather thoughts */
         //mer
@@ -75,6 +76,7 @@ namespace ESCP_RaceTools
         private static readonly bool ESCP_RaceTools_IdeologyOverrideRace_def = false;
         private static readonly bool ESCP_RaceTools_IdeologyOverridePsychSens_def = false;
         private static readonly float ESCP_RaceTools_IdeologyOverridePsychSensValue_def = 1.2f;
+        private static readonly bool ESCP_RaceTools_DeityNameFix_def = true;
 
         /* leather thoughts */
         //mer
@@ -120,6 +122,7 @@ namespace ESCP_RaceTools
             Scribe_Values.Look(ref ESCP_RaceTools_IdeologyOverrideRace, "ESCP_RaceTools_IdeologyOverrideRace", ESCP_RaceTools_IdeologyOverrideRace_def);
             Scribe_Values.Look(ref ESCP_RaceTools_IdeologyOverridePsychSens, "ESCP_RaceTools_IdeologyOverridePsychSens", ESCP_RaceTools_IdeologyOverridePsychSens_def);
             Scribe_Values.Look(ref ESCP_RaceTools_IdeologyOverridePsychSensValue, "ESCP_RaceTools_IdeologyOverridePsychSensValue", ESCP_RaceTools_IdeologyOverridePsychSensValue_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_DeityNameFix, "ESCP_RaceTools_DeityNameFix", ESCP_RaceTools_DeityNameFix_def);
 
             /* leather thoughts */
             //mer
@@ -173,6 +176,7 @@ namespace ESCP_RaceTools
             settings.ESCP_RaceTools_IdeologyOverrideRace = ESCP_RaceTools_IdeologyOverrideRace_def;
             settings.ESCP_RaceTools_IdeologyOverridePsychSens = ESCP_RaceTools_IdeologyOverridePsychSens_def;
             settings.ESCP_RaceTools_IdeologyOverridePsychSensValue = ESCP_RaceTools_IdeologyOverridePsychSensValue_def;
+            settings.ESCP_RaceTools_DeityNameFix = ESCP_RaceTools_DeityNameFix_def;
         }
 
         public static void ResetSettings_Leather(ESCP_RaceTools_ModSettings settings)

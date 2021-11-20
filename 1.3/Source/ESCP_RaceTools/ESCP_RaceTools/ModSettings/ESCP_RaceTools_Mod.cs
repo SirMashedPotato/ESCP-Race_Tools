@@ -250,8 +250,13 @@ namespace ESCP_RaceTools
             listing_Standard.Gap();
 
             //settings
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_DeityNameFix".Translate(), ref settings.ESCP_RaceTools_DeityNameFix, "ESCP_RaceTools_DeityNameFix_Tooltip".Translate());
+            listing_Standard.Gap();
 
-            /* misc */
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            /* ideo role stuff */
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_IdeologyOverrideRace".Translate(), ref settings.ESCP_RaceTools_IdeologyOverrideRace, "ESCP_RaceTools_IdeologyOverrideTooltip".Translate());
             listing_Standard.Gap();
 

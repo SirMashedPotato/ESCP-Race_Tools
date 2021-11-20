@@ -23,6 +23,7 @@
 	  <li>Ludeon.RimWorld.Royalty</li>
       <li>erdelf.HumanoidAlienRaces</li>
 	  <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+	  <li>vanillaexpanded.achievements</li>
     </loadAfter>
 	<loadBefore>
 	</loadBefore>

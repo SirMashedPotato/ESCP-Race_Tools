@@ -20,5 +20,10 @@ namespace ESCP_RaceTools
             return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_IdeologyOverridePsychSensValue;
         }
 
+        public static bool ESCP_RaceTools_DeityNameFix()
+        {
+            return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_DeityNameFix;
+        }
+
     }
 }

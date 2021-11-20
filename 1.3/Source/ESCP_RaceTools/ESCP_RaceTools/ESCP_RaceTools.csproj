@@ -76,6 +76,8 @@
     <Compile Include="Comp\Comp_TurnToThing.cs" />
     <Compile Include="DefModExtensions\ApparelProperties.cs" />
     <Compile Include="DefModExtensions\BeastMaster.cs" />
+    <Compile Include="DefModExtensions\FactionProperties.cs" />
+    <Compile Include="DefModExtensions\IdeoOrginProperties.cs" />
     <Compile Include="DefModExtensions\PlantProperties.cs" />
     <Compile Include="DefModExtensions\RaceProperties.cs" />
     <Compile Include="DefOf\DutyDefOf.cs" />
@@ -90,6 +92,7 @@
     <Compile Include="Harmony\Harmony.cs" />
     <Compile Include="DefModExtensions\SettlementPreference.cs" />
     <Compile Include="DefModExtensions\StuffKnowledge.cs" />
+    <Compile Include="Harmony\UniqueDeityNamePatch.cs" />
     <Compile Include="HediffComp\HediffComp_BeastMaster.cs" />
     <Compile Include="HediffComp\HediffComp_NightEye.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_NightEye.cs" />

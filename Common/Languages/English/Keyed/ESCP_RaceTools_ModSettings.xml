@@ -31,7 +31,8 @@
 	<ESCP_RaceTools_EnableHypothermiaSwitch>Enable hypothermia resistance for certain races.</ESCP_RaceTools_EnableHypothermiaSwitch>
 	<ESCP_RaceTools_EnableHypothermiaSwitchTooltip>This will make certain races gain a different hediff instead of hypothermia, and may even prevent these races from being afflicted by frostbite.</ESCP_RaceTools_EnableHypothermiaSwitchTooltip>
 	
-	<ESCP_RaceTools_DeityNameFix>Allow duplicated deity names when generating an Ideo.</ESCP_RaceTools_DeityNameFix>
+	<ESCP_RaceTools_DeityNameFix>Enable the deity name Harmony patch.</ESCP_RaceTools_DeityNameFix>
+	<ESCP_RaceTools_DeityNameFix_Tooltip>This will prevent deity names for specific Ideo origins from being randomly selected, avoiding duplicate names within the Ideo.</ESCP_RaceTools_DeityNameFix_Tooltip>
 	
 	<ESCP_RaceTools_EnableApparelThoughtProtection>Enable specific apparel preventing specific weather related thoughts.</ESCP_RaceTools_EnableApparelThoughtProtection>
 	<ESCP_RaceTools_EnableApparelThoughtProtection_Tooltip>While the apparel will prevent the wearer from gaining the thought(s), it will not remove the thought if it is already present.</ESCP_RaceTools_EnableApparelThoughtProtection_Tooltip>
