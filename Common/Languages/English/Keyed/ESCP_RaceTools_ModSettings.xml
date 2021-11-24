@@ -25,6 +25,8 @@
 	<ESCP_RaceTools_ElderScrollsQuadrums>Switch quadrum names to something more flavourful.</ESCP_RaceTools_ElderScrollsQuadrums>
 	<ESCP_RaceTools_ElderScrollsQuadrumsTooltip>This may not take affect immediately if switched mid-save.</ESCP_RaceTools_ElderScrollsQuadrumsTooltip>
 	
+	<ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist>Enable Argonian stomachs preventing food poisoning.</ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist>
+	
 	<ESCP_RaceTools_EnableHeatstrokeSwitch>Enable heatstroke resistance for certain races.</ESCP_RaceTools_EnableHeatstrokeSwitch>
 	<ESCP_RaceTools_EnableHeatstrokeSwitchTooltip>This will make certain races gain a different hediff instead of heatstroke, and may even prevent these races from being burnt by intense heat.</ESCP_RaceTools_EnableHeatstrokeSwitchTooltip>
 	

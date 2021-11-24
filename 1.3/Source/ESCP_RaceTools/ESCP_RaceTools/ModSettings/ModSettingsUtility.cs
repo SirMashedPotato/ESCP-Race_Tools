@@ -69,6 +69,11 @@ namespace ESCP_RaceTools
             return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_EnableHypothermiaSwitch;
         }
 
+        public static bool ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist()
+        {
+            return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist;
+        }
+
         /* leather thoughts */
 
         //mer

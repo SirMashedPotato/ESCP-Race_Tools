@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- khajiit eye -->
+	<!-- Khajiit eye -->
 	
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>ESCP_KhajiitEye</defName>
-		<label>khajiit eye</label>
-		<labelNoun>a khajiit eye</labelNoun>
-		<description>A khajiit eye.</description>
+		<label>Khajiit eye</label>
+		<labelNoun>a Khajiit eye</labelNoun>
+		<description>A Khajiit eye.</description>
 		<descriptionHyperlinks><ThingDef>ESCP_KhajiitEye</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>ESCP_KhajiitEye</spawnThingOnRemoved>
 		<woundAnchorRange>0</woundAnchorRange>
@@ -41,8 +41,8 @@
 
 	<ThingDef ParentName="BodyPartNaturalBase">
 		<defName>ESCP_KhajiitEye</defName>
-		<label>khajiit eye</label>
-		<description>A khajiit eye. Fairly similar to any ordinary eye, except that it is more efficient in low-light situations.</description>
+		<label>Khajiit eye</label>
+		<description>A Khajiit eye. Fairly similar to any ordinary eye, except that it is more efficient in low-light situations.</description>
 		<descriptionHyperlinks><RecipeDef>ESCP_InstallKhajiitEye</RecipeDef></descriptionHyperlinks>
 		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
 		<statBases>
@@ -53,13 +53,13 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>ESCP_InstallKhajiitEye</defName>
-		<label>implant khajiit eye</label>
-		<description>Implant a khajiit eye.</description>
+		<label>implant Khajiit eye</label>
+		<description>Implant a Khajiit eye.</description>
 		<descriptionHyperlinks>
 		  <ThingDef>ESCP_KhajiitEye</ThingDef>
 		  <HediffDef>ESCP_KhajiitEye</HediffDef>
 		</descriptionHyperlinks>
-		<jobString>Installing khajiit eye.</jobString>
+		<jobString>Installing Khajiit eye.</jobString>
 		<ingredients>
 		  <li>
 			<filter>

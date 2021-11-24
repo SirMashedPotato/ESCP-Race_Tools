@@ -14,4 +14,26 @@
         </hediffGivers>
     </HediffGiverSetDef>
 	
+	<HediffGiverSetDef>
+        <defName>ESCP_Argonian</defName>
+        <hediffGivers>
+            <li Class = "ESCP_RaceTools.HediffGiver_OnCreation">
+                <hediff>ESCP_ArgonianStomach</hediff>
+                <partsToAffect>
+                    <li>Stomach</li>
+                </partsToAffect>
+                <countToAffect>1</countToAffect>
+            </li>
+			<!--
+			<li Class = "ESCP_RaceTools.HediffGiver_OnCreation">
+                <hediff>ESCP_ArgonianBileSac</hediff>
+                <partsToAffect>
+                    <li>Liver</li>
+                </partsToAffect>
+                <countToAffect>1</countToAffect>
+            </li>
+			-->
+        </hediffGivers>
+    </HediffGiverSetDef>
+	
 </Defs>

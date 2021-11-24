@@ -34,5 +34,5 @@
 
 	<ESCP_DunmerRitualOutcomeExtraDesc_SeancePsylink>Thanks to a enlightening seance ritual, {PAWN_labelShort} gained a psylink level!</ESCP_DunmerRitualOutcomeExtraDesc_SeancePsylink>
 	<ESCP_DunmerRitualOutcomeExtraDesc_SeancePsylinkAbility>With a new pyslink level {PAWN_pronoun} gained a {0} psycast.</ESCP_DunmerRitualOutcomeExtraDesc_SeancePsylinkAbility>
-
+	
 </LanguageData>

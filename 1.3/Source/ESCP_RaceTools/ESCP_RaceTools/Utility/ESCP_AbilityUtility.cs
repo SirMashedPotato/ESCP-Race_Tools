@@ -19,5 +19,16 @@ namespace ESCP_RaceTools
 			}
 			return true;
 		}
+
+		public static float GetAncestorGiftDuration(float psychSens = 1f, float maxDuration = 5000f, float perSensPoint = 84f)
+        {
+			float duration = perSensPoint * (psychSens*10);
+			return duration > maxDuration ? maxDuration : duration;
+        }
+
+		public static string GetAncestorGiftDuration_Display(int duration)
+        {
+			return "AbilityDuration".Translate() + ": " + ((duration >= 2500) ? duration.ToStringTicksToPeriod(true, false, true, true) : (duration + "LetterSecond".Translate()));
+		}
 	}
 }

@@ -30,12 +30,12 @@ namespace ESCP_RaceTools
 						ticksUntil = 0;
 						return;
 					}
-					//if (pawn.Map.glowGrid.GameGlowAt(pawn.Position) > Props.lightLevelRequired && parent.Severity == 1.0f)
-					//{
+					if (pawn.Map.glowGrid.GameGlowAt(pawn.Position) > Props.lightLevelRequired && parent.Severity == 1.0f)
+					{
 						parent.Severity = 0.5f;
 						ticksUntil = 0;
 						return;
-					//}
+					}
 				}
 			}
 			ticksUntil++;

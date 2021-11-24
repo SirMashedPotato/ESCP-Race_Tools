@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AbilityGroupDef>
+		<defName>ESCP_BileSpit</defName>
+		<cooldownTicks>600</cooldownTicks>
+	</AbilityGroupDef>
+	
+	<AbilityDef>
+		<defName>ESCP_BileSpitAbility</defName>
+		<label>bile spit</label>
+		<description>Launch a glob of bile at a target. This is somewhat disgusting, and will cause the target to throw up, as well as burn them a little.</description>
+		<groupDef>ESCP_BileSpit</groupDef>
+		<iconPath>UI/Abilities/ESCP_BileSpit</iconPath>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+		<warmupSound>AnimalCalm_Resolve</warmupSound>
+		<cooldownTicksRange>600~600</cooldownTicksRange>
+		<uiOrder>1</uiOrder>
+		<comps>	<!-- Change this to something else, just literally anything else, but it still needs a comp, because fuck you I guess -->
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+		</comps>
+		<statBases>
+            <Ability_EntropyGain>0</Ability_EntropyGain>
+            <Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+        </statBases>
+		<verbProperties>
+			<label>spit bile</label>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<onlyManualCast>true</onlyManualCast>
+			<defaultProjectile>ESCP_BileSpitProjectile</defaultProjectile>
+			<warmupTime>1.7</warmupTime>
+			<range>14</range>
+			<!--
+			<soundCast>MorrowRim_Fire_AetherialStave</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			-->
+		</verbProperties>
+	</AbilityDef>
+
+	<!-- -->
+	<!--
+	<VFECore.Abilities.AbilityDef>
+		<defName>ESCP_BileSpitAbility</defName>
+		<label>bile spit</label>
+		<description>Launch a glob of bile at a target. This is somewhat disgusting, and will cause the target to throw up, as well as burn them a little.</description>
+		<abilityClass>VFECore.Abilities.Ability_ShootProjectile</abilityClass>
+		<targetMode>Pawn</targetMode>
+		<iconPath>UI/Abilities/ESCP_BileSpit</iconPath>
+		<cooldownTime>7200</cooldownTime>
+		<castTime>15</castTime>
+		<chance>0</chance>
+		<range>12</range>
+		<modExtensions>
+		  <li Class="VFECore.Abilities.AbilityExtension_Projectile">
+			<projectile>ESCP_BileSpitProjectile</projectile>
+		  </li>
+		</modExtensions>
+		<castSound>VFEA_IceBreath_Shot</castSound>
+	</VFECore.Abilities.AbilityDef>
+	-->
+	<ThingDef>
+		<defName>ESCP_BileSpitProjectile</defName>
+		<tickerType>Normal</tickerType>
+		<thingClass>Bullet</thingClass>
+		<category>Projectile</category>
+		<label>bile spit</label>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/ESCP_BileSpitProjectile</texPath>
+		</graphicData>
+		<projectile>
+			<damageDef>ESCP_BileSpitDamage</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<stoppingPower>0.3</stoppingPower>
+			<speed>40</speed>
+		</projectile>
+	</ThingDef>
+	
+	<DamageDef>
+		<defName>ESCP_BileSpitDamage</defName>
+		<label>acidic bile</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been burnt to death.</deathMessage>
+		<hediff>Burn</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<impactSoundType>Blunt</impactSoundType>
+		<makesBlood>false</makesBlood>
+		<armorCategory>Heat</armorCategory>
+		<stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+		<additionalHediffs>
+			<li>
+				<hediff>ToxicBuildup</hediff>
+				<severityPerDamageDealt>0.005</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+</Defs>

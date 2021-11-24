@@ -191,6 +191,9 @@ namespace ESCP_RaceTools
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableHypothermiaSwitch".Translate(), ref settings.ESCP_RaceTools_EnableHypothermiaSwitch, "ESCP_RaceTools_EnableHypothermiaSwitchTooltip".Translate());
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist".Translate(), ref settings.ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist);
+            listing_Standard.Gap();
+
             listing_Standard.GapLine();
             listing_Standard.Gap();
 

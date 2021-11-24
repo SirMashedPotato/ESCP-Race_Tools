@@ -23,5 +23,26 @@ namespace ESCP_RaceTools
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
     }
+
+	/* Real basic patch, checks if the pawn has an Argo stomach, prevents food poisoning if they do */
+
+	[HarmonyPatch(typeof(FoodUtility))]
+	[HarmonyPatch("GetFoodPoisonChanceFactor")]
+	public static class FoodUtility_GetFoodPoisonChanceFactor_Patch
+	{
+		[HarmonyPostfix]
+		public static void ArgoStomachPatch(Pawn ingester, ref float __result)
+		{
+			if (ModSettingsUtility.ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist() && __result != 0f)
+			{
+				{
+					if (ingester.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named("ESCP_ArgonianStomach")) != null)
+					{
+						__result = 0f;
+					}
+				}
+			}
+		}
+	}
 }
 

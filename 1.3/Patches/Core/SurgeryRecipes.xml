@@ -5,6 +5,8 @@
 		<xpath>/Defs/ThingDef[defName = "Human"]/recipes</xpath>
 		<value>
 			<li>ESCP_InstallKhajiitEye</li>
+			<li>ESCP_InstallArgonianStomach</li>
+			<!--<li>ESCP_InstallArgonianBileSac</li>-->
 		</value>
 	</Operation>
 	

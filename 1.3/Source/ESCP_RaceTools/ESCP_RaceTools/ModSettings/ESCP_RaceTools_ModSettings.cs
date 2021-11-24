@@ -25,6 +25,7 @@ namespace ESCP_RaceTools
         public bool ESCP_RaceTools_EnableApparelThoughtProtection = ESCP_RaceTools_EnableApparelThoughtProtection_def;
         public bool ESCP_RaceTools_EnableHeatstrokeSwitch = ESCP_RaceTools_EnableHeatstrokeSwitch_def;
         public bool ESCP_RaceTools_EnableHypothermiaSwitch = ESCP_RaceTools_EnableHypothermiaSwitch_def;
+        public bool ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist = ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist_def;
 
         /* Ideology */
         public bool ESCP_RaceTools_IdeologyOverrideRace = ESCP_RaceTools_IdeologyOverrideRace_def;
@@ -71,6 +72,7 @@ namespace ESCP_RaceTools
         private static readonly bool ESCP_RaceTools_EnableApparelThoughtProtection_def = true;
         private static readonly bool ESCP_RaceTools_EnableHeatstrokeSwitch_def = true;
         private static readonly bool ESCP_RaceTools_EnableHypothermiaSwitch_def = true;
+        private static readonly bool ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist_def = true;
 
         /* Ideology */
         private static readonly bool ESCP_RaceTools_IdeologyOverrideRace_def = false;
@@ -117,6 +119,7 @@ namespace ESCP_RaceTools
             Scribe_Values.Look(ref ESCP_RaceTools_EnableApparelThoughtProtection, "ESCP_RaceTools_EnableApparelThoughtProtection", ESCP_RaceTools_EnableApparelThoughtProtection_def);
             Scribe_Values.Look(ref ESCP_RaceTools_EnableHeatstrokeSwitch, "ESCP_RaceTools_EnableHeatstrokeSwitch", ESCP_RaceTools_EnableHeatstrokeSwitch_def);
             Scribe_Values.Look(ref ESCP_RaceTools_EnableHypothermiaSwitch, "ESCP_RaceTools_EnableHypothermiaSwitch", ESCP_RaceTools_EnableHypothermiaSwitch_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist, "ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist", ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist_def);
 
             /* Ideology */
             Scribe_Values.Look(ref ESCP_RaceTools_IdeologyOverrideRace, "ESCP_RaceTools_IdeologyOverrideRace", ESCP_RaceTools_IdeologyOverrideRace_def);
@@ -169,6 +172,7 @@ namespace ESCP_RaceTools
             settings.ESCP_RaceTools_EnableApparelThoughtProtection = ESCP_RaceTools_EnableApparelThoughtProtection_def;
             settings.ESCP_RaceTools_EnableHeatstrokeSwitch = ESCP_RaceTools_EnableHeatstrokeSwitch_def;
             settings.ESCP_RaceTools_EnableHypothermiaSwitch = ESCP_RaceTools_EnableHypothermiaSwitch_def;
+            settings.ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist = ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist_def;
         }
 
         public static void ResetSettings_Ideology(ESCP_RaceTools_ModSettings settings)
