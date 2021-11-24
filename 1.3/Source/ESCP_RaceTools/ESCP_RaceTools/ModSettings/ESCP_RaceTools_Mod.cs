@@ -182,13 +182,13 @@ namespace ESCP_RaceTools
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableApparelThoughtProtection".Translate(), ref settings.ESCP_RaceTools_EnableApparelThoughtProtection, "ESCP_RaceTools_EnableApparelThoughtProtection_Tooltip".Translate());
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableApparelThoughtProtection".Translate(), ref settings.ESCP_RaceTools_EnableApparelThoughtProtection, "ESCP_RaceTools_EnableApparelThoughtProtection_Tooltip".Translate() + ModSettingsUtility_Tooltips.General_ApparelThoughtProtection());
             listing_Standard.Gap();
 
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableHeatstrokeSwitch".Translate(), ref settings.ESCP_RaceTools_EnableHeatstrokeSwitch, "ESCP_RaceTools_EnableHeatstrokeSwitchTooltip".Translate());
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableHeatstrokeSwitch".Translate(), ref settings.ESCP_RaceTools_EnableHeatstrokeSwitch, "ESCP_RaceTools_EnableHeatstrokeSwitchTooltip".Translate() + ModSettingsUtility_Tooltips.General_HeatstrokeSwitch());
             listing_Standard.Gap();
 
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableHypothermiaSwitch".Translate(), ref settings.ESCP_RaceTools_EnableHypothermiaSwitch, "ESCP_RaceTools_EnableHypothermiaSwitchTooltip".Translate());
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableHypothermiaSwitch".Translate(), ref settings.ESCP_RaceTools_EnableHypothermiaSwitch, "ESCP_RaceTools_EnableHypothermiaSwitchTooltip".Translate() + ModSettingsUtility_Tooltips.General_HypothermiaSwitch());
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist".Translate(), ref settings.ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist);
@@ -198,7 +198,7 @@ namespace ESCP_RaceTools
             listing_Standard.Gap();
 
             /* stuff knowledge */
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableStuffKnowledge".Translate(), ref settings.ESCP_RaceTools_EnableStuffKnowledge, "ESCP_RaceTools_EnableStuffKnowledgeTooltip".Translate());
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableStuffKnowledge".Translate(), ref settings.ESCP_RaceTools_EnableStuffKnowledge, "ESCP_RaceTools_EnableStuffKnowledgeTooltip".Translate() + ModSettingsUtility_Tooltips.General_StuffKnowledge());
             listing_Standard.Gap();
 
             if (Prefs.DevMode)
@@ -211,7 +211,7 @@ namespace ESCP_RaceTools
             listing_Standard.Gap();
 
             /* settlement preference */
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableSettlementPreference".Translate(), ref settings.ESCP_RaceTools_EnableSettlementPreference, "ESCP_RaceTools_EnableSettlementPreferenceTooltip".Translate());
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableSettlementPreference".Translate(), ref settings.ESCP_RaceTools_EnableSettlementPreference, "ESCP_RaceTools_EnableSettlementPreferenceTooltip".Translate() + ModSettingsUtility_Tooltips.General_SettlementPreference());
             listing_Standard.Gap();
 
             listing_Standard.Label("ESCP_RaceTools_SettlementPreferenceIterations".Translate() + " (" + settings.ESCP_RaceTools_SettlementPreferenceIterations + ")", -1, "ESCP_RaceTools_SettlementPreferenceIterationsTooltip".Translate());
@@ -231,7 +231,7 @@ namespace ESCP_RaceTools
             listing_Standard.Gap();
 
             /* beast master */
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableBeastMaster".Translate(), ref settings.ESCP_RaceTools_EnableBeastMaster, "ESCP_RaceTools_EnableBeastMasterTooltip".Translate());
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableBeastMaster".Translate(), ref settings.ESCP_RaceTools_EnableBeastMaster, "ESCP_RaceTools_EnableBeastMasterTooltip".Translate() + ModSettingsUtility_Tooltips.General_BeastMaster());
             listing_Standard.Gap();
 
             if (Prefs.DevMode)
@@ -253,20 +253,20 @@ namespace ESCP_RaceTools
             listing_Standard.Gap();
 
             //settings
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_DeityNameFix".Translate(), ref settings.ESCP_RaceTools_DeityNameFix, "ESCP_RaceTools_DeityNameFix_Tooltip".Translate());
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_DeityNameFix".Translate(), ref settings.ESCP_RaceTools_DeityNameFix, "ESCP_RaceTools_DeityNameFix_Tooltip".Translate() + ModSettingsUtility_Tooltips.IdeoOrigin_DeityName());
             listing_Standard.Gap();
 
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
             /* ideo role stuff */
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_IdeologyOverrideRace".Translate(), ref settings.ESCP_RaceTools_IdeologyOverrideRace, "ESCP_RaceTools_IdeologyOverrideTooltip".Translate());
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_IdeologyOverrideRace".Translate(), ref settings.ESCP_RaceTools_IdeologyOverrideRace, "ESCP_RaceTools_IdeologyOverrideTooltip".Translate() + ModSettingsUtility_Tooltips.IdeoRole_Race());
             listing_Standard.Gap();
 
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_IdeologyOverridePsychSens".Translate(), ref settings.ESCP_RaceTools_IdeologyOverridePsychSens, "ESCP_RaceTools_IdeologyOverrideTooltip".Translate());
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_IdeologyOverridePsychSens".Translate(), ref settings.ESCP_RaceTools_IdeologyOverridePsychSens, "ESCP_RaceTools_IdeologyOverrideTooltip".Translate() + ModSettingsUtility_Tooltips.IdeoRole_PsychSens());
             listing_Standard.Gap();
 
             listing_Standard.Label("ESCP_RaceTools_IdeologyOverridePsychSensValue".Translate() + " (" + settings.ESCP_RaceTools_IdeologyOverridePsychSensValue * 100 + "%)");

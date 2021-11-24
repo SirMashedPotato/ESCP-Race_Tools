@@ -42,7 +42,5 @@ namespace ESCP_RaceTools
         {
             return outcome.BestPositiveOutcome(jobRitual) ? 5000f : 3000f;
         }
-
-        //private readonly float duration = 3000; //could make a setting
     }
 }

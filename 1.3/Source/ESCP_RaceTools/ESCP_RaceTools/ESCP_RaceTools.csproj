@@ -114,6 +114,7 @@
     <Compile Include="ModSettings\ModSettingsUtility.cs" />
     <Compile Include="ModSettings\ModSettingsUtility_Dunmer.cs" />
     <Compile Include="ModSettings\ModSettingsUtility_Ideo.cs" />
+    <Compile Include="ModSettings\ModSettingsUtility_Tooltips.cs" />
     <Compile Include="PlaceWorker\PlaceWorker_RequiresRoof.cs" />
     <Compile Include="Rituals\RitualAttachableOutcomeEffectWorker_DunmerAncestorKnowledge.cs" />
     <Compile Include="Rituals\RitualObligationTargetWorker_FilledDunmerGrave.cs" />
