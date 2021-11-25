@@ -1,6 +1,7 @@
 ﻿using Verse;
 using System;
 using System.Linq;
+using System.Collections.Generic;
 using RimWorld;
 
 namespace ESCP_RaceTools
@@ -79,19 +80,38 @@ namespace ESCP_RaceTools
 
         public static string General_SettlementPreference()
         {
-            string races = "";
+            string factions = "";
+            List<string> mods = new List<string> { };
+            List<int> duplications = new List<int> { };
 
             DefDatabase<FactionDef>.AllDefsListForReading.Where(x => SettlementPreference.Get(x) != null).ToList().ForEach(action: def =>
             {
-                races += "\n - " + def.label;
+                //factions += "\n - " + def.label;
+                if (!mods.Contains(def.modContentPack.Name))
+                {
+                    mods.Add(def.modContentPack.Name);
+                    duplications.Add(1);
+                } 
+                else
+                {
+                    duplications[duplications.Count-1]++;
+                }
             });
 
-            if (races == "")
+            if (!mods.NullOrEmpty())
             {
-                races = "\n - None";
+                for(int i = 0; i < mods.Count; i++)
+                {
+                    factions += "\n - " + mods[i] + " (" + duplications[i] + " faction/s)";
+                }
             }
 
-            return races;
+            if (factions == "")
+            {
+                factions = "\n - None";
+            }
+
+            return factions;
         }
 
         public static string General_BeastMaster()
