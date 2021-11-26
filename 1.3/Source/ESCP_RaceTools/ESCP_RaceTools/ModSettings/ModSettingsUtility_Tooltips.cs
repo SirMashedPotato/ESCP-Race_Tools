@@ -78,6 +78,7 @@ namespace ESCP_RaceTools
             return races;
         }
 
+        /* Resuling output is: - [MODNAME] (x faction/s) */
         public static string General_SettlementPreference()
         {
             string factions = "";
@@ -86,7 +87,6 @@ namespace ESCP_RaceTools
 
             DefDatabase<FactionDef>.AllDefsListForReading.Where(x => SettlementPreference.Get(x) != null).ToList().ForEach(action: def =>
             {
-                //factions += "\n - " + def.label;
                 if (!mods.Contains(def.modContentPack.Name))
                 {
                     mods.Add(def.modContentPack.Name);
@@ -118,7 +118,6 @@ namespace ESCP_RaceTools
         {
             string races = "";
 
-            //DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.comps.Any(y => y is CompProperties_BeastMasterInit)).ToList().ForEach(action: race =>
             DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => BeastMaster.Get(x) != null).ToList().ForEach(action: def =>
             {
                 races += "\n - " + def.race.label + " " + def.label;
