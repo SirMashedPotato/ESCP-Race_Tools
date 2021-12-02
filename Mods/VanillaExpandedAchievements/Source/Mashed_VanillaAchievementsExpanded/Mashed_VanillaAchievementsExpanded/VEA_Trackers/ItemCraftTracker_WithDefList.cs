@@ -39,7 +39,7 @@ namespace Mashed_VanillaAchievementsExpanded
 
         public override bool Trigger(Thing thing)
         {
-            base.Trigger(thing);
+            //base.Trigger(thing);
             if ((defList.NullOrEmpty() || defList.Contains(thing.def)) && (madeFrom is null || madeFrom == thing.Stuff))
             {
                 if (quality is null || (thing.TryGetQuality(out var qc) && qc >= quality))
