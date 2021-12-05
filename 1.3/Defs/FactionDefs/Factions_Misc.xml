@@ -13,10 +13,6 @@
     <geneticVariance>1.0</geneticVariance>
     <techLevel>Neolithic</techLevel>
     <disallowedMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginChristian</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginIslamic</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginHindu</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginBuddhist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
     </disallowedMemes>
@@ -29,6 +25,10 @@
       <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistEmbodied>
       <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
       <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_Archist>
+      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginChristian>
+      <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginIslamic>
+      <Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginHindu>
+      <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginBuddhist>
     </structureMemeWeights>
 	<backstoryFilters>
       <li>
