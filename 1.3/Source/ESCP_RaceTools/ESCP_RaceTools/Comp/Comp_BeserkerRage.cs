@@ -14,14 +14,24 @@ namespace ESCP_RaceTools
 				return (CompProperties_BeserkerRage)this.props;
 			}
 		}
-
+		/*
 		public override void CompTick()
 		{
 			base.CompTick();
 			Pawn pawn = this.parent as Pawn;
-			if (/*pawn.health.hediffSet.HasHediff(RimWorld.HediffDefOf.BloodLoss) &&*/ pawn.health.hediffSet.PainTotal >= 0.6 && PawnIsValid(pawn))
+			if (pawn.health.hediffSet.PainTotal >= 0.6 && PawnIsValid(pawn))
 			{
-				//check if pawn is likely a rescue target, then return
+				if (pawn.Faction == null && !pawn.AnimalOrWildMan()) return;
+				ActivateRage(pawn);
+			}
+		}
+		*/
+        public override void PostPostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
+        {
+            base.PostPostApplyDamage(dinfo, totalDamageDealt);
+			Pawn pawn = this.parent as Pawn;
+			if ( pawn.health.hediffSet.PainTotal >= 0.6 && PawnIsValid(pawn))
+			{
 				if (pawn.Faction == null && !pawn.AnimalOrWildMan()) return;
 				ActivateRage(pawn);
 			}
