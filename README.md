@@ -1,3 +1,3 @@
 Check the GitWiki for more info
 
-(Coming soon(tm))
+https://github.com/SirMashedPotato/ESCP-Race_Tools/wiki
