@@ -48,7 +48,6 @@ namespace ESCP_RaceTools
 
         public static bool RequiredBackstory(Pawn p, string b, bool nullIsTrue = true)
         {
-            Log.Message("boobs: " + b + ", " + p.story.GetBackstory(BackstorySlot.Adulthood).ToString());
             return (b == null && nullIsTrue)
                 || (p.story.GetBackstory(BackstorySlot.Childhood) != null && p.story.GetBackstory(BackstorySlot.Childhood).identifier.ToString() == b)
                 || (p.story.GetBackstory(BackstorySlot.Adulthood) != null && p.story.GetBackstory(BackstorySlot.Adulthood).identifier.ToString() == b);
