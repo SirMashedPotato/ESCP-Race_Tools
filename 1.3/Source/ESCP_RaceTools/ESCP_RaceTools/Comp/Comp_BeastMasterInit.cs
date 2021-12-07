@@ -26,7 +26,6 @@ namespace ESCP_RaceTools
             }
         }
 
-
         public override void CompTick()
         {
             base.CompTick();

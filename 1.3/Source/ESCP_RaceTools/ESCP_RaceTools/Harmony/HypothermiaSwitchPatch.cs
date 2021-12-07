@@ -24,7 +24,7 @@ namespace ESCP_RaceTools
                     var props = RaceProperties.Get(pawn.def);
 					if (props != null)
 					{
-						if (props.completeHeatstrokeResistance) return false;
+						if (props.completeHypothermiaResistance) return false;
 						if (props.hypothermiaResistant && props.hypothermiaDef != null)
 						{
 							OnIntervalPassed(pawn, props.hypothermiaDef, props.frostbiteResistant);
