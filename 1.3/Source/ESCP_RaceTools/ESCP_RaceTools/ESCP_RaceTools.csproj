@@ -102,6 +102,7 @@
     <Compile Include="HediffComp\Properties\HediffCompProperties_NightEye.cs" />
     <Compile Include="HediffGiver\HediffGiver_OnCreation.cs" />
     <Compile Include="Ideo\GoodwillSituationWorker_AltmerCompatibility.cs" />
+    <Compile Include="Ideo\GoodwillSituationWorker_AltmerDominionCompatibility.cs" />
     <Compile Include="Ideo\RoleRequirement_PsychicSensitivity.cs" />
     <Compile Include="Ideo\RoleRequirement_RaceMulti.cs" />
     <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_BeastfolkLeatherApparel.cs" />
