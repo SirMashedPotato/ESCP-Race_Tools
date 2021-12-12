@@ -191,6 +191,13 @@ namespace ESCP_RaceTools
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableHypothermiaSwitch".Translate(), ref settings.ESCP_RaceTools_EnableHypothermiaSwitch, "ESCP_RaceTools_EnableHypothermiaSwitchTooltip".Translate() + ModSettingsUtility_Tooltips.General_HypothermiaSwitch());
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableDecreasedExpecations".Translate(), ref settings.ESCP_RaceTools_EnableDecreasedExpecations, "ESCP_RaceTools_EnableDecreasedExpecationsTooltip".Translate() + ModSettingsUtility_Tooltips.General_DecreasedExpectations());
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableIncreasedExpecations".Translate(), ref settings.ESCP_RaceTools_EnableIncreasedExpecations, "ESCP_RaceTools_EnableIncreasedExpecationsTooltip".Translate() + ModSettingsUtility_Tooltips.General_IncreasedExpectations());
+            listing_Standard.Gap();
+
+
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist".Translate(), ref settings.ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist);
             listing_Standard.Gap();
 

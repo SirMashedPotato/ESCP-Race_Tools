@@ -74,6 +74,16 @@ namespace ESCP_RaceTools
             return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist;
         }
 
+        public static bool ESCP_RaceTools_EnableDecreasedExpecations()
+        {
+            return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_EnableDecreasedExpecations;
+        }
+
+        public static bool ESCP_RaceTools_EnableIncreasedExpecations()
+        {
+            return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_EnableIncreasedExpecations;
+        }
+
         /* leather thoughts */
 
         //mer

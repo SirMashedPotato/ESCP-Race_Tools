@@ -18,6 +18,9 @@ namespace ESCP_RaceTools
         public bool heatstrokeResistant = false;   //just enables the heatstroke switch
         public bool heatburnResistant = false;    //prevents any actual damage from the heat
         public HediffDef heatstrokeDef;
+        //expectations
+        public bool modifiedExpectations = false;
+        public int expectationOffset = -1;
 
         public static RaceProperties Get(Def def)
         {

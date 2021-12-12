@@ -33,6 +33,12 @@
 	<ESCP_RaceTools_EnableHypothermiaSwitch>Enable hypothermia resistance for certain races.</ESCP_RaceTools_EnableHypothermiaSwitch>
 	<ESCP_RaceTools_EnableHypothermiaSwitchTooltip>This will make certain races gain a different hediff instead of hypothermia, and may even prevent these races from being afflicted by frostbite.\n\nThis affects:</ESCP_RaceTools_EnableHypothermiaSwitchTooltip>
 	
+	<ESCP_RaceTools_EnableDecreasedExpecations>Enabled decreased expectations for certain races.</ESCP_RaceTools_EnableDecreasedExpecations>
+	<ESCP_RaceTools_EnableDecreasedExpecationsTooltip>This will cause pawns of specific races to have a lowered expectation level.\n\nThis affects:</ESCP_RaceTools_EnableDecreasedExpecationsTooltip>
+	
+	<ESCP_RaceTools_EnableIncreasedExpecations>Enabled increased expectations for certain races.</ESCP_RaceTools_EnableIncreasedExpecations>
+	<ESCP_RaceTools_EnableIncreasedExpecationsTooltip>This will cause pawns of specific races to have a raised expectation level.\n\nThis affects:</ESCP_RaceTools_EnableIncreasedExpecationsTooltip>
+	
 	<ESCP_RaceTools_DeityNameFix>Enable the deity name Harmony patch.</ESCP_RaceTools_DeityNameFix>
 	<ESCP_RaceTools_DeityNameFix_Tooltip>This will prevent deity names for specific Ideo origins from being randomly selected, avoiding duplicate names within the Ideo.\n\nThis affects:</ESCP_RaceTools_DeityNameFix_Tooltip>
 	

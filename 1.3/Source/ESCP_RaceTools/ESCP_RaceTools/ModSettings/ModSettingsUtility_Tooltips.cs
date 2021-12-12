@@ -61,6 +61,40 @@ namespace ESCP_RaceTools
             return races;
         }
 
+        public static string General_DecreasedExpectations()
+        {
+            string races = "";
+
+            DefDatabase<ThingDef>.AllDefsListForReading.Where(x => RaceProperties.Get(x) != null && RaceProperties.Get(x).modifiedExpectations && RaceProperties.Get(x).expectationOffset < 0).ToList().ForEach(action: def =>
+            {
+                races += "\n - " + def.label + " (offset by " + RaceProperties.Get(def).expectationOffset + ")";
+            });
+
+            if (races == "")
+            {
+                races = "\n - None";
+            }
+
+            return races;
+        }
+
+        public static string General_IncreasedExpectations()
+        {
+            string races = "";
+
+            DefDatabase<ThingDef>.AllDefsListForReading.Where(x => RaceProperties.Get(x) != null && RaceProperties.Get(x).modifiedExpectations && RaceProperties.Get(x).expectationOffset > 0).ToList().ForEach(action: def =>
+            {
+                races += "\n - " + def.label + " (offset by " + RaceProperties.Get(def).expectationOffset + ")";
+            });
+
+            if (races == "")
+            {
+                races = "\n - None";
+            }
+
+            return races;
+        }
+
         public static string General_StuffKnowledge()
         {
             string races = "";
