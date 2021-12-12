@@ -118,18 +118,27 @@ namespace ESCP_RaceTools
             string factions = "";
             List<string> mods = new List<string> { };
             List<int> duplications = new List<int> { };
+            int other = 0;
 
             DefDatabase<FactionDef>.AllDefsListForReading.Where(x => SettlementPreference.Get(x) != null).ToList().ForEach(action: def =>
             {
-                if (!mods.Contains(def.modContentPack.Name))
+                if (def.modContentPack != null)
                 {
-                    mods.Add(def.modContentPack.Name);
-                    duplications.Add(1);
-                } 
+                    if (!mods.Contains(def.modContentPack.Name))
+                    {
+                        mods.Add(def.modContentPack.Name);
+                        duplications.Add(1);
+                    }
+                    else
+                    {
+                        duplications[duplications.Count - 1]++;
+                    }
+                }
                 else
                 {
-                    duplications[duplications.Count-1]++;
+                    other++;
                 }
+              
             });
 
             if (!mods.NullOrEmpty())
@@ -143,6 +152,11 @@ namespace ESCP_RaceTools
             if (factions == "")
             {
                 factions = "\n - None";
+            }
+
+            if(other > 0)
+            {
+                factions += "\n - " + "Other" + " (" + other + " faction/s)";
             }
 
             return factions;
