@@ -11,7 +11,7 @@ namespace ESCP_RaceTools
         public static List<string> leatherList = new List<string>() 
         {
             "ESCP_LeatherAldmer", "ESCP_LeatherAltmer", "ESCP_LeatherAylied", "ESCP_LeatherBosmer", "ESCP_LeatherChimer", 
-            "ESCP_LeatherDunmer", "ESCP_LeatherDwemer", "ESCP_LeatherFalmer", "ESCP_LeatherMaomer"
+            "ESCP_LeatherDunmer", "ESCP_LeatherDwemer", "ESCP_LeatherFalmer", "ESCP_LeatherMaormer"
         };
 
         public static ThoughtState CurrentThoughtState(Pawn p)
