@@ -33,9 +33,10 @@ namespace ESCP_RaceTools
 		[HarmonyPostfix]
 		public static void ArgoStomachPatch(Pawn ingester, ref float __result)
 		{
-			if (ModSettingsUtility.ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist() && __result != 0f && HediffDef.Named("ESCP_ArgonianStomach") != null)
+			if (ModSettingsUtility.ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist() && __result != 0f)
 			{
-				{
+                if (DefDatabase<HediffDef>.GetNamed("ESCP_ArgonianStomach", false) != null)
+                {
 					if (ingester.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named("ESCP_ArgonianStomach")) != null)
 					{
 						__result = 0f;
