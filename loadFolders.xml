@@ -6,7 +6,10 @@
 		<li IfModActive="Ludeon.RimWorld.Royalty">Mods/Royalty</li>	
 		<li IfModActive="Ludeon.RimWorld.Ideology">Mods/Ideology</li>	
 		<li IfModActive="erdelf.HumanoidAlienRaces">Mods/AlienRaces</li>	
+		<li IfModActive="erdelf.HumanoidAlienRaces_copy">Mods/AlienRaces</li>	
 		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">Mods/VFE_Core</li>	
+		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core_copy">Mods/VFE_Core</li>	
 		<li IfModActive="vanillaexpanded.achievements">Mods/VanillaExpandedAchievements</li>	
+		<li IfModActive="vanillaexpanded.achievements_copy">Mods/VanillaExpandedAchievements</li>	
 	</v1.3>
 </loadFolders>

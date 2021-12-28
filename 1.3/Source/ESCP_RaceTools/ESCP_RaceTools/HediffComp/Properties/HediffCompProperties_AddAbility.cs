@@ -13,5 +13,6 @@ namespace ESCP_RaceTools
         }
 
         public AbilityDef abilityDef;
+        public float severityRequired = 0f;
     }
 }

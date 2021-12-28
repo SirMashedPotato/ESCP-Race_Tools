@@ -100,6 +100,7 @@
     <Compile Include="HediffComp\HediffComp_NightEye.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_AddAbility.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_NightEye.cs" />
+    <Compile Include="HediffGiver\HediffGiver_ChanceOnCreation.cs" />
     <Compile Include="HediffGiver\HediffGiver_OnCreation.cs" />
     <Compile Include="Ideo\GoodwillSituationWorker_AltmerCompatibility.cs" />
     <Compile Include="Ideo\GoodwillSituationWorker_AltmerDominionCompatibility.cs" />

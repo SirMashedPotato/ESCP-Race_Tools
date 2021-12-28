@@ -16,7 +16,8 @@ namespace ESCP_RaceTools
 
         public override void CompPostPostAdd(DamageInfo? dinfo)
         {
-            if(Props.abilityDef != null && this.Pawn.abilities.GetAbility(Props.abilityDef) == null)
+            if(Props.abilityDef != null && this.Pawn.abilities.GetAbility(Props.abilityDef) == null
+                && parent.Severity >= Props.severityRequired)
             {
                 this.Pawn.abilities.GainAbility(Props.abilityDef);
             }

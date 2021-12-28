@@ -21,9 +21,13 @@
       <li>Ludeon.RimWorld</li>
       <li>Ludeon.RimWorld.Ideology</li>
 	  <li>Ludeon.RimWorld.Royalty</li>
+	  
       <li>erdelf.HumanoidAlienRaces</li>
+      <li>erdelf.HumanoidAlienRaces_copy</li>
 	  <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+	  <li>OskarPotocki.VanillaFactionsExpanded.Core_copy</li>
 	  <li>vanillaexpanded.achievements</li>
+	  <li>vanillaexpanded.achievements_copy</li>
     </loadAfter>
 	<loadBefore>
 	</loadBefore>

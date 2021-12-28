@@ -10,7 +10,7 @@ namespace ESCP_RaceTools
     {
         public override void OnIntervalPassed(Pawn pawn, Hediff cause)
         {
-            if (!HasHediff(pawn)/* && !PawnUtility.IsBiologicallyBlind(pawn)*/)
+            if (!HasHediff(pawn))
             {
                 base.TryApply(pawn);
             }
