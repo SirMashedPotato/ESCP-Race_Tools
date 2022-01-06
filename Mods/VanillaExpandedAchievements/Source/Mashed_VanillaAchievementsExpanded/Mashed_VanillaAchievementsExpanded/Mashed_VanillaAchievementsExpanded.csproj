@@ -69,6 +69,7 @@
     <Compile Include="VEA_Trackers\HediffTracker_WithDefList.cs" />
     <Compile Include="VEA_Trackers\ItemCraftTracker_WithDefList.cs" />
     <Compile Include="VEA_Trackers\ItemCraftTracker_WithThingCategory.cs" />
+    <Compile Include="VEA_Trackers\KillTracker _WithList.cs" />
     <Compile Include="VEA_Trackers\PawnNamedTracker.cs" />
     <Compile Include="VEA_Trackers\PawnNamedTracker_WithList.cs" />
     <Compile Include="VEA_Trackers\ResearchTracker_WithTab.cs" />
