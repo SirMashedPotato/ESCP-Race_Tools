@@ -17,8 +17,11 @@
 	<ESCP_PageLeather>Leather settings</ESCP_PageLeather>
 	<ESCP_PageLeatherReset>Reset leather settings</ESCP_PageLeatherReset>
 	
-	<ESCP_PageDunmer>Dunmer settings</ESCP_PageDunmer>
-	<ESCP_PageDunmerReset>Reset Dunmer settings</ESCP_PageDunmerReset>
+	<ESCP_PageRace>Race settings</ESCP_PageRace>
+	<ESCP_PageRaceReset>Reset Race settings</ESCP_PageRaceReset>
+	
+	<ESCP_SubpageDunmer>Dunmer</ESCP_SubpageDunmer>
+	<ESCP_SubpageMaormer>Maormer</ESCP_SubpageMaormer>
 	
 	<!-- General settings -->
 	
@@ -84,9 +87,10 @@
 	
 	<ESCP_RaceTools_OrsimerAreMer>Orsimer leather is counted as Mer leather, as opposed to Goblin-ken leather.</ESCP_RaceTools_OrsimerAreMer>
 	
-	<!-- Dunmer specific -->
+	<!-- Race specific -->
 	
 	<ESCP_RaceTools_DunmerGraveWhispering>Enable filled ash burial pit whispers.</ESCP_RaceTools_DunmerGraveWhispering>
 	<ESCP_RaceTools_SeancePsylinkChance>The chance a random pawn gains a psylink from an ancestral seance ritual.</ESCP_RaceTools_SeancePsylinkChance>
+	<ESCP_RaceTools_MaormerLeviathanChance>The chance a Maormer is a leviathan.</ESCP_RaceTools_MaormerLeviathanChance>
 
 </LanguageData>

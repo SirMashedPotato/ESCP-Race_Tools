@@ -2,7 +2,7 @@
 
 namespace ESCP_RaceTools
 {
-    static class ModSettingsUtility_Ideo
+    public static class ModSettingsUtility_Ideo
     {
 
         public static bool ESCP_RaceTools_IdeologyOverrideRace()

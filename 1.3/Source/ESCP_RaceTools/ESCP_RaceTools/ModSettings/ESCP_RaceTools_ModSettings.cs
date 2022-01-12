@@ -49,9 +49,10 @@ namespace ESCP_RaceTools
         public bool ESCP_RaceTools_OrsimerAreMer = ESCP_RaceTools_OrsimerAreMer_def;
         public bool ESCP_RaceTools_LeatherThoughtSload = ESCP_RaceTools_LeatherThoughtSload_def;
 
-        /* Dunmer */
+        /* Race */
         public bool ESCP_RaceTools_DunmerGraveWhispering = ESCP_RaceTools_DunmerGraveWhispering_def;
         public float ESCP_RaceTools_SeancePsylinkChance = ESCP_RaceTools_SeancePsylinkChance_def;
+        public float ESCP_RaceTools_MaormerLeviathanChance = ESCP_RaceTools_MaormerLeviathanChance_def;
 
         //defaults
 
@@ -63,7 +64,7 @@ namespace ESCP_RaceTools
         private static readonly bool ESCP_RaceTools_EnableSettlementPreference_def = true;
         private static readonly bool ESCP_RaceTools_SettlementPreferenceLogging_def = false;
         private static readonly bool ESCP_SettlementPreferenceLoggingExtended_def = false;
-        private static readonly float ESCP_RaceTools_SettlementPreferenceIterations_def = 500f;
+        private static readonly float ESCP_RaceTools_SettlementPreferenceIterations_def = 100f;
 
         /* beast master */
         private static readonly bool ESCP_RaceTools_EnableBeastMaster_def = true;
@@ -98,9 +99,10 @@ namespace ESCP_RaceTools
         private static readonly bool ESCP_RaceTools_OrsimerAreMer_def = true;
         private static readonly bool ESCP_RaceTools_LeatherThoughtSload_def = true;
 
-        /* Dunmer */
+        /* Race */
         private static readonly bool ESCP_RaceTools_DunmerGraveWhispering_def = true;
         private static readonly float ESCP_RaceTools_SeancePsylinkChance_def = 0.5f;
+        private static readonly float ESCP_RaceTools_MaormerLeviathanChance_def = 0.05f;
 
         //save settings
         public override void ExposeData()
@@ -144,9 +146,10 @@ namespace ESCP_RaceTools
             Scribe_Values.Look(ref ESCP_RaceTools_OrsimerAreMer, "ESCP_RaceTools_OrsimerAreMer", ESCP_RaceTools_OrsimerAreMer_def);
             Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtSload, "ESCP_RaceTools_LeatherThoughtSload", ESCP_RaceTools_LeatherThoughtSload_def);
 
-            /* Dunmer */
+            /* Race */
             Scribe_Values.Look(ref ESCP_RaceTools_DunmerGraveWhispering, "ESCP_RaceTools_DunmerGraveWhispering", ESCP_RaceTools_DunmerGraveWhispering_def);
             Scribe_Values.Look(ref ESCP_RaceTools_SeancePsylinkChance, "ESCP_RaceTools_SeancePsylinkChance", ESCP_RaceTools_SeancePsylinkChance_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_MaormerLeviathanChance, "ESCP_RaceTools_MaormerLeviathanChance", ESCP_RaceTools_MaormerLeviathanChance_def);
 
             base.ExposeData();
         }
@@ -157,7 +160,7 @@ namespace ESCP_RaceTools
             ResetSettings_General(settings);
             ResetSettings_Ideology(settings);
             ResetSettings_Leather(settings);
-            ResetSettings_Dunmer(settings);
+            ResetSettings_Race(settings);
         }
 
         public static void ResetSettings_General(ESCP_RaceTools_ModSettings settings)
@@ -207,10 +210,11 @@ namespace ESCP_RaceTools
             settings.ESCP_RaceTools_LeatherThoughtSload = ESCP_RaceTools_LeatherThoughtSload_def;
         }
 
-        public static void ResetSettings_Dunmer(ESCP_RaceTools_ModSettings settings)
+        public static void ResetSettings_Race(ESCP_RaceTools_ModSettings settings)
         {
             settings.ESCP_RaceTools_DunmerGraveWhispering = ESCP_RaceTools_DunmerGraveWhispering_def;
             settings.ESCP_RaceTools_SeancePsylinkChance = ESCP_RaceTools_SeancePsylinkChance_def;
+            settings.ESCP_RaceTools_MaormerLeviathanChance = ESCP_RaceTools_MaormerLeviathanChance_def;
         }
     }
 }

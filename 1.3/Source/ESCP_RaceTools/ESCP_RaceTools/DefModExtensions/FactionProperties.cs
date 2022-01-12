@@ -12,6 +12,7 @@ namespace ESCP_RaceTools
         public bool isAltmerFaction = false;    //Used for the goodwill worker
         public bool isDunmerFaction = false;    //Used for the goodwill worker
         public bool isDunmerAshlanderFaction = false;    //As not all Dunmer are created equal, still Dunmer but also not
+        public bool isMaormerFaction = false;    //Used for the goodwill worker
 
         public static FactionProperties Get(Def def)
         {

@@ -2,7 +2,7 @@
 
 namespace ESCP_RaceTools
 {
-    static class ModSettingsUtility
+    public static class ModSettingsUtility
     {
         /* stuff knowledge */
         public static bool ESCP_RaceTools_EnableStuffKnowledge()

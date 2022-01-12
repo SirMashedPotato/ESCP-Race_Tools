@@ -44,7 +44,7 @@ namespace ESCP_RaceTools
                     listing_Standard = SettingsPage_Leather(listing_Standard);
                     break;
                 case 3:
-                    listing_Standard = SettingsPage_Dunmer(listing_Standard);
+                    listing_Standard = SettingsPage_Race(listing_Standard);
                     break;
 
 
@@ -95,9 +95,9 @@ namespace ESCP_RaceTools
             }
             listing_Standard.Gap();
 
-            Rect rectPageDunmer = listing_Standard.GetRect(30f);
-            TooltipHandler.TipRegion(rectPageDunmer, "ESCP_PageDunmer".Translate());
-            if (Widgets.ButtonText(rectPageDunmer, "ESCP_PageDunmer".Translate(), true, true, true))
+            Rect rectPageRace = listing_Standard.GetRect(30f);
+            TooltipHandler.TipRegion(rectPageRace, "ESCP_PageRace".Translate());
+            if (Widgets.ButtonText(rectPageRace, "ESCP_PageRace".Translate(), true, true, true))
             {
                 page = 3;
             }
@@ -152,10 +152,10 @@ namespace ESCP_RaceTools
 
                 case 3:
                     listing_Standard.Gap();
-                    TooltipHandler.TipRegion(rectDefault, "ESCP_PageDunmerReset".Translate());
-                    if (Widgets.ButtonText(rectDefault, "ESCP_PageDunmerReset".Translate(), true, true, true))
+                    TooltipHandler.TipRegion(rectDefault, "ESCP_PageRaceReset".Translate());
+                    if (Widgets.ButtonText(rectDefault, "ESCP_PageRaceReset".Translate(), true, true, true))
                     {
-                        ESCP_RaceTools_ModSettings.ResetSettings_Dunmer(settings);
+                        ESCP_RaceTools_ModSettings.ResetSettings_Race(settings);
                     }
                     break;
 
@@ -280,6 +280,9 @@ namespace ESCP_RaceTools
             settings.ESCP_RaceTools_IdeologyOverridePsychSensValue = (float)Math.Round(listing_Standard.Slider(settings.ESCP_RaceTools_IdeologyOverridePsychSensValue, 0f, 10f) * 20) / 20;
             listing_Standard.Gap();
 
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
             return listing_Standard;
         }
 
@@ -330,19 +333,18 @@ namespace ESCP_RaceTools
             return listing_Standard;
         }
 
-        private Listing_Standard SettingsPage_Dunmer(Listing_Standard listing_Standard)
+        private Listing_Standard SettingsPage_Race(Listing_Standard listing_Standard)
         {
-            listing_Standard.Label("ESCP_PageDunmer".Translate());
+            listing_Standard.Label("ESCP_PageRace".Translate());
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
             //settings
 
-            /* misc */
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_DunmerGraveWhispering".Translate(), ref settings.ESCP_RaceTools_DunmerGraveWhispering);
+            /* Dunmer */
+            listing_Standard.Label("ESCP_SubpageDunmer".Translate());
             listing_Standard.Gap();
-
-            listing_Standard.GapLine();
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_DunmerGraveWhispering".Translate(), ref settings.ESCP_RaceTools_DunmerGraveWhispering);
             listing_Standard.Gap();
 
             /* only if ideo and royalty are enabled */
@@ -352,6 +354,21 @@ namespace ESCP_RaceTools
                 settings.ESCP_RaceTools_SeancePsylinkChance = (float)Math.Round(listing_Standard.Slider(settings.ESCP_RaceTools_SeancePsylinkChance, 0f, 1f) * 20) / 20;
                 listing_Standard.Gap();
             }
+
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            /* Maormer */
+            listing_Standard.Label("ESCP_SubpageMaormer".Translate());
+            listing_Standard.Gap();
+            listing_Standard.Label("ESCP_RaceTools_MaormerLeviathanChance".Translate() + " (" + settings.ESCP_RaceTools_MaormerLeviathanChance * 100 + "%)");
+            settings.ESCP_RaceTools_MaormerLeviathanChance = (float)Math.Round(listing_Standard.Slider(settings.ESCP_RaceTools_MaormerLeviathanChance, 0f, 1f) * 20) / 20;
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
 
             return listing_Standard;
         }

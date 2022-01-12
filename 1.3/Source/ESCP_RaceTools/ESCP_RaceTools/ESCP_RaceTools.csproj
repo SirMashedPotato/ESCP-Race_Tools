@@ -104,6 +104,7 @@
     <Compile Include="HediffGiver\HediffGiver_OnCreation.cs" />
     <Compile Include="Ideo\GoodwillSituationWorker_AltmerCompatibility.cs" />
     <Compile Include="Ideo\GoodwillSituationWorker_AltmerDominionCompatibility.cs" />
+    <Compile Include="Ideo\GoodwillSituationWorker_MaormerAltmerCompatibility.cs" />
     <Compile Include="Ideo\RoleRequirement_PsychicSensitivity.cs" />
     <Compile Include="Ideo\RoleRequirement_RaceMulti.cs" />
     <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_BeastfolkLeatherApparel.cs" />
@@ -116,7 +117,7 @@
     <Compile Include="ModSettings\ESCP_RaceTools_Mod.cs" />
     <Compile Include="ModSettings\ESCP_RaceTools_ModSettings.cs" />
     <Compile Include="ModSettings\ModSettingsUtility.cs" />
-    <Compile Include="ModSettings\ModSettingsUtility_Dunmer.cs" />
+    <Compile Include="ModSettings\ModSettingsUtility_Race.cs" />
     <Compile Include="ModSettings\ModSettingsUtility_Ideo.cs" />
     <Compile Include="ModSettings\ModSettingsUtility_Tooltips.cs" />
     <Compile Include="Rituals\RitualAttachableOutcomeEffectWorker_DunmerAncestorKnowledge.cs" />
