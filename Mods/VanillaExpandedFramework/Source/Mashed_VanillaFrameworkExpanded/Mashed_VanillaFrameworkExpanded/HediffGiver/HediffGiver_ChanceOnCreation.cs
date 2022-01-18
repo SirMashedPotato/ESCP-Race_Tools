@@ -17,7 +17,10 @@ namespace Mashed_VanillaFrameworkExpanded
                 if (Rand.Chance(chance))
                 {
                     pawn.health.AddHediff(this.hediff).Severity = activatedSeverity;
-                    pawn.GetComp<VFECore.Abilities.CompAbilities>()?.GiveAbility(abilityDef);
+                    foreach (VFECore.Abilities.AbilityDef def in abilityDefs)
+                    {
+                        pawn.GetComp<VFECore.Abilities.CompAbilities>()?.GiveAbility(def);
+                    }
                 }
                 else
                 {
@@ -36,7 +39,7 @@ namespace Mashed_VanillaFrameworkExpanded
         public float inactiveSeverity = 0.5f;
         public float activatedSeverity = 1f;
         public float chance = 0.5f;
-        public VFECore.Abilities.AbilityDef abilityDef;
+        public List<VFECore.Abilities.AbilityDef> abilityDefs;
         //bool random pick
         //int number to pick
         //list abilities

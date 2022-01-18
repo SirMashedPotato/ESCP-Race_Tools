@@ -38,8 +38,8 @@ namespace Mashed_VanillaAchievementsExpanded
             else
                 killedThings.Add(pawn.GetUniqueLoadID());
             bool instigator = instigatorFactionDefs.NullOrEmpty() || (dinfo?.Instigator?.Faction?.def != null && instigatorFactionDefs.Contains(dinfo.Value.Instigator.Faction.def));
-            bool kind = kindDef is null || kindDefList.Contains(pawn.kindDef);
-            bool race = raceDef is null || raceDefList.Contains(pawn.def);
+            bool kind = kindDefList.NullOrEmpty() || kindDefList.Contains(pawn.kindDef);
+            bool race = raceDefList.NullOrEmpty() || raceDefList.Contains(pawn.def);
             bool faction = factionDefs.NullOrEmpty() || (pawn.Faction != null && factionDefs.Contains(pawn.Faction.def));
             return kind && race && faction && instigator && (count <= 1 || ++triggeredCount >= count);
         }
