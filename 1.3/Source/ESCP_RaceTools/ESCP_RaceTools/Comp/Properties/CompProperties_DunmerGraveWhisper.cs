@@ -13,6 +13,7 @@ namespace ESCP_RaceTools
         }
 
         public SoundDef soundDef;
+        public bool onlyFull = true;
 
     }
 }

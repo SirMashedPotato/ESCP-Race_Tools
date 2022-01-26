@@ -33,13 +33,16 @@ namespace ESCP_RaceTools
             }
 			if (ticks >= nextTicks && parent != null && parent.Map != null && Props.soundDef != null)
             {
-				Building_Grave pit = parent as Building_Grave;
-                if (pit.HasCorpse)
+                if (Props.onlyFull)
                 {
-
-					SoundDef sound = Props.soundDef;
-					sound.PlayOneShot(new TargetInfo(parent.Position, parent.Map, false));
+					Building_Grave pit = parent as Building_Grave;
+					if (!pit.HasCorpse)
+					{
+						return;
+					}
 				}
+				SoundDef sound = Props.soundDef;
+				sound.PlayOneShot(new TargetInfo(parent.Position, parent.Map, false));
 				ticks = 0;
 			}
 			ticks++;
