@@ -41,7 +41,7 @@ namespace Mashed_VanillaAchievementsExpanded
     {
         base.ExposeData();
         Scribe_Defs.Look(ref key, "key");
-        Scribe_Values.Look(ref hediff, "hediff");
+        Scribe_Defs.Look(ref hediff, "hediff");
         Scribe_Values.Look(ref minSeverity, "severity");
     }
 
