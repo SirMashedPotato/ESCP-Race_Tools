@@ -1,0 +1,4 @@
+J:\Modding\Github\ESCP-Race_Tools\1.3\Assemblies\LeaveResourcesOnDeath.dll
+J:\Modding\Github\ESCP-Race_Tools\1.3\Source\LeaveResourcesOnDeath\LeaveResourcesOnDeath\obj\Debug\LeaveResourcesOnDeath.csprojAssemblyReference.cache
+J:\Modding\Github\ESCP-Race_Tools\1.3\Source\LeaveResourcesOnDeath\LeaveResourcesOnDeath\obj\Debug\LeaveResourcesOnDeath.csproj.CoreCompileInputs.cache
+J:\Modding\Github\ESCP-Race_Tools\1.3\Source\LeaveResourcesOnDeath\LeaveResourcesOnDeath\obj\Debug\LeaveResourcesOnDeath.dll

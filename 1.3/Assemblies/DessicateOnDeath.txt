@@ -1,0 +1,3 @@
+Just put this in your pawn ThingDef in <race>
+
+<deathActionWorkerClass>DessicateOnDeath.DeathActionWorker_DessicateOnDeath</deathActionWorkerClass>

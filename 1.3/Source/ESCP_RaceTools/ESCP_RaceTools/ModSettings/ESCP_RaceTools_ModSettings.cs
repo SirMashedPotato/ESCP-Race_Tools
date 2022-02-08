@@ -53,6 +53,7 @@ namespace ESCP_RaceTools
         public bool ESCP_RaceTools_DunmerGraveWhispering = ESCP_RaceTools_DunmerGraveWhispering_def;
         public float ESCP_RaceTools_SeancePsylinkChance = ESCP_RaceTools_SeancePsylinkChance_def;
         public float ESCP_RaceTools_MaormerLeviathanChance = ESCP_RaceTools_MaormerLeviathanChance_def;
+        public bool ESCP_RaceTools_SloadThrassianPlagueIncident = ESCP_RaceTools_SloadThrassianPlagueIncident_def;
 
         //defaults
 
@@ -103,6 +104,7 @@ namespace ESCP_RaceTools
         private static readonly bool ESCP_RaceTools_DunmerGraveWhispering_def = true;
         private static readonly float ESCP_RaceTools_SeancePsylinkChance_def = 0.5f;
         private static readonly float ESCP_RaceTools_MaormerLeviathanChance_def = 0.05f;
+        private static readonly bool ESCP_RaceTools_SloadThrassianPlagueIncident_def = true;
 
         //save settings
         public override void ExposeData()
@@ -150,6 +152,7 @@ namespace ESCP_RaceTools
             Scribe_Values.Look(ref ESCP_RaceTools_DunmerGraveWhispering, "ESCP_RaceTools_DunmerGraveWhispering", ESCP_RaceTools_DunmerGraveWhispering_def);
             Scribe_Values.Look(ref ESCP_RaceTools_SeancePsylinkChance, "ESCP_RaceTools_SeancePsylinkChance", ESCP_RaceTools_SeancePsylinkChance_def);
             Scribe_Values.Look(ref ESCP_RaceTools_MaormerLeviathanChance, "ESCP_RaceTools_MaormerLeviathanChance", ESCP_RaceTools_MaormerLeviathanChance_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadThrassianPlagueIncident, "ESCP_RaceTools_SloadThrassianPlagueIncident", ESCP_RaceTools_SloadThrassianPlagueIncident_def);
 
             base.ExposeData();
         }
@@ -215,6 +218,7 @@ namespace ESCP_RaceTools
             settings.ESCP_RaceTools_DunmerGraveWhispering = ESCP_RaceTools_DunmerGraveWhispering_def;
             settings.ESCP_RaceTools_SeancePsylinkChance = ESCP_RaceTools_SeancePsylinkChance_def;
             settings.ESCP_RaceTools_MaormerLeviathanChance = ESCP_RaceTools_MaormerLeviathanChance_def;
+            settings.ESCP_RaceTools_SloadThrassianPlagueIncident = ESCP_RaceTools_SloadThrassianPlagueIncident_def;
         }
     }
 }

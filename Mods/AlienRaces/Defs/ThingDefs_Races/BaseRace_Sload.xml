@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BasePawn" Name="ESCP_BasePawnMan" Abstract="True">
+	<ThingDef ParentName="BasePawn" Name="ESCP_BasePawnSload" Abstract="True">
 		<tools>
 		  <li>
 			<label>left fist</label>
 			<capacities>
 			  <li>Blunt</li>
 			</capacities>
-			<power>8.2</power>
-			<cooldownTime>2</cooldownTime>
+			<power>14.2</power>
+			<cooldownTime>3</cooldownTime>
 			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 			<surpriseAttack>
 			  <extraMeleeDamages>
@@ -25,8 +25,8 @@
 			<capacities>
 			  <li>Blunt</li>
 			</capacities>
-			<power>8.2</power>
-			<cooldownTime>2</cooldownTime>
+			<power>14.2</power>
+			<cooldownTime>3</cooldownTime>
 			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 			<surpriseAttack>
 			  <extraMeleeDamages>
@@ -38,22 +38,12 @@
 			</surpriseAttack>
 		  </li>
 		  <li>
-			<label>teeth</label>
-			<capacities>
-			  <li>Bite</li>
-			</capacities>
-			<power>8.2</power>
-			<cooldownTime>2</cooldownTime>
-			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-			<chanceFactor>0.07</chanceFactor>
-		  </li>
-		  <li>
 			<label>head</label>
 			<capacities>
 			  <li>Blunt</li>
 			</capacities>
-			<power>5</power>
-			<cooldownTime>2</cooldownTime>
+			<power>8</power>
+			<cooldownTime>3</cooldownTime>
 			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			<chanceFactor>0.2</chanceFactor>
@@ -67,13 +57,10 @@
 			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
 			<intelligence>Humanlike</intelligence>
 			<makesFootprints>true</makesFootprints>
-			<leatherDef>Leather_Human</leatherDef>
 			<body>Human</body>
 			<foodType>OmnivoreHuman</foodType>
-			<baseBodySize>1</baseBodySize>
-			<baseHealthScale>1</baseHealthScale>
 			<gestationPeriodDays>45</gestationPeriodDays>
-			<useMeatFrom>Human</useMeatFrom>
+			<meatMarketValue>0.8</meatMarketValue>
 			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
 			<litterSizeCurve>
@@ -102,7 +89,7 @@
 				  <minAge>13</minAge>
 				</li>
 				<li>
-				  <def>HumanlikeAdult</def>
+				  <def>ESCP_HumanlikeAdult_Milkable</def>
 				  <minAge>18</minAge>
 				</li>
 			</lifeStageAges>
@@ -115,15 +102,16 @@
 			</specialShadowData>
 			<ageGenerationCurve>
 				<points>
-				  <li>(14,0)</li>
-				  <li>(20,100)</li>
+				  <li>(20,0)</li>
+				  <li>(30,100)</li>
 				  <li>(50,100)</li>
 				  <li>(60,30)</li>
 				  <li>(70,18)</li>
 				  <li>(80,10)</li>
 				  <li>(90,10)</li>
 				  <li>(100,10)</li>
-				  <li>(200,0)</li>
+				  <li>(200,5)</li>
+				  <li>(300,0)</li>
 				</points>
 			</ageGenerationCurve>
 			<hediffGiverSets>

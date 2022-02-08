@@ -128,6 +128,11 @@
 				<li>Human</li>
 			</hediffGiverSets>
 		</race>
+		<ingredient>
+		  <mergeCompatibilityTags>
+			<li>HumanMeat</li>
+		  </mergeCompatibilityTags>
+		</ingredient>
 	</ThingDef>
 
 </Defs>
