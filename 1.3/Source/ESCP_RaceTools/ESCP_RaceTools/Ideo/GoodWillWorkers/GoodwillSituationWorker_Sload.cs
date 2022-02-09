@@ -35,7 +35,8 @@ namespace ESCP_RaceTools
 			var props = IdeoProperties.Get(this.def);
 			var propsB = FactionProperties.Get(b.def);
 
-			return props != null && a.ideos.PrimaryIdeo.PreceptsListForReading.Where(x => x.def.defName == props.preceptDef).Any() && propsB != null && propsB.isSloadFaction;
+			return props != null && a.ideos.PrimaryIdeo != null && !a.ideos.PrimaryIdeo.PreceptsListForReading.NullOrEmpty() 
+				&& a.ideos.PrimaryIdeo.PreceptsListForReading.Where(x => x.def.defName == props.preceptDef).Any() && propsB != null && propsB.isSloadFaction;
 
 		}
 	}
