@@ -24,6 +24,8 @@ namespace ESCP_RaceTools
         //for death action worker give history event
         public HistoryEventDef eventOnDeath;
 
+        public bool sloadThrallImmune = false;
+
         public static RaceProperties Get(Def def)
         {
             return def.GetModExtension<RaceProperties>();

@@ -45,6 +45,9 @@ namespace ESCP_RaceTools
 			}
 		}
 	}
+
+    
+
     /*
     [HarmonyPatch(typeof(ThingDef))]
     class GetRidOfLeaderError
