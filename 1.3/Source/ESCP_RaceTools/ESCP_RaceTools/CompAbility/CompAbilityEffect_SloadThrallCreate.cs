@@ -39,6 +39,15 @@ namespace ESCP_RaceTools
 
         public override bool GizmoDisabled(out string reason)
         {
+            if (Props.disablerPrecept != null && ModsConfig.IdeologyActive)
+            {
+                if (parent.pawn.ideo.Ideo.PreceptsListForReading.Where(x => x.def.defName == Props.disablerPrecept).Any())
+                {
+                    reason = "ESCP_SloadThrall_PreceptDisabled".Translate();
+                    return true;
+                }
+            }
+
             int limit = CurrentLimit(parent.pawn);
             int count = parent.pawn.GetComp<Comp_SloadThralls>().ThrallCount();
             if (limit <= count)

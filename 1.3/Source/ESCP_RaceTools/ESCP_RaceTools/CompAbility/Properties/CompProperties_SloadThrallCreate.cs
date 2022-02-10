@@ -18,5 +18,6 @@ namespace ESCP_RaceTools
         //two linked lists, as such the count in each should match
         public List<int> thrallLimit;
         public List<int> levelRequirement;
+        public string disablerPrecept;
     }
 }

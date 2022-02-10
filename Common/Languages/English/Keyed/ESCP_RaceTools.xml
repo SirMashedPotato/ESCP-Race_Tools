@@ -42,4 +42,5 @@
 	
 	<ESCP_SloadThrall_KillThrall>Sever Connection</ESCP_SloadThrall_KillThrall>
 	<ESCP_SloadThrall_KillThrall_Tooltip>Sever this thralls connection to {0}, effectively killing it... again.</ESCP_SloadThrall_KillThrall_Tooltip>
+	<ESCP_SloadThrall_PreceptDisabled>due to precept: Sload Thralls (Heretical)</ESCP_SloadThrall_PreceptDisabled>
 </LanguageData>
