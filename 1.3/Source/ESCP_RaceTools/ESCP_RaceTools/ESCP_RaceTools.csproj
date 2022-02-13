@@ -107,6 +107,7 @@
     <Compile Include="Harmony\UniqueDeityNamePatch.cs" />
     <Compile Include="HediffComp\HediffComp_AddAbility.cs" />
     <Compile Include="HediffComp\HediffComp_BeastMaster.cs" />
+    <Compile Include="HediffComp\HediffComp_BeastMasterSpawner.cs" />
     <Compile Include="HediffComp\HediffComp_NightEye.cs" />
     <Compile Include="HediffComp\HediffComp_SloadThrall.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_AddAbility.cs" />
@@ -119,6 +120,7 @@
     <Compile Include="Ideo\GoodWillWorkers\GoodwillSituationWorker_Sload.cs" />
     <Compile Include="Ideo\RoleRequirement_PsychicSensitivity.cs" />
     <Compile Include="Ideo\RoleRequirement_RaceMulti.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_ThrassianPlague.cs" />
     <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_BeastfolkLeatherApparel.cs" />
     <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_GoblinKenLeatherApparel.cs" />
     <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_MerLeatherApparel.cs" />

@@ -26,7 +26,7 @@ namespace ESCP_RaceTools
                 if(Props.hediff != null)
                 {
                     p.health.AddHediff(Props.hediff);
-                    p.health.hediffSet.GetFirstHediffOfDef(Props.hediff).TryGetComp<HediffComp_SloadThrall>().SetMaster(parent.pawn);   //TODO change to seoerate comp
+                    p.health.hediffSet.GetFirstHediffOfDef(Props.hediff).TryGetComp<HediffComp_SloadThrall>().SetMaster(parent.pawn);
                 }
                 p.SetFaction(parent.pawn.Faction, parent.pawn);
                 if (ModsConfig.IdeologyActive && p.RaceProps.Humanlike)
