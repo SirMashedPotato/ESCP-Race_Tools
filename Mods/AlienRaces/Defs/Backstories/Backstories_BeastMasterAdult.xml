@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.BackstoryDef Name="ESCP_BeastmasterBackstoryBase" Abstract="True">
+		<slot>Adulthood</slot>
+		<spawnCategories>
+		  <li>ESCP_BeastMaster</li>
+		</spawnCategories>
+		<forcedHediffs>
+			<li>ESCP_HiddenBeastMaster</li>
+		</forcedHediffs>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="ESCP_BeastmasterBackstoryBase">
+		<defName>ESCP_Generic_BeastmasterBackstory</defName>
+		<title>beast master</title>
+		<titleShort>beast master</titleShort>
+		<baseDescription>[PAWN_nameDef] is a rather skilled beast master. Many animals have been tamed and trained by [PAWN_nameDef]. And when the need arises, they even fight alongside [PAWN_nameDef].</baseDescription>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>8</amount>
+			</li>
+		</skillGains>
+		<disallowedTraits>
+		</disallowedTraits>
+		<workDisables>
+		</workDisables>
+	</AlienRace.BackstoryDef>
+	
+</Defs>

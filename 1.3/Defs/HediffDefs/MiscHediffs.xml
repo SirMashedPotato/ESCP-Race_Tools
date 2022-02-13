@@ -34,6 +34,11 @@
 				<becomeVisible>false</becomeVisible>
 			</li>
 		</stages>
+		<comps>
+		  <li>
+			<compClass>ESCP_RaceTools.HediffComp_BeastMasterSpawner</compClass>
+		  </li>
+		</comps>
 	</HediffDef>
  
 </Defs>

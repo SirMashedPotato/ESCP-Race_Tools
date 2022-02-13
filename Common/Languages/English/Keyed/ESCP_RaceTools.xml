@@ -35,4 +35,12 @@
 	<ESCP_DunmerRitualOutcomeExtraDesc_SeancePsylink>Thanks to a enlightening seance ritual, {PAWN_labelShort} gained a psylink level!</ESCP_DunmerRitualOutcomeExtraDesc_SeancePsylink>
 	<ESCP_DunmerRitualOutcomeExtraDesc_SeancePsylinkAbility>With a new pyslink level {PAWN_pronoun} gained a {0} psycast.</ESCP_DunmerRitualOutcomeExtraDesc_SeancePsylinkAbility>
 	
+	<!-- Sload -->
+	<ESCP_SloadThrall_LimitReached>Current limit of {0} thralls reached.</ESCP_SloadThrall_LimitReached>
+	<ESCP_SloadThrall_ExtraTooltip_Count>Current thralls:  {0}/{1}</ESCP_SloadThrall_ExtraTooltip_Count>
+	<ESCP_SloadThrall_ExtraTooltip_Limit>\nThrall limit increased by {0} at {1} {2}</ESCP_SloadThrall_ExtraTooltip_Limit>
+	
+	<ESCP_SloadThrall_KillThrall>Sever Connection</ESCP_SloadThrall_KillThrall>
+	<ESCP_SloadThrall_KillThrall_Tooltip>Sever this thralls connection to {0}, effectively killing it... again.</ESCP_SloadThrall_KillThrall_Tooltip>
+	<ESCP_SloadThrall_PreceptDisabled>due to precept: Sload Thralls (Heretical)</ESCP_SloadThrall_PreceptDisabled>
 </LanguageData>

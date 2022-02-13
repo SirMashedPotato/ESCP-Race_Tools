@@ -1,0 +1,3 @@
+Just put this in your building ThingDef
+
+<thingClass>LeaveResourcesOnDeath.Building_LeaveAllOnDeconstruct</thingClass>

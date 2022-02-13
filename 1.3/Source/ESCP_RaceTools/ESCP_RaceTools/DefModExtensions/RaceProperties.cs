@@ -21,6 +21,10 @@ namespace ESCP_RaceTools
         //expectations
         public bool modifiedExpectations = false;
         public int expectationOffset = -1;
+        //for death action worker give history event
+        public HistoryEventDef eventOnDeath;
+
+        public bool sloadThrallImmune = false;
 
         public static RaceProperties Get(Def def)
         {

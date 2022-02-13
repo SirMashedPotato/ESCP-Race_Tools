@@ -11,10 +11,11 @@ namespace ESCP_RaceTools
 {
     class Comp_BeastMasterInit : ThingComp
     {
-        private bool ESCP_BeastMaster_beastsSpawned = false;
+        public bool ESCP_BeastMaster_beastsSpawned = false;
 
-        public void ExposeData()
+        public override void PostExposeData()
         {
+            base.PostExposeData();
             Scribe_Values.Look<bool>(ref this.ESCP_BeastMaster_beastsSpawned, "ESCP_BeastMaster_beastsSpawned", true, false);
         }
 

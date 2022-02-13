@@ -45,5 +45,21 @@ namespace ESCP_RaceTools
 			}
 		}
 	}
+
+    
+
+    /*
+    [HarmonyPatch(typeof(ThingDef))]
+    class GetRidOfLeaderError
+    {
+        [HarmonyPostfix]
+        [HarmonyPatch("LabelAsStuff", MethodType.Getter)]
+        public static void GetRidOfLeaderError_Patch(ref ThingDef __instance, ref string __result)
+        {
+            Log.Message("Triggering: " + __instance.label);
+            __result = null;
+        }
+    }
+    */
 }
 

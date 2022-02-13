@@ -369,6 +369,15 @@ namespace ESCP_RaceTools
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
+            /* Sload */
+            listing_Standard.Label("ESCP_SubpageSload".Translate());
+            listing_Standard.Gap();
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrassianPlagueIncident".Translate(), ref settings.ESCP_RaceTools_SloadThrassianPlagueIncident, "ESCP_RaceTools_SloadThrassianPlagueIncidentTooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
 
             return listing_Standard;
         }

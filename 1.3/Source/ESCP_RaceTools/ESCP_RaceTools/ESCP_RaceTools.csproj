@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="CompAbility\CompAbilityEffect_GiveAncestralHediff.cs" />
     <Compile Include="CompAbility\CompAbilityEffect_GiveHediffAndStun.cs" />
+    <Compile Include="CompAbility\CompAbilityEffect_SloadThrallCreate.cs" />
     <Compile Include="CompAbility\CompEffect_AbilityCharmTarget.cs" />
     <Compile Include="CompAbility\Properties\CompProperties_AbilityEffectCameraShakerOneOff.cs" />
     <Compile Include="CompAbility\Properties\CompProperties_AbilityEnterBeserk.cs" />
@@ -67,16 +68,24 @@
     <Compile Include="CompAbility\CompAbilityEffect_ControlAnimal.cs" />
     <Compile Include="CompAbility\CompEffect_AbilityEnterBeserk.cs" />
     <Compile Include="CompAbility\CompEffect_AbilityCameraShakerOneOff.cs" />
+    <Compile Include="CompAbility\Properties\CompProperties_SloadThrallCreate.cs" />
     <Compile Include="Comp\Comp_DunmerGraveWhisper.cs" />
+    <Compile Include="Comp\Comp_GiveAbilityOnCreation.cs" />
+    <Compile Include="Comp\Comp_SloadThralls.cs" />
     <Compile Include="Comp\Properties\CompProperties_DunmerGraveWhisper.cs" />
     <Compile Include="Comp\Properties\CompProperties_BeastMasterSpawnInit.cs" />
     <Compile Include="Comp\Properties\CompProperties_BeserkerRage.cs" />
     <Compile Include="Comp\Comp_BeastMasterInit.cs" />
     <Compile Include="Comp\Comp_BeserkerRage.cs" />
+    <Compile Include="Comp\Properties\CompProperties_GiveAbilityOnCreation.cs" />
+    <Compile Include="Comp\Properties\CompProperties_SloadThralls.cs" />
     <Compile Include="Comp\Properties\CompProperties_TurnToThing.cs" />
     <Compile Include="Comp\Comp_TurnToThing.cs" />
+    <Compile Include="DeathActionWorker\DeathActionWorker_HistoryEventOnDeath.cs" />
+    <Compile Include="DeathActionWorker\DeathActionWorker_Sload.cs" />
     <Compile Include="DefModExtensions\ApparelProperties.cs" />
     <Compile Include="DefModExtensions\BeastMaster.cs" />
+    <Compile Include="DefModExtensions\IdeoProperties.cs" />
     <Compile Include="Harmony\ExpectationOffset.cs" />
     <Compile Include="DefModExtensions\FactionProperties.cs" />
     <Compile Include="DefModExtensions\IdeoOrginProperties.cs" />
@@ -90,6 +99,7 @@
     <Compile Include="Harmony\HypothermiaSwitchPatch.cs" />
     <Compile Include="Harmony\QuadrumNamesPatch.cs" />
     <Compile Include="Harmony\SettlementPreferencePatch.cs" />
+    <Compile Include="Harmony\SloadThralls.cs" />
     <Compile Include="Harmony\StuffKnowledgePatch.cs" />
     <Compile Include="Harmony\Harmony.cs" />
     <Compile Include="DefModExtensions\SettlementPreference.cs" />
@@ -97,16 +107,20 @@
     <Compile Include="Harmony\UniqueDeityNamePatch.cs" />
     <Compile Include="HediffComp\HediffComp_AddAbility.cs" />
     <Compile Include="HediffComp\HediffComp_BeastMaster.cs" />
+    <Compile Include="HediffComp\HediffComp_BeastMasterSpawner.cs" />
     <Compile Include="HediffComp\HediffComp_NightEye.cs" />
+    <Compile Include="HediffComp\HediffComp_SloadThrall.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_AddAbility.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_NightEye.cs" />
     <Compile Include="HediffGiver\HediffGiver_ChanceOnCreation.cs" />
     <Compile Include="HediffGiver\HediffGiver_OnCreation.cs" />
-    <Compile Include="Ideo\GoodwillSituationWorker_AltmerCompatibility.cs" />
-    <Compile Include="Ideo\GoodwillSituationWorker_AltmerDominionCompatibility.cs" />
-    <Compile Include="Ideo\GoodwillSituationWorker_MaormerAltmerCompatibility.cs" />
+    <Compile Include="Ideo\GoodWillWorkers\GoodwillSituationWorker_AltmerCompatibility.cs" />
+    <Compile Include="Ideo\GoodWillWorkers\GoodwillSituationWorker_AltmerDominionCompatibility.cs" />
+    <Compile Include="Ideo\GoodWillWorkers\GoodwillSituationWorker_MaormerAltmerCompatibility.cs" />
+    <Compile Include="Ideo\GoodWillWorkers\GoodwillSituationWorker_Sload.cs" />
     <Compile Include="Ideo\RoleRequirement_PsychicSensitivity.cs" />
     <Compile Include="Ideo\RoleRequirement_RaceMulti.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_ThrassianPlague.cs" />
     <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_BeastfolkLeatherApparel.cs" />
     <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_GoblinKenLeatherApparel.cs" />
     <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_MerLeatherApparel.cs" />
@@ -124,6 +138,15 @@
     <Compile Include="Rituals\RitualObligationTargetWorker_FilledDunmerGrave.cs" />
     <Compile Include="Rituals\RitualOutcomeEffectWorker_DunmerSeance.cs" />
     <Compile Include="ThingClass\PlantBuildingPod.cs" />
+    <Compile Include="ThinkNode\ThinkNode_ConditionalThingDef.cs" />
+    <Compile Include="ThoughtWorkerClass\ThoughtWorker_SloadOpinionThought.cs" />
+    <Compile Include="ThoughtWorkerClass\ThoughtWorker_Situational_Precept_NoSloadInColony.cs" />
+    <Compile Include="ThoughtWorkerClass\ThoughtWorker_Situational_Precept_NoSloadInMap.cs" />
+    <Compile Include="ThoughtWorkerClass\ThoughtWorker_Situational_Precept_SloadInColony.cs" />
+    <Compile Include="ThoughtWorkerClass\ThoughtWorker_Situational_Precept_SloadInMap.cs" />
+    <Compile Include="ThoughtWorkerClass\ThoughtWorker_SloadThought.cs" />
+    <Compile Include="ThoughtClass\Thought_Situational_Precept_SloadInColony.cs" />
+    <Compile Include="ThoughtClass\Thought_Situational_Precept_SloadInMap.cs" />
     <Compile Include="Utility\BeastMasterUtility.cs" />
     <Compile Include="Utility\ESCP_AbilityUtility.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_GiveHediffsInRange.cs" />
@@ -134,7 +157,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\RaceToolsUtility.cs" />
     <Compile Include="Utility\SettlementPreferenceUtility.cs" />
+    <Compile Include="Utility\SloadUtility.cs" />
     <Compile Include="Utility\StuffKnowledgeUtility.cs" />
+    <Compile Include="Verb\Verb_CastAbilityTouch_SloadThrallCreate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Def\" />

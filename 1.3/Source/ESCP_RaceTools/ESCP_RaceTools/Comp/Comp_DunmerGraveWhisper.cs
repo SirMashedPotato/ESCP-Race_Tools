@@ -17,8 +17,9 @@ namespace ESCP_RaceTools
 		public int nextTicks = 5;
 		public int ticks = 0;
 
-		public void ExposeData()
+		public override void PostExposeData()
 		{
+			base.PostExposeData();
 			Scribe_Values.Look<int>(ref this.ticks, "ESCP_DunmerGraveWhisper_Ticks", 1, false);
 		}
 
