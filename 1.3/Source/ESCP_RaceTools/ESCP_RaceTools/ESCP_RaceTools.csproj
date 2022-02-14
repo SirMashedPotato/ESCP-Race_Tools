@@ -124,10 +124,11 @@
     <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_BeastfolkLeatherApparel.cs" />
     <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_GoblinKenLeatherApparel.cs" />
     <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_MerLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_SloadLeatherApparel.cs" />
     <Compile Include="LeatherThoughtWorkers\ThoughtWorker_BeastfolkLeatherApparel.cs" />
     <Compile Include="LeatherThoughtWorkers\ThoughtWorker_GoblinKenLeatherApparel.cs" />
     <Compile Include="LeatherThoughtWorkers\ThoughtWorker_MerLeatherApparel.cs" />
-    <Compile Include="LeatherThoughtWorkers\Other\ThoughtWorker_SloadLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\ThoughtWorker_SloadLeatherApparel.cs" />
     <Compile Include="ModSettings\ESCP_RaceTools_Mod.cs" />
     <Compile Include="ModSettings\ESCP_RaceTools_ModSettings.cs" />
     <Compile Include="ModSettings\ModSettingsUtility.cs" />
@@ -139,6 +140,7 @@
     <Compile Include="Rituals\RitualOutcomeEffectWorker_DunmerSeance.cs" />
     <Compile Include="ThingClass\PlantBuildingPod.cs" />
     <Compile Include="ThinkNode\ThinkNode_ConditionalThingDef.cs" />
+    <Compile Include="ThoughtWorkerClass\ThoughtWorker_Situational_Precept_ThrassianPlague.cs" />
     <Compile Include="ThoughtWorkerClass\ThoughtWorker_SloadOpinionThought.cs" />
     <Compile Include="ThoughtWorkerClass\ThoughtWorker_Situational_Precept_NoSloadInColony.cs" />
     <Compile Include="ThoughtWorkerClass\ThoughtWorker_Situational_Precept_NoSloadInMap.cs" />

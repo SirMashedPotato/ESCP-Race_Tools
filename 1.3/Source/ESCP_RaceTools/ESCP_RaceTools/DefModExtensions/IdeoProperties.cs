@@ -10,6 +10,9 @@ namespace ESCP_RaceTools
     {
         public String preceptDef;
 
+        public HediffDef hediffDef;
+
+
         public static IdeoProperties Get(Def def)
         {
             return def.GetModExtension<IdeoProperties>();
