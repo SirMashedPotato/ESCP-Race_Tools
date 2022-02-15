@@ -98,7 +98,7 @@
 	<ESCP_RaceTools_SloadThrassianPlagueIncidentTooltip>Sload do not raid the player. Being hostile to a Sload faction will instead enable the Thrassian Plague incident, but only if this setting is enabled.</ESCP_RaceTools_SloadThrassianPlagueIncidentTooltip>
 
 	<!-- Sload Thralls -->
-	<ESCP_RaceTools_SloadThrallNamesArePurple>Sload thrall names ar purple.</ESCP_RaceTools_SloadThrallNamesArePurple>
+	<ESCP_RaceTools_SloadThrallNamesArePurple>Sload thrall names are purple.</ESCP_RaceTools_SloadThrallNamesArePurple>
 	
 	<ESCP_RaceTools_SloadThrallDisableNeeds>Disable Sload thrall needs.</ESCP_RaceTools_SloadThrallDisableNeeds>
 	<ESCP_RaceTools_SloadThrallDisableMoods>Disable Sload thrall thoughts.</ESCP_RaceTools_SloadThrallDisableMoods>
