@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="CompAbility\CompAbilityEffect_GiveAncestralHediff.cs" />
     <Compile Include="CompAbility\CompAbilityEffect_GiveHediffAndStun.cs" />
+    <Compile Include="CompAbility\CompAbilityEffect_ReleaseGas.cs" />
     <Compile Include="CompAbility\CompAbilityEffect_SloadThrallCreate.cs" />
     <Compile Include="CompAbility\CompEffect_AbilityCharmTarget.cs" />
     <Compile Include="CompAbility\Properties\CompProperties_AbilityEffectCameraShakerOneOff.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="CompAbility\CompAbilityEffect_ControlAnimal.cs" />
     <Compile Include="CompAbility\CompEffect_AbilityEnterBeserk.cs" />
     <Compile Include="CompAbility\CompEffect_AbilityCameraShakerOneOff.cs" />
+    <Compile Include="CompAbility\Properties\CompProperties_ReleaseGas.cs" />
     <Compile Include="CompAbility\Properties\CompProperties_SloadThrallCreate.cs" />
     <Compile Include="Comp\Comp_DunmerGraveWhisper.cs" />
     <Compile Include="Comp\Comp_GiveAbilityOnCreation.cs" />
@@ -86,6 +88,7 @@
     <Compile Include="DefModExtensions\ApparelProperties.cs" />
     <Compile Include="DefModExtensions\BeastMaster.cs" />
     <Compile Include="DefModExtensions\IdeoProperties.cs" />
+    <Compile Include="Gas\Gas_ThrassianPlague.cs" />
     <Compile Include="Harmony\ExpectationOffset.cs" />
     <Compile Include="DefModExtensions\FactionProperties.cs" />
     <Compile Include="DefModExtensions\IdeoOrginProperties.cs" />
@@ -134,10 +137,15 @@
     <Compile Include="ModSettings\ModSettingsUtility.cs" />
     <Compile Include="ModSettings\ModSettingsUtility_Race.cs" />
     <Compile Include="ModSettings\ModSettingsUtility_Ideo.cs" />
+    <Compile Include="ModSettings\ModSettingsUtility_SloadThralls.cs" />
     <Compile Include="ModSettings\ModSettingsUtility_Tooltips.cs" />
-    <Compile Include="Rituals\RitualAttachableOutcomeEffectWorker_DunmerAncestorKnowledge.cs" />
+    <Compile Include="Rituals\AddHediff\RitualObligationTargetWorker_AnyRitualSpotOrAltar_AddHediff.cs" />
+    <Compile Include="Rituals\AddHediff\RitualOutcomeEffectWorker_GiveHediff_KillOnFail.cs" />
+    <Compile Include="Rituals\AddHediff\RitualRoleAddHediffTarget.cs" />
+    <Compile Include="Rituals\DunmerSeance\RitualAttachableOutcomeEffectWorker_DunmerAncestorKnowledge.cs" />
     <Compile Include="Rituals\RitualObligationTargetWorker_FilledDunmerGrave.cs" />
-    <Compile Include="Rituals\RitualOutcomeEffectWorker_DunmerSeance.cs" />
+    <Compile Include="Rituals\RitualOutcomeComp_RacePresentNotSubstituted.cs" />
+    <Compile Include="Rituals\DunmerSeance\RitualOutcomeEffectWorker_DunmerSeance.cs" />
     <Compile Include="ThingClass\PlantBuildingPod.cs" />
     <Compile Include="ThinkNode\ThinkNode_ConditionalThingDef.cs" />
     <Compile Include="ThoughtWorkerClass\ThoughtWorker_Situational_Precept_ThrassianPlague.cs" />

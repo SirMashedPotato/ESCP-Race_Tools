@@ -22,7 +22,7 @@ namespace ESCP_RaceTools
 
         private bool Immune()
         {
-            return Faction.OfPlayer.ideos.PrimaryIdeo.PreceptsListForReading.Where(x => x.def.defName == "ESCP_SloadThrassianImmunity").Any();
+            return Faction.OfPlayer.ideos.PrimaryIdeo.PreceptsListForReading.Where(x => x.def.defName == "ESCP_SloadThrassianImmunity_Immune").Any();
         }
 
         private bool Hostile()

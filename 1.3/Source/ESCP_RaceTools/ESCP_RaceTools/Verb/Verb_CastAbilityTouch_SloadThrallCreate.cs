@@ -13,7 +13,7 @@ namespace ESCP_RaceTools
 
         public bool IsValidCorpse(Thing t)
         {
-            if (t is Corpse c && c.InnerPawn.RaceProps.IsFlesh && c.GetRotStage() == RotStage.Fresh && c.InnerPawn.RaceProps.Humanlike)
+            if (t is Corpse c && c.InnerPawn.RaceProps.IsFlesh && c.GetRotStage() == RotStage.Fresh/* && c.InnerPawn.RaceProps.Humanlike*/)
             {
                 var props = RaceProperties.Get(c.InnerPawn.def);
                 if(props != null && props.sloadThrallImmune)

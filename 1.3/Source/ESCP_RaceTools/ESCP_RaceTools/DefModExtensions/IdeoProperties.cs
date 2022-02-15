@@ -11,7 +11,7 @@ namespace ESCP_RaceTools
         public String preceptDef;
 
         public HediffDef hediffDef;
-
+        public BodyPartDef partToApplyTo;
 
         public static IdeoProperties Get(Def def)
         {

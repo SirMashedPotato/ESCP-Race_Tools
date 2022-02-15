@@ -3,6 +3,7 @@ using Verse;
 using RimWorld;
 using System.Linq;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace ESCP_RaceTools
 {
@@ -41,9 +42,9 @@ namespace ESCP_RaceTools
 
         public void KillThralls()
         {
-            for(int i = 0; i < thralls.Count; i++)
+            while(thralls.Count() > 0)
             {
-                thralls[i].Kill(null);
+                thralls[0].Kill(null);
             }
         }
 
@@ -56,7 +57,22 @@ namespace ESCP_RaceTools
             {
                 KillThralls();
             }
+        }
 
+        public override IEnumerable<Gizmo> CompGetGizmosExtra()
+        {
+            Pawn sload = this.parent as Pawn;
+            yield return new Command_Action
+            {
+                defaultLabel = "ESCP_SloadThrall_KillAllThrall".Translate(),
+                defaultDesc = "ESCP_SloadThrall_KillAllThrall_Tooltip".Translate(),
+                icon = ContentFinder<Texture2D>.Get("UI/Gizmos/ESCP_SloadDisbandThrall", true),
+                disabled = thralls.Count <= 0,
+                action = delegate ()
+                {
+                    KillThralls();
+                }
+            };
         }
     }
 }

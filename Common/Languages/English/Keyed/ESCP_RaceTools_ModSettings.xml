@@ -23,6 +23,7 @@
 	<ESCP_SubpageDunmer>Dunmer</ESCP_SubpageDunmer>
 	<ESCP_SubpageMaormer>Maormer</ESCP_SubpageMaormer>
 	<ESCP_SubpageSload>Sload</ESCP_SubpageSload>
+	<ESCP_SubpageSloadThralls>Sload Thralls</ESCP_SubpageSloadThralls>
 	
 	<!-- General settings -->
 	
@@ -96,4 +97,19 @@
 	<ESCP_RaceTools_SloadThrassianPlagueIncident>Enable the Thrassian Plague incident.</ESCP_RaceTools_SloadThrassianPlagueIncident>
 	<ESCP_RaceTools_SloadThrassianPlagueIncidentTooltip>Sload do not raid the player. Being hostile to a Sload faction will instead enable the Thrassian Plague incident, but only if this setting is enabled.</ESCP_RaceTools_SloadThrassianPlagueIncidentTooltip>
 
+	<!-- Sload Thralls -->
+	<ESCP_RaceTools_SloadThrallNamesArePurple>Sload thrall names ar purple.</ESCP_RaceTools_SloadThrallNamesArePurple>
+	
+	<ESCP_RaceTools_SloadThrallDisableNeeds>Disable Sload thrall needs.</ESCP_RaceTools_SloadThrallDisableNeeds>
+	<ESCP_RaceTools_SloadThrallDisableMoods>Disable Sload thrall thoughts.</ESCP_RaceTools_SloadThrallDisableMoods>
+	<ESCP_RaceTools_SloadThrallIdeoCertainty>Disable Sload thrall Ideology certainty decay.</ESCP_RaceTools_SloadThrallIdeoCertainty>
+	<ESCP_RaceTools_SloadThrallSkillLearning>Disable Sload thrall skill learning.</ESCP_RaceTools_SloadThrallSkillLearning>
+	<ESCP_RaceTools_SloadThrallSkillDecay>Disable Sload thrall skill decay.</ESCP_RaceTools_SloadThrallSkillDecay>
+	
+	<ESCP_RaceTools_SloadThrallMilkable>Disble Sload thralls being milkable.</ESCP_RaceTools_SloadThrallMilkable>
+	<ESCP_RaceTools_SloadThrallShearable>Disble Sload thralls being shearable.</ESCP_RaceTools_SloadThrallShearable>
+	<ESCP_RaceTools_SloadThrallEggLaying>Disble Sload thralls laying eggs.</ESCP_RaceTools_SloadThrallEggLaying>
+	<ESCP_RaceTools_SloadThrallTrainable>Disble Sload thralls being trainable.</ESCP_RaceTools_SloadThrallTrainable>
+	<ESCP_RaceTools_SloadThrallTrainableDecay>Disble Sload thrall trainable decay.</ESCP_RaceTools_SloadThrallTrainableDecay>
+	<ESCP_RaceTools_SloadThrallMating>Disble Sload thrall mating.</ESCP_RaceTools_SloadThrallMating>
 </LanguageData>

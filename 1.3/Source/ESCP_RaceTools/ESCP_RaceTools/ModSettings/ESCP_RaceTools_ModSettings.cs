@@ -55,6 +55,22 @@ namespace ESCP_RaceTools
         public float ESCP_RaceTools_MaormerLeviathanChance = ESCP_RaceTools_MaormerLeviathanChance_def;
         public bool ESCP_RaceTools_SloadThrassianPlagueIncident = ESCP_RaceTools_SloadThrassianPlagueIncident_def;
 
+        //Sload thralls
+        public bool ESCP_RaceTools_SloadThrallDisableNeeds = ESCP_RaceTools_SloadThrallDisableNeeds_def;
+        public bool ESCP_RaceTools_SloadThrallDisableMoods = ESCP_RaceTools_SloadThrallDisableMoods_def;
+        public bool ESCP_RaceTools_SloadThrallIdeoCertainty = ESCP_RaceTools_SloadThrallIdeoCertainty_def;
+        public bool ESCP_RaceTools_SloadThrallSkillLearning = ESCP_RaceTools_SloadThrallSkillLearning_def;
+        public bool ESCP_RaceTools_SloadThrallSkillDecay = ESCP_RaceTools_SloadThrallSkillDecay_def;
+
+        public bool ESCP_RaceTools_SloadThrallMilkable = ESCP_RaceTools_SloadThrallMilkable_def;
+        public bool ESCP_RaceTools_SloadThrallShearable = ESCP_RaceTools_SloadThrallShearable_def;
+        public bool ESCP_RaceTools_SloadThrallEggLaying = ESCP_RaceTools_SloadThrallEggLaying_def;
+        public bool ESCP_RaceTools_SloadThrallTrainable = ESCP_RaceTools_SloadThrallTrainable_def;
+        public bool ESCP_RaceTools_SloadThrallTrainableDecay = ESCP_RaceTools_SloadThrallTrainableDecay_def;
+        public bool ESCP_RaceTools_SloadThrallMating = ESCP_RaceTools_SloadThrallMating_def;
+
+        public bool ESCP_RaceTools_SloadThrallNamesArePurple = ESCP_RaceTools_SloadThrallNamesArePurple_def;
+
         //defaults
 
         /* stuff knowledge */
@@ -106,6 +122,22 @@ namespace ESCP_RaceTools
         private static readonly float ESCP_RaceTools_MaormerLeviathanChance_def = 0.05f;
         private static readonly bool ESCP_RaceTools_SloadThrassianPlagueIncident_def = true;
 
+        //Sload thralls
+        private static readonly bool ESCP_RaceTools_SloadThrallDisableNeeds_def = true;
+        private static readonly bool ESCP_RaceTools_SloadThrallDisableMoods_def = true;
+        private static readonly bool ESCP_RaceTools_SloadThrallIdeoCertainty_def = true;
+        private static readonly bool ESCP_RaceTools_SloadThrallSkillLearning_def = true;
+        private static readonly bool ESCP_RaceTools_SloadThrallSkillDecay_def = true;
+
+        private static readonly bool ESCP_RaceTools_SloadThrallMilkable_def = true;
+        private static readonly bool ESCP_RaceTools_SloadThrallShearable_def = true;
+        private static readonly bool ESCP_RaceTools_SloadThrallEggLaying_def = true;
+        private static readonly bool ESCP_RaceTools_SloadThrallTrainable_def = true;
+        private static readonly bool ESCP_RaceTools_SloadThrallTrainableDecay_def = true;
+        private static readonly bool ESCP_RaceTools_SloadThrallMating_def = true;
+
+        private static readonly bool ESCP_RaceTools_SloadThrallNamesArePurple_def = true;
+
         //save settings
         public override void ExposeData()
         {
@@ -153,6 +185,22 @@ namespace ESCP_RaceTools
             Scribe_Values.Look(ref ESCP_RaceTools_SeancePsylinkChance, "ESCP_RaceTools_SeancePsylinkChance", ESCP_RaceTools_SeancePsylinkChance_def);
             Scribe_Values.Look(ref ESCP_RaceTools_MaormerLeviathanChance, "ESCP_RaceTools_MaormerLeviathanChance", ESCP_RaceTools_MaormerLeviathanChance_def);
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrassianPlagueIncident, "ESCP_RaceTools_SloadThrassianPlagueIncident", ESCP_RaceTools_SloadThrassianPlagueIncident_def);
+
+            //Sload thralls
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallDisableNeeds, "ESCP_RaceTools_SloadThrallDisableNeeds", ESCP_RaceTools_SloadThrallDisableNeeds_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallDisableMoods, "ESCP_RaceTools_SloadThrallDisableMoods", ESCP_RaceTools_SloadThrallDisableMoods_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallIdeoCertainty, "ESCP_RaceTools_SloadThrallIdeoCertainty", ESCP_RaceTools_SloadThrallIdeoCertainty_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallSkillLearning, "ESCP_RaceTools_SloadThrallSkillLearning", ESCP_RaceTools_SloadThrallSkillLearning_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallSkillDecay, "ESCP_RaceTools_SloadThrallSkillDecay", ESCP_RaceTools_SloadThrallSkillDecay_def);
+
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallMilkable, "ESCP_RaceTools_SloadThrallMilkable", ESCP_RaceTools_SloadThrallMilkable_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallShearable, "ESCP_RaceTools_SloadThrallShearable", ESCP_RaceTools_SloadThrallShearable_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallEggLaying, "ESCP_RaceTools_SloadThrallEggLaying", ESCP_RaceTools_SloadThrallEggLaying_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallTrainable, "ESCP_RaceTools_SloadThrallTrainable", ESCP_RaceTools_SloadThrallTrainable_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallTrainableDecay, "ESCP_RaceTools_SloadThrallTrainableDecay", ESCP_RaceTools_SloadThrallTrainableDecay_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallMating, "ESCP_RaceTools_SloadThrallMating", ESCP_RaceTools_SloadThrallMating_def);
+
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallNamesArePurple, "ESCP_RaceTools_SloadThrallNamesArePurple", ESCP_RaceTools_SloadThrallNamesArePurple_def);
 
             base.ExposeData();
         }
@@ -219,6 +267,22 @@ namespace ESCP_RaceTools
             settings.ESCP_RaceTools_SeancePsylinkChance = ESCP_RaceTools_SeancePsylinkChance_def;
             settings.ESCP_RaceTools_MaormerLeviathanChance = ESCP_RaceTools_MaormerLeviathanChance_def;
             settings.ESCP_RaceTools_SloadThrassianPlagueIncident = ESCP_RaceTools_SloadThrassianPlagueIncident_def;
+
+            //Sload thralls
+            settings.ESCP_RaceTools_SloadThrallDisableNeeds = ESCP_RaceTools_SloadThrallDisableNeeds_def;
+            settings.ESCP_RaceTools_SloadThrallDisableMoods = ESCP_RaceTools_SloadThrallDisableMoods_def;
+            settings.ESCP_RaceTools_SloadThrallIdeoCertainty = ESCP_RaceTools_SloadThrallIdeoCertainty_def;
+            settings.ESCP_RaceTools_SloadThrallSkillLearning = ESCP_RaceTools_SloadThrallSkillLearning_def;
+            settings.ESCP_RaceTools_SloadThrallSkillDecay = ESCP_RaceTools_SloadThrallSkillDecay_def;
+
+            settings.ESCP_RaceTools_SloadThrallMilkable = ESCP_RaceTools_SloadThrallMilkable_def;
+            settings.ESCP_RaceTools_SloadThrallShearable = ESCP_RaceTools_SloadThrallShearable_def;
+            settings.ESCP_RaceTools_SloadThrallEggLaying = ESCP_RaceTools_SloadThrallEggLaying_def;
+            settings.ESCP_RaceTools_SloadThrallTrainable = ESCP_RaceTools_SloadThrallTrainable_def;
+            settings.ESCP_RaceTools_SloadThrallTrainableDecay = ESCP_RaceTools_SloadThrallTrainableDecay_def;
+            settings.ESCP_RaceTools_SloadThrallMating = ESCP_RaceTools_SloadThrallMating_def;
+
+            settings.ESCP_RaceTools_SloadThrallNamesArePurple = ESCP_RaceTools_SloadThrallNamesArePurple_def;
         }
     }
 }

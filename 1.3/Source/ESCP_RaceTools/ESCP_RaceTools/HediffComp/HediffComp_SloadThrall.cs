@@ -52,6 +52,15 @@ namespace ESCP_RaceTools
 			};
         }
 
+        public override void CompPostTick(ref float severityAdjustment)
+        {
+            base.CompPostTick(ref severityAdjustment);
+            if (this.Pawn.Faction == null || this.Pawn.Faction != Faction.OfPlayer)
+            {
+				this.Pawn.Kill(null);
+            }
+        }
+
         public override string CompLabelInBracketsExtra => master != null ? master.Name.ToString() : null;
 
 		private Pawn master = null;

@@ -48,5 +48,10 @@ namespace ESCP_RaceTools
             }
             return num;
         }
+
+        public static bool PawnIsThrall(Pawn p)
+        {
+            return p.health.hediffSet.hediffs.Where(x => x.def.ToString() == "ESCP_SloadThrallPassive").Any();
+        }
     }
 }
