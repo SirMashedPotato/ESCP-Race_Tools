@@ -6,7 +6,7 @@ using RimWorld;
 
 namespace ESCP_RaceTools
 {
-    class IdeoProperties : DefModExtension
+    public class IdeoProperties : DefModExtension
     {
         public String preceptDef;
 

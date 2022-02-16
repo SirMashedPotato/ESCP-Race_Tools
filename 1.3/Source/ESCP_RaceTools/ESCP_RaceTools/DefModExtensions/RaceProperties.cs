@@ -6,7 +6,7 @@ using RimWorld;
 
 namespace ESCP_RaceTools
 {
-    class RaceProperties : DefModExtension
+    public class RaceProperties : DefModExtension
     {
         //hypothermia
         public bool completeHypothermiaResistance = false;

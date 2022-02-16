@@ -7,7 +7,7 @@ using RimWorld;
 namespace ESCP_RaceTools
 {
     //Yes I am aware of the typo in the name, it aint getting changed
-    class IdeoOrginProperties : DefModExtension
+    public class IdeoOrginProperties : DefModExtension
     {
         public bool IgnoreDuplicateDeityNames = true;   //ignores duplicate ideo deity names, kind self explanatory really
         public bool RandomiseDeityName = false; //Overrides some stuff and simply randomises the name AND type. Should only use if the origin is limited to one deity

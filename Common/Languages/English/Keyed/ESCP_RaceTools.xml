@@ -38,15 +38,4 @@
 	<!-- Rituals -->
 	<ESCP_RitualOutcomeExtraDesc_KilledPawn>{0} has been killed due to the low quality of the ritual.</ESCP_RitualOutcomeExtraDesc_KilledPawn>
 	
-	<!-- Sload -->
-	<ESCP_SloadThrall_LimitReached>Current limit of {0} thralls reached.</ESCP_SloadThrall_LimitReached>
-	<ESCP_SloadThrall_ExtraTooltip_Count>Current thralls:  {0}/{1}</ESCP_SloadThrall_ExtraTooltip_Count>
-	<ESCP_SloadThrall_ExtraTooltip_Limit>\nThrall limit increased by {0} at {1} {2}</ESCP_SloadThrall_ExtraTooltip_Limit>
-	
-	<!-- Sload thralls -->
-	<ESCP_SloadThrall_KillThrall>Sever Connection</ESCP_SloadThrall_KillThrall>
-	<ESCP_SloadThrall_KillThrall_Tooltip>Sever this thralls connection to {0}, effectively killing it... again.</ESCP_SloadThrall_KillThrall_Tooltip>
-	<ESCP_SloadThrall_KillAllThrall>Sever Connections</ESCP_SloadThrall_KillAllThrall>
-	<ESCP_SloadThrall_KillAllThrall_Tooltip>Sever the connection to all thralls, effectively killing them... again.</ESCP_SloadThrall_KillAllThrall_Tooltip>
-	<ESCP_SloadThrall_PreceptDisabled>due to precept: Sload Thralls (Heretical)</ESCP_SloadThrall_PreceptDisabled>
 </LanguageData>

@@ -6,7 +6,7 @@ using RimWorld;
 
 namespace ESCP_RaceTools
 {
-    class ApparelProperties : DefModExtension
+    public class ApparelProperties : DefModExtension
     {
         public List<ThingDef> linkedApparel;    //requires these items to be worn too
 

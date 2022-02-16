@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace ESCP_RaceTools
 {
-    class DeathActionWorker_HistoryEventOnDeath : DeathActionWorker
+    public class DeathActionWorker_HistoryEventOnDeath : DeathActionWorker
     {
         public override void PawnDied(Corpse corpse)
         {

@@ -19,11 +19,5 @@ namespace ESCP_RaceTools
         {
             return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_MaormerLeviathanChance;
         }
-
-        public static bool ESCP_RaceTools_SloadThrassianPlagueIncident()
-        {
-            return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_SloadThrassianPlagueIncident;
-        }
-
     }
 }

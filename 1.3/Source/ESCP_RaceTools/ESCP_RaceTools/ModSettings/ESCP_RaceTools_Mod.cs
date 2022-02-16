@@ -324,12 +324,6 @@ namespace ESCP_RaceTools
 
             /* Extra */
 
-            if (RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Sload", "ESCP - Sload"))
-            {
-                listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThought".Translate(DefDatabase<ThingDef>.GetNamedSilentFail("ESCP_LeatherSload").label), ref settings.ESCP_RaceTools_LeatherThoughtSload);
-                listing_Standard.Gap();
-            }
-
             return listing_Standard;
         }
 
@@ -368,60 +362,6 @@ namespace ESCP_RaceTools
 
             listing_Standard.GapLine();
             listing_Standard.Gap();
-
-            /* Sload */
-            listing_Standard.Label("ESCP_SubpageSload".Translate());
-            listing_Standard.Gap();
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrassianPlagueIncident".Translate(), ref settings.ESCP_RaceTools_SloadThrassianPlagueIncident, "ESCP_RaceTools_SloadThrassianPlagueIncidentTooltip".Translate());
-            listing_Standard.Gap();
-
-            listing_Standard.GapLine();
-            listing_Standard.Gap();
-
-            //Sload thralls
-
-            listing_Standard.Label("ESCP_SubpageSloadThralls".Translate());
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallNamesArePurple".Translate(), ref settings.ESCP_RaceTools_SloadThrallNamesArePurple);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallDisableNeeds".Translate(), ref settings.ESCP_RaceTools_SloadThrallDisableNeeds);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallDisableMoods".Translate(), ref settings.ESCP_RaceTools_SloadThrallDisableMoods);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallIdeoCertainty".Translate(), ref settings.ESCP_RaceTools_SloadThrallIdeoCertainty);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallSkillLearning".Translate(), ref settings.ESCP_RaceTools_SloadThrallSkillLearning);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallSkillDecay".Translate(), ref settings.ESCP_RaceTools_SloadThrallSkillDecay);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallMilkable".Translate(), ref settings.ESCP_RaceTools_SloadThrallMilkable);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallShearable".Translate(), ref settings.ESCP_RaceTools_SloadThrallShearable);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallEggLaying".Translate(), ref settings.ESCP_RaceTools_SloadThrallEggLaying);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallTrainable".Translate(), ref settings.ESCP_RaceTools_SloadThrallTrainable);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallTrainableDecay".Translate(), ref settings.ESCP_RaceTools_SloadThrallTrainableDecay);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallMating".Translate(), ref settings.ESCP_RaceTools_SloadThrallMating);
-            listing_Standard.Gap();
-
-            listing_Standard.GapLine();
-            listing_Standard.Gap();
-
 
             return listing_Standard;
         }
