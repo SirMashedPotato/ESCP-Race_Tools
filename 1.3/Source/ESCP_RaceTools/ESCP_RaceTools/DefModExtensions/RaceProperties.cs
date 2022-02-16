@@ -6,7 +6,7 @@ using RimWorld;
 
 namespace ESCP_RaceTools
 {
-    class RaceProperties : DefModExtension
+    public class RaceProperties : DefModExtension
     {
         //hypothermia
         public bool completeHypothermiaResistance = false;
@@ -23,8 +23,12 @@ namespace ESCP_RaceTools
         public int expectationOffset = -1;
         //for death action worker give history event
         public HistoryEventDef eventOnDeath;
-
+        //disease immunity
+        public bool immuneToAllDisease = false;
+        public List<string> immuneDiseases;
+        //can't be turned into a sload thrall
         public bool sloadThrallImmune = false;
+        public bool thrassianPlagueImmune = false;
 
         public static RaceProperties Get(Def def)
         {

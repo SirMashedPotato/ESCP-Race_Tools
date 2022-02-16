@@ -114,11 +114,5 @@ namespace ESCP_RaceTools
             return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_OrsimerAreMer &&
                 RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Orsimer", "ESCP - Orsimer");
         }
-
-        public static bool ESCP_RaceTools_LeatherThoughtSload()
-        {
-            return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_LeatherThoughtSload &&
-                RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Sload", "ESCP - Sload");
-        }
     }
 }

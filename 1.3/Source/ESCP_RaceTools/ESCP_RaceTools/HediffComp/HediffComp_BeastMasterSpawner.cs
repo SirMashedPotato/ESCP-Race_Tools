@@ -21,10 +21,6 @@ namespace ESCP_RaceTools
 
         public override void CompPostTick(ref float severityAdjustment)
         {
-            if (parent.pawn.Downed)
-            {
-                base.Pawn.health.RemoveHediff(this.parent);
-            }
             if (!ESCP_BeastMaster_beastsSpawned)
             {
                 Pawn p = base.Pawn;
@@ -47,13 +43,8 @@ namespace ESCP_RaceTools
                     BeastMasterUtility.GiveDuty(pawns, p);
                     BeastMasterUtility.GiveMaster(pawns, p);
                 }
+                base.Pawn.health.RemoveHediff(this.parent);
             }
-        }
-
-        public override void Notify_PawnDied()
-        {
-            base.Notify_PawnDied();
-            base.Pawn.health.RemoveHediff(this.parent);
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace ESCP_RaceTools
 {
-    class PlantProperties : DefModExtension
+    public class PlantProperties : DefModExtension
     {
 
         //For plants that use the PlantBuildingPod class

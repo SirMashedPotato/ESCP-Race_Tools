@@ -57,7 +57,7 @@
 			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
 			<intelligence>Humanlike</intelligence>
 			<makesFootprints>true</makesFootprints>
-			<body>Human</body>
+			<body>ESCP_HumanlikeWithTail</body>
 			<foodType>OmnivoreHuman</foodType>
 			<gestationPeriodDays>45</gestationPeriodDays>
 			<meatMarketValue>0.8</meatMarketValue>

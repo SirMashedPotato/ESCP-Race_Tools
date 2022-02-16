@@ -6,9 +6,12 @@ using RimWorld;
 
 namespace ESCP_RaceTools
 {
-    class IdeoProperties : DefModExtension
+    public class IdeoProperties : DefModExtension
     {
         public String preceptDef;
+
+        public HediffDef hediffDef;
+        public BodyPartDef partToApplyTo;
 
         public static IdeoProperties Get(Def def)
         {

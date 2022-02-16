@@ -20,6 +20,10 @@ namespace ESCP_RaceTools
                 && parent.Severity >= Props.severityRequired)
             {
                 this.Pawn.abilities.GainAbility(Props.abilityDef);
+                if (Props.removeHediffOnApply)
+                {
+                    base.Pawn.health.RemoveHediff(this.parent);
+                }
             }
         }
 
