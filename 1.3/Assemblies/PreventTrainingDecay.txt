@@ -1,0 +1,11 @@
+REQUIRES HARMONY
+Just put this in your race ThingDef
+
+<modExtensions>
+	<li Class="PreventTrainingDecay.PawnProperties"/>
+</modExtensions>
+
+You may also want to add these to your race ThingDef/race
+
+	<showTrainables>false</showTrainables>
+	<hideTrainingTab>true</hideTrainingTab>
