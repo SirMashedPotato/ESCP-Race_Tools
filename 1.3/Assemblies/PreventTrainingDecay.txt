@@ -1,5 +1,6 @@
 REQUIRES HARMONY
 Just put this in your race ThingDef
+Prevents training from decaying, still need to be trained initially.
 
 <modExtensions>
 	<li Class="PreventTrainingDecay.PawnProperties"/>

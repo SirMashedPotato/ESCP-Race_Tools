@@ -1,0 +1,4 @@
+J:\Modding\Github\ESCP-Race_Tools\1.3\Assemblies\PreventDisease.dll
+J:\Modding\Github\ESCP-Race_Tools\1.3\Source\PreventDisease\PreventDisease\obj\Debug\PreventDisease.csprojAssemblyReference.cache
+J:\Modding\Github\ESCP-Race_Tools\1.3\Source\PreventDisease\PreventDisease\obj\Debug\PreventDisease.csproj.CoreCompileInputs.cache
+J:\Modding\Github\ESCP-Race_Tools\1.3\Source\PreventDisease\PreventDisease\obj\Debug\PreventDisease.dll

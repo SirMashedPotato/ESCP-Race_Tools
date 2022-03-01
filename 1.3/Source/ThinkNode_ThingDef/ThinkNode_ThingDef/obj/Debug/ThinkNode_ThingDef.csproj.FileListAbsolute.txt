@@ -1,0 +1,4 @@
+J:\Modding\Github\ESCP-Race_Tools\1.3\Assemblies\ThinkNode_ThingDef.dll
+J:\Modding\Github\ESCP-Race_Tools\1.3\Source\ThinkNode_ThingDef\ThinkNode_ThingDef\obj\Debug\ThinkNode_ThingDef.csprojAssemblyReference.cache
+J:\Modding\Github\ESCP-Race_Tools\1.3\Source\ThinkNode_ThingDef\ThinkNode_ThingDef\obj\Debug\ThinkNode_ThingDef.csproj.CoreCompileInputs.cache
+J:\Modding\Github\ESCP-Race_Tools\1.3\Source\ThinkNode_ThingDef\ThinkNode_ThingDef\obj\Debug\ThinkNode_ThingDef.dll
