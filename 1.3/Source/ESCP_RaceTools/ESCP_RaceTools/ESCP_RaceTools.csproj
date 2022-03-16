@@ -83,6 +83,7 @@
     <Compile Include="DefModExtensions\ApparelProperties.cs" />
     <Compile Include="DefModExtensions\BeastMaster.cs" />
     <Compile Include="DefModExtensions\IdeoProperties.cs" />
+    <Compile Include="Harmony\CorpseTrading.cs" />
     <Compile Include="Harmony\ExpectationOffset.cs" />
     <Compile Include="DefModExtensions\FactionProperties.cs" />
     <Compile Include="DefModExtensions\IdeoOrginProperties.cs" />
@@ -133,6 +134,7 @@
     <Compile Include="Rituals\RitualObligationTargetWorker_FilledDunmerGrave.cs" />
     <Compile Include="Rituals\RitualOutcomeComp_RacePresentNotSubstituted.cs" />
     <Compile Include="Rituals\DunmerSeance\RitualOutcomeEffectWorker_DunmerSeance.cs" />
+    <Compile Include="StockGenerator_BuyCorpses.cs" />
     <Compile Include="ThingClass\PlantBuildingPod.cs" />
     <Compile Include="ThinkNode\ThinkNode_ConditionalThingDef.cs" />
     <Compile Include="Utility\BeastMasterUtility.cs" />

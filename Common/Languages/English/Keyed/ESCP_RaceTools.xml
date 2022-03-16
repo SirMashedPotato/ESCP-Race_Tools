@@ -38,4 +38,9 @@
 	<!-- Rituals -->
 	<ESCP_RitualOutcomeExtraDesc_KilledPawn>{0} has been killed due to the low quality of the ritual.</ESCP_RitualOutcomeExtraDesc_KilledPawn>
 	
+	<!-- Orsimer name prefixes -->
+	<ESCP_OrsimerName_Gor>gor</ESCP_OrsimerName_Gor>
+	<ESCP_OrsimerName_Gro>gro</ESCP_OrsimerName_Gro>
+	<ESCP_OrsimerName_Gra>gra</ESCP_OrsimerName_Gra>
+	
 </LanguageData>

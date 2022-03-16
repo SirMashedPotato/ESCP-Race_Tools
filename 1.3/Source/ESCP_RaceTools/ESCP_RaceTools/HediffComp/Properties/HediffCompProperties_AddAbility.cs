@@ -1,6 +1,7 @@
 ﻿using System;
 using RimWorld;
 using Verse;
+using System.Collections.Generic;
 
 
 namespace ESCP_RaceTools
@@ -13,6 +14,7 @@ namespace ESCP_RaceTools
         }
 
         public AbilityDef abilityDef;
+        public List<AbilityDef> abilityDefList;
         public float severityRequired = 0f;
         public bool removeHediffOnApply = false;
     }

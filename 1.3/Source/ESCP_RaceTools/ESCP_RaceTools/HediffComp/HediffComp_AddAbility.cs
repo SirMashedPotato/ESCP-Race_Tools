@@ -1,6 +1,7 @@
 ﻿using System;
 using RimWorld;
 using Verse;
+using System.Collections.Generic;
 
 namespace ESCP_RaceTools
 {
@@ -20,10 +21,23 @@ namespace ESCP_RaceTools
                 && parent.Severity >= Props.severityRequired)
             {
                 this.Pawn.abilities.GainAbility(Props.abilityDef);
-                if (Props.removeHediffOnApply)
+                
+            }
+
+            if (Props.abilityDefList.Any())
+            {
+                foreach(AbilityDef ab in Props.abilityDefList)
                 {
-                    base.Pawn.health.RemoveHediff(this.parent);
+                    if (this.Pawn.abilities.GetAbility(Props.abilityDef) == null)
+                    {
+                        this.Pawn.abilities.GainAbility(ab);
+                    }
                 }
+            }
+
+            if (Props.removeHediffOnApply)
+            {
+                base.Pawn.health.RemoveHediff(this.parent);
             }
         }
 

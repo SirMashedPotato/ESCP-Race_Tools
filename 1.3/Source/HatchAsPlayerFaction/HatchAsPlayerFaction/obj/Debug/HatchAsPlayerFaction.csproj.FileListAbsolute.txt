@@ -1,0 +1,4 @@
+J:\Modding\Github\ESCP-Race_Tools\1.3\Assemblies\HatchAsPlayerFaction.dll
+J:\Modding\Github\ESCP-Race_Tools\1.3\Source\HatchAsPlayerFaction\HatchAsPlayerFaction\obj\Debug\HatchAsPlayerFaction.csprojAssemblyReference.cache
+J:\Modding\Github\ESCP-Race_Tools\1.3\Source\HatchAsPlayerFaction\HatchAsPlayerFaction\obj\Debug\HatchAsPlayerFaction.csproj.CoreCompileInputs.cache
+J:\Modding\Github\ESCP-Race_Tools\1.3\Source\HatchAsPlayerFaction\HatchAsPlayerFaction\obj\Debug\HatchAsPlayerFaction.dll
