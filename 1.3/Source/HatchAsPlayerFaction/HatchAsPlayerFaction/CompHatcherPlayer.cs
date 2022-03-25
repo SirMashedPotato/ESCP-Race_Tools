@@ -58,7 +58,6 @@ namespace HatchAsPlayerFaction
 		{
 			try
 			{
-				//Only actual change below here VVV
 				PawnGenerationRequest request = new PawnGenerationRequest(this.Props.hatcherPawn, this.hatcheeFaction, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, false, 1f, false, true, true, true, false, false, false, false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, null, null, null, null, null, false, false, false);
 				for (int i = 0; i < this.parent.stackCount; i++)
 				{
@@ -152,6 +151,7 @@ namespace HatchAsPlayerFaction
 
 		public Pawn otherParent;
 
+		//Only actual change below here VVV
 		public Faction hatcheeFaction = Faction.OfPlayer;
 	}
 }

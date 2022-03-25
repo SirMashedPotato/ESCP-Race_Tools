@@ -59,10 +59,12 @@
   <ItemGroup>
     <Compile Include="CompAbility\CompAbilityEffect_GiveAncestralHediff.cs" />
     <Compile Include="CompAbility\CompAbilityEffect_GiveHediffAndStun.cs" />
+    <Compile Include="CompAbility\CompAbilityEffect_MoteOnTargetConstant.cs" />
     <Compile Include="CompAbility\CompAbilityEffect_ReleaseGas.cs" />
     <Compile Include="CompAbility\CompEffect_AbilityCharmTarget.cs" />
     <Compile Include="CompAbility\Properties\CompProperties_AbilityEffectCameraShakerOneOff.cs" />
     <Compile Include="CompAbility\Properties\CompProperties_AbilityEnterBeserk.cs" />
+    <Compile Include="CompAbility\Properties\CompProperties_AbilityMoteOnTargetConstant.cs" />
     <Compile Include="CompAbility\Properties\CompProperties_CharmTarget.cs" />
     <Compile Include="CompAbility\Properties\CompProperties_ControlAnimal.cs" />
     <Compile Include="CompAbility\CompAbilityEffect_ControlAnimal.cs" />
