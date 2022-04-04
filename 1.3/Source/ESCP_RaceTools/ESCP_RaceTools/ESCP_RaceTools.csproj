@@ -151,7 +151,10 @@
     <Compile Include="Utility\SettlementPreferenceUtility.cs" />
     <Compile Include="Utility\StuffKnowledgeUtility.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ThoughtClass\" />
+    <Folder Include="ThoughtWorker\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
