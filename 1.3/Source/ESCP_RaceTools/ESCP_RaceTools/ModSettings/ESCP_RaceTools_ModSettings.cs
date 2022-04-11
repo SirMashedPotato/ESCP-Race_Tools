@@ -28,12 +28,15 @@ namespace ESCP_RaceTools
         public bool ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist = ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist_def;
         public bool ESCP_RaceTools_EnableDecreasedExpecations = ESCP_RaceTools_EnableDecreasedExpecations_def;
         public bool ESCP_RaceTools_EnableIncreasedExpecations = ESCP_RaceTools_EnableIncreasedExpecations_def;
+        public bool ESCP_RaceTools_EnableBackstoryOpinions = ESCP_RaceTools_EnableBackstoryOpinions_def;
 
         /* Ideology */
         public bool ESCP_RaceTools_IdeologyOverrideRace = ESCP_RaceTools_IdeologyOverrideRace_def;
         public bool ESCP_RaceTools_IdeologyOverridePsychSens = ESCP_RaceTools_IdeologyOverridePsychSens_def;
         public float ESCP_RaceTools_IdeologyOverridePsychSensValue = ESCP_RaceTools_IdeologyOverridePsychSensValue_def;
         public bool ESCP_RaceTools_DeityNameFix = ESCP_RaceTools_DeityNameFix_def;
+        public bool ESCP_RaceTools_IdeologyDivinesNames = ESCP_RaceTools_IdeologyDivinesNames_def;
+        public bool ESCP_RaceTools_IdeologyFactionGoodwill = ESCP_RaceTools_IdeologyFactionGoodwill_def;
 
         /* leather thoughts */
         //mer
@@ -77,12 +80,15 @@ namespace ESCP_RaceTools
         private static readonly bool ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist_def = true;
         private static readonly bool ESCP_RaceTools_EnableDecreasedExpecations_def = true;
         private static readonly bool ESCP_RaceTools_EnableIncreasedExpecations_def = true;
+        private static readonly bool ESCP_RaceTools_EnableBackstoryOpinions_def = true;
 
         /* Ideology */
         private static readonly bool ESCP_RaceTools_IdeologyOverrideRace_def = false;
         private static readonly bool ESCP_RaceTools_IdeologyOverridePsychSens_def = false;
         private static readonly float ESCP_RaceTools_IdeologyOverridePsychSensValue_def = 1.2f;
         private static readonly bool ESCP_RaceTools_DeityNameFix_def = true;
+        private static readonly bool ESCP_RaceTools_IdeologyDivinesNames_def = true;
+        private static readonly bool ESCP_RaceTools_IdeologyFactionGoodwill_def = true;
 
         /* leather thoughts */
         //mer
@@ -126,12 +132,15 @@ namespace ESCP_RaceTools
             Scribe_Values.Look(ref ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist, "ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist", ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist_def);
             Scribe_Values.Look(ref ESCP_RaceTools_EnableDecreasedExpecations, "ESCP_RaceTools_EnableDecreasedExpecations", ESCP_RaceTools_EnableDecreasedExpecations_def);
             Scribe_Values.Look(ref ESCP_RaceTools_EnableIncreasedExpecations, "ESCP_RaceTools_EnableIncreasedExpecations", ESCP_RaceTools_EnableIncreasedExpecations_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_EnableBackstoryOpinions, "ESCP_RaceTools_EnableBackstoryOpinions", ESCP_RaceTools_EnableBackstoryOpinions_def);
 
             /* Ideology */
             Scribe_Values.Look(ref ESCP_RaceTools_IdeologyOverrideRace, "ESCP_RaceTools_IdeologyOverrideRace", ESCP_RaceTools_IdeologyOverrideRace_def);
             Scribe_Values.Look(ref ESCP_RaceTools_IdeologyOverridePsychSens, "ESCP_RaceTools_IdeologyOverridePsychSens", ESCP_RaceTools_IdeologyOverridePsychSens_def);
             Scribe_Values.Look(ref ESCP_RaceTools_IdeologyOverridePsychSensValue, "ESCP_RaceTools_IdeologyOverridePsychSensValue", ESCP_RaceTools_IdeologyOverridePsychSensValue_def);
             Scribe_Values.Look(ref ESCP_RaceTools_DeityNameFix, "ESCP_RaceTools_DeityNameFix", ESCP_RaceTools_DeityNameFix_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_IdeologyDivinesNames, "ESCP_RaceTools_IdeologyDivinesNames", ESCP_RaceTools_IdeologyDivinesNames_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_IdeologyFactionGoodwill, "ESCP_RaceTools_IdeologyFactionGoodwill", ESCP_RaceTools_IdeologyFactionGoodwill_def);
 
             /* leather thoughts */
             //mer
@@ -181,6 +190,7 @@ namespace ESCP_RaceTools
             settings.ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist = ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist_def;
             settings.ESCP_RaceTools_EnableDecreasedExpecations = ESCP_RaceTools_EnableDecreasedExpecations_def;
             settings.ESCP_RaceTools_EnableIncreasedExpecations = ESCP_RaceTools_EnableIncreasedExpecations_def;
+            settings.ESCP_RaceTools_EnableBackstoryOpinions = ESCP_RaceTools_EnableBackstoryOpinions_def;
         }
 
         public static void ResetSettings_Ideology(ESCP_RaceTools_ModSettings settings)
@@ -189,6 +199,8 @@ namespace ESCP_RaceTools
             settings.ESCP_RaceTools_IdeologyOverridePsychSens = ESCP_RaceTools_IdeologyOverridePsychSens_def;
             settings.ESCP_RaceTools_IdeologyOverridePsychSensValue = ESCP_RaceTools_IdeologyOverridePsychSensValue_def;
             settings.ESCP_RaceTools_DeityNameFix = ESCP_RaceTools_DeityNameFix_def;
+            settings.ESCP_RaceTools_IdeologyDivinesNames = ESCP_RaceTools_IdeologyDivinesNames_def;
+            settings.ESCP_RaceTools_IdeologyFactionGoodwill = ESCP_RaceTools_IdeologyFactionGoodwill_def;
         }
 
         public static void ResetSettings_Leather(ESCP_RaceTools_ModSettings settings)

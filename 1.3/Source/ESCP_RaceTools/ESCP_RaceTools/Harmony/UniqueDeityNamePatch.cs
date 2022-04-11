@@ -24,9 +24,48 @@ namespace ESCP_RaceTools
             [HarmonyPrefix]
             public static bool UniqueDeityNameOverridePatch(IdeoFoundation_Deity.Deity deity, ref IdeoFoundation_Deity __instance)
             {
+                if (ModSettingsUtility_Ideo.ESCP_RaceTools_IdeologyDivinesNames())
+                {
+                    //Override Divines names
+
+                    if (__instance.ideo.StructureMeme != null)
+                    {
+                        var cultureProps = IdeoCultureProperties.Get(__instance.ideo.culture);
+                        if (cultureProps != null 
+                            && ((cultureProps.overrideDivines && __instance.ideo.StructureMeme.defName == "ESCP_Structure_OriginDivinesEight") 
+                            || (cultureProps.overrideNineDivines && __instance.ideo.StructureMeme.defName == "ESCP_Structure_OriginDivinesNine")))
+                        {
+                            for (int i = 0; i < 8; i++)
+                            {
+                                if (!__instance.DeitiesListForReading.Where(x => x.name == cultureProps.divinesList[i].name).Any())
+                                {
+                                    deity.name = cultureProps.divinesList[i].name;
+                                    deity.type = cultureProps.divinesList[i].type;
+                                    deity.iconPath = cultureProps.divinesList[i].iconPath;
+
+                                    /* copied from original function, related meme stuff removed */
+                                    Gender supremeGender = __instance.ideo.SupremeGender;
+                                    if (supremeGender != Gender.None)
+                                    {
+                                        deity.gender = supremeGender;
+                                    }
+                                    else
+                                    {
+                                        deity.gender = Gen.RandomEnumValue<Gender>(true);
+                                    }
+                                    return false;
+                                }
+                            }
+                        }
+                    }
+                }
+
                 if (ModSettingsUtility_Ideo.ESCP_RaceTools_DeityNameFix())
                 {
+                    /* This should possibly be redone */
+
                     var props = IdeoOrginProperties.Get(__instance.ideo.StructureMeme);
+
                     if (props != null && props.IgnoreDuplicateDeityNames && __instance.ideo.StructureMeme.fixedDeityNameTypes != null)
                     {
                         /* copied from original function, related meme stuff removed */
@@ -45,7 +84,14 @@ namespace ESCP_RaceTools
                         {
                             deity.name = originMeme.fixedDeityNameTypes.RandomElement().name;
                             deity.type = originMeme.fixedDeityNameTypes.RandomElement().type;
-                            deity.iconPath = "UI/Deities/DeityGeneric";
+                            if (props.overrideDeityIcons)
+                            {
+                                deity.iconPath = props.iconPath.RandomElementWithFallback(props.iconPath.First());
+                            }
+                            else
+                            {
+                                deity.iconPath = "UI/Deities/DeityGeneric";
+                            }
                             return false;
                         } 
                         else
@@ -61,7 +107,21 @@ namespace ESCP_RaceTools
                                 {
                                     deity.name = originMeme.fixedDeityNameTypes[i].name;
                                     deity.type = originMeme.fixedDeityNameTypes[i].type;
-                                    deity.iconPath = "UI/Deities/DeityGeneric";
+                                    
+
+                                    if (props.overrideDeityGenders && props.deityGenders.Count >= i+1)
+                                    {
+                                        deity.gender = props.deityGenders[i];
+                                    }
+
+                                    if (props.overrideDeityIcons && props.iconPath.Count >= i + 1)
+                                    {
+                                        deity.iconPath = props.iconPath[i];
+                                    } 
+                                    else
+                                    {
+                                        deity.iconPath = "UI/Deities/DeityGeneric";
+                                    }
 
                                     if (props.RandomiseDeityType)
                                     {

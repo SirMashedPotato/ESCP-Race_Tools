@@ -25,5 +25,15 @@ namespace ESCP_RaceTools
             return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_DeityNameFix;
         }
 
+        public static bool ESCP_RaceTools_IdeologyDivinesNames()
+        {
+            return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_IdeologyDivinesNames;
+        }
+
+        public static bool ESCP_RaceTools_IdeologyFactionGoodwill()
+        {
+            return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_IdeologyFactionGoodwill;
+        }
+
     }
 }

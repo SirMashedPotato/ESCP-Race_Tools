@@ -13,6 +13,10 @@ namespace ESCP_RaceTools
         public bool RandomiseDeityName = false; //Overrides some stuff and simply randomises the name AND type. Should only use if the origin is limited to one deity
         public bool RandomiseDeityType = false;  //Whether the deity type is randomised
                                                  //should only use this for origins that have one unique fixed deity, but multiple possible types
+        public bool overrideDeityGenders = false;
+        public List<Gender> deityGenders;
+        public bool overrideDeityIcons = false;
+        public List<string> iconPath;
 
         public static IdeoOrginProperties Get(Def def)
         {

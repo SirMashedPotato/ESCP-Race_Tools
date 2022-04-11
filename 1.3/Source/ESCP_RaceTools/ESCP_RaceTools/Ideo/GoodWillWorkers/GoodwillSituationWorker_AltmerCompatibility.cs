@@ -4,7 +4,8 @@ using RimWorld;
 
 namespace ESCP_RaceTools
 {
-    class GoodwillSituationWorker_AltmerCompatibility : GoodwillSituationWorker
+	[Obsolete("Best to use GoodWillWorker_UniversalFactionTagCompatibility instead, kept for old code")]
+	class GoodwillSituationWorker_AltmerCompatibility : GoodwillSituationWorker
 	{
 		public override string GetPostProcessedLabel(Faction other)
 		{

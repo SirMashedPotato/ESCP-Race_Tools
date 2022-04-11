@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<HediffDef>
+		<defName>ESCP_ViolentMeditationHediff</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>beserker meditation</label>
+		<description>This pawn operates best in the heat of battle, and gains psyfocus whenever they take damage.</description>
+		<defaultLabelColor>(1.0, 0.4, 0.2)</defaultLabelColor>
+		<makesSickThought>false</makesSickThought>
+		<cureAllAtOnceIfCuredByItem>true</cureAllAtOnceIfCuredByItem>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+		  <li Class="ESCP_RaceTools.HediffCompProperties_ViolentMeditation">
+			<div>1000</div>
+		  </li>
+		</comps>
+		<stages>
+		  <li>
+			<minSeverity>0.0</minSeverity>
+			<painFactor>0.9</painFactor>
+		  </li>
+		</stages>
+	</HediffDef>
+
 	<!-- beast master shite -->
 
 	<HediffDef>

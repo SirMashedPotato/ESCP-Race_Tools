@@ -41,10 +41,7 @@
 	
 	<ESCP_RaceTools_EnableIncreasedExpecations>Enabled increased expectations for certain races.</ESCP_RaceTools_EnableIncreasedExpecations>
 	<ESCP_RaceTools_EnableIncreasedExpecationsTooltip>This will cause pawns of specific races to have a raised expectation level.\n\nThis affects:</ESCP_RaceTools_EnableIncreasedExpecationsTooltip>
-	
-	<ESCP_RaceTools_DeityNameFix>Enable the deity name Harmony patch.</ESCP_RaceTools_DeityNameFix>
-	<ESCP_RaceTools_DeityNameFix_Tooltip>This will prevent deity names for specific Ideo origins from being randomly selected, avoiding duplicate names within the Ideo.\n\nThis affects:</ESCP_RaceTools_DeityNameFix_Tooltip>
-	
+
 	<ESCP_RaceTools_EnableApparelThoughtProtection>Enable specific apparel preventing specific weather related thoughts.</ESCP_RaceTools_EnableApparelThoughtProtection>
 	<ESCP_RaceTools_EnableApparelThoughtProtection_Tooltip>While the apparel will prevent the wearer from gaining the thought(s), it will not remove the thought if it is already present.\n\nThis affects:</ESCP_RaceTools_EnableApparelThoughtProtection_Tooltip>
 	
@@ -67,11 +64,24 @@
     <ESCP_RaceTools_EnableBeastMaster>Enable the beast master mechanic</ESCP_RaceTools_EnableBeastMaster>
     <ESCP_RaceTools_EnableBeastMasterTooltip>If enabled, allows certain pawn kinds to generate additional pawns when they are created.\n\nThis can be toggled at any time.\n\nThis affects:</ESCP_RaceTools_EnableBeastMasterTooltip>
 	
+	<ESCP_RaceTools_EnableBackstoryOpinions>Enable adulthood backstory based pawn opinions.</ESCP_RaceTools_EnableBackstoryOpinions>
+	<ESCP_RaceTools_EnableBackstoryOpinionsTooltip>Allows pawns to hav opinions of other pawns based on their adulthood backstory. These opinions may be negative, or positive.\n\nThis affects:</ESCP_RaceTools_EnableBackstoryOpinionsTooltip>
+	
 	<!-- Ideology settings -->
-	<ESCP_RaceTools_IdeologyOverrideTooltip>This can be changed at any time, however the requirement tooltip will remain unchanged until the game is restarted. This doesn't mean it hasn't worked.\n\nThis affects:</ESCP_RaceTools_IdeologyOverrideTooltip>
 	<ESCP_RaceTools_IdeologyOverrideRace>Override the race requirement for Ideo roles.</ESCP_RaceTools_IdeologyOverrideRace>
+	<ESCP_RaceTools_IdeologyOverrideTooltip>This can be changed at any time, however the requirement tooltip will remain unchanged until the game is restarted. This doesn't mean it hasn't worked.\n\nThis affects:</ESCP_RaceTools_IdeologyOverrideTooltip>
+	
+	<ESCP_RaceTools_DeityNameFix>Enable the deity name Harmony patch.</ESCP_RaceTools_DeityNameFix>
+	<ESCP_RaceTools_DeityNameFix_Tooltip>This will prevent deity names for specific Ideo origins from being randomly selected, avoiding duplicate names within the Ideo.\n\nThis affects:</ESCP_RaceTools_DeityNameFix_Tooltip>
+	
+	<ESCP_RaceTools_IdeologyDivinesNames>Enable specific cultures overriding deities from the Eight Divines origin.</ESCP_RaceTools_IdeologyDivinesNames>
+	<ESCP_RaceTools_IdeologyDivinesNamesTooltip>If enabled, specific cultures will use their version of the Divines. Does not require the deity name Harmony patch to be enabled.\n\nThis affects:</ESCP_RaceTools_IdeologyDivinesNamesTooltip>
+	
 	<ESCP_RaceTools_IdeologyOverridePsychSens>Override the minimum psychic sensitivity requirement for Ideo roles.</ESCP_RaceTools_IdeologyOverridePsychSens>
 	<ESCP_RaceTools_IdeologyOverridePsychSensValue>The required minimum psychic sensitivity for relevant Ideo roles.</ESCP_RaceTools_IdeologyOverridePsychSensValue>
+
+	<ESCP_RaceTools_IdeologyFactionGoodwill>Enable faction goodwill offset based on faction tags.</ESCP_RaceTools_IdeologyFactionGoodwill>
+	<ESCP_RaceTools_IdeologyFactionGoodwillTooltip>Allows goodwill between player and non-player factions to be offset based on faction tags. These offsets may be negative, or positive.\n\nThis affects:</ESCP_RaceTools_IdeologyFactionGoodwillTooltip>
 
 	<!-- Leather thought settings -->
 	<ESCP_RaceTools_LeatherThoughtMer>Enable Mer leather thoughts</ESCP_RaceTools_LeatherThoughtMer>

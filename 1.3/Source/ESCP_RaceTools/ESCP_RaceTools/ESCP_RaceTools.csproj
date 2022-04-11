@@ -84,7 +84,10 @@
     <Compile Include="DeathActionWorker\DeathActionWorker_HistoryEventOnDeath.cs" />
     <Compile Include="DefModExtensions\ApparelProperties.cs" />
     <Compile Include="DefModExtensions\BeastMaster.cs" />
+    <Compile Include="DefModExtensions\FactionGoodwillProperties.cs" />
+    <Compile Include="DefModExtensions\IdeoCultureProperties.cs" />
     <Compile Include="DefModExtensions\IdeoProperties.cs" />
+    <Compile Include="DefModExtensions\ThoughtDefProperties.cs" />
     <Compile Include="Harmony\CorpseTrading.cs" />
     <Compile Include="Harmony\ExpectationOffset.cs" />
     <Compile Include="DefModExtensions\FactionProperties.cs" />
@@ -108,13 +111,16 @@
     <Compile Include="HediffComp\HediffComp_BeastMaster.cs" />
     <Compile Include="HediffComp\HediffComp_BeastMasterSpawner.cs" />
     <Compile Include="HediffComp\HediffComp_NightEye.cs" />
+    <Compile Include="HediffComp\HediffComp_ViolentMeditation.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_AddAbility.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_NightEye.cs" />
+    <Compile Include="HediffComp\Properties\HediffCompProperties_ViolentMeditation.cs" />
     <Compile Include="HediffGiver\HediffGiver_ChanceOnCreation.cs" />
     <Compile Include="HediffGiver\HediffGiver_OnCreation.cs" />
     <Compile Include="Ideo\GoodWillWorkers\GoodwillSituationWorker_AltmerCompatibility.cs" />
     <Compile Include="Ideo\GoodWillWorkers\GoodwillSituationWorker_AltmerDominionCompatibility.cs" />
     <Compile Include="Ideo\GoodWillWorkers\GoodwillSituationWorker_MaormerAltmerCompatibility.cs" />
+    <Compile Include="Ideo\GoodWillWorkers\GoodWillWorker_UniversalFactionTagCompatibility.cs" />
     <Compile Include="Ideo\RoleRequirement_PsychicSensitivity.cs" />
     <Compile Include="Ideo\RoleRequirement_RaceMulti.cs" />
     <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_BeastfolkLeatherApparel.cs" />
@@ -139,6 +145,8 @@
     <Compile Include="StockGenerator_BuyCorpses.cs" />
     <Compile Include="ThingClass\PlantBuildingPod.cs" />
     <Compile Include="ThinkNode\ThinkNode_ConditionalThingDef.cs" />
+    <Compile Include="ThoughtWorker\ThoughtWorker_UniversalBackstoryOpinion.cs" />
+    <Compile Include="ThoughtWorker\ThoughtWorker_UniversalBackstoryOpinion_Shared.cs" />
     <Compile Include="Utility\BeastMasterUtility.cs" />
     <Compile Include="Utility\ESCP_AbilityUtility.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_GiveHediffsInRange.cs" />
@@ -153,7 +161,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ThoughtClass\" />
-    <Folder Include="ThoughtWorker\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

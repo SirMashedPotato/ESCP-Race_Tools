@@ -84,6 +84,11 @@ namespace ESCP_RaceTools
             return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_EnableIncreasedExpecations;
         }
 
+        public static bool ESCP_RaceTools_EnableBackstoryOpinions()
+        {
+            return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_EnableBackstoryOpinions;
+        }
+
         /* leather thoughts */
 
         //mer
