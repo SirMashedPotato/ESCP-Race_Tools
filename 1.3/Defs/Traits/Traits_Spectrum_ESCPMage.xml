@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ ESCP Mage Traits __________-->
+
+  <TraitDef>
+    <defName>ESCP_Mage</defName>
+    <commonality>1</commonality>
+    <degreeDatas>
+
+   <!-- Acolyte -->
+
+      <li>
+        <label>Mage Acolyte</label>
+        <description>[PAWN_nameDef] has the potential to use magicka on a grander scale than others.</description>
+        <degree>1</degree>
+        <statOffsets>
+          <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">0.35</PsychicEntropyMax>
+          <Ability_PsyfocusCost>-0.1</Ability_PsyfocusCost>
+        </statOffsets>
+        <skillGains>
+        </skillGains>
+      </li>
+
+  <!-- Journeyman -->
+
+      <li>
+        <label>Mage Journeyman</label>
+        <description>[PAWN_nameDef] has been trained in the art of magic and uses it well.</description>
+        <degree>2</degree>
+        <statOffsets>
+          <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">0.65</PsychicEntropyMax>
+          <Ability_PsyfocusCost>-0.15</Ability_PsyfocusCost>
+          <Ability_CastingTime>-0.25</Ability_CastingTime>
+        </statOffsets>
+        <skillGains>
+        </skillGains>
+      </li>
+
+  <!-- Mage -->
+
+      <li>
+        <label>Mage</label>
+        <description>[PAWN_nameDef] is a full mage and has been professionally trained in the arcane arts.</description>
+        <degree>3</degree>
+        <statOffsets>
+          <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">1</PsychicEntropyMax>
+          <Ability_PsyfocusCost>-0.25</Ability_PsyfocusCost>
+          <Ability_CastingTime>-0.45</Ability_CastingTime>
+        </statOffsets>
+        <skillGains>
+        </skillGains>
+      </li>      
+    </degreeDatas>
+  </TraitDef>
+
+</Defs>
