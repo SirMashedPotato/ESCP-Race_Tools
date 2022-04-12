@@ -65,7 +65,10 @@
     <ESCP_RaceTools_EnableBeastMasterTooltip>If enabled, allows certain pawn kinds to generate additional pawns when they are created.\n\nThis can be toggled at any time.\n\nThis affects:</ESCP_RaceTools_EnableBeastMasterTooltip>
 	
 	<ESCP_RaceTools_EnableBackstoryOpinions>Enable adulthood backstory based pawn opinions.</ESCP_RaceTools_EnableBackstoryOpinions>
-	<ESCP_RaceTools_EnableBackstoryOpinionsTooltip>Allows pawns to hav opinions of other pawns based on their adulthood backstory. These opinions may be negative, or positive.\n\nThis affects:</ESCP_RaceTools_EnableBackstoryOpinionsTooltip>
+	<ESCP_RaceTools_EnableBackstoryOpinionsTooltip>Allows pawns to have opinions of other pawns based on their adulthood backstory. These opinions may be negative, or positive.\n\nThis affects:</ESCP_RaceTools_EnableBackstoryOpinionsTooltip>
+	
+	<ESCP_RaceTools_EnableTraitOpinions>Enable trait based pawn opinions.</ESCP_RaceTools_EnableTraitOpinions>
+	<ESCP_RaceTools_EnableTraitOpinionsTooltip>Allows pawns to have opinions of other pawns based on their traits. These opinions may be negative, or positive.\n\nThis affects:</ESCP_RaceTools_EnableTraitOpinionsTooltip>
 	
 	<!-- Ideology settings -->
 	<ESCP_RaceTools_IdeologyOverrideRace>Override the race requirement for Ideo roles.</ESCP_RaceTools_IdeologyOverrideRace>

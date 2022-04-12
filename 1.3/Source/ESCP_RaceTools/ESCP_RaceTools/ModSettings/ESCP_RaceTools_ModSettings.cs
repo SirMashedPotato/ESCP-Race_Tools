@@ -29,6 +29,7 @@ namespace ESCP_RaceTools
         public bool ESCP_RaceTools_EnableDecreasedExpecations = ESCP_RaceTools_EnableDecreasedExpecations_def;
         public bool ESCP_RaceTools_EnableIncreasedExpecations = ESCP_RaceTools_EnableIncreasedExpecations_def;
         public bool ESCP_RaceTools_EnableBackstoryOpinions = ESCP_RaceTools_EnableBackstoryOpinions_def;
+        public bool ESCP_RaceTools_EnableTraitOpinions = ESCP_RaceTools_EnableTraitOpinions_def;
 
         /* Ideology */
         public bool ESCP_RaceTools_IdeologyOverrideRace = ESCP_RaceTools_IdeologyOverrideRace_def;
@@ -81,6 +82,7 @@ namespace ESCP_RaceTools
         private static readonly bool ESCP_RaceTools_EnableDecreasedExpecations_def = true;
         private static readonly bool ESCP_RaceTools_EnableIncreasedExpecations_def = true;
         private static readonly bool ESCP_RaceTools_EnableBackstoryOpinions_def = true;
+        private static readonly bool ESCP_RaceTools_EnableTraitOpinions_def = true;
 
         /* Ideology */
         private static readonly bool ESCP_RaceTools_IdeologyOverrideRace_def = false;
@@ -133,6 +135,7 @@ namespace ESCP_RaceTools
             Scribe_Values.Look(ref ESCP_RaceTools_EnableDecreasedExpecations, "ESCP_RaceTools_EnableDecreasedExpecations", ESCP_RaceTools_EnableDecreasedExpecations_def);
             Scribe_Values.Look(ref ESCP_RaceTools_EnableIncreasedExpecations, "ESCP_RaceTools_EnableIncreasedExpecations", ESCP_RaceTools_EnableIncreasedExpecations_def);
             Scribe_Values.Look(ref ESCP_RaceTools_EnableBackstoryOpinions, "ESCP_RaceTools_EnableBackstoryOpinions", ESCP_RaceTools_EnableBackstoryOpinions_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_EnableTraitOpinions, "ESCP_RaceTools_EnableTraitOpinions", ESCP_RaceTools_EnableTraitOpinions_def);
 
             /* Ideology */
             Scribe_Values.Look(ref ESCP_RaceTools_IdeologyOverrideRace, "ESCP_RaceTools_IdeologyOverrideRace", ESCP_RaceTools_IdeologyOverrideRace_def);
@@ -191,6 +194,7 @@ namespace ESCP_RaceTools
             settings.ESCP_RaceTools_EnableDecreasedExpecations = ESCP_RaceTools_EnableDecreasedExpecations_def;
             settings.ESCP_RaceTools_EnableIncreasedExpecations = ESCP_RaceTools_EnableIncreasedExpecations_def;
             settings.ESCP_RaceTools_EnableBackstoryOpinions = ESCP_RaceTools_EnableBackstoryOpinions_def;
+            settings.ESCP_RaceTools_EnableTraitOpinions = ESCP_RaceTools_EnableTraitOpinions_def;
         }
 
         public static void ResetSettings_Ideology(ESCP_RaceTools_ModSettings settings)

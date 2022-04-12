@@ -185,6 +185,12 @@ namespace ESCP_RaceTools
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableBackstoryOpinions".Translate(), ref settings.ESCP_RaceTools_EnableBackstoryOpinions, "ESCP_RaceTools_EnableBackstoryOpinionsTooltip".Translate() + TooltipStringInit.General_BackstoryOpinion);
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableTraitOpinions".Translate(), ref settings.ESCP_RaceTools_EnableTraitOpinions, "ESCP_RaceTools_EnableTraitOpinionsTooltip".Translate() + TooltipStringInit.General_TraitOpinion);
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableApparelThoughtProtection".Translate(), ref settings.ESCP_RaceTools_EnableApparelThoughtProtection, "ESCP_RaceTools_EnableApparelThoughtProtection_Tooltip".Translate() + TooltipStringInit.General_ApparelThoughtProtection);
             listing_Standard.Gap();
 

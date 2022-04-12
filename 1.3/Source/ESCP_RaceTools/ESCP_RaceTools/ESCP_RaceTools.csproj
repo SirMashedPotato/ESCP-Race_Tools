@@ -147,6 +147,7 @@
     <Compile Include="ThinkNode\ThinkNode_ConditionalThingDef.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_UniversalBackstoryOpinion.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_UniversalBackstoryOpinion_Shared.cs" />
+    <Compile Include="ThoughtWorker\ThoughtWorker_UniversalTraitOpinion.cs" />
     <Compile Include="Utility\BeastMasterUtility.cs" />
     <Compile Include="Utility\ESCP_AbilityUtility.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_GiveHediffsInRange.cs" />

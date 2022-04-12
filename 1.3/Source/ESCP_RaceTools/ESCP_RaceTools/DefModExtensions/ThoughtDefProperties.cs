@@ -13,6 +13,9 @@ namespace ESCP_RaceTools
         //used for: ThoughtWorker_UniversalBackstoryOpinion
         public string backstoryCategoryA;
         public string backstoryCategoryB;
+        //used for: ThoughtWorker_UniversalTraitOpinion
+        public TraitDef traitA;
+        public TraitDef traitB;
 
         public static ThoughtDefProperties Get(Def def)
         {

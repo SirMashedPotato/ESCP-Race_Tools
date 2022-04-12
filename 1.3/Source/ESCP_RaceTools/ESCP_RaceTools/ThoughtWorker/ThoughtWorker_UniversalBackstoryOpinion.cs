@@ -9,6 +9,10 @@ namespace ESCP_RaceTools
     {
         protected override ThoughtState CurrentSocialStateInternal(Pawn pawn, Pawn other)
         {
+            if (!pawn.RaceProps.Humanlike)
+            {
+                return false;
+            }
             if (ModSettingsUtility.ESCP_RaceTools_EnableBackstoryOpinions())
             {
                 if (pawn.story.adulthood == null || other.story.adulthood == null)

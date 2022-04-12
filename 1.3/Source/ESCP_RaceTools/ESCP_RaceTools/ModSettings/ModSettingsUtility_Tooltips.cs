@@ -11,6 +11,7 @@ namespace ESCP_RaceTools
     {
 
         public static string General_BackstoryOpinion;
+        public static string General_TraitOpinion;
         public static string General_ApparelThoughtProtection;
         public static string General_HeatstrokeSwitch;
         public static string General_HypothermiaSwitch;
@@ -29,6 +30,7 @@ namespace ESCP_RaceTools
         static TooltipStringInit()
         {
             General_BackstoryOpinion = General_BackstoryOpinion_Init();
+            General_TraitOpinion = General_TraitOpinion_Init();
             General_ApparelThoughtProtection = General_ApparelThoughtProtection_Init();
             General_HeatstrokeSwitch = General_HeatstrokeSwitch_Init();
             General_HypothermiaSwitch = General_HypothermiaSwitch_Init();
@@ -54,6 +56,24 @@ namespace ESCP_RaceTools
 
             DefDatabase<ThoughtDef>.AllDefsListForReading.Where(x => ThoughtDefProperties.Get(x) != null && 
             (ThoughtDefProperties.Get(x).backstoryCategoryA != null || ThoughtDefProperties.Get(x).sharedBackstoryCategories != null)).ToList().ForEach(action: def =>
+            {
+                thoughts += "\n - " + def.stages.First().label + " (" + def.stages.First().baseOpinionOffset + ")";
+            });
+
+            if (thoughts == "")
+            {
+                thoughts = "\n - None";
+            }
+
+            return thoughts;
+        }
+
+        public static string General_TraitOpinion_Init()
+        {
+            string thoughts = "";
+
+            DefDatabase<ThoughtDef>.AllDefsListForReading.Where(x => ThoughtDefProperties.Get(x) != null &&
+            (ThoughtDefProperties.Get(x).traitA != null)).ToList().ForEach(action: def =>
             {
                 thoughts += "\n - " + def.stages.First().label + " (" + def.stages.First().baseOpinionOffset + ")";
             });
