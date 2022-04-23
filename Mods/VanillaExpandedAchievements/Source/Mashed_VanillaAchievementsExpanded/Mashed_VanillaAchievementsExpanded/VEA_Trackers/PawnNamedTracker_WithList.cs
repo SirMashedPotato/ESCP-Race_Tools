@@ -78,7 +78,6 @@ namespace Mashed_VanillaAchievementsExpanded
 			}
 			foreach (DefWithNames set in namesList)
 			{
-				Log.Message(": " + set.firstName);
 				var count = 0;
 				if (set.key == raceDef && param.Name != null)
 				{
@@ -111,7 +110,6 @@ namespace Mashed_VanillaAchievementsExpanded
 		public static bool CheckName(Pawn pawn, DefWithNames set)
         {
 			NameTriple name = pawn.Name as NameTriple;
-			Log.Message("Pawn " + name.First + ", " + name.Nick + ", " + name.Last + ": Checking for " + set.firstName);
 			return (set.firstName == null || name.First == set.firstName) && (set.lastName == null || name.Last == set.lastName) && (set.nickName == null || name.Nick == set.nickName);
 		}
 	}

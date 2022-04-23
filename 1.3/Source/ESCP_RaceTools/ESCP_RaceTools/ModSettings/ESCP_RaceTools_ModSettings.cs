@@ -40,6 +40,8 @@ namespace ESCP_RaceTools
         public bool ESCP_RaceTools_IdeologyFactionGoodwill = ESCP_RaceTools_IdeologyFactionGoodwill_def;
 
         /* leather thoughts */
+        //akaviri
+        public bool ESCP_RaceTools_LeatherThoughtAkaviri = ESCP_RaceTools_LeatherThoughtAkaviri_def;
         //mer
         public bool ESCP_RaceTools_LeatherThoughtMer = ESCP_RaceTools_LeatherThoughtMer_def;
 
@@ -93,6 +95,9 @@ namespace ESCP_RaceTools
         private static readonly bool ESCP_RaceTools_IdeologyFactionGoodwill_def = true;
 
         /* leather thoughts */
+        //akaviri
+        private static readonly bool ESCP_RaceTools_LeatherThoughtAkaviri_def = true;
+
         //mer
         private static readonly bool ESCP_RaceTools_LeatherThoughtMer_def = true;
 
@@ -146,6 +151,8 @@ namespace ESCP_RaceTools
             Scribe_Values.Look(ref ESCP_RaceTools_IdeologyFactionGoodwill, "ESCP_RaceTools_IdeologyFactionGoodwill", ESCP_RaceTools_IdeologyFactionGoodwill_def);
 
             /* leather thoughts */
+            //akiviri
+            Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtAkaviri, "ESCP_RaceTools_LeatherThoughtAkaviri", ESCP_RaceTools_LeatherThoughtAkaviri_def);
             //mer
             Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtMer, "ESCP_RaceTools_LeatherThoughtMer", ESCP_RaceTools_LeatherThoughtMer_def);
             //beastfolk
@@ -209,6 +216,9 @@ namespace ESCP_RaceTools
 
         public static void ResetSettings_Leather(ESCP_RaceTools_ModSettings settings)
         {
+            //akaviri
+            settings.ESCP_RaceTools_LeatherThoughtAkaviri = ESCP_RaceTools_LeatherThoughtAkaviri_def;
+
             //mer
             settings.ESCP_RaceTools_LeatherThoughtMer = ESCP_RaceTools_LeatherThoughtMer_def;
 

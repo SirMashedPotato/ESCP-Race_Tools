@@ -7,6 +7,7 @@
 
 	<ESCP_RaceTools_ModName>ESCP - Race Tools</ESCP_RaceTools_ModName>
 	<ESCP_Reset>Reset all settings</ESCP_Reset>
+	<ESCP_RequiresRestart>Requires a restart to take effect.</ESCP_RequiresRestart>
 	
 	<ESCP_PageGeneral>General settings</ESCP_PageGeneral>
 	<ESCP_PageGeneralReset>Reset general settings</ESCP_PageGeneralReset>
@@ -87,14 +88,15 @@
 	<ESCP_RaceTools_IdeologyFactionGoodwillTooltip>Allows goodwill between player and non-player factions to be offset based on faction tags. These offsets may be negative, or positive.\n\nThis affects:</ESCP_RaceTools_IdeologyFactionGoodwillTooltip>
 
 	<!-- Leather thought settings -->
+	<ESCP_RaceTools_LeatherThoughtTooltip>This is a consolidated thought that accounts for all appropriate leather.\n\nThis affects:</ESCP_RaceTools_LeatherThoughtTooltip>
+	
 	<ESCP_RaceTools_LeatherThoughtMer>Enable Mer leather thoughts</ESCP_RaceTools_LeatherThoughtMer>
-	<ESCP_RaceTools_LeatherThoughtMerTooltip>This is a consolidated thought that accounts for all Mer leather.\n\nNote that you will need at least on Mer mod active for this to actually do anything.</ESCP_RaceTools_LeatherThoughtMerTooltip>
 	
 	<ESCP_RaceTools_LeatherThoughtGoblinKen>Enable Goblin-ken leather thoughts</ESCP_RaceTools_LeatherThoughtGoblinKen>
-	<ESCP_RaceTools_LeatherThoughtGoblinKenTooltip>This is a consolidated thought that accounts for all Goblin-ken leather.\n\nNote that you will need at least on Goblin-ken mod active for this to actually do anything.</ESCP_RaceTools_LeatherThoughtGoblinKenTooltip>
 	
 	<ESCP_RaceTools_LeatherThoughtBeastfolk>Enable Beastfolk leather thoughts</ESCP_RaceTools_LeatherThoughtBeastfolk>
-	<ESCP_RaceTools_LeatherThoughtBeastfolkTooltip>This is a consolidated thought that accounts for all Beastfolk leather.\n\nNote that you will need at least on Beastfolk mod active for this to actually do anything.</ESCP_RaceTools_LeatherThoughtBeastfolkTooltip>
+
+	<ESCP_RaceTools_LeatherThoughtAkaviri>Enable Akaviri leather thoughts</ESCP_RaceTools_LeatherThoughtAkaviri>
 	
 	<ESCP_RaceTools_LeatherThought>Enable leather thoughts for {0}</ESCP_RaceTools_LeatherThought>
 	

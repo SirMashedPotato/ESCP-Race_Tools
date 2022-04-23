@@ -96,6 +96,13 @@ namespace ESCP_RaceTools
 
         /* leather thoughts */
 
+        //akaviri
+
+        public static bool ESCP_RaceTools_LeatherThoughtAkaviri()
+        {
+            return LoadedModManager.GetMod<ESCP_RaceTools_Mod>().GetSettings<ESCP_RaceTools_ModSettings>().ESCP_RaceTools_LeatherThoughtAkaviri;
+        }
+
         //mer
 
         public static bool ESCP_RaceTools_LeatherThoughtMer()

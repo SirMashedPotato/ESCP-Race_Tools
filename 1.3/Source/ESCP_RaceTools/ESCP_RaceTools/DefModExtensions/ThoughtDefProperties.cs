@@ -16,6 +16,10 @@ namespace ESCP_RaceTools
         //used for: ThoughtWorker_UniversalTraitOpinion
         public TraitDef traitA;
         public TraitDef traitB;
+        //used for: ThoughtWorker_UniversalTraitSpectrumOpinion
+        public bool useSpectrum = false;
+        public int traitSpectrumA = 1;
+        public int traitSpectrumB = 1;
 
         public static ThoughtDefProperties Get(Def def)
         {

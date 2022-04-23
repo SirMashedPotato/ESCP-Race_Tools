@@ -123,9 +123,12 @@
     <Compile Include="Ideo\GoodWillWorkers\GoodWillWorker_UniversalFactionTagCompatibility.cs" />
     <Compile Include="Ideo\RoleRequirement_PsychicSensitivity.cs" />
     <Compile Include="Ideo\RoleRequirement_RaceMulti.cs" />
+    <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_AkaviriLeatherApparel.cs" />
     <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_BeastfolkLeatherApparel.cs" />
     <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_GoblinKenLeatherApparel.cs" />
     <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_MerLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\LeatherListInit.cs" />
+    <Compile Include="LeatherThoughtWorkers\ThoughtWorker_AkaviriLeatherApparel.cs" />
     <Compile Include="LeatherThoughtWorkers\ThoughtWorker_BeastfolkLeatherApparel.cs" />
     <Compile Include="LeatherThoughtWorkers\ThoughtWorker_GoblinKenLeatherApparel.cs" />
     <Compile Include="LeatherThoughtWorkers\ThoughtWorker_MerLeatherApparel.cs" />
@@ -162,6 +165,7 @@
     <Compile Include="Utility\StuffKnowledgeUtility.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Def\" />
     <Folder Include="ThoughtClass\" />
   </ItemGroup>
   <ItemGroup>

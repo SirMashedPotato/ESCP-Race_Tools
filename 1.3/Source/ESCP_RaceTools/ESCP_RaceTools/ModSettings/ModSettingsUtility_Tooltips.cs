@@ -27,6 +27,11 @@ namespace ESCP_RaceTools
         public static string IdeoRole_PsychSens;
         public static string IdeoGoodwill_FactionTag;
 
+        public static string Leather_Akaviri;
+        public static string Leather_Beastfolk;
+        public static string Leather_GoblinKen;
+        public static string Leather_Mer;
+
         static TooltipStringInit()
         {
             General_BackstoryOpinion = General_BackstoryOpinion_Init();
@@ -45,6 +50,12 @@ namespace ESCP_RaceTools
             IdeoRole_Race = IdeoRole_Race_Init();
             IdeoRole_PsychSens = IdeoRole_PsychSens_Init();
             IdeoGoodwill_FactionTag = IdeoGoodwill_FactionTag_Init();
+
+            Leather_Akaviri = Leather_Init(LeatherListInit.LeatherList_Akaviri);
+            Leather_Beastfolk = Leather_Init(LeatherListInit.LeatherList_Beastfolk);
+            Leather_GoblinKen = Leather_Init(LeatherListInit.LeatherList_GoblinKen);
+            Leather_Mer = Leather_Init(LeatherListInit.LeatherList_Mer);
+
             Log.Message("[ESCP - Race Tools] - Finished generating mod settings menu tooltips. Have a good day!");
         }
 
@@ -340,6 +351,30 @@ namespace ESCP_RaceTools
             }
 
             return offsets;
+        }
+
+        /* Leather */
+
+        public static string Leather_Init(List<ThingDef> defs)
+        {
+            string leather = "";
+
+            if (defs != null && defs.Count > 0)
+            {
+                foreach (ThingDef def in defs)
+                {
+                    leather += "\n - " + def.label;
+                }
+            }
+            else
+            {
+                if (leather == "")
+                {
+                    leather = "\n - None";
+                }
+            }
+
+            return leather;
         }
     }
 }

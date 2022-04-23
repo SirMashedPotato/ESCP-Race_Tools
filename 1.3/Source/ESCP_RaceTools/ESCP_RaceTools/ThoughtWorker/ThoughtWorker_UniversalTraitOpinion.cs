@@ -22,10 +22,22 @@ namespace ESCP_RaceTools
                 var props = ThoughtDefProperties.Get(this.def);
                 if (props != null && props.traitA != null && props.traitB != null)
                 {
-                    if ((pawn.story.traits.DegreeOfTrait(props.traitA) >= 0 && other.story.traits.DegreeOfTrait(props.traitB) >= 0) ||
-                        (pawn.story.traits.DegreeOfTrait(props.traitB) >= 0 && other.story.traits.DegreeOfTrait(props.traitA) >= 0))
+
+                    if ((pawn.story.traits.HasTrait(props.traitA) && other.story.traits.HasTrait(props.traitB)) ||
+                        (pawn.story.traits.HasTrait(props.traitB) && other.story.traits.HasTrait(props.traitA)))
                     {
-                        return ThoughtState.ActiveAtStage(0);
+                        if (props.useSpectrum)
+                        {
+                            if ((pawn.story.traits.DegreeOfTrait(props.traitA) == props.traitSpectrumA && other.story.traits.DegreeOfTrait(props.traitB) == props.traitSpectrumB) ||
+                            (pawn.story.traits.DegreeOfTrait(props.traitB) == props.traitSpectrumB && other.story.traits.DegreeOfTrait(props.traitA) == props.traitSpectrumA))
+                            {
+                                return ThoughtState.ActiveAtStage(0);
+                            }
+                        }
+                        else
+                        {
+                            return ThoughtState.ActiveAtStage(0);
+                        }
                     }
                 }
             }

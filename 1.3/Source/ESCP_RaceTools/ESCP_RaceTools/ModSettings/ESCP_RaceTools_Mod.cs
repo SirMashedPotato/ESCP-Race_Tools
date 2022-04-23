@@ -312,18 +312,23 @@ namespace ESCP_RaceTools
 
             //settings
 
-            /* Mer */
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThoughtMer".Translate(), ref settings.ESCP_RaceTools_LeatherThoughtMer, "ESCP_RaceTools_LeatherThoughtMerTooltip".Translate());
+            /* Akaviri */
+
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThoughtAkaviri".Translate(), ref settings.ESCP_RaceTools_LeatherThoughtAkaviri, "ESCP_RaceTools_LeatherThoughtTooltip".Translate() + TooltipStringInit.Leather_Akaviri);
             listing_Standard.Gap();
 
             /* Beastfolk */
 
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThoughtBeastfolk".Translate(), ref settings.ESCP_RaceTools_LeatherThoughtBeastfolk, "ESCP_RaceTools_LeatherThoughtBeastfolkTooltip".Translate());
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThoughtBeastfolk".Translate(), ref settings.ESCP_RaceTools_LeatherThoughtBeastfolk, "ESCP_RaceTools_LeatherThoughtTooltip".Translate() + TooltipStringInit.Leather_Beastfolk);
             listing_Standard.Gap();
 
             /* Goblin-ken */
 
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThoughtGoblinKen".Translate(), ref settings.ESCP_RaceTools_LeatherThoughtGoblinKen, "ESCP_RaceTools_LeatherThoughtGoblinKenTooltip".Translate());
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThoughtGoblinKen".Translate(), ref settings.ESCP_RaceTools_LeatherThoughtGoblinKen, "ESCP_RaceTools_LeatherThoughtTooltip".Translate() + TooltipStringInit.Leather_GoblinKen);
+            listing_Standard.Gap();
+
+            /* Mer */
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThoughtMer".Translate(), ref settings.ESCP_RaceTools_LeatherThoughtMer, "ESCP_RaceTools_LeatherThoughtTooltip".Translate() + TooltipStringInit.Leather_Mer);
             listing_Standard.Gap();
 
             listing_Standard.GapLine();
@@ -331,11 +336,8 @@ namespace ESCP_RaceTools
 
             /* Special settings */
 
-            if (RaceToolsUtility.ModLoaded("SirMashedPotato.ESCP.Orsimer", "ESCP - Orsimer"))
-            {
-                listing_Standard.CheckboxLabeled("ESCP_RaceTools_OrsimerAreMer".Translate(), ref settings.ESCP_RaceTools_OrsimerAreMer);
-                listing_Standard.Gap();
-            }
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_OrsimerAreMer".Translate(), ref settings.ESCP_RaceTools_OrsimerAreMer, "ESCP_RequiresRestart".Translate());
+            listing_Standard.Gap();
 
             listing_Standard.GapLine();
             listing_Standard.Gap();

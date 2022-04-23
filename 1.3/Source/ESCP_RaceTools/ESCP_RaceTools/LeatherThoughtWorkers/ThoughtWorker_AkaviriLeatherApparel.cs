@@ -6,13 +6,13 @@ using System.Collections.Generic;
 
 namespace ESCP_RaceTools
 {
-	public class ThoughtWorker_BeastfolkLeatherApparel : ThoughtWorker
+    class ThoughtWorker_AkaviriLeatherApparel : ThoughtWorker
 	{
 
 		public static ThoughtState CurrentThoughtState(Pawn p)
 		{
 			//settings check
-			if (!ModSettingsUtility.ESCP_RaceTools_LeatherThoughtBeastfolk())
+			if (!ModSettingsUtility.ESCP_RaceTools_LeatherThoughtAkaviri())
 			{
 				return ThoughtState.Inactive;
 			}
@@ -22,7 +22,7 @@ namespace ESCP_RaceTools
 			List<Apparel> wornApparel = p.apparel.WornApparel;
 			for (int i = 0; i < wornApparel.Count; i++)
 			{
-				if (wornApparel[i].Stuff != null && LeatherListInit.LeatherList_Beastfolk.Contains(wornApparel[i].Stuff))
+				if (wornApparel[i].Stuff != null && LeatherListInit.LeatherList_Akaviri.Contains(wornApparel[i].Stuff))
 				{
 					if (text == null)
 					{
@@ -44,7 +44,7 @@ namespace ESCP_RaceTools
 
 		protected override ThoughtState CurrentStateInternal(Pawn p)
 		{
-			return ThoughtWorker_BeastfolkLeatherApparel.CurrentThoughtState(p);
+			return ThoughtWorker_AkaviriLeatherApparel.CurrentThoughtState(p);
 		}
 	}
 }
