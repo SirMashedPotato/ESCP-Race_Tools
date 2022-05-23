@@ -16,9 +16,11 @@ namespace ESCP_RaceTools
             tileID = 0;
             bool defaultToVanilla = false;  //return true if any checks fail, causes vanilla code to take over
             var modExt = SettlementPreference.Get(faction.def);
+            bool flag = ModSettingsUtility.ESCP_SettlementPreferenceLogging();
 
             /* modified from  TileFinder.RandomSettlementTileFor */
-            for (int i = 0; i < ModSettingsUtility.ESCP_RaceTools_SettlementPreferenceIterations(); i++)
+            int limit = (int)ModSettingsUtility.ESCP_RaceTools_SettlementPreferenceIterations();
+            for (int i = 0; i < limit; i++)
             {
                 int num;
                 if ((from _ in Enumerable.Range(0, 100) select Rand.Range(0, Find.WorldGrid.TilesCount)).TryRandomElementByWeight(delegate (int x)
@@ -34,55 +36,82 @@ namespace ESCP_RaceTools
                     /* modExt checks */
                     if (!modExt.biomeKeyWords.NullOrEmpty() && !modExt.biomeKeyWords.Any(y=> tile.biome.defName.Contains(y)))
                     {
-                        if (ModSettingsUtility.ESCP_SettlementPreferenceLogging()) logMessage += "failed biomeKeyWords, ";
+                        if (flag)
+                        {
+                            logMessage += "failed biomeKeyWords, ";
+                        }
                         defaultToVanilla = true;
                     }
 
                     if (modExt.useTemperatureRange && !CheckTemperatureRange(modExt.temperatureRangeMin, modExt.temperatureRangeMax, x))
                     {
-                        if (ModSettingsUtility.ESCP_SettlementPreferenceLogging()) logMessage += "failed CheckTemperatureRange, ";
+                        if (flag) 
+                        { 
+                            logMessage += "failed CheckTemperatureRange, "; 
+                        }
                         defaultToVanilla = true;
                     }
 
                     if (modExt.useElevationRange && !CheckElevationRange(modExt.elevationRangeMin, modExt.elevationRangeMax, tile))
                     {
-                        if (ModSettingsUtility.ESCP_SettlementPreferenceLogging()) logMessage += "failed CheckAltitudeRange, ";
+                        if (flag) 
+                        {
+                            logMessage += "failed CheckAltitudeRange, ";
+                        }
                         defaultToVanilla = true;
                     }
 
                     if (modExt.useSwampinessRange && !CheckSwampinessRange(modExt.swampinessRangeMin, modExt.swampinessRangeMax, tile))
                     {
-                        if (ModSettingsUtility.ESCP_SettlementPreferenceLogging()) logMessage += "failed CheckSwampinessRange, ";
+                        if (flag) 
+                        {
+                            logMessage += "failed CheckSwampinessRange, ";
+                        }
                         defaultToVanilla = true;
                     }
 
                     if (modExt.useSwampinessRange && !CheckRainfallRange(modExt.rainfallRangeMin, modExt.rainfallRangeMax, tile))
                     {
-                        if (ModSettingsUtility.ESCP_SettlementPreferenceLogging()) logMessage += "failed CheckRainfallRange, ";
+                        if (flag) 
+                        {
+                            logMessage += "failed CheckRainfallRange, ";
+                        }
                         defaultToVanilla = true;
                     }
 
                     if (modExt.likedBiomeList != null && !modExt.likedBiomeList.Contains(tile.biome.defName))
                     {
-                        if (ModSettingsUtility.ESCP_SettlementPreferenceLogging()) logMessage += "failed likedBiomeList, ";
+                        if (flag) 
+                        {
+                            logMessage += "failed likedBiomeList, ";
+                        }
                         defaultToVanilla = true;
                     }
 
                     if (modExt.dislikedBiomeList != null && modExt.dislikedBiomeList.Contains(tile.biome.defName))
                     {
-                        if (ModSettingsUtility.ESCP_SettlementPreferenceLogging()) logMessage += "failed dislikedBiomeList, ";
+                        if (flag) 
+                        {
+                            logMessage += "failed dislikedBiomeList, ";
+                        }
                         defaultToVanilla = true;
                     }
 
                     if (modExt.requiredHillLevels != null && !modExt.requiredHillLevels.Contains(tile.hilliness))
                     {
-                        if (ModSettingsUtility.ESCP_SettlementPreferenceLogging()) logMessage += "failed requiredHillLevels, ";
+                        if (flag) 
+                        {
+                            logMessage += "failed requiredHillLevels, ";
+                        }
                         defaultToVanilla = true;
                     }
 
                     if (modExt.disallowedHillLevels != null && modExt.disallowedHillLevels.Contains(tile.hilliness))
                     {
-                        if (ModSettingsUtility.ESCP_SettlementPreferenceLogging()) logMessage += "failed disallowedHillLevels, ";
+                        if (flag) 
+                        {
+                            logMessage += "failed disallowedHillLevels, ";
+                        }
                         defaultToVanilla = true;
                     }
 
@@ -90,43 +119,61 @@ namespace ESCP_RaceTools
 
                     if (modExt.requiredHillLevels == null && modExt.disallowedHillLevels == null && tile.hilliness == Hilliness.Impassable)
                     {
-                        if (ModSettingsUtility.ESCP_SettlementPreferenceLogging()) logMessage += "failed impassible hills check, ";
+                        if (flag) 
+                        {
+                            logMessage += "failed impassible hills check, ";
+                        }
                         defaultToVanilla = true;
                     }
 
                     if (modExt.requiresWater && (!CheckTileBiomeNeighbours(x, BiomeDefOf.Ocean) && !CheckTileBiomeNeighbours(x, BiomeDefOf.Lake) && tile.Rivers == null))
                     {
-                        if (ModSettingsUtility.ESCP_SettlementPreferenceLogging()) logMessage += "failed requiresWater, ";
+                        if (flag) 
+                        {
+                            logMessage += "failed requiresWater, ";
+                        }
                         defaultToVanilla = true;
                     }
 
                     if (modExt.onlyCoastal && !CheckTileBiomeNeighbours(x, BiomeDefOf.Ocean))
                     {
-                        if (ModSettingsUtility.ESCP_SettlementPreferenceLogging()) logMessage += "failed onlyCoastal, ";
+                        if (flag) 
+                        {
+                            logMessage += "failed onlyCoastal, ";
+                        }
                         defaultToVanilla = true;
                     }
 
                     if (modExt.onlyLakeside && !CheckTileBiomeNeighbours(x, BiomeDefOf.Lake))
                     {
-                        if (ModSettingsUtility.ESCP_SettlementPreferenceLogging()) logMessage += "failed onlyLakeside, ";
+                        if (flag) 
+                        {
+                            logMessage += "failed onlyLakeside, ";
+                        }
                         defaultToVanilla = true;
                     }
 
                     if (modExt.onlyRiver && tile.Rivers == null)
                     {
-                        if (ModSettingsUtility.ESCP_SettlementPreferenceLogging()) logMessage += "failed onlyRiver, ";
+                        if (flag) 
+                        {
+                            logMessage += "failed onlyRiver, ";
+                        }
                         defaultToVanilla = true;
                     }
 
                     if (modExt.onlyRoad && tile.Roads == null)
                     {
-                        if (ModSettingsUtility.ESCP_SettlementPreferenceLogging()) logMessage += "failed onlyRoad, ";
+                        if (flag) 
+                        {
+                            logMessage += "failed onlyRoad, ";
+                        }
                         defaultToVanilla = true;
                     }
 
                     /* logging */
 
-                    if (ModSettingsUtility.ESCP_SettlementPreferenceLogging() && !defaultToVanilla)
+                    if (flag && !defaultToVanilla)
                     {
                         Log.Message(logMessage + " valid tile = " + !defaultToVanilla);
                     }
@@ -156,13 +203,19 @@ namespace ESCP_RaceTools
                 }, out num))
                     if (!defaultToVanilla && FinalCheckTileIsValid(num, null))
                     {
-                        if (ModSettingsUtility.ESCP_SettlementPreferenceLogging()) Log.Message("Faction: " + faction + ", passed all checks for tile: " + Find.WorldGrid[num]);
+                        if (flag)
+                        {
+                            Log.Message("Faction: " + faction + ", passed all checks for tile: " + Find.WorldGrid[num]);
+                        }
                         tileID = num;
                         return false;
                     }
             }
 
-            if (ModSettingsUtility.ESCP_SettlementPreferenceLogging()) Log.Error("Failed to find faction base tile for " + faction + ", using ESCP_RaceTools.SettlementPreference. Defaulting to standard selection.");
+            if (flag) 
+            {
+                Log.Error("Failed to find faction base tile for " + faction + ", using ESCP_RaceTools.SettlementPreference. Defaulting to standard selection.");
+            }
 
             return true;
         }

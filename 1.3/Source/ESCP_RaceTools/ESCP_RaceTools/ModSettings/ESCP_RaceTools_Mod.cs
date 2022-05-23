@@ -373,16 +373,6 @@ namespace ESCP_RaceTools
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
-            /* Maormer */
-            listing_Standard.Label("ESCP_SubpageMaormer".Translate());
-            listing_Standard.Gap();
-            listing_Standard.Label("ESCP_RaceTools_MaormerLeviathanChance".Translate() + " (" + settings.ESCP_RaceTools_MaormerLeviathanChance * 100 + "%)");
-            settings.ESCP_RaceTools_MaormerLeviathanChance = (float)Math.Round(listing_Standard.Slider(settings.ESCP_RaceTools_MaormerLeviathanChance, 0f, 1f) * 20) / 20;
-            listing_Standard.Gap();
-
-            listing_Standard.GapLine();
-            listing_Standard.Gap();
-
             return listing_Standard;
         }
     }
