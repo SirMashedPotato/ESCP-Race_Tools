@@ -54,7 +54,7 @@ namespace ESCP_RaceTools
 			if (Widgets.ButtonText(scenPartRect.BottomHalf(), this.CurrentFactionLabel().CapitalizeFirst(), true, true, true))
 			{
 				List<FloatMenuOption> list = new List<FloatMenuOption>();
-				list.Add(new FloatMenuOption("ESCP_Sload_RandomFaction".Translate().CapitalizeFirst(), delegate ()
+				list.Add(new FloatMenuOption("ESCP_RandomFaction".Translate().CapitalizeFirst(), delegate ()
 				{
 					this.factionDef = null;
 				}, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0));
@@ -101,7 +101,7 @@ namespace ESCP_RaceTools
 		{
 			if (tag == "PlayerStartsWith")
 			{
-				yield return "ESCP_Sload_CorpseFrom".Translate() + this.CurrentFactionLabel().CapitalizeFirst() + " x" + this.count;
+				yield return "ESCP_CorpseFrom".Translate() + this.CurrentFactionLabel().CapitalizeFirst() + " x" + this.count;
 			}
 			yield break;
 		}
