@@ -43,4 +43,10 @@
 	<ESCP_OrsimerName_Gro>gro</ESCP_OrsimerName_Gro>
 	<ESCP_OrsimerName_Gra>gra</ESCP_OrsimerName_Gra>
 	
+		
+	<!-- Scenario related -->
+	<ESCP_RandomFaction>Random faction</ESCP_RandomFaction>
+	<ESCP_CorpseFrom>Corpse from </ESCP_CorpseFrom>
+	
+	
 </LanguageData>

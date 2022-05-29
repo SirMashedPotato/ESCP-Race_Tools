@@ -145,6 +145,7 @@
     <Compile Include="Rituals\RitualObligationTargetWorker_FilledDunmerGrave.cs" />
     <Compile Include="Rituals\RitualOutcomeComp_RacePresentNotSubstituted.cs" />
     <Compile Include="Rituals\DunmerSeance\RitualOutcomeEffectWorker_DunmerSeance.cs" />
+    <Compile Include="ScenarioParts\ScenPart_StartingCorpse.cs" />
     <Compile Include="StockGenerator_BuyCorpses.cs" />
     <Compile Include="ThingClass\PlantBuildingPod.cs" />
     <Compile Include="ThinkNode\ThinkNode_ConditionalThingDef.cs" />
