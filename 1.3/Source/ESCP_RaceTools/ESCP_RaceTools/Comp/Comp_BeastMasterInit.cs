@@ -9,6 +9,7 @@ using Verse.AI.Group;
 
 namespace ESCP_RaceTools
 {
+    [Obsolete]
     class Comp_BeastMasterInit : ThingComp
     {
         public bool ESCP_BeastMaster_beastsSpawned = false;

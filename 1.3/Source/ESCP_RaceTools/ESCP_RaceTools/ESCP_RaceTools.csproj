@@ -73,12 +73,14 @@
     <Compile Include="CompAbility\Properties\CompProperties_ReleaseGas.cs" />
     <Compile Include="Comp\Comp_DunmerGraveWhisper.cs" />
     <Compile Include="Comp\Comp_GiveAbilityOnCreation.cs" />
+    <Compile Include="Comp\Comp_MeditationPulse.cs" />
     <Compile Include="Comp\Properties\CompProperties_DunmerGraveWhisper.cs" />
     <Compile Include="Comp\Properties\CompProperties_BeastMasterSpawnInit.cs" />
     <Compile Include="Comp\Properties\CompProperties_BeserkerRage.cs" />
     <Compile Include="Comp\Comp_BeastMasterInit.cs" />
     <Compile Include="Comp\Comp_BeserkerRage.cs" />
     <Compile Include="Comp\Properties\CompProperties_GiveAbilityOnCreation.cs" />
+    <Compile Include="Comp\Properties\CompProperties_MeditationPulse.cs" />
     <Compile Include="Comp\Properties\CompProperties_TurnToThing.cs" />
     <Compile Include="Comp\Comp_TurnToThing.cs" />
     <Compile Include="DeathActionWorker\DeathActionWorker_HistoryEventOnDeath.cs" />
