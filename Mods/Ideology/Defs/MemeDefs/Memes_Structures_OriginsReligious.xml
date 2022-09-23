@@ -53,8 +53,7 @@
 		</generalRules>
 	   <descriptionMaker>
 		 <patterns>
-		   <li><def>TheistMyth</def></li>
-		   <li><def>TheistFounder</def></li>
+		   <li><def>ESCP_Ideo_Description_Eight_Divines</def></li>
 		 </patterns>
 		 <constants>
 		   <li><key>structure_theist</key><value>true</value></li>
@@ -133,8 +132,7 @@
 		</generalRules>
 	   <descriptionMaker>
 		 <patterns>
-		   <li><def>TheistMyth</def></li>
-		   <li><def>TheistFounder</def></li>
+		   <li><def>ESCP_Ideo_Description_Nine_Divines</def></li>
 		 </patterns>
 		 <constants>
 		   <li><key>structure_theist</key><value>true</value></li>
