@@ -11,7 +11,7 @@
 				<degree>1</degree>
 				<statOffsets>
 					<PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">5</PsychicEntropyMax>
-					<PsychicEntropyGain>-0.01</PsychicEntropyGain>
+					<PsychicEntropyGain MayRequire="Ludeon.RimWorld.Royalty">-0.01</PsychicEntropyGain>
 				</statOffsets>
 				<skillGains>
 				</skillGains>
@@ -23,7 +23,7 @@
 				<degree>2</degree>
 				<statOffsets>
 					<PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">10</PsychicEntropyMax>
-					<PsychicEntropyGain>-0.5</PsychicEntropyGain>
+					<PsychicEntropyGain MayRequire="Ludeon.RimWorld.Royalty">-0.5</PsychicEntropyGain>
 				</statOffsets>
 				<skillGains>
 				</skillGains>
@@ -35,7 +35,7 @@
 				<degree>3</degree>
 				<statOffsets>
 					<PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">15</PsychicEntropyMax>
-					<PsychicEntropyGain>-0.10</PsychicEntropyGain>
+					<PsychicEntropyGain MayRequire="Ludeon.RimWorld.Royalty">-0.10</PsychicEntropyGain>
 				</statOffsets>
 				<skillGains>
 				</skillGains>
