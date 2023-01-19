@@ -1,0 +1,11 @@
+J:\Modding\Github\ESCP-Bosmer\1.3\Assemblies\ESCP_RaceTools.dll
+J:\Modding\Github\ESCP-Bosmer\1.3\Source\ESCP_RaceTools\ESCP_RaceTools\obj\Debug\ESCP_RaceTools.csprojAssemblyReference.cache
+J:\Modding\Github\ESCP-Bosmer\1.3\Source\ESCP_RaceTools\ESCP_RaceTools\obj\Debug\ESCP_RaceTools.csproj.CoreCompileInputs.cache
+J:\Modding\Github\ESCP-Bosmer\1.3\Source\ESCP_RaceTools\ESCP_RaceTools\obj\Debug\ESCP_RaceTools.dll
+J:\Modding\Github\ESCP-Race_Tools\1.3\Assemblies\ESCP_RaceTools.dll
+J:\Modding\Github\ESCP-Race_Tools\1.3\Source\ESCP_RaceTools\ESCP_RaceTools\obj\Debug\ESCP_RaceTools.csproj.CoreCompileInputs.cache
+J:\Modding\Github\ESCP-Race_Tools\1.3\Source\ESCP_RaceTools\ESCP_RaceTools\obj\Debug\ESCP_RaceTools.dll
+J:\Modding\Github\ESCP-Race_Tools\1.3\Source\ESCP_RaceTools\ESCP_RaceTools\obj\Debug\ESCP_RaceTools.csproj.AssemblyReference.cache
+J:\Modding\Github\ESCP-Race_Tools\1.4\Source\ESCP_RaceTools\ESCP_RaceTools\obj\Debug\ESCP_RaceTools.csproj.AssemblyReference.cache
+J:\Modding\Github\ESCP-Race_Tools\1.4\Source\ESCP_RaceTools\ESCP_RaceTools\obj\Debug\ESCP_RaceTools.csproj.CoreCompileInputs.cache
+J:\Modding\Github\ESCP-Race_Tools\1.4\Source\ESCP_RaceTools\ESCP_RaceTools\obj\Debug\ESCP_RaceTools.dll
