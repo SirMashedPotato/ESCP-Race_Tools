@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using Verse;
 using RimWorld;
 
@@ -21,11 +19,19 @@ namespace ESCP_RaceTools
         //expectations
         public bool modifiedExpectations = false;
         public int expectationOffset = -1;
-        //for death action worker give history event
+        //for death action worker give history event  rework to harmony patch
         public HistoryEventDef eventOnDeath;
         //disease immunity
         public bool immuneToAllDisease = false;
         public List<string> immuneDiseases;
+        //starting hediffs, abilities TODO add harmony patch
+        public List<HediffDef> hediffsToAdd;
+        public List<AbilityDef> abilitiesToAdd;
+        public List<AbilityDef> oneOfRandomAbility;
+        public float oneOfRandomAbilityChance = 1f;
+        //Biotech specific TODO
+        public List<GeneDef> genesToAdd;    //starting genes
+        public GeneDef hybridInheritedGene; //the additional gene that is 'inherited' from the father of the pawn
         //can't be turned into a sload thrall
         public bool sloadThrallImmune = false;
         public bool thrassianPlagueImmune = false;
