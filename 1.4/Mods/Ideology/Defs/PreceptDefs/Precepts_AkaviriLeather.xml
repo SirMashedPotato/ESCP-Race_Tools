@@ -1,355 +1,338 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <!-- Issue -->
-
-  <IssueDef>
-    <defName>ESCP_AkaviriLeather</defName>
-    <label>akaviri leather</label>
-    <iconPath>UI/Issues/ESCP_AkaviriLeather</iconPath>
-  </IssueDef>
-
-  <!-- Abhorrent -->
-
-  <PreceptDef>
-    <defName>ESCP_AkaviriLeather_Abhorrent</defName>
-    <issue>ESCP_AkaviriLeather</issue>
-    <label>abhorrent</label>
-    <description>Wearing akaviri leather is a deeply abhorrent and disgusting act.</description>
-    <impact>Low</impact>
-    <displayOrderInIssue>50</displayOrderInIssue>
-    <displayOrderInImpact>100</displayOrderInImpact>
-    <defaultSelectionWeight>1</defaultSelectionWeight>
-    <comps>
-      <li Class="PreceptComp_SituationalThought">
-        <thought>ESCP_AkaviriLeatherApparel_Abhorrent</thought>
-        <description>Akaviri leather apparel</description>
-        <tooltipShowMoodRange>true</tooltipShowMoodRange>
-      </li>
-    </comps>
-  </PreceptDef>
-
-  <ThoughtDef>
-    <defName>ESCP_AkaviriLeatherApparel_Abhorrent</defName>
-    <workerClass>ESCP_RaceTools.ThoughtWorker_Precept_AkaviriLeatherApparel</workerClass>
-    <validWhileDespawned>true</validWhileDespawned>
-    <stages>
-      <li>
-        <label>akaviri leather {0}</label>
-        <description>Wearing akaviri leather is disturbing. Who could do this?</description>
-        <baseMoodEffect>-2</baseMoodEffect>
-      </li>
-      <li>
-        <label>akaviri leather {0} (+1)</label>
-        <description>I'm dressed like an insane person.</description>
-        <baseMoodEffect>-4</baseMoodEffect>
-      </li>
-      <li>
-        <label>akaviri leather {0} (+2)</label>
-        <description>I think there may be a face on my clothes. Oh, no... my clothes *are* a face.</description>
-        <baseMoodEffect>-6</baseMoodEffect>
-      </li>
-      <li>
-        <label>akaviri leather {0} etc</label>
-        <description>I look like a freak from a horror show, and I feel like I'm in a horror show.</description>
-        <baseMoodEffect>-8</baseMoodEffect>
-      </li>
-    </stages>
-    <nullifyingTraits>
-      <li>Psychopath</li>
-      <li>Bloodlust</li>
-      <li>Cannibal</li>
-    </nullifyingTraits>
-  </ThoughtDef>
-
-  <!-- Horrible -->
-
-  <PreceptDef>
-    <defName>ESCP_AkaviriLeather_Horrible</defName>
-    <issue>ESCP_AkaviriLeather</issue>
-    <label>horrible</label>
-    <description>Wearing akaviri leather is a horrible thing to do.</description>
-    <impact>Low</impact>
-    <displayOrderInIssue>40</displayOrderInIssue>
-    <displayOrderInImpact>100</displayOrderInImpact>
-    <defaultSelectionWeight>1</defaultSelectionWeight>
-    <comps>
-      <li Class="PreceptComp_SituationalThought">
-        <thought>ESCP_AkaviriLeatherApparel_Horrible</thought>
-        <description>Akaviri leather apparel</description>
-        <tooltipShowMoodRange>true</tooltipShowMoodRange>
-      </li>
-    </comps>
-  </PreceptDef>
-
-  <ThoughtDef>
-    <defName>ESCP_AkaviriLeatherApparel_Horrible</defName>
-    <workerClass>ESCP_RaceTools.ThoughtWorker_Precept_AkaviriLeatherApparel</workerClass>
-    <validWhileDespawned>true</validWhileDespawned>
-    <stages>
-      <li>
-        <label>akaviri leather {0}</label>
-        <description>Wearing akaviri leather is wrong.</description>
-        <baseMoodEffect>-2</baseMoodEffect>
-      </li>
-      <li>
-        <label>akaviri leather {0} (+1)</label>
-        <description>I feel really uncomfortable with all this akaviri leather apparel.</description>
-        <baseMoodEffect>-3</baseMoodEffect>
-      </li>
-      <li>
-        <label>akaviri leather {0} (+2)</label>
-        <description>Why am I wearing so much akaviri leather? This is horrible!</description>
-        <baseMoodEffect>-5</baseMoodEffect>
-      </li>
-      <li>
-        <label>akaviri leather {0} etc</label>
-        <description>I look like a freak, this is horrifying!</description>
-        <baseMoodEffect>-6</baseMoodEffect>
-      </li>
-    </stages>
-    <nullifyingTraits>
-      <li>Psychopath</li>
-      <li>Bloodlust</li>
-      <li>Cannibal</li>
-    </nullifyingTraits>
-  </ThoughtDef>
-
-  <!-- Disapproved -->
-
-  <PreceptDef>
-    <defName>ESCP_AkaviriLeather_Disapproved</defName>
-    <issue>ESCP_AkaviriLeather</issue>
-    <label>disapproved</label>
-    <description>Wearing akaviri leather is an ugly thing to do.</description>
-    <impact>Low</impact>
-    <displayOrderInIssue>30</displayOrderInIssue>
-    <displayOrderInImpact>100</displayOrderInImpact>
-    <associatedMemes>
-      <li>PainIsVirtue</li>
-    </associatedMemes>
-    <comps>
-      <li Class="PreceptComp_SituationalThought">
-        <thought>ESCP_AkaviriLeatherApparel_Disapproved</thought>
-        <description>Akaviri leather apparel</description>
-        <tooltipShowMoodRange>true</tooltipShowMoodRange>
-      </li>
-    </comps>
-  </PreceptDef>
-
-  <ThoughtDef>
-    <defName>ESCP_AkaviriLeatherApparel_Disapproved</defName>
-    <workerClass>ESCP_RaceTools.ThoughtWorker_Precept_AkaviriLeatherApparel</workerClass>
-    <validWhileDespawned>true</validWhileDespawned>
-    <stages>
-      <li>
-        <label>akaviri leather {0}</label>
-        <description>I should not be wearing akaviri leather apparel.</description>
-        <baseMoodEffect>-1</baseMoodEffect>
-      </li>
-      <li>
-        <label>akaviri leather {0} (+1)</label>
-        <description>I'm dressed in akaviri skin. I do not like this.</description>
-        <baseMoodEffect>-2</baseMoodEffect>
-      </li>
-      <li>
-        <label>akaviri leather {0} (+2)</label>
-        <description>Why am I wearing so much akaviri leather apparel? We should have something else to wear for me...</description>
-        <baseMoodEffect>-3</baseMoodEffect>
-      </li>
-      <li>
-        <label>akaviri leather {0} etc</label>
-        <description>I should really wear non-akaviri leather apparel. I look like a crazy person.</description>
-        <baseMoodEffect>-4</baseMoodEffect>
-      </li>
-    </stages>
-    <nullifyingTraits>
-      <li>Psychopath</li>
-      <li>Bloodlust</li>
-      <li>Cannibal</li>
-    </nullifyingTraits>
-  </ThoughtDef>
-
-  <!-- Acceptable -->
-
-  <PreceptDef>
-    <defName>ESCP_AkaviriLeather__Acceptable</defName>
-    <issue>ESCP_AkaviriLeather</issue>
-    <label>acceptable</label>
-    <description>Akaviri leather is just leather, like any other.</description>
-    <impact>Low</impact>
-    <displayOrderInIssue>20</displayOrderInIssue>
-    <displayOrderInImpact>100</displayOrderInImpact>
-    <associatedMemes>
-      <li>PainIsVirtue</li>
-    </associatedMemes>
-  </PreceptDef>
-
-  <!-- Preferred -->
-
-  <PreceptDef>
-    <defName>ESCP_AkaviriLeather_Preferred</defName>
-    <issue>ESCP_AkaviriLeather</issue>
-    <label>preferred</label>
-    <description>To wear akaviri leather is a noble and necessary part of life.</description>
-    <impact>Low</impact>
-    <displayOrderInIssue>10</displayOrderInIssue>
-    <displayOrderInImpact>100</displayOrderInImpact>
-    <exclusionTags>
-      <li>MeatEatingBadCannibalGood</li>
-    </exclusionTags>
-    <comps>
-      <li Class="PreceptComp_SituationalThought">
-        <thought>ESCP_AkaviriLeatherApparel_Preferred</thought>
-        <description>Akaviri leather apparel</description>
-        <tooltipShowMoodRange>true</tooltipShowMoodRange>
-      </li>
-    </comps>
-  </PreceptDef>
-
-  <ThoughtDef>
-    <defName>ESCP_AkaviriLeatherApparel_Preferred</defName>
-    <workerClass>ESCP_RaceTools.ThoughtWorker_Precept_AkaviriLeatherApparel</workerClass>
-    <validWhileDespawned>true</validWhileDespawned>
-    <stages>
-      <li>
-        <label>akaviri leather {0}</label>
-        <description>I feel good wearing akaviri leather apparel.</description>
-        <baseMoodEffect>1</baseMoodEffect>
-      </li>
-      <li>
-        <label>akaviri leather {0} (+1)</label>
-        <description>I enjoy wearing the skin of others.</description>
-        <baseMoodEffect>2</baseMoodEffect>
-      </li>
-      <li>
-        <label>akaviri leather {0} (+2)</label>
-        <description>I wear the faces of my enemies. This makes me happy.</description>
-        <baseMoodEffect>3</baseMoodEffect>
-      </li>
-      <li>
-        <label>akaviri leather {0} etc</label>
-        <description>I look like a real cannibal. Who could doubt me?</description>
-        <baseMoodEffect>4</baseMoodEffect>
-      </li>
-    </stages>
-    <nullifyingTraits>
-      <li>Bloodlust</li>
-      <li>Cannibal</li>
-    </nullifyingTraits>
-  </ThoughtDef>
-
-  <!-- Loved -->
-
-  <PreceptDef>
-    <defName>ESCP_AkaviriLeather_Loved</defName>
-    <issue>ESCP_AkaviriLeather</issue>
-    <label>loved</label>
-    <description>Wearing akaviri leather is important. All clothing should be made of it.</description>
-    <impact>Low</impact>
-    <displayOrderInIssue>0</displayOrderInIssue>
-    <displayOrderInImpact>100</displayOrderInImpact>
-    <requiredMemes>
-      <li>Cannibal</li>
-    </requiredMemes>
-    <exclusionTags>
-      <li>MeatEatingBadCannibalGood</li>
-    </exclusionTags>
-    <comps>
-      <li Class="PreceptComp_SituationalThought">
-        <thought>ESCP_AkaviriLeatherApparel_Loved</thought>
-        <description>Akaviri leather apparel</description>
-        <tooltipShowMoodRange>true</tooltipShowMoodRange>
-      </li>
-    </comps>
-  </PreceptDef>
-
-  <ThoughtDef>
-    <defName>ESCP_AkaviriLeatherApparel_Loved</defName>
-    <workerClass>ESCP_RaceTools.ThoughtWorker_Precept_AkaviriLeatherApparel</workerClass>
-    <validWhileDespawned>true</validWhileDespawned>
-    <stages>
-      <li>
-        <label>akaviri leather {0}</label>
-        <description>I enjoy wearing the faces of others.</description>
-        <baseMoodEffect>2</baseMoodEffect>
-      </li>
-      <li>
-        <label>akaviri leather {0} (+1)</label>
-        <description>This will scare them. All will know my power.</description>
-        <baseMoodEffect>3</baseMoodEffect>
-      </li>
-      <li>
-        <label>akaviri leather {0} (+2)</label>
-        <description>The faces on my clothes aren't smiling, but they make *me* happy.</description>
-        <baseMoodEffect>5</baseMoodEffect>
-      </li>
-      <li>
-        <label>akaviri leather {0} etc</label>
-        <description>The flesh! The flesh signals my triumph!</description>
-        <baseMoodEffect>6</baseMoodEffect>
-      </li>
-    </stages>
-    <nullifyingTraits>
-      <li>Bloodlust</li>
-      <li>Cannibal</li>
-    </nullifyingTraits>
-  </ThoughtDef>
-
-  <!-- Exalted -->
-
-  <PreceptDef>
-    <defName>ESCP_AkaviriLeather_Exalted</defName>
-    <issue>ESCP_AkaviriLeather</issue>
-    <label>exalted</label>
-    <description>Akaviri leather is morality. Why would you ever wear clothing made of anything else.</description>
-    <impact>Low</impact>
-    <displayOrderInImpact>1000</displayOrderInImpact>
-    <requiredMemes>
-      <li>Cannibal</li>
-    </requiredMemes>
-    <exclusionTags>
-      <li>MeatEatingBadCannibalGood</li>
-    </exclusionTags>
-    <comps>
-      <li Class="PreceptComp_SituationalThought">
-        <thought>ESCP_AkaviriLeatherApparel_Exalted</thought>
-        <description>Akaviri leather apparel</description>
-        <tooltipShowMoodRange>true</tooltipShowMoodRange>
-      </li>
-    </comps>
-  </PreceptDef>
-
-  <ThoughtDef>
-    <defName>ESCP_AkaviriLeatherApparel_Exalted</defName>
-    <workerClass>ESCP_RaceTools.ThoughtWorker_Precept_AkaviriLeatherApparel</workerClass>
-    <validWhileDespawned>true</validWhileDespawned>
-    <stages>
-      <li>
-        <label>akaviri leather {0}</label>
-        <description>I enjoy wearing the suffering of others.</description>
-        <baseMoodEffect>2</baseMoodEffect>
-      </li>
-      <li>
-        <label>akaviri leather {0} (+1)</label>
-        <description>This will scare them. All will know my power.</description>
-        <baseMoodEffect>4</baseMoodEffect>
-      </li>
-      <li>
-        <label>akaviri leather {0} (+2)</label>
-        <description>The faces on my clothes aren't smiling, but they make *me* happy.</description>
-        <baseMoodEffect>6</baseMoodEffect>
-      </li>
-      <li>
-        <label>akaviri leather {0} etc</label>
-        <description>The flesh! The flesh signals my triumph!</description>
-        <baseMoodEffect>8</baseMoodEffect>
-      </li>
-    </stages>
-    <nullifyingTraits>
-      <li>Bloodlust</li>
-      <li>Cannibal</li>
-    </nullifyingTraits>
-  </ThoughtDef>
-
+	<!-- ========== [ESCP_AkaviriLeather] ========== -->
+	<IssueDef>
+		<defName>ESCP_AkaviriLeather</defName>
+		<label>akaviri leather</label>
+		<iconPath>UI/Issues/ESCP_AkaviriLeather</iconPath>
+	</IssueDef>
+	<!-- ========== [ESCP_AkaviriLeather_Abhorrent] ========== -->
+	<PreceptDef>
+		<defName>ESCP_AkaviriLeather_Abhorrent</defName>
+		<issue>ESCP_AkaviriLeather</issue>
+		<label>abhorrent</label>
+		<description>Wearing akaviri leather is a deeply abhorrent and disgusting act.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>ESCP_AkaviriLeatherApparel_Abhorrent</thought>
+				<description>Akaviri leather apparel</description>
+				<tooltipShowMoodRange>true</tooltipShowMoodRange>
+			</li>
+		</comps>
+	</PreceptDef>
+	<!-- ========== [ESCP_AkaviriLeatherApparel_Abhorrent] ========== -->
+	<ThoughtDef>
+		<defName>ESCP_AkaviriLeatherApparel_Abhorrent</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_AkaviriLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>akaviri leather {0}</label>
+				<description>Wearing akaviri leather is disturbing. Who could do this?</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} (+1)</label>
+				<description>I'm dressed like an insane person.</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} (+2)</label>
+				<description>I think there may be a face on my clothes. Oh, no... my clothes *are* a face.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} etc</label>
+				<description>I look like a freak from a horror show, and I feel like I'm in a horror show.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+	</ThoughtDef>
+	<!-- ========== [ESCP_AkaviriLeather_Horrible] ========== -->
+	<PreceptDef>
+		<defName>ESCP_AkaviriLeather_Horrible</defName>
+		<issue>ESCP_AkaviriLeather</issue>
+		<label>horrible</label>
+		<description>Wearing akaviri leather is a horrible thing to do.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>ESCP_AkaviriLeatherApparel_Horrible</thought>
+				<description>Akaviri leather apparel</description>
+				<tooltipShowMoodRange>true</tooltipShowMoodRange>
+			</li>
+		</comps>
+	</PreceptDef>
+	<!-- ========== [ESCP_AkaviriLeatherApparel_Horrible] ========== -->
+	<ThoughtDef>
+		<defName>ESCP_AkaviriLeatherApparel_Horrible</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_AkaviriLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>akaviri leather {0}</label>
+				<description>Wearing akaviri leather is wrong.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} (+1)</label>
+				<description>I feel really uncomfortable with all this akaviri leather apparel.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} (+2)</label>
+				<description>Why am I wearing so much akaviri leather? This is horrible!</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} etc</label>
+				<description>I look like a freak, this is horrifying!</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+		</stages>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+	</ThoughtDef>
+	<!-- ========== [ESCP_AkaviriLeather_Disapproved] ========== -->
+	<PreceptDef>
+		<defName>ESCP_AkaviriLeather_Disapproved</defName>
+		<issue>ESCP_AkaviriLeather</issue>
+		<label>disapproved</label>
+		<description>Wearing akaviri leather is an ugly thing to do.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>PainIsVirtue</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>ESCP_AkaviriLeatherApparel_Disapproved</thought>
+				<description>Akaviri leather apparel</description>
+				<tooltipShowMoodRange>true</tooltipShowMoodRange>
+			</li>
+		</comps>
+	</PreceptDef>
+	<!-- ========== [ESCP_AkaviriLeatherApparel_Disapproved] ========== -->
+	<ThoughtDef>
+		<defName>ESCP_AkaviriLeatherApparel_Disapproved</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_AkaviriLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>akaviri leather {0}</label>
+				<description>I should not be wearing akaviri leather apparel.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} (+1)</label>
+				<description>I'm dressed in akaviri skin. I do not like this.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} (+2)</label>
+				<description>Why am I wearing so much akaviri leather apparel? We should have something else to wear for me...</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} etc</label>
+				<description>I should really wear non-akaviri leather apparel. I look like a crazy person.</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+		</stages>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+	</ThoughtDef>
+	<!-- ========== [ESCP_AkaviriLeather_Acceptable] ========== -->
+	<PreceptDef>
+		<defName>ESCP_AkaviriLeather_Acceptable</defName>
+		<issue>ESCP_AkaviriLeather</issue>
+		<label>acceptable</label>
+		<description>Akaviri leather is just leather, like any other.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>PainIsVirtue</li>
+		</associatedMemes>
+	</PreceptDef>
+	<!-- ========== [ESCP_AkaviriLeather_Preferred] ========== -->
+	<PreceptDef>
+		<defName>ESCP_AkaviriLeather_Preferred</defName>
+		<issue>ESCP_AkaviriLeather</issue>
+		<label>preferred</label>
+		<description>To wear akaviri leather is a noble and necessary part of life.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<exclusionTags>
+			<li>MeatEatingBadCannibalGood</li>
+		</exclusionTags>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>ESCP_AkaviriLeatherApparel_Preferred</thought>
+				<description>Akaviri leather apparel</description>
+				<tooltipShowMoodRange>true</tooltipShowMoodRange>
+			</li>
+		</comps>
+	</PreceptDef>
+	<!-- ========== [ESCP_AkaviriLeatherApparel_Preferred] ========== -->
+	<ThoughtDef>
+		<defName>ESCP_AkaviriLeatherApparel_Preferred</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_AkaviriLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>akaviri leather {0}</label>
+				<description>I feel good wearing akaviri leather apparel.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} (+1)</label>
+				<description>I enjoy wearing the skin of others.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} (+2)</label>
+				<description>I wear the faces of my enemies. This makes me happy.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} etc</label>
+				<description>I look like a real cannibal. Who could doubt me?</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>
+		<nullifyingTraits>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+	</ThoughtDef>
+	<!-- ========== [ESCP_AkaviriLeather_Loved] ========== -->
+	<PreceptDef>
+		<defName>ESCP_AkaviriLeather_Loved</defName>
+		<issue>ESCP_AkaviriLeather</issue>
+		<label>loved</label>
+		<description>Wearing akaviri leather is important. All clothing should be made of it.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>0</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<requiredMemes>
+			<li>Cannibal</li>
+		</requiredMemes>
+		<exclusionTags>
+			<li>MeatEatingBadCannibalGood</li>
+		</exclusionTags>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>ESCP_AkaviriLeatherApparel_Loved</thought>
+				<description>Akaviri leather apparel</description>
+				<tooltipShowMoodRange>true</tooltipShowMoodRange>
+			</li>
+		</comps>
+	</PreceptDef>
+	<!-- ========== [ESCP_AkaviriLeatherApparel_Loved] ========== -->
+	<ThoughtDef>
+		<defName>ESCP_AkaviriLeatherApparel_Loved</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_AkaviriLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>akaviri leather {0}</label>
+				<description>I enjoy wearing the faces of others.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} (+1)</label>
+				<description>This will scare them. All will know my power.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} (+2)</label>
+				<description>The faces on my clothes aren't smiling, but they make *me* happy.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} etc</label>
+				<description>The flesh! The flesh signals my triumph!</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+		</stages>
+		<nullifyingTraits>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+	</ThoughtDef>
+	<!-- ========== [ESCP_AkaviriLeather_Exalted] ========== -->
+	<PreceptDef>
+		<defName>ESCP_AkaviriLeather_Exalted</defName>
+		<issue>ESCP_AkaviriLeather</issue>
+		<label>exalted</label>
+		<description>Akaviri leather is morality. Why would you ever wear clothing made of anything else.</description>
+		<impact>Low</impact>
+		<displayOrderInImpact>1000</displayOrderInImpact>
+		<requiredMemes>
+			<li>Cannibal</li>
+		</requiredMemes>
+		<exclusionTags>
+			<li>MeatEatingBadCannibalGood</li>
+		</exclusionTags>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>ESCP_AkaviriLeatherApparel_Exalted</thought>
+				<description>Akaviri leather apparel</description>
+				<tooltipShowMoodRange>true</tooltipShowMoodRange>
+			</li>
+		</comps>
+	</PreceptDef>
+	<!-- ========== [ESCP_AkaviriLeatherApparel_Exalted] ========== -->
+	<ThoughtDef>
+		<defName>ESCP_AkaviriLeatherApparel_Exalted</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_AkaviriLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>akaviri leather {0}</label>
+				<description>I enjoy wearing the suffering of others.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} (+1)</label>
+				<description>This will scare them. All will know my power.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} (+2)</label>
+				<description>The faces on my clothes aren't smiling, but they make *me* happy.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} etc</label>
+				<description>The flesh! The flesh signals my triumph!</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+		<nullifyingTraits>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+	</ThoughtDef>
 </Defs>

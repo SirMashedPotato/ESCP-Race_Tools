@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<!-- The Eight -->
-
+	<!-- ========== [ESCP_Structure_OriginDivinesEight] ========== -->
 	<MemeDef>
 		<defName>ESCP_Structure_OriginDivinesEight</defName>
 		<label>Eight Divines origin</label>
@@ -21,7 +19,18 @@
 					<li>UI/Deities/ESCP_DeityStendarr</li>
 					<li>UI/Deities/ESCP_DeityZenithar</li>
 				</iconPath>
-            </li>
+				<overrideDeityGenders>true</overrideDeityGenders>
+				<deityGenders>
+					<li>Male</li>
+					<li>Male</li>
+					<li>Female</li>
+					<li>Male</li>
+					<li>Female</li>
+					<li>Female</li>
+					<li>Male</li>
+					<li>Male</li>
+				</deityGenders>
+			</li>
 		</modExtensions>
 		<iconPath>UI/Structures/ESCP_OriginDivinesEight</iconPath>
 		<deityCount>8</deityCount>
@@ -37,50 +46,87 @@
 		<requireAnyRitualSeat>
 		</requireAnyRitualSeat>
 		<generalRules>
-		  <rulesStrings>
-			<li>memeCreed->sect</li>
-			<li>memeCreed->cult</li>
-			<li>memeCreed->temple</li>
-			<li>memeCreed->faith</li>
-			<li>memeLeaderNoun->patriarch</li>
-			<li>memeLeaderAdjective->chosen</li>
-			<li>memeLeaderAdjective->divine</li>
-			<li>memeLeaderAdjective->blessed</li>
-			<li>memeMoralist->priest</li>
-			<li>memeMoralist->cleric</li>
-			<li>memeMoralist->preacher</li>
-		  </rulesStrings>
+			<rulesStrings>
+				<li>memeCreed->sect</li>
+				<li>memeCreed->cult</li>
+				<li>memeCreed->temple</li>
+				<li>memeCreed->faith</li>
+				<li>memeLeaderNoun->patriarch</li>
+				<li>memeLeaderAdjective->chosen</li>
+				<li>memeLeaderAdjective->divine</li>
+				<li>memeLeaderAdjective->blessed</li>
+				<li>memeMoralist->priest</li>
+				<li>memeMoralist->cleric</li>
+				<li>memeMoralist->preacher</li>
+			</rulesStrings>
 		</generalRules>
-	   <descriptionMaker>
-		 <patterns>
-		   <li><def>ESCP_Ideo_Description_Eight_Divines</def></li>
-		 </patterns>
-		 <constants>
-		   <li><key>structure_theist</key><value>true</value></li>
-		   <li><key>ESCP_Structure_OriginDivinesEight</key><value>true</value></li>
-		 </constants>
-	   </descriptionMaker>
-	   <symbolPacks>
-		  <li><ideoName>Temple of the Divines</ideoName><adjective>Priest</adjective><member>Follower</member><prefix>true</prefix></li>
-		  <li><ideoName>Temple of the Eight</ideoName><adjective>Priest</adjective><member>Follower</member><prefix>true</prefix></li>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>ESCP_Ideo_Description_Eight_Divines</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_theist</key>
+					<value>true</value>
+				</li>
+				<li>
+					<key>ESCP_Structure_OriginDivinesEight</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Temple of the Divines</ideoName>
+				<adjective>Priest</adjective>
+				<member>Follower</member>
+				<prefix>true</prefix>
+			</li>
+			<li>
+				<ideoName>Temple of the Eight</ideoName>
+				<adjective>Priest</adjective>
+				<member>Follower</member>
+				<prefix>true</prefix>
+			</li>
 		</symbolPacks>
 		<fixedDeityNameTypes>
-		  <li><name>Akatosh</name><type>the Dragon God of Time</type></li>
-		  <li><name>Arkay</name><type>the God of Cycles</type></li>
-		  <li><name>Dibella</name><type>the Godess of Beauty and Art</type></li>
-		  <li><name>Julianos</name><type>the God of Logic</type></li>
-		  <li><name>Kynareth</name><type>the Godess of heavens</type></li>
-		  <li><name>Mara</name><type>the Mother-Godess</type></li>
-		  <li><name>Stendarr</name><type>the God of Mercy</type></li>
-		  <li><name>Zenithar</name><type>the Trader God</type></li>
+			<li>
+				<name>Akatosh</name>
+				<type>the Dragon God of Time</type>
+			</li>
+			<li>
+				<name>Arkay</name>
+				<type>the God of Cycles</type>
+			</li>
+			<li>
+				<name>Dibella</name>
+				<type>the Godess of Beauty and Art</type>
+			</li>
+			<li>
+				<name>Julianos</name>
+				<type>the God of Logic</type>
+			</li>
+			<li>
+				<name>Kynareth</name>
+				<type>the Godess of heavens</type>
+			</li>
+			<li>
+				<name>Mara</name>
+				<type>the Mother-Godess</type>
+			</li>
+			<li>
+				<name>Stendarr</name>
+				<type>the God of Mercy</type>
+			</li>
+			<li>
+				<name>Zenithar</name>
+				<type>the Trader God</type>
+			</li>
 		</fixedDeityNameTypes>
-		<thingStyleCategories>
-
-		</thingStyleCategories>
 	</MemeDef>
-	
-	<!-- The Eight + the false god -->
-	
+	<!-- ========== [ESCP_Structure_OriginDivinesNine] ========== -->
 	<MemeDef>
 		<defName>ESCP_Structure_OriginDivinesNine</defName>
 		<label>Nine Divines origin</label>
@@ -100,7 +146,19 @@
 					<li>UI/Deities/ESCP_DeityZenithar</li>
 					<li>UI/Deities/ESCP_DeityTalos</li>
 				</iconPath>
-            </li>
+				<overrideDeityGenders>true</overrideDeityGenders>
+				<deityGenders>
+					<li>Male</li>
+					<li>Male</li>
+					<li>Female</li>
+					<li>Male</li>
+					<li>Female</li>
+					<li>Female</li>
+					<li>Male</li>
+					<li>Male</li>
+					<li>Male</li>
+				</deityGenders>
+			</li>
 		</modExtensions>
 		<iconPath>UI/Structures/ESCP_OriginDivinesNine</iconPath>
 		<deityCount>9</deityCount>
@@ -116,52 +174,97 @@
 		<requireAnyRitualSeat>
 		</requireAnyRitualSeat>
 		<generalRules>
-		  <rulesStrings>
-			<li>memeCreed->sect</li>
-			<li>memeCreed->cult</li>
-			<li>memeCreed->temple</li>
-			<li>memeCreed->faith</li>
-			<li>memeLeaderNoun->patriarch</li>
-			<li>memeLeaderAdjective->chosen</li>
-			<li>memeLeaderAdjective->divine</li>
-			<li>memeLeaderAdjective->blessed</li>
-			<li>memeMoralist->priest</li>
-			<li>memeMoralist->cleric</li>
-			<li>memeMoralist->preacher</li>
-		  </rulesStrings>
+			<rulesStrings>
+				<li>memeCreed->sect</li>
+				<li>memeCreed->cult</li>
+				<li>memeCreed->temple</li>
+				<li>memeCreed->faith</li>
+				<li>memeLeaderNoun->patriarch</li>
+				<li>memeLeaderAdjective->chosen</li>
+				<li>memeLeaderAdjective->divine</li>
+				<li>memeLeaderAdjective->blessed</li>
+				<li>memeMoralist->priest</li>
+				<li>memeMoralist->cleric</li>
+				<li>memeMoralist->preacher</li>
+			</rulesStrings>
 		</generalRules>
-	   <descriptionMaker>
-		 <patterns>
-		   <li><def>ESCP_Ideo_Description_Nine_Divines</def></li>
-		 </patterns>
-		 <constants>
-		   <li><key>structure_theist</key><value>true</value></li>
-		   <li><key>ESCP_Structure_OriginDivinesNine</key><value>true</value></li>
-		 </constants>
-	   </descriptionMaker>
-	   <symbolPacks>
-		  <li><ideoName>Temple of the Divines</ideoName><adjective>Priest</adjective><member>Follower</member><prefix>true</prefix></li>
-		  <li><ideoName>Temple of the Nine</ideoName><adjective>Priest</adjective><member>Follower</member><prefix>true</prefix></li>
-		  <li><ideoName>Temple of the Eight and One</ideoName><adjective>Priest</adjective><member>Follower</member><prefix>true</prefix></li>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>ESCP_Ideo_Description_Nine_Divines</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_theist</key>
+					<value>true</value>
+				</li>
+				<li>
+					<key>ESCP_Structure_OriginDivinesNine</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Temple of the Divines</ideoName>
+				<adjective>Priest</adjective>
+				<member>Follower</member>
+				<prefix>true</prefix>
+			</li>
+			<li>
+				<ideoName>Temple of the Nine</ideoName>
+				<adjective>Priest</adjective>
+				<member>Follower</member>
+				<prefix>true</prefix>
+			</li>
+			<li>
+				<ideoName>Temple of the Eight and One</ideoName>
+				<adjective>Priest</adjective>
+				<member>Follower</member>
+				<prefix>true</prefix>
+			</li>
 		</symbolPacks>
 		<fixedDeityNameTypes>
-		  <li><name>Akatosh</name><type>the Dragon God of Time</type></li>
-		  <li><name>Arkay</name><type>the God of Cycles</type></li>
-		  <li><name>Dibella</name><type>the Godess of Beauty and Art</type></li>
-		  <li><name>Julianos</name><type>the God of Logic</type></li>
-		  <li><name>Kynareth</name><type>the Godess of heavens</type></li>
-		  <li><name>Mara</name><type>the Mother-Godess</type></li>
-		  <li><name>Stendarr</name><type>the God of Mercy</type></li>
-		  <li><name>Zenithar</name><type>the Trader God</type></li>
-		  <li><name>Tiber Septim</name><type>the Hero-God of mankind</type></li>
+			<li>
+				<name>Akatosh</name>
+				<type>the Dragon God of Time</type>
+			</li>
+			<li>
+				<name>Arkay</name>
+				<type>the God of Cycles</type>
+			</li>
+			<li>
+				<name>Dibella</name>
+				<type>the Godess of Beauty and Art</type>
+			</li>
+			<li>
+				<name>Julianos</name>
+				<type>the God of Logic</type>
+			</li>
+			<li>
+				<name>Kynareth</name>
+				<type>the Godess of heavens</type>
+			</li>
+			<li>
+				<name>Mara</name>
+				<type>the Mother-Godess</type>
+			</li>
+			<li>
+				<name>Stendarr</name>
+				<type>the God of Mercy</type>
+			</li>
+			<li>
+				<name>Zenithar</name>
+				<type>the Trader God</type>
+			</li>
+			<li>
+				<name>Tiber Septim</name>
+				<type>the Hero-God of mankind</type>
+			</li>
 		</fixedDeityNameTypes>
-		<thingStyleCategories>
-
-		</thingStyleCategories>
 	</MemeDef>
-	
-	<!-- Cult of Lorkhan -->
-	
+	<!-- ========== [ESCP_Structure_OriginLorkhanCult] ========== -->
 	<MemeDef>
 		<defName>ESCP_Structure_OriginLorkhanCult</defName>
 		<label>Cult of Lorkhan origin</label>
@@ -173,7 +276,7 @@
 				<iconPath>
 					<li>UI/Deities/ESCP_DeityLorkhan</li>
 				</iconPath>
-            </li>
+			</li>
 		</modExtensions>
 		<iconPath>UI/Structures/ESCP_OriginLorkhanCult</iconPath>
 		<deityCount>1</deityCount>
@@ -189,40 +292,59 @@
 		<requireAnyRitualSeat>
 		</requireAnyRitualSeat>
 		<generalRules>
-		  <rulesStrings>
-			<li>memeCreed->sect</li>
-			<li>memeCreed->cult</li>
-			<li>memeCreed->temple</li>
-			<li>memeCreed->faith</li>
-			<li>memeLeaderNoun->patriarch</li>
-			<li>memeLeaderAdjective->chosen</li>
-			<li>memeLeaderAdjective->divine</li>
-			<li>memeLeaderAdjective->blessed</li>
-			<li>memeMoralist->priest</li>
-			<li>memeMoralist->cleric</li>
-			<li>memeMoralist->preacher</li>
-		  </rulesStrings>
+			<rulesStrings>
+				<li>memeCreed->sect</li>
+				<li>memeCreed->cult</li>
+				<li>memeCreed->temple</li>
+				<li>memeCreed->faith</li>
+				<li>memeLeaderNoun->patriarch</li>
+				<li>memeLeaderAdjective->chosen</li>
+				<li>memeLeaderAdjective->divine</li>
+				<li>memeLeaderAdjective->blessed</li>
+				<li>memeMoralist->priest</li>
+				<li>memeMoralist->cleric</li>
+				<li>memeMoralist->preacher</li>
+			</rulesStrings>
 		</generalRules>
-	   <descriptionMaker>
-		 <patterns>
-		   <li><def>TheistMyth</def></li>
-		   <li><def>TheistFounder</def></li>
-		 </patterns>
-		 <constants>
-		   <li><key>structure_theist</key><value>true</value></li>
-		   <li><key>ESCP_Structure_OriginLorkhanCult</key><value>true</value></li>
-		 </constants>
-	   </descriptionMaker>
-	   <symbolPacks>
-		  <li><ideoName>Temple of Lorkhan</ideoName><adjective>Priest</adjective><member>Follower</member><prefix>true</prefix></li>
-		  <li><ideoName>Cult of Lorkhan</ideoName><adjective>Voice</adjective><member>Cultist</member><prefix>true</prefix></li>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>TheistMyth</def>
+				</li>
+				<li>
+					<def>TheistFounder</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_theist</key>
+					<value>true</value>
+				</li>
+				<li>
+					<key>ESCP_Structure_OriginLorkhanCult</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Temple of Lorkhan</ideoName>
+				<adjective>Priest</adjective>
+				<member>Follower</member>
+				<prefix>true</prefix>
+			</li>
+			<li>
+				<ideoName>Cult of Lorkhan</ideoName>
+				<adjective>Voice</adjective>
+				<member>Cultist</member>
+				<prefix>true</prefix>
+			</li>
 		</symbolPacks>
 		<fixedDeityNameTypes>
-		  <li><name>Lorkhan</name><type>the Missing God</type></li>
+			<li>
+				<name>Lorkhan</name>
+				<type>the Missing God</type>
+			</li>
 		</fixedDeityNameTypes>
-		<thingStyleCategories>
-
-		</thingStyleCategories>
 	</MemeDef>
-	
 </Defs>
