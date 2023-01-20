@@ -1,5 +1,4 @@
-﻿using System;
-using Verse;
+﻿using Verse;
 using RimWorld;
 
 namespace ESCP_RaceTools
@@ -10,7 +9,7 @@ namespace ESCP_RaceTools
         {
             get
             {
-                return (CompProperties_ReleaseGas)this.props;
+                return (CompProperties_ReleaseGas)props;
             }
         }
 
@@ -18,7 +17,7 @@ namespace ESCP_RaceTools
         {
             if(Props.gasDef != null)
             {
-                GenExplosion.DoExplosion(target.Cell, parent.pawn.Map, Props.radius, DamageDefOf.Extinguish, parent.pawn, -1, -1f, null, null, null, null, Props.gasDef, 1f, 1, false, null, 0f, 1, 0f, false, null, null);
+                GenExplosion.DoExplosion(target.Cell, parent.pawn.Map, Props.radius, DamageDefOf.Extinguish, parent.pawn, -1, -1, null, null, null, null, Props.gasDef, 1, 1);
             }
         }
     }

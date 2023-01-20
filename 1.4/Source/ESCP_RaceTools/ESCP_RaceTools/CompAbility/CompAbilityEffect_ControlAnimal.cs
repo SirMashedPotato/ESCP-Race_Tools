@@ -1,5 +1,4 @@
-﻿using System;
-using Verse;
+﻿using Verse;
 using RimWorld;
 
 namespace ESCP_RaceTools
@@ -18,7 +17,6 @@ namespace ESCP_RaceTools
         {
 			if(target != null && CanApplyOn(target, dest))
 			{
-				//add the hediff
 				Pawn pawn = target.Pawn;
 				Hediff hediff = HediffMaker.MakeHediff(this.Props.hediffDef, pawn, this.Props.onlyBrain ? pawn.health.hediffSet.GetBrain() : null);
 				HediffComp_Disappears hediffComp_Disappears = hediff.TryGetComp<HediffComp_Disappears>();
@@ -32,7 +30,6 @@ namespace ESCP_RaceTools
 					hediffComp_Link.other = this.parent.pawn;
 					hediffComp_Link.drawConnection = (target == this.parent.pawn);
 				}
-				//then tame and train
 				pawn.SetFaction(Faction.OfPlayer, null);
 				foreach (TrainableDef td in DefDatabase<TrainableDef>.AllDefs)
 				{
@@ -50,13 +47,13 @@ namespace ESCP_RaceTools
         public override bool Valid(LocalTargetInfo target, bool throwMessages = false)
 		{
 			Pawn pawn = target.Pawn;
-			return pawn != null && AbilityUtility.ValidateMustBeAnimal(pawn, throwMessages) && ESCP_AbilityUtility.ValidateMustBeFactionless(pawn, throwMessages)
-				&& AbilityUtility.ValidateNoMentalState(pawn, throwMessages) && AbilityUtility.ValidateIsAwake(pawn, throwMessages);
+			return pawn != null && AbilityUtility.ValidateMustBeAnimal(pawn, throwMessages, parent) && ESCP_AbilityUtility.ValidateMustBeFactionless(pawn, throwMessages)
+				&& AbilityUtility.ValidateNoMentalState(pawn, throwMessages, parent) && AbilityUtility.ValidateIsAwake(pawn, throwMessages, parent);
 		}
 
 		public override bool CanApplyOn(LocalTargetInfo target, LocalTargetInfo dest)
 		{
-			return AbilityUtility.ValidateNoMentalState(target.Pawn, false) && ESCP_AbilityUtility.ValidateMustBeFactionless(target.Pawn, false) && base.CanApplyOn(target, dest);
+			return AbilityUtility.ValidateNoMentalState(target.Pawn, false, parent) && ESCP_AbilityUtility.ValidateMustBeFactionless(target.Pawn, false) && base.CanApplyOn(target, dest);
 		}
 	}
 }

@@ -28,12 +28,12 @@ namespace ESCP_RaceTools
 		{
 			Pawn pawn = target.Pawn;
 			return pawn != null && target.Pawn.RaceProps.Humanlike
-				&& AbilityUtility.ValidateNoMentalState(pawn, throwMessages) && AbilityUtility.ValidateIsAwake(pawn, throwMessages);
+				&& AbilityUtility.ValidateNoMentalState(pawn, throwMessages, parent) && AbilityUtility.ValidateIsAwake(pawn, throwMessages, parent);
 		}
 
 		public override bool CanApplyOn(LocalTargetInfo target, LocalTargetInfo dest)
 		{
-			return AbilityUtility.ValidateNoMentalState(target.Pawn, false) && target.Pawn.RaceProps.Humanlike && base.CanApplyOn(target, dest);
+			return AbilityUtility.ValidateNoMentalState(target.Pawn, false, parent) && target.Pawn.RaceProps.Humanlike && base.CanApplyOn(target, dest);
 		}
 	}
 }

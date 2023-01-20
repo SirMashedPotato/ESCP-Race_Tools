@@ -1,7 +1,5 @@
 ﻿using RimWorld;
 using Verse;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace ESCP_RaceTools
 {
@@ -11,15 +9,15 @@ namespace ESCP_RaceTools
         {
             if (ModSettingsUtility.ESCP_RaceTools_EnableBackstoryOpinions())
             {
-                if (pawn.story.adulthood == null || other.story.adulthood == null)
+                if (pawn.story.Adulthood == null || other.story.Adulthood == null)
                 {
                     return false;
                 }
-                var props = ThoughtDefProperties.Get(this.def);
+                var props = ThoughtDefProperties.Get(def);
                 if (props != null && props.sharedBackstoryCategories != null)
                 {
-                    Backstory a = pawn.story.adulthood;
-                    Backstory b = other.story.adulthood;
+                    BackstoryDef a = pawn.story.Adulthood;
+                    BackstoryDef b = other.story.Adulthood;
                     foreach (string str in props.sharedBackstoryCategories)
                     {
                         if (a.spawnCategories.Contains(str) && b.spawnCategories.Contains(str))

@@ -1,31 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using Verse;
-using Verse.Sound;
 using RimWorld;
 
 namespace ESCP_Barrier
 {
-    public class BarrierProperties : DefModExtension
+    public class CompProperties_BarrierShield : CompProperties_Shield
     {
-        public float MinDrawSize = 1.2f;
+        public CompProperties_BarrierShield()
+        {
+            compClass = typeof(Comp_BarrierShield);
+        }
 
-        public float MaxDrawSize = 1.55f;
-
-        public string BubblePath = "Other/ShieldBubble";
-
-        public bool CanFireOut = true;
+        public string bubblePath = "Other/ShieldBubble";
+        public bool canFireOut = true;
 
         /* sounds */
-
+        /*
         public SoundDef soundBarrierBroken;
         public SoundDef soundBarrierReset;
         public SoundDef soundAbsorbedDamage;
-
+        */
         /* gizmo */
 
-        public Color EnergyBarColor = new Color(0.30f, 0.25f, 0.32f);
+        public Color fullShieldBarTex = new Color(0.30f, 0.25f, 0.32f);
+        public Color EmptyShieldBarTex = Color.clear;
+        public string barrierGizmoTooltip = "";
 
         /* damage absorption */
 
@@ -35,10 +35,5 @@ namespace ESCP_Barrier
         public List<DamageDef> absorbedDamageDefs;
         public List<DamageDef> allowedDamageDefs;
         public List<DamageDef> breakDamageDefs;
-
-        public static BarrierProperties Get(Def def)
-        {
-            return def.GetModExtension<BarrierProperties>();
-        }
     }
 }
