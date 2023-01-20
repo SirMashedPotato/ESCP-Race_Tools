@@ -1,23 +1,17 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using System.Reflection;
 using Verse;
-using Verse.AI;
-using Verse.AI.Group;
-using System;
-using System.Collections.Generic;
-using System.Reflection.Emit;
-using System.Linq;
 using RimWorld.Planet;
 
 namespace ESCP_RaceTools
 {
     public static class SettlementPreferencePatch
     {
-        /* 
-         * Patch that uses the SettlementPreference defModExtension to control faction base spawns
-         * It was a little while ago, but I believe this was originally based on code created by Jecrell
-         */
+        /// <summary>
+        /// Patch that uses the SettlementPreference defModExtension to control faction base spawns
+        /// It was a little while ago, but I believe this was originally based on code created by Jecrell
+        /// Most functionality is in SettlementPreferenceUtility
+        /// </summary>
         [HarmonyPatch(typeof(TileFinder))]
         [HarmonyPatch("RandomSettlementTileFor")]
         public static class TileFinder_RandomSettlementTileFor_Patch

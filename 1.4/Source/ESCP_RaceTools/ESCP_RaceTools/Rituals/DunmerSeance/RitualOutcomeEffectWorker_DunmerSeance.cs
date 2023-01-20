@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Verse;
 using RimWorld;
@@ -25,7 +24,7 @@ namespace ESCP_RaceTools
                 if (pawn != null)
                 {
 					extraOutcomeDesc = "ESCP_DunmerRitualOutcomeExtraDesc_SeancePsylink".Translate(pawn.Named("PAWN"));
-					List<Ability> existingAbils = pawn.abilities.AllAbilitiesForReading.ToList<Ability>();
+					List<Ability> existingAbils = pawn.abilities.AllAbilitiesForReading.ToList();
 					pawn.ChangePsylinkLevel(1, true);
 					Ability ability = pawn.abilities.AllAbilitiesForReading.FirstOrDefault((Ability a) => !existingAbils.Contains(a));
 					if (ability != null)

@@ -1,5 +1,4 @@
-﻿using System;
-using RimWorld;
+﻿using RimWorld;
 using Verse;
 
 namespace ESCP_RaceTools
@@ -8,7 +7,7 @@ namespace ESCP_RaceTools
     {
         public HediffCompProperties_GiveHediffsInRange()
         {
-            this.compClass = typeof(ESCP_RaceTools.HediffComp_GiveHediffsInRange);
+            this.compClass = typeof(HediffComp_GiveHediffsInRange);
         }
 
 		public float range;

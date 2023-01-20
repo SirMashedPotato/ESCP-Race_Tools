@@ -1,6 +1,4 @@
-﻿using System;
-using RimWorld;
-using Verse;
+﻿using Verse;
 
 namespace ESCP_RaceTools
 {
@@ -8,7 +6,7 @@ namespace ESCP_RaceTools
     {
         public HediffCompProperties_UntameOnEnd()
         {
-            this.compClass = typeof(HediffComp_UntameOnEnd);
+            compClass = typeof(HediffComp_UntameOnEnd);
         }
 
         public bool untame = true;

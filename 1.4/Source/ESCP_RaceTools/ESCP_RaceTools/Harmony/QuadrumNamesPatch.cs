@@ -1,24 +1,15 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using System.Reflection;
 using Verse;
-using Verse.AI;
-using Verse.AI.Group;
-using System;
-using System.Collections.Generic;
-using System.Reflection.Emit;
-using System.Linq;
-using RimWorld.Planet;
 
 namespace ESCP_RaceTools
 {
     public static class QuadrumNamesPatch
     {
-
-        /*
-         * Patches that swap out the quadrum names to elder scrollsy ones
-         * Names made by Kriana
-         */
+        /// <summary>
+        /// Patches that swap out the quadrum names to elder scrollsy ones
+        /// Names made by Kriana
+        /// </summary>
 
         [HarmonyPatch(typeof(QuadrumUtility))]
         [HarmonyPatch("Label")]
@@ -46,7 +37,6 @@ namespace ESCP_RaceTools
                         default:
                             __result = "Unknown quadrum";
                             return false;
-
                     }
                 }
                 return true;
@@ -79,7 +69,6 @@ namespace ESCP_RaceTools
                         default:
                             __result = "Unknown quadrum";
                             return false;
-
                     }
                 }
                 return true;

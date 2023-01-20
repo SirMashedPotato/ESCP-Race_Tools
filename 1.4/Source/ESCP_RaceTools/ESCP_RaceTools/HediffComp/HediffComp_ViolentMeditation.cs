@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Verse;
-using RimWorld;
-using System.Linq;
+﻿using Verse;
 
 namespace ESCP_RaceTools
 {
@@ -13,7 +9,7 @@ namespace ESCP_RaceTools
         {
             get
             {
-                return (HediffCompProperties_ViolentMeditation)this.props;
+                return (HediffCompProperties_ViolentMeditation)props;
             }
         }
 

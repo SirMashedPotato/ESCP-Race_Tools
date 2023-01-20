@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections.Generic;
 using Verse;
 using RimWorld;
-using System.Reflection.Emit;
-using System.Linq;
 
 namespace ESCP_RaceTools
 {
     public static class StuffKnowledgeUtility
     {
-        /* For qulity patch */
         public static bool MadeOfStuff(Thing t, List<string> stuffList)
         {
             return t != null && t.Stuff != null && stuffList.Contains(t.Stuff.ToString());
@@ -36,27 +31,9 @@ namespace ESCP_RaceTools
             return skillList != null && skillList.Contains(recipe.workSkill);
         }
 
-        public static bool RequiredTrait(Pawn p, TraitDef t, bool nullIsTrue = true)
+        public static bool RequiredHediff(Pawn p, HediffDef h)
         {
-            return (t == null && nullIsTrue) || (p.story.traits != null && p.story.traits.HasTrait(t));
-        }
-
-        public static bool RequiredHediff(Pawn p, HediffDef h, bool nullIsTrue = true)
-        {
-            return (h == null && nullIsTrue) || (p.health.hediffSet.GetFirstHediffOfDef(h) != null);
-        }
-
-        public static bool RequiredBackstory(Pawn p, string b, bool nullIsTrue = true)
-        {
-            return (b == null && nullIsTrue)
-                || (p.story.GetBackstory(BackstorySlot.Childhood) != null && p.story.GetBackstory(BackstorySlot.Childhood).identifier.ToString() == b)
-                || (p.story.GetBackstory(BackstorySlot.Adulthood) != null && p.story.GetBackstory(BackstorySlot.Adulthood).identifier.ToString() == b);
-        }
-
-        public static bool OnlyOneCheck(Pawn p, TraitDef t, HediffDef h, string b)
-        {
-            return ((RequiredTrait(p, t, false) || RequiredHediff(p, h, false) || RequiredBackstory(p, b, false))
-                || (RequiredTrait(p, t) && RequiredHediff(p, h) && RequiredBackstory(p, b)));
+            return h == null || p.health.hediffSet.GetFirstHediffOfDef(h) != null;
         }
 
         public static bool ChanceIncrease(float chance)
@@ -69,10 +46,9 @@ namespace ESCP_RaceTools
             var modExt = StuffKnowledge.Get(worker.def);
             if (initial != QualityCategory.Legendary && modExt != null)
             {
-                foreach (var stuffKnowledge in modExt.stuffKnowledgeList)
+                foreach (Knowledge stuffKnowledge in modExt.stuffKnowledgeList)
                 {
-                    if ((stuffKnowledge.allOrNothing && RequiredTrait(worker, stuffKnowledge.requiredTrait) && RequiredHediff(worker, stuffKnowledge.requiredHediff) && RequiredBackstory(worker, stuffKnowledge.requiredBackstory)) ||
-                        (!stuffKnowledge.allOrNothing && OnlyOneCheck(worker, stuffKnowledge.requiredTrait, stuffKnowledge.requiredHediff, stuffKnowledge.requiredBackstory)))
+                    if (RequiredHediff(worker, stuffKnowledge.requiredHediff))
                     {
                         if (RightSkill(recipe, stuffKnowledge.skillList) && (MadeOfStuff(thing, stuffKnowledge.stuffList) || (stuffKnowledge.notJustStuff && MadeOfThing(thing, stuffKnowledge.stuffList))) && ChanceIncrease(stuffKnowledge.chance))
                         {

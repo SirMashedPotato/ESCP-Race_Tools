@@ -1,18 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using RimWorld;
 using UnityEngine;
 using Verse;
 
 namespace ESCP_RaceTools
 {
+	/// <summary>
+	/// Basically the exact same, but can affect animals
+	/// </summary>
     public class HediffComp_GiveHediffsInRange : HediffComp
     {
 		public HediffCompProperties_GiveHediffsInRange Props
 		{
 			get
 			{
-				return (ESCP_RaceTools.HediffCompProperties_GiveHediffsInRange)this.props;
+				return (HediffCompProperties_GiveHediffsInRange)this.props;
 			}
 		}
 

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using Verse;
+﻿using Verse;
 using RimWorld;
 
 namespace ESCP_RaceTools
@@ -11,15 +7,15 @@ namespace ESCP_RaceTools
     {
         public override string GetLabel(Precept_Role role)
         {
-            if (this.labelCached == null)
+            if (labelCached == null)
             {
                 if (ModSettingsUtility_Ideo.ESCP_RaceTools_IdeologyOverrideRace())
                 {
-                    this.labelCached = "ESCP_IdeoRequirementRace".Translate() + ": " + "ESCP_IdeoRequirementRaceAny".Translate();
+                    labelCached = "ESCP_IdeoRequirementRace".Translate() + ": " + "ESCP_IdeoRequirementRaceAny".Translate();
                 } 
                 else
                 {
-                    this.labelCached = "ESCP_IdeoRequirementRace".Translate() + ": " + race.label;
+                    labelCached = "ESCP_IdeoRequirementRace".Translate() + ": " + race.label;
                 }
             }
             return labelCached;

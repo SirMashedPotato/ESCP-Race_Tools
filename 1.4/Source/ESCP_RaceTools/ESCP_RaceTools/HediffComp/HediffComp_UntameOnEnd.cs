@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using RimWorld;
-using UnityEngine;
+﻿using RimWorld;
 using Verse;
-using Verse.AI;
-using RimWorld.Planet;
 
 namespace ESCP_RaceTools
 {

@@ -1,6 +1,5 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using System.Reflection;
 using Verse;
 using System.Linq;
 using UnityEngine;
@@ -9,22 +8,26 @@ namespace ESCP_RaceTools
 {
     public static class HypothermiaSwitchPatch
     {
-        /*
-         * Patch that prevents certain races from gaining hypothermia, and instead gives them hypothermic slowdown
-         */
-        [HarmonyPatch(typeof(HediffGiver_Hypothermia))]
+		/// <summary>
+		/// Patch that can prevent specific races from recieving hypothermia
+		/// Can also give a different hediff instead
+		/// </summary>
+		[HarmonyPatch(typeof(HediffGiver_Hypothermia))]
         [HarmonyPatch("OnIntervalPassed")]
         public static class HediffGiver_Hypothermia_OnIntervalPassed_Patch
         {
             [HarmonyPrefix]
-            public static bool HypothermiaPatch(Pawn pawn, Hediff cause)
+            public static bool HypothermiaPatch(Pawn pawn)
             {
                 if (ModSettingsUtility.ESCP_RaceTools_EnableHypothermiaSwitch())
                 {
                     var props = RaceProperties.Get(pawn.def);
 					if (props != null)
 					{
-						if (props.completeHypothermiaResistance) return false;
+						if (props.completeHypothermiaResistance)
+                        {
+							return false;
+                        }
 						if (props.hypothermiaResistant && props.hypothermiaDef != null)
 						{
 							OnIntervalPassed(pawn, props.hypothermiaDef, props.frostbiteResistant);
@@ -36,6 +39,10 @@ namespace ESCP_RaceTools
             }
         }
 
+		/// <summary>
+		/// Effectively the same base functionality as HediffGiver_Hypothermia.OnIntervalPassed
+		/// but uses a different hediff instead
+		/// </summary>
 		public static void OnIntervalPassed(Pawn pawn, HediffDef hediffDef, bool resistDamage)
 		{
 			float ambientTemperature = pawn.AmbientTemperature;
@@ -72,8 +79,8 @@ namespace ESCP_RaceTools
 							 where !hediffSet.PartIsMissing(x)
 							 select x).TryRandomElementByWeight((BodyPartRecord x) => x.def.frostbiteVulnerability, out bodyPartRecord))
 						{
-							int num4 = Mathf.CeilToInt((float)bodyPartRecord.def.hitPoints * 0.5f);
-							DamageInfo dinfo = new DamageInfo(DamageDefOf.Frostbite, (float)num4, 0f, -1f, null, bodyPartRecord, null, DamageInfo.SourceCategory.ThingOrUnknown, null, true, true);
+							int num4 = Mathf.CeilToInt(bodyPartRecord.def.hitPoints * 0.5f);
+							DamageInfo dinfo = new DamageInfo(DamageDefOf.Frostbite, num4, 0f, -1f, null, bodyPartRecord, null, DamageInfo.SourceCategory.ThingOrUnknown, null, true, true);
 							pawn.TakeDamage(dinfo);
 						}
 					}

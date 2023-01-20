@@ -1,7 +1,4 @@
-﻿using System;
-using RimWorld;
-using Verse;
-using System.Collections.Generic;
+﻿using Verse;
 
 namespace ESCP_RaceTools
 {
@@ -9,7 +6,7 @@ namespace ESCP_RaceTools
     {
         public HediffCompProperties_ViolentMeditation()
         {
-            this.compClass = typeof(HediffComp_ViolentMeditation);
+            compClass = typeof(HediffComp_ViolentMeditation);
         }
 
         public float div = 100f;

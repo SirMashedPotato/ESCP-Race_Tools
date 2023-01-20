@@ -4,6 +4,9 @@ using Verse;
 
 namespace ESCP_RaceTools
 {
+    /// <summary>
+    /// Allows selling corpses to traders with StockGenerator_BuyCorpses
+    /// </summary>
     [HarmonyPatch(typeof(TradeUtility))]
     [HarmonyPatch("EverPlayerSellable")]
     public static class TradeUtility_EverPlayerSellable_CorpsePatch
@@ -21,6 +24,9 @@ namespace ESCP_RaceTools
         }
     }
 
+    /// <summary>
+    /// Prevents selling corpses to traders without StockGenerator_BuyCorpses
+    /// </summary>
     [HarmonyPatch(typeof(StockGenerator_BuyExpensiveSimple))]
     [HarmonyPatch("HandlesThingDef")]
     public static class StockGenerator_BuyExpensiveSimple_CorpsePatch

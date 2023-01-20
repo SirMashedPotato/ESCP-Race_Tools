@@ -1,23 +1,19 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using System.Reflection;
 using Verse;
-using Verse.AI;
-using Verse.AI.Group;
 using System;
 using System.Collections.Generic;
 using System.Reflection.Emit;
-using System.Linq;
-using RimWorld.Planet;
 
 namespace ESCP_RaceTools
 {
     public static class StuffKnowledgePatch
     {
-        /* 
-         * Patch that checks for stuff knowledge
-         * If checks are passed, increase quality level by 1
-         */
+        /// <summary>
+        /// Patch that checks for stuff knowledge
+        /// If checks are passed, increase quality level by 1
+        /// Has to be a transpiler as it requires information on the stuff of the thing
+        /// </summary>
         [HarmonyPatch(typeof(GenRecipe))]
         [HarmonyPatch("PostProcessProduct")]
         public static class GenRecipe_PostProcessProduct_Patch

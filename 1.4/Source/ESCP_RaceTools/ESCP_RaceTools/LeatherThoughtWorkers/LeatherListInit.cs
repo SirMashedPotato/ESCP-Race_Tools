@@ -1,8 +1,5 @@
 ﻿using Verse;
-using System;
-using System.Linq;
 using System.Collections.Generic;
-using RimWorld;
 
 namespace ESCP_RaceTools
 {

@@ -1,23 +1,15 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using System.Reflection;
 using Verse;
-using Verse.AI;
-using Verse.AI.Group;
 using System;
-using System.Collections.Generic;
-using System.Reflection.Emit;
-using System.Linq;
-using RimWorld.Planet;
 
 namespace ESCP_RaceTools
 {
     public static class ExpectationOffset
     {
-        /*
-         * Patch that removes specific thoughts when wearing certain apparel
-         * Mostly intended for weather thoughts
-         */
+        /// <summary>
+        /// Modifies the expectation level for certain races
+        /// </summary>
         [HarmonyPatch(typeof(ExpectationsUtility))]
         [HarmonyPatch("CurrentExpectationFor")]
         [HarmonyPatch(new Type[] { typeof(Pawn) })]

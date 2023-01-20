@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using Verse;
 using RimWorld;
 
@@ -18,8 +16,7 @@ namespace ESCP_RaceTools
 
         public override IEnumerable<string> GetTargetInfos(RitualObligation obligation)
         {
-            yield return "ESCP_DunmerRitualTargetSeanceInfo".Translate(this.parent.ideo.Named("IDEO"));
-            yield break;
+            yield return "ESCP_DunmerRitualTargetSeanceInfo".Translate(parent.ideo.Named("IDEO"));
         }
 
         public override IEnumerable<TargetInfo> GetTargets(RitualObligation obligation, Map map)
@@ -32,13 +29,12 @@ namespace ESCP_RaceTools
                     yield return thing;
                 }
             }
-            yield break;
         }
 
         protected override RitualTargetUseReport CanUseTargetInternal(TargetInfo target, RitualObligation obligation)
         {
             Building_Grave building_Grave;
-            return target.HasThing && (building_Grave = (target.Thing as Building_Grave)) != null && building_Grave.Corpse != null && building_Grave.TryGetComp<Comp_DunmerGraveWhisper>() != null;
+            return target.HasThing && (building_Grave = target.Thing as Building_Grave) != null && building_Grave.Corpse != null && building_Grave.TryGetComp<Comp_DunmerGraveWhisper>() != null;
         }
     }
 }

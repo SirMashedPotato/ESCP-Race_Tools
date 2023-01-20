@@ -97,14 +97,10 @@ namespace ESCP_RaceTools
             return thoughts;
         }
 
+        //TODO remove
         public static string General_ApparelThoughtProtection_Init()
         {
             string races = "";
-
-            DefDatabase<ThingDef>.AllDefsListForReading.Where(x => ApparelProperties.Get(x) != null && ApparelProperties.Get(x).negatedThoughts != null).ToList().ForEach(action: def =>
-            {
-                races += "\n - " + def.label;
-            });
 
             if (races == "")
             {

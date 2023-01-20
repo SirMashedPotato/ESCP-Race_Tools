@@ -1,10 +1,5 @@
-﻿using RimWorld;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using UnityEngine;
+﻿using System.Collections.Generic;
 using Verse;
-using Verse.AI;
 using Verse.AI.Group;
 
 namespace ESCP_RaceTools
@@ -16,17 +11,17 @@ namespace ESCP_RaceTools
         public override void CompExposeData()
         {
             base.CompExposeData();
-            Scribe_Values.Look<bool>(ref this.ESCP_BeastMaster_beastsSpawned, "ESCP_BeastMaster_beastsSpawned", true, false);
+            Scribe_Values.Look(ref ESCP_BeastMaster_beastsSpawned, "ESCP_BeastMaster_beastsSpawned", true, false);
         }
 
+        //in post tick because it doesn't work in spawn post make
         public override void CompPostTick(ref float severityAdjustment)
         {
             if (!ESCP_BeastMaster_beastsSpawned)
             {
-                Pawn p = base.Pawn;
+                Pawn p = Pawn;
                 ESCP_BeastMaster_beastsSpawned = true;
 
-                /* checks */
                 if (ModSettingsUtility.ESCP_RaceTools_EnableBeastMaster())
                 {
                     if (!p.Spawned) return;
@@ -37,13 +32,16 @@ namespace ESCP_RaceTools
                     if (p.Downed) return;
                     if (BeastMaster.Get(p.kindDef) == null) return;
 
-                    if (ModSettingsUtility.ESCP_BeastMasterLogging()) Log.Message("Found beast master: " + p);
+                    if (ModSettingsUtility.ESCP_BeastMasterLogging()) 
+                    { 
+                        Log.Message("Found beast master: " + p);
+                    }
                     List<Pawn> pawns = BeastMasterUtility.ReadyAdditionalSpawns(p);
                     BeastMasterUtility.GiveLord(pawns, p);
                     BeastMasterUtility.GiveDuty(pawns, p);
                     BeastMasterUtility.GiveMaster(pawns, p);
                 }
-                base.Pawn.health.RemoveHediff(this.parent);
+                Pawn.health.RemoveHediff(parent);
             }
         }
     }

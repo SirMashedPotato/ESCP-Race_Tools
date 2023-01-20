@@ -44,7 +44,7 @@ namespace ESCP_RaceTools
 
 		protected override ThoughtState CurrentStateInternal(Pawn p)
 		{
-			return ThoughtWorker_BeastfolkLeatherApparel.CurrentThoughtState(p);
+			return CurrentThoughtState(p);
 		}
 	}
 }

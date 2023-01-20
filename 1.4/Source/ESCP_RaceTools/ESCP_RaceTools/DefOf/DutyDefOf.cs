@@ -1,6 +1,4 @@
-﻿using System;
-using Verse;
-using RimWorld;
+﻿using RimWorld;
 using Verse.AI;
 
 namespace ESCP_RaceTools

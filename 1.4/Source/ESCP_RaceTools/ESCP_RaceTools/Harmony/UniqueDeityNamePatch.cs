@@ -1,12 +1,6 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using System.Reflection;
 using Verse;
-using Verse.AI;
-using Verse.AI.Group;
-using System;
-using System.Collections.Generic;
-using System.Reflection.Emit;
 using System.Linq;
 
 namespace ESCP_RaceTools
@@ -138,10 +132,5 @@ namespace ESCP_RaceTools
                 return true;
             }
         }
-
-        /* Forces deity names for specific Ideo orgins to be picked sequentially, instead of randomly 
-         * This patch only affects Ideo orgins with randomised deity names
-         */
-
     }
 }

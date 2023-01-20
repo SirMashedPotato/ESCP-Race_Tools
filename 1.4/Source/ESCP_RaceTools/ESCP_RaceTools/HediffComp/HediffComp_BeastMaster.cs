@@ -1,11 +1,4 @@
-﻿using RimWorld;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using UnityEngine;
-using Verse;
-using Verse.AI;
-using Verse.AI.Group;
+﻿using Verse;
 
 namespace ESCP_RaceTools
 {
@@ -15,7 +8,7 @@ namespace ESCP_RaceTools
 		{
 			get
 			{
-				return this.master;
+				return master;
 			}
 		}
 
@@ -23,14 +16,14 @@ namespace ESCP_RaceTools
 		{
 			if (p != null)
             {
-				this.master = p;
+				master = p;
 			}
 		}
 
         public override void CompExposeData()
         {
             base.CompExposeData();
-			Scribe_References.Look(ref this.master, "master", false);
+			Scribe_References.Look(ref master, "master", false);
 		}
 
         public override string CompLabelInBracketsExtra => master != null? master.Name.ToString() : null;

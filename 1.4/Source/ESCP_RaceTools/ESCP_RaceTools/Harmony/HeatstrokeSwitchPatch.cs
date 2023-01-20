@@ -1,8 +1,6 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using System.Reflection;
 using Verse;
-using System.Linq;
 using UnityEngine;
 using Verse.AI.Group;
 
@@ -10,22 +8,26 @@ namespace ESCP_RaceTools
 {
 	public static class HeatstrokeSwitchPatch
 	{
-		/*
-         * Patch that prevents certain races from gaining hypothermia, and instead gives them hypothermic slowdown
-         */
+		/// <summary>
+		/// Patch that can prevent specific races from recieving heatstroke
+		/// Can also give a different hediff instead
+		/// </summary>
 		[HarmonyPatch(typeof(HediffGiver_Heat))]
 		[HarmonyPatch("OnIntervalPassed")]
 		public static class HediffGiver_Heat_OnIntervalPassed_Patch
 		{
 			[HarmonyPrefix]
-			public static bool HeatstrokePatch(Pawn pawn, Hediff cause)
+			public static bool HeatstrokePatch(Pawn pawn)
 			{
 				if (ModSettingsUtility.ESCP_RaceTools_EnableHeatstrokeSwitch())
 				{
 					var props = RaceProperties.Get(pawn.def);
 					if (props != null) 
 					{
-						if (props.completeHeatstrokeResistance) return false;
+						if (props.completeHeatstrokeResistance) 
+						{
+							return false;
+						}
 						if (props.heatburnResistant && props.heatstrokeDef != null)
                         {
 							OnIntervalPassed(pawn, props.heatstrokeDef, props.heatburnResistant);
@@ -37,6 +39,10 @@ namespace ESCP_RaceTools
 			}
 		}
 
+		/// <summary>
+		/// Effectively the same base functionality as HediffGiver_Heat.OnIntervalPassed
+		/// but uses a different hediff instead
+		/// </summary>
 		public static void OnIntervalPassed(Pawn pawn, HediffDef hediffDef, bool resistDamage)
 		{
 			float ambientTemperature = pawn.AmbientTemperature;
@@ -69,7 +75,7 @@ namespace ESCP_RaceTools
 					float num5 = ambientTemperature - num4;
 					num5 = HediffGiver_Heat.TemperatureOverageAdjustmentCurve.Evaluate(num5);
 					int num6 = Mathf.Max(GenMath.RoundRandom(num5 * 0.06f), 3);
-					DamageInfo dinfo = new DamageInfo(DamageDefOf.Burn, (float)num6, 0f, -1f, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown, null, true, true);
+					DamageInfo dinfo = new DamageInfo(DamageDefOf.Burn, num6, 0f, -1f, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown, null, true, true);
 					dinfo.SetBodyRegion(BodyPartHeight.Undefined, BodyPartDepth.Outside);
 					pawn.TakeDamage(dinfo);
 					if (pawn.Faction == Faction.OfPlayer)

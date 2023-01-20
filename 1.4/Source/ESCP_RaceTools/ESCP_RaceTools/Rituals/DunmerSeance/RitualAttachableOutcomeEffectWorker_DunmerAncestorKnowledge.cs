@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Verse;
 using RimWorld;
 
@@ -34,7 +33,7 @@ namespace ESCP_RaceTools
                 p.health.AddHediff(hediff, null, null, null);
             }
 
-            extraOutcomeDesc = this.def.letterInfoText + ESCP_AbilityUtility.GetAncestorGiftDuration_Display(duration) + ".";
+            extraOutcomeDesc = def.letterInfoText + ESCP_AbilityUtility.GetAncestorGiftDuration_Display(duration) + ".";
         }
 
 
