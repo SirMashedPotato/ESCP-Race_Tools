@@ -1,11 +1,10 @@
-﻿using System;
-using Verse;
+﻿using Verse;
 using RimWorld;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace ESCP_RaceTools
 {
+    //TODO, move this to a Harmony patch
     public class DeathActionWorker_HistoryEventOnDeath : DeathActionWorker
     {
         public override void PawnDied(Corpse corpse)

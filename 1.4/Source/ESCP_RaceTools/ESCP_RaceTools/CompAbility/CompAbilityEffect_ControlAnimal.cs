@@ -9,7 +9,7 @@ namespace ESCP_RaceTools
 		{
 			get
 			{
-				return (CompProperties_ControlAnimal)this.props;
+				return (CompProperties_ControlAnimal)props;
 			}
 		}
 
@@ -18,17 +18,17 @@ namespace ESCP_RaceTools
 			if(target != null && CanApplyOn(target, dest))
 			{
 				Pawn pawn = target.Pawn;
-				Hediff hediff = HediffMaker.MakeHediff(this.Props.hediffDef, pawn, this.Props.onlyBrain ? pawn.health.hediffSet.GetBrain() : null);
+				Hediff hediff = HediffMaker.MakeHediff(Props.hediffDef, pawn, Props.onlyBrain ? pawn.health.hediffSet.GetBrain() : null);
 				HediffComp_Disappears hediffComp_Disappears = hediff.TryGetComp<HediffComp_Disappears>();
 				if (hediffComp_Disappears != null)
 				{
-					hediffComp_Disappears.ticksToDisappear = base.GetDurationSeconds(pawn).SecondsToTicks();
+					hediffComp_Disappears.ticksToDisappear = GetDurationSeconds(pawn).SecondsToTicks();
 				}
 				HediffComp_Link hediffComp_Link = hediff.TryGetComp<HediffComp_Link>();
 				if (hediffComp_Link != null)
 				{
-					hediffComp_Link.other = this.parent.pawn;
-					hediffComp_Link.drawConnection = (target == this.parent.pawn);
+					hediffComp_Link.other = parent.pawn;
+					hediffComp_Link.drawConnection = (target == parent.pawn);
 				}
 				pawn.SetFaction(Faction.OfPlayer, null);
 				foreach (TrainableDef td in DefDatabase<TrainableDef>.AllDefs)

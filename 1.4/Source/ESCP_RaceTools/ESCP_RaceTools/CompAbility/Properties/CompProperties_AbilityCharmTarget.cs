@@ -1,6 +1,4 @@
-﻿using System;
-using Verse;
-using RimWorld;
+﻿using RimWorld;
 
 namespace ESCP_RaceTools
 {
@@ -8,7 +6,7 @@ namespace ESCP_RaceTools
     {
         public CompProperties_CharmTarget()
         {
-            this.compClass = typeof(CompEffect_AbilityCharmTarget);
+            compClass = typeof(CompEffect_AbilityCharmTarget);
         }
     }
 }

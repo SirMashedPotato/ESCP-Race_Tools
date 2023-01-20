@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using Verse;
-using RimWorld;
 
 namespace ESCP_RaceTools
 {
@@ -23,6 +20,21 @@ namespace ESCP_RaceTools
             public string type = null;
             public Gender gender = Gender.None;
             public string iconPath = "UI/Deities/DeityGeneric";
+        }
+
+        public override IEnumerable<string> ConfigErrors()
+        {
+            if (!divinesList.NullOrEmpty())
+            {
+                if (overrideDivines && (divinesList.Count != 8 || divinesList.Count != 9))
+                {
+                    yield return "overrideDivines is true, divinesList needs to contain either 8 or 9 items";
+                }
+                if (overrideNineDivines && divinesList.Count != 9)
+                {
+                    yield return "overrideNineDivines is true, divinesList needs to contain 9 items";
+                }
+            }
         }
     }
 }

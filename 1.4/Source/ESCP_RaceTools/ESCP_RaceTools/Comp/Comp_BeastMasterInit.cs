@@ -1,10 +1,6 @@
-﻿using RimWorld;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using UnityEngine;
 using Verse;
-using Verse.AI;
 using Verse.AI.Group;
 
 namespace ESCP_RaceTools
@@ -17,14 +13,14 @@ namespace ESCP_RaceTools
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_Values.Look<bool>(ref this.ESCP_BeastMaster_beastsSpawned, "ESCP_BeastMaster_beastsSpawned", true, false);
+            Scribe_Values.Look(ref ESCP_BeastMaster_beastsSpawned, "ESCP_BeastMaster_beastsSpawned", true, false);
         }
 
         public CompProperties_BeastMasterInit Props
         {
             get
             {
-                return (CompProperties_BeastMasterInit)this.props;
+                return (CompProperties_BeastMasterInit)props;
             }
         }
 
@@ -37,7 +33,6 @@ namespace ESCP_RaceTools
                 Pawn p = parent as Pawn;
                 ESCP_BeastMaster_beastsSpawned = true;
 
-                /* checks */
                 if (ModSettingsUtility.ESCP_RaceTools_EnableBeastMaster())
                 {
                     if (!p.Spawned)  return;

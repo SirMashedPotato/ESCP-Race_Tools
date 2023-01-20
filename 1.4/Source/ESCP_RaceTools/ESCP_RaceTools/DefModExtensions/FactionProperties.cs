@@ -1,23 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using Verse;
-using RimWorld;
 
 namespace ESCP_RaceTools
 {
     public class FactionProperties : DefModExtension
     {
-        public bool canMoragTong = false;  //Whether the faction can initiate Morag Tong contracts when hostile
-
-        [Obsolete("Best to use FactionProperties.factionTags instead, kept for old code")]
-        public bool isAltmerFaction = false;    //Used for the goodwill worker
-        [Obsolete("Best to use FactionProperties.factionTags instead, kept for old code")]
-        public bool isMaormerFaction = false;    //Used for the goodwill worker
-        [Obsolete("Best to use FactionProperties.factionTags instead, kept for old code")]
-        public bool isSloadFaction = false;     //Used for the goodwill worker
-
+        //used for good will worker/s
         public List<string> factionTags;
+        //used for specific incident raids, eg Morag Tong, Goblin mercanaries, Dark Brotherhood
+        public List<string> hireableFactionTags;
 
         public static FactionProperties Get(Def def)
         {

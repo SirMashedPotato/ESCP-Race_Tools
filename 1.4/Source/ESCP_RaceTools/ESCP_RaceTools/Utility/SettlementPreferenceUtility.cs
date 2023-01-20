@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections.Generic;
 using Verse;
 using RimWorld;
 using System.Linq;
@@ -22,7 +20,6 @@ namespace ESCP_RaceTools
             int limit = (int)ModSettingsUtility.ESCP_RaceTools_SettlementPreferenceIterations();
             for (int i = 0; i < limit; i++)
             {
-                int num;
                 if ((from _ in Enumerable.Range(0, 100) select Rand.Range(0, Find.WorldGrid.TilesCount)).TryRandomElementByWeight(delegate (int x)
                 {
                     defaultToVanilla = false;
@@ -34,7 +31,7 @@ namespace ESCP_RaceTools
                     }
 
                     /* modExt checks */
-                    if (!modExt.biomeKeyWords.NullOrEmpty() && !modExt.biomeKeyWords.Any(y=> tile.biome.defName.Contains(y)))
+                    if (!modExt.biomeKeyWords.NullOrEmpty() && !modExt.biomeKeyWords.Any(y => tile.biome.defName.Contains(y)))
                     {
                         if (flag)
                         {
@@ -43,45 +40,57 @@ namespace ESCP_RaceTools
                         defaultToVanilla = true;
                     }
 
-                    if (modExt.useTemperatureRange && !CheckTemperatureRange(modExt.temperatureRangeMin, modExt.temperatureRangeMax, x))
+                    if (modExt.useTemperatureRange)
                     {
-                        if (flag) 
-                        { 
-                            logMessage += "failed CheckTemperatureRange, "; 
+                        if (GenTemperature.MinTemperatureAtTile(x) < modExt.temperatureRangeMin || GenTemperature.MaxTemperatureAtTile(x) > modExt.temperatureRangeMax)
+                        {
+                            if (flag)
+                            {
+                                logMessage += "failed CheckTemperatureRange, ";
+                            }
+                            defaultToVanilla = true;
                         }
-                        defaultToVanilla = true;
                     }
 
-                    if (modExt.useElevationRange && !CheckElevationRange(modExt.elevationRangeMin, modExt.elevationRangeMax, tile))
+                    if (modExt.useElevationRange)
                     {
-                        if (flag) 
+                        if (tile.elevation < modExt.elevationRangeMin || tile.elevation > modExt.elevationRangeMax)
                         {
-                            logMessage += "failed CheckAltitudeRange, ";
+                            if (flag)
+                            {
+                                logMessage += "failed CheckAltitudeRange, ";
+                            }
+                            defaultToVanilla = true;
                         }
-                        defaultToVanilla = true;
                     }
 
-                    if (modExt.useSwampinessRange && !CheckSwampinessRange(modExt.swampinessRangeMin, modExt.swampinessRangeMax, tile))
+                    if (modExt.useSwampinessRange)
                     {
-                        if (flag) 
+                        if (tile.swampiness < modExt.swampinessRangeMin || tile.swampiness > modExt.swampinessRangeMax)
                         {
-                            logMessage += "failed CheckSwampinessRange, ";
+                            if (flag)
+                            {
+                                logMessage += "failed CheckSwampinessRange, ";
+                            }
+                            defaultToVanilla = true;
                         }
-                        defaultToVanilla = true;
                     }
 
-                    if (modExt.useSwampinessRange && !CheckRainfallRange(modExt.rainfallRangeMin, modExt.rainfallRangeMax, tile))
+                    if (modExt.useSwampinessRange)
                     {
-                        if (flag) 
+                        if (tile.rainfall < modExt.rainfallRangeMin || tile.rainfall > modExt.rainfallRangeMax)
                         {
-                            logMessage += "failed CheckRainfallRange, ";
+                            if (flag)
+                            {
+                                logMessage += "failed CheckRainfallRange, ";
+                            }
+                            defaultToVanilla = true;
                         }
-                        defaultToVanilla = true;
                     }
 
                     if (modExt.likedBiomeList != null && !modExt.likedBiomeList.Contains(tile.biome.defName))
                     {
-                        if (flag) 
+                        if (flag)
                         {
                             logMessage += "failed likedBiomeList, ";
                         }
@@ -90,7 +99,7 @@ namespace ESCP_RaceTools
 
                     if (modExt.dislikedBiomeList != null && modExt.dislikedBiomeList.Contains(tile.biome.defName))
                     {
-                        if (flag) 
+                        if (flag)
                         {
                             logMessage += "failed dislikedBiomeList, ";
                         }
@@ -99,7 +108,7 @@ namespace ESCP_RaceTools
 
                     if (modExt.requiredHillLevels != null && !modExt.requiredHillLevels.Contains(tile.hilliness))
                     {
-                        if (flag) 
+                        if (flag)
                         {
                             logMessage += "failed requiredHillLevels, ";
                         }
@@ -108,7 +117,7 @@ namespace ESCP_RaceTools
 
                     if (modExt.disallowedHillLevels != null && modExt.disallowedHillLevels.Contains(tile.hilliness))
                     {
-                        if (flag) 
+                        if (flag)
                         {
                             logMessage += "failed disallowedHillLevels, ";
                         }
@@ -119,7 +128,7 @@ namespace ESCP_RaceTools
 
                     if (modExt.requiredHillLevels == null && modExt.disallowedHillLevels == null && tile.hilliness == Hilliness.Impassable)
                     {
-                        if (flag) 
+                        if (flag)
                         {
                             logMessage += "failed impassible hills check, ";
                         }
@@ -128,7 +137,7 @@ namespace ESCP_RaceTools
 
                     if (modExt.requiresWater && (!CheckTileBiomeNeighbours(x, BiomeDefOf.Ocean) && !CheckTileBiomeNeighbours(x, BiomeDefOf.Lake) && tile.Rivers == null))
                     {
-                        if (flag) 
+                        if (flag)
                         {
                             logMessage += "failed requiresWater, ";
                         }
@@ -137,7 +146,7 @@ namespace ESCP_RaceTools
 
                     if (modExt.onlyCoastal && !CheckTileBiomeNeighbours(x, BiomeDefOf.Ocean))
                     {
-                        if (flag) 
+                        if (flag)
                         {
                             logMessage += "failed onlyCoastal, ";
                         }
@@ -146,7 +155,7 @@ namespace ESCP_RaceTools
 
                     if (modExt.onlyLakeside && !CheckTileBiomeNeighbours(x, BiomeDefOf.Lake))
                     {
-                        if (flag) 
+                        if (flag)
                         {
                             logMessage += "failed onlyLakeside, ";
                         }
@@ -155,7 +164,7 @@ namespace ESCP_RaceTools
 
                     if (modExt.onlyRiver && tile.Rivers == null)
                     {
-                        if (flag) 
+                        if (flag)
                         {
                             logMessage += "failed onlyRiver, ";
                         }
@@ -164,11 +173,23 @@ namespace ESCP_RaceTools
 
                     if (modExt.onlyRoad && tile.Roads == null)
                     {
-                        if (flag) 
+                        if (flag)
                         {
                             logMessage += "failed onlyRoad, ";
                         }
                         defaultToVanilla = true;
+                    }
+
+                    if (ModsConfig.BiotechActive && modExt.usePollutionRange)
+                    {
+                        if (tile.pollution < modExt.pollutionRangeMin || tile.pollution > modExt.pollutionRangeMax)
+                        {
+                            if (flag)
+                            {
+                                logMessage += "failed checkPollutionRange, ";
+                            }
+                            defaultToVanilla = true;
+                        }
                     }
 
                     /* logging */
@@ -200,7 +221,7 @@ namespace ESCP_RaceTools
                     }
                     return 0;
 
-                }, out num))
+                }, out int num))
                     if (!defaultToVanilla && FinalCheckTileIsValid(num, null))
                     {
                         if (flag)
@@ -277,29 +298,6 @@ namespace ESCP_RaceTools
                 return false;
             }
             return true;
-        }
-
-        /* mod extension checks */
-
-        public static bool CheckTemperatureRange(float min, float max, int tile)
-        {   //checks if range is within modExt range
-            return min <= GenTemperature.MinTemperatureAtTile(tile) && max >= GenTemperature.MaxTemperatureAtTile(tile);
-        }
-
-        public static bool CheckElevationRange(float min, float max, Tile tile)
-        {
-            //checks if elevation is within modExt range
-            return min <= tile.elevation && max >= tile.elevation;
-        }
-
-        public static bool CheckSwampinessRange(float min, float max, Tile tile)
-        {
-            return min <= tile.swampiness && max >= tile.swampiness;
-        }
-
-        public static bool CheckRainfallRange(float min, float max, Tile tile)
-        {
-            return min <= tile.rainfall && max >= tile.rainfall;
         }
 
         public static bool CheckTileBiomeNeighbours(int tile, BiomeDef b)

@@ -14,22 +14,11 @@ namespace ESCP_RaceTools
 				return (CompProperties_BeserkerRage)this.props;
 			}
 		}
-		/*
-		public override void CompTick()
-		{
-			base.CompTick();
-			Pawn pawn = this.parent as Pawn;
-			if (pawn.health.hediffSet.PainTotal >= 0.6 && PawnIsValid(pawn))
-			{
-				if (pawn.Faction == null && !pawn.AnimalOrWildMan()) return;
-				ActivateRage(pawn);
-			}
-		}
-		*/
+
         public override void PostPostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
         {
             base.PostPostApplyDamage(dinfo, totalDamageDealt);
-			Pawn pawn = this.parent as Pawn;
+			Pawn pawn = parent as Pawn;
 			if ( pawn.health.hediffSet.PainTotal >= 0.6 && PawnIsValid(pawn))
 			{
 				if (pawn.Faction == null && !pawn.AnimalOrWildMan()) return;
@@ -44,10 +33,10 @@ namespace ESCP_RaceTools
 				yield return gizmo;
 			}
 
-			Pawn pawn = this.parent as Pawn;
+			Pawn pawn = parent as Pawn;
 			if (PawnIsValid(pawn) && pawn.Faction != null && pawn.Faction.IsPlayer && !pawn.NonHumanlikeOrWildMan())
             {
-                if (pawn.skills.GetSkill(Props.manualSkill != null ? Props.manualSkill : SkillDefOf.Melee).Level >= Props.manualSkillLevel)
+                if (pawn.skills.GetSkill(Props.manualSkill ?? SkillDefOf.Melee).Level >= Props.manualSkillLevel)
                 {
 					yield return new Command_Action
 					{
@@ -80,10 +69,8 @@ namespace ESCP_RaceTools
 
         public void ActivateRage(Pawn pawn)
         {
-			//do beserker
 			if (Props.enableAugments)
 			{
-				//enables belts for 1.2
 				if (!pawn.health.hediffSet.HasHediff(Props.hediffDef))
 				{
 					if (!pawn.health.hediffSet.hediffs.Any(x => Props.augments.Contains(x.def)))

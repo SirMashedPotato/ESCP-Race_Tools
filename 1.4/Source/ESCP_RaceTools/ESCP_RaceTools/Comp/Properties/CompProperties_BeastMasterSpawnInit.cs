@@ -9,7 +9,7 @@ namespace ESCP_RaceTools
     {
         public CompProperties_BeastMasterInit()
         {
-            this.compClass = typeof(Comp_BeastMasterInit);
+            compClass = typeof(Comp_BeastMasterInit);
         }
     }
 }

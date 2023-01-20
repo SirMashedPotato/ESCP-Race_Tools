@@ -11,7 +11,7 @@ namespace ESCP_RaceTools
 		{
 			get
 			{
-				return (CompProperties_TurnToThing)this.props;
+				return (CompProperties_TurnToThing)props;
 			}
 		}
 
@@ -25,7 +25,7 @@ namespace ESCP_RaceTools
             if (Props.thingDef != null)
             {
 
-				Building building = this.parent as Building;
+				Building building = parent as Building;
 				if (building.Faction != null && building.Faction.IsPlayer)
 				{
 					yield return new Command_Action

@@ -1,5 +1,4 @@
-﻿using System;
-using Verse;
+﻿using Verse;
 using RimWorld;
 
 namespace ESCP_RaceTools
@@ -10,7 +9,7 @@ namespace ESCP_RaceTools
 		{
 			get
 			{
-				return (CompProperties_CharmTarget)this.props;
+				return (CompProperties_CharmTarget)props;
 			}
 		}
 

@@ -1,5 +1,4 @@
-﻿using System;
-using Verse;
+﻿using Verse;
 using RimWorld;
 
 namespace ESCP_RaceTools
@@ -8,7 +7,7 @@ namespace ESCP_RaceTools
     {
         public CompProperties_ReleaseGas()
         {
-            this.compClass = typeof(CompAbilityEffect_ReleaseGas);
+            compClass = typeof(CompAbilityEffect_ReleaseGas);
         }
 
         public ThingDef gasDef;

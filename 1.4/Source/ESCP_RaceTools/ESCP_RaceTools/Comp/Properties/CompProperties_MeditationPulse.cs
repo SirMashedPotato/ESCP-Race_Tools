@@ -8,7 +8,7 @@ namespace ESCP_RaceTools
 
         public CompProperties_MeditationPulse()
         {
-            this.compClass = typeof(Comp_MeditationPulse);
+            compClass = typeof(Comp_MeditationPulse);
         }
 
         public MeditationFocusDef focusDef;

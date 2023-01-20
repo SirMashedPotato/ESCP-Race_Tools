@@ -1,7 +1,4 @@
-﻿using RimWorld;
-using Verse;
-using System;
-using System.Collections.Generic;
+﻿using Verse;
 
 namespace ESCP_RaceTools
 {
@@ -9,7 +6,7 @@ namespace ESCP_RaceTools
 	{
 		public CompProperties_TurnToThing()
 		{
-			this.compClass = typeof(Comp_TurnToThing);
+			compClass = typeof(Comp_TurnToThing);
 		}
 		public ThingDef thingDef;
 		public string texPath;

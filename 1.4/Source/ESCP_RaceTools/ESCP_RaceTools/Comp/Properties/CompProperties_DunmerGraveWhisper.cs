@@ -1,6 +1,4 @@
-﻿using RimWorld;
-using Verse;
-using Verse.Sound;
+﻿using Verse;
 
 namespace ESCP_RaceTools
 {
@@ -9,7 +7,7 @@ namespace ESCP_RaceTools
 
         public CompProperties_DunmerGraveWhisper()
         {
-            this.compClass = typeof(Comp_DunmerGraveWhisper);
+            compClass = typeof(Comp_DunmerGraveWhisper);
         }
 
         public SoundDef soundDef;

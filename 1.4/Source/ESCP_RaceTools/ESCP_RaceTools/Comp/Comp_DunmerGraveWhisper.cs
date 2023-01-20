@@ -20,7 +20,7 @@ namespace ESCP_RaceTools
 		public override void PostExposeData()
 		{
 			base.PostExposeData();
-			Scribe_Values.Look<int>(ref this.ticks, "ESCP_DunmerGraveWhisper_Ticks", 1, false);
+			Scribe_Values.Look(ref ticks, "ESCP_DunmerGraveWhisper_Ticks", 1, false);
 		}
 
 		public override void CompTickRare()

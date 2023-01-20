@@ -10,7 +10,7 @@ namespace ESCP_RaceTools
 		{
 			get
 			{
-				return (CompProperties_MeditationPulse)this.props;
+				return (CompProperties_MeditationPulse)props;
 			}
 		}
 
@@ -19,7 +19,7 @@ namespace ESCP_RaceTools
 		public override void PostExposeData()
 		{
 			base.PostExposeData();
-			Scribe_Values.Look<int>(ref this.ticks, "ESCP_Comp_MeditationPulse_Ticks", 1, false);
+            Scribe_Values.Look(ref ticks, "ESCP_Comp_MeditationPulse_Ticks", 1, false);
 		}
 
 		public override void CompTick()
@@ -27,12 +27,11 @@ namespace ESCP_RaceTools
             base.CompTick();
 			if(ticks++ >= Props.ticksBetween && parent.Spawned && parent.Map != null)
             {
-				Pawn p = this.parent as Pawn;
+				Pawn p = parent as Pawn;
                 if (!p.Dead && p.Faction != null && p.Faction == Faction.OfPlayer)
                 {
 					DoPulse(p);
 				}
-				ticks = 0;
 			}
         }
 

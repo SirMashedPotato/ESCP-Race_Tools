@@ -1,5 +1,4 @@
 ﻿using Verse;
-using RimWorld;
 using System.Collections.Generic;
 using RimWorld.Planet;
 
@@ -44,6 +43,10 @@ namespace ESCP_RaceTools
         public bool onlyLakeside = false;
         public bool onlyRiver = false;
         public bool onlyRoad = false;
+        //Only on polluted tiles, obviously requires biotech
+        public bool usePollutionRange = false;
+        public float pollutionRangeMin;
+        public float pollutionRangeMax;
 
         public bool IgnoreBiomeSelectionWeight = true;
 
