@@ -99,6 +99,7 @@
     <Compile Include="DefOf\ThoughtDefOf.cs" />
     <Compile Include="Harmony\HeatstrokeSwitchPatch.cs" />
     <Compile Include="Harmony\HypothermiaSwitchPatch.cs" />
+    <Compile Include="Harmony\PawnGeneratorPatch.cs" />
     <Compile Include="Harmony\QuadrumNamesPatch.cs" />
     <Compile Include="Harmony\SettlementPreferencePatch.cs" />
     <Compile Include="Harmony\StuffKnowledgePatch.cs" />
@@ -134,7 +135,6 @@
     <Compile Include="Rituals\DunmerSeance\RitualOutcomeEffectWorker_DunmerSeance.cs" />
     <Compile Include="StockGenerator\StockGenerator_BuyCorpses.cs" />
     <Compile Include="ThingClass\PlantBuildingPod.cs" />
-    <Compile Include="ThinkNode\ThinkNode_ConditionalThingDef.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_UniversalBackstoryOpinion.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_UniversalBackstoryOpinion_Shared.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_UniversalBackstoryOpinion_SharedUnqiue.cs" />
@@ -151,11 +151,7 @@
     <Compile Include="Utility\SettlementPreferenceUtility.cs" />
     <Compile Include="Utility\StuffKnowledgeUtility.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Def\" />
-    <Folder Include="ScenarioParts\" />
-    <Folder Include="ThoughtClass\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

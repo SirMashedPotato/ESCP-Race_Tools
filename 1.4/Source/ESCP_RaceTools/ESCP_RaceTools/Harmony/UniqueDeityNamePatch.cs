@@ -64,9 +64,11 @@ namespace ESCP_RaceTools
                     {
                         /* copied from original function, related meme stuff removed */
                         Gender supremeGender = __instance.ideo.SupremeGender;
+                        bool supremeGenderFlag = false;
                         if (supremeGender != Gender.None)
                         {
                             deity.gender = supremeGender;
+                            supremeGenderFlag = true;
                         }
                         else
                         {
@@ -103,7 +105,7 @@ namespace ESCP_RaceTools
                                     deity.type = originMeme.fixedDeityNameTypes[i].type;
                                     
 
-                                    if (props.overrideDeityGenders && props.deityGenders.Count >= i+1)
+                                    if (props.overrideDeityGenders && !supremeGenderFlag && props.deityGenders.Count >= i+1)
                                     {
                                         deity.gender = props.deityGenders[i];
                                     }
