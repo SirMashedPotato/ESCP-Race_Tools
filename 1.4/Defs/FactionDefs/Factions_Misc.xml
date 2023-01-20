@@ -1,79 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <FactionDef ParentName="FactionBase" Name="ESCP_FactionBase" Abstract="True">
-    <categoryTag>Tribal</categoryTag>
-    <listOrderPriority>20</listOrderPriority>
-    <settlementGenerationWeight>1.0</settlementGenerationWeight>
-    <requiredCountAtGameStart>0</requiredCountAtGameStart>
-	<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
-    <canMakeRandomly>true</canMakeRandomly>
-    <canStageAttacks>true</canStageAttacks>
-    <factionIconPath>World/WorldObjects/Expanding/Village</factionIconPath>
-    <geneticVariance>1.0</geneticVariance>
-    <techLevel>Neolithic</techLevel>
-    <disallowedMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
-    </disallowedMemes>
-    <disallowedPrecepts>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
-    </disallowedPrecepts>
-    <structureMemeWeights>
-      <Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Animist>
-      <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistEmbodied>
-      <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
-      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_Archist>
-      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginChristian>
-      <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginIslamic>
-      <Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginHindu>
-      <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginBuddhist>
-    </structureMemeWeights>
-	<backstoryFilters>
-      <li>
-        <categories>
-          <li>Tribal</li>
-        </categories>
-      </li>
-    </backstoryFilters>
-    <caravanTraderKinds>
-      <li>Caravan_Neolithic_BulkGoods</li>
-      <li>Caravan_Neolithic_WarMerchant</li>
-      <li>Caravan_Neolithic_Slaver</li>
-      <li>Caravan_Neolithic_ShamanMerchant</li>
-	  <!-- VE Medieval -->
-	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_Farmer</li>
-	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_Armourer</li>
-	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_Weaponsmith</li>
-    </caravanTraderKinds>
-    <visitorTraderKinds>
-      <li>Visitor_Neolithic_Standard</li>
-	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Visitor_Medieval_Standard</li>
-    </visitorTraderKinds>
-    <baseTraderKinds>
-      <li>Base_Neolithic_Standard</li>
-	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Base_Medieval_Standard</li>
-    </baseTraderKinds>
-    <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
-    <raidCommonalityFromPointsCurve>
-      <points>
-        <li>(0, 1)</li> <!--Constant 1 at all points levels-->
-      </points>
-    </raidCommonalityFromPointsCurve>
-    <raidLootMaker>TribeRaidLootMaker</raidLootMaker>
-	<pawnGroupMakers Inherit="false">
+	<FactionDef ParentName="FactionBase" Name="ESCP_FactionBase" Abstract="True">
+		<categoryTag>Tribal</categoryTag>
+		<listOrderPriority>20</listOrderPriority>
+		<settlementGenerationWeight>1.0</settlementGenerationWeight>
+		<requiredCountAtGameStart>0</requiredCountAtGameStart>
+		<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canStageAttacks>true</canStageAttacks>
+		<factionIconPath>World/WorldObjects/Expanding/Village</factionIconPath>
+		<geneticVariance>1.0</geneticVariance>
+		<techLevel>Neolithic</techLevel>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+		</disallowedPrecepts>
+		<structureMemeWeights>
+			<Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Animist>
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistEmbodied>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_Archist>
+			<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginChristian>
+			<Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginIslamic>
+			<Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginHindu>
+			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginBuddhist>
+		</structureMemeWeights>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<caravanTraderKinds>
+			<li>Caravan_Neolithic_BulkGoods</li>
+			<li>Caravan_Neolithic_WarMerchant</li>
+			<li>Caravan_Neolithic_Slaver</li>
+			<li>Caravan_Neolithic_ShamanMerchant</li>
+			<!-- VE Medieval -->
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_Farmer</li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_Armourer</li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_Weaponsmith</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Neolithic_Standard</li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Visitor_Medieval_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Neolithic_Standard</li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Base_Medieval_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 1)</li>
+				<!--Constant 1 at all points levels-->
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<raidLootMaker>TribeRaidLootMaker</raidLootMaker>
+		<pawnGroupMakers Inherit="false">
 	</pawnGroupMakers>
-    <maxPawnCostPerTotalPointsCurve>
-      <points>
-        <li>(0,35)</li>
-        <li>(70, 50)</li>
-        <li>(800, 100)</li>
-        <li>(1300, 150)</li>
-        <li>(100000, 10000)</li>
-      </points>
-    </maxPawnCostPerTotalPointsCurve>
-    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
-  </FactionDef>
-
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(800, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+	</FactionDef>
 </Defs>

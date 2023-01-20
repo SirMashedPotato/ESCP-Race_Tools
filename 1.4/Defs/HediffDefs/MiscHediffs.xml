@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+	<!-- ========== [ESCP_ViolentMeditationHediff] ========== -->
 	<HediffDef>
 		<defName>ESCP_ViolentMeditationHediff</defName>
 		<hediffClass>HediffWithComps</hediffClass>
@@ -12,20 +12,18 @@
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
 		<comps>
-		  <li Class="ESCP_RaceTools.HediffCompProperties_ViolentMeditation">
-			<div>1000</div>
-		  </li>
+			<li Class="ESCP_RaceTools.HediffCompProperties_ViolentMeditation">
+				<div>1000</div>
+			</li>
 		</comps>
 		<stages>
-		  <li>
-			<minSeverity>0.0</minSeverity>
-			<painFactor>0.9</painFactor>
-		  </li>
+			<li>
+				<minSeverity>0.0</minSeverity>
+				<painFactor>0.9</painFactor>
+			</li>
 		</stages>
 	</HediffDef>
-
-	<!-- beast master shite -->
-
+	<!-- ========== [ESCP_BeastMasterTraining] ========== -->
 	<HediffDef>
 		<defName>ESCP_BeastMasterTraining</defName>
 		<hediffClass>HediffWithComps</hediffClass>
@@ -37,12 +35,12 @@
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
 		<comps>
-		  <li>
-			<compClass>ESCP_RaceTools.HediffComp_BeastMaster</compClass>
-		  </li>
+			<li>
+				<compClass>ESCP_RaceTools.HediffComp_BeastMaster</compClass>
+			</li>
 		</comps>
 	</HediffDef>
-	
+	<!-- ========== [ESCP_HiddenBeastMaster] ========== -->
 	<HediffDef>
 		<defName>ESCP_HiddenBeastMaster</defName>
 		<label>hidden beast master</label>
@@ -58,10 +56,9 @@
 			</li>
 		</stages>
 		<comps>
-		  <li>
-			<compClass>ESCP_RaceTools.HediffComp_BeastMasterSpawner</compClass>
-		  </li>
+			<li>
+				<compClass>ESCP_RaceTools.HediffComp_BeastMasterSpawner</compClass>
+			</li>
 		</comps>
 	</HediffDef>
- 
 </Defs>

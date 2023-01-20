@@ -1,24 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <!-- Random social interactions -->
-
-  <ThoughtDef>
-    <defName>ESCP_Charmed</defName>
-    <thoughtClass>Thought_MemorySocial</thoughtClass>
-    <durationDays>20</durationDays>
-    <stackLimit>300</stackLimit>
-    <stackLimitForSameOtherPawn>10</stackLimitForSameOtherPawn>
-    <stackedEffectMultiplier>0.9</stackedEffectMultiplier>
-    <nullifyingTraits>
-      <li>Psychopath</li>
-    </nullifyingTraits>
-    <stages>
-      <li>
-        <label>charmed</label>
-        <baseOpinionOffset>30</baseOpinionOffset>
-      </li>
-    </stages>
-  </ThoughtDef>
- 
+	<ThoughtDef>
+		<defName>ESCP_Charmed</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>20</durationDays>
+		<stackLimit>300</stackLimit>
+		<stackLimitForSameOtherPawn>10</stackLimitForSameOtherPawn>
+		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>charmed</label>
+				<baseOpinionOffset>30</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
 </Defs>
