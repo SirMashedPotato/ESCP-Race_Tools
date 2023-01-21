@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========== [ESCP_BaseRace] ========== -->
+	<AlienRace.ThingDef_AlienRace ParentName="HumanRace" Name="ESCP_BaseRace" Abstract="True">
+		<alienRace>
+			<generalSettings>
+				<allowHumanBios>false</allowHumanBios>
+				<humanRecipeImport>true</humanRecipeImport>
+				<colorChannels Inherit="false"/>
+			</generalSettings>
+			<compatibility>
+				<isFlesh>true</isFlesh>
+				<isSentient>true</isSentient>
+				<hasBlood>true</hasBlood>
+			</compatibility>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>
