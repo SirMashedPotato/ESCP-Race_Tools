@@ -6,7 +6,9 @@
 			<generalSettings>
 				<allowHumanBios>false</allowHumanBios>
 				<humanRecipeImport>true</humanRecipeImport>
-				<colorChannels Inherit="false"/>
+				<alienPartGenerator>
+					<colorChannels Inherit="false"/>
+				</alienPartGenerator>
 			</generalSettings>
 			<compatibility>
 				<isFlesh>true</isFlesh>

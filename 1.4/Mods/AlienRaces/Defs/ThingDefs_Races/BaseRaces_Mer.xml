@@ -11,11 +11,12 @@
 		<race>
 			<lifeExpectancy>300</lifeExpectancy>
 			<baseHealthScale>0.8</baseHealthScale>
-			<litterSizeCurve>
+			<litterSizeCurve Inherit="False">
 				<points>
 					<li>(0.5, 0)</li>
 					<li>(1, 1)</li>
-					<li>(1.01, 0)</li>
+					<li>(1.01, 0.01)</li>
+					<li>(2.5, 0)</li>
 				</points>
 			</litterSizeCurve>
 		</race>
@@ -28,7 +29,8 @@
 						<li>
 							<path>Things/Pawn/Humanlike/ESCP_GenericMer/Ear/RightEar</path>
 							<colorChannel>skin</colorChannel>
-							<bodyPart>right ear</bodyPart>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>right ear</bodyPartLabel>
 							<drawnInBed>true</drawnInBed>
 							<inFrontOfBody>false</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
@@ -52,7 +54,8 @@
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<path>Things/Pawn/Humanlike/ESCP_GenericMer/Ear/LeftEar</path>
 							<colorChannel>skin</colorChannel>
-							<bodyPart>left ear</bodyPart>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>left ear</bodyPartLabel>
 							<drawnInBed>true</drawnInBed>
 							<inFrontOfBody>false</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
