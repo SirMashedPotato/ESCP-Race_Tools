@@ -21,9 +21,16 @@ namespace ESCP_RaceTools
                     if (father.def != child.def)
                     {
                         RaceProperties props = RaceProperties.Get(father.def);
-                        if (props != null && props.hybridInheritedGene != null)
+                        if (props != null)
                         {
-                            child.genes.AddGene(props.hybridInheritedGene, false);
+                            if (props.majorRacialGeneToInherit != null)
+                            {
+                                child.genes.AddGene(props.majorRacialGeneToInherit, false);
+                            }
+                            if (props.minorRacialGeneToInherit != null)
+                            {
+                                child.genes.AddGene(props.minorRacialGeneToInherit, false);
+                            }
                         }
                     }
                 }

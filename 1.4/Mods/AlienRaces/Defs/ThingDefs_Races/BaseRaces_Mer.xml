@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- 
+		change to inheriting heads from base 
+		replace paths if heads are basic human ones
+	-->
 	<!-- ========== [ESCP_BaseRace_Mer] ========== -->
 	<AlienRace.ThingDef_AlienRace ParentName="ESCP_BaseRace" Name="ESCP_BaseRace_Mer" Abstract="True">
 		<statBases>
 			<MarketValue>1900</MarketValue>
 			<MoveSpeed>4.6</MoveSpeed>
 			<PsychicSensitivity>1.2</PsychicSensitivity>
+			<RoyalFavorValue>4</RoyalFavorValue>
 			<Fertility MayRequire="Ludeon.RimWorld.Biotech">0.5</Fertility>
 		</statBases>
 		<race>
@@ -23,7 +28,7 @@
 		<alienRace>
 			<generalSettings>
 				<alienPartGenerator>
-					<headTypes Inherit="False"/>
+					<!--<headTypes Inherit="False"/>-->
 					<bodyAddons>
 						<!-- ========== [Ear right] ========== -->
 						<li>
@@ -80,6 +85,37 @@
 			<graphicPaths Inherit="false">
 				<skinShader>Cutout</skinShader>
 			</graphicPaths>
+			<raceRestriction>
+				<!-- ==========[Biotech - Genes]========== -->
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_GeneInheritedBonus_Mer</li>
+					<!--
+					<li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
+					-->
+				</blackGeneList>
+				<blackGeneTags>
+					<!--
+					<li>SkinColor</li>
+					<li>HairColor</li>
+					-->
+					<li>Ears</li>
+					<li>Head</li>
+					<li>Headbone</li>
+					<li>SkinColorOverride</li>
+					<li>Fur</li>
+				</blackGeneTags>
+				<blackEndoCategories>
+					<!--
+					<li>Melanin</li>
+					<li>HairColor</li>
+					-->
+					<li MayRequire="Ludeon.RimWorld.Biotech">Ears</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Headbone</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Head</li>
+				</blackEndoCategories>
+			</raceRestriction>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
 	<!-- ========== [ESCP_BaseRace_MerStandardHead] ========== -->

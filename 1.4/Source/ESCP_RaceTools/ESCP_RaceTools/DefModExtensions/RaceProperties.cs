@@ -29,9 +29,12 @@ namespace ESCP_RaceTools
         public List<AbilityDef> abilitiesToAdd;
         public List<AbilityDef> oneOfRandomAbility;
         public float oneOfRandomAbilityChance = 1f;
-        //Biotech specific TODO
+        //Biotech specific
         public List<GeneDef> genesToAdd;    //starting genes
-        public GeneDef hybridInheritedGene; //the additional gene that is 'inherited' from the father of the pawn
+        //additional gene/s that are 'inherited' from the father of the pawn
+        //done seperately because can't may require lists in mod extensions ????
+        public GeneDef majorRacialGeneToInherit;
+        public GeneDef minorRacialGeneToInherit;
         //can't be turned into a sload thrall
         public bool sloadThrallImmune = false;
         public bool thrassianPlagueImmune = false;

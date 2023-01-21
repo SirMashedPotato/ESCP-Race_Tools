@@ -13,6 +13,11 @@
 		<baseTraderKinds>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Base_Medieval_Standard</li>
 		</baseTraderKinds>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0.001</Sanguophage>
+			</xenotypeChances>
+		</xenotypeSet>
 		<pawnGroupMakers Inherit="false"/>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 	</FactionDef>
