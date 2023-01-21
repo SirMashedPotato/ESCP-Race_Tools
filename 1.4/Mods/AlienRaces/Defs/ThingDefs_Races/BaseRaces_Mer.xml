@@ -3,6 +3,7 @@
 	<!-- ========== [ESCP_BaseRace_Mer] ========== -->
 	<AlienRace.ThingDef_AlienRace ParentName="ESCP_BaseRace" Name="ESCP_BaseRace_Mer" Abstract="True">
 		<statBases>
+			<MoveSpeed>4.6</MoveSpeed>
 			<PsychicSensitivity>1.2</PsychicSensitivity>
 			<Fertility MayRequire="Ludeon.RimWorld.Biotech">0.5</Fertility>
 		</statBases>
