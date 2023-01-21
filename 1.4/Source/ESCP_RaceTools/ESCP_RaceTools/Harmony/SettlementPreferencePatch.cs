@@ -19,7 +19,7 @@ namespace ESCP_RaceTools
             [HarmonyPrefix]
             public static bool SettlementPatch(ref int __result, Faction faction)
             {
-                if (ModSettingsUtility.ESCP_EnableSettlementPreference())
+                if (ESCP_RaceTools_ModSettings.EnableSettlementPreference)
                 {
                     if (faction != null && SettlementPreference.Get(faction.def) != null && Rand.Chance(SettlementPreference.Get(faction.def).chance))
                     {

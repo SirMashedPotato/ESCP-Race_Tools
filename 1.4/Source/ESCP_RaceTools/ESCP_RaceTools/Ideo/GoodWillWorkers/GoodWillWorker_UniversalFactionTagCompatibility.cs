@@ -1,6 +1,4 @@
-﻿using System;
-using Verse;
-using RimWorld;
+﻿using RimWorld;
 
 namespace ESCP_RaceTools
 {
@@ -13,25 +11,25 @@ namespace ESCP_RaceTools
 
 		public override int GetNaturalGoodwillOffset(Faction other)
 		{
-			if (!this.Applies(other))
+			if (!Applies(other))
 			{
 				return 0;
 			}
-			return this.def.naturalGoodwillOffset;
+			return def.naturalGoodwillOffset;
 		}
 
 		private bool Applies(Faction other)
 		{
-			return this.Applies(Faction.OfPlayer, other) || this.Applies(other, Faction.OfPlayer);
+			return Applies(Faction.OfPlayer, other) || Applies(other, Faction.OfPlayer);
 		}
 
 		private bool Applies(Faction a, Faction b)
 		{
-            if (!ModSettingsUtility_Ideo.ESCP_RaceTools_IdeologyFactionGoodwill())
+            if (!ESCP_RaceTools_ModSettings.IdeologyFactionGoodwill)
             {
 				return false;
             }
-			var tagProps = FactionGoodwillProperties.Get(this.def);
+			var tagProps = FactionGoodwillProperties.Get(def);
 			if (tagProps == null || tagProps.FactionTagA == null || tagProps.FactionTagB == null)
 			{
 				return false;

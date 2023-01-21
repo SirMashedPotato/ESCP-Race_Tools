@@ -18,7 +18,7 @@ namespace ESCP_RaceTools
             [HarmonyPrefix]
             public static bool QuadramNamePatch(Quadrum quadrum, ref string __result)
             {
-                if (ModSettingsUtility.ESCP_RaceTools_ElderScrollsQuadrums())
+                if (ESCP_RaceTools_ModSettings.ElderScrollsQuadrums)
                 {
                     switch (quadrum)
                     {
@@ -50,7 +50,7 @@ namespace ESCP_RaceTools
             [HarmonyPrefix]
             public static bool QuadramNamePatch(Quadrum quadrum, ref string __result)
             {
-                if (ModSettingsUtility.ESCP_RaceTools_ElderScrollsQuadrums())
+                if (ESCP_RaceTools_ModSettings.ElderScrollsQuadrums)
                 {
                     switch (quadrum)
                     {

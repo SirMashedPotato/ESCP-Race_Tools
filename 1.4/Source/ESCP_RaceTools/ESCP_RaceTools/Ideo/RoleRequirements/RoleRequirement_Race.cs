@@ -9,7 +9,7 @@ namespace ESCP_RaceTools
         {
             if (labelCached == null)
             {
-                if (ModSettingsUtility_Ideo.ESCP_RaceTools_IdeologyOverrideRace())
+                if (ESCP_RaceTools_ModSettings.IdeologyOverrideRace)
                 {
                     labelCached = "ESCP_IdeoRequirementRace".Translate() + ": " + "ESCP_IdeoRequirementRaceAny".Translate();
                 } 
@@ -23,7 +23,7 @@ namespace ESCP_RaceTools
 
         public override bool Met(Pawn p, Precept_Role role)
         {
-            return p.def == race || ModSettingsUtility_Ideo.ESCP_RaceTools_IdeologyOverrideRace();
+            return p.def == race || ESCP_RaceTools_ModSettings.IdeologyOverrideRace;
         }
 
         public ThingDef race;

@@ -52,7 +52,7 @@ namespace ESCP_RaceTools
                     {
                         if (RightSkill(recipe, stuffKnowledge.skillList) && (MadeOfStuff(thing, stuffKnowledge.stuffList) || (stuffKnowledge.notJustStuff && MadeOfThing(thing, stuffKnowledge.stuffList))) && ChanceIncrease(stuffKnowledge.chance))
                         {
-                            if (ModSettingsUtility.ESCP_StuffKnowledgeLogging()) Log.Message("Initial quality of  " + thing + " = " + initial + ", improved quality = " + (initial + 1)); ;
+                            if (ESCP_RaceTools_ModSettings.StuffKnowledgeLogging) Log.Message("Initial quality of  " + thing + " = " + initial + ", improved quality = " + (initial + 1)); ;
                             Messages.Message("ESCP_StuffKnowledgeNotification".Translate(worker, thing), thing, MessageTypeDefOf.PositiveEvent, true);
                             return initial + 1;
                         }

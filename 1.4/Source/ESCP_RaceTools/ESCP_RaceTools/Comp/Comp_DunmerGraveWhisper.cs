@@ -27,7 +27,7 @@ namespace ESCP_RaceTools
         {
             base.CompTickRare();
 
-            if (!ModSettingsUtility_Race.ESCP_RaceTools_DunmerGraveWhispering())
+            if (!ESCP_RaceTools_ModSettings.DunmerGraveWhispering)
             {
 				ticks = -1;
 				return;

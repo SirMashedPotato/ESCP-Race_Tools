@@ -9,7 +9,7 @@ namespace ESCP_RaceTools
         ESCP_RaceTools_ModSettings settings;
         public ESCP_RaceTools_Mod(ModContentPack contentPack) : base(contentPack)
         {
-            this.settings = GetSettings<ESCP_RaceTools_ModSettings>();
+            settings = GetSettings<ESCP_RaceTools_ModSettings>();
         }
 
         public override string SettingsCategory() => "ESCP_RaceTools_ModName".Translate();
@@ -204,9 +204,6 @@ namespace ESCP_RaceTools
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableIncreasedExpecations".Translate(), ref settings.ESCP_RaceTools_EnableIncreasedExpecations, "ESCP_RaceTools_EnableIncreasedExpecationsTooltip".Translate() + TooltipStringInit.General_IncreasedExpectations);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist".Translate(), ref settings.ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist);
             listing_Standard.Gap();
 
             listing_Standard.GapLine();

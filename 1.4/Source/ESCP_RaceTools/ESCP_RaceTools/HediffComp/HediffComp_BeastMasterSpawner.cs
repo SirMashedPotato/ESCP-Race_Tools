@@ -22,7 +22,7 @@ namespace ESCP_RaceTools
                 Pawn p = Pawn;
                 ESCP_BeastMaster_beastsSpawned = true;
 
-                if (ModSettingsUtility.ESCP_RaceTools_EnableBeastMaster())
+                if (ESCP_RaceTools_ModSettings.EnableBeastMaster)
                 {
                     if (!p.Spawned) return;
                     if (p.Dead) return;
@@ -32,7 +32,7 @@ namespace ESCP_RaceTools
                     if (p.Downed) return;
                     if (BeastMaster.Get(p.kindDef) == null) return;
 
-                    if (ModSettingsUtility.ESCP_BeastMasterLogging()) 
+                    if (ESCP_RaceTools_ModSettings.BeastMasterLogging) 
                     { 
                         Log.Message("Found beast master: " + p);
                     }

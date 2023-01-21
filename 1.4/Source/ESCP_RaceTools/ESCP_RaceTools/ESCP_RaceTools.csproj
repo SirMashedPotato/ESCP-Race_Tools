@@ -125,9 +125,6 @@
     <Compile Include="LeatherThoughtWorkers\ThoughtWorker_MerLeatherApparel.cs" />
     <Compile Include="ModSettings\ESCP_RaceTools_Mod.cs" />
     <Compile Include="ModSettings\ESCP_RaceTools_ModSettings.cs" />
-    <Compile Include="ModSettings\ModSettingsUtility.cs" />
-    <Compile Include="ModSettings\ModSettingsUtility_Race.cs" />
-    <Compile Include="ModSettings\ModSettingsUtility_Ideo.cs" />
     <Compile Include="ModSettings\ModSettingsUtility_Tooltips.cs" />
     <Compile Include="Rituals\DunmerSeance\RitualAttachableOutcomeEffectWorker_DunmerAncestorKnowledge.cs" />
     <Compile Include="Rituals\RitualObligationTargetWorker_FilledDunmerGrave.cs" />

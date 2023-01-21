@@ -12,7 +12,7 @@ namespace ESCP_RaceTools
         public static ThoughtState CurrentThoughtState(Pawn p)
         {
             //settings check
-            if (!ModSettingsUtility.ESCP_RaceTools_LeatherThoughtMer())
+            if (!ESCP_RaceTools_ModSettings.LeatherThoughtMer)
             {
                 return ThoughtState.Inactive;
             }

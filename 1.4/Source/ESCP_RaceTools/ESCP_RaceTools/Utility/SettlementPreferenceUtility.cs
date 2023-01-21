@@ -14,10 +14,10 @@ namespace ESCP_RaceTools
             tileID = 0;
             bool defaultToVanilla = false;  //return true if any checks fail, causes vanilla code to take over
             var modExt = SettlementPreference.Get(faction.def);
-            bool flag = ModSettingsUtility.ESCP_SettlementPreferenceLogging();
+            bool flag = ESCP_RaceTools_ModSettings.SettlementPreferenceLogging;
 
             /* modified from  TileFinder.RandomSettlementTileFor */
-            int limit = (int)ModSettingsUtility.ESCP_RaceTools_SettlementPreferenceIterations();
+            int limit = (int)ESCP_RaceTools_ModSettings.SettlementPreferenceIterations;
             for (int i = 0; i < limit; i++)
             {
                 if ((from _ in Enumerable.Range(0, 100) select Rand.Range(0, Find.WorldGrid.TilesCount)).TryRandomElementByWeight(delegate (int x)
@@ -199,7 +199,7 @@ namespace ESCP_RaceTools
                         Log.Message(logMessage + " valid tile = " + !defaultToVanilla);
                     }
 
-                    if (ModSettingsUtility.ESCP_SettlementPreferenceLoggingExtended() && defaultToVanilla)
+                    if (ESCP_RaceTools_ModSettings.SettlementPreferenceLoggingExtended && defaultToVanilla)
                     {
                         Log.Message(logMessage + " valid tile = " + !defaultToVanilla);
                     }

@@ -18,7 +18,7 @@ namespace ESCP_RaceTools
             [HarmonyPrefix]
             public static bool UniqueDeityNameOverridePatch(IdeoFoundation_Deity.Deity deity, ref IdeoFoundation_Deity __instance)
             {
-                if (ModSettingsUtility_Ideo.ESCP_RaceTools_IdeologyDivinesNames())
+                if (ESCP_RaceTools_ModSettings.IdeologyDivinesNames)
                 {
                     //Override Divines names
 
@@ -54,7 +54,7 @@ namespace ESCP_RaceTools
                     }
                 }
 
-                if (ModSettingsUtility_Ideo.ESCP_RaceTools_DeityNameFix())
+                if (ESCP_RaceTools_ModSettings.DeityNameFix)
                 {
                     /* This should possibly be redone */
 

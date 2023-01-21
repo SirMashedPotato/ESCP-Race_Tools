@@ -19,7 +19,7 @@ namespace ESCP_RaceTools
 			[HarmonyPrefix]
 			public static bool HeatstrokePatch(Pawn pawn)
 			{
-				if (ModSettingsUtility.ESCP_RaceTools_EnableHeatstrokeSwitch())
+				if (ESCP_RaceTools_ModSettings.EnableHeatstrokeSwitch)
 				{
 					var props = RaceProperties.Get(pawn.def);
 					if (props != null) 

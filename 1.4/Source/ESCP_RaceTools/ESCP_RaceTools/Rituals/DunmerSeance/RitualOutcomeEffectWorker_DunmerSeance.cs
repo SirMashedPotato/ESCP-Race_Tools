@@ -18,7 +18,7 @@ namespace ESCP_RaceTools
 		protected override void ApplyExtraOutcome(Dictionary<Pawn, int> totalPresence, LordJob_Ritual jobRitual, OutcomeChance outcome, out string extraOutcomeDesc, ref LookTargets letterLookTargets)
 		{
 			extraOutcomeDesc = null;
-			if (ModsConfig.RoyaltyActive && outcome.Positive && (outcome.BestPositiveOutcome(jobRitual) && Rand.Chance(ModSettingsUtility_Race.ESCP_RaceTools_SeancePsylinkChance())))
+			if (ModsConfig.RoyaltyActive && outcome.Positive && outcome.BestPositiveOutcome(jobRitual) && Rand.Chance(ESCP_RaceTools_ModSettings.SeancePsylinkChance))
 			{
 				Pawn pawn = totalPresence.Where(x => x.Key.GetPsylinkLevel() < x.Key.GetMaxPsylinkLevel()).RandomElement().Key;
                 if (pawn != null)

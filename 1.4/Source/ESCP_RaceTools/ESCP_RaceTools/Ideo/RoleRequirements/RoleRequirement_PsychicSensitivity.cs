@@ -9,9 +9,9 @@ namespace ESCP_RaceTools
         {
             if (labelCached == null)
             {
-                if (ModSettingsUtility_Ideo.ESCP_RaceTools_IdeologyOverridePsychSens())
+                if (ESCP_RaceTools_ModSettings.IdeologyOverridePsychSens)
                 {
-                    labelCached = "ESCP_IdeoRequirementRace".Translate() + ": " + ModSettingsUtility_Ideo.ESCP_RaceTools_IdeologyOverridePsychSensValue() * 100 + "%";
+                    labelCached = "ESCP_IdeoRequirementRace".Translate() + ": " + ESCP_RaceTools_ModSettings.IdeologyOverridePsychSensValue * 100 + "%";
                 }
                 else
                 {
@@ -25,8 +25,8 @@ namespace ESCP_RaceTools
         public override bool Met(Pawn p, Precept_Role role)
         {
             return p.GetStatValue(StatDefOf.PsychicSensitivity) >= sensitivity 
-                || (ModSettingsUtility_Ideo.ESCP_RaceTools_IdeologyOverridePsychSens() 
-                && p.GetStatValue(StatDefOf.PsychicSensitivity) >= ModSettingsUtility_Ideo.ESCP_RaceTools_IdeologyOverridePsychSensValue());
+                || (ESCP_RaceTools_ModSettings.IdeologyOverridePsychSens 
+                && p.GetStatValue(StatDefOf.PsychicSensitivity) >= ESCP_RaceTools_ModSettings.IdeologyOverridePsychSensValue);
         }
 
         public float sensitivity;

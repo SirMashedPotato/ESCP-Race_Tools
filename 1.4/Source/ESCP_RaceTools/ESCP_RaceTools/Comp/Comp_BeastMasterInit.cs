@@ -33,7 +33,7 @@ namespace ESCP_RaceTools
                 Pawn p = parent as Pawn;
                 ESCP_BeastMaster_beastsSpawned = true;
 
-                if (ModSettingsUtility.ESCP_RaceTools_EnableBeastMaster())
+                if (ESCP_RaceTools_ModSettings.EnableBeastMaster)
                 {
                     if (!p.Spawned)  return;
                     if (p.Dead) return;
@@ -44,7 +44,7 @@ namespace ESCP_RaceTools
                     if (BeastMaster.Get(p.kindDef) == null) return;
                     if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.ESCP_HiddenBeastMaster) != null) return;
 
-                    if (ModSettingsUtility.ESCP_BeastMasterLogging()) Log.Message("Found beast master: " + p);
+                    if (ESCP_RaceTools_ModSettings.BeastMasterLogging) Log.Message("Found beast master: " + p);
                     List<Pawn> pawns = BeastMasterUtility.ReadyAdditionalSpawns(p);
                     BeastMasterUtility.GiveLord(pawns, p);
                     BeastMasterUtility.GiveDuty(pawns, p);

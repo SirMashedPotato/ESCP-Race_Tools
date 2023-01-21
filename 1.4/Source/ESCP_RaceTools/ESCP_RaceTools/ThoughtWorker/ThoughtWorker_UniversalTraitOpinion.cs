@@ -13,7 +13,7 @@ namespace ESCP_RaceTools
             {
                 return false;
             }
-            if (ModSettingsUtility.ESCP_RaceTools_EnableTraitOpinions())
+            if (ESCP_RaceTools_ModSettings.EnableTraitOpinions)
             {
                 if (pawn.story.traits == null || other.story.traits == null)
                 {

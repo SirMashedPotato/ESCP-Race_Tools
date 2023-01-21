@@ -19,7 +19,7 @@ namespace ESCP_RaceTools
             [HarmonyPrefix]
             public static bool HypothermiaPatch(Pawn pawn)
             {
-                if (ModSettingsUtility.ESCP_RaceTools_EnableHypothermiaSwitch())
+                if (ESCP_RaceTools_ModSettings.EnableHypothermiaSwitch)
                 {
                     var props = RaceProperties.Get(pawn.def);
 					if (props != null)

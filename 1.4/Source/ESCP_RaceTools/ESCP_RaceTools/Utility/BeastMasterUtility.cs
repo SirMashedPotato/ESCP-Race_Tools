@@ -39,7 +39,7 @@ namespace ESCP_RaceTools
                         newPawn.health.AddHediff(modExt.hediffToAdd).Severity = modExt.hediffToAddSeverity;
                     }
                     /* finalisation */
-                    if (ModSettingsUtility.ESCP_BeastMasterLogging()) Log.Message("Spawned " + newPawn + ", for master " + pawn + ", " + (modExt.maxTotalCombatPower - (newPawn.kindDef.combatPower + currentCombatPower)) + " combat power left");
+                    if (ESCP_RaceTools_ModSettings.BeastMasterLogging) Log.Message("Spawned " + newPawn + ", for master " + pawn + ", " + (modExt.maxTotalCombatPower - (newPawn.kindDef.combatPower + currentCombatPower)) + " combat power left");
                     if (newPawn.AnimalOrWildMan())
                     {
                         newPawn.health.AddHediff(HediffDefOf.ESCP_BeastMasterTraining, newPawn.health.hediffSet.GetBrain() != null ? newPawn.health.hediffSet.GetBrain() : null);

@@ -21,7 +21,7 @@ namespace ESCP_RaceTools
             [HarmonyTranspiler]
             static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
             {
-                if (ModSettingsUtility.ESCP_RaceTools_EnableStuffKnowledge())
+                if (ESCP_RaceTools_ModSettings.EnableStuffKnowledge)
                 {
                     var codes = new List<CodeInstruction>(instructions);
                     //used for checking for the right function call
@@ -41,7 +41,7 @@ namespace ESCP_RaceTools
                             yield return new CodeInstruction(OpCodes.Ldarg_1); // recipe def
                             codes[i] = new CodeInstruction(OpCodes.Call, stuffCheck); // modify
                             yield return codes[i]; // and return modifed
-                            if (ModSettingsUtility.ESCP_StuffKnowledgeLogging()) Log.Message("ESCP_RaceTools_ModName".Translate() + ", has succesfully patched GenRecipe.PostProcessProduct");
+                            if (ESCP_RaceTools_ModSettings.StuffKnowledgeLogging) Log.Message("ESCP_RaceTools_ModName".Translate() + ", has succesfully patched GenRecipe.PostProcessProduct");
                         }
                         else
                         {

@@ -4,7 +4,56 @@ namespace ESCP_RaceTools
 {
     class ESCP_RaceTools_ModSettings : ModSettings
     {
-        //settings
+
+        private static ESCP_RaceTools_ModSettings _instance;
+
+        /* ========== Getters ========== */
+
+        /* stuff knowledge */
+        public static bool EnableStuffKnowledge => _instance.ESCP_RaceTools_EnableStuffKnowledge;
+        public static bool StuffKnowledgeLogging => _instance.ESCP_RaceTools_StuffKnowledgeLogging;
+
+        /* settlement preference */
+        public static bool EnableSettlementPreference => _instance.ESCP_RaceTools_EnableSettlementPreference;
+        public static bool SettlementPreferenceLogging => _instance.ESCP_RaceTools_SettlementPreferenceLogging;
+        public static bool SettlementPreferenceLoggingExtended => _instance.ESCP_RaceTools_SettlementPreferenceLoggingExtended;
+        public static float SettlementPreferenceIterations => _instance.ESCP_RaceTools_SettlementPreferenceIterations;
+
+        /* beast master */
+        public static bool EnableBeastMaster => _instance.ESCP_RaceTools_EnableBeastMaster;
+        public static bool BeastMasterLogging => _instance.ESCP_RaceTools_BeastMasterLogging;
+
+        /* misc */
+
+        public static bool ElderScrollsQuadrums => _instance.ESCP_RaceTools_ElderScrollsQuadrums;
+        public static bool EnableApparelThoughtProtection => _instance.ESCP_RaceTools_EnableApparelThoughtProtection;
+        public static bool EnableHeatstrokeSwitch => _instance.ESCP_RaceTools_EnableHeatstrokeSwitch;
+        public static bool EnableHypothermiaSwitch => _instance.ESCP_RaceTools_EnableHypothermiaSwitch;
+        public static bool EnableDecreasedExpecations => _instance.ESCP_RaceTools_EnableDecreasedExpecations;
+        public static bool EnableIncreasedExpecations => _instance.ESCP_RaceTools_EnableIncreasedExpecations;
+        public static bool EnableBackstoryOpinions => _instance.ESCP_RaceTools_EnableBackstoryOpinions;
+        public static bool EnableTraitOpinions => _instance.ESCP_RaceTools_EnableTraitOpinions;
+
+        /* Ideology */
+        public static bool IdeologyOverrideRace => _instance.ESCP_RaceTools_IdeologyOverrideRace;
+        public static bool IdeologyOverridePsychSens => _instance.ESCP_RaceTools_IdeologyOverridePsychSens;
+        public static float IdeologyOverridePsychSensValue => _instance.ESCP_RaceTools_IdeologyOverridePsychSensValue;
+        public static bool DeityNameFix => _instance.ESCP_RaceTools_DeityNameFix;
+        public static bool IdeologyDivinesNames => _instance.ESCP_RaceTools_IdeologyDivinesNames;
+        public static bool IdeologyFactionGoodwill => _instance.ESCP_RaceTools_IdeologyFactionGoodwill;
+
+        /* leather thoughts */
+        public static bool LeatherThoughtAkaviri => _instance.ESCP_RaceTools_LeatherThoughtAkaviri;
+        public static bool LeatherThoughtMer => _instance.ESCP_RaceTools_LeatherThoughtMer;
+        public static bool LeatherThoughtBeastfolk => _instance.ESCP_RaceTools_LeatherThoughtBeastfolk;
+        public static bool LeatherThoughtGoblinKen => _instance.ESCP_RaceTools_LeatherThoughtGoblinKen;
+        public static bool OrsimerAreMer => _instance.ESCP_RaceTools_OrsimerAreMer;
+
+        /* Race */
+        public static bool DunmerGraveWhispering => _instance.ESCP_RaceTools_DunmerGraveWhispering;
+        public static float SeancePsylinkChance => _instance.ESCP_RaceTools_SeancePsylinkChance;
+
+        /* ========== Variables ========== */
 
         /* stuff knowledge */
         public bool ESCP_RaceTools_EnableStuffKnowledge = ESCP_RaceTools_EnableStuffKnowledge_def;
@@ -25,7 +74,6 @@ namespace ESCP_RaceTools
         public bool ESCP_RaceTools_EnableApparelThoughtProtection = ESCP_RaceTools_EnableApparelThoughtProtection_def;
         public bool ESCP_RaceTools_EnableHeatstrokeSwitch = ESCP_RaceTools_EnableHeatstrokeSwitch_def;
         public bool ESCP_RaceTools_EnableHypothermiaSwitch = ESCP_RaceTools_EnableHypothermiaSwitch_def;
-        public bool ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist = ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist_def;
         public bool ESCP_RaceTools_EnableDecreasedExpecations = ESCP_RaceTools_EnableDecreasedExpecations_def;
         public bool ESCP_RaceTools_EnableIncreasedExpecations = ESCP_RaceTools_EnableIncreasedExpecations_def;
         public bool ESCP_RaceTools_EnableBackstoryOpinions = ESCP_RaceTools_EnableBackstoryOpinions_def;
@@ -40,26 +88,22 @@ namespace ESCP_RaceTools
         public bool ESCP_RaceTools_IdeologyFactionGoodwill = ESCP_RaceTools_IdeologyFactionGoodwill_def;
 
         /* leather thoughts */
-        //akaviri
         public bool ESCP_RaceTools_LeatherThoughtAkaviri = ESCP_RaceTools_LeatherThoughtAkaviri_def;
-        //mer
         public bool ESCP_RaceTools_LeatherThoughtMer = ESCP_RaceTools_LeatherThoughtMer_def;
-
-        //beastfolk
         public bool ESCP_RaceTools_LeatherThoughtBeastfolk = ESCP_RaceTools_LeatherThoughtBeastfolk_def;
-
-        //Goblin-ken
         public bool ESCP_RaceTools_LeatherThoughtGoblinKen = ESCP_RaceTools_LeatherThoughtGoblinKen_def;
-
-        //extra
         public bool ESCP_RaceTools_OrsimerAreMer = ESCP_RaceTools_OrsimerAreMer_def;
 
         /* Race */
         public bool ESCP_RaceTools_DunmerGraveWhispering = ESCP_RaceTools_DunmerGraveWhispering_def;
         public float ESCP_RaceTools_SeancePsylinkChance = ESCP_RaceTools_SeancePsylinkChance_def;
-        public float ESCP_RaceTools_MaormerLeviathanChance = ESCP_RaceTools_MaormerLeviathanChance_def;
 
-        //defaults
+        public ESCP_RaceTools_ModSettings()
+        {
+            _instance = this;
+        }
+
+        /* ========== Defaults ========== */
 
         /* stuff knowledge */
         private static readonly bool ESCP_RaceTools_EnableStuffKnowledge_def = true;
@@ -80,7 +124,6 @@ namespace ESCP_RaceTools
         private static readonly bool ESCP_RaceTools_EnableApparelThoughtProtection_def = true;
         private static readonly bool ESCP_RaceTools_EnableHeatstrokeSwitch_def = true;
         private static readonly bool ESCP_RaceTools_EnableHypothermiaSwitch_def = true;
-        private static readonly bool ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist_def = true;
         private static readonly bool ESCP_RaceTools_EnableDecreasedExpecations_def = true;
         private static readonly bool ESCP_RaceTools_EnableIncreasedExpecations_def = true;
         private static readonly bool ESCP_RaceTools_EnableBackstoryOpinions_def = true;
@@ -95,27 +138,17 @@ namespace ESCP_RaceTools
         private static readonly bool ESCP_RaceTools_IdeologyFactionGoodwill_def = true;
 
         /* leather thoughts */
-        //akaviri
         private static readonly bool ESCP_RaceTools_LeatherThoughtAkaviri_def = true;
-
-        //mer
         private static readonly bool ESCP_RaceTools_LeatherThoughtMer_def = true;
-
-        //beastfolk
         private static readonly bool ESCP_RaceTools_LeatherThoughtBeastfolk_def = true;
-
-        //Goblin-ken
         private static readonly bool ESCP_RaceTools_LeatherThoughtGoblinKen_def = true;
-
-        //extra
         private static readonly bool ESCP_RaceTools_OrsimerAreMer_def = true;
 
         /* Race */
         private static readonly bool ESCP_RaceTools_DunmerGraveWhispering_def = true;
         private static readonly float ESCP_RaceTools_SeancePsylinkChance_def = 0.5f;
-        private static readonly float ESCP_RaceTools_MaormerLeviathanChance_def = 0.05f;
 
-        //save settings
+        /* ========== Saving ========== */
         public override void ExposeData()
         {
 
@@ -136,7 +169,6 @@ namespace ESCP_RaceTools
             Scribe_Values.Look(ref ESCP_RaceTools_EnableApparelThoughtProtection, "ESCP_RaceTools_EnableApparelThoughtProtection", ESCP_RaceTools_EnableApparelThoughtProtection_def);
             Scribe_Values.Look(ref ESCP_RaceTools_EnableHeatstrokeSwitch, "ESCP_RaceTools_EnableHeatstrokeSwitch", ESCP_RaceTools_EnableHeatstrokeSwitch_def);
             Scribe_Values.Look(ref ESCP_RaceTools_EnableHypothermiaSwitch, "ESCP_RaceTools_EnableHypothermiaSwitch", ESCP_RaceTools_EnableHypothermiaSwitch_def);
-            Scribe_Values.Look(ref ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist, "ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist", ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist_def);
             Scribe_Values.Look(ref ESCP_RaceTools_EnableDecreasedExpecations, "ESCP_RaceTools_EnableDecreasedExpecations", ESCP_RaceTools_EnableDecreasedExpecations_def);
             Scribe_Values.Look(ref ESCP_RaceTools_EnableIncreasedExpecations, "ESCP_RaceTools_EnableIncreasedExpecations", ESCP_RaceTools_EnableIncreasedExpecations_def);
             Scribe_Values.Look(ref ESCP_RaceTools_EnableBackstoryOpinions, "ESCP_RaceTools_EnableBackstoryOpinions", ESCP_RaceTools_EnableBackstoryOpinions_def);
@@ -151,26 +183,20 @@ namespace ESCP_RaceTools
             Scribe_Values.Look(ref ESCP_RaceTools_IdeologyFactionGoodwill, "ESCP_RaceTools_IdeologyFactionGoodwill", ESCP_RaceTools_IdeologyFactionGoodwill_def);
 
             /* leather thoughts */
-            //akiviri
             Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtAkaviri, "ESCP_RaceTools_LeatherThoughtAkaviri", ESCP_RaceTools_LeatherThoughtAkaviri_def);
-            //mer
             Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtMer, "ESCP_RaceTools_LeatherThoughtMer", ESCP_RaceTools_LeatherThoughtMer_def);
-            //beastfolk
             Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtBeastfolk, "ESCP_RaceTools_LeatherThoughtMer", ESCP_RaceTools_LeatherThoughtBeastfolk_def);
-            //Goblin-ken
             Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtGoblinKen, "ESCP_RaceTools_LeatherThoughtGoblinKen", ESCP_RaceTools_LeatherThoughtGoblinKen_def);
-            //extra
             Scribe_Values.Look(ref ESCP_RaceTools_OrsimerAreMer, "ESCP_RaceTools_OrsimerAreMer", ESCP_RaceTools_OrsimerAreMer_def);
 
             /* Race */
             Scribe_Values.Look(ref ESCP_RaceTools_DunmerGraveWhispering, "ESCP_RaceTools_DunmerGraveWhispering", ESCP_RaceTools_DunmerGraveWhispering_def);
             Scribe_Values.Look(ref ESCP_RaceTools_SeancePsylinkChance, "ESCP_RaceTools_SeancePsylinkChance", ESCP_RaceTools_SeancePsylinkChance_def);
-            Scribe_Values.Look(ref ESCP_RaceTools_MaormerLeviathanChance, "ESCP_RaceTools_MaormerLeviathanChance", ESCP_RaceTools_MaormerLeviathanChance_def);
 
             base.ExposeData();
         }
 
-        //rest settings
+        /* ========== Reseting ========== */
         public static void ResetSettings(ESCP_RaceTools_ModSettings settings)
         {
             ResetSettings_General(settings);
@@ -197,7 +223,6 @@ namespace ESCP_RaceTools
             settings.ESCP_RaceTools_EnableApparelThoughtProtection = ESCP_RaceTools_EnableApparelThoughtProtection_def;
             settings.ESCP_RaceTools_EnableHeatstrokeSwitch = ESCP_RaceTools_EnableHeatstrokeSwitch_def;
             settings.ESCP_RaceTools_EnableHypothermiaSwitch = ESCP_RaceTools_EnableHypothermiaSwitch_def;
-            settings.ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist = ESCP_RaceTools_EnableArgoStomachFoodPoisoningResist_def;
             settings.ESCP_RaceTools_EnableDecreasedExpecations = ESCP_RaceTools_EnableDecreasedExpecations_def;
             settings.ESCP_RaceTools_EnableIncreasedExpecations = ESCP_RaceTools_EnableIncreasedExpecations_def;
             settings.ESCP_RaceTools_EnableBackstoryOpinions = ESCP_RaceTools_EnableBackstoryOpinions_def;
@@ -216,19 +241,10 @@ namespace ESCP_RaceTools
 
         public static void ResetSettings_Leather(ESCP_RaceTools_ModSettings settings)
         {
-            //akaviri
             settings.ESCP_RaceTools_LeatherThoughtAkaviri = ESCP_RaceTools_LeatherThoughtAkaviri_def;
-
-            //mer
             settings.ESCP_RaceTools_LeatherThoughtMer = ESCP_RaceTools_LeatherThoughtMer_def;
-
-            //beastfolk
             settings.ESCP_RaceTools_LeatherThoughtBeastfolk = ESCP_RaceTools_LeatherThoughtBeastfolk_def;
-
-            //Goblin-ken
             settings.ESCP_RaceTools_LeatherThoughtGoblinKen = ESCP_RaceTools_LeatherThoughtGoblinKen_def;
-
-            //extra
             settings.ESCP_RaceTools_OrsimerAreMer = ESCP_RaceTools_OrsimerAreMer_def;
         }
 
@@ -236,7 +252,6 @@ namespace ESCP_RaceTools
         {
             settings.ESCP_RaceTools_DunmerGraveWhispering = ESCP_RaceTools_DunmerGraveWhispering_def;
             settings.ESCP_RaceTools_SeancePsylinkChance = ESCP_RaceTools_SeancePsylinkChance_def;
-            settings.ESCP_RaceTools_MaormerLeviathanChance = ESCP_RaceTools_MaormerLeviathanChance_def;
         }
     }
 }

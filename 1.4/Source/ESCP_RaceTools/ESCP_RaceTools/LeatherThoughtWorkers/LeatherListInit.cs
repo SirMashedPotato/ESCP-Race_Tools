@@ -89,7 +89,7 @@ namespace ESCP_RaceTools
                 }
             }
 
-            if (ModSettingsUtility.ESCP_RaceTools_OrsimerAreMer())
+            if (ESCP_RaceTools_ModSettings.OrsimerAreMer)
             {
                 ThingDef temp = DefDatabase<ThingDef>.GetNamedSilentFail(Leather_Orsimer);
                 if (temp?.label != null)
@@ -114,7 +114,7 @@ namespace ESCP_RaceTools
                 }
             }
 
-            if (!ModSettingsUtility.ESCP_RaceTools_OrsimerAreMer())
+            if (!ESCP_RaceTools_ModSettings.OrsimerAreMer)
             {
                 ThingDef temp = DefDatabase<ThingDef>.GetNamedSilentFail(Leather_Orsimer);
                 if (temp?.label != null)

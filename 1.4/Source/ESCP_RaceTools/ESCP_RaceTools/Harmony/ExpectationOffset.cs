@@ -18,12 +18,12 @@ namespace ESCP_RaceTools
             [HarmonyPostfix]
             public static void ExpectationsPatch(Pawn p, ref ExpectationDef __result)
             {
-                if (ModSettingsUtility.ESCP_RaceTools_EnableDecreasedExpecations() || ModSettingsUtility.ESCP_RaceTools_EnableIncreasedExpecations())
+                if (ESCP_RaceTools_ModSettings.EnableDecreasedExpecations || ESCP_RaceTools_ModSettings.EnableIncreasedExpecations)
                 {
                     var props = RaceProperties.Get(p.def);
                     if (props != null)
                     {
-                        if (props.modifiedExpectations && ((props.expectationOffset < 0 && ModSettingsUtility.ESCP_RaceTools_EnableDecreasedExpecations()) || (props.expectationOffset > 0 && ModSettingsUtility.ESCP_RaceTools_EnableIncreasedExpecations())))
+                        if (props.modifiedExpectations && ((props.expectationOffset < 0 && ESCP_RaceTools_ModSettings.EnableDecreasedExpecations) || (props.expectationOffset > 0 && ESCP_RaceTools_ModSettings.EnableIncreasedExpecations)))
                         {
                             ExpectationDef expectationDef2;
                             if (props.expectationOffset < 0)
