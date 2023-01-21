@@ -88,6 +88,7 @@
     <Compile Include="DefModExtensions\IdeoCultureProperties.cs" />
     <Compile Include="DefModExtensions\IdeoProperties.cs" />
     <Compile Include="DefModExtensions\ThoughtDefProperties.cs" />
+    <Compile Include="Harmony\Biotech_BirthPatch.cs" />
     <Compile Include="Harmony\CorpseTrading.cs" />
     <Compile Include="Harmony\ExpectationOffset.cs" />
     <Compile Include="DefModExtensions\FactionProperties.cs" />
