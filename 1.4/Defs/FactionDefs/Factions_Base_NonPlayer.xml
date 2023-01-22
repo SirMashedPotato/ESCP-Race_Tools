@@ -13,6 +13,7 @@
 		<baseTraderKinds>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Base_Medieval_Standard</li>
 		</baseTraderKinds>
+		<allowedCultures Inherit="False"/>
 		<xenotypeSet>
 			<xenotypeChances>
 				<Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0.001</Sanguophage>
