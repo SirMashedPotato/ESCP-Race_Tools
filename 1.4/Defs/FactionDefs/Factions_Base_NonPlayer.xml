@@ -16,7 +16,8 @@
 		<allowedCultures Inherit="False"/>
 		<xenotypeSet>
 			<xenotypeChances>
-				<Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0.001</Sanguophage>
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.99</Baseliner>
+				<Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0.01</Sanguophage>
 			</xenotypeChances>
 		</xenotypeSet>
 		<pawnGroupMakers Inherit="false"/>
