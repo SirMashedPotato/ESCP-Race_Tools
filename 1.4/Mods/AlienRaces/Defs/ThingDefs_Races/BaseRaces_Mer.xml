@@ -95,10 +95,8 @@
 					-->
 				</blackGeneList>
 				<blackGeneTags>
-					<!--
 					<li>SkinColor</li>
 					<li>HairColor</li>
-					-->
 					<li>Ears</li>
 					<li>Head</li>
 					<li>Headbone</li>
@@ -106,10 +104,8 @@
 					<li>Fur</li>
 				</blackGeneTags>
 				<blackEndoCategories>
-					<!--
 					<li>Melanin</li>
 					<li>HairColor</li>
-					-->
 					<li MayRequire="Ludeon.RimWorld.Biotech">Ears</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Headbone</li>
