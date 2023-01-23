@@ -10,6 +10,23 @@
 			<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
+	
+	<!-- ==========[ESCP_GenericBackstoryAdulthood_SlaverBase]========== -->
+	<!-- 
+		Separated out as some races/factions don't like slavery
+	-->
+	<AlienRace.AlienBackstoryDef Name="ESCP_GenericBackstoryAdulthood_SlaverBase" Abstract="True">
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodSlaver</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>ESCP_Slaver</defName>
+				<chance>100</chance>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
 
 	<!-- ==========[ESCP_GenericBackstoryAdulthood_ImperialFactionBase]========== -->
 	<!-- 
@@ -49,6 +66,12 @@
 	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialFactionBase" Name="ESCP_GenericBackstoryAdulthood_ImperialCultBase" Abstract="True">
 		<spawnCategories>
 			<li>ESCP_GenericBackstory_AdulthoodImperialCult</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstoryAdulthood_ImperialArchaeologicalSocietyBase]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialFactionBase" Name="ESCP_GenericBackstoryAdulthood_ImperialArchaeologicalSocietyBase" Abstract="True">
+		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodImperialArchaeologicalSociety</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 </Defs>

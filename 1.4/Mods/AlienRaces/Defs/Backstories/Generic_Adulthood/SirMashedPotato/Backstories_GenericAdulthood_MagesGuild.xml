@@ -5,7 +5,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_MagesGuildAlchemist</defName>
 		<title>Mages Guild alchemist</title>
 		<titleShort>guild alchemist</titleShort>
-		<baseDesc>[PAWN_nameDef] was tasked with the study of the flora found on Vvardenfell, where to best to find them, and how to make use of them. From violet coprinius, to stoneflower, [PAWN_nameDef] had spent countless hours studying it, yet promotion still seemed to be a distant dream.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was tasked with the study of the local flora, where to best to find them, and how to make use of them. From mushrooms, to flowers, [PAWN_nameDef] had spent countless hours studying it, yet promotion still seemed to be a distant dream.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<li>

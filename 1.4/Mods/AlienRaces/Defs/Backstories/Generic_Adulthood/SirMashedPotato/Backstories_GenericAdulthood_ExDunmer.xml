@@ -476,4 +476,61 @@
 			</li>
 		</forcedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_Adventurer]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_Adventurer</defName>
+		<title>adventurer</title>
+		<titleShort>adventurer</titleShort>
+		<baseDesc>[PAWN_nameDef] was always fascinated by the wonderful tales of brave heroes, delving into the unknown, and defeating the great evil that threatened the kingdom. So naturally [PAWN_pronoun] decided to leave everything behind, and follow in their footsteps. While [PAWN_nameDef] picked up a few valuable skills, [PAWN_possessive] journey was sadly rather uneventful.</baseDesc>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Cooking</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Medicine</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Shooting</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>1</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_Brewer]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_Brewer</defName>
+		<title>brewer</title>
+		<titleShort>brewer</titleShort>
+		<baseDesc>[PAWN_nameDef] spent [PAWN_possessive] early years working at the local brewery. Many fine drinks were made there, and many were exported far and wide. Eventually [PAWN_nameDef] had enough, and wanted to see some of the exotic places [PAWN_possessive] hard work travelled to.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Cooking</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>1</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
 </Defs>
