@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- All of these are originally from, or based on backstories from, Maormer -->
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_Fisherman]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_Fisher</defName>
+		<title>fisher</title>
+		<titleShort>fisher</titleShort>
+		<baseDesc>While [PAWN_nameDef] worked a tiring job during the day, [PAWN_pronoun] enjoyed relaxing near the coast, and fishing for a while. Admittedly this wasn't actually that relaxing, as there are a great many dangerous beasts lurking in the depths.</baseDesc>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Animals</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Cooking</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_Tanner]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_Tanner</defName>
+		<title>tanner</title>
+		<titleShort>tanner</titleShort>
+		<baseDesc>[PAWN_nameDef] was rather skilled at tanning hides, and turning leather into apparel. [PAWN_possessive] skills were always in demand, as good quality leather boots are priceless.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Cooking</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_Smith]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_Smith</defName>
+		<title>smith</title>
+		<titleShort>smith</titleShort>
+		<baseDesc>[PAWN_nameDef] was a rather skilled smith, and had produced many of the weapons used by the local militia, and quite a few of the ones used by the various bandit groups. [PAWN_nameDef] didn't really care who made the orders, as coin is coin.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Crafting</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>1</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_Hunter]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_Hunter</defName>
+		<title>hunter</title>
+		<titleShort>hunter</titleShort>
+		<baseDesc>[PAWN_nameDef] always enjoyed the calm of going out into the wilderness, and tracking one of the beasts found there. The wilds were home to many strange and deadly beasts, and while [PAWN_nameDef] was never scared, the thought of encountering a something truly frightening did make [PAWN_objective] nervous.</baseDesc>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Animals</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Cooking</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Shooting</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

@@ -27,8 +27,10 @@
 		</race>
 		<alienRace>
 			<generalSettings>
+				<immuneToAge>true</immuneToAge>
 				<alienPartGenerator>
-					<!--<headTypes Inherit="False"/>-->
+					<getsGreyAt>200</getsGreyAt>
+					<headTypes Inherit="False"/>
 					<bodyAddons>
 						<!-- ========== [Ear right] ========== -->
 						<li>
@@ -53,6 +55,7 @@
 									<layerOffset>-0.332</layerOffset>
 								</east>
 							</offsets>
+							<debug>false</debug>
 						</li>
 						<!-- ========== [Ear left] ========== -->
 						<li>
@@ -78,6 +81,7 @@
 									<layerOffset>-0.332</layerOffset>
 								</east>
 							</offsets>
+							<debug>false</debug>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
