@@ -15,8 +15,9 @@
 		Dwemer 6
 		Falmer 7
 		Maormer 8
-		Orsimer 9
-		Sinistral Mer 10, may not actually get used, but just in case
+		Maormer Leviathan 9
+		Orsimer 10
+		Sinistral Mer 11, may not actually get used, but just in case
 	-->
 	<!-- ==========[ESCP_InheritedRacialBonus]========== -->
 	<GeneCategoryDef>
