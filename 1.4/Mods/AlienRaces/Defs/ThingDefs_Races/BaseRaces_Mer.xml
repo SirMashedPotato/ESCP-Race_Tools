@@ -8,7 +8,6 @@
 	<AlienRace.ThingDef_AlienRace ParentName="ESCP_BaseRace" Name="ESCP_BaseRace_Mer" Abstract="True">
 		<statBases>
 			<MarketValue>1900</MarketValue>
-			<MoveSpeed>4.6</MoveSpeed>
 			<PsychicSensitivity>1.2</PsychicSensitivity>
 			<RoyalFavorValue>4</RoyalFavorValue>
 			<Fertility MayRequire="Ludeon.RimWorld.Biotech">0.5</Fertility>
@@ -116,6 +115,11 @@
 					<li MayRequire="Ludeon.RimWorld.Biotech">Head</li>
 				</blackEndoCategories>
 			</raceRestriction>
+			<compatibility>
+				<isFlesh>true</isFlesh>
+				<isSentient>true</isSentient>
+				<hasBlood>true</hasBlood>
+			</compatibility>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
 	<!-- ========== [ESCP_BaseRace_MerStandardHead] ========== -->
