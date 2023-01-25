@@ -22,6 +22,9 @@
 				<value>2</value>
 			</li>
 		</skillGains>
+		<spawnCategories>
+			<li>ESCP_MaormerBackstory_Exclusion</li>
+		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_Tanner]========== -->
 	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
@@ -60,6 +63,9 @@
 				<value>1</value>
 			</li>
 		</skillGains>
+		<spawnCategories>
+			<li>ESCP_MaormerBackstory_Exclusion</li>
+		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_Hunter]========== -->
 	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
@@ -82,6 +88,9 @@
 				<value>2</value>
 			</li>
 		</skillGains>
+		<spawnCategories>
+			<li>ESCP_MaormerBackstory_Exclusion</li>
+		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_RecruitMelee]========== -->
 	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
@@ -138,6 +147,9 @@
 		</skillGains>
 		<maleCommonality>70</maleCommonality>
 		<femaleCommonality>70</femaleCommonality>
+		<spawnCategories>
+			<li>ESCP_MaormerBackstory_Exclusion</li>
+		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_TreasureHunter]========== -->
 	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
@@ -156,6 +168,9 @@
 				<value>3</value>
 			</li>
 		</skillGains>
+		<spawnCategories>
+			<li>ESCP_MaormerBackstory_Exclusion</li>
+		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_AlchemicalResearcher]========== -->
 	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
@@ -180,7 +195,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_RecruitShooting</defName>
 		<title>recruit</title>
 		<titleShort>recruit</titleShort>
-		<baseDesc>As just a lowly recruit in the local militia, [PAWN_nameDef] was given many tasks, such as fletching arrows, and patching up holes in leather armour. Of course this was all in between endless training exercises. [PAWN_nameDef] just wanted fame and glory.</baseDesc>
+		<baseDesc>As just a lowly recruit in the local militia, [PAWN_nameDef] was given many tasks, such as fletching arrows, and patching up holes in leather armour. Of course this was all in between endless training exercises. [PAWN_nameDef] just wanted to fire an arrow at someone.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<li>
@@ -224,5 +239,8 @@
 				<value>5</value>
 			</li>
 		</skillGains>
+		<spawnCategories>
+			<li>ESCP_MaormerBackstory_Exclusion</li>
+		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 </Defs>
