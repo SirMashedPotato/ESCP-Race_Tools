@@ -85,6 +85,7 @@
     <Compile Include="DeathActionWorker\DeathActionWorker_HistoryEventOnDeath.cs" />
     <Compile Include="DefModExtensions\BeastMaster.cs" />
     <Compile Include="DefModExtensions\FactionGoodwillProperties.cs" />
+    <Compile Include="Harmony\FoodPoisoningResistancePatch.cs" />
     <Compile Include="DefModExtensions\IdeoCultureProperties.cs" />
     <Compile Include="DefModExtensions\IdeoProperties.cs" />
     <Compile Include="DefModExtensions\ThoughtDefProperties.cs" />

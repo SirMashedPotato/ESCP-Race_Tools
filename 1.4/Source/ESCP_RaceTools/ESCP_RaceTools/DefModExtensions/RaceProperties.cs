@@ -16,6 +16,8 @@ namespace ESCP_RaceTools
         public bool heatstrokeResistant = false;   //just enables the heatstroke switch
         public bool heatburnResistant = false;    //prevents any actual damage from the heat
         public HediffDef heatstrokeDef;
+        //food poisoning
+        public bool foodPoisoningResistant = false;
         //expectations
         public bool modifiedExpectations = false;
         public int expectationOffset = -1;
