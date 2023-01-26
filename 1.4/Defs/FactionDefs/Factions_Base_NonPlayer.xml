@@ -22,6 +22,7 @@
 		</xenotypeSet>
 		<pawnGroupMakers Inherit="false"/>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<raidLootMaker>ESCP_GenericRaidLootMaker</raidLootMaker>
 	</FactionDef>
 	<!-- ========== [ESCP_NonPlayerFactionBase_TribalCivil] ========== -->
 	<FactionDef ParentName="ESCP_NonPlayerFactionBase_Tribal" Name="ESCP_NonPlayerFactionBase_TribalCivil" Abstract="True">
