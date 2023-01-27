@@ -38,6 +38,7 @@
 			<li>
 				<compClass>ESCP_RaceTools.HediffComp_BeastMaster</compClass>
 			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>
 	</HediffDef>
 	<!-- ========== [ESCP_HiddenBeastMaster] ========== -->
@@ -59,6 +60,7 @@
 			<li>
 				<compClass>ESCP_RaceTools.HediffComp_BeastMasterSpawner</compClass>
 			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>
 	</HediffDef>
 </Defs>
