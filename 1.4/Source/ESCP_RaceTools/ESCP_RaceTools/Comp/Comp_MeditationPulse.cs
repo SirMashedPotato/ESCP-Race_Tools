@@ -31,6 +31,7 @@ namespace ESCP_RaceTools
                 if (!p.Dead && p.Faction != null && p.Faction == Faction.OfPlayer)
                 {
 					DoPulse(p);
+					ticks = 0;
 				}
 			}
         }
@@ -52,7 +53,7 @@ namespace ESCP_RaceTools
 			}
 			if (Props.fleck != null)
 			{
-				FleckMaker.AttachedOverlay(parent, Props.fleck, Vector3.zero, 1f, -1f);
+				FleckMaker.AttachedOverlay(parent, Props.fleck, Vector3.zero, 1f, 1f);
 			}
 
 		}
