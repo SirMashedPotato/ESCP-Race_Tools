@@ -533,4 +533,66 @@
 			</li>
 		</skillGains>
 	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_Acrobat]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_Acrobat</defName>
+		<title>acrobat</title>
+		<titleShort>acrobat</titleShort>
+		<baseDesc>[PAWN_nameDef] was an acrobat, or at least that's what [PAWN_pronoun] told anyone who asked. While [PAWN_pronoun] is quite flexible, in reality, [PAWN_nameDef] worked at a place one could describe as a tavern, but most visited for other purposes.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>6</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>PlantWork</li>
+		</workDisables>
+		<maleCommonality>10</maleCommonality>
+		<femaleCommonality>15</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_Khajiit]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_Khajiit</defName>
+		<title>khajiit</title>
+		<titleShort>khajiit</titleShort>
+		<baseDesc>While [PAWN_nameDef] had been a skooma addict for quite some time, a particularly bad batch sent [PAWN_objective] spiralling down a strange, and somewhat unfortunate, serious of events. Eventually [PAWN_nameDef] woke up one day, in a strange land, covered in fur, and with absolutely no recollection of the past few months. For some reason, this made complete sense to [PAWN_nameDef], for [PAWN_pronoun] was in fact a Khajiit, and always had been.</baseDesc>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>ESCP_KhajiitBackstory_Exclusion</li>
+		</spawnCategories>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<forcedTraitsChance>
+			<li>
+				<defName>DrugDesire</defName>
+				<degree>1</degree>
+				<chance>50</chance>
+			</li>
+			<li>
+				<defName>DrugDesire</defName>
+				<degree>2</degree>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<maleCommonality>5</maleCommonality>
+		<femaleCommonality>5</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
 </Defs>
