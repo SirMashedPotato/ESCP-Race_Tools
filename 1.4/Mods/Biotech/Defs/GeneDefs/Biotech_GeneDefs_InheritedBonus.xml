@@ -18,6 +18,10 @@
 		Maormer Leviathan 9
 		Orsimer 10
 		Sinistral Mer 11, may not actually get used, but just in case
+		Goblin 12
+		Reikling 13
+		Reikr 14
+		Breton 15
 	-->
 	<!-- ==========[ESCP_InheritedRacialBonus]========== -->
 	<GeneCategoryDef>
