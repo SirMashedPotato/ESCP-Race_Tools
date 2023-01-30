@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_MageRestoration]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_MageBase">
+		<defName>ESCP_GenericBackstory_Adulthood_MageRestoration</defName>
+		<title>restoration mage</title>
+		<titleShort>mage</titleShort>
+		<baseDesc>While [PAWN_nameDef] was magically gifted, [PAWN_pronoun] was never one for violence, and instead devoted [PAWN_possessive] skills to the art of restoration. Any who sought aid would have their please answered by [PAWN_nameDef].</baseDesc>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Medicine</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Violent</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+</Defs>
