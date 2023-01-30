@@ -27,7 +27,7 @@
 	<GeneCategoryDef>
 		<defName>ESCP_InheritedRacialBonus</defName>
 		<label>ESCP inherited bonus</label>
-		<displayPriorityInXenotype>397</displayPriorityInXenotype>
+		<displayPriorityInXenotype>398</displayPriorityInXenotype>
 	</GeneCategoryDef>
 	<!-- ==========[ESCP_InheritedRacialBonus_Base]========== -->
 	<GeneDef ParentName="ESCP_GeneBase" Name="ESCP_InheritedRacialBonus_Base" Abstract="True">
