@@ -11,6 +11,32 @@
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	
+	<!-- ==========[ESCP_GenericBackstoryAdulthood_MageBase]========== -->
+	<!-- 
+		Patch this to add mage traits from tools
+		Separated out in case generic mage backstories are added
+	-->
+	<AlienRace.AlienBackstoryDef Name="ESCP_GenericBackstoryAdulthood_MageBase" Abstract="True">
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodMage</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>PsychicSensitivity</defName>
+				<degree>2</degree>
+				<chance>25</chance>
+			</li>
+			<li>
+				<defName>PsychicSensitivity</defName>
+				<degree>1</degree>
+				<chance>100</chance>
+			</li>
+		</forcedTraitsChance>
+		<maleCommonality>15</maleCommonality>
+		<femaleCommonality>15</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	
 	<!-- ==========[ESCP_GenericBackstoryAdulthood_SlaverBase]========== -->
 	<!-- 
 		Separated out as some races/factions don't like slavery
