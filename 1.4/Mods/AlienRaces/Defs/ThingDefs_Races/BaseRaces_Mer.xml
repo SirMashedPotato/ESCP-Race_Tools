@@ -29,6 +29,7 @@
 				<immuneToAge>true</immuneToAge>
 				<alienPartGenerator>
 					<getsGreyAt>200</getsGreyAt>
+					<oldHairAgeRange IgnoreIfNoMatchingField="True">200~300</oldHairAgeRange>
 					<headTypes Inherit="False"/>
 					<bodyAddons>
 						<!-- ========== [Ear right] ========== -->
