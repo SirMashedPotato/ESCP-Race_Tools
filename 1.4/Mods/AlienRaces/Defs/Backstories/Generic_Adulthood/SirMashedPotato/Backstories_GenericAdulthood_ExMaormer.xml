@@ -243,4 +243,76 @@
 			<li>ESCP_MaormerBackstory_Exclusion</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_EmbassyClerk]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_EmbassyClerk</defName>
+		<title>embassy clerk</title>
+		<titleShort>clerk</titleShort>
+		<baseDesc>[PAWN_nameDef] was one of the many embassy clerks stationed in foreign lands. Most days were spent doing menial tasks, and enduring the hatred of the locals. But occasionally the embassy would be visited by diplomats, which usually meant a visit from assassins would follow shortly afterwards.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<maleCommonality>80</maleCommonality>
+		<femaleCommonality>80</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_EmbassyWarden]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_EmbassyWarden</defName>
+		<title>embassy warden</title>
+		<titleShort>warden</titleShort>
+		<baseDesc>As a battle hardened soldier looking for a slightly more relaxed life, guarding an embassy seemed like an obvious choice for [PAWN_nameDef]. Most days were usually fairly relaxing. Occasionally some locals would get a bit unruly, but they were usually swiftly escorted away. Sometimes though, someone would try to do something stupid. [PAWN_nameDef] enjoyed those days the most.</baseDesc>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Wimp</defName>
+			</li>
+		</disallowedTraitsChance>
+		<maleCommonality>80</maleCommonality>
+		<femaleCommonality>80</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_EmbassySentry]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_EmbassySentry</defName>
+		<title>embassy sentry</title>
+		<titleShort>sentry</titleShort>
+		<baseDesc>[PAWN_nameDef] had spent quite some years as a scout, and knew all the signs that indicated someone unseen was approaching. So when [PAWN_pronoun] was offered work as a sentry at one of the embassies, getting paid to sit around in a tower all day, [PAWN_nameDef] accepted without hesitation.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Wimp</defName>
+			</li>
+		</disallowedTraitsChance>
+		<maleCommonality>80</maleCommonality>
+		<femaleCommonality>80</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
 </Defs>
