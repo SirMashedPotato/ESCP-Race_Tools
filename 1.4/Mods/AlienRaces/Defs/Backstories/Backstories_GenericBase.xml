@@ -53,6 +53,17 @@
 			</li>
 		</forcedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
+	
+	<!-- ==========[ESCP_GenericBackstoryAdulthood_HighClassBase]========== -->
+	<!-- 
+		Separated out for the races/factions that are more 'civilised'
+	-->
+	<AlienRace.AlienBackstoryDef Name="ESCP_GenericBackstoryAdulthood_HighClassBase" Abstract="True">
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
 
 	<!-- ==========[ESCP_GenericBackstoryAdulthood_ImperialFactionBase]========== -->
 	<!-- 
