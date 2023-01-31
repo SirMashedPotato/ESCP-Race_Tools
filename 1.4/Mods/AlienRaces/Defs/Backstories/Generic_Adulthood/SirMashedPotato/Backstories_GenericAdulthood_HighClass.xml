@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Backstories meant for the more 'civilised' races/factions -->
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassA]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassA</defName>
+		<title>poet</title>
+		<titleShort>poet</titleShort>
+		<baseDesc>TODO</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Artistic</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassB]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassB</defName>
+		<title>writer</title>
+		<titleShort>writer</titleShort>
+		<baseDesc>TODO</baseDesc>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Artistic</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassC]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassC</defName>
+		<title>bard</title>
+		<titleShort>bard</titleShort>
+		<baseDesc>TODO</baseDesc>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Artistic</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+		<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassD]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassD</defName>
+		<title>actor</title>
+		<titleShort>actor</titleShort>
+		<baseDesc>TODO</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Artistic</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassE]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassE</defName>
+		<title>sculptor</title>
+		<titleShort>sculptor</titleShort>
+		<baseDesc>TODO</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Artistic</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassF]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassF</defName>
+		<title>painter</title>
+		<titleShort>painter</titleShort>
+		<baseDesc>TODO</baseDesc>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Artistic</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassG]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassG</defName>
+		<title>architect</title>
+		<titleShort>architect</titleShort>
+		<baseDesc>TODO</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Artistic</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Construction</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassH]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassH</defName>
+		<title>florist</title>
+		<titleShort>florist</titleShort>
+		<baseDesc>[PAWN_nameDef] had turned arranging flowers into an art form. Many of the displays in noble houses were created by [PAWN_nameDef]. Of course the nobles kept coming back for replacements, so [PAWN_nameDef] was never out of work.</baseDesc>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Artistic</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassI]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassI</defName>
+		<title>horticulturist</title>
+		<titleShort>horticulturist</titleShort>
+		<baseDesc>A skilled gardener, [PAWN_nameDef] had managed to collect a wide variety of exotic flowers, some of which shouldn't of even been able to grow out of their homeland. [PAWN_nameDef] welcomed anyone to marvel at the fields of flowers, as long as they could afford the reasonable entry fee.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Artistic</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassJ]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassJ</defName>
+		<title>chef</title>
+		<titleShort>chef</titleShort>
+		<baseDesc>Once a well known chef, [PAWN_nameDef] had served many nobles exquisite, and very expensive, dishes. While the meals were a sight to look at, most would be hard pressed to tell them apart from 'lesser' dishes based purely on taste. Of course the name [PAWN_nameDef] was enough by itself, and nobles kept coming back for [PAWN_possessive] meals.</baseDesc>
+		<bodyTypeGlobal>Fat</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Artistic</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Cooking</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassK]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassK</defName>
+		<title>baker</title>
+		<titleShort>baker</titleShort>
+		<baseDesc>[PAWN_nameDef] once owned a rather well known, and obscenely expensive, bakery. While [PAWN_possessive] works were well known by those that could afford them, [PAWN_possessive] special sweetrolls were considered by many to be perfection. A work of art that [PAWN_nameDef] had spent untold moons refining.</baseDesc>
+		<bodyTypeGlobal>Fat</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Artistic</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Cooking</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+</Defs>
