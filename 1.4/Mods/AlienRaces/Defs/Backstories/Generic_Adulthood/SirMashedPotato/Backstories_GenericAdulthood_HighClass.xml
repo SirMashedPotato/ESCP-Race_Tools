@@ -49,7 +49,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_HighClassC</defName>
 		<title>bard</title>
 		<titleShort>bard</titleShort>
-		<baseDesc>TODO</baseDesc>
+		<baseDesc>As a relatively skilled bard, [PAWN_nameDef] would usually be found in a high class establishment, singing the favourite songs of the locals. Annoyingly, this was usually the same three songs. This always disappointed [PAWN_nameDef], as no one ever wanted to hear the songs [PAWN_pronoun] [PAWN_objective]self had carefully constructed.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<li>

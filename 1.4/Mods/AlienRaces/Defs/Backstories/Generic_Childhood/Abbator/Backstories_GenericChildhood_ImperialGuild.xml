@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- All of these are originally from, or based on backstories from, Dunmer. Made by Abbator -->
+	<!-- ==========[ESCP_GenericBackstory_Abbator_Childhood_FightersGuildTrainee]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_ImperialFactionBase">
+		<defName>ESCP_GenericBackstory_Abbator_Childhood_FightersGuildTrainee</defName>
+		<title>fighters guild trainee</title>
+		<titleShort>trainee</titleShort>
+		<baseDesc>[PAWN_nameDef] was a trainee in the local Fighters Guild. [PAWN_pronoun] was taught by the Guild how to hold [PAWN_possessive] own in personal combat, to hold [PAWN_possessive] weapon with confidence and dispatch [PAWN_possessive] enemies without prejudice.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Shooting</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Abbator_Childhood_ThievesGuildTrainee]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_ImperialFactionBase">
+		<defName>ESCP_GenericBackstory_Abbator_Childhood_ThievesGuildTrainee</defName>
+		<title>thieves guild trainee</title>
+		<titleShort>trainee</titleShort>
+		<baseDesc>[PAWN_nameDef] grew up in the local Thieves Guild. [PAWN_pronoun] was orphaned as a child, but was taken in by the Guild and taught how to make a living... by stealing from others.</baseDesc>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Crafting</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>1</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

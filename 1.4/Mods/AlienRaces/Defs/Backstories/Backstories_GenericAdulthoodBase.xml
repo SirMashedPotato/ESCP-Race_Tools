@@ -75,7 +75,7 @@
 			<li>ESCP_GenericBackstory_AdulthoodImperialFaction</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
-		<!-- ==========[ESCP_GenericBackstoryAdulthood_FightersGuildBase]========== -->
+	<!-- ==========[ESCP_GenericBackstoryAdulthood_FightersGuildBase]========== -->
 	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialFactionBase" Name="ESCP_GenericBackstoryAdulthood_FightersGuildBase" Abstract="True">
 		<spawnCategories>
 			<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
