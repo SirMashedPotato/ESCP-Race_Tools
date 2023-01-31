@@ -23,6 +23,9 @@
 				<value>3</value>
 			</li>
 		</skillGains>
+		<workDisables>
+			<li>ManualSkilled</li>
+		</workDisables>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassB]========== -->
 	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
@@ -41,6 +44,9 @@
 				<value>4</value>
 			</li>
 		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassC]========== -->
 	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
@@ -59,6 +65,9 @@
 				<value>3</value>
 			</li>
 		</skillGains>
+		<workDisables>
+			<li>ManualSkilled</li>
+		</workDisables>
 	</AlienRace.AlienBackstoryDef>
 		<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassD]========== -->
 	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
@@ -78,6 +87,9 @@
 				<value>4</value>
 			</li>
 		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassE]========== -->
 	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
@@ -97,6 +109,10 @@
 				<value>3</value>
 			</li>
 		</skillGains>
+		<workDisables>
+			<li>Animals</li>
+			<li>Cooking</li>
+		</workDisables>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassF]========== -->
 	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
@@ -115,6 +131,10 @@
 				<value>3</value>
 			</li>
 		</skillGains>
+		<workDisables>
+			<li>Cooking</li>
+			<li>Mining</li>
+		</workDisables>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassG]========== -->
 	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
@@ -134,6 +154,10 @@
 				<value>4</value>
 			</li>
 		</skillGains>
+		<workDisables>
+			<li>PlantWork</li>
+			<li>Mining</li>
+		</workDisables>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassH]========== -->
 	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
@@ -152,6 +176,10 @@
 				<value>3</value>
 			</li>
 		</skillGains>
+		<workDisables>
+			<li>Animals</li>
+			<li>Mining</li>
+		</workDisables>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassI]========== -->
 	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
@@ -171,6 +199,10 @@
 				<value>4</value>
 			</li>
 		</skillGains>
+		<workDisables>
+			<li>Hunting</li>
+			<li>Mining</li>
+		</workDisables>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassJ]========== -->
 	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
@@ -189,6 +221,10 @@
 				<value>3</value>
 			</li>
 		</skillGains>
+		<workDisables>
+			<li>Constructing</li>
+			<li>Mining</li>
+		</workDisables>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassK]========== -->
 	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
@@ -207,6 +243,10 @@
 				<value>4</value>
 			</li>
 		</skillGains>
+		<workDisables>
+			<li>Constructing</li>
+			<li>Mining</li>
+		</workDisables>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassL]========== -->
 	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
@@ -226,5 +266,9 @@
 				<value>4</value>
 			</li>
 		</skillGains>
+		<workDisables>
+			<li>Animals</li>
+			<li>Mining</li>
+		</workDisables>
 	</AlienRace.AlienBackstoryDef>
 </Defs>
