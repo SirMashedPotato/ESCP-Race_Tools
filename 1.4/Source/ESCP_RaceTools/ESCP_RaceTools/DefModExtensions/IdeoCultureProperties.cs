@@ -18,7 +18,7 @@ namespace ESCP_RaceTools
         {
             public string name = null;
             public string type = null;
-            public Gender gender = Gender.None;
+            public Gender? gender;
             public string iconPath = "UI/Deities/DeityGeneric";
         }
 

@@ -45,7 +45,14 @@ namespace ESCP_RaceTools
                                     }
                                     else
                                     {
-                                        deity.gender = Gen.RandomEnumValue<Gender>(true);
+                                        if (cultureProps.divinesList[i].gender.HasValue)
+                                        {
+                                            deity.gender = cultureProps.divinesList[i].gender.Value;
+                                        }
+                                        else
+                                        {
+                                            deity.gender = Gen.RandomEnumValue<Gender>(true);
+                                        }
                                     }
                                     return false;
                                 }
