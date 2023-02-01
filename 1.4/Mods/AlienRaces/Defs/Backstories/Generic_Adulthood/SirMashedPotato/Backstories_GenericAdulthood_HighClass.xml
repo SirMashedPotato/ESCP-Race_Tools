@@ -6,7 +6,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_HighClassA</defName>
 		<title>poet</title>
 		<titleShort>poet</titleShort>
-		<baseDesc>TODO</baseDesc>
+		<baseDesc>[PAWN_nameDef] always seemed to have a way with words, and as such decided to put it to use as a poet. [PAWN_possessive] lyrical musings often left listeners stunned... usually because they just didn't understand anything [PAWN_pronoun] was saying. Yet after each reading [PAWN_nameDef] would be met with thunderous applause.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
