@@ -1,60 +1,49 @@
-﻿using System.Collections.Generic;
-using Verse;
+﻿using Verse;
 using RimWorld;
 
 namespace ESCP_RaceTools
 {
     public static class StuffKnowledgeUtility
     {
-        public static bool MadeOfStuff(Thing t, List<string> stuffList)
+        public static void Finalise(Pawn worker, QualityCategory initial, Thing thing, RecipeDef recipe)
         {
-            return t != null && t.Stuff != null && stuffList.Contains(t.Stuff.ToString());
-        }
-
-        public static bool MadeOfThing(Thing t, List<string> stuffList)
-        {
-            if (t.def.costList != null)
+            if (ESCP_RaceTools_ModSettings.StuffKnowledgeLogging)
             {
-                foreach (ThingDefCountClass ing in t.def.costList)
-                {
-                    if (stuffList.Contains(ing.thingDef.defName))
-                    {
-                        return true;
-                    }
-                }
+                Log.Message("Initial quality of  " + thing + " = " + initial + ", improved quality = " + (initial + 1));
             }
-            return false;
-        }
-
-        public static bool RightSkill(RecipeDef recipe, List<SkillDef> skillList)
-        {
-            return skillList != null && skillList.Contains(recipe.workSkill);
-        }
-
-        public static bool RequiredHediff(Pawn p, HediffDef h)
-        {
-            return h == null || p.health.hediffSet.GetFirstHediffOfDef(h) != null;
-        }
-
-        public static bool ChanceIncrease(float chance)
-        {
-            return Rand.Chance(chance);
+            Messages.Message("ESCP_StuffKnowledgeNotification".Translate(worker, thing), thing, MessageTypeDefOf.PositiveEvent, true);
+           
         }
 
         public static QualityCategory CheckQualityIncrease(Pawn worker, QualityCategory initial, Thing thing, RecipeDef recipe)
         {
-            var modExt = StuffKnowledge.Get(worker.def);
-            if (initial != QualityCategory.Legendary && modExt != null)
+            if (initial != QualityCategory.Legendary && !worker.health.hediffSet.hediffs.NullOrEmpty())
             {
-                foreach (Knowledge stuffKnowledge in modExt.stuffKnowledgeList)
+                if (thing.Stuff != null)
                 {
-                    if (RequiredHediff(worker, stuffKnowledge.requiredHediff))
+                    StuffKnowledge props = StuffKnowledge.Get(thing.Stuff);
+                    if (props != null && props.requiredHediffDef != null)
                     {
-                        if (RightSkill(recipe, stuffKnowledge.skillList) && (MadeOfStuff(thing, stuffKnowledge.stuffList) || (stuffKnowledge.notJustStuff && MadeOfThing(thing, stuffKnowledge.stuffList))) && ChanceIncrease(stuffKnowledge.chance))
+                        if (worker.health.hediffSet.HasHediff(props.requiredHediffDef))
                         {
-                            if (ESCP_RaceTools_ModSettings.StuffKnowledgeLogging) Log.Message("Initial quality of  " + thing + " = " + initial + ", improved quality = " + (initial + 1)); ;
-                            Messages.Message("ESCP_StuffKnowledgeNotification".Translate(worker, thing), thing, MessageTypeDefOf.PositiveEvent, true);
+                            Finalise(worker, initial, thing, recipe);
                             return initial + 1;
+                        }
+                    }
+                }
+
+                if (!thing.def.costList.NullOrEmpty())
+                {
+                    foreach (ThingDefCountClass ingredient in thing.def.costList)
+                    {
+                        StuffKnowledge props = StuffKnowledge.Get(ingredient.thingDef);
+                        if (props != null && props.requiredHediffDef != null)
+                        {
+                            if (worker.health.hediffSet.HasHediff(props.requiredHediffDef))
+                            {
+                                Finalise(worker, initial, thing, recipe);
+                                return initial + 1;
+                            }
                         }
                     }
                 }
