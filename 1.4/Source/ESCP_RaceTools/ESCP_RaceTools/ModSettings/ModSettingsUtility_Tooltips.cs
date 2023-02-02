@@ -40,7 +40,6 @@ namespace ESCP_RaceTools
             General_HypothermiaSwitch = General_HypothermiaSwitch_Init();
             General_DecreasedExpectations = General_DecreasedExpectations_Init();
             General_IncreasedExpectations = General_IncreasedExpectations_Init();
-            General_StuffKnowledge = General_StuffKnowledge_Init();
             General_SettlementPreference = General_SettlementPreference_Init();
             General_BeastMaster = General_BeastMaster_Init();
 
@@ -167,23 +166,6 @@ namespace ESCP_RaceTools
             DefDatabase<ThingDef>.AllDefsListForReading.Where(x => RaceProperties.Get(x) != null && RaceProperties.Get(x).modifiedExpectations && RaceProperties.Get(x).expectationOffset > 0).ToList().ForEach(action: def =>
             {
                 races += "\n - " + def.label + " (offset by " + RaceProperties.Get(def).expectationOffset + ")";
-            });
-
-            if (races == "")
-            {
-                races = "\n - None";
-            }
-
-            return races;
-        }
-
-        public static string General_StuffKnowledge_Init()
-        {
-            string races = "";
-
-            DefDatabase<ThingDef>.AllDefsListForReading.Where(x => StuffKnowledge.Get(x) != null).ToList().ForEach(action: def =>
-            {
-                races += "\n - " + def.label;
             });
 
             if (races == "")

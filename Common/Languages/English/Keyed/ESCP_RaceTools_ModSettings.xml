@@ -46,11 +46,6 @@
 	<ESCP_RaceTools_EnableApparelThoughtProtection>Enable specific apparel preventing specific weather related thoughts.</ESCP_RaceTools_EnableApparelThoughtProtection>
 	<ESCP_RaceTools_EnableApparelThoughtProtection_Tooltip>While the apparel will prevent the wearer from gaining the thought(s), it will not remove the thought if it is already present.\n\nThis affects:</ESCP_RaceTools_EnableApparelThoughtProtection_Tooltip>
 	
-	<ESCP_RaceTools_StuffKnowledgeLogging>Enable log messages for stuff knowledge</ESCP_RaceTools_StuffKnowledgeLogging>
-	<ESCP_RaceTools_StuffKnowledgeLoggingTooltip>Enables a few log messages for the stuff knowledge Harmony patch. These will appear in the log during crafting, as well as an additional one on game start, and can help diagnose any issues that may be occuring.</ESCP_RaceTools_StuffKnowledgeLoggingTooltip>
-    <ESCP_RaceTools_EnableStuffKnowledge>Enable the stuff knowledge Harmony patch</ESCP_RaceTools_EnableStuffKnowledge>
-    <ESCP_RaceTools_EnableStuffKnowledgeTooltip>If enabled, allows races with stuff knowledge to craft gear that is one quality level higher than normal, assuming any prerequisites are met.\n\nChanging this setting will require a restart to take effect.\n\nThis affects:</ESCP_RaceTools_EnableStuffKnowledgeTooltip>
-
 	<ESCP_RaceTools_SettlementPreferenceLogging>Enable log messages for settlement preference</ESCP_RaceTools_SettlementPreferenceLogging>
 	<ESCP_RaceTools_SettlementPreferenceLoggingTooltip>Enables a few log messages for the settlement preference Harmony patch. These will appear during world creation, when factions are settling the world, and can help diagnose any issues that may be occuring.</ESCP_RaceTools_SettlementPreferenceLoggingTooltip>
 	<ESCP_RaceTools_SettlementPreferenceLoggingExtended>Enable additional log messages for settlement preference</ESCP_RaceTools_SettlementPreferenceLoggingExtended>

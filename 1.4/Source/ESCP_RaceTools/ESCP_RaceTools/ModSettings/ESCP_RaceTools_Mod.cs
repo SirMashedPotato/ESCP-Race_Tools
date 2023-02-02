@@ -209,19 +209,6 @@ namespace ESCP_RaceTools
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
-            /* stuff knowledge */
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableStuffKnowledge".Translate(), ref settings.ESCP_RaceTools_EnableStuffKnowledge, "ESCP_RaceTools_EnableStuffKnowledgeTooltip".Translate() + TooltipStringInit.General_StuffKnowledge);
-            listing_Standard.Gap();
-
-            if (Prefs.DevMode)
-            {
-                listing_Standard.CheckboxLabeled("ESCP_RaceTools_StuffKnowledgeLogging".Translate(), ref settings.ESCP_RaceTools_StuffKnowledgeLogging, "ESCP_RaceTools_StuffKnowledgeLoggingTooltip".Translate());
-                listing_Standard.Gap();
-            }
-
-            listing_Standard.GapLine();
-            listing_Standard.Gap();
-
             /* settlement preference */
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableSettlementPreference".Translate(), ref settings.ESCP_RaceTools_EnableSettlementPreference, "ESCP_RaceTools_EnableSettlementPreferenceTooltip".Translate() + TooltipStringInit.General_SettlementPreference);
             listing_Standard.Gap();

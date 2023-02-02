@@ -9,10 +9,6 @@ namespace ESCP_RaceTools
 
         /* ========== Getters ========== */
 
-        /* stuff knowledge */
-        public static bool EnableStuffKnowledge => _instance.ESCP_RaceTools_EnableStuffKnowledge;
-        public static bool StuffKnowledgeLogging => _instance.ESCP_RaceTools_StuffKnowledgeLogging;
-
         /* settlement preference */
         public static bool EnableSettlementPreference => _instance.ESCP_RaceTools_EnableSettlementPreference;
         public static bool SettlementPreferenceLogging => _instance.ESCP_RaceTools_SettlementPreferenceLogging;
@@ -54,10 +50,6 @@ namespace ESCP_RaceTools
         public static float SeancePsylinkChance => _instance.ESCP_RaceTools_SeancePsylinkChance;
 
         /* ========== Variables ========== */
-
-        /* stuff knowledge */
-        public bool ESCP_RaceTools_EnableStuffKnowledge = ESCP_RaceTools_EnableStuffKnowledge_def;
-        public bool ESCP_RaceTools_StuffKnowledgeLogging = ESCP_RaceTools_StuffKnowledgeLogging_def;
 
         /* settlement preference */
         public bool ESCP_RaceTools_EnableSettlementPreference = ESCP_RaceTools_EnableSettlementPreference_def;
@@ -105,10 +97,6 @@ namespace ESCP_RaceTools
 
         /* ========== Defaults ========== */
 
-        /* stuff knowledge */
-        private static readonly bool ESCP_RaceTools_EnableStuffKnowledge_def = true;
-        private static readonly bool ESCP_RaceTools_StuffKnowledgeLogging_def = false;
-
         /* settlement preference */
         private static readonly bool ESCP_RaceTools_EnableSettlementPreference_def = true;
         private static readonly bool ESCP_RaceTools_SettlementPreferenceLogging_def = false;
@@ -151,10 +139,6 @@ namespace ESCP_RaceTools
         /* ========== Saving ========== */
         public override void ExposeData()
         {
-
-            /* stuff knowledge */
-            Scribe_Values.Look(ref ESCP_RaceTools_EnableStuffKnowledge, "ESCP_RaceTools_EnableStuffKnowledge", ESCP_RaceTools_EnableStuffKnowledge_def);
-            Scribe_Values.Look(ref ESCP_RaceTools_StuffKnowledgeLogging, "ESCP_RaceTools_StuffKnowledgeLogging", ESCP_RaceTools_StuffKnowledgeLogging_def);
             /* settlement preference */
             Scribe_Values.Look(ref ESCP_RaceTools_EnableSettlementPreference, "ESCP_RaceTools_EnableSettlementPreference", ESCP_RaceTools_EnableSettlementPreference_def);
             Scribe_Values.Look(ref ESCP_RaceTools_SettlementPreferenceLogging, "ESCP_RaceTools_SettlementPreferenceLogging", ESCP_RaceTools_SettlementPreferenceLogging_def);
@@ -207,9 +191,6 @@ namespace ESCP_RaceTools
 
         public static void ResetSettings_General(ESCP_RaceTools_ModSettings settings)
         {
-            /* stuff knowledge */
-            settings.ESCP_RaceTools_EnableStuffKnowledge = ESCP_RaceTools_EnableStuffKnowledge_def;
-            settings.ESCP_RaceTools_StuffKnowledgeLogging = ESCP_RaceTools_StuffKnowledgeLogging_def;
             /* settlement preference */
             settings.ESCP_RaceTools_EnableSettlementPreference = ESCP_RaceTools_EnableSettlementPreference_def;
             settings.ESCP_RaceTools_SettlementPreferenceLogging = ESCP_RaceTools_SettlementPreferenceLogging_def;

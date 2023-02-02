@@ -104,10 +104,8 @@
     <Compile Include="Harmony\PawnGeneratorPatch.cs" />
     <Compile Include="Harmony\QuadrumNamesPatch.cs" />
     <Compile Include="Harmony\SettlementPreferencePatch.cs" />
-    <Compile Include="Harmony\StuffKnowledgePatch.cs" />
     <Compile Include="Harmony\Harmony.cs" />
     <Compile Include="DefModExtensions\SettlementPreference.cs" />
-    <Compile Include="DefModExtensions\StuffKnowledge.cs" />
     <Compile Include="Harmony\UniqueDeityNamePatch.cs" />
     <Compile Include="HediffComp\HediffComp_BeastMaster.cs" />
     <Compile Include="HediffComp\HediffComp_BeastMasterSpawner.cs" />
@@ -148,7 +146,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\RaceToolsUtility.cs" />
     <Compile Include="Utility\SettlementPreferenceUtility.cs" />
-    <Compile Include="Utility\StuffKnowledgeUtility.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
