@@ -102,7 +102,6 @@
     <Compile Include="Harmony\HeatstrokeSwitchPatch.cs" />
     <Compile Include="Harmony\HypothermiaSwitchPatch.cs" />
     <Compile Include="Harmony\PawnGeneratorPatch.cs" />
-    <Compile Include="Harmony\QuadrumNamesPatch.cs" />
     <Compile Include="Harmony\SettlementPreferencePatch.cs" />
     <Compile Include="Harmony\Harmony.cs" />
     <Compile Include="DefModExtensions\SettlementPreference.cs" />

@@ -176,12 +176,6 @@ namespace ESCP_RaceTools
             //settings
 
             /* misc */
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_ElderScrollsQuadrums".Translate(), ref settings.ESCP_RaceTools_ElderScrollsQuadrums, "ESCP_RaceTools_ElderScrollsQuadrumsTooltip".Translate());
-            listing_Standard.Gap();
-
-            listing_Standard.GapLine();
-            listing_Standard.Gap();
-
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableBackstoryOpinions".Translate(), ref settings.ESCP_RaceTools_EnableBackstoryOpinions, "ESCP_RaceTools_EnableBackstoryOpinionsTooltip".Translate() + TooltipStringInit.General_BackstoryOpinion);
             listing_Standard.Gap();
 
@@ -189,9 +183,6 @@ namespace ESCP_RaceTools
             listing_Standard.Gap();
 
             listing_Standard.GapLine();
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableApparelThoughtProtection".Translate(), ref settings.ESCP_RaceTools_EnableApparelThoughtProtection, "ESCP_RaceTools_EnableApparelThoughtProtection_Tooltip".Translate() + TooltipStringInit.General_ApparelThoughtProtection);
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableHeatstrokeSwitch".Translate(), ref settings.ESCP_RaceTools_EnableHeatstrokeSwitch, "ESCP_RaceTools_EnableHeatstrokeSwitchTooltip".Translate() + TooltipStringInit.General_HeatstrokeSwitch);

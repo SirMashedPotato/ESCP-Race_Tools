@@ -21,8 +21,6 @@ namespace ESCP_RaceTools
 
         /* misc */
 
-        public static bool ElderScrollsQuadrums => _instance.ESCP_RaceTools_ElderScrollsQuadrums;
-        public static bool EnableApparelThoughtProtection => _instance.ESCP_RaceTools_EnableApparelThoughtProtection;
         public static bool EnableHeatstrokeSwitch => _instance.ESCP_RaceTools_EnableHeatstrokeSwitch;
         public static bool EnableHypothermiaSwitch => _instance.ESCP_RaceTools_EnableHypothermiaSwitch;
         public static bool EnableDecreasedExpecations => _instance.ESCP_RaceTools_EnableDecreasedExpecations;
@@ -62,8 +60,6 @@ namespace ESCP_RaceTools
         public bool ESCP_RaceTools_BeastMasterLogging = ESCP_RaceTools_BeastMasterLogging_def;
 
         /* misc */
-        public bool ESCP_RaceTools_ElderScrollsQuadrums = ESCP_RaceTools_ElderScrollsQuadrums_def;
-        public bool ESCP_RaceTools_EnableApparelThoughtProtection = ESCP_RaceTools_EnableApparelThoughtProtection_def;
         public bool ESCP_RaceTools_EnableHeatstrokeSwitch = ESCP_RaceTools_EnableHeatstrokeSwitch_def;
         public bool ESCP_RaceTools_EnableHypothermiaSwitch = ESCP_RaceTools_EnableHypothermiaSwitch_def;
         public bool ESCP_RaceTools_EnableDecreasedExpecations = ESCP_RaceTools_EnableDecreasedExpecations_def;
@@ -108,8 +104,6 @@ namespace ESCP_RaceTools
         private static readonly bool ESCP_RaceTools_BeastMasterLogging_def = false;
 
         /* misc */
-        private static readonly bool ESCP_RaceTools_ElderScrollsQuadrums_def = false;
-        private static readonly bool ESCP_RaceTools_EnableApparelThoughtProtection_def = true;
         private static readonly bool ESCP_RaceTools_EnableHeatstrokeSwitch_def = true;
         private static readonly bool ESCP_RaceTools_EnableHypothermiaSwitch_def = true;
         private static readonly bool ESCP_RaceTools_EnableDecreasedExpecations_def = true;
@@ -149,8 +143,6 @@ namespace ESCP_RaceTools
             Scribe_Values.Look(ref ESCP_RaceTools_BeastMasterLogging, "ESCP_RaceTools_BeastMasterLogging", ESCP_RaceTools_BeastMasterLogging_def);
 
             /* misc */
-            Scribe_Values.Look(ref ESCP_RaceTools_ElderScrollsQuadrums, "ESCP_RaceTools_ElderScrollsQuadrums", ESCP_RaceTools_ElderScrollsQuadrums_def);
-            Scribe_Values.Look(ref ESCP_RaceTools_EnableApparelThoughtProtection, "ESCP_RaceTools_EnableApparelThoughtProtection", ESCP_RaceTools_EnableApparelThoughtProtection_def);
             Scribe_Values.Look(ref ESCP_RaceTools_EnableHeatstrokeSwitch, "ESCP_RaceTools_EnableHeatstrokeSwitch", ESCP_RaceTools_EnableHeatstrokeSwitch_def);
             Scribe_Values.Look(ref ESCP_RaceTools_EnableHypothermiaSwitch, "ESCP_RaceTools_EnableHypothermiaSwitch", ESCP_RaceTools_EnableHypothermiaSwitch_def);
             Scribe_Values.Look(ref ESCP_RaceTools_EnableDecreasedExpecations, "ESCP_RaceTools_EnableDecreasedExpecations", ESCP_RaceTools_EnableDecreasedExpecations_def);
@@ -200,8 +192,6 @@ namespace ESCP_RaceTools
             settings.ESCP_RaceTools_EnableBeastMaster = ESCP_RaceTools_EnableBeastMaster_def;
             settings.ESCP_RaceTools_BeastMasterLogging = ESCP_RaceTools_BeastMasterLogging_def;
             /* misc */
-            settings.ESCP_RaceTools_ElderScrollsQuadrums = ESCP_RaceTools_ElderScrollsQuadrums_def;
-            settings.ESCP_RaceTools_EnableApparelThoughtProtection = ESCP_RaceTools_EnableApparelThoughtProtection_def;
             settings.ESCP_RaceTools_EnableHeatstrokeSwitch = ESCP_RaceTools_EnableHeatstrokeSwitch_def;
             settings.ESCP_RaceTools_EnableHypothermiaSwitch = ESCP_RaceTools_EnableHypothermiaSwitch_def;
             settings.ESCP_RaceTools_EnableDecreasedExpecations = ESCP_RaceTools_EnableDecreasedExpecations_def;
