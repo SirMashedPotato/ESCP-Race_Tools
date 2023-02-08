@@ -4,7 +4,7 @@
 	<HediffDef>
 		<defName>ESCP_ViolentMeditationHediff</defName>
 		<hediffClass>HediffWithComps</hediffClass>
-		<label>beserker meditation</label>
+		<label>berserker meditation</label>
 		<description>This pawn operates best in the heat of battle, and gains psyfocus whenever they take damage.</description>
 		<defaultLabelColor>(1.0, 0.4, 0.2)</defaultLabelColor>
 		<makesSickThought>false</makesSickThought>
