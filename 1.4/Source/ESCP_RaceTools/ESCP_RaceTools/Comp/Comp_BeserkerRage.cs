@@ -19,7 +19,7 @@ namespace ESCP_RaceTools
         {
             base.PostPostApplyDamage(dinfo, totalDamageDealt);
 			Pawn pawn = parent as Pawn;
-			if ( pawn.health.hediffSet.PainTotal >= 0.6 && PawnIsValid(pawn))
+			if ( pawn.health.hediffSet.PainTotal >= Props.requiredPain && PawnIsValid(pawn))
 			{
 				if (pawn.Faction == null && !pawn.AnimalOrWildMan()) return;
 				ActivateRage(pawn);
