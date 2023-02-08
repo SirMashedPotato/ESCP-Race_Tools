@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_MagesGuildAlchemist]========== -->
-	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_FightersGuildBase">
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_MagesGuildBase">
 		<defName>ESCP_GenericBackstory_Adulthood_MagesGuildAlchemist</defName>
 		<title>Mages Guild alchemist</title>
 		<titleShort>guild alchemist</titleShort>
@@ -21,7 +21,7 @@
 		<femaleCommonality>80</femaleCommonality>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_MagesGuildScholar]========== -->
-	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_FightersGuildBase">
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_MagesGuildBase">
 		<defName>ESCP_GenericBackstory_Adulthood_MagesGuildScholar</defName>
 		<title>Mages Guild scholar</title>
 		<titleShort>guild scholar</titleShort>
@@ -41,7 +41,7 @@
 		<femaleCommonality>70</femaleCommonality>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_MagesGuildHealer]========== -->
-	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_FightersGuildBase">
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_MagesGuildBase">
 		<defName>ESCP_GenericBackstory_Adulthood_MagesGuildHealer</defName>
 		<title>Mages Guild healer</title>
 		<titleShort>guild healer</titleShort>
@@ -62,7 +62,7 @@
 		<femaleCommonality>80</femaleCommonality>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_MagesGuildEnchanter]========== -->
-	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_FightersGuildBase">
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_MagesGuildBase">
 		<defName>ESCP_GenericBackstory_Adulthood_MagesGuildEnchanter</defName>
 		<title>Mages Guild enchanter</title>
 		<titleShort>guild enchanter</titleShort>
@@ -83,7 +83,7 @@
 		<femaleCommonality>80</femaleCommonality>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_MagesGuildGuide]========== -->
-	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_FightersGuildBase">
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_MagesGuildBase">
 		<defName>ESCP_GenericBackstory_Adulthood_MagesGuildGuide</defName>
 		<title>Mages Guild guide</title>
 		<titleShort>guild guide</titleShort>
@@ -104,7 +104,7 @@
 		<femaleCommonality>60</femaleCommonality>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_MagesGuildResearcher]========== -->
-	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_FightersGuildBase">
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_MagesGuildBase">
 		<defName>ESCP_GenericBackstory_Adulthood_MagesGuildResearcher</defName>
 		<title>Mages Guild researcher</title>
 		<titleShort>guild researcher</titleShort>

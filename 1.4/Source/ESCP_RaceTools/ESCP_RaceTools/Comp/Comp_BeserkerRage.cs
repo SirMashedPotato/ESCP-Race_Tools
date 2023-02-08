@@ -58,7 +58,7 @@ namespace ESCP_RaceTools
 		{
 			if (!pawn.health.hediffSet.HasHediff(Props.hediffDef))
 			{
-				if (pawn.health.hediffSet.hediffs.Any(x => Props.augments.Contains(x.def)))
+				if (Props.enableAugments && pawn.health.hediffSet.hediffs.Any(x => Props.augments.Contains(x.def)))
 				{
 					return false;
 				}
