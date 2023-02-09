@@ -28,7 +28,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_HighClassB</defName>
 		<title>writer</title>
 		<titleShort>writer</titleShort>
-		<baseDesc>TODO</baseDesc>
+		<baseDesc>[PAWN_nameDef] was incredibly skilled with [PAWN_possessive] words, and wrote many books that could often be found in someones private library. These books were almost never found  in the residence of some common peasant, as they were needlessly expensive, and somewhat boring. But the nobles liked [PAWN_nameDef]'s work, or at least liked displaying it.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<li>
@@ -92,7 +92,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_HighClassE</defName>
 		<title>sculptor</title>
 		<titleShort>sculptor</titleShort>
-		<baseDesc>TODO</baseDesc>
+		<baseDesc>[PAWN_nameDef] carefully crafted some of the most beautiful sculptures to ever exist. Many could be found in the private gardens of nobles throughout the lands. [PAWN_nameDef] always ensured they would find a good home, as long as the person was willing to pay [PAWN_possessive] exorbitant prices.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
@@ -115,7 +115,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_HighClassF</defName>
 		<title>painter</title>
 		<titleShort>painter</titleShort>
-		<baseDesc>TODO</baseDesc>
+		<baseDesc>[PAWN_nameDef] was well known for [PAWN_possessive] skill with a paint brush, and was often commissioned to paint portraits of noble families. No one else would ask for [PAWN_nameDef], partly due to the costly prices, but mostly due to [PAWN_nameDef] being extremely 'eccentric'.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<li>
