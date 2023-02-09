@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_GenericBackstory_Abbator_Childhood_NobleChild]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Abbator_Childhood_NobleChild</defName>
+		<title>noble child</title>
+		<titleShort>noble</titleShort>
+		<baseDesc>[PAWN_nameDef] was born into a family of some repute. [PAWN_pronoun] has known the taste of the silver spoon and is used to getting [PAWN_possessive] way, but [PAWN_possessive] status also brought the privilege of a quality education and the ability to lead with a commanding presence.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Mining</li>
+			<li>ManualDumb</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

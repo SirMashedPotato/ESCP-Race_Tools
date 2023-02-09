@@ -14,7 +14,7 @@
 	
 	<!-- ==========[ESCP_GenericBackstoryChildhood_TribalBase]========== -->
 	<!-- 
-		Seperated out for races/factions that can use the natural meditaiton type
+		Separated out for races/factions that can use the natural meditation type
 	-->
 	<AlienRace.AlienBackstoryDef Name="ESCP_GenericBackstoryChildhood_TribalBase" Abstract="True">
 		<slot>Childhood</slot>

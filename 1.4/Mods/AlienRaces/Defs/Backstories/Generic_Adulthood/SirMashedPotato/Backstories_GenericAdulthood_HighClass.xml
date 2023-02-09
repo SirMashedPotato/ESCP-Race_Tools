@@ -137,7 +137,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_HighClassG</defName>
 		<title>architect</title>
 		<titleShort>architect</titleShort>
-		<baseDesc>TODO</baseDesc>
+		<baseDesc>[PAWN_nameDef] was the brilliant mind behind some of the most beautiful architectural feats in [PAWN_possessive] home city. From towers, to bridges, and even a library, [PAWN_nameDef] told other people how to build them all.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
