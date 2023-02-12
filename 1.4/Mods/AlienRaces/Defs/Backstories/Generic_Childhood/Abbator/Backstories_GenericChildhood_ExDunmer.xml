@@ -7,7 +7,6 @@
 		<title>street rat</title>
 		<titleShort>street rat</titleShort>
 		<baseDesc>[PAWN_nameDef] spent [PAWN_possessive] childhood on the streets. Life was tough, and [PAWN_nameDef] had to learn to beg, steal, or worse to survive.</baseDesc>
-		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<li>
 				<key>Melee</key>
@@ -25,7 +24,6 @@
 		<title>mage's apprentice</title>
 		<titleShort>apprentice</titleShort>
 		<baseDesc>[PAWN_nameDef] studied the arcane arts as a mage's apprentice. [PAWN_pronoun] spent [PAWN_possessive] days learning to read ageing tomes, to harness the forces of magicka within, as well as how to sweep a broom.</baseDesc>
-		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<li>
 				<key>Intellectual</key>
@@ -43,7 +41,6 @@
 		<title>house servant</title>
 		<titleShort>servant</titleShort>
 		<baseDesc>[PAWN_nameDef] was a servant for a wealthy family. [PAWN_pronoun] cooked, cleaned, and handled the daily affairs of the household.</baseDesc>
-		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<li>
 				<key>Cooking</key>
@@ -61,7 +58,6 @@
 		<title>plantation field-hand</title>
 		<titleShort>field-hand</titleShort>
 		<baseDesc>[PAWN_nameDef] grew up on a plantation, working as a field-hand. [PAWN_pronoun] is no stranger to hard work, and long days spent in the fields made for a green thumb.</baseDesc>
-		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<li>
 				<key>Animals</key>
@@ -79,7 +75,6 @@
 		<title>alchemist's assistant</title>
 		<titleShort>assistant</titleShort>
 		<baseDesc>[PAWN_nameDef] worked as an assistant to an alchemist. [PAWN_pronoun] learned about plants and herbs from all over the world and how to concoct them into useful potions and tonics.</baseDesc>
-		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<li>
 				<key>Intellectual</key>
@@ -101,7 +96,6 @@
 		<title>temple attendant</title>
 		<titleShort>attendant</titleShort>
 		<baseDesc>[PAWN_nameDef] spent [PAWN_possessive] childhood as an attendant at the local temple. [PAWN_pronoun] kept the candles lit and the floors clean, greeted the faithful as they came to worship, and learned from the priests to read from the lessons of the gods and lay hands on the sick or needy.</baseDesc>
-		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<li>
 				<key>Medicine</key>
@@ -119,7 +113,6 @@
 		<title>ship's mate</title>
 		<titleShort>ship's mate</titleShort>
 		<baseDesc>[PAWN_nameDef] was a mate on the ship of a travelling trader. Though [PAWN_pronoun] spent most of [PAWN_possessive] time below deck tending to the needs of the captain and [PAWN_possessive] fellow sailors, life on the trade winds afforded [PAWN_nameDef] the opportunity to see lands far and wide and to learn how to sell goods for the best profit.</baseDesc>
-		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<li>
 				<key>Cooking</key>
@@ -156,7 +149,6 @@
 		<title>shopkeep's assistant</title>
 		<titleShort>assistant</titleShort>
 		<baseDesc>[PAWN_nameDef] was an assistant to a reasonably well off shopkeep. [PAWN_pronoun] kept the shelves stocked and store presentable, and learned to sell goods and wares for a profit.</baseDesc>
-		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<li>
 				<key>Crafting</key>
@@ -193,7 +185,6 @@
 		<title>Dwemer history student</title>
 		<titleShort>apprentice</titleShort>
 		<baseDesc>[PAWN_nameDef] was a student studying the history of the Dwemer. [PAWN_possessive] fascination with the lost race kept [PAWN_possessive] nose in the books, but [PAWN_pronoun] learned much about the strange machines and constructs that the were left behind.</baseDesc>
-		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<li>
 				<key>Construction</key>
@@ -263,7 +254,6 @@
 		<title>healer in training</title>
 		<titleShort>healer</titleShort>
 		<baseDesc>[PAWN_nameDef] spent [PAWN_possessive] early life learning to be a healer. [PAWN_pronoun] was taught to lay hands on the weak and mix potions to heal the ails of the sick.</baseDesc>
-		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<li>
 				<key>Medicine</key>

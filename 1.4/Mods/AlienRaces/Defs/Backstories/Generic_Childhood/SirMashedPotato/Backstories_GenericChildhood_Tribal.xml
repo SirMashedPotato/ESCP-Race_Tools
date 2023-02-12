@@ -6,7 +6,6 @@
 		<title>psychically gifted</title>
 		<titleShort>gifted</titleShort>
 		<baseDesc>[PAWN_nameDef] was born with a greater awareness of the unseen. After many years of guidance from the tribes Wise Woman, [PAWN_pronoun] learnt how to harness [PAWN_possessive] gift, and hear the whispers of the spirits.</baseDesc>
-		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<li>
 				<key>Animals</key>
@@ -42,7 +41,6 @@
 		<title>stone-thrower</title>
 		<titleShort>thrower</titleShort>
 		<baseDesc>[PAWN_nameDef] was always throwing stones around, at trees, at mudcrabs, and sometimes even at [PAWN_possessive] fellow tribe members. While most of the other tribe members grew quite terrified of a stone hitting them from out of nowhere, some saw the value in [PAWN_nameDef]'s skills.</baseDesc>
-		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<li>
 				<key>Shooting</key>

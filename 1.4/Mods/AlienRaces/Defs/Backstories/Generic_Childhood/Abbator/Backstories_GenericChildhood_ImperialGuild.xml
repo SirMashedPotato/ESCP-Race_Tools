@@ -26,7 +26,6 @@
 		<title>thieves guild trainee</title>
 		<titleShort>trainee</titleShort>
 		<baseDesc>[PAWN_nameDef] grew up in the local Thieves Guild. [PAWN_pronoun] was orphaned as a child, but was taken in by the Guild and taught how to make a living... by stealing from others.</baseDesc>
-		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<li>
 				<key>Crafting</key>

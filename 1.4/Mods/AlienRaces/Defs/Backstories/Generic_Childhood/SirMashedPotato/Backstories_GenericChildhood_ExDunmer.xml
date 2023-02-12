@@ -7,7 +7,7 @@
 		<title>psychically gifted</title>
 		<titleShort>gifted</titleShort>
 		<baseDesc>[PAWN_nameDef] was born with a greater awareness of the unseen. After many years at the temple [PAWN_pronoun] learnt how to harness [PAWN_possessive] gift, and hear the whispers of the ancestors.</baseDesc>
-		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		
 		<skillGains>
 			<li>
 				<key>Social</key>
@@ -35,7 +35,6 @@
 		<title>child slaver</title>
 		<titleShort>slaver</titleShort>
 		<baseDesc>[PAWN_nameDef] was practically born to be a slaver master. As soon as [PAWN_pronoun] could form coherent sentences [PAWN_nameDef] was bossing around the other children. Within a few years [PAWN_pronoun] had amassed a reasonable number of slaves, most of which were other children.</baseDesc>
-		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<li>
 				<key>Melee</key>

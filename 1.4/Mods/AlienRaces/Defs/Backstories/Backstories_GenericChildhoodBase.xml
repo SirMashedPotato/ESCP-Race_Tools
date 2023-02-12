@@ -7,6 +7,7 @@
 	-->
 	<AlienRace.AlienBackstoryDef Name="ESCP_GenericBackstoryChildhood_Base" Abstract="True">
 		<slot>Childhood</slot>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<spawnCategories>
 			<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
 		</spawnCategories>
@@ -18,17 +19,19 @@
 	-->
 	<AlienRace.AlienBackstoryDef Name="ESCP_GenericBackstoryChildhood_TribalBase" Abstract="True">
 		<slot>Childhood</slot>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<spawnCategories>
 			<li>ESCP_GenericBackstory_ChildhoodTribal</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
-	
+
 	<!-- ==========[ESCP_GenericBackstoryChildhood_HighClassBase]========== -->
 	<!-- 
 		Separated out for the races/factions that are more 'civilised'
 	-->
 	<AlienRace.AlienBackstoryDef Name="ESCP_GenericBackstoryChildhood_HighClassBase" Abstract="True">
 		<slot>Childhood</slot>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<spawnCategories>
 			<li>ESCP_GenericBackstory_ChildhoodHighClass</li>
 		</spawnCategories>
@@ -40,6 +43,7 @@
 	-->
 	<AlienRace.AlienBackstoryDef Name="ESCP_GenericBackstoryChildhood_ImperialFactionBase" Abstract="True">
 		<slot>Childhood</slot>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<spawnCategories>
 			<li>ESCP_GenericBackstory_ChildhoodImperialFaction</li>
 		</spawnCategories>
