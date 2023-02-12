@@ -65,6 +65,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BirthSignUtility.cs" />
     <Compile Include="DefModExtension\BirthsignExclusion.cs" />
     <Compile Include="Harmony\HarmonyPatches.cs" />
     <Compile Include="Harmony\QuadrumNamesPatch.cs" />
