@@ -42,6 +42,9 @@
 	
 	<ESCP_RaceTools_EnableIncreasedExpecations>Enabled increased expectations for certain races.</ESCP_RaceTools_EnableIncreasedExpecations>
 	<ESCP_RaceTools_EnableIncreasedExpecationsTooltip>This will cause pawns of specific races to have a raised expectation level.\n\nThis affects:</ESCP_RaceTools_EnableIncreasedExpecationsTooltip>
+	
+	<ESCP_RaceTools_EnableRestrictedApparel>Enabled restricted apparel for certain races.</ESCP_RaceTools_EnableRestrictedApparel>
+	<ESCP_RaceTools_EnableRestrictedApparelTooltip>This will prevent pawns of specific races equipping apparel that covers specific body part groups.\n\nThis affects:</ESCP_RaceTools_EnableRestrictedApparelTooltip>
 
 	<ESCP_RaceTools_EnableApparelThoughtProtection>Enable specific apparel preventing specific weather related thoughts.</ESCP_RaceTools_EnableApparelThoughtProtection>
 	<ESCP_RaceTools_EnableApparelThoughtProtection_Tooltip>While the apparel will prevent the wearer from gaining the thought(s), it will not remove the thought if it is already present.\n\nThis affects:</ESCP_RaceTools_EnableApparelThoughtProtection_Tooltip>

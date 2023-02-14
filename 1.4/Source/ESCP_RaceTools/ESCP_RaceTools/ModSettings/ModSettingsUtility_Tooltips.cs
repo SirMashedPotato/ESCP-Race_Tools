@@ -19,6 +19,7 @@ namespace ESCP_RaceTools
         public static string General_StuffKnowledge;
         public static string General_SettlementPreference;
         public static string General_BeastMaster;
+        public static string General_RestrictedApparel;
 
         public static string IdeoOrigin_DeityName;
         public static string IdeoOrigin_DivinesName;
@@ -42,6 +43,7 @@ namespace ESCP_RaceTools
             General_IncreasedExpectations = General_IncreasedExpectations_Init();
             General_SettlementPreference = General_SettlementPreference_Init();
             General_BeastMaster = General_BeastMaster_Init();
+            General_RestrictedApparel = General_RestrictedApparel_Init();
 
             IdeoOrigin_DeityName = IdeoOrigin_DeityName_Init();
             IdeoOrigin_DivinesName = IdeoOrigin_DivinesName_Init();
@@ -233,6 +235,23 @@ namespace ESCP_RaceTools
             DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => BeastMaster.Get(x) != null).ToList().ForEach(action: def =>
             {
                 races += "\n - " + def.race.label + " " + def.label;
+            });
+
+            if (races == "")
+            {
+                races = "\n - None";
+            }
+
+            return races;
+        }
+
+        public static string General_RestrictedApparel_Init()
+        {
+            string races = "";
+
+            DefDatabase<ThingDef>.AllDefsListForReading.Where(x => RaceProperties.Get(x) != null && !RaceProperties.Get(x).restrictedApparelPartGroups.NullOrEmpty()).ToList().ForEach(action: def =>
+            {
+                races += "\n - " + def.label + " (" + RaceProperties.Get(def).restrictedApparelPartGroups.Count + " restricted part group/s)";
             });
 
             if (races == "")

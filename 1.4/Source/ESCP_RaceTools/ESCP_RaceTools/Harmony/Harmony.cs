@@ -12,6 +12,7 @@ namespace ESCP_RaceTools
         {
             var harmony = new Harmony("com.ESCP_RaceTools");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
+            harmony.Patch(AccessTools.Method(typeof(EquipmentUtility), nameof(EquipmentUtility.CanEquip), new[] { typeof(Thing), typeof(Pawn), typeof(string).MakeByRefType(), typeof(bool) }), postfix: new HarmonyMethod(typeof(EquipmentUtility_CanEquip_Patch), nameof(EquipmentUtility_CanEquip_Patch.PawnCanWear_PostFix)));
         }
     }
 }

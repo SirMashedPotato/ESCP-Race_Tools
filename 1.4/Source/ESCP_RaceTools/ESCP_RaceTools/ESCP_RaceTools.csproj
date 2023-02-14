@@ -86,6 +86,7 @@
     <Compile Include="DefModExtensions\BeastMaster.cs" />
     <Compile Include="DefModExtensions\FactionGoodwillProperties.cs" />
     <Compile Include="DefModExtensions\GreyHairPatchProps.cs" />
+    <Compile Include="Harmony\CanEquipPatch.cs" />
     <Compile Include="Harmony\FoodPoisoningResistancePatch.cs" />
     <Compile Include="DefModExtensions\IdeoCultureProperties.cs" />
     <Compile Include="DefModExtensions\IdeoProperties.cs" />
@@ -113,6 +114,7 @@
     <Compile Include="HediffComp\HediffComp_ViolentMeditation.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_ViolentMeditation.cs" />
     <Compile Include="Ideo\GoodWillWorkers\GoodWillWorker_UniversalFactionTagCompatibility.cs" />
+    <Compile Include="Ideo\GoodWillWorkers\GoodWillWorker_UniversalFactionTagCompatibility_Inverted.cs" />
     <Compile Include="Ideo\RoleRequirements\RoleRequirement_PsychicSensitivity.cs" />
     <Compile Include="Ideo\RoleRequirements\RoleRequirement_RaceMulti.cs" />
     <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_AkaviriLeatherApparel.cs" />

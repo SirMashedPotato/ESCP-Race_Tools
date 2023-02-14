@@ -40,6 +40,9 @@ namespace ESCP_RaceTools
         //can't be turned into a sload thrall
         public bool sloadThrallImmune = false;
         public bool thrassianPlagueImmune = false;
+        //For the prevent worn apparel Harmony patch
+        public List<BodyPartGroupDef> restrictedApparelPartGroups;
+        public string restrictedApparelOverrideTag;
 
         public static RaceProperties Get(Def def)
         {

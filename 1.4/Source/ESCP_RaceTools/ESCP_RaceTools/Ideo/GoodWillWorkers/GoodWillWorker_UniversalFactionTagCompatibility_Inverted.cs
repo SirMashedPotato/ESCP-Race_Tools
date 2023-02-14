@@ -3,7 +3,10 @@ using Verse;
 
 namespace ESCP_RaceTools
 {
-	class GoodWillWorker_UniversalFactionTagCompatibility : GoodwillSituationWorker
+	/// <summary>
+	/// Roughly the same, but checks if Tag A is present, and Tag B isn't
+	/// </summary>
+	class GoodWillWorker_UniversalFactionTagCompatibility_Inverted : GoodwillSituationWorker
 	{
 		public override string GetPostProcessedLabel(Faction other)
 		{
@@ -26,10 +29,10 @@ namespace ESCP_RaceTools
 
 		private bool Applies(Faction a, Faction b)
 		{
-            if (!ESCP_RaceTools_ModSettings.IdeologyFactionGoodwill)
-            {
+			if (!ESCP_RaceTools_ModSettings.IdeologyFactionGoodwill)
+			{
 				return false;
-            }
+			}
 			var tagProps = FactionGoodwillProperties.Get(def);
 			if (tagProps == null || tagProps.FactionTagA == null || tagProps.FactionTagB == null)
 			{
@@ -37,11 +40,18 @@ namespace ESCP_RaceTools
 			}
 			var propsA = FactionProperties.Get(a.def);
 			var propsB = FactionProperties.Get(b.def);
-			if (propsA == null || propsA.factionTags.NullOrEmpty() || propsB == null || propsB.factionTags.NullOrEmpty())
+			if (propsA == null || propsA.factionTags.NullOrEmpty())
 			{
 				return false;
 			}
-			return propsA.factionTags.Contains(tagProps.FactionTagA) && propsB.factionTags.Contains(tagProps.FactionTagB);
+            if (propsA.factionTags.Contains(tagProps.FactionTagA))
+            {
+				if (propsB == null || propsB.factionTags.NullOrEmpty() || !propsB.factionTags.Contains(tagProps.FactionTagB))
+                {
+					return true;
+                }
+            }
+			return false;
 		}
 	}
 }

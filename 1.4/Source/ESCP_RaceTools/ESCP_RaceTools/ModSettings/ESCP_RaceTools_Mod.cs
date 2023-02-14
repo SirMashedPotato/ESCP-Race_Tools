@@ -197,6 +197,9 @@ namespace ESCP_RaceTools
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableIncreasedExpecations".Translate(), ref settings.ESCP_RaceTools_EnableIncreasedExpecations, "ESCP_RaceTools_EnableIncreasedExpecationsTooltip".Translate() + TooltipStringInit.General_IncreasedExpectations);
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableRestrictedApparel".Translate(), ref settings.ESCP_RaceTools_EnableRestrictedApparel, "ESCP_RaceTools_EnableRestrictedApparelTooltip".Translate() + TooltipStringInit.General_RestrictedApparel);
+            listing_Standard.Gap();
+
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
