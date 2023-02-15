@@ -74,6 +74,10 @@
 				<chance>25</chance>
 			</li>
 		</forcedTraitsChance>
+		<spawnCategories>
+			<li>ESCP_DunmerBackstory_Exclusion</li>
+			<li>ESCP_DwemerBackstory_Exclusion</li>
+		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_IronMiner]========== -->
 	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
@@ -574,9 +578,6 @@
 				<value>3</value>
 			</li>
 		</skillGains>
-		<spawnCategories>
-			<li>ESCP_KhajiitBackstory_Exclusion</li>
-		</spawnCategories>
 		<workDisables>
 			<li>Intellectual</li>
 		</workDisables>
@@ -594,5 +595,8 @@
 		</forcedTraitsChance>
 		<maleCommonality>5</maleCommonality>
 		<femaleCommonality>5</femaleCommonality>
+		<spawnCategories>
+			<li>ESCP_KhajiitBackstory_Exclusion</li>
+		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 </Defs>
