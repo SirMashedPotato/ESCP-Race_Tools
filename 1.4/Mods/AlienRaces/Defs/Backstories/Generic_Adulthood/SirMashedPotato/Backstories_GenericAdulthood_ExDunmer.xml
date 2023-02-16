@@ -479,6 +479,10 @@
 				<chance>30</chance>
 			</li>
 		</forcedTraitsChance>
+		<spawnCategories>
+			<li>ESCP_DunmerBackstory_Exclusion</li>
+			<li>ESCP_DwemerBackstory_Exclusion</li>
+		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_Adventurer]========== -->
 	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
