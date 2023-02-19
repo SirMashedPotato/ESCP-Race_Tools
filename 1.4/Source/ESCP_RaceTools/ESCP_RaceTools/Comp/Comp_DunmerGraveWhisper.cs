@@ -29,12 +29,11 @@ namespace ESCP_RaceTools
 
             if (!ESCP_RaceTools_ModSettings.DunmerGraveWhispering)
             {
-				ticks = -1;
 				return;
             }
-			if (ticks >= nextTicks && parent != null && parent.Map != null && Props.soundDef != null)
+			if (ticks >= nextTicks && parent != null && parent.Map != null && Props.soundDef != null && Rand.Chance(Props.chance))
             {
-                if (Props.onlyFull)
+                if (Props.onlyFull && parent is Building_Grave)
                 {
 					Building_Grave pit = parent as Building_Grave;
 					if (!pit.HasCorpse)

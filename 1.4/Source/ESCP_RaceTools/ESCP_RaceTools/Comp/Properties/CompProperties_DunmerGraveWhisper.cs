@@ -12,6 +12,7 @@ namespace ESCP_RaceTools
 
         public SoundDef soundDef;
         public bool onlyFull = true;
+        public float chance = 0.1f;
 
     }
 }
