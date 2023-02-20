@@ -134,6 +134,7 @@
     <Compile Include="Rituals\RitualOutcomeComp_RacePresentNotSubstituted.cs" />
     <Compile Include="Rituals\DunmerSeance\RitualOutcomeEffectWorker_DunmerSeance.cs" />
     <Compile Include="StockGenerator\StockGenerator_BuyCorpses.cs" />
+    <Compile Include="ThingClass\Building_AshBurialPit.cs" />
     <Compile Include="ThingClass\PlantBuildingPod.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_UniversalBackstoryOpinion.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_UniversalBackstoryOpinion_Shared.cs" />
