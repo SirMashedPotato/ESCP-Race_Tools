@@ -156,6 +156,27 @@
 					<getsGreyAt IsNull="True"/>
 					<oldHairAgeRange>200~300</oldHairAgeRange>
 				</alienPartGenerator>
+				<reproduction>
+					<maleFertilityAgeFactor>
+						<points>
+							<li>(14, 0)</li>
+							<li>(18, 1)</li>
+							<li>(100, 1)</li>
+							<li>(150, 0)</li>
+						</points>
+					</maleFertilityAgeFactor>
+					<femaleFertilityAgeFactor>
+						<points>
+							<li>(14, 0)</li>
+							<li>(20, 1)</li>
+							<li>(28, 1)</li>
+							<li>(135, 0.5)</li>
+							<li>(140, 0.1)</li>
+							<li>(145, 0.02)</li>
+							<li>(150, 0)</li>
+						</points>
+					</femaleFertilityAgeFactor>
+				</reproduction>
 			</generalSettings>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
