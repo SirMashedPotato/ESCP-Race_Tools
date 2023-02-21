@@ -20,6 +20,7 @@
 			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">3</Structure_TheistAbstract>
 			<ESCP_Structure_OriginLorkhanCult MayRequire="Ludeon.RimWorld.Ideology">1</ESCP_Structure_OriginLorkhanCult>
 		</structureMemeWeights>
+		<disallowedMemes Inherit="False"/>
 		<xenotypeSet>
 			<xenotypeChances>
 				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.99</Baseliner>
