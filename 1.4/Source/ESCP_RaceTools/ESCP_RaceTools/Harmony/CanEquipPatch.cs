@@ -12,7 +12,7 @@ namespace ESCP_RaceTools
         {
             if (thing is Apparel)
             {
-                if (true)   //Setting check TODO
+                if (ESCP_RaceTools_ModSettings.EnableRestrictedApparel)
                 {
                     RaceProperties props = RaceProperties.Get(pawn.def);
                     if (props != null && !props.restrictedApparelPartGroups.NullOrEmpty() && !thing.def.apparel.bodyPartGroups.NullOrEmpty())
