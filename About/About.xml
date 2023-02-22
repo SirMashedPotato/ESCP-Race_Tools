@@ -27,6 +27,7 @@
 		<li>erdelf.HumanoidAlienRaces</li>
 		<li>erdelf.HumanoidAlienRaces.dev</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>VanillaExpanded.VPsycastsE</li>
 		<li>vanillaexpanded.achievements</li>
 	</loadAfter>
 	<incompatibleWith>
