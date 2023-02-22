@@ -80,15 +80,12 @@
 				<value>2</value>
 			</li>
 			<li>
-				<key>Cooking</key>
-				<value>2</value>
-			</li>
-			<li>
 				<key>Shooting</key>
 				<value>2</value>
 			</li>
 		</skillGains>
 		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodMedievalHunter</li>
 			<li>ESCP_MaormerBackstory_Exclusion</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
@@ -314,5 +311,23 @@
 		</disallowedTraitsChance>
 		<maleCommonality>80</maleCommonality>
 		<femaleCommonality>80</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_Farmer]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_Farmer</defName>
+		<title>farmer</title>
+		<titleShort>farmer</titleShort>
+		<baseDesc>[PAWN_nameDef] spent most days toiling away under the blazing sun farming whatever [PAWN_nameDef] was told to farm.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Plants</key>
+				<value>5</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodMedievalFarmer</li>
+		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 </Defs>

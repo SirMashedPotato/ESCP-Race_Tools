@@ -103,6 +103,9 @@
 				<chance>25</chance>
 			</li>
 		</forcedTraitsChance>
+		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodMedievalMiner</li>
+		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_SilverMiner]========== -->
 	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
@@ -128,6 +131,9 @@
 				<chance>25</chance>
 			</li>
 		</forcedTraitsChance>
+		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodMedievalMiner</li>
+		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_SkoomaSeller]========== -->
 	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">

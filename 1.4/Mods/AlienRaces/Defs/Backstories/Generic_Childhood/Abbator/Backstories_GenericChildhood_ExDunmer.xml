@@ -199,6 +199,12 @@
 				<value>2</value>
 			</li>
 		</skillGains>
+		<spawnCategories>
+			<li>ESCP_AyleidBackstory_Exclusion</li>
+			<li>ESCP_ChimerBackstory_Exclusion</li>
+			<li>ESCP_DwemerBackstory_Exclusion</li>
+			<li>ESCP_FalmerBackstory_Exclusion</li>
+		</spawnCategories>
 		<maleCommonality>50</maleCommonality>
 		<femaleCommonality>50</femaleCommonality>
 	</AlienRace.AlienBackstoryDef>
