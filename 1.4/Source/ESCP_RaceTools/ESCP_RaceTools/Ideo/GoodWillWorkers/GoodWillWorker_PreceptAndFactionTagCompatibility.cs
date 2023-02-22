@@ -3,7 +3,7 @@ using Verse;
 
 namespace ESCP_RaceTools
 {
-	class GoodWillWorker_UniversalFactionTagCompatibility : GoodwillSituationWorker
+    public class GoodWillWorker_PreceptAndFactionTagCompatibility : GoodwillSituationWorker
 	{
 		public override string GetPostProcessedLabel(Faction other)
 		{
@@ -26,12 +26,12 @@ namespace ESCP_RaceTools
 
 		private bool Applies(Faction a, Faction b)
 		{
-            if (!ESCP_RaceTools_ModSettings.IdeologyFactionGoodwill)
-            {
+			if (!ESCP_RaceTools_ModSettings.IdeologyFactionGoodwill)
+			{
 				return false;
-            }
+			}
 			FactionGoodwillProperties tagProps = FactionGoodwillProperties.Get(def);
-			if (tagProps == null || tagProps.FactionTagA == null || tagProps.FactionTagB == null)
+			if (tagProps == null || tagProps.FactionTagA == null || tagProps.preceptDef == null)
 			{
 				return false;
 			}

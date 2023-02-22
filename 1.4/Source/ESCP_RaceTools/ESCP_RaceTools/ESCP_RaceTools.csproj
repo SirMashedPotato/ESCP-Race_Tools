@@ -113,6 +113,7 @@
     <Compile Include="HediffComp\HediffComp_BeastMasterSpawner.cs" />
     <Compile Include="HediffComp\HediffComp_ViolentMeditation.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_ViolentMeditation.cs" />
+    <Compile Include="Ideo\GoodWillWorkers\GoodWillWorker_PreceptAndFactionTagCompatibility.cs" />
     <Compile Include="Ideo\GoodWillWorkers\GoodWillWorker_UniversalFactionTagCompatibility.cs" />
     <Compile Include="Ideo\GoodWillWorkers\GoodWillWorker_UniversalFactionTagCompatibility_Inverted.cs" />
     <Compile Include="Ideo\RoleRequirements\RoleRequirement_PsychicSensitivity.cs" />

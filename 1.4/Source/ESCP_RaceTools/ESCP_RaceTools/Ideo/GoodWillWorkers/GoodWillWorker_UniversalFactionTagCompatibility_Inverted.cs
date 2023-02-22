@@ -33,20 +33,19 @@ namespace ESCP_RaceTools
 			{
 				return false;
 			}
-			var tagProps = FactionGoodwillProperties.Get(def);
+			FactionGoodwillProperties tagProps = FactionGoodwillProperties.Get(def);
 			if (tagProps == null || tagProps.FactionTagA == null || tagProps.FactionTagB == null)
 			{
 				return false;
 			}
-			var propsA = FactionProperties.Get(a.def);
-			var propsB = FactionProperties.Get(b.def);
+			FactionProperties propsA = FactionProperties.Get(a.def);
 			if (propsA == null || propsA.factionTags.NullOrEmpty())
 			{
 				return false;
 			}
             if (propsA.factionTags.Contains(tagProps.FactionTagA))
             {
-				if (propsB == null || propsB.factionTags.NullOrEmpty() || !propsB.factionTags.Contains(tagProps.FactionTagB))
+				if (b.ideos.PrimaryIdeo.PreceptsListForReading.Find(x => x.def == tagProps.preceptDef) != null)
                 {
 					return true;
                 }
