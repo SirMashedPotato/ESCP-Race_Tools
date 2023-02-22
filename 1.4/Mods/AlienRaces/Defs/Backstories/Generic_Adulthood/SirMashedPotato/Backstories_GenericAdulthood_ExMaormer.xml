@@ -323,11 +323,28 @@
 		<skillGains>
 			<li>
 				<key>Plants</key>
-				<value>5</value>
+				<value>4</value>
 			</li>
 		</skillGains>
 		<spawnCategories>
 			<li>ESCP_GenericBackstory_AdulthoodMedievalFarmer</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_Logger]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_Logger</defName>
+		<title>logger</title>
+		<titleShort>logger</titleShort>
+		<baseDesc>[PAWN_nameDef] spent most days toiling away under the blazing sun chopping down trees, and processing logs into timber.</baseDesc>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Plants</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodMedievalLogger</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 </Defs>
