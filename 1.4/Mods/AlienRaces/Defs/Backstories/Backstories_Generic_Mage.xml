@@ -22,7 +22,7 @@
 		</workDisables>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_MageNecromancer]========== -->
-	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_MageBase">
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_MageBase" MayRequire="SirMashedPotato.ESCP.NecromanticThralls">
 		<defName>ESCP_GenericBackstory_Adulthood_MageNecromancer</defName>
 		<title>necromancer</title>
 		<titleShort>necromancer</titleShort>
