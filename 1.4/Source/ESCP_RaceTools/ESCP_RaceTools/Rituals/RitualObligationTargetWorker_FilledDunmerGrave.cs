@@ -24,7 +24,7 @@ namespace ESCP_RaceTools
             Thing thing = map.listerThings.ThingsInGroup(ThingRequestGroup.Grave).FirstOrDefault((Thing t) => ((Building_Grave)t).Corpse == obligation.targetA.Thing);
             if (thing != null)
             {
-                if(thing.TryGetComp<Comp_DunmerGraveWhisper>() != null)
+                if(thing is Building_AshBurialPit || thing.def.ToString() == "ESCP_Dunmer_AshlanderMummy")
                 {
                     yield return thing;
                 }
@@ -33,8 +33,8 @@ namespace ESCP_RaceTools
 
         protected override RitualTargetUseReport CanUseTargetInternal(TargetInfo target, RitualObligation obligation)
         {
-            Building_Grave building_Grave;
-            return target.HasThing && (building_Grave = target.Thing as Building_Grave) != null && building_Grave.Corpse != null && building_Grave.TryGetComp<Comp_DunmerGraveWhisper>() != null;
+            Building_AshBurialPit building_Grave;
+            return target.HasThing && ((building_Grave = target.Thing as Building_AshBurialPit) != null || target.Thing.def.ToString() == "ESCP_Dunmer_AshlanderMummy") && building_Grave.Corpse != null && building_Grave.TryGetComp<Comp_DunmerGraveWhisper>() != null;
         }
     }
 }
