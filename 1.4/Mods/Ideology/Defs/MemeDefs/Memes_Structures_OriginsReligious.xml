@@ -39,12 +39,6 @@
 		<worshipRoomLabel>temple</worshipRoomLabel>
 		<category>Structure</category>
 		<impact>0</impact>
-		<requiredRituals>
-		</requiredRituals>
-		<consumableBuildings>
-		</consumableBuildings>
-		<requireAnyRitualSeat>
-		</requireAnyRitualSeat>
 		<generalRules>
 			<rulesStrings>
 				<li>memeCreed->sect</li>
@@ -167,12 +161,6 @@
 		<worshipRoomLabel>temple</worshipRoomLabel>
 		<category>Structure</category>
 		<impact>0</impact>
-		<requiredRituals>
-		</requiredRituals>
-		<consumableBuildings>
-		</consumableBuildings>
-		<requireAnyRitualSeat>
-		</requireAnyRitualSeat>
 		<generalRules>
 			<rulesStrings>
 				<li>memeCreed->sect</li>
@@ -285,12 +273,6 @@
 		<worshipRoomLabel>temple</worshipRoomLabel>
 		<category>Structure</category>
 		<impact>0</impact>
-		<requiredRituals>
-		</requiredRituals>
-		<consumableBuildings>
-		</consumableBuildings>
-		<requireAnyRitualSeat>
-		</requireAnyRitualSeat>
 		<generalRules>
 			<rulesStrings>
 				<li>memeCreed->sect</li>
