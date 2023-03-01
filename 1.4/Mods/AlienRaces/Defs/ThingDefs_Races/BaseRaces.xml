@@ -17,4 +17,37 @@
 			</compatibility>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
+	<!-- ========== [ESCP_BaseRace_NoCosmeticGenes] ========== -->
+	<!--
+		Meant for beast races.
+		Mer don't inherit from it, in case Mer get cosmetic gene support.
+	-->
+	<AlienRace.ThingDef_AlienRace ParentName="ESCP_BaseRace" Name="ESCP_BaseRace_NoCosmeticGenes" Abstract="True">
+		<alienRace>
+			<raceRestriction>
+				<!-- ==========[Biotech - Genes]========== -->
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
+				</blackGeneList>
+				<blackGeneTags>
+					<li>SkinColor</li>
+					<li>HairColor</li>
+					<li>Ears</li>
+					<li>Head</li>
+					<li>Headbone</li>
+					<li>SkinColorOverride</li>
+					<li>Fur</li>
+				</blackGeneTags>
+				<blackEndoCategories>
+					<li>Melanin</li>
+					<li>HairColor</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Ears</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Headbone</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Head</li>
+				</blackEndoCategories>
+			</raceRestriction>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
 </Defs>
