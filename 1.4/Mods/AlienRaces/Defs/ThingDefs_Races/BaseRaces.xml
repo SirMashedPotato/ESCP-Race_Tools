@@ -33,20 +33,38 @@
 				<blackGeneTags>
 					<li>SkinColor</li>
 					<li>HairColor</li>
+					<li>EyeColor</li>
+					<li>BodyType</li>
 					<li>Ears</li>
+					<li>Nose</li>
+					<li>Jaw</li>
 					<li>Head</li>
 					<li>Headbone</li>
+					<li>HairStyle</li>
+					<li>BeardStyle</li>
 					<li>SkinColorOverride</li>
 					<li>Fur</li>
+					<li>Tail</li>
+					<li>AG_Bodies</li>
+					<li>Bodies</li>
+					<li>Body</li>
 				</blackGeneTags>
 				<blackEndoCategories>
 					<li>Melanin</li>
 					<li>HairColor</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Ears</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Nose</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Headbone</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Head</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">BodyType</li>
 				</blackEndoCategories>
+				<!-- ==========[Biotech - Xenotypes]========== -->
+				<whiteXenotypeList IgnoreIfNoMatchingField="True">
+					<li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
+				</whiteXenotypeList>
+				<onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
 			</raceRestriction>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
