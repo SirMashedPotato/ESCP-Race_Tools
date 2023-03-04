@@ -329,4 +329,153 @@
 			</li>
 		</fixedDeityNameTypes>
 	</MemeDef>
+	<!-- ========== [ESCP_Structure_OriginDaedricCult] ========== -->
+	<MemeDef>
+		<defName>ESCP_Structure_OriginDaedricCult</defName>
+		<label>Daedric Cult origin</label>
+		<description>This is a variant of the abstract theist structure. This ideoligion focuses on the worship of one of the many Daedric Princes. Many Daedric cults have existed, each one having their own distinct precepts.</description>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.IdeoOrginProperties">
+				<overrideDeityIcons>true</overrideDeityIcons>
+				<iconPath>
+					<li>UI/Deities/ESCP_DeityAzura</li>
+					<li>UI/Deities/ESCP_DeityBoethiah</li>
+					<li>UI/Deities/ESCP_DeityClavicusVile</li>
+					<li>UI/Deities/ESCP_DeityHermaeusMora</li>
+					<li>UI/Deities/ESCP_DeityHircine</li>
+					<li>UI/Deities/ESCP_DeityJyggalag</li>
+					<li>UI/Deities/ESCP_DeityMalacath</li>
+					<li>UI/Deities/ESCP_DeityMehrunesDagon</li>
+					<li>UI/Deities/ESCP_DeityMephala</li>
+					<li>UI/Deities/ESCP_DeityMeridia</li>
+					<li>UI/Deities/ESCP_DeityMolagBal</li>
+					<li>UI/Deities/ESCP_DeityNamira</li>
+					<li>UI/Deities/ESCP_DeityNocturnal</li>
+					<li>UI/Deities/ESCP_DeityPeryite</li>
+					<li>UI/Deities/ESCP_DeitySanguine</li>
+					<li>UI/Deities/ESCP_DeitySheogorath</li>
+					<li>UI/Deities/ESCP_DeityVaermina</li>
+				</iconPath>
+			</li>
+		</modExtensions>
+		<iconPath>UI/Structures/ESCP_OriginDaedricCult</iconPath>
+		<deityCount>1</deityCount>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<worshipRoomLabel>temple</worshipRoomLabel>
+		<category>Structure</category>
+		<impact>0</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeCreed->sect</li>
+				<li>memeCreed->cult</li>
+				<li>memeCreed->temple</li>
+				<li>memeCreed->faith</li>
+				<li>memeLeaderNoun->patriarch</li>
+				<li>memeLeaderAdjective->chosen</li>
+				<li>memeLeaderAdjective->divine</li>
+				<li>memeLeaderAdjective->blessed</li>
+				<li>memeMoralist->priest</li>
+				<li>memeMoralist->cleric</li>
+				<li>memeMoralist->preacher</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>TheistMyth</def>
+				</li>
+				<li>
+					<def>TheistFounder</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_theist</key>
+					<value>true</value>
+				</li>
+				<li>
+					<key>ESCP_Structure_OriginDaedricCult</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<adjective>Acolyte</adjective>
+				<member>Acolyte</member>
+				<prefix>true</prefix>
+			</li>
+		</symbolPacks>
+		<fixedDeityNameTypes>
+			<li>
+				<name>Azura</name>
+				<type>Prince of Twilight</type>
+			</li>
+			<li>
+				<name>Boethiah</name>
+				<type>Prince of Plots</type>
+			</li>
+			<li>
+				<name>Clavicus Vile</name>
+				<type>Prince of Trickery</type>
+			</li>
+			<li>
+				<name>Hermaeus Mora</name>
+				<type>Prince of Fate</type>
+			</li>
+			<li>
+				<name>Hircine</name>
+				<type>Prince of the Hunt</type>
+			</li>
+			<li>
+				<name>Jyggalag</name>
+				<type>Prince of Order</type>
+			</li>
+			<li>
+				<name>Malacath</name>
+				<type>Prince of Outcasts</type>
+			</li>
+			<li>
+				<name>Mehrunes Dagon</name>
+				<type>Prince of Ambition</type>
+			</li>
+			<li>
+				<name>Mephala</name>
+				<type>Prince of Murder</type>
+			</li>
+			<li>
+				<name>Meridia</name>
+				<type>Prince of Life</type>
+			</li>
+			<li>
+				<name>Molag Bal</name>
+				<type>Prince of Domination</type>
+			</li>
+			<li>
+				<name>Namira</name>
+				<type>Prince of Decay</type>
+			</li>
+			<li>
+				<name>Nocturnal</name>
+				<type>Prince of Shadows</type>
+			</li>
+			<li>
+				<name>Peryite</name>
+				<type>Prince of Pestilence</type>
+			</li>
+			<li>
+				<name>Sanguine</name>
+				<type>Prince of Lust</type>
+			</li>
+			<li>
+				<name>Sheogorath</name>
+				<type>Prince of Madness</type>
+			</li>
+			<li>
+				<name>Vaermina</name>
+				<type>Prince of Dreams</type>
+			</li>
+		</fixedDeityNameTypes>
+	</MemeDef>
 </Defs>

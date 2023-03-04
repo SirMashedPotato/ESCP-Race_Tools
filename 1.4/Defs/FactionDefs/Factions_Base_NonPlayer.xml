@@ -15,10 +15,8 @@
 		</baseTraderKinds>
 		<allowedCultures Inherit="False"/>
 		<structureMemeWeights Inherit="False">
-			<Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">2</Structure_Animist>
-			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">3</Structure_TheistEmbodied>
-			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">3</Structure_TheistAbstract>
 			<ESCP_Structure_OriginLorkhanCult MayRequire="Ludeon.RimWorld.Ideology">1</ESCP_Structure_OriginLorkhanCult>
+			<ESCP_Structure_OriginDaedricCult MayRequire="Ludeon.RimWorld.Ideology">1</ESCP_Structure_OriginDaedricCult>
 		</structureMemeWeights>
 		<disallowedMemes Inherit="False"/>
 		<xenotypeSet>
