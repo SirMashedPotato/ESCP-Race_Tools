@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<!-- Stat offsets -->
+	<ESCP_BirthSigns_StatsReport_ScaledStatOffset>Offset from birthsign</ESCP_BirthSigns_StatsReport_ScaledStatOffset>
+	<ESCP_BirthSigns_StatsReport_NegatedApprenticeBonus>Negated bonus from The Apprentice</ESCP_BirthSigns_StatsReport_NegatedApprenticeBonus>
+	<!-- HediffComp tip strings -->
+	<ESCP_BirthSigns_TipString_DissipateNeuralHeat> - Dissipate neural heat: {0} damage</ESCP_BirthSigns_TipString_DissipateNeuralHeat>
+	<ESCP_BirthSigns_TipString_ScaledStatOffset> - {0}: +{1} {2}</ESCP_BirthSigns_TipString_ScaledStatOffset>
+	<!-- Ability tip strings -->
+	<ESCP_BirthSigns_TipString_AbilityDamage>Inflicts {0} points of {1} damage</ESCP_BirthSigns_TipString_AbilityDamage>
+	<ESCP_BirthSigns_TipString_AbilityDamageSelf>Inflicts {0} points of {1} damage to caster</ESCP_BirthSigns_TipString_AbilityDamageSelf>
+	<ESCP_BirthSigns_TipString_FatigueAmount>Fatigues caster by {0}</ESCP_BirthSigns_TipString_FatigueAmount>
+	<ESCP_BirthSigns_TipString_FatigueDisabled>Disabled due to fatigue levels.</ESCP_BirthSigns_TipString_FatigueDisabled>
+	<ESCP_BirthSigns_TipString_AbilityDurationSelf>Effect duration on self: {0}s</ESCP_BirthSigns_TipString_AbilityDurationSelf>
+</LanguageData>

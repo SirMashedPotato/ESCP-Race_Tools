@@ -15,9 +15,7 @@
 	<ESCP_EnterBeserkRageCooldown>This pawn is either already in, or recovering from, a beserker rage.</ESCP_EnterBeserkRageCooldown>
 	
 	<ESCP_IsDamaged>Cannot transform as the building is damaged</ESCP_IsDamaged>
-	
-	<ESCP_StuffKnowledgeNotification>{0} has created a {1} of higher quality due to their knowledge</ESCP_StuffKnowledgeNotification>
-	
+		
 	<!-- quadrums -->
 	<ESCP_QuadrumAprimay>Rain's Seed</ESCP_QuadrumAprimay>
 	<ESCP_QuadrumJugust>Sun's Seed</ESCP_QuadrumJugust>
@@ -42,11 +40,12 @@
 	<ESCP_OrsimerName_Gor>gor</ESCP_OrsimerName_Gor>
 	<ESCP_OrsimerName_Gro>gro</ESCP_OrsimerName_Gro>
 	<ESCP_OrsimerName_Gra>gra</ESCP_OrsimerName_Gra>
-	
-		
+
 	<!-- Scenario related -->
 	<ESCP_RandomFaction>Random faction</ESCP_RandomFaction>
 	<ESCP_CorpseFrom>Corpse from </ESCP_CorpseFrom>
 	
+	<!-- Misc -->
+	<ESCP_ApparelRestriction_CantWear>{0} are unable to wear {1}</ESCP_ApparelRestriction_CantWear>
 	
 </LanguageData>

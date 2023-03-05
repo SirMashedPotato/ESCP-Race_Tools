@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========== [ESCP_BaseRace_Mer] ========== -->
+	<AlienRace.ThingDef_AlienRace ParentName="ESCP_BaseRace" Name="ESCP_BaseRace_Mer" Abstract="True">
+		<statBases>
+			<MarketValue>1900</MarketValue>
+			<PsychicSensitivity>1.2</PsychicSensitivity>
+			<RoyalFavorValue>4</RoyalFavorValue>
+			<Fertility MayRequire="Ludeon.RimWorld.Biotech">0.5</Fertility>
+		</statBases>
+		<race>
+			<baseHealthScale>0.8</baseHealthScale>
+			<litterSizeCurve Inherit="False">
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0.01)</li>
+					<li>(2.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+		</race>
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<headTypes Inherit="False"/>
+					<bodyAddons>
+						<!-- ========== [Ear right] ========== -->
+						<li>
+							<path>Things/Pawn/Humanlike/ESCP_GenericMer/Ear/RightEar</path>
+							<colorChannel>skin</colorChannel>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>right ear</bodyPartLabel>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>false</inFrontOfBody>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+								<li>UpperHead</li>
+							</hiddenUnderApparelFor>
+							<offsets>
+								<north>
+									<layerOffset>-0.28</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.332</layerOffset>
+								</east>
+							</offsets>
+							<debug>false</debug>
+						</li>
+						<!-- ========== [Ear left] ========== -->
+						<li>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<path>Things/Pawn/Humanlike/ESCP_GenericMer/Ear/LeftEar</path>
+							<colorChannel>skin</colorChannel>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>left ear</bodyPartLabel>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>false</inFrontOfBody>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+								<li>UpperHead</li>
+							</hiddenUnderApparelFor>
+							<offsets>
+								<north>
+									<layerOffset>-0.28</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.332</layerOffset>
+								</east>
+							</offsets>
+							<debug>false</debug>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths Inherit="false">
+				<skinShader>Cutout</skinShader>
+			</graphicPaths>
+			<raceRestriction>
+				<!-- ==========[Biotech - Genes]========== -->
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_GeneInheritedBonus_Mer</li>
+					<!--
+					<li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
+					-->
+				</blackGeneList>
+				<blackGeneTags>
+					<li>SkinColor</li>
+					<li>HairColor</li>
+					<li>Ears</li>
+					<li>Head</li>
+					<li>Headbone</li>
+					<li>SkinColorOverride</li>
+					<li>Fur</li>
+				</blackGeneTags>
+				<blackEndoCategories>
+					<li>Melanin</li>
+					<li>HairColor</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Ears</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Headbone</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Head</li>
+				</blackEndoCategories>
+			</raceRestriction>
+			<compatibility>
+				<isFlesh>true</isFlesh>
+				<isSentient>true</isSentient>
+				<hasBlood>true</hasBlood>
+			</compatibility>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+	<!-- ========== [ESCP_BaseRace_TrueMer] ========== -->
+	<!-- Roughly live ~300 years, things changed to account for that -->
+	<AlienRace.ThingDef_AlienRace ParentName="ESCP_BaseRace_Mer" Name="ESCP_BaseRace_TrueMer" Abstract="True">
+		<modExtensions>
+			<li Class="ESCP_RaceTools.GreyHairPatchProps">
+				<minAgeForGreyHair>200</minAgeForGreyHair>
+			</li>
+		</modExtensions>
+		<race>
+			<lifeExpectancy>300</lifeExpectancy>
+			<ageGenerationCurve Inherit="False">
+				<points>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>
+					<!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li>
+					<!-- End exclude -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
+					<li>(14,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
+					<li>(16,100)</li>
+					<li>(50,100)</li>
+					<li>(80,30)</li>
+					<li>(100,18)</li>
+					<li>(150,10)</li>
+					<li>(200,3)</li>
+					<li>(300,0)</li>
+				</points>
+			</ageGenerationCurve>
+		</race>
+		<alienRace>
+			<generalSettings>
+				<immuneToAge>true</immuneToAge>
+				<alienPartGenerator>
+					<getsGreyAt IsNull="True"/>
+					<oldHairAgeRange>200~300</oldHairAgeRange>
+				</alienPartGenerator>
+				<reproduction>
+					<maleFertilityAgeFactor>
+						<points>
+							<li>(14, 0)</li>
+							<li>(18, 1)</li>
+							<li>(100, 1)</li>
+							<li>(150, 0)</li>
+						</points>
+					</maleFertilityAgeFactor>
+					<femaleFertilityAgeFactor>
+						<points>
+							<li>(14, 0)</li>
+							<li>(20, 1)</li>
+							<li>(28, 1)</li>
+							<li>(135, 0.5)</li>
+							<li>(140, 0.1)</li>
+							<li>(145, 0.02)</li>
+							<li>(150, 0)</li>
+						</points>
+					</femaleFertilityAgeFactor>
+				</reproduction>
+			</generalSettings>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+	<!-- ========== [ESCP_BaseRace_MerStandardHead] ========== -->
+	<AlienRace.ThingDef_AlienRace ParentName="ESCP_BaseRace_TrueMer" Name="ESCP_BaseRace_MerStandardHead" Abstract="True">
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<headTypes>
+						<li>ESCP_HeadMer_Female_Average_Normal</li>
+						<li>ESCP_HeadMer_Female_Average_Pointy</li>
+						<li>ESCP_HeadMer_Female_Average_Wide</li>
+						<li>ESCP_HeadMer_Female_Narrow_Normal</li>
+						<li>ESCP_HeadMer_Female_Narrow_Pointy</li>
+						<li>ESCP_HeadMer_Female_Narrow_Wide</li>
+						<li>ESCP_HeadMer_Male_Average_Normal</li>
+						<li>ESCP_HeadMer_Male_Average_Pointy</li>
+						<li>ESCP_HeadMer_Male_Average_Wide</li>
+						<li>ESCP_HeadMer_Male_Narrow_Normal</li>
+						<li>ESCP_HeadMer_Male_Narrow_Pointy</li>
+						<li>ESCP_HeadMer_Male_Narrow_Wide</li>
+					</headTypes>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+				<head>Things/Pawn/Humanlike/ESCP_GenericMer/Head/</head>
+			</graphicPaths>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+	<!-- ========== [ESCP_BaseRace_MerColouredEyes] ========== -->
+	<AlienRace.ThingDef_AlienRace ParentName="ESCP_BaseRace_TrueMer" Name="ESCP_BaseRace_MerColouredEyes" Abstract="True">
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<headTypes>
+						<li>ESCP_HeadMerColouredEyes_Female_Average_Normal</li>
+						<li>ESCP_HeadMerColouredEyes_Female_Average_Pointy</li>
+						<li>ESCP_HeadMerColouredEyes_Female_Average_Wide</li>
+						<li>ESCP_HeadMerColouredEyes_Female_Narrow_Normal</li>
+						<li>ESCP_HeadMerColouredEyes_Female_Narrow_Pointy</li>
+						<li>ESCP_HeadMerColouredEyes_Female_Narrow_Wide</li>
+						<li>ESCP_HeadMerColouredEyes_Male_Average_Normal</li>
+						<li>ESCP_HeadMerColouredEyes_Male_Average_Pointy</li>
+						<li>ESCP_HeadMerColouredEyes_Male_Average_Wide</li>
+						<li>ESCP_HeadMerColouredEyes_Male_Narrow_Normal</li>
+						<li>ESCP_HeadMerColouredEyes_Male_Narrow_Pointy</li>
+						<li>ESCP_HeadMerColouredEyes_Male_Narrow_Wide</li>
+					</headTypes>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+				<head>Things/Pawn/Humanlike/ESCP_MerWithEyes/Head/</head>
+			</graphicPaths>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+	<!-- ========== [ESCP_BaseRace_MerScaledColouredEyes] ========== -->
+	<AlienRace.ThingDef_AlienRace ParentName="ESCP_BaseRace_TrueMer" Name="ESCP_BaseRace_MerScaledColouredEyes" Abstract="True">
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<headTypes>
+						<li>ESCP_HeadMerScaledColouredEyes_Female_Average_Normal</li>
+						<li>ESCP_HeadMerScaledColouredEyes_Female_Average_Pointy</li>
+						<li>ESCP_HeadMerScaledColouredEyes_Female_Average_Wide</li>
+						<li>ESCP_HeadMerScaledColouredEyes_Female_Narrow_Normal</li>
+						<li>ESCP_HeadMerScaledColouredEyes_Female_Narrow_Pointy</li>
+						<li>ESCP_HeadMerScaledColouredEyes_Female_Narrow_Wide</li>
+						<li>ESCP_HeadMerScaledColouredEyes_Male_Average_Normal</li>
+						<li>ESCP_HeadMerScaledColouredEyes_Male_Average_Pointy</li>
+						<li>ESCP_HeadMerScaledColouredEyes_Male_Average_Wide</li>
+						<li>ESCP_HeadMerScaledColouredEyes_Male_Narrow_Normal</li>
+						<li>ESCP_HeadMerScaledColouredEyes_Male_Narrow_Pointy</li>
+						<li>ESCP_HeadMerScaledColouredEyes_Male_Narrow_Wide</li>
+					</headTypes>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+				<head>Things/Pawn/Humanlike/ESCP_ScaledMerWithEyes/Head/</head>
+			</graphicPaths>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+	<!-- ========== [ESCP_BaseRace_MerWideFace] ========== -->
+	<!-- Only used by Orsimer, and Orsimer derivatives -->
+	<AlienRace.ThingDef_AlienRace ParentName="ESCP_BaseRace_Mer" Name="ESCP_BaseRace_MerWideFace" Abstract="True">
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<headTypes>
+						<li>ESCP_HeadMerWideFace_Female_Average_Normal</li>
+						<li>ESCP_HeadMerWideFace_Female_Average_Pointy</li>
+						<li>ESCP_HeadMerWideFace_Female_Average_Wide</li>
+						<li>ESCP_HeadMerWideFace_Female_Narrow_Normal</li>
+						<li>ESCP_HeadMerWideFace_Female_Narrow_Pointy</li>
+						<li>ESCP_HeadMerWideFace_Female_Narrow_Wide</li>
+						<li>ESCP_HeadMerWideFace_Male_Average_Normal</li>
+						<li>ESCP_HeadMerWideFace_Male_Average_Pointy</li>
+						<li>ESCP_HeadMerWideFace_Male_Average_Wide</li>
+						<li>ESCP_HeadMerWideFace_Male_Narrow_Normal</li>
+						<li>ESCP_HeadMerWideFace_Male_Narrow_Pointy</li>
+						<li>ESCP_HeadMerWideFace_Male_Narrow_Wide</li>
+					</headTypes>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+				<head>Things/Pawn/Humanlike/ESCP_MerWideFace/Head/</head>
+			</graphicPaths>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

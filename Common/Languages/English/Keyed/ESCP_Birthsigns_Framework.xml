@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Info -->
+	<ESCP_Birthsigns_ActiveDetails_A>The currently active birthsign set is: &lt;color=#E5E54C&gt;{0}&lt;/color&gt;</ESCP_Birthsigns_ActiveDetails_A>
+	<ESCP_Birthsigns_ActiveDetails_B>Season based birthsigns:</ESCP_Birthsigns_ActiveDetails_B>
+	<ESCP_Birthsigns_ActiveDetails_C>Random non-season based birthsigns:</ESCP_Birthsigns_ActiveDetails_C>
+	<ESCP_Birthsigns_ActiveDetails_D>Chance any pawn has a random non-season based birthsign: &lt;color=#E5E54C&gt;{0}&lt;/color&gt;</ESCP_Birthsigns_ActiveDetails_D>
+	<ESCP_Birthsigns_ActiveDetails_E>Default chance a pawn has a birthsign: &lt;color=#E5E54C&gt;{0}&lt;/color&gt;</ESCP_Birthsigns_ActiveDetails_E>
+	<ESCP_Birthsigns_ActiveDetails_F>Quadrum name replacers:</ESCP_Birthsigns_ActiveDetails_F>
+	<!-- Settings -->
+	<ESCP_BirthsignsFramework_ModName>ESCP - Birthsigns Framework</ESCP_BirthsignsFramework_ModName>
+	
+	<ESCP_BirthSigns_ActiveSet>Active birthsign set</ESCP_BirthSigns_ActiveSet>
+	
+	<ESCP_BirthSigns_ChanceHasSign>The chance a pawn is generated with a birthsign</ESCP_BirthSigns_ChanceHasSign>
+	<ESCP_BirthSigns_DisableEntirely>Disable the birthsign system entirely</ESCP_BirthSigns_DisableEntirely>
+	<ESCP_BirthSigns_DisableCustomQuadrumNames>Disable custom quadrum names</ESCP_BirthSigns_DisableCustomQuadrumNames>
+	<ESCP_BirthSigns_DisableCustomQuadrumNames_Tooltip>This only has any affect if the birthsign set has custom quadrum names. Do note that changing this setting mid-game may not have an immediate affect.</ESCP_BirthSigns_DisableCustomQuadrumNames_Tooltip>
+	<ESCP_BirthSigns_AllowDisabledRaces>Enable all races receiving birthsigns</ESCP_BirthSigns_AllowDisabledRaces>
+	<ESCP_BirthSigns_AllowDisabledRaces_Tooltip>By default certain races will not receive them when pawns of these races are generated.\n\nThis affects:</ESCP_BirthSigns_AllowDisabledRaces_Tooltip>
+
+</LanguageData>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AchievementsExpanded.AchievementDef Name="ESCP_Achievement_Base" Abstract="True">
+		<bgtexPath>Achievements/ESCP_AchievementBackground</bgtexPath>
+		<tab>ESCP_AchievementsTab</tab>
+	</AchievementsExpanded.AchievementDef>
+</Defs>

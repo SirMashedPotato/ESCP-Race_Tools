@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_BladesAgent]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_BladesAgent</defName>
+		<title>blades agent</title>
+		<titleShort>agent</titleShort>
+		<baseDesc>[PAWN_nameDef] travelled far and wide, taking up a different profession in each town. In some towns [PAWN_pronoun] was a carpenter, in others a farmer, occasionally [PAWN_pronoun] would even join the local guild. [PAWN_nameDef], assuming that is [PAWN_possessive] real name, is actually an agent of the Emperor's Blades, whose sole purpose was to monitor the prophecies.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Shooting</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+		<maleCommonality>10</maleCommonality>
+		<femaleCommonality>10</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_BladesAgent]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_ArenaChampion</defName>
+		<title>arena champion</title>
+		<titleShort>champion</titleShort>
+		<baseDesc>Many have entered the pit in the arena in search of fame, fortune and glory. Many felt the same sinking feeling in their stomach when faced with the sight of [PAWN_nameDef], and usually felt absolutely nothing shortly after.</baseDesc>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>10</value>
+			</li>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<defName>Brawler</defName>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName>Tough</defName>
+				<chance>100</chance>
+			</li>
+		</forcedTraitsChance>
+		<forcedHediffs>
+			<li>ESCP_ViolentMeditationHediff</li>
+		</forcedHediffs>
+		<maleCommonality>5</maleCommonality>
+		<femaleCommonality>5</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+</Defs>
