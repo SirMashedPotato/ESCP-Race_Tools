@@ -85,27 +85,15 @@
 				<!-- ==========[Biotech - Genes]========== -->
 				<blackGeneList>
 					<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_GeneInheritedBonus_Mer</li>
-					<!--
-					<li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
-					-->
 				</blackGeneList>
 				<blackGeneTags>
 					<li>SkinColor</li>
 					<li>HairColor</li>
-					<li>Ears</li>
-					<li>Head</li>
-					<li>Headbone</li>
 					<li>SkinColorOverride</li>
-					<li>Fur</li>
 				</blackGeneTags>
 				<blackEndoCategories>
 					<li>Melanin</li>
 					<li>HairColor</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Ears</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Headbone</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Head</li>
 				</blackEndoCategories>
 			</raceRestriction>
 			<compatibility>
@@ -201,9 +189,6 @@
 					</headTypes>
 				</alienPartGenerator>
 			</generalSettings>
-			<graphicPaths>
-				<head>Things/Pawn/Humanlike/ESCP_GenericMer/Head/</head>
-			</graphicPaths>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
 	<!-- ========== [ESCP_BaseRace_MerColouredEyes] ========== -->
@@ -227,9 +212,6 @@
 					</headTypes>
 				</alienPartGenerator>
 			</generalSettings>
-			<graphicPaths>
-				<head>Things/Pawn/Humanlike/ESCP_MerWithEyes/Head/</head>
-			</graphicPaths>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
 	<!-- ========== [ESCP_BaseRace_MerScaledColouredEyes] ========== -->
@@ -253,9 +235,6 @@
 					</headTypes>
 				</alienPartGenerator>
 			</generalSettings>
-			<graphicPaths>
-				<head>Things/Pawn/Humanlike/ESCP_ScaledMerWithEyes/Head/</head>
-			</graphicPaths>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
 	<!-- ========== [ESCP_BaseRace_MerWideFace] ========== -->
@@ -280,9 +259,6 @@
 					</headTypes>
 				</alienPartGenerator>
 			</generalSettings>
-			<graphicPaths>
-				<head>Things/Pawn/Humanlike/ESCP_MerWideFace/Head/</head>
-			</graphicPaths>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
 </Defs>
