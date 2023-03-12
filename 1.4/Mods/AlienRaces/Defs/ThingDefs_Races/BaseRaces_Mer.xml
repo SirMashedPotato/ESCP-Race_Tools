@@ -214,6 +214,29 @@
 			</generalSettings>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
+		<!-- ========== [ESCP_BaseRace_MerScaled] ========== -->
+	<AlienRace.ThingDef_AlienRace ParentName="ESCP_BaseRace_TrueMer" Name="ESCP_BaseRace_MerScaled" Abstract="True">
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<headTypes>
+						<li>ESCP_HeadMerScaled_Female_Average_Normal</li>
+						<li>ESCP_HeadMerScaled_Female_Average_Pointy</li>
+						<li>ESCP_HeadMerScaled_Female_Average_Wide</li>
+						<li>ESCP_HeadMerScaled_Female_Narrow_Normal</li>
+						<li>ESCP_HeadMerScaled_Female_Narrow_Pointy</li>
+						<li>ESCP_HeadMerScaled_Female_Narrow_Wide</li>
+						<li>ESCP_HeadMerScaled_Male_Average_Normal</li>
+						<li>ESCP_HeadMerScaled_Male_Average_Pointy</li>
+						<li>ESCP_HeadMerScaled_Male_Average_Wide</li>
+						<li>ESCP_HeadMerScaled_Male_Narrow_Normal</li>
+						<li>ESCP_HeadMerScaled_Male_Narrow_Pointy</li>
+						<li>ESCP_HeadMerScaled_Male_Narrow_Wide</li>
+					</headTypes>
+				</alienPartGenerator>
+			</generalSettings>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
 	<!-- ========== [ESCP_BaseRace_MerScaledColouredEyes] ========== -->
 	<AlienRace.ThingDef_AlienRace ParentName="ESCP_BaseRace_TrueMer" Name="ESCP_BaseRace_MerScaledColouredEyes" Abstract="True">
 		<alienRace>
