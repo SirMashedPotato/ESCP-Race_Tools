@@ -3,7 +3,7 @@ using Verse;
 
 namespace ESCP_RaceTools
 {
-	class GoodWillWorker_UniversalFactionTagCompatibility : GoodwillSituationWorker
+	public class GoodWillWorker_UniversalFactionTagCompatibility : GoodwillSituationWorker
 	{
 		public override string GetPostProcessedLabel(Faction other)
 		{

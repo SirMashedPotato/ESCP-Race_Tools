@@ -6,7 +6,7 @@ namespace ESCP_RaceTools
 	/// <summary>
 	/// Roughly the same, but checks if Tag A is present, and Tag B isn't
 	/// </summary>
-	class GoodWillWorker_UniversalFactionTagCompatibility_Inverted : GoodwillSituationWorker
+	public class GoodWillWorker_UniversalFactionTagCompatibility_Inverted : GoodwillSituationWorker
 	{
 		public override string GetPostProcessedLabel(Faction other)
 		{
@@ -34,23 +34,17 @@ namespace ESCP_RaceTools
 				return false;
 			}
 			FactionGoodwillProperties tagProps = FactionGoodwillProperties.Get(def);
-			if (tagProps == null || tagProps.FactionTagA == null || tagProps.FactionTagB == null)
+			if (tagProps == null || tagProps.FactionTagA == null || tagProps.preceptDef == null)
 			{
 				return false;
 			}
 			FactionProperties propsA = FactionProperties.Get(a.def);
-			if (propsA == null || propsA.factionTags.NullOrEmpty())
+			FactionProperties propsB = FactionProperties.Get(b.def);
+			if (propsA == null || propsA.factionTags.NullOrEmpty() || propsB == null || propsB.factionTags.NullOrEmpty())
 			{
 				return false;
 			}
-            if (propsA.factionTags.Contains(tagProps.FactionTagA))
-            {
-				if (b.ideos.PrimaryIdeo.PreceptsListForReading.Find(x => x.def == tagProps.preceptDef) != null)
-                {
-					return true;
-                }
-            }
-			return false;
+			return propsA.factionTags.Contains(tagProps.FactionTagA) && propsB.factionTags.Contains(tagProps.FactionTagB);
 		}
 	}
 }

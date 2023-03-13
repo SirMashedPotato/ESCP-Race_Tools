@@ -31,17 +31,23 @@ namespace ESCP_RaceTools
 				return false;
 			}
 			FactionGoodwillProperties tagProps = FactionGoodwillProperties.Get(def);
-			if (tagProps == null || tagProps.FactionTagA == null || tagProps.preceptDef == null)
+			if (tagProps == null || tagProps.FactionTagA == null || tagProps.FactionTagB == null)
 			{
 				return false;
 			}
 			FactionProperties propsA = FactionProperties.Get(a.def);
-			FactionProperties propsB = FactionProperties.Get(b.def);
-			if (propsA == null || propsA.factionTags.NullOrEmpty() || propsB == null || propsB.factionTags.NullOrEmpty())
+			if (propsA == null || propsA.factionTags.NullOrEmpty())
 			{
 				return false;
 			}
-			return propsA.factionTags.Contains(tagProps.FactionTagA) && propsB.factionTags.Contains(tagProps.FactionTagB);
+			if (propsA.factionTags.Contains(tagProps.FactionTagA))
+			{
+				if (b.ideos.PrimaryIdeo.PreceptsListForReading.Find(x => x.def == tagProps.preceptDef) != null)
+				{
+					return true;
+				}
+			}
+			return false;
 		}
 	}
 }
