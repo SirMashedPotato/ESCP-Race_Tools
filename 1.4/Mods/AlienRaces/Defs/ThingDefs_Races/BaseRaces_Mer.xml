@@ -87,9 +87,7 @@
 					<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_GeneInheritedBonus_Mer</li>
 				</blackGeneList>
 				<blackGeneTags>
-					<li>SkinColor</li>
 					<li>HairColor</li>
-					<li>SkinColorOverride</li>
 				</blackGeneTags>
 				<blackEndoCategories>
 					<li>Melanin</li>
