@@ -85,7 +85,6 @@
     <Compile Include="DeathActionWorker\DeathActionWorker_HistoryEventOnDeath.cs" />
     <Compile Include="DefModExtensions\BeastMaster.cs" />
     <Compile Include="DefModExtensions\FactionGoodwillProperties.cs" />
-    <Compile Include="DefModExtensions\GreyHairPatchProps.cs" />
     <Compile Include="Harmony\CanEquipPatch.cs" />
     <Compile Include="Harmony\FoodPoisoningResistancePatch.cs" />
     <Compile Include="DefModExtensions\IdeoCultureProperties.cs" />
@@ -101,7 +100,6 @@
     <Compile Include="DefOf\DutyDefOf.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />
     <Compile Include="DefOf\ThoughtDefOf.cs" />
-    <Compile Include="Harmony\GreyHairPatch.cs" />
     <Compile Include="Harmony\HeatstrokeSwitchPatch.cs" />
     <Compile Include="Harmony\HypothermiaSwitchPatch.cs" />
     <Compile Include="Harmony\PawnGeneratorPatch.cs" />

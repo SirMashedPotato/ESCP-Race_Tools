@@ -104,11 +104,6 @@
 	<!-- ========== [ESCP_BaseRace_TrueMer] ========== -->
 	<!-- Roughly live ~300 years, things changed to account for that -->
 	<AlienRace.ThingDef_AlienRace ParentName="ESCP_BaseRace_Mer" Name="ESCP_BaseRace_TrueMer" Abstract="True">
-		<modExtensions>
-			<li Class="ESCP_RaceTools.GreyHairPatchProps">
-				<minAgeForGreyHair>200</minAgeForGreyHair>
-			</li>
-		</modExtensions>
 		<race>
 			<lifeExpectancy>300</lifeExpectancy>
 			<ageGenerationCurve Inherit="False">
