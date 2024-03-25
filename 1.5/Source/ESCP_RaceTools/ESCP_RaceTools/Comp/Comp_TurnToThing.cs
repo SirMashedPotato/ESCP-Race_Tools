@@ -33,7 +33,7 @@ namespace ESCP_RaceTools
 						defaultLabel = Props.label,
 						defaultDesc = Props.desc,
 						icon = ContentFinder<Texture2D>.Get(Props.texPath, true),
-						disabled = Disabled(building, Props.requiresFullHealth),
+						Disabled = Disabled(building, Props.requiresFullHealth),
 						disabledReason = "ESCP_IsDamaged".Translate(),
 						action = delegate ()
 						{

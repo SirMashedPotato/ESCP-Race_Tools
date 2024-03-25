@@ -12,7 +12,7 @@ namespace ESCP_RaceTools
                 HediffDef.Named("ESCP_DunmerAncestralHealing")
         };
 
-        public override void Apply(Dictionary<Pawn, int> totalPresence, LordJob_Ritual jobRitual, OutcomeChance outcome, out string extraOutcomeDesc, ref LookTargets letterLookTargets)
+        public override void Apply(Dictionary<Pawn, int> totalPresence, LordJob_Ritual jobRitual, RitualOutcomePossibility outcome, out string extraOutcomeDesc, ref LookTargets letterLookTargets)
         {
             int duration = ESCP_AbilityUtility.GetAncestorGiftDuration(jobRitual.PawnWithRole("ESCP_DunmerSpeaker").GetStatValue(StatDefOf.PsychicSensitivity), GetMaxDuration(outcome, jobRitual)).SecondsToTicks();
             foreach(Pawn p in totalPresence.Keys)
@@ -36,8 +36,7 @@ namespace ESCP_RaceTools
             extraOutcomeDesc = def.letterInfoText + ESCP_AbilityUtility.GetAncestorGiftDuration_Display(duration) + ".";
         }
 
-
-        public float GetMaxDuration(OutcomeChance outcome, LordJob_Ritual jobRitual)
+        public float GetMaxDuration(RitualOutcomePossibility outcome, LordJob_Ritual jobRitual)
         {
             return outcome.BestPositiveOutcome(jobRitual) ? 5000f : 3000f;
         }

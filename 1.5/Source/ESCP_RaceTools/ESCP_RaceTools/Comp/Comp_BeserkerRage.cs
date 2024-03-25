@@ -43,7 +43,7 @@ namespace ESCP_RaceTools
 						defaultLabel = "ESCP_EnterBeserkRage".Translate(),
 						defaultDesc = "ESCP_EnterBeserkRageTooltip".Translate(),
 						icon = ContentFinder<Texture2D>.Get("UI/Gizmos/ESCP_BeserkerRage", true),
-						disabled = !CheckRage(pawn),
+						Disabled = !CheckRage(pawn),
 						disabledReason = "ESCP_EnterBeserkRageCooldown".Translate(),
 						action = delegate ()
 						{

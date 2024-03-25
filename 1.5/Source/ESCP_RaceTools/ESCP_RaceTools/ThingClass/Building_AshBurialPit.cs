@@ -5,9 +5,12 @@ namespace ESCP_RaceTools
 {
     public class Building_AshBurialPit : Building_Grave
     {
-        public override void Notify_CorpseBuried(Pawn worker)
+        /// <summary>
+        /// Used to override Notify_CorpseBuried(Pawn worker)
+        /// </summary>
+        public override void Notify_HauledTo(Pawn hauler, Thing thing, int count)
         {
-            base.Notify_CorpseBuried(worker);
+            base.Notify_HauledTo(hauler, thing, count);
 
             if (Corpse != null && Corpse.InnerPawn.RaceProps.IsFlesh)
             {

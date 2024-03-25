@@ -22,7 +22,7 @@ namespace ESCP_Birthsigns_Abilities
 				float healedAmount = 0;
 				while(healedAmount <= Props.totalSeverityToHeal)
                 {
-					Hediff h = p.health.hediffSet.GetInjuriesTendable().RandomElement();
+					Hediff h = p.health.hediffSet.GetHediffsTendable().RandomElement();
                     if (h != null)
                     {
 						h.Severity -= Props.healSeveriyty;

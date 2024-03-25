@@ -1,13 +1,13 @@
 ﻿using Verse;
 using RimWorld;
 using System.Collections.Generic;
+using Verse.AI.Group;
 
 namespace ESCP_RaceTools
 {
-    //TODO, move this to a Harmony patch
     public class DeathActionWorker_HistoryEventOnDeath : DeathActionWorker
     {
-        public override void PawnDied(Corpse corpse)
+        public override void PawnDied(Corpse corpse, Lord prevLord)
         {
             if (corpse !=  null && corpse.InnerPawn != null && corpse.Map != null)
             {
