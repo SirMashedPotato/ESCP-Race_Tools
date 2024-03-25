@@ -10,14 +10,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Artistic</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Intellectual</key>
-				<value>3</value>
-			</li>
+			<Artistic>4</Artistic>
+			<Intellectual>3</Intellectual>
 		</skillGains>
 		<workDisables>
 			<li>ManualSkilled</li>
@@ -31,14 +25,8 @@
 		<baseDesc>[PAWN_nameDef] was incredibly skilled with [PAWN_possessive] words, and wrote many books that could often be found in someones private library. These books were almost never found  in the residence of some common peasant, as they were needlessly expensive, and somewhat boring. But the nobles liked [PAWN_nameDef]'s work, or at least liked displaying it.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Artistic</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Intellectual</key>
-				<value>4</value>
-			</li>
+			<Artistic>3</Artistic>
+			<Intellectual>4</Intellectual>
 		</skillGains>
 		<workDisables>
 			<li>ManualDumb</li>
@@ -52,14 +40,8 @@
 		<baseDesc>As a relatively skilled bard, [PAWN_nameDef] would usually be found in a high class establishment, singing the favourite songs of the locals. Annoyingly, this was usually the same three songs. This always disappointed [PAWN_nameDef], as no one ever wanted to hear the songs [PAWN_pronoun] [PAWN_objective]self had carefully constructed.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Artistic</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>3</value>
-			</li>
+			<Artistic>4</Artistic>
+			<Social>3</Social>
 		</skillGains>
 		<workDisables>
 			<li>ManualSkilled</li>
@@ -74,14 +56,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Artistic</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>4</value>
-			</li>
+			<Artistic>3</Artistic>
+			<Social>4</Social>
 		</skillGains>
 		<workDisables>
 			<li>ManualDumb</li>
@@ -96,14 +72,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Artistic</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Construction</key>
-				<value>3</value>
-			</li>
+			<Artistic>4</Artistic>
+			<Construction>3</Construction>
 		</skillGains>
 		<workDisables>
 			<li>Animals</li>
@@ -118,14 +88,8 @@
 		<baseDesc>[PAWN_nameDef] was well known for [PAWN_possessive] skill with a paint brush, and was often commissioned to paint portraits of noble families. No one else would ask for [PAWN_nameDef], partly due to the costly prices, but mostly due to [PAWN_nameDef] being extremely 'eccentric'.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Artistic</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Crafting</key>
-				<value>3</value>
-			</li>
+			<Artistic>4</Artistic>
+			<Crafting>3</Crafting>
 		</skillGains>
 		<workDisables>
 			<li>Cooking</li>
@@ -141,14 +105,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Artistic</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Construction</key>
-				<value>4</value>
-			</li>
+			<Artistic>3</Artistic>
+			<Construction>4</Construction>
 		</skillGains>
 		<workDisables>
 			<li>PlantWork</li>
@@ -163,14 +121,8 @@
 		<baseDesc>[PAWN_nameDef] had turned arranging flowers into an art form. Many of the displays in noble houses were created by [PAWN_objective]. Of course the nobles kept coming back for replacements, so [PAWN_nameDef] was never out of work.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Artistic</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Plants</key>
-				<value>3</value>
-			</li>
+			<Artistic>4</Artistic>
+			<Plants>3</Plants>
 		</skillGains>
 		<workDisables>
 			<li>Animals</li>
@@ -186,14 +138,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Artistic</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Plants</key>
-				<value>4</value>
-			</li>
+			<Artistic>3</Artistic>
+			<Plants>4</Plants>
 		</skillGains>
 		<workDisables>
 			<li>Hunting</li>
@@ -208,14 +154,8 @@
 		<baseDesc>Once a well known chef, [PAWN_nameDef] had served many nobles exquisite, and very expensive, dishes. While the meals were a sight to look at, most would be hard pressed to tell them apart from 'lesser' dishes based purely on taste. Of course the name [PAWN_nameDef] was enough by itself, and nobles kept coming back for [PAWN_possessive] meals.</baseDesc>
 		<bodyTypeGlobal>Fat</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Artistic</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Cooking</key>
-				<value>3</value>
-			</li>
+			<Artistic>4</Artistic>
+			<Cooking>3</Cooking>
 		</skillGains>
 		<workDisables>
 			<li>Constructing</li>
@@ -230,14 +170,8 @@
 		<baseDesc>[PAWN_nameDef] once owned a rather well known, and obscenely expensive, bakery. While [PAWN_possessive] works were well known by those that could afford them, [PAWN_possessive] special sweetrolls were considered by many to be perfection. A work of art that [PAWN_nameDef] had spent untold moons refining.</baseDesc>
 		<bodyTypeGlobal>Fat</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Artistic</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Cooking</key>
-				<value>4</value>
-			</li>
+			<Artistic>3</Artistic>
+			<Cooking>4</Cooking>
 		</skillGains>
 		<workDisables>
 			<li>Constructing</li>
@@ -253,14 +187,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Artistic</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Crafting</key>
-				<value>4</value>
-			</li>
+			<Artistic>3</Artistic>
+			<Crafting>4</Crafting>
 		</skillGains>
 		<workDisables>
 			<li>Animals</li>

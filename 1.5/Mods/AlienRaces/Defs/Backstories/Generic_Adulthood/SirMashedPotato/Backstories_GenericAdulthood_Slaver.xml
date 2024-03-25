@@ -8,14 +8,8 @@
 		<baseDesc>[PAWN_nameDef] kept slaves and prisoners of war in-check. Most never even dared to attempt escape under [PAWN_possessive]'s watch. Those that were stupid enough to try weren't going to make it far.</baseDesc>
 		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Melee</key>
-				<value>5</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>3</value>
-			</li>
+			<Melee>5</Melee>
+			<Social>3</Social>
 		</skillGains>
 		<workDisables>
 			<li>PlantWork</li>
@@ -34,18 +28,9 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Cooking</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Medicine</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>2</value>
-			</li>
+			<Cooking>2</Cooking>
+			<Medicine>2</Medicine>
+			<Social>2</Social>
 		</skillGains>
 		<workDisables>
 			<li>PlantWork</li>

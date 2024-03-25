@@ -53,8 +53,8 @@ namespace ESCP_Birthsigns
             listing_Standard.CheckboxLabeled("ESCP_BirthSigns_DisableCustomQuadrumNames".Translate(), ref settings.ESCP_BirthSigns_DisableCustomQuadrumNames, "ESCP_BirthSigns_DisableCustomQuadrumNames_Tooltip".Translate());
             listing_Standard.Gap();
 
-            listing_Standard.CheckboxLabeled("ESCP_BirthSigns_AllowDisabledRaces".Translate(), ref settings.ESCP_BirthSigns_AllowDisabledRaces, 
-                "ESCP_BirthSigns_AllowDisabledRaces_Tooltip".Translate() + OnStartup.DisabledRaces);
+            listing_Standard.CheckboxLabeled("ESCP_BirthSigns_AllowDisabledRaces".Translate(), ref settings.ESCP_BirthSigns_AllowDisabledRaces,
+                "ESCP_BirthSigns_AllowDisabledRacesAndXenos_Tooltip".Translate(OnStartup.DisabledRaces, OnStartup.DisabledXenotypes));
             listing_Standard.Gap();
 
             listing_Standard.GapLine();

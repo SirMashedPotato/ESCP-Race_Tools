@@ -9,22 +9,10 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Intellectual</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Shooting</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>4</value>
-			</li>
+			<Intellectual>4</Intellectual>
+			<Melee>4</Melee>
+			<Shooting>4</Shooting>
+			<Social>4</Social>
 		</skillGains>
 		<maleCommonality>10</maleCommonality>
 		<femaleCommonality>10</femaleCommonality>
@@ -37,10 +25,7 @@
 		<baseDesc>Many have entered the pit in the arena in search of fame, fortune and glory. Many felt the same sinking feeling in their stomach when faced with the sight of [PAWN_nameDef], and usually felt absolutely nothing shortly after.</baseDesc>
 		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Melee</key>
-				<value>10</value>
-			</li>
+			<Melee>10</Melee>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>

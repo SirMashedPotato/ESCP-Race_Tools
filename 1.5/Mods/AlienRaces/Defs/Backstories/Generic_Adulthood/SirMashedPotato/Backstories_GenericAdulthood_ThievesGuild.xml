@@ -8,14 +8,8 @@
 		<baseDesc>While not exactly a member of the Thieves Guild, [PAWN_nameDef] did know someone who knew someone, and ensured that someone got plentiful information on potential hauls, all for a generous cut of course.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Intellectual</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>3</value>
-			</li>
+			<Intellectual>3</Intellectual>
+			<Social>3</Social>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -34,14 +28,8 @@
 		<baseDesc>While [PAWN_nameDef] may have owned a reasonably well known trade house, [PAWN_pronoun] actually made most of [PAWN_possessive] money selling stolen items for the local Thieves Guild.</baseDesc>
 		<bodyTypeGlobal>Fat</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Intellectual</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>4</value>
-			</li>
+			<Intellectual>2</Intellectual>
+			<Social>4</Social>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -61,14 +49,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Intellectual</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>2</value>
-			</li>
+			<Intellectual>4</Intellectual>
+			<Social>2</Social>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>

@@ -19,5 +19,6 @@
 	<ESCP_BirthSigns_DisableCustomQuadrumNames_Tooltip>This only has any affect if the birthsign set has custom quadrum names. Do note that changing this setting mid-game may not have an immediate affect.</ESCP_BirthSigns_DisableCustomQuadrumNames_Tooltip>
 	<ESCP_BirthSigns_AllowDisabledRaces>Enable all races receiving birthsigns</ESCP_BirthSigns_AllowDisabledRaces>
 	<ESCP_BirthSigns_AllowDisabledRaces_Tooltip>By default certain races will not receive them when pawns of these races are generated.\n\nThis affects:</ESCP_BirthSigns_AllowDisabledRaces_Tooltip>
+	<ESCP_BirthSigns_AllowDisabledRacesAndXenos_Tooltip>By default certain races or xenotypes will not receive them when pawns of these races are generated.\n\nRaces affected: {0}\n\nXenotypes affected: {1}</ESCP_BirthSigns_AllowDisabledRacesAndXenos_Tooltip>
 
 </LanguageData>

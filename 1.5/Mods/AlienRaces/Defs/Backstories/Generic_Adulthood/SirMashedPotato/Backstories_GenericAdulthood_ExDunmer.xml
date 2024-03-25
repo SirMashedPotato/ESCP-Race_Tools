@@ -9,18 +9,9 @@
 		<baseDesc>While [PAWN_nameDef] wasn't particularly good at working the fields, [PAWN_pronoun] was good at delegating work to others. Thanks to this gift, [PAWN_nameDef] eventually wound up owning the plantation [PAWN_pronoun] worked at, and promptly outlawed the use of slaves.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Intellectual</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Plants</key>
-				<value>-3</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>5</value>
-			</li>
+			<Intellectual>4</Intellectual>
+			<Plants>-3</Plants>
+			<Social>5</Social>
 		</skillGains>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_Rancher]========== -->
@@ -32,18 +23,9 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Animals</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Construction</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Crafting</key>
-				<value>2</value>
-			</li>
+			<Animals>3</Animals>
+			<Construction>2</Construction>
+			<Crafting>2</Crafting>
 		</skillGains>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_KwamaEggMiner]========== -->
@@ -55,18 +37,9 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Animals</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Construction</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Mining</key>
-				<value>2</value>
-			</li>
+			<Animals>2</Animals>
+			<Construction>2</Construction>
+			<Mining>2</Mining>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -88,14 +61,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Crafting</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Mining</key>
-				<value>4</value>
-			</li>
+			<Crafting>3</Crafting>
+			<Mining>4</Mining>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -116,14 +83,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Mining</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>4</value>
-			</li>
+			<Mining>3</Mining>
+			<Social>4</Social>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -146,22 +107,10 @@
 		</spawnCategories>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Crafting</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Intellectual</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Medicine</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>2</value>
-			</li>
+			<Crafting>2</Crafting>
+			<Intellectual>2</Intellectual>
+			<Medicine>2</Medicine>
+			<Social>2</Social>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -196,14 +145,8 @@
 		<baseDesc>One day [PAWN_nameDef] woke up and decided that [PAWN_pronoun] would train pack rats. Over [PAWN_possessive] years working in this emerging industry, [PAWN_pronoun] made a surprising amount of gold. Turns out rats are rather easy to train, and even easier to breed. And when times were tough, [PAWN_nameDef] always had something to eat.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Animals</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Cooking</key>
-				<value>3</value>
-			</li>
+			<Animals>3</Animals>
+			<Cooking>3</Cooking>
 		</skillGains>
 		<maleCommonality>25</maleCommonality>
 		<femaleCommonality>25</femaleCommonality>
@@ -217,14 +160,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Crafting</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>3</value>
-			</li>
+			<Crafting>4</Crafting>
+			<Melee>3</Melee>
 		</skillGains>
 		<workDisables>
 			<li>Animals</li>
@@ -240,18 +177,9 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Animals</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Medicine</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Shooting</key>
-				<value>3</value>
-			</li>
+			<Animals>2</Animals>
+			<Medicine>2</Medicine>
+			<Shooting>3</Shooting>
 		</skillGains>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_SlaugherfishEradicatorAlt]========== -->
@@ -263,18 +191,9 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Animals</key>
-				<value>1</value>
-			</li>
-			<li>
-				<key>Medicine</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>3</value>
-			</li>
+			<Animals>1</Animals>
+			<Medicine>3</Medicine>
+			<Melee>3</Melee>
 		</skillGains>
 		<forcedHediffs>
 			<li>PegLeg</li>
@@ -290,10 +209,7 @@
 		<baseDesc>[PAWN_nameDef] frequently visited the local arena. In fact [PAWN_pronoun] spent many hours a day fighting in the pit, so many in fact that [PAWN_pronoun] had accrued quite the fanbase. Sadly all the blows to [PAWN_possessive] head has left a lasting impact.</baseDesc>
 		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Melee</key>
-				<value>6</value>
-			</li>
+			<Melee>6</Melee>
 		</skillGains>
 		<workDisables>
 			<li>Social</li>
@@ -314,18 +230,9 @@
 		<baseDesc>[PAWN_nameDef] was always willing to do anything to advance [PAWN_possessive] alchemical knowledge, even if it meant consuming somewhat... unconventional items. At the end of the day any pain [PAWN_nameDef] suffered was worth it, as the pouches of coin that accompanied fulfilled orders were quite heavy.</baseDesc>
 		<bodyTypeGlobal>Fat</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Intellectual</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Plants</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>2</value>
-			</li>
+			<Intellectual>2</Intellectual>
+			<Plants>2</Plants>
+			<Social>2</Social>
 		</skillGains>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_AlchemistAlt]========== -->
@@ -337,14 +244,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Plants</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>3</value>
-			</li>
+			<Plants>3</Plants>
+			<Social>3</Social>
 		</skillGains>
 		<forcedHediffs>
 			<li>Denture</li>
@@ -360,14 +261,8 @@
 		<baseDesc>[PAWN_nameDef] was tasked with caring for a nobles flower garden... after the previous gardener mysteriously disappeared. It was hard work, but well worth it, as at the end of the day [PAWN_nameDef] got to wander around admiring all the exotic flowers.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Plants</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>2</value>
-			</li>
+			<Plants>4</Plants>
+			<Social>2</Social>
 		</skillGains>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_Possessed]========== -->
@@ -378,14 +273,8 @@
 		<baseDesc>[PAWN_nameDef] claims to be possessed by a vengeful spirit. This likely occurred during one of [PAWN_objective] frequent excursions to pilfer ancient tombs, but [PAWN_nameDef] will never admit that.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Intellectual</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>3</value>
-			</li>
+			<Intellectual>2</Intellectual>
+			<Melee>3</Melee>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -415,14 +304,8 @@
 		<baseDesc>[PAWN_nameDef] was quite knowledgeable when it came to the dangers of the local lands, and knew how to deal with almost all of them. From bandits to manhunter animals, if you needed protection while out in the wilds, [PAWN_nameDef] was who you wanted to hire.</baseDesc>
 		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Melee</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Shooting</key>
-				<value>3</value>
-			</li>
+			<Melee>4</Melee>
+			<Shooting>3</Shooting>
 		</skillGains>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_Drunkard]========== -->
@@ -437,14 +320,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Melee</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>3</value>
-			</li>
+			<Melee>4</Melee>
+			<Social>3</Social>
 		</skillGains>
 		<forcedHediffs>
 			<li>AlcoholTolerance</li>
@@ -461,18 +338,9 @@
 		<baseDesc>Many came to the local temple when seeking aid, many were in need of healing, and [PAWN_nameDef] would attempt to help them all. Some would require elixirs, some a bowl of warm soup, and others simply kind words.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Cooking</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Medicine</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>2</value>
-			</li>
+			<Cooking>2</Cooking>
+			<Medicine>2</Medicine>
+			<Social>2</Social>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -498,30 +366,12 @@
 		<baseDesc>[PAWN_nameDef] was always fascinated by the wonderful tales of brave heroes, delving into the unknown, and defeating the great evil that threatened the kingdom. So naturally [PAWN_pronoun] decided to leave everything behind, and follow in their footsteps. While [PAWN_nameDef] picked up a few valuable skills, [PAWN_possessive] journey was sadly rather uneventful.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Cooking</key>
-				<value>1</value>
-			</li>
-			<li>
-				<key>Crafting</key>
-				<value>1</value>
-			</li>
-			<li>
-				<key>Medicine</key>
-				<value>1</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>1</value>
-			</li>
-			<li>
-				<key>Shooting</key>
-				<value>1</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>1</value>
-			</li>
+			<Cooking>1</Cooking>
+			<Crafting>1</Crafting>
+			<Medicine>1</Medicine>
+			<Melee>1</Melee>
+			<Shooting>1</Shooting>
+			<Social>1</Social>
 		</skillGains>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_Brewer]========== -->
@@ -533,18 +383,9 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Cooking</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Crafting</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>1</value>
-			</li>
+			<Cooking>3</Cooking>
+			<Crafting>2</Crafting>
+			<Melee>1</Melee>
 		</skillGains>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_Acrobat]========== -->
@@ -556,14 +397,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Melee</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>6</value>
-			</li>
+			<Melee>2</Melee>
+			<Social>6</Social>
 		</skillGains>
 		<workDisables>
 			<li>PlantWork</li>
@@ -579,14 +414,8 @@
 		<baseDesc>While [PAWN_nameDef] had been a skooma addict for quite some time, a particularly bad batch sent [PAWN_objective] spiralling down a strange, and somewhat unfortunate, serious of events. Eventually [PAWN_nameDef] woke up one day, in a strange land, covered in fur, and with absolutely no recollection of the past few months. For some reason, this made complete sense to [PAWN_nameDef], for [PAWN_pronoun] was in fact a Khajiit, and always had been.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Melee</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>3</value>
-			</li>
+			<Melee>2</Melee>
+			<Social>3</Social>
 		</skillGains>
 		<workDisables>
 			<li>Intellectual</li>

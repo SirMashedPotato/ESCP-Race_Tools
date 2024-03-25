@@ -8,14 +8,8 @@
 		<baseDesc>As a low ranking Associate of the Fighters Guild, [PAWN_nameDef] was usually given the least desirable assignments, the ones that paid the least, and the ones that promised no fame. This usually meant clearing out a rat infestation from someones house. Though [PAWN_nameDef] persevered, for eventually [PAWN_pronoun] would receive a promotion.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Crafting</key>
-				<value>1</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>3</value>
-			</li>
+			<Crafting>1</Crafting>
+			<Melee>3</Melee>
 		</skillGains>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_FightersGuildApprentice]========== -->
@@ -26,14 +20,8 @@
 		<baseDesc>While technically a promotion, [PAWN_nameDef] somehow wound up spending even less time working meaningful jobs as an Apprentice. There was no glory to find, and very little coin to be made. Instead, [PAWN_nameDef] spent most days repairing armour, and sharpening blades.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Crafting</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>2</value>
-			</li>
+			<Crafting>3</Crafting>
+			<Melee>2</Melee>
 		</skillGains>
 		<maleCommonality>90</maleCommonality>
 		<femaleCommonality>90</femaleCommonality>
@@ -47,18 +35,9 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Crafting</key>
-				<value>1</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Shooting</key>
-				<value>2</value>
-			</li>
+			<Crafting>1</Crafting>
+			<Melee>4</Melee>
+			<Shooting>2</Shooting>
 		</skillGains>
 		<maleCommonality>80</maleCommonality>
 		<femaleCommonality>80</femaleCommonality>
@@ -72,18 +51,9 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Crafting</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>5</value>
-			</li>
-			<li>
-				<key>Shooting</key>
-				<value>3</value>
-			</li>
+			<Crafting>2</Crafting>
+			<Melee>5</Melee>
+			<Shooting>3</Shooting>
 		</skillGains>
 		<maleCommonality>60</maleCommonality>
 		<femaleCommonality>60</femaleCommonality>
@@ -96,18 +66,9 @@
 		<baseDesc>Having served in the legion, [PAWN_nameDef] knew full what to expect in combat. [PAWN_pronoun] made great use of the knowledge training the recruits of the Fighters Guild. Most would never be promoted past journeyman, but occasionally [PAWN_nameDef] saw something special in one.</baseDesc>
 		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Crafting</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>5</value>
-			</li>
-			<li>
-				<key>Shooting</key>
-				<value>3</value>
-			</li>
+			<Crafting>2</Crafting>
+			<Melee>5</Melee>
+			<Shooting>3</Shooting>
 		</skillGains>
 		<maleCommonality>20</maleCommonality>
 		<femaleCommonality>20</femaleCommonality>

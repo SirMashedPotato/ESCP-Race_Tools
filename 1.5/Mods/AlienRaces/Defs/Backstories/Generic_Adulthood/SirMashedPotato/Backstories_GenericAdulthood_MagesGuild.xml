@@ -8,14 +8,8 @@
 		<baseDesc>[PAWN_nameDef] was tasked with the study of the local flora, where to best to find them, and how to make use of them. From mushrooms, to flowers, [PAWN_nameDef] had spent countless hours studying it, yet promotion still seemed to be a distant dream.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Intellectual</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Plants</key>
-				<value>3</value>
-			</li>
+			<Intellectual>3</Intellectual>
+			<Plants>3</Plants>
 		</skillGains>
 		<maleCommonality>80</maleCommonality>
 		<femaleCommonality>80</femaleCommonality>
@@ -28,14 +22,8 @@
 		<baseDesc>Ever obsessed with the Dwemer, [PAWN_nameDef] made it [PAWN_pronoun] life goal to to study their eternal contraptions. While many days were spent deciphering schematics, most were simply spent attempting to locate them in the first place.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Crafting</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Intellectual</key>
-				<value>4</value>
-			</li>
+			<Crafting>3</Crafting>
+			<Intellectual>4</Intellectual>
 		</skillGains>
 		<maleCommonality>70</maleCommonality>
 		<femaleCommonality>70</femaleCommonality>
@@ -49,14 +37,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Intellectual</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Medicine</key>
-				<value>3</value>
-			</li>
+			<Intellectual>3</Intellectual>
+			<Medicine>3</Medicine>
 		</skillGains>
 		<maleCommonality>80</maleCommonality>
 		<femaleCommonality>80</femaleCommonality>
@@ -70,14 +52,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Crafting</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Intellectual</key>
-				<value>3</value>
-			</li>
+			<Crafting>3</Crafting>
+			<Intellectual>3</Intellectual>
 		</skillGains>
 		<maleCommonality>80</maleCommonality>
 		<femaleCommonality>80</femaleCommonality>
@@ -91,14 +67,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Social</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Intellectual</key>
-				<value>6</value>
-			</li>
+			<Social>3</Social>
+			<Intellectual>6</Intellectual>
 		</skillGains>
 		<maleCommonality>60</maleCommonality>
 		<femaleCommonality>60</femaleCommonality>
@@ -111,10 +81,7 @@
 		<baseDesc>[PAWN_nameDef] was sent on a wild goose chase, tasked with investigating the disappearance of the Dwemer. Of course this was a nigh impossible task, for if the greatest minds hadn't figured it out yet, how could [PAWN_nameDef]?</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Intellectual</key>
-				<value>9</value>
-			</li>
+			<Intellectual>9</Intellectual>
 		</skillGains>
 		<maleCommonality>30</maleCommonality>
 		<femaleCommonality>30</femaleCommonality>

@@ -8,14 +8,8 @@
 		<baseDesc>While [PAWN_nameDef] was magically gifted, [PAWN_pronoun] was never one for violence, and instead devoted [PAWN_possessive] skills to the art of restoration. Any who sought aid would have their please answered by [PAWN_nameDef].</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Intellectual</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Medicine</key>
-				<value>4</value>
-			</li>
+			<Intellectual>4</Intellectual>
+			<Medicine>4</Medicine>
 		</skillGains>
 		<workDisables>
 			<li>Violent</li>
@@ -29,10 +23,7 @@
 		<baseDesc>[PAWN_nameDef] was once a respected restoration mage, with a loving family. Then one day [PAWN_pronoun] returned to the smouldering ruins of [PAWN_possessive[ home. [PAWN_nameDef] became obsessed with seeking out forbidden knowledge, knowledge that could reunite [PAWN_objective] with [PAWN_pronoun] family. Finally [PAWN_pronoun] found it, an ancient tome, written by a Sload. But time had taken its tole on [PAWN_nameDef], and plans may have changed since [PAWN_pronoun] started the search.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Intellectual</key>
-				<value>8</value>
-			</li>
+			<Intellectual>8</Intellectual>
 		</skillGains>
 		<workDisables>
 			<li>ManualDumb</li>

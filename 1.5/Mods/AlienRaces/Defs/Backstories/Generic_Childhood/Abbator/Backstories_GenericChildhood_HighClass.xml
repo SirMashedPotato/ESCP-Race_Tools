@@ -9,14 +9,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Intellectual</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>2</value>
-			</li>
+			<Intellectual>2</Intellectual>
+			<Social>2</Social>
 		</skillGains>
 		<workDisables>
 			<li>Mining</li>

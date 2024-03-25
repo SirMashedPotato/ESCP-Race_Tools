@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ========== [ESCP_BaseRace] ========== -->
-	<AlienRace.ThingDef_AlienRace ParentName="HumanRace" Name="ESCP_BaseRace" Abstract="True">
+	<AlienRace.ThingDef_AlienRace ParentName="Human" Name="ESCP_BaseRace" Abstract="True">
 		<alienRace>
 			<generalSettings>
 				<allowHumanBios>false</allowHumanBios>

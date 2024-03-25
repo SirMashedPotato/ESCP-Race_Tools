@@ -9,18 +9,9 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Intellectual</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Medicine</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>3</value>
-			</li>
+			<Intellectual>2</Intellectual>
+			<Medicine>3</Medicine>
+			<Social>3</Social>
 		</skillGains>
 		<maleCommonality>50</maleCommonality>
 		<femaleCommonality>50</femaleCommonality>
@@ -33,14 +24,8 @@
 		<baseDesc>Disillusioned with the local temple, [PAWN_nameDef] decided to lend [PAWN_possessive] hands elsewhere. While most locals scorn the Imperial Cult, [PAWN_nameDef] figured [PAWN_pronoun] would give them a chance.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Intellectual</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>3</value>
-			</li>
+			<Intellectual>3</Intellectual>
+			<Social>3</Social>
 		</skillGains>
 		<maleCommonality>50</maleCommonality>
 		<femaleCommonality>50</femaleCommonality>
@@ -53,14 +38,8 @@
 		<baseDesc>As a reasonably high ranking member of the Imperial Cult, [PAWN_nameDef] was given a fair number of benefits. [PAWN_nameDef] also had to endure the harsh words of those [PAWN_pronoun] once called friends, a few of which once considered [PAWN_objective] family.</baseDesc>
 		<bodyTypeGlobal>Fat</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Intellectual</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>6</value>
-			</li>
+			<Intellectual>4</Intellectual>
+			<Social>6</Social>
 		</skillGains>
 		<maleCommonality>30</maleCommonality>
 		<femaleCommonality>30</femaleCommonality>

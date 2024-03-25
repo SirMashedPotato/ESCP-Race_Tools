@@ -9,18 +9,9 @@
 		<baseDesc>While [PAWN_nameDef] worked a tiring job during the day, [PAWN_pronoun] enjoyed relaxing near the coast, and fishing for a while. Admittedly this wasn't actually that relaxing, as there are a great many dangerous beasts lurking in the depths.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Animals</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Cooking</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Crafting</key>
-				<value>2</value>
-			</li>
+			<Animals>2</Animals>
+			<Cooking>2</Cooking>
+			<Crafting>2</Crafting>
 		</skillGains>
 		<spawnCategories>
 			<li>ESCP_MaormerBackstory_Exclusion</li>
@@ -35,14 +26,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Cooking</key>
-				<value>1</value>
-			</li>
-			<li>
-				<key>Crafting</key>
-				<value>4</value>
-			</li>
+			<Cooking>1</Cooking>
+			<Crafting>4</Crafting>
 		</skillGains>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_Smith]========== -->
@@ -54,14 +39,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Crafting</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>1</value>
-			</li>
+			<Crafting>4</Crafting>
+			<Social>1</Social>
 		</skillGains>
 		<spawnCategories>
 			<li>ESCP_MaormerBackstory_Exclusion</li>
@@ -75,14 +54,8 @@
 		<baseDesc>[PAWN_nameDef] always enjoyed the calm of going out into the wilderness, and tracking one of the beasts found there. The wilds were home to many strange and deadly beasts, and while [PAWN_nameDef] was never truly scared, the thought of encountering a something primordial did make [PAWN_objective] nervous.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Animals</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Shooting</key>
-				<value>2</value>
-			</li>
+			<Animals>2</Animals>
+			<Shooting>2</Shooting>
 		</skillGains>
 		<spawnCategories>
 			<li>ESCP_GenericBackstory_AdulthoodMedievalHunter</li>
@@ -97,14 +70,8 @@
 		<baseDesc>As just a lowly recruit in the local militia, [PAWN_nameDef] was given many tasks, such as cleaning rust off of equipment, and patching up holes in leather armour. Of course this was all in between endless training exercises. [PAWN_nameDef] just wanted fame and glory.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Crafting</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>3</value>
-			</li>
+			<Crafting>2</Crafting>
+			<Melee>3</Melee>
 		</skillGains>
 		<workDisables>
 			<li>Intellectual</li>
@@ -119,10 +86,7 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Melee</key>
-				<value>5</value>
-			</li>
+			<Melee>5</Melee>
 		</skillGains>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_CommanderMelee]========== -->
@@ -133,14 +97,8 @@
 		<baseDesc>As somewhat of a veteran, [PAWN_nameDef] had the privilege of commanding new recruits, ensuring they survive their first bandit raid, or at least come out in one piece.</baseDesc>
 		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Intellectual</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>5</value>
-			</li>
+			<Intellectual>3</Intellectual>
+			<Melee>5</Melee>
 		</skillGains>
 		<maleCommonality>70</maleCommonality>
 		<femaleCommonality>70</femaleCommonality>
@@ -156,14 +114,8 @@
 		<baseDesc>[PAWN_nameDef] was an aspiring treasure hunter, which meant [PAWN_pronoun] spent most days digging around in the sand, hoping to find something worth anything. [PAWN_nameDef] did find a few broken swords, but that was about it.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Intellectual</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Mining</key>
-				<value>3</value>
-			</li>
+			<Intellectual>2</Intellectual>
+			<Mining>3</Mining>
 		</skillGains>
 		<spawnCategories>
 			<li>ESCP_MaormerBackstory_Exclusion</li>
@@ -177,14 +129,8 @@
 		<baseDesc>[PAWN_nameDef] was always eager to explore the alchemical properties of plant life, both local and exotic. [PAWN_nameDef] discovered a few interesting things, such as what plants could cure a sore stomach, and what ones would cause one.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Intellectual</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Plants</key>
-				<value>3</value>
-			</li>
+			<Intellectual>3</Intellectual>
+			<Plants>3</Plants>
 		</skillGains>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_RecruitShooting]========== -->
@@ -195,14 +141,8 @@
 		<baseDesc>As just a lowly recruit in the local militia, [PAWN_nameDef] was given many tasks, such as fletching arrows, and patching up holes in leather armour. Of course this was all in between endless training exercises. [PAWN_nameDef] just wanted to fire an arrow at someone.</baseDesc>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Crafting</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Shooting</key>
-				<value>3</value>
-			</li>
+			<Crafting>2</Crafting>
+			<Shooting>3</Shooting>
 		</skillGains>
 		<workDisables>
 			<li>Intellectual</li>
@@ -217,10 +157,7 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Shooting</key>
-				<value>5</value>
-			</li>
+			<Shooting>5</Shooting>
 		</skillGains>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Adulthood_Merchant]========== -->
@@ -231,10 +168,7 @@
 		<baseDesc>[PAWN_nameDef] had made several deals with local guilds, [PAWN_pronoun] purchased their goods, and sold them for a sizeable profit. [PAWN_pronoun] really didn't care where the goods came from, and was well aware that several of the guilds [PAWN_pronoun] made deals with were actually bandit groups.</baseDesc>
 		<bodyTypeGlobal>Fat</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Social</key>
-				<value>5</value>
-			</li>
+			<Social>5</Social>
 		</skillGains>
 		<spawnCategories>
 			<li>ESCP_MaormerBackstory_Exclusion</li>
@@ -249,14 +183,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Intellectual</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>3</value>
-			</li>
+			<Intellectual>3</Intellectual>
+			<Social>3</Social>
 		</skillGains>
 		<maleCommonality>80</maleCommonality>
 		<femaleCommonality>80</femaleCommonality>
@@ -269,14 +197,8 @@
 		<baseDesc>As a battle hardened soldier looking for a slightly more relaxed life, guarding an embassy seemed like an obvious choice for [PAWN_nameDef]. Most days were usually fairly relaxing. Occasionally some locals would get a bit unruly, but they were usually swiftly escorted away. Sometimes though, someone would try to do something stupid. [PAWN_nameDef] enjoyed those days the most.</baseDesc>
 		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Melee</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>2</value>
-			</li>
+			<Melee>4</Melee>
+			<Social>2</Social>
 		</skillGains>
 		<disallowedTraitsChance>
 			<li>
@@ -295,14 +217,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Shooting</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Intellectual</key>
-				<value>2</value>
-			</li>
+			<Shooting>4</Shooting>
+			<Intellectual>2</Intellectual>
 		</skillGains>
 		<disallowedTraitsChance>
 			<li>
@@ -321,10 +237,7 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Plants</key>
-				<value>4</value>
-			</li>
+			<Plants>4</Plants>
 		</skillGains>
 		<spawnCategories>
 			<li>ESCP_GenericBackstory_AdulthoodMedievalFarmer</li>
@@ -338,10 +251,7 @@
 		<baseDesc>[PAWN_nameDef] spent most days toiling away under the blazing sun chopping down trees, and processing logs into timber.</baseDesc>
 		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 		<skillGains>
-			<li>
-				<key>Plants</key>
-				<value>4</value>
-			</li>
+			<Plants>4</Plants>
 		</skillGains>
 		<spawnCategories>
 			<li>ESCP_GenericBackstory_AdulthoodMedievalLogger</li>

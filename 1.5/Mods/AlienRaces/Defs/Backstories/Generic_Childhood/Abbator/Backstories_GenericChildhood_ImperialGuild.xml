@@ -10,14 +10,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Melee</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Shooting</key>
-				<value>2</value>
-			</li>
+			<Melee>2</Melee>
+			<Shooting>2</Shooting>
 		</skillGains>
 	</AlienRace.AlienBackstoryDef>
 	<!-- ==========[ESCP_GenericBackstory_Abbator_Childhood_ThievesGuildTrainee]========== -->
@@ -27,18 +21,9 @@
 		<titleShort>trainee</titleShort>
 		<baseDesc>[PAWN_nameDef] grew up in the local Thieves Guild. [PAWN_pronoun] was orphaned as a child, but was taken in by the Guild and taught how to make a living... by stealing from others.</baseDesc>
 		<skillGains>
-			<li>
-				<key>Crafting</key>
-				<value>1</value>
-			</li>
-			<li>
-				<key>Intellectual</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>1</value>
-			</li>
+			<Crafting>1</Crafting>
+			<Intellectual>2</Intellectual>
+			<Social>1</Social>
 		</skillGains>
 	</AlienRace.AlienBackstoryDef>
 </Defs>

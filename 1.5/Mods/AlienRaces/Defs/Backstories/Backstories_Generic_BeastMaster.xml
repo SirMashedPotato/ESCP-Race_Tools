@@ -20,18 +20,9 @@
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<skillGains>
-			<li>
-				<key>Melee</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Shooting</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Animals</key>
-				<value>8</value>
-			</li>
+			<Melee>4</Melee>
+			<Shooting>4</Shooting>
+			<Animals>8</Animals>
 		</skillGains>
 	</AlienRace.AlienBackstoryDef>
 </Defs>
