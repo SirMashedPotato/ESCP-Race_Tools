@@ -134,7 +134,6 @@
 			<generalSettings>
 				<immuneToAge>true</immuneToAge>
 				<alienPartGenerator>
-					<getsGreyAt IsNull="True"/>
 					<oldHairAgeRange>200~300</oldHairAgeRange>
 				</alienPartGenerator>
 				<reproduction>
