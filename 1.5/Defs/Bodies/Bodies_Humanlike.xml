@@ -431,6 +431,7 @@
 				</li>
 				<li>
 					<def>Tail</def>
+					<customLabel>tail</customLabel>
 					<coverage>0.1</coverage>
 					<height>Bottom</height>
 					<groups>
