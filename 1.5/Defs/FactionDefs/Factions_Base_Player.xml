@@ -90,7 +90,6 @@
 		</backstoryFilters>
 		<forageabilityFactor>1.3</forageabilityFactor>
 		<startingResearchTags>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_MedievalStart</li>
 			<li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_MedievalStart</li>
 		</startingResearchTags>
 	</FactionDef>

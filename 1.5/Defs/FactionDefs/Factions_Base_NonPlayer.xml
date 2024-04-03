@@ -3,15 +3,13 @@
 	<!-- ========== [ESCP_NonPlayerFactionBase_Tribal] ========== -->
 	<FactionDef ParentName="TribeBase" Name="ESCP_NonPlayerFactionBase_Tribal" Abstract="True">
 		<caravanTraderKinds>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_Farmer</li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_Armourer</li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_Weaponsmith</li>
+			
 		</caravanTraderKinds>
 		<visitorTraderKinds>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Visitor_Medieval_Standard</li>
+
 		</visitorTraderKinds>
 		<baseTraderKinds>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Base_Medieval_Standard</li>
+		
 		</baseTraderKinds>
 		<allowedCultures Inherit="False"/>
 		<structureMemeWeights Inherit="False">
