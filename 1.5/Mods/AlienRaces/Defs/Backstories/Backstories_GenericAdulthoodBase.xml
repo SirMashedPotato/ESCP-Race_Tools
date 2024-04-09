@@ -23,13 +23,11 @@
 		</spawnCategories>
 		<forcedTraitsChance>
 			<li>
-				<defName>PsychicSensitivity</defName>
-				<degree>2</degree>
+				<defName Degree="2">PsychicSensitivity</defName>
 				<chance>25</chance>
 			</li>
 			<li>
-				<defName>PsychicSensitivity</defName>
-				<degree>1</degree>
+				<defName Degree="1">PsychicSensitivity</defName>
 				<chance>100</chance>
 			</li>
 		</forcedTraitsChance>

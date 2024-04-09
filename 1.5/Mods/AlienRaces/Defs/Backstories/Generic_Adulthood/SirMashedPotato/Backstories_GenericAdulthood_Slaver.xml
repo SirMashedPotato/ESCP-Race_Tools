@@ -5,7 +5,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_SlaveWarden</defName>
 		<title>slave warden</title>
 		<titleShort>warden</titleShort>
-		<baseDesc>[PAWN_nameDef] kept slaves and prisoners of war in-check. Most never even dared to attempt escape under [PAWN_possessive]'s watch. Those that were stupid enough to try weren't going to make it far.</baseDesc>
+		<description>[PAWN_nameDef] kept slaves and prisoners of war in-check. Most never even dared to attempt escape under [PAWN_possessive]'s watch. Those that were stupid enough to try weren't going to make it far.</description>
 		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 		<skillGains>
 			<Melee>5</Melee>
@@ -24,7 +24,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_SlaveTender</defName>
 		<title>slave tender</title>
 		<titleShort>tender</titleShort>
-		<baseDesc>Someone had to make sure the slaves were in a work-ready state, and that was [PAWN_nameDef]s job. From cleaning wounds to cooking soup, [PAWN_pronoun] would do it all. [PAWN_nameDef] didn't actually care about the slaves though, [PAWN_pronoun] was just in it for the coin.</baseDesc>
+		<description>Someone had to make sure the slaves were in a work-ready state, and that was [PAWN_nameDef]s job. From cleaning wounds to cooking soup, [PAWN_pronoun] would do it all. [PAWN_nameDef] didn't actually care about the slaves though, [PAWN_pronoun] was just in it for the coin.</description>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>

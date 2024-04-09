@@ -5,7 +5,7 @@
 		<defName>ESCP_GenericBackstory_BiotechNewborn</defName>
 		<title>newborn</title>
 		<titleShort>newborn</titleShort>
-		<baseDesc>[PAWN_nameDef] is a baby. [PAWN_possessive] life revolves around milk and naps.</baseDesc>
+		<description>[PAWN_nameDef] is a baby. [PAWN_possessive] life revolves around milk and naps.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ESCP_GenericBiotechBackstory_Newborn</li>
@@ -16,7 +16,7 @@
 		<defName>ESCP_GenericBackstory_BiotechChild</defName>
 		<title>child</title>
 		<titleShort>child</titleShort>
-		<baseDesc>[PAWN_nameDef] is a child. The story of [PAWN_possessive] childhood is still being written.</baseDesc>
+		<description>[PAWN_nameDef] is a child. The story of [PAWN_possessive] childhood is still being written.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ESCP_GenericBiotechBackstory_Child</li>
@@ -27,7 +27,7 @@
 		<defName>ESCP_GenericBackstory_BiotechColonyChild</defName>
 		<title>child</title>
 		<titleShort>child</titleShort>
-		<baseDesc>[PAWN_nameDef] was raised by us.</baseDesc>
+		<description>[PAWN_nameDef] was raised by us.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<!-- Not broken, meant to be that -->
@@ -39,7 +39,7 @@
 		<defName>ESCP_GenericBackstory_BiotechVatGrownChild</defName>
 		<title>vatgrown child</title>
 		<titleShort>child</titleShort>
-		<baseDesc>[PAWN_nameDef] spent most of [PAWN_possessive] childhood in a growth vat.</baseDesc>
+		<description>[PAWN_nameDef] spent most of [PAWN_possessive] childhood in a growth vat.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>ESCP_GenericBiotechBackstory_VatGrown</li>
@@ -50,7 +50,7 @@
 		<defName>ESCP_GenericBackstory_BiotechColonyAdult</defName>
 		<title>colonist</title>
 		<titleShort>colonist</titleShort>
-		<baseDesc>We watched [PAWN_nameDef] grow into an adult. [PAWN_possessive] story is still being written.</baseDesc>
+		<description>We watched [PAWN_nameDef] grow into an adult. [PAWN_possessive] story is still being written.</description>
 		<slot>Adulthood</slot>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>

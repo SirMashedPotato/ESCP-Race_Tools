@@ -6,20 +6,18 @@
 		<defName>ESCP_GenericBackstory_Childhood_PsychicallyGifted</defName>
 		<title>psychically gifted</title>
 		<titleShort>gifted</titleShort>
-		<baseDesc>[PAWN_nameDef] was born with a greater awareness of the unseen. After many years at the temple [PAWN_pronoun] learnt how to harness [PAWN_possessive] gift, and hear the whispers of the ancestors.</baseDesc>
+		<description>[PAWN_nameDef] was born with a greater awareness of the unseen. After many years at the temple [PAWN_pronoun] learnt how to harness [PAWN_possessive] gift, and hear the whispers of the ancestors.</description>
 		
 		<skillGains>
 			<Social>3</Social>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
-				<defName>PsychicSensitivity</defName>
-				<degree>2</degree>
+				<defName Degree="2">PsychicSensitivity</defName>
 				<chance>25</chance>
 			</li>
 			<li>
-				<defName>PsychicSensitivity</defName>
-				<degree>1</degree>
+				<defName Degree="1">PsychicSensitivity</defName>
 				<chance>100</chance>
 			</li>
 		</forcedTraitsChance>
@@ -31,7 +29,7 @@
 		<defName>ESCP_GenericBackstory_Childhood_ChildSlaver</defName>
 		<title>child slaver</title>
 		<titleShort>slaver</titleShort>
-		<baseDesc>[PAWN_nameDef] was practically born to be a slaver master. As soon as [PAWN_pronoun] could form coherent sentences [PAWN_nameDef] was bossing around the other children. Within a few years [PAWN_pronoun] had amassed a reasonable number of slaves, most of which were other children.</baseDesc>
+		<description>[PAWN_nameDef] was practically born to be a slaver master. As soon as [PAWN_pronoun] could form coherent sentences [PAWN_nameDef] was bossing around the other children. Within a few years [PAWN_pronoun] had amassed a reasonable number of slaves, most of which were other children.</description>
 		<skillGains>
 			<Melee>2</Melee>
 			<Social>3</Social>

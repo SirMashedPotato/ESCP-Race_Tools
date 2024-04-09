@@ -5,7 +5,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_MagesGuildAlchemist</defName>
 		<title>Mages Guild alchemist</title>
 		<titleShort>guild alchemist</titleShort>
-		<baseDesc>[PAWN_nameDef] was tasked with the study of the local flora, where to best to find them, and how to make use of them. From mushrooms, to flowers, [PAWN_nameDef] had spent countless hours studying it, yet promotion still seemed to be a distant dream.</baseDesc>
+		<description>[PAWN_nameDef] was tasked with the study of the local flora, where to best to find them, and how to make use of them. From mushrooms, to flowers, [PAWN_nameDef] had spent countless hours studying it, yet promotion still seemed to be a distant dream.</description>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<Intellectual>3</Intellectual>
@@ -19,7 +19,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_MagesGuildScholar</defName>
 		<title>Mages Guild scholar</title>
 		<titleShort>guild scholar</titleShort>
-		<baseDesc>Ever obsessed with the Dwemer, [PAWN_nameDef] made it [PAWN_pronoun] life goal to to study their eternal contraptions. While many days were spent deciphering schematics, most were simply spent attempting to locate them in the first place.</baseDesc>
+		<description>Ever obsessed with the Dwemer, [PAWN_nameDef] made it [PAWN_pronoun] life goal to to study their eternal contraptions. While many days were spent deciphering schematics, most were simply spent attempting to locate them in the first place.</description>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<Crafting>3</Crafting>
@@ -33,7 +33,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_MagesGuildHealer</defName>
 		<title>Mages Guild healer</title>
 		<titleShort>guild healer</titleShort>
-		<baseDesc>Fully devoted to the arts of Restoration, [PAWN_nameDef] was one of many healers to be found among the Mages Guild. While [PAWN_pronoun] could have made use of [PAWN_possessive] skills working for the local Temple, [PAWN_nameDef] found the expected pay there rather lacking.</baseDesc>
+		<description>Fully devoted to the arts of Restoration, [PAWN_nameDef] was one of many healers to be found among the Mages Guild. While [PAWN_pronoun] could have made use of [PAWN_possessive] skills working for the local Temple, [PAWN_nameDef] found the expected pay there rather lacking.</description>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
@@ -48,7 +48,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_MagesGuildEnchanter</defName>
 		<title>Mages Guild enchanter</title>
 		<titleShort>guild enchanter</titleShort>
-		<baseDesc>[PAWN_nameDef] was one of the enchanters found at [PAWN_possessive] local Mages Guild hall. Turns out enchanting equipment was a very good way to earn coins, which [PAWN_nameDef] was very pleased with.</baseDesc>
+		<description>[PAWN_nameDef] was one of the enchanters found at [PAWN_possessive] local Mages Guild hall. Turns out enchanting equipment was a very good way to earn coins, which [PAWN_nameDef] was very pleased with.</description>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
@@ -63,7 +63,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_MagesGuildGuide</defName>
 		<title>Mages Guild guide</title>
 		<titleShort>guild guide</titleShort>
-		<baseDesc>[PAWN_nameDef] was one of the few Guild Guides, experts in the art of Mysticism. A highly important role, as the guide network allowed for near instantaneous travel between guild halls, all for a reasonable fee of course.</baseDesc>
+		<description>[PAWN_nameDef] was one of the few Guild Guides, experts in the art of Mysticism. A highly important role, as the guide network allowed for near instantaneous travel between guild halls, all for a reasonable fee of course.</description>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
@@ -78,7 +78,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_MagesGuildResearcher</defName>
 		<title>Mages Guild researcher</title>
 		<titleShort>guild researcher</titleShort>
-		<baseDesc>[PAWN_nameDef] was sent on a wild goose chase, tasked with investigating the disappearance of the Dwemer. Of course this was a nigh impossible task, for if the greatest minds hadn't figured it out yet, how could [PAWN_nameDef]?</baseDesc>
+		<description>[PAWN_nameDef] was sent on a wild goose chase, tasked with investigating the disappearance of the Dwemer. Of course this was a nigh impossible task, for if the greatest minds hadn't figured it out yet, how could [PAWN_nameDef]?</description>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<Intellectual>9</Intellectual>

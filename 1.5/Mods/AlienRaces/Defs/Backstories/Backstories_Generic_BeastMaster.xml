@@ -16,7 +16,7 @@
 		<defName>ESCP_GenericBackstoryAdulthood_Beastmaster</defName>
 		<title>beast master</title>
 		<titleShort>beast master</titleShort>
-		<baseDesc>[PAWN_nameDef] is a rather skilled beast master. Many animals have been tamed and trained by [PAWN_nameDef]. And when the need arises, they even fight alongside [PAWN_nameDef].</baseDesc>
+		<description>[PAWN_nameDef] is a rather skilled beast master. Many animals have been tamed and trained by [PAWN_nameDef]. And when the need arises, they even fight alongside [PAWN_nameDef].</description>
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<skillGains>
