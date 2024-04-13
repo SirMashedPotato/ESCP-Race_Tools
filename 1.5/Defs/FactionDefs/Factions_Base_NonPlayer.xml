@@ -2,15 +2,6 @@
 <Defs>
 	<!-- ========== [ESCP_NonPlayerFactionBase_Tribal] ========== -->
 	<FactionDef ParentName="TribeBase" Name="ESCP_NonPlayerFactionBase_Tribal" Abstract="True">
-		<caravanTraderKinds>
-			
-		</caravanTraderKinds>
-		<visitorTraderKinds>
-
-		</visitorTraderKinds>
-		<baseTraderKinds>
-		
-		</baseTraderKinds>
 		<allowedCultures Inherit="False"/>
 		<structureMemeWeights Inherit="False">
 			<ESCP_Structure_OriginLorkhanCult MayRequire="Ludeon.RimWorld.Ideology">1</ESCP_Structure_OriginLorkhanCult>
