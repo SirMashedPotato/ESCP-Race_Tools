@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Verse;
 using RimWorld;
+using System;
 
 namespace ESCP_RaceTools
 {
@@ -32,7 +33,8 @@ namespace ESCP_RaceTools
         public List<AbilityDef> oneOfRandomAbility;
         public float oneOfRandomAbilityChance = 1f;
         //Biotech specific
-        public List<GeneDef> genesToAdd;    //starting genes, need to patch in, does not work with MayRequire
+        [Obsolete]
+        public List<GeneDef> genesToAdd;
         //additional gene/s that are 'inherited' from the father of the pawn
         //done seperately because can't may require lists in mod extensions ????
         public GeneDef majorRacialGeneToInherit;
@@ -43,6 +45,7 @@ namespace ESCP_RaceTools
         //For the prevent worn apparel Harmony patch
         public List<BodyPartGroupDef> restrictedApparelPartGroups;
         public string restrictedApparelOverrideTag;
+        
 
         public static RaceProperties Get(Def def)
         {

@@ -47,5 +47,6 @@
 	
 	<!-- Misc -->
 	<ESCP_ApparelRestriction_CantWear>{0} are unable to wear {1}</ESCP_ApparelRestriction_CantWear>
+	<ESCP_RomanceRestricted>Romance is not possible between a {0} and a {1}</ESCP_RomanceRestricted>
 	
 </LanguageData>
