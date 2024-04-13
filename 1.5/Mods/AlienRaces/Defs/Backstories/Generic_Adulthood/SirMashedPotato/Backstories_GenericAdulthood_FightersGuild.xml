@@ -5,7 +5,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_FightersGuildAssociate</defName>
 		<title>Fighters Guild associate</title>
 		<titleShort>guild associate</titleShort>
-		<baseDesc>As a low ranking Associate of the Fighters Guild, [PAWN_nameDef] was usually given the least desirable assignments, the ones that paid the least, and the ones that promised no fame. This usually meant clearing out a rat infestation from someones house. Though [PAWN_nameDef] persevered, for eventually [PAWN_pronoun] would receive a promotion.</baseDesc>
+		<description>As a low ranking Associate of the Fighters Guild, [PAWN_nameDef] was usually given the least desirable assignments, the ones that paid the least, and the ones that promised no fame. This usually meant clearing out a rat infestation from someones house. Though [PAWN_nameDef] persevered, for eventually [PAWN_pronoun] would receive a promotion.</description>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<Crafting>1</Crafting>
@@ -17,7 +17,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_FightersGuildApprentice</defName>
 		<title>Fighters Guild apprentice</title>
 		<titleShort>guild apprentice</titleShort>
-		<baseDesc>While technically a promotion, [PAWN_nameDef] somehow wound up spending even less time working meaningful jobs as an Apprentice. There was no glory to find, and very little coin to be made. Instead, [PAWN_nameDef] spent most days repairing armour, and sharpening blades.</baseDesc>
+		<description>While technically a promotion, [PAWN_nameDef] somehow wound up spending even less time working meaningful jobs as an Apprentice. There was no glory to find, and very little coin to be made. Instead, [PAWN_nameDef] spent most days repairing armour, and sharpening blades.</description>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<Crafting>3</Crafting>
@@ -31,7 +31,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_FightersGuildJourneyman</defName>
 		<title>Fighters Guild journeyman</title>
 		<titleShort>guild journeyman</titleShort>
-		<baseDesc>Being a Journeyman, [PAWN_nameDef] was occasionally given some dangerous assignments. Sometimes it would involve clearing poachers out of a kwama egg mine, sometimes dealing with a gang holed up in an ancient tomb, or sometimes [PAWN_nameDef] had to kill a few rats in someones house.</baseDesc>
+		<description>Being a Journeyman, [PAWN_nameDef] was occasionally given some dangerous assignments. Sometimes it would involve clearing poachers out of a kwama egg mine, sometimes dealing with a gang holed up in an ancient tomb, or sometimes [PAWN_nameDef] had to kill a few rats in someones house.</description>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
@@ -47,7 +47,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_FightersGuildProtector</defName>
 		<title>Fighters Guild protector</title>
 		<titleShort>guild protector</titleShort>
-		<baseDesc>[PAWN_nameDef] was ecstatic when they were promoted to Protector. This joy quickly faded when [PAWN_pronoun] found out [PAWN_possessive] first job was to protect some noble, not even a particularly wealthy one at that.</baseDesc>
+		<description>[PAWN_nameDef] was ecstatic when they were promoted to Protector. This joy quickly faded when [PAWN_pronoun] found out [PAWN_possessive] first job was to protect some noble, not even a particularly wealthy one at that.</description>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
@@ -63,7 +63,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_FightersGuildDrillmaster</defName>
 		<title>Fighters Guild drillmaster</title>
 		<titleShort>guild drillmaster</titleShort>
-		<baseDesc>Having served in the legion, [PAWN_nameDef] knew full what to expect in combat. [PAWN_pronoun] made great use of the knowledge training the recruits of the Fighters Guild. Most would never be promoted past journeyman, but occasionally [PAWN_nameDef] saw something special in one.</baseDesc>
+		<description>Having served in the legion, [PAWN_nameDef] knew full what to expect in combat. [PAWN_pronoun] made great use of the knowledge training the recruits of the Fighters Guild. Most would never be promoted past journeyman, but occasionally [PAWN_nameDef] saw something special in one.</description>
 		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 		<skillGains>
 			<Crafting>2</Crafting>

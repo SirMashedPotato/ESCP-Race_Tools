@@ -6,7 +6,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_PlantationOwner</defName>
 		<title>plantation owner</title>
 		<titleShort>planter</titleShort>
-		<baseDesc>While [PAWN_nameDef] wasn't particularly good at working the fields, [PAWN_pronoun] was good at delegating work to others. Thanks to this gift, [PAWN_nameDef] eventually wound up owning the plantation [PAWN_pronoun] worked at, and promptly outlawed the use of slaves.</baseDesc>
+		<description>While [PAWN_nameDef] wasn't particularly good at working the fields, [PAWN_pronoun] was good at delegating work to others. Thanks to this gift, [PAWN_nameDef] eventually wound up owning the plantation [PAWN_pronoun] worked at, and promptly outlawed the use of slaves.</description>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<Intellectual>4</Intellectual>
@@ -19,7 +19,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_Rancher</defName>
 		<title>rancher</title>
 		<titleShort>rancher</titleShort>
-		<baseDesc>[PAWN_nameDef] spent much of [PAWN_possessive] early life working at the family ranch. It was home to all sorts of animals, from pigs to chickens, and sometimes something a little stranger.</baseDesc>
+		<description>[PAWN_nameDef] spent much of [PAWN_possessive] early life working at the family ranch. It was home to all sorts of animals, from pigs to chickens, and sometimes something a little stranger.</description>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
@@ -33,7 +33,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_KwamaEggMiner</defName>
 		<title>kwama egg miner</title>
 		<titleShort>egg miner</titleShort>
-		<baseDesc>While kwama nests are a rare sight outside of Morrowind, [PAWN_nameDef] found work in [PAWN_possessive] early years at one not too far from home.</baseDesc>
+		<description>While kwama nests are a rare sight outside of Morrowind, [PAWN_nameDef] found work in [PAWN_possessive] early years at one not too far from home.</description>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
@@ -57,7 +57,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_IronMiner</defName>
 		<title>iron miner</title>
 		<titleShort>miner</titleShort>
-		<baseDesc>[PAWN_nameDef] toiled away at the local iron mine for much of [PAWN_possessive] early life. Sometimes [PAWN_pronoun] misses the claustrophobic tunnels, but not for very long.</baseDesc>
+		<description>[PAWN_nameDef] toiled away at the local iron mine for much of [PAWN_possessive] early life. Sometimes [PAWN_pronoun] misses the claustrophobic tunnels, but not for very long.</description>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
@@ -79,7 +79,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_SilverMiner</defName>
 		<title>silver miner</title>
 		<titleShort>miner</titleShort>
-		<baseDesc>[PAWN_nameDef] found work at a silver mine a few towns over. While the miners that worked there may have been kept under a watchful eye, [PAWN_nameDef] did manage to convince a few guards to turn a blind eye, and to just ignore the raw silver that seemed to make its way into [PAWN_possessive] pockets.</baseDesc>
+		<description>[PAWN_nameDef] found work at a silver mine a few towns over. While the miners that worked there may have been kept under a watchful eye, [PAWN_nameDef] did manage to convince a few guards to turn a blind eye, and to just ignore the raw silver that seemed to make its way into [PAWN_possessive] pockets.</description>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
@@ -101,7 +101,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_SkoomaSeller</defName>
 		<title>skooma seller</title>
 		<titleShort>entrepreneur</titleShort>
-		<baseDesc>[PAWN_nameDef] had the brilliant idea of starting [PAWN_possessive] own skooma business, a bustling market with profit margins most could only dream of. After a run in with the local criminal organisation, [PAWN_nameDef] decided to sample [PAWN_possessive] own product, leaving the past few years a blur.</baseDesc>
+		<description>[PAWN_nameDef] had the brilliant idea of starting [PAWN_possessive] own skooma business, a bustling market with profit margins most could only dream of. After a run in with the local criminal organisation, [PAWN_nameDef] decided to sample [PAWN_possessive] own product, leaving the past few years a blur.</description>
 		<spawnCategories>
 			<li>ESCP_GenericBackstory_AdulthoodSkoomaAddict</li>
 		</spawnCategories>
@@ -114,23 +114,19 @@
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
-				<defName>DrugDesire</defName>
-				<degree>2</degree>
+				<defName Degree="2">DrugDesire</defName>
 				<chance>100</chance>
 			</li>
 			<li>
-				<defName>Nerves</defName>
-				<degree>-2</degree>
+				<defName Degree="-2">Nerves</defName>
 				<chance>15</chance>
 			</li>
 			<li>
-				<defName>Neurotic</defName>
-				<degree>2</degree>
+				<defName Degree="2">Neurotic</defName>
 				<chance>15</chance>
 			</li>
 			<li>
-				<defName>NaturalMood</defName>
-				<degree>-2</degree>
+				<defName Degree="-2">NaturalMood</defName>
 				<chance>15</chance>
 			</li>
 		</forcedTraitsChance>
@@ -142,7 +138,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_RatTrainer</defName>
 		<title>rat trainer</title>
 		<titleShort>rat trainer</titleShort>
-		<baseDesc>One day [PAWN_nameDef] woke up and decided that [PAWN_pronoun] would train pack rats. Over [PAWN_possessive] years working in this emerging industry, [PAWN_pronoun] made a surprising amount of gold. Turns out rats are rather easy to train, and even easier to breed. And when times were tough, [PAWN_nameDef] always had something to eat.</baseDesc>
+		<description>One day [PAWN_nameDef] woke up and decided that [PAWN_pronoun] would train pack rats. Over [PAWN_possessive] years working in this emerging industry, [PAWN_pronoun] made a surprising amount of gold. Turns out rats are rather easy to train, and even easier to breed. And when times were tough, [PAWN_nameDef] always had something to eat.</description>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<Animals>3</Animals>
@@ -156,7 +152,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_SteelSmith</defName>
 		<title>steel smith</title>
 		<titleShort>steel smith</titleShort>
-		<baseDesc>[PAWN_nameDef] was a master of steel, and made a small fortune selling steel armaments. [PAWN_possessive] blades adorned the hips of many nobles.\n\nOf course this all came to an end when a competitor emerged. This may not have been a problem for [PAWN_nameDef], except that [PAWN_possessive] competitor forged Akaviri style blades. Soon [PAWN_nameDef] was left with nothing more than crippling debt.</baseDesc>
+		<description>[PAWN_nameDef] was a master of steel, and made a small fortune selling steel armaments. [PAWN_possessive] blades adorned the hips of many nobles.\n\nOf course this all came to an end when a competitor emerged. This may not have been a problem for [PAWN_nameDef], except that [PAWN_possessive] competitor forged Akaviri style blades. Soon [PAWN_nameDef] was left with nothing more than crippling debt.</description>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
@@ -173,7 +169,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_SlaugherfishEradicator</defName>
 		<title>slaughterfish eradicator</title>
 		<titleShort>eradicator</titleShort>
-		<baseDesc>[PAWN_nameDef] was part of a group tasked with clearing the local waterways of slaughterfish. Many slaughterfish were slain, and many members of the group were lost to their ravenous jaws. Luckily [PAWN_nameDef] wasn't terrible with a bow, and subsequently came out reasonably unscathed.</baseDesc>
+		<description>[PAWN_nameDef] was part of a group tasked with clearing the local waterways of slaughterfish. Many slaughterfish were slain, and many members of the group were lost to their ravenous jaws. Luckily [PAWN_nameDef] wasn't terrible with a bow, and subsequently came out reasonably unscathed.</description>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
@@ -187,7 +183,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_SlaugherfishEradicatorAlt</defName>
 		<title>slaughterfish eradicator</title>
 		<titleShort>eradicator</titleShort>
-		<baseDesc>[PAWN_nameDef] was part of a group tasked with clearing the local waterways of slaughterfish. Many slaughterfish were slain, and many members of the group were lost to their ravenous jaws. But [PAWN_nameDef] managed to survive the ordeal, albeit missing a leg.</baseDesc>
+		<description>[PAWN_nameDef] was part of a group tasked with clearing the local waterways of slaughterfish. Many slaughterfish were slain, and many members of the group were lost to their ravenous jaws. But [PAWN_nameDef] managed to survive the ordeal, albeit missing a leg.</description>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
@@ -206,7 +202,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_ArenaFighter</defName>
 		<title>arena fighter</title>
 		<titleShort>fighter</titleShort>
-		<baseDesc>[PAWN_nameDef] frequently visited the local arena. In fact [PAWN_pronoun] spent many hours a day fighting in the pit, so many in fact that [PAWN_pronoun] had accrued quite the fanbase. Sadly all the blows to [PAWN_possessive] head has left a lasting impact.</baseDesc>
+		<description>[PAWN_nameDef] frequently visited the local arena. In fact [PAWN_pronoun] spent many hours a day fighting in the pit, so many in fact that [PAWN_pronoun] had accrued quite the fanbase. Sadly all the blows to [PAWN_possessive] head has left a lasting impact.</description>
 		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 		<skillGains>
 			<Melee>6</Melee>
@@ -227,7 +223,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_Alchemist</defName>
 		<title>alchemist</title>
 		<titleShort>alchemist</titleShort>
-		<baseDesc>[PAWN_nameDef] was always willing to do anything to advance [PAWN_possessive] alchemical knowledge, even if it meant consuming somewhat... unconventional items. At the end of the day any pain [PAWN_nameDef] suffered was worth it, as the pouches of coin that accompanied fulfilled orders were quite heavy.</baseDesc>
+		<description>[PAWN_nameDef] was always willing to do anything to advance [PAWN_possessive] alchemical knowledge, even if it meant consuming somewhat... unconventional items. At the end of the day any pain [PAWN_nameDef] suffered was worth it, as the pouches of coin that accompanied fulfilled orders were quite heavy.</description>
 		<bodyTypeGlobal>Fat</bodyTypeGlobal>
 		<skillGains>
 			<Intellectual>2</Intellectual>
@@ -240,7 +236,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_AlchemistAlt</defName>
 		<title>alchemist</title>
 		<titleShort>alchemist</titleShort>
-		<baseDesc>[PAWN_nameDef] was always willing to do anything to advance [PAWN_possessive] alchemical knowledge, even if it meant consuming somewhat... unconventional items. This willingness ended very abruptly one fateful day, when [PAWN_nameDef] bit down on a piece of Dwemer scrap metal.</baseDesc>
+		<description>[PAWN_nameDef] was always willing to do anything to advance [PAWN_possessive] alchemical knowledge, even if it meant consuming somewhat... unconventional items. This willingness ended very abruptly one fateful day, when [PAWN_nameDef] bit down on a piece of Dwemer scrap metal.</description>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
@@ -258,7 +254,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_Gardener</defName>
 		<title>gardener</title>
 		<titleShort>gardener</titleShort>
-		<baseDesc>[PAWN_nameDef] was tasked with caring for a nobles flower garden... after the previous gardener mysteriously disappeared. It was hard work, but well worth it, as at the end of the day [PAWN_nameDef] got to wander around admiring all the exotic flowers.</baseDesc>
+		<description>[PAWN_nameDef] was tasked with caring for a nobles flower garden... after the previous gardener mysteriously disappeared. It was hard work, but well worth it, as at the end of the day [PAWN_nameDef] got to wander around admiring all the exotic flowers.</description>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<Plants>4</Plants>
@@ -270,7 +266,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_Possessed</defName>
 		<title>possessed</title>
 		<titleShort>possessed</titleShort>
-		<baseDesc>[PAWN_nameDef] claims to be possessed by a vengeful spirit. This likely occurred during one of [PAWN_objective] frequent excursions to pilfer ancient tombs, but [PAWN_nameDef] will never admit that.</baseDesc>
+		<description>[PAWN_nameDef] claims to be possessed by a vengeful spirit. This likely occurred during one of [PAWN_objective] frequent excursions to pilfer ancient tombs, but [PAWN_nameDef] will never admit that.</description>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<Intellectual>2</Intellectual>
@@ -278,18 +274,15 @@
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
-				<defName>PsychicSensitivity</defName>
-				<degree>1</degree>
+				<defName Degree="1">PsychicSensitivity</defName>
 				<chance>50</chance>
 			</li>
 			<li>
-				<defName>Nerves</defName>
-				<degree>-1</degree>
+				<defName Degree="-1">Nerves</defName>
 				<chance>50</chance>
 			</li>
 			<li>
-				<defName>Nerves</defName>
-				<degree>-2</degree>
+				<defName Degree="-2">Nerves</defName>
 				<chance>50</chance>
 			</li>
 		</forcedTraitsChance>
@@ -301,7 +294,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_Mercenary</defName>
 		<title>mercenary</title>
 		<titleShort>mercenary</titleShort>
-		<baseDesc>[PAWN_nameDef] was quite knowledgeable when it came to the dangers of the local lands, and knew how to deal with almost all of them. From bandits to manhunter animals, if you needed protection while out in the wilds, [PAWN_nameDef] was who you wanted to hire.</baseDesc>
+		<description>[PAWN_nameDef] was quite knowledgeable when it came to the dangers of the local lands, and knew how to deal with almost all of them. From bandits to manhunter animals, if you needed protection while out in the wilds, [PAWN_nameDef] was who you wanted to hire.</description>
 		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 		<skillGains>
 			<Melee>4</Melee>
@@ -313,7 +306,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_Drunkard</defName>
 		<title>drunkard</title>
 		<titleShort>drunkard</titleShort>
-		<baseDesc>[PAWN_nameDef] claims to be a veteran of some war way back in the olden days. No one really believes [PAWN_objective], mostly because the story seems to change every single time. But occasionally someone takes pity and gives [PAWN_objective] a few coins, which are promptly spent on more alcohol.</baseDesc>
+		<description>[PAWN_nameDef] claims to be a veteran of some war way back in the olden days. No one really believes [PAWN_objective], mostly because the story seems to change every single time. But occasionally someone takes pity and gives [PAWN_objective] a few coins, which are promptly spent on more alcohol.</description>
 		<spawnCategories>
 			<li>ESCP_GenericBackstory_AdulthoodDrunkard</li>
 		</spawnCategories>
@@ -335,7 +328,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_TempleHealer</defName>
 		<title>temple healer</title>
 		<titleShort>healer</titleShort>
-		<baseDesc>Many came to the local temple when seeking aid, many were in need of healing, and [PAWN_nameDef] would attempt to help them all. Some would require elixirs, some a bowl of warm soup, and others simply kind words.</baseDesc>
+		<description>Many came to the local temple when seeking aid, many were in need of healing, and [PAWN_nameDef] would attempt to help them all. Some would require elixirs, some a bowl of warm soup, and others simply kind words.</description>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<Cooking>2</Cooking>
@@ -348,8 +341,7 @@
 				<chance>80</chance>
 			</li>
 			<li>
-				<defName>PsychicSensitivity</defName>
-				<degree>1</degree>
+				<defName Degree="1">PsychicSensitivity</defName>
 				<chance>30</chance>
 			</li>
 		</forcedTraitsChance>
@@ -363,7 +355,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_Adventurer</defName>
 		<title>adventurer</title>
 		<titleShort>adventurer</titleShort>
-		<baseDesc>[PAWN_nameDef] was always fascinated by the wonderful tales of brave heroes, delving into the unknown, and defeating the great evil that threatened the kingdom. So naturally [PAWN_pronoun] decided to leave everything behind, and follow in their footsteps. While [PAWN_nameDef] picked up a few valuable skills, [PAWN_possessive] journey was sadly rather uneventful.</baseDesc>
+		<description>[PAWN_nameDef] was always fascinated by the wonderful tales of brave heroes, delving into the unknown, and defeating the great evil that threatened the kingdom. So naturally [PAWN_pronoun] decided to leave everything behind, and follow in their footsteps. While [PAWN_nameDef] picked up a few valuable skills, [PAWN_possessive] journey was sadly rather uneventful.</description>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<Cooking>1</Cooking>
@@ -379,7 +371,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_Brewer</defName>
 		<title>brewer</title>
 		<titleShort>brewer</titleShort>
-		<baseDesc>[PAWN_nameDef] spent [PAWN_possessive] early years working at the local brewery. Many fine drinks were made there, and many were exported far and wide. Eventually [PAWN_nameDef] had enough, and wanted to see some of the exotic places [PAWN_possessive] hard work travelled to.</baseDesc>
+		<description>[PAWN_nameDef] spent [PAWN_possessive] early years working at the local brewery. Many fine drinks were made there, and many were exported far and wide. Eventually [PAWN_nameDef] had enough, and wanted to see some of the exotic places [PAWN_possessive] hard work travelled to.</description>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
@@ -393,7 +385,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_Acrobat</defName>
 		<title>acrobat</title>
 		<titleShort>acrobat</titleShort>
-		<baseDesc>[PAWN_nameDef] was an acrobat, or at least that's what [PAWN_pronoun] told anyone who asked. While [PAWN_pronoun] is quite flexible, in reality, [PAWN_nameDef] worked at a place one could describe as a tavern, but most visited for other purposes.</baseDesc>
+		<description>[PAWN_nameDef] was an acrobat, or at least that's what [PAWN_pronoun] told anyone who asked. While [PAWN_pronoun] is quite flexible, in reality, [PAWN_nameDef] worked at a place one could describe as a tavern, but most visited for other purposes.</description>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
@@ -411,7 +403,7 @@
 		<defName>ESCP_GenericBackstory_Adulthood_Khajiit</defName>
 		<title>khajiit</title>
 		<titleShort>khajiit</titleShort>
-		<baseDesc>While [PAWN_nameDef] had been a skooma addict for quite some time, a particularly bad batch sent [PAWN_objective] spiralling down a strange, and somewhat unfortunate, serious of events. Eventually [PAWN_nameDef] woke up one day, in a strange land, covered in fur, and with absolutely no recollection of the past few months. For some reason, this made complete sense to [PAWN_nameDef], for [PAWN_pronoun] was in fact a Khajiit, and always had been.</baseDesc>
+		<description>While [PAWN_nameDef] had been a skooma addict for quite some time, a particularly bad batch sent [PAWN_objective] spiralling down a strange, and somewhat unfortunate, serious of events. Eventually [PAWN_nameDef] woke up one day, in a strange land, covered in fur, and with absolutely no recollection of the past few months. For some reason, this made complete sense to [PAWN_nameDef], for [PAWN_pronoun] was in fact a Khajiit, and always had been.</description>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<skillGains>
 			<Melee>2</Melee>
@@ -422,13 +414,11 @@
 		</workDisables>
 		<forcedTraitsChance>
 			<li>
-				<defName>DrugDesire</defName>
-				<degree>1</degree>
+				<defName Degree="1">DrugDesire</defName>
 				<chance>50</chance>
 			</li>
 			<li>
-				<defName>DrugDesire</defName>
-				<degree>2</degree>
+				<defName Degree="2">DrugDesire</defName>
 				<chance>50</chance>
 			</li>
 		</forcedTraitsChance>

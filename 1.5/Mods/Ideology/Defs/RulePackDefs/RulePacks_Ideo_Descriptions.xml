@@ -8,10 +8,10 @@
     <IdeoStoryPatternDef>
         <defName>ESCP_Ideo_Description_Eight_Divines</defName>
         <segments>
-            <li>setup</li>
-            <li>story</li>
-            <li>story</li>
-            <li>story</li>
+            <li>part0</li>
+            <li>part1</li>
+            <li>part2</li>
+            <li>part3</li>
         </segments>
         <rules>
             <include>
@@ -19,15 +19,15 @@
             </include>
             <rulesStrings>
                 <!-- final fallbacks -->
-                <li>story(priority=-999)-></li> <!-- allow zero or more stories -->
+                <li>story(priority=-999)-></li>                <!-- allow zero or more stories -->
 
                 <!-- generic setup -->
-                <li>setup->At the center of Mundas is Nirn our home. And for that we have to thank its creators. Lorkhan and the 8 Divines, [deity0_name], [deity1_name], [deity2_name],[deity3_name], [deity4_name], [deity5_name], [deity6_name] and [deity7_name].</li>
+                <li>part0->At the center of Mundas is Nirn our home. And for that we have to thank its creators. Lorkhan and the 8 Divines, [deity0_name], [deity1_name], [deity2_name],[deity3_name], [deity4_name], [deity5_name], [deity6_name] and [deity7_name].</li>
 
                 <!-- low-priority generic stories -->
-                <li>story(uses=1,priority=10)->The Divines are the creators of life, love, time, and protectors of spirits, death, and the afterlife.</li>
-                <li>story(uses=1,priority=5)->[deity0_name], chief diety of the almighty, god of time have come to worship you and your pantheon.</li>
-                <li>story(uses=1,priority=1)->For this pantheon we follow, their will is our own, our lives devoted and our souls forever theirs.</li>
+                <li>part1(uses=1,priority=10)->The Divines are the creators of life, love, time, and protectors of spirits, death, and the afterlife.</li>
+                <li>part2(uses=1,priority=5)->[deity0_name], chief deity of the almighty, god of time have come to worship you and your pantheon.</li>
+                <li>part3(uses=1,priority=1)->For this pantheon we follow, their will is our own, our lives devoted and our souls forever theirs.</li>
             </rulesStrings>
         </rules>
     </IdeoStoryPatternDef>
@@ -37,11 +37,11 @@
     <IdeoStoryPatternDef>
         <defName>ESCP_Ideo_Description_Nine_Divines</defName>
         <segments>
-            <li>setup</li>
-            <li>story</li>
-            <li>story</li>
-            <li>story</li>
-            <li>story</li>
+            <li>part0</li>
+            <li>part1</li>
+            <li>part2</li>
+            <li>part3</li>
+            <li>part4</li>
         </segments>
         <rules>
             <include>
@@ -49,16 +49,16 @@
             </include>
             <rulesStrings>
                 <!-- final fallbacks -->
-                <li>story(priority=-999)-></li> <!-- allow zero or more stories -->
+                <li>story(priority=-999)-></li>                <!-- allow zero or more stories -->
 
                 <!-- generic setup -->
-                <li>setup->At the center of Mundas is Nirn our home. And for that we have to thank its creators. Lorkhan and the 8 Divines, [deity0_name], [deity1_name], [deity2_name],[deity3_name], [deity4_name], [deity5_name], [deity6_name] and [deity7_name].</li>
+                <li>part0->At the center of Mundas is Nirn our home. And for that we have to thank its creators. Lorkhan and the 8 Divines, [deity0_name], [deity1_name], [deity2_name],[deity3_name], [deity4_name], [deity5_name], [deity6_name] and [deity7_name].</li>
 
                 <!-- low-priority generic stories -->
-                <li>story(uses=1,priority=10)->The Divines are the creators of life, love, time, and protectors of spirits, death, and the afterlife.</li>
-                <li>story(uses=1,priority=5)->[deity0_name], chief diety of the almighty, god of time have come to worship you and your pantheon.</li>
-                <li>story(uses=1,priority=3)->It is rare a hero can be risen to that of Divine status, yet one Man has achieved that goal. And our Emperor none the less. [deity8_name] has risen to protect Nirn and its inhabitants as the Ninth Divine.</li>
-                <li>story(uses=1,priority=1)->For this pantheon we follow, their will is our own, our lives devoted and our souls forever theirs.</li>
+                <li>part1(uses=1,priority=10)->The Divines are the creators of life, love, time, and protectors of spirits, death, and the afterlife.</li>
+                <li>part2(uses=1,priority=5)->[deity0_name], chief deity of the almighty, god of time have come to worship you and your pantheon.</li>
+                <li>part3(uses=1,priority=3)->It is rare a hero can be risen to that of Divine status, yet one Man has achieved that goal. And our Emperor none the less. [deity8_name] has risen to protect Nirn and its inhabitants as the Ninth Divine.</li>
+                <li>part4(uses=1,priority=1)->For this pantheon we follow, their will is our own, our lives devoted and our souls forever theirs.</li>
             </rulesStrings>
         </rules>
     </IdeoStoryPatternDef>
