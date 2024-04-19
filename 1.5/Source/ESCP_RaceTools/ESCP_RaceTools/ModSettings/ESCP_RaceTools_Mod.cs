@@ -10,6 +10,7 @@ namespace ESCP_RaceTools
         public ESCP_RaceTools_Mod(ModContentPack contentPack) : base(contentPack)
         {
             settings = GetSettings<ESCP_RaceTools_ModSettings>();
+            Log.Message("[ESCP Race Tools] version " + Content.ModMetaData.ModVersion);
         }
 
         public override string SettingsCategory() => "ESCP_RaceTools_ModName".Translate();
