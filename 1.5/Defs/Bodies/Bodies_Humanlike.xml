@@ -197,7 +197,7 @@
 									<parts>
 										<li>
 											<def>Tongue</def>
-											<coverage>0</coverage>
+											<coverage>0.001</coverage>
 											<depth>Inside</depth>
 											<groups>
 												<li>FullHead</li>
