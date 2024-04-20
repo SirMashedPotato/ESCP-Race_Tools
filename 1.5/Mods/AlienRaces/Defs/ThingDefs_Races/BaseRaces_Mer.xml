@@ -28,17 +28,26 @@
 						<li>
 							<path>Things/Pawn/Humanlike/ESCP_GenericMer/Ear/RightEar</path>
 							<colorChannel>skin</colorChannel>
-							<bodyPart>Ear</bodyPart>
-							<bodyPartLabel>right ear</bodyPartLabel>
-							<drawnInBed>true</drawnInBed>
 							<inFrontOfBody>false</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
-							<hiddenUnderApparelFor>
-								<li>FullHead</li>
-								<li>UpperHead</li>
-							</hiddenUnderApparelFor>
+							<conditions>
+								<BodyPart>
+									<bodyPartLabel>right ear</bodyPartLabel>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<hiddenUnderApparelFor>
+										<li>FullHead</li>
+										<li>UpperHead</li>
+									</hiddenUnderApparelFor>
+								</Apparel>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
+									<drawnInBed>true</drawnInBed>
+								</Posture>
+							</conditions>
 							<offsets>
 								<north>
 									<layerOffset>-0.28</layerOffset>
@@ -54,17 +63,26 @@
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<path>Things/Pawn/Humanlike/ESCP_GenericMer/Ear/LeftEar</path>
 							<colorChannel>skin</colorChannel>
-							<bodyPart>Ear</bodyPart>
-							<bodyPartLabel>left ear</bodyPartLabel>
-							<drawnInBed>true</drawnInBed>
 							<inFrontOfBody>false</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
-							<hiddenUnderApparelFor>
-								<li>FullHead</li>
-								<li>UpperHead</li>
-							</hiddenUnderApparelFor>
+							<conditions>
+								<BodyPart>
+									<bodyPartLabel>left ear</bodyPartLabel>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<hiddenUnderApparelFor>
+										<li>FullHead</li>
+										<li>UpperHead</li>
+									</hiddenUnderApparelFor>
+								</Apparel>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
+									<drawnInBed>true</drawnInBed>
+								</Posture>
+							</conditions>
 							<offsets>
 								<north>
 									<layerOffset>-0.28</layerOffset>
@@ -206,7 +224,7 @@
 			</generalSettings>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
-		<!-- ========== [ESCP_BaseRace_MerScaled] ========== -->
+	<!-- ========== [ESCP_BaseRace_MerScaled] ========== -->
 	<AlienRace.ThingDef_AlienRace ParentName="ESCP_BaseRace_TrueMer" Name="ESCP_BaseRace_MerScaled" Abstract="True">
 		<alienRace>
 			<generalSettings>
