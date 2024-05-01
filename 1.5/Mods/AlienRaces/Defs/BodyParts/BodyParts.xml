@@ -2,8 +2,8 @@
 <Defs>
 
     <!--Tails-->
-    <RecipeDef Name="SurgeryInstallBodyPartProstheticBase">
-        <defName>InstallClothTail</defName>
+    <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+        <defName>ESCP_InstallClothTail</defName>
         <label>install cloth tail</label>
         <description>Installs cloth tail.</description>
         <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
