@@ -15,6 +15,7 @@
             <li MayRequire="theo.escp.khajiit">ESCP_KhajiitRace</li>
             <li MayRequire="theo.escp.khajiit">ESCP_OhmesRahtRace</li>
             <li MayRequire="theo.escp.argonians">ESCP_ArgonianRace</li>
+            <li MayRequire="theo.escp.argonians">ESCP_NagaRace</li>
         </recipeUsers>
         <ingredients>
             <li>
