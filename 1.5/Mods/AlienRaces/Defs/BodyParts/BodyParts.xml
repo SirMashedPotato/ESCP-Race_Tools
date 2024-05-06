@@ -2,7 +2,7 @@
 <Defs>
 
     <!--Tails-->
-    <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+    <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase" MayRequireAnyOf="theo.escp.khajiit,theo.escp.argonians">
         <defName>ESCP_InstallClothTail</defName>
         <label>install cloth tail</label>
         <description>Installs cloth tail.</description>
@@ -49,7 +49,7 @@
         <addsHediff>ESCP_ClothTail</addsHediff>
     </RecipeDef>
 
-    <HediffDef ParentName="AddedBodyPartBase">
+    <HediffDef ParentName="AddedBodyPartBase" MayRequireAnyOf="theo.escp.khajiit,theo.escp.argonians">
         <defName>ESCP_ClothTail</defName>
         <description>A belted cloth tail meant to comfort beastkin who lost their natural ones, if only a little.</description>
         <label>cloth tail</label>
@@ -59,7 +59,7 @@
         </addedPartProps>
     </HediffDef>
 
-    <thingDef ParentName="BodyPartProstheticBase">
+    <thingDef ParentName="BodyPartProstheticBase" MayRequireAnyOf="theo.escp.khajiit,theo.escp.argonians">
         <defName>ESCP_ClothTail</defName>
         <label>cloth tail</label>
         <description>Cloth tail attachable with a belt. Offers some comfort to those who lost theirs.</description>
