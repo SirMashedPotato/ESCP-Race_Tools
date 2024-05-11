@@ -76,7 +76,7 @@
         <graphicData>
             <texPath>Things/Item/Health/HealthItem</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <color>(155,165,148)</color>
+            <color>(154,124,104)</color>
         </graphicData>
         <statBases>
             <MarketValue>400</MarketValue>
