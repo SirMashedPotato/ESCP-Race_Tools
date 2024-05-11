@@ -1,5 +1,0 @@
-J:\Modding\Github\ESCP-Race_Tools\1.3\Source\PowerArmourFrameCheck\PowerArmourFrameCheck\obj\Debug\PowerArmourFrameCheck.csprojAssemblyReference.cache
-J:\Modding\Github\ESCP-Race_Tools\1.3\Source\PowerArmourFrameCheck\PowerArmourFrameCheck\obj\Debug\PowerArmourFrameCheck.csproj.CoreCompileInputs.cache
-J:\Modding\Github\ESCP-Race_Tools\1.3\Assemblies\PowerArmourFrameCheck.dll
-J:\Modding\Github\ESCP-Race_Tools\1.3\Source\PowerArmourFrameCheck\PowerArmourFrameCheck\obj\Debug\PowerArmourFrameCheck.csproj.CopyComplete
-J:\Modding\Github\ESCP-Race_Tools\1.3\Source\PowerArmourFrameCheck\PowerArmourFrameCheck\obj\Debug\PowerArmourFrameCheck.dll

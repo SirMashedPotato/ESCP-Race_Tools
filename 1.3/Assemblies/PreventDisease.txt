@@ -1,7 +1,0 @@
-REQUIRES HARMONY
-Just put this in your race ThingDef
-Prevents pawn from being targeted by all disease incidents
-
-<modExtensions>
-	<li Class="PreventDisease.PawnProperties"/>
-</modExtensions>

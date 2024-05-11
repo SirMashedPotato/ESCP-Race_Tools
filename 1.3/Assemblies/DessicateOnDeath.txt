@@ -1,4 +1,0 @@
-Just put this in your pawn ThingDef in <race>
-Pawn corpse instantly, and completely, dessicates upon death
-
-<deathActionWorkerClass>DessicateOnDeath.DeathActionWorker_DessicateOnDeath</deathActionWorkerClass>
