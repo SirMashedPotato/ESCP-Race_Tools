@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>ESCP - Race Tools</name>
-	<packageId>ESCP.ESCP.RaceTools</packageId>
+	<packageId>ESCP.RaceTools</packageId>
 	<author>ESCP</author>
 	<modVersion IgnoreIfNoMatchingField="True">1.1.7</modVersion>
 	<supportedVersions>
