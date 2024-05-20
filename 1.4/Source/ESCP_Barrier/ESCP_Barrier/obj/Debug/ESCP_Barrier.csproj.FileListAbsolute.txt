@@ -1,8 +1,0 @@
-J:\Modding\Github\ESCP-Race_Tools\1.3\Assemblies\ESCP_Barrier.dll
-J:\Modding\Github\ESCP-Race_Tools\1.3\Source\ESCP_Barrier\ESCP_Barrier\obj\Debug\ESCP_Barrier.csprojAssemblyReference.cache
-J:\Modding\Github\ESCP-Race_Tools\1.3\Source\ESCP_Barrier\ESCP_Barrier\obj\Debug\ESCP_Barrier.csproj.CoreCompileInputs.cache
-J:\Modding\Github\ESCP-Race_Tools\1.3\Source\ESCP_Barrier\ESCP_Barrier\obj\Debug\ESCP_Barrier.dll
-J:\Modding\Github\ESCP-Race_Tools\1.4\Source\ESCP_Barrier\ESCP_Barrier\obj\Debug\ESCP_Barrier.csproj.AssemblyReference.cache
-J:\Modding\Github\ESCP-Race_Tools\1.4\Source\ESCP_Barrier\ESCP_Barrier\obj\Debug\ESCP_Barrier.csproj.CoreCompileInputs.cache
-J:\Modding\Github\ESCP-Race_Tools\1.4\Source\ESCP_Barrier\ESCP_Barrier\obj\Debug\ESCP_Barrier.dll
-J:\Modding\Github\ESCP-Race_Tools\1.4\Assemblies\ESCP_Barrier.dll

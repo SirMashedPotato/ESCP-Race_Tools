@@ -1,6 +1,0 @@
-Some backstories have race/faction specific exclusion tags
-This is to ensure certain races/factions don't use these backstories,
-without going overboard with base defs.
-
-Exclusion tag format:
-	ESCP_MaormerBackstory_Exclusion

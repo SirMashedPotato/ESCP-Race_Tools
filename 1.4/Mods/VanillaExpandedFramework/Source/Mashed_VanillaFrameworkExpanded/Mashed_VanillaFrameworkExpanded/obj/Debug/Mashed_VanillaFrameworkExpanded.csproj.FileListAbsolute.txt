@@ -1,8 +1,0 @@
-J:\Modding\Github\ESCP-Race_Tools\Mods\VanillaExpandedFramework\Source\Mashed_VanillaFrameworkExpanded\Mashed_VanillaFrameworkExpanded\obj\Debug\Mashed_VanillaFrameworkExpanded.csprojAssemblyReference.cache
-J:\Modding\Github\ESCP-Race_Tools\Mods\VanillaExpandedFramework\Source\Mashed_VanillaFrameworkExpanded\Mashed_VanillaFrameworkExpanded\obj\Debug\Mashed_VanillaFrameworkExpanded.csproj.CoreCompileInputs.cache
-J:\Modding\Github\ESCP-Race_Tools\Mods\VanillaExpandedFramework\Assemblies\Mashed_VanillaFrameworkExpanded.dll
-J:\Modding\Github\ESCP-Race_Tools\Mods\VanillaExpandedFramework\Source\Mashed_VanillaFrameworkExpanded\Mashed_VanillaFrameworkExpanded\obj\Debug\Mashed_VanillaFrameworkExpanded.dll
-J:\Modding\Github\ESCP-Race_Tools\1.4\Mods\VanillaExpandedFramework\Assemblies\Mashed_VanillaFrameworkExpanded.dll
-J:\Modding\Github\ESCP-Race_Tools\1.4\Mods\VanillaExpandedFramework\Source\Mashed_VanillaFrameworkExpanded\Mashed_VanillaFrameworkExpanded\obj\Debug\Mashed_VanillaFrameworkExpanded.csproj.AssemblyReference.cache
-J:\Modding\Github\ESCP-Race_Tools\1.4\Mods\VanillaExpandedFramework\Source\Mashed_VanillaFrameworkExpanded\Mashed_VanillaFrameworkExpanded\obj\Debug\Mashed_VanillaFrameworkExpanded.csproj.CoreCompileInputs.cache
-J:\Modding\Github\ESCP-Race_Tools\1.4\Mods\VanillaExpandedFramework\Source\Mashed_VanillaFrameworkExpanded\Mashed_VanillaFrameworkExpanded\obj\Debug\Mashed_VanillaFrameworkExpanded.dll
