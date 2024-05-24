@@ -45,6 +45,8 @@ namespace ESCP_RaceTools
         //For the prevent worn apparel Harmony patch
         public List<BodyPartGroupDef> restrictedApparelPartGroups;
         public string restrictedApparelOverrideTag;
+        //disables Facial Animations mod for select races
+        public bool removeFacialAnimationsComps = false;
 
         public static RaceProperties Get(Def def)
         {

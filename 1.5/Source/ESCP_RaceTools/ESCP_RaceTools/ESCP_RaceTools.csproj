@@ -87,6 +87,7 @@
     <Compile Include="DeathActionWorker\DeathActionWorker_HistoryEventOnDeath.cs" />
     <Compile Include="DefModExtensions\BeastMaster.cs" />
     <Compile Include="DefModExtensions\FactionGoodwillProperties.cs" />
+    <Compile Include="DefModExtensions\NLFacialAnimationsBlocker.cs" />
     <Compile Include="DefModExtensions\RomanceRestriction.cs" />
     <Compile Include="Harmony\CanEquipPatch.cs" />
     <Compile Include="Harmony\FoodPoisoningResistancePatch.cs" />
@@ -150,6 +151,7 @@
     <Compile Include="HediffComp\HediffComp_UntameOnEnd.cs" />
     <Compile Include="Ideo\RoleRequirements\RoleRequirement_Race.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\OnStartupUtility.cs" />
     <Compile Include="Utility\RaceToolsUtility.cs" />
     <Compile Include="Utility\SettlementPreferenceUtility.cs" />
   </ItemGroup>
