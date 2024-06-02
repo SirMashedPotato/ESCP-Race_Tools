@@ -59,7 +59,7 @@
         </addedPartProps>
     </HediffDef>
 
-    <thingDef ParentName="BodyPartProstheticBase" MayRequireAnyOf="theo.escp.khajiit,theo.escp.argonians">
+    <ThingDef ParentName="BodyPartProstheticBase" MayRequireAnyOf="theo.escp.khajiit,theo.escp.argonians">
         <defName>ESCP_ClothTail</defName>
         <label>cloth tail</label>
         <description>Cloth tail attachable with a belt. Offers some comfort to those who lost theirs.</description>
@@ -102,5 +102,5 @@
                 <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Workbench</li>
             </recipeUsers>
         </recipeMaker>
-    </thingDef>
+    </ThingDef>
 </Defs>
