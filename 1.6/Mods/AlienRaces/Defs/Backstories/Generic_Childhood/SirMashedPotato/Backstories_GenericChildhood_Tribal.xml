@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_GenericBackstory_Childhood_TribalA]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_TribalBase">
+		<defName>ESCP_GenericBackstory_Childhood_TribalA</defName>
+		<title>psychically gifted</title>
+		<titleShort>gifted</titleShort>
+		<description>[PAWN_nameDef] was born with a greater awareness of the unseen. After many years of guidance from the tribes Wise Woman, [PAWN_pronoun] learnt how to harness [PAWN_possessive] gift, and hear the whispers of the spirits.</description>
+		<skillGains>
+			<Animals>1</Animals>
+			<Plants>1</Plants>
+			<Social>1</Social>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<defName Degree="2">PsychicSensitivity</defName>
+				<chance>25</chance>
+			</li>
+			<li>
+				<defName Degree="1">PsychicSensitivity</defName>
+				<chance>100</chance>
+			</li>
+		</forcedTraitsChance>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Childhood_TribalB]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_TribalBase">
+		<defName>ESCP_GenericBackstory_Childhood_TribalB</defName>
+		<title>stone-thrower</title>
+		<titleShort>thrower</titleShort>
+		<description>[PAWN_nameDef] was always throwing stones around, at trees, at mudcrabs, and sometimes even at [PAWN_possessive] fellow tribe members. While most of the other tribe members grew quite terrified of a stone hitting them from out of nowhere, some saw the value in [PAWN_nameDef]'s skills.</description>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Social>-2</Social>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

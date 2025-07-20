@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========== [ESCP_MerLeatherApparelSad] ========== -->
+	<ThoughtDef>
+		<defName>ESCP_MerLeatherApparelSad</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_MerLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>mer leather {0}</label>
+				<description>Wearing mer leather is disturbing. Who could do this?</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>mer leather {0} (+1)</label>
+				<description>I'm dressed like an insane person.</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+			<li>
+				<label>mer leather {0} (+2)</label>
+				<description>I think there may be a face on my clothes. Oh, no... my clothes *are* a face.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+			<li>
+				<label>mer leather {0} etc</label>
+				<description>I look like a freak from a horror show, and I feel like I'm in a horror show.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+	</ThoughtDef>
+	<!-- ========== [ESCP_MerLeatherApparelHappy] ========== -->
+	<ThoughtDef>
+		<defName>ESCP_MerLeatherApparelHappy</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_MerLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>mer leather {0}</label>
+				<description>I enjoy wearing the suffering of others.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>mer leather {0} (+1)</label>
+				<description>This will scare them. All will know my power.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>mer leather {0} (+2)</label>
+				<description>The faces on my clothes aren't smiling, but they make *me* happy.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+			<li>
+				<label>mer leather {0} etc</label>
+				<description>The flesh! The flesh signals my triumph!</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+		<requiredTraits>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</requiredTraits>
+	</ThoughtDef>
+	<!-- ========== [ESCP_BeastfolkLeatherApparelSad] ========== -->
+	<ThoughtDef>
+		<defName>ESCP_BeastfolkLeatherApparelSad</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_BeastfolkLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>beastfolk leather {0}</label>
+				<description>Wearing beastfolk leather is disturbing. Who could do this?</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} (+1)</label>
+				<description>I'm dressed like an insane person.</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} (+2)</label>
+				<description>I think there may be a face on my clothes. Oh, no... my clothes *are* a face.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} etc</label>
+				<description>I look like a freak from a horror show, and I feel like I'm in a horror show.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+	</ThoughtDef>
+	<!-- ========== [ESCP_BeastfolkLeatherApparelHappy] ========== -->
+	<ThoughtDef>
+		<defName>ESCP_BeastfolkLeatherApparelHappy</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_BeastfolkLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>beastfolk leather {0}</label>
+				<description>I enjoy wearing the suffering of others.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} (+1)</label>
+				<description>This will scare them. All will know my power.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} (+2)</label>
+				<description>The faces on my clothes aren't smiling, but they make *me* happy.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} etc</label>
+				<description>The flesh! The flesh signals my triumph!</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+		<requiredTraits>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</requiredTraits>
+	</ThoughtDef>
+	<!-- ========== [ESCP_GoblinKenLeatherApparelSad] ========== -->
+	<ThoughtDef>
+		<defName>ESCP_GoblinKenLeatherApparelSad</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_GoblinKenLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>goblin-ken leather {0}</label>
+				<description>Wearing goblin-ken leather is disturbing. Who could do this?</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>goblin-ken leather {0} (+1)</label>
+				<description>I'm dressed like an insane person.</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+			<li>
+				<label>goblin-ken leather {0} (+2)</label>
+				<description>I think there may be a face on my clothes. Oh, no... my clothes *are* a face.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+			<li>
+				<label>goblin-ken leather {0} etc</label>
+				<description>I look like a freak from a horror show, and I feel like I'm in a horror show.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+	</ThoughtDef>
+	<!-- ========== [ESCP_GoblinKenLeatherApparelHappy] ========== -->
+	<ThoughtDef>
+		<defName>ESCP_GoblinKenLeatherApparelHappy</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_GoblinKenLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>goblin-ken leather {0}</label>
+				<description>I enjoy wearing the suffering of others.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>goblin-ken leather {0} (+1)</label>
+				<description>This will scare them. All will know my power.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>goblin-ken leather {0} (+2)</label>
+				<description>The faces on my clothes aren't smiling, but they make *me* happy.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+			<li>
+				<label>goblin-ken leather {0} etc</label>
+				<description>The flesh! The flesh signals my triumph!</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+		<requiredTraits>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</requiredTraits>
+	</ThoughtDef>
+	<!-- ========== [ESCP_AkaviriLeatherApparelSad] ========== -->
+	<ThoughtDef>
+		<defName>ESCP_AkaviriLeatherApparelSad</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_AkaviriLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>akaviri leather {0}</label>
+				<description>Wearing akaviri leather is disturbing. Who could do this?</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} (+1)</label>
+				<description>I'm dressed like an insane person.</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} (+2)</label>
+				<description>I think there may be a face on my clothes. Oh, no... my clothes *are* a face.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} etc</label>
+				<description>I look like a freak from a horror show, and I feel like I'm in a horror show.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+	</ThoughtDef>
+	<!-- ========== [ESCP_AkaviriLeatherApparelHappy] ========== -->
+	<ThoughtDef>
+		<defName>ESCP_AkaviriLeatherApparelHappy</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_AkaviriLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>akaviri leather {0}</label>
+				<description>I enjoy wearing the suffering of others.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} (+1)</label>
+				<description>This will scare them. All will know my power.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} (+2)</label>
+				<description>The faces on my clothes aren't smiling, but they make *me* happy.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+			<li>
+				<label>akaviri leather {0} etc</label>
+				<description>The flesh! The flesh signals my triumph!</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+		<requiredTraits>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</requiredTraits>
+	</ThoughtDef>
+</Defs>
+ 

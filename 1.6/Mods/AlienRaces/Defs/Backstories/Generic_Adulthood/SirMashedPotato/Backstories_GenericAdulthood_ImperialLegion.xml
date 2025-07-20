@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_ImperialLegionGuide]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialLegionBase">
+		<defName>ESCP_GenericBackstory_Adulthood_ImperialLegionGuide</defName>
+		<title>Imperial Legion guide</title>
+		<titleShort>Legion guide</titleShort>
+		<description>[PAWN_nameDef] was recruited by the local Legion fort, due to [PAWN_possessive] extensive knowledge of the surrounding lands. Accepting the offer was a risky choice, as the locals weren't exactly fond of the Legion. But the coin was too good an offer to pass up.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Shooting>3</Shooting>
+			<Social>3</Social>
+		</skillGains>
+		<maleCommonality>60</maleCommonality>
+		<femaleCommonality>60</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_ImperialLegionSoldier]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialLegionBase">
+		<defName>ESCP_GenericBackstory_Adulthood_ImperialLegionSoldier</defName>
+		<title>Imperial Legion soldier</title>
+		<titleShort>Legion soldier</titleShort>
+		<description>[PAWN_nameDef] wanted to help bring [PAWN_possessive] home into the future, and decided the only logical way of achieving this was by enlisting at the local Legion Fort. Turns out most days were simply spent wandering around the fort, trying to ensure weapons and armour didn't rust. Much to [PAWN_nameDef]'s disappointment, it seemed the future had to wait for a while.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Melee>3</Melee>
+			<Shooting>2</Shooting>
+			<Social>2</Social>
+		</skillGains>
+		<maleCommonality>60</maleCommonality>
+		<femaleCommonality>60</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_ImperialLegionSoldierAlt]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialLegionBase">
+		<defName>ESCP_GenericBackstory_Adulthood_ImperialLegionSoldierAlt</defName>
+		<title>Imperial Legion soldier</title>
+		<titleShort>Legion soldier</titleShort>
+		<description>[PAWN_nameDef] wanted to help bring [PAWN_possessive] home into the future, and decided the only logical way of achieving this was by enlisting at the local Legion Fort. Turns out that was a terrible idea, as mere days later [PAWN_nameDef] was sent off to deal with deranged cultists. Needless to say, [PAWN_possessive] 'nerves of steel' didn't even stand a chance.</description>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<Melee>3</Melee>
+			<Shooting>2</Shooting>
+			<Social>-2</Social>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<defName Degree="-1">Nerves</defName>
+				<chance>50</chance>
+			</li>
+			<li>
+				<defName Degree="-2">Nerves</defName>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<maleCommonality>10</maleCommonality>
+		<femaleCommonality>10</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_ImperialLegionDockHand]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialLegionBase">
+		<defName>ESCP_GenericBackstory_Adulthood_ImperialLegionDockHand</defName>
+		<title>Imperial Legion dock hand</title>
+		<titleShort>Legion dock hand</titleShort>
+		<description>The Imperial Legion had a great need for skilled dock hands, mostly because they deemed themselves above the employment of slaves. For [PAWN_nameDef], having suffered head trauma from [PAWN_possessive] time in the local arena, this was the perfect job.</description>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<skillGains>
+			<Crafting>2</Crafting>
+			<Melee>5</Melee>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<maleCommonality>50</maleCommonality>
+		<femaleCommonality>50</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

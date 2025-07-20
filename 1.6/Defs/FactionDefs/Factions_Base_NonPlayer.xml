@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========== [ESCP_NonPlayerFactionBase_Tribal] ========== -->
+	<FactionDef ParentName="TribeBase" Name="ESCP_NonPlayerFactionBase_Tribal" Abstract="True">
+		<allowedCultures Inherit="False"/>
+		<structureMemeWeights Inherit="False">
+			<ESCP_Structure_OriginLorkhanCult MayRequire="Ludeon.RimWorld.Ideology">1</ESCP_Structure_OriginLorkhanCult>
+			<ESCP_Structure_OriginDaedricCult MayRequire="Ludeon.RimWorld.Ideology">1</ESCP_Structure_OriginDaedricCult>
+		</structureMemeWeights>
+		<disallowedMemes Inherit="False"/>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.99</Baseliner>
+				<Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0.01</Sanguophage>
+			</xenotypeChances>
+		</xenotypeSet>
+		<pawnGroupMakers Inherit="false"/>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<raidLootMaker>ESCP_GenericRaidLootMaker</raidLootMaker>
+	</FactionDef>
+	<!-- ========== [ESCP_NonPlayerFactionBase_TribalCivil] ========== -->
+	<FactionDef ParentName="ESCP_NonPlayerFactionBase_Tribal" Name="ESCP_NonPlayerFactionBase_TribalCivil" Abstract="True">
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<configurationListOrderPriority>30</configurationListOrderPriority>
+	</FactionDef>
+	<!-- ========== [ESCP_NonPlayerFactionBase_TribalRough] ========== -->
+	<FactionDef ParentName="ESCP_NonPlayerFactionBase_Tribal" Name="ESCP_NonPlayerFactionBase_TribalRough" Abstract="True">
+		<naturalEnemy>true</naturalEnemy>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<configurationListOrderPriority>40</configurationListOrderPriority>
+	</FactionDef>
+	<!-- ========== [ESCP_NonPlayerFactionBase_TribalSavage] ========== -->
+	<FactionDef ParentName="ESCP_NonPlayerFactionBase_Tribal" Name="ESCP_NonPlayerFactionBase_TribalSavage" Abstract="True">
+		<permanentEnemy>true</permanentEnemy>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<configurationListOrderPriority>50</configurationListOrderPriority>
+	</FactionDef>
+</Defs>

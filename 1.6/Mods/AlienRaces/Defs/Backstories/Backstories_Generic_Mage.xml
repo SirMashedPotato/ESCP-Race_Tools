@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_MageRestoration]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_MageBase">
+		<defName>ESCP_GenericBackstory_Adulthood_MageRestoration</defName>
+		<title>restoration mage</title>
+		<titleShort>mage</titleShort>
+		<description>While [PAWN_nameDef] was magically gifted, [PAWN_pronoun] was never one for violence, and instead devoted [PAWN_possessive] skills to the art of restoration. Any who sought aid would have their please answered by [PAWN_nameDef].</description>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<Intellectual>4</Intellectual>
+			<Medicine>4</Medicine>
+		</skillGains>
+		<workDisables>
+			<li>Violent</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_MageNecromancer]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_MageBase" MayRequire="SirMashedPotato.ESCP.NecromanticThralls">
+		<defName>ESCP_GenericBackstory_Adulthood_MageNecromancer</defName>
+		<title>necromancer</title>
+		<titleShort>necromancer</titleShort>
+		<description>[PAWN_nameDef] was once a respected restoration mage, with a loving family. Then one day [PAWN_pronoun] returned to the smouldering ruins of [PAWN_possessive[ home. [PAWN_nameDef] became obsessed with seeking out forbidden knowledge, knowledge that could reunite [PAWN_objective] with [PAWN_pronoun] family. Finally [PAWN_pronoun] found it, an ancient tome, written by a Sload. But time had taken its tole on [PAWN_nameDef], and plans may have changed since [PAWN_pronoun] started the search.</description>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<Intellectual>8</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+		<forcedTraitsChance>
+			<li>
+				<defName>Psychopath</defName>
+				<chance>100</chance>
+			</li>
+		</forcedTraitsChance>
+		<forcedHediffs>
+			<li MayRequire="SirMashedPotato.ESCP.NecromanticThralls">ESCP_NecromanticThralls_ThrallStorage</li>
+		</forcedHediffs>
+		<maleCommonality>5</maleCommonality>
+		<femaleCommonality>5</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

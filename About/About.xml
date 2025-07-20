@@ -2,7 +2,7 @@
 <ModMetaData>
 	<name>ESCP - Race Tools</name>
 	<packageId>ESCP.RaceTools</packageId>
-	<author>SirMashedPotato, theo</author>
+	<author>SirMashedPotato, Theo, ChubbyGummyBear</author>
 	<modVersion IgnoreIfNoMatchingField="True">1.1.8</modVersion>
 	<supportedVersions>
 		<li>1.5</li>
@@ -28,8 +28,6 @@
 		<li>erdelf.HumanoidAlienRaces.dev</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>VanillaExpanded.VPsycastsE</li>
+		<li>vanillaexpanded.achievements</li>
 	</loadAfter>
-	<incompatibleWith>
-		<li>razza0.MorrowRimLeatherThoughts</li>
-	</incompatibleWith>
 </ModMetaData>

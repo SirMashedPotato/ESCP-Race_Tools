@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========== [ESCP_Structure_OriginDivinesEight] ========== -->
+	<MemeDef>
+		<defName>ESCP_Structure_OriginDivinesEight</defName>
+		<label>Eight Divines origin</label>
+		<description>This is a variant of the abstract theist structure. This ideoligion is a descendant of the Temple of the Divines, a religious sect focused on worshipping the eight Divines, Aedric beings of creation. It may have very different precepts than those of thousands of years ago, but its symbols are similar, though the exact names of it's deities, and the roles they play, are known to vary between cultures.</description>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.IdeoOrginProperties">
+				<IgnoreDuplicateDeityNames>true</IgnoreDuplicateDeityNames>
+				<overrideDeityIcons>true</overrideDeityIcons>
+				<iconPath>
+					<li>UI/Deities/ESCP_DeityAkatosh</li>
+					<li>UI/Deities/ESCP_DeityArkay</li>
+					<li>UI/Deities/ESCP_DeityDibella</li>
+					<li>UI/Deities/ESCP_DeityJulianos</li>
+					<li>UI/Deities/ESCP_DeityKynareth</li>
+					<li>UI/Deities/ESCP_DeityMara</li>
+					<li>UI/Deities/ESCP_DeityStendarr</li>
+					<li>UI/Deities/ESCP_DeityZenithar</li>
+				</iconPath>
+				<overrideDeityGenders>true</overrideDeityGenders>
+				<deityGenders>
+					<li>Male</li>
+					<li>Male</li>
+					<li>Female</li>
+					<li>Male</li>
+					<li>Female</li>
+					<li>Female</li>
+					<li>Male</li>
+					<li>Male</li>
+				</deityGenders>
+			</li>
+		</modExtensions>
+		<iconPath>UI/Structures/ESCP_OriginDivinesEight</iconPath>
+		<deityCount>8</deityCount>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<worshipRoomLabel>temple</worshipRoomLabel>
+		<category>Structure</category>
+		<impact>0</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeCreed->sect</li>
+				<li>memeCreed->cult</li>
+				<li>memeCreed->temple</li>
+				<li>memeCreed->faith</li>
+				<li>memeLeaderNoun->patriarch</li>
+				<li>memeLeaderAdjective->chosen</li>
+				<li>memeLeaderAdjective->divine</li>
+				<li>memeLeaderAdjective->blessed</li>
+				<li>memeMoralist->priest</li>
+				<li>memeMoralist->cleric</li>
+				<li>memeMoralist->preacher</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>ESCP_Ideo_Description_Eight_Divines</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_theist</key>
+					<value>true</value>
+				</li>
+				<li>
+					<key>ESCP_Structure_OriginDivinesEight</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Temple of the Divines</ideoName>
+				<adjective>Priest</adjective>
+				<member>Follower</member>
+				<prefix>true</prefix>
+			</li>
+			<li>
+				<ideoName>Temple of the Eight</ideoName>
+				<adjective>Priest</adjective>
+				<member>Follower</member>
+				<prefix>true</prefix>
+			</li>
+		</symbolPacks>
+		<fixedDeityNameTypes>
+			<li>
+				<name>Akatosh</name>
+				<type>the Dragon God of Time</type>
+			</li>
+			<li>
+				<name>Arkay</name>
+				<type>the God of Cycles</type>
+			</li>
+			<li>
+				<name>Dibella</name>
+				<type>the Godess of Beauty and Art</type>
+			</li>
+			<li>
+				<name>Julianos</name>
+				<type>the God of Logic</type>
+			</li>
+			<li>
+				<name>Kynareth</name>
+				<type>the Godess of heavens</type>
+			</li>
+			<li>
+				<name>Mara</name>
+				<type>the Mother-Godess</type>
+			</li>
+			<li>
+				<name>Stendarr</name>
+				<type>the God of Mercy</type>
+			</li>
+			<li>
+				<name>Zenithar</name>
+				<type>the Trader God</type>
+			</li>
+		</fixedDeityNameTypes>
+	</MemeDef>
+	<!-- ========== [ESCP_Structure_OriginDivinesNine] ========== -->
+	<MemeDef>
+		<defName>ESCP_Structure_OriginDivinesNine</defName>
+		<label>Nine Divines origin</label>
+		<description>This is a variant of the abstract theist structure. This ideoligion is a descendant of the Temple of the Divines, a religious sect focused on worshipping the eight Divines, Aedric beings of creation, and the one who ascended to their level. It may have very different precepts than those of thousands of years ago, but its symbols are similar.</description>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.IdeoOrginProperties">
+				<IgnoreDuplicateDeityNames>true</IgnoreDuplicateDeityNames>
+				<overrideDeityIcons>true</overrideDeityIcons>
+				<iconPath>
+					<li>UI/Deities/ESCP_DeityAkatosh</li>
+					<li>UI/Deities/ESCP_DeityArkay</li>
+					<li>UI/Deities/ESCP_DeityDibella</li>
+					<li>UI/Deities/ESCP_DeityJulianos</li>
+					<li>UI/Deities/ESCP_DeityKynareth</li>
+					<li>UI/Deities/ESCP_DeityMara</li>
+					<li>UI/Deities/ESCP_DeityStendarr</li>
+					<li>UI/Deities/ESCP_DeityZenithar</li>
+					<li>UI/Deities/ESCP_DeityTalos</li>
+				</iconPath>
+				<overrideDeityGenders>true</overrideDeityGenders>
+				<deityGenders>
+					<li>Male</li>
+					<li>Male</li>
+					<li>Female</li>
+					<li>Male</li>
+					<li>Female</li>
+					<li>Female</li>
+					<li>Male</li>
+					<li>Male</li>
+					<li>Male</li>
+				</deityGenders>
+			</li>
+		</modExtensions>
+		<iconPath>UI/Structures/ESCP_OriginDivinesNine</iconPath>
+		<deityCount>9</deityCount>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<worshipRoomLabel>temple</worshipRoomLabel>
+		<category>Structure</category>
+		<impact>0</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeCreed->sect</li>
+				<li>memeCreed->cult</li>
+				<li>memeCreed->temple</li>
+				<li>memeCreed->faith</li>
+				<li>memeLeaderNoun->patriarch</li>
+				<li>memeLeaderAdjective->chosen</li>
+				<li>memeLeaderAdjective->divine</li>
+				<li>memeLeaderAdjective->blessed</li>
+				<li>memeMoralist->priest</li>
+				<li>memeMoralist->cleric</li>
+				<li>memeMoralist->preacher</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>ESCP_Ideo_Description_Nine_Divines</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_theist</key>
+					<value>true</value>
+				</li>
+				<li>
+					<key>ESCP_Structure_OriginDivinesNine</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Temple of the Divines</ideoName>
+				<adjective>Priest</adjective>
+				<member>Follower</member>
+				<prefix>true</prefix>
+			</li>
+			<li>
+				<ideoName>Temple of the Nine</ideoName>
+				<adjective>Priest</adjective>
+				<member>Follower</member>
+				<prefix>true</prefix>
+			</li>
+			<li>
+				<ideoName>Temple of the Eight and One</ideoName>
+				<adjective>Priest</adjective>
+				<member>Follower</member>
+				<prefix>true</prefix>
+			</li>
+		</symbolPacks>
+		<fixedDeityNameTypes>
+			<li>
+				<name>Akatosh</name>
+				<type>the Dragon God of Time</type>
+			</li>
+			<li>
+				<name>Arkay</name>
+				<type>the God of Cycles</type>
+			</li>
+			<li>
+				<name>Dibella</name>
+				<type>the Godess of Beauty and Art</type>
+			</li>
+			<li>
+				<name>Julianos</name>
+				<type>the God of Logic</type>
+			</li>
+			<li>
+				<name>Kynareth</name>
+				<type>the Godess of heavens</type>
+			</li>
+			<li>
+				<name>Mara</name>
+				<type>the Mother-Godess</type>
+			</li>
+			<li>
+				<name>Stendarr</name>
+				<type>the God of Mercy</type>
+			</li>
+			<li>
+				<name>Zenithar</name>
+				<type>the Trader God</type>
+			</li>
+			<li>
+				<name>Talos</name>
+				<type>the Hero-God of mankind</type>
+			</li>
+		</fixedDeityNameTypes>
+	</MemeDef>
+	<!-- ========== [ESCP_Structure_OriginLorkhanCult] ========== -->
+	<MemeDef>
+		<defName>ESCP_Structure_OriginLorkhanCult</defName>
+		<label>Cult of Lorkhan origin</label>
+		<description>This is a variant of the abstract theist structure. This ideoligion focuses on the worship of the Missing God, Lorkhan. It may have very different precepts than those of thousands of years ago, but its symbols are similar.</description>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.IdeoOrginProperties">
+				<IgnoreDuplicateDeityNames>true</IgnoreDuplicateDeityNames>
+				<overrideDeityIcons>true</overrideDeityIcons>
+				<iconPath>
+					<li>UI/Deities/ESCP_DeityLorkhan</li>
+				</iconPath>
+			</li>
+		</modExtensions>
+		<iconPath>UI/Structures/ESCP_OriginLorkhanCult</iconPath>
+		<deityCount>1</deityCount>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<worshipRoomLabel>temple</worshipRoomLabel>
+		<category>Structure</category>
+		<impact>0</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeCreed->sect</li>
+				<li>memeCreed->cult</li>
+				<li>memeCreed->temple</li>
+				<li>memeCreed->faith</li>
+				<li>memeLeaderNoun->patriarch</li>
+				<li>memeLeaderAdjective->chosen</li>
+				<li>memeLeaderAdjective->divine</li>
+				<li>memeLeaderAdjective->blessed</li>
+				<li>memeMoralist->priest</li>
+				<li>memeMoralist->cleric</li>
+				<li>memeMoralist->preacher</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>TheistMyth</def>
+				</li>
+				<li>
+					<def>TheistFounder</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_theist</key>
+					<value>true</value>
+				</li>
+				<li>
+					<key>ESCP_Structure_OriginLorkhanCult</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Temple of Lorkhan</ideoName>
+				<adjective>Priest</adjective>
+				<member>Follower</member>
+				<prefix>true</prefix>
+			</li>
+			<li>
+				<ideoName>Cult of Lorkhan</ideoName>
+				<adjective>Voice</adjective>
+				<member>Cultist</member>
+				<prefix>true</prefix>
+			</li>
+		</symbolPacks>
+		<fixedDeityNameTypes>
+			<li>
+				<name>Lorkhan</name>
+				<type>the Missing God</type>
+			</li>
+		</fixedDeityNameTypes>
+	</MemeDef>
+	<!-- ========== [ESCP_Structure_OriginDaedricCult] ========== -->
+	<MemeDef>
+		<defName>ESCP_Structure_OriginDaedricCult</defName>
+		<label>Daedric Cult origin</label>
+		<description>This is a variant of the abstract theist structure. This ideoligion focuses on the worship of one of the many Daedric Princes. Many Daedric cults have existed, each one having their own distinct precepts.</description>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.IdeoOrginProperties">
+				<overrideDeityIcons>true</overrideDeityIcons>
+				<iconPath>
+					<li>UI/Deities/ESCP_DeityAzura</li>
+					<li>UI/Deities/ESCP_DeityBoethiah</li>
+					<li>UI/Deities/ESCP_DeityClavicusVile</li>
+					<li>UI/Deities/ESCP_DeityHermaeusMora</li>
+					<li>UI/Deities/ESCP_DeityHircine</li>
+					<li>UI/Deities/ESCP_DeityJyggalag</li>
+					<li>UI/Deities/ESCP_DeityMalacath</li>
+					<li>UI/Deities/ESCP_DeityMehrunesDagon</li>
+					<li>UI/Deities/ESCP_DeityMephala</li>
+					<li>UI/Deities/ESCP_DeityMeridia</li>
+					<li>UI/Deities/ESCP_DeityMolagBal</li>
+					<li>UI/Deities/ESCP_DeityNamira</li>
+					<li>UI/Deities/ESCP_DeityNocturnal</li>
+					<li>UI/Deities/ESCP_DeityPeryite</li>
+					<li>UI/Deities/ESCP_DeitySanguine</li>
+					<li>UI/Deities/ESCP_DeitySheogorath</li>
+					<li>UI/Deities/ESCP_DeityVaermina</li>
+				</iconPath>
+			</li>
+		</modExtensions>
+		<iconPath>UI/Structures/ESCP_OriginDaedricCult</iconPath>
+		<deityCount>1</deityCount>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<worshipRoomLabel>temple</worshipRoomLabel>
+		<category>Structure</category>
+		<impact>0</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeCreed->sect</li>
+				<li>memeCreed->cult</li>
+				<li>memeCreed->temple</li>
+				<li>memeCreed->faith</li>
+				<li>memeLeaderNoun->patriarch</li>
+				<li>memeLeaderAdjective->chosen</li>
+				<li>memeLeaderAdjective->divine</li>
+				<li>memeLeaderAdjective->blessed</li>
+				<li>memeMoralist->priest</li>
+				<li>memeMoralist->cleric</li>
+				<li>memeMoralist->preacher</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>TheistMyth</def>
+				</li>
+				<li>
+					<def>TheistFounder</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_theist</key>
+					<value>true</value>
+				</li>
+				<li>
+					<key>ESCP_Structure_OriginDaedricCult</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<adjective>Acolyte</adjective>
+				<member>Acolyte</member>
+				<prefix>true</prefix>
+			</li>
+		</symbolPacks>
+		<fixedDeityNameTypes>
+			<li>
+				<name>Azura</name>
+				<type>Prince of Twilight</type>
+			</li>
+			<li>
+				<name>Boethiah</name>
+				<type>Prince of Plots</type>
+			</li>
+			<li>
+				<name>Clavicus Vile</name>
+				<type>Prince of Trickery</type>
+			</li>
+			<li>
+				<name>Hermaeus Mora</name>
+				<type>Prince of Fate</type>
+			</li>
+			<li>
+				<name>Hircine</name>
+				<type>Prince of the Hunt</type>
+			</li>
+			<li>
+				<name>Jyggalag</name>
+				<type>Prince of Order</type>
+			</li>
+			<li>
+				<name>Malacath</name>
+				<type>Prince of Outcasts</type>
+			</li>
+			<li>
+				<name>Mehrunes Dagon</name>
+				<type>Prince of Ambition</type>
+			</li>
+			<li>
+				<name>Mephala</name>
+				<type>Prince of Murder</type>
+			</li>
+			<li>
+				<name>Meridia</name>
+				<type>Prince of Life</type>
+			</li>
+			<li>
+				<name>Molag Bal</name>
+				<type>Prince of Domination</type>
+			</li>
+			<li>
+				<name>Namira</name>
+				<type>Prince of Decay</type>
+			</li>
+			<li>
+				<name>Nocturnal</name>
+				<type>Prince of Shadows</type>
+			</li>
+			<li>
+				<name>Peryite</name>
+				<type>Prince of Pestilence</type>
+			</li>
+			<li>
+				<name>Sanguine</name>
+				<type>Prince of Lust</type>
+			</li>
+			<li>
+				<name>Sheogorath</name>
+				<type>Prince of Madness</type>
+			</li>
+			<li>
+				<name>Vaermina</name>
+				<type>Prince of Dreams</type>
+			</li>
+		</fixedDeityNameTypes>
+	</MemeDef>
+</Defs>

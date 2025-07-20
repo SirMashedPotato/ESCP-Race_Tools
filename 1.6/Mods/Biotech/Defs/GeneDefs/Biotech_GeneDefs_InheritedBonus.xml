@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--
+		Half the bonus of their respective species.
+		Round down where necessary.
+		
+		<displayOrderInCategory>0</displayOrderInCategory> MUST be defined
+		<displayOrderInCategory>0</displayOrderInCategory> MUST use a unique number
+		Mer 0
+		Altmer 1
+		Ayleid 2
+		Bosmer 3
+		Chimer 4
+		Dunmer 5
+		Dwemer 6
+		Falmer 7
+		Maormer 8
+		Maormer Leviathan 9
+		Orsimer 10
+		Sinistral Mer 11, may not actually get used, but just in case
+		Goblin 12
+		Reikling 13
+		Reikr 14
+		Breton 15
+	-->
+	<!-- ==========[ESCP_InheritedRacialBonus]========== -->
+	<GeneCategoryDef>
+		<defName>ESCP_InheritedRacialBonus</defName>
+		<label>ESCP inherited bonus</label>
+		<displayPriorityInXenotype>398</displayPriorityInXenotype>
+	</GeneCategoryDef>
+	<!-- ==========[ESCP_InheritedRacialBonus_Base]========== -->
+	<GeneDef ParentName="ESCP_GeneBase" Name="ESCP_InheritedRacialBonus_Base" Abstract="True">
+		<displayCategory>ESCP_InheritedRacialBonus</displayCategory>
+		<exclusionTags>
+			<li>ESCP_InheritedRacialBonus</li>
+		</exclusionTags>
+		<biostatMet>-1</biostatMet>
+		<selectionWeight>0</selectionWeight>
+	</GeneDef>
+	<!-- 
+		Generic 'species' bonus for Mer.
+		Ensures Mer don't inherit the Mer bonuses
+	-->
+	<!-- ==========[ESCP_GeneInheritedBonus_Mer]========== -->
+	<GeneDef ParentName="ESCP_GeneBase">
+		<defName>ESCP_GeneInheritedBonus_Mer</defName>
+		<label>Mer blood</label>
+		<description>Carriers of this gene exhibit some of the bonuses typically displayed by the those of Mer blood, though at a comparatively weaker level.</description>
+		<iconPath>UI/Icons/Genes/ESCP_InheritedBonus/ESCP_GeneInheritedBonus_Mer</iconPath>
+		<displayCategory>ESCP_InheritedRacialBonus</displayCategory>
+		<statOffsets>
+			<PsychicSensitivity>0.1</PsychicSensitivity>
+			<LifespanFactor>0.5</LifespanFactor>
+			<Fertility>-0.25</Fertility>
+		</statOffsets>
+		<biostatMet>0</biostatMet>
+		<selectionWeight>0</selectionWeight>
+		<displayOrderInCategory>0</displayOrderInCategory>
+	</GeneDef>
+</Defs>

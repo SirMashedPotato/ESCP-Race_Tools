@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PlantBaseNonEdible" Name="ESCP_BuildingPodBase" Abstract="True">
+		<thingClass>ESCP_RaceTools.PlantBuildingPod</thingClass>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+		</statBases>
+		<altitudeLayer>Building</altitudeLayer>
+		<graphicData>
+			<texPath>Things/Plant/ESCP_BuildingPlantPod</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.25, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<minifiedDef IsNull="True"/>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<pathCost>130</pathCost>
+		<blockWind>false</blockWind>
+		<plant>
+			<sowWork>200</sowWork>
+			<dieIfLeafless>false</dieIfLeafless>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<blockAdjacentSow>false</blockAdjacentSow>
+			<sowResearchPrerequisites>
+		  </sowResearchPrerequisites>
+			<topWindExposure>0.0</topWindExposure>
+			<neverBlightable>true</neverBlightable>
+			<burnedThingDef IsNull="True"/>
+			<growDays>1</growDays>
+			<visualSizeRange>0.7~1.3</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<harvestAfterGrowth>1</harvestAfterGrowth>
+			<harvestMinGrowth>1</harvestMinGrowth>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+		<modExtensions>
+			<!--
+			<li Class="ESCP_RaceTools.PlantProperties">
+                <matureInto>ESCP_BosmerPlant_Wall</matureInto>
+            </li>
+			-->
+		</modExtensions>
+	</ThingDef>
+</Defs>

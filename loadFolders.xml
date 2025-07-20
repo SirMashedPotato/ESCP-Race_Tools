@@ -7,4 +7,11 @@
 		<li IfModActive="Ludeon.RimWorld.Biotech">1.5/Mods/Biotech</li>	
 		<li IfModActive="erdelf.HumanoidAlienRaces,erdelf.HumanoidAlienRaces.dev">1.5/Mods/AlienRaces</li>	
 	</v1.5>
+	<v1.6>
+		<li>Common</li>
+		<li>1.6</li>
+		<li IfModActive="Ludeon.RimWorld.Ideology">1.6/Mods/Ideology</li>
+		<li IfModActive="Ludeon.RimWorld.Biotech">1.6/Mods/Biotech</li>
+		<li IfModActive="erdelf.HumanoidAlienRaces,erdelf.HumanoidAlienRaces.dev">1.6/Mods/AlienRaces</li>
+	</v1.6>
 </loadFolders>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- All of these are originally from, or based on backstories from, Maormer -->
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_Fisherman]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_Fisher</defName>
+		<title>fisher</title>
+		<titleShort>fisher</titleShort>
+		<description>While [PAWN_nameDef] worked a tiring job during the day, [PAWN_pronoun] enjoyed relaxing near the coast, and fishing for a while. Admittedly this wasn't actually that relaxing, as there are a great many dangerous beasts lurking in the depths.</description>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<Animals>2</Animals>
+			<Cooking>2</Cooking>
+			<Crafting>2</Crafting>
+		</skillGains>
+		<spawnCategories>
+			<li>ESCP_MaormerBackstory_Exclusion</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_Tanner]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_Tanner</defName>
+		<title>tanner</title>
+		<titleShort>tanner</titleShort>
+		<description>[PAWN_nameDef] was rather skilled at tanning hides, and turning leather into apparel. [PAWN_possessive] skills were always in demand, as good quality leather boots are priceless.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Cooking>1</Cooking>
+			<Crafting>4</Crafting>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_Smith]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_Smith</defName>
+		<title>smith</title>
+		<titleShort>smith</titleShort>
+		<description>[PAWN_nameDef] was a rather skilled smith, and had produced many of the weapons used by the local militia, and quite a few of the ones used by the various bandit groups. [PAWN_nameDef] didn't really care who made the orders, as coin is coin.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Crafting>4</Crafting>
+			<Social>1</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>ESCP_MaormerBackstory_Exclusion</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_Hunter]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_Hunter</defName>
+		<title>hunter</title>
+		<titleShort>hunter</titleShort>
+		<description>[PAWN_nameDef] always enjoyed the calm of going out into the wilderness, and tracking one of the beasts found there. The wilds were home to many strange and deadly beasts, and while [PAWN_nameDef] was never truly scared, the thought of encountering a something primordial did make [PAWN_objective] nervous.</description>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<Animals>2</Animals>
+			<Shooting>2</Shooting>
+		</skillGains>
+		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodMedievalHunter</li>
+			<li>ESCP_MaormerBackstory_Exclusion</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_RecruitMelee]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_RecruitMelee</defName>
+		<title>recruit</title>
+		<titleShort>recruit</titleShort>
+		<description>As just a lowly recruit in the local militia, [PAWN_nameDef] was given many tasks, such as cleaning rust off of equipment, and patching up holes in leather armour. Of course this was all in between endless training exercises. [PAWN_nameDef] just wanted fame and glory.</description>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<Crafting>2</Crafting>
+			<Melee>3</Melee>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_SoldierMelee]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_SoldierMelee</defName>
+		<title>soldier</title>
+		<titleShort>soldier</titleShort>
+		<description>[PAWN_nameDef] was a regular soldier in the local militia, seemingly endlessly stationed at one of their barracks, eagerly awaiting the opportunity to do literally anything other than ending a pointless squabble.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Melee>5</Melee>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_CommanderMelee]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_CommanderMelee</defName>
+		<title>commander</title>
+		<titleShort>commander</titleShort>
+		<description>As somewhat of a veteran, [PAWN_nameDef] had the privilege of commanding new recruits, ensuring they survive their first bandit raid, or at least come out in one piece.</description>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<skillGains>
+			<Intellectual>3</Intellectual>
+			<Melee>5</Melee>
+		</skillGains>
+		<maleCommonality>70</maleCommonality>
+		<femaleCommonality>70</femaleCommonality>
+		<spawnCategories>
+			<li>ESCP_MaormerBackstory_Exclusion</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_TreasureHunter]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_TreasureHunter</defName>
+		<title>treasure hunter</title>
+		<titleShort>hunter</titleShort>
+		<description>[PAWN_nameDef] was an aspiring treasure hunter, which meant [PAWN_pronoun] spent most days digging around in the sand, hoping to find something worth anything. [PAWN_nameDef] did find a few broken swords, but that was about it.</description>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Mining>3</Mining>
+		</skillGains>
+		<spawnCategories>
+			<li>ESCP_MaormerBackstory_Exclusion</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_AlchemicalResearcher]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_AlchemicalResearcher</defName>
+		<title>alchemical researcher</title>
+		<titleShort>researcher</titleShort>
+		<description>[PAWN_nameDef] was always eager to explore the alchemical properties of plant life, both local and exotic. [PAWN_nameDef] discovered a few interesting things, such as what plants could cure a sore stomach, and what ones would cause one.</description>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<Intellectual>3</Intellectual>
+			<Plants>3</Plants>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_RecruitShooting]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_RecruitShooting</defName>
+		<title>recruit</title>
+		<titleShort>recruit</titleShort>
+		<description>As just a lowly recruit in the local militia, [PAWN_nameDef] was given many tasks, such as fletching arrows, and patching up holes in leather armour. Of course this was all in between endless training exercises. [PAWN_nameDef] just wanted to fire an arrow at someone.</description>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<Crafting>2</Crafting>
+			<Shooting>3</Shooting>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_SoldierShooting]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_SoldierShooting</defName>
+		<title>soldier</title>
+		<titleShort>soldier</titleShort>
+		<description>[PAWN_nameDef] was a regular soldier in the local militia, seemingly endlessly stationed at one of their barracks, eagerly awaiting the opportunity to do literally anything other than keeping wild animals away from the fields.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Shooting>5</Shooting>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_Merchant]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_Merchant</defName>
+		<title>merchant</title>
+		<titleShort>merchant</titleShort>
+		<description>[PAWN_nameDef] had made several deals with local guilds, [PAWN_pronoun] purchased their goods, and sold them for a sizeable profit. [PAWN_pronoun] really didn't care where the goods came from, and was well aware that several of the guilds [PAWN_pronoun] made deals with were actually bandit groups.</description>
+		<bodyTypeGlobal>Fat</bodyTypeGlobal>
+		<skillGains>
+			<Social>5</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>ESCP_MaormerBackstory_Exclusion</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_EmbassyClerk]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_EmbassyClerk</defName>
+		<title>embassy clerk</title>
+		<titleShort>clerk</titleShort>
+		<description>[PAWN_nameDef] was one of the many embassy clerks stationed in foreign lands. Most days were spent doing menial tasks, and enduring the hatred of the locals. But occasionally the embassy would be visited by diplomats, which usually meant a visit from assassins would follow shortly afterwards.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Intellectual>3</Intellectual>
+			<Social>3</Social>
+		</skillGains>
+		<maleCommonality>80</maleCommonality>
+		<femaleCommonality>80</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_EmbassyWarden]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_EmbassyWarden</defName>
+		<title>embassy warden</title>
+		<titleShort>warden</titleShort>
+		<description>As a battle hardened soldier looking for a slightly more relaxed life, guarding an embassy seemed like an obvious choice for [PAWN_nameDef]. Most days were usually fairly relaxing. Occasionally some locals would get a bit unruly, but they were usually swiftly escorted away. Sometimes though, someone would try to do something stupid. [PAWN_nameDef] enjoyed those days the most.</description>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<skillGains>
+			<Melee>4</Melee>
+			<Social>2</Social>
+		</skillGains>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Wimp</defName>
+			</li>
+		</disallowedTraitsChance>
+		<maleCommonality>80</maleCommonality>
+		<femaleCommonality>80</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_EmbassySentry]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_EmbassySentry</defName>
+		<title>embassy sentry</title>
+		<titleShort>sentry</titleShort>
+		<description>[PAWN_nameDef] had spent quite some years as a scout, and knew all the signs that indicated someone unseen was approaching. So when [PAWN_pronoun] was offered work as a sentry at one of the embassies, getting paid to sit around in a tower all day, [PAWN_nameDef] accepted without hesitation.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Wimp</defName>
+			</li>
+		</disallowedTraitsChance>
+		<maleCommonality>80</maleCommonality>
+		<femaleCommonality>80</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_Farmer]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_Farmer</defName>
+		<title>farmer</title>
+		<titleShort>farmer</titleShort>
+		<description>[PAWN_nameDef] spent most days toiling away under the blazing sun farming whatever [PAWN_nameDef] was told to farm.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Plants>4</Plants>
+		</skillGains>
+		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodMedievalFarmer</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_Logger]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_Base">
+		<defName>ESCP_GenericBackstory_Adulthood_Logger</defName>
+		<title>logger</title>
+		<titleShort>logger</titleShort>
+		<description>[PAWN_nameDef] spent most days toiling away under the blazing sun chopping down trees, and processing logs into timber.</description>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<skillGains>
+			<Plants>4</Plants>
+		</skillGains>
+		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodMedievalLogger</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

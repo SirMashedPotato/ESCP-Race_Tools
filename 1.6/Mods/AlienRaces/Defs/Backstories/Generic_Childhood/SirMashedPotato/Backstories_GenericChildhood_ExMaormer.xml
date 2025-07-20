@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- All of these are originally from, or based on backstories from, Maormer -->
+	<!-- ==========[ESCP_GenericBackstory_Childhood_BeastTamer]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Childhood_BeastTamer</defName>
+		<title>beast tamer</title>
+		<titleShort>tamer</titleShort>
+		<description>[PAWN_nameDef] decided at a very young age that [PAWN_pronoun] would tame the most dangerous beast [PAWN_pronoun] could come across. When finally presented a chance at achieving this ambitious goal... things didn't quite work out how [PAWN_pronoun] imagined they would. [PAWN_nameDef] decided to settle with teaching the family pet a few new tricks instead.</description>
+		<skillGains>
+			<Animals>2</Animals>
+			<Medicine>1</Medicine>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Childhood_RanchHand]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Childhood_RanchHand</defName>
+		<title>ranch hand</title>
+		<titleShort>ranch hand</titleShort>
+		<description>[PAWN_nameDef]'s homeland was home to many ranches, and [PAWN_nameDef] assisted at one of them. While the animals found there didn't seem particularly intelligent, they had a knack for finding holes in their pens. [PAWN_nameDef] spent many days chasing escaped livestock, and mending broken fences.</description>
+		<skillGains>
+			<Animals>2</Animals>
+			<Construction>1</Construction>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Childhood_BugCollector]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Childhood_BugCollector</defName>
+		<title>bug collector</title>
+		<titleShort>collector</titleShort>
+		<description>[PAWN_nameDef] had quite the exquisite collection of bugs, many from [PAWN_possessive] local region, and some from further afield. [PAWN_pronoun] wanted to catch them all, an admittedly nigh impossible task to achieve, but that never stopped [PAWN_nameDef].</description>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<Animals>2</Animals>
+			<Intellectual>1</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>Hunting</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Childhood_AssistantCook]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Childhood_AssistantCook</defName>
+		<title>assistant cook</title>
+		<titleShort>assistant</titleShort>
+		<description>[PAWN_nameDef] provided assistance to some highly skilled cooks. While [PAWN_pronoun] learnt quite a few things, [PAWN_nameDef] didn't make it very far, as [PAWN_pronoun] really doesn't like plants.</description>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<Cooking>2</Cooking>
+			<Crafting>1</Crafting>
+		</skillGains>
+		<workDisables>
+			<li>PlantWork</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Childhood_AssistantShipwright]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Childhood_AssistantShipwright</defName>
+		<title>assistant shipwright</title>
+		<titleShort>assistant</titleShort>
+		<description>[PAWN_nameDef] provided assistance to the local shipwrights. [PAWN_nameDef] knew all the commonly used tools by heart, and eventually started handing them to the shipwrights before [PAWN_pronoun] was even asked to fetch it.</description>
+		<skillGains>
+			<Construction>2</Construction>
+			<Intellectual>1</Intellectual>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Childhood_AssistantSmith]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Childhood_AssistantSmith</defName>
+		<title>assistant smith</title>
+		<titleShort>assistant</titleShort>
+		<description>[PAWN_nameDef] provided assistance to a rather skilled blacksmith. Admittedly, [PAWN_nameDef] spent a substantial amount of time bandaging wounds, as [PAWN_nameDef] didn't quite seem to understand touching hot things was a bad idea.</description>
+		<skillGains>
+			<Crafting>2</Crafting>
+			<Medicine>1</Medicine>
+		</skillGains>
+		<workDisables>
+			<li>Firefighting</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Childhood_EmbassyAssistant]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Childhood_EmbassyAssistant</defName>
+		<title>embassy assistant</title>
+		<titleShort>assistant</titleShort>
+		<description>[PAWN_nameDef] was dragged to one of the many local embassies by [PAWN_pronoun] parents, so it was only natural that [PAWN_pronoun] wound up as an assistant. Most days were spent organising scrolls and wardening guests, though occasionally something exciting happened.</description>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Social>1</Social>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Childhood_TempleAssistant]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Childhood_TempleAssistant</defName>
+		<title>temple assistant</title>
+		<titleShort>assistant</titleShort>
+		<description>[PAWN_nameDef] assisted at the local temple. This usually involved sweeping the floor, and ensuring candles were in good condition. But sometimes [PAWN_nameDef] would be tasked with organising the library, or leading guests around.</description>
+		<skillGains>
+			<Social>2</Social>
+			<Intellectual>1</Intellectual>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Childhood_MerchantsAssistant]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Childhood_MerchantsAssistant</defName>
+		<title>merchants assistant</title>
+		<titleShort>assistant</titleShort>
+		<description>[PAWN_nameDef] assisted one of the many local merchants. Days were spent hauling crates of various goods around, repairing said crates when [PAWN_pronoun] dropped them, and occasionally working the counter.</description>
+		<skillGains>
+			<Social>2</Social>
+			<Crafting>1</Crafting>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+</Defs>
