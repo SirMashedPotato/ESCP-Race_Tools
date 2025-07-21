@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_GenericBackstoryAdulthood_Base]========== -->
+	<!-- 
+		Should only have generic adulthood backstories, as childhood ones may cause issues with meditation types 
+	-->
+	<AlienRace.AlienBackstoryDef Name="ESCP_GenericBackstoryAdulthood_Base" Abstract="True">
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- ==========[ESCP_GenericBackstoryAdulthood_MageBase]========== -->
+	<!-- 
+		Patch this to add mage traits from tools
+		Separated out in case generic mage backstories are added
+	-->
+	<AlienRace.AlienBackstoryDef Name="ESCP_GenericBackstoryAdulthood_MageBase" Abstract="True">
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodMage</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>PsychicSensitivity</defName>
+				<degree>2</degree>
+				<chance>25</chance>
+			</li>
+			<li>
+				<defName>PsychicSensitivity</defName>
+				<degree>1</degree>
+				<chance>100</chance>
+			</li>
+		</forcedTraitsChance>
+		<maleCommonality>15</maleCommonality>
+		<femaleCommonality>15</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- ==========[ESCP_GenericBackstoryAdulthood_SlaverBase]========== -->
+	<!-- 
+		Separated out as some races/factions don't like slavery
+	-->
+	<AlienRace.AlienBackstoryDef Name="ESCP_GenericBackstoryAdulthood_SlaverBase" Abstract="True">
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodSlaver</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>ESCP_Slaver</defName>
+				<chance>100</chance>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- ==========[ESCP_GenericBackstoryAdulthood_HighClassBase]========== -->
+	<!-- 
+		Separated out for the races/factions that are more 'civilised'
+	-->
+	<AlienRace.AlienBackstoryDef Name="ESCP_GenericBackstoryAdulthood_HighClassBase" Abstract="True">
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<!-- ==========[ESCP_GenericBackstoryAdulthood_ImperialFactionBase]========== -->
+	<!-- 
+		Separated out as some races/factions don't like the Empire 
+	-->
+	<AlienRace.AlienBackstoryDef Name="ESCP_GenericBackstoryAdulthood_ImperialFactionBase" Abstract="True">
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodImperialFaction</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstoryAdulthood_FightersGuildBase]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialFactionBase" Name="ESCP_GenericBackstoryAdulthood_FightersGuildBase" Abstract="True">
+		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstoryAdulthood_MagesGuildBase]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialFactionBase" Name="ESCP_GenericBackstoryAdulthood_MagesGuildBase" Abstract="True">
+		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodMagesGuild</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstoryAdulthood_ThievesGuildBase]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialFactionBase" Name="ESCP_GenericBackstoryAdulthood_ThievesGuildBase" Abstract="True">
+		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodThievesGuild</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstoryAdulthood_ImperialLegionBase]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialFactionBase" Name="ESCP_GenericBackstoryAdulthood_ImperialLegionBase" Abstract="True">
+		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstoryAdulthood_ImperialCultBase]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialFactionBase" Name="ESCP_GenericBackstoryAdulthood_ImperialCultBase" Abstract="True">
+		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodImperialCult</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstoryAdulthood_ImperialArchaeologicalSocietyBase]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialFactionBase" Name="ESCP_GenericBackstoryAdulthood_ImperialArchaeologicalSocietyBase" Abstract="True">
+		<spawnCategories>
+			<li>ESCP_GenericBackstory_AdulthoodImperialArchaeologicalSociety</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========== [ESCP_BeastfolkLeather] ========== -->
+	<IssueDef>
+		<defName>ESCP_BeastfolkLeather</defName>
+		<label>beastfolk leather</label>
+		<iconPath>UI/Issues/ESCP_BeastfolkLeather</iconPath>
+	</IssueDef>
+	<!-- ========== [ESCP_BeastfolkLeather_Abhorrent] ========== -->
+	<PreceptDef>
+		<defName>ESCP_BeastfolkLeather_Abhorrent</defName>
+		<issue>ESCP_BeastfolkLeather</issue>
+		<label>abhorrent</label>
+		<description>Wearing beastfolk leather is a deeply abhorrent and disgusting act.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>ESCP_BeastfolkLeatherApparel_Abhorrent</thought>
+				<description>Beastfolk leather apparel</description>
+				<tooltipShowMoodRange>true</tooltipShowMoodRange>
+			</li>
+		</comps>
+	</PreceptDef>
+	<!-- ========== [ESCP_BeastfolkLeatherApparel_Abhorrent] ========== -->
+	<ThoughtDef>
+		<defName>ESCP_BeastfolkLeatherApparel_Abhorrent</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_BeastfolkLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>beastfolk leather {0}</label>
+				<description>Wearing beastfolk leather is disturbing. Who could do this?</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} (+1)</label>
+				<description>I'm dressed like an insane person.</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} (+2)</label>
+				<description>I think there may be a face on my clothes. Oh, no... my clothes *are* a face.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} etc</label>
+				<description>I look like a freak from a horror show, and I feel like I'm in a horror show.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+	</ThoughtDef>
+	<!-- ========== [ESCP_BeastfolkLeather_Horrible] ========== -->
+	<PreceptDef>
+		<defName>ESCP_BeastfolkLeather_Horrible</defName>
+		<issue>ESCP_BeastfolkLeather</issue>
+		<label>horrible</label>
+		<description>Wearing beastfolk leather is a horrible thing to do.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>ESCP_BeastfolkLeatherApparel_Horrible</thought>
+				<description>Beastfolk leather apparel</description>
+				<tooltipShowMoodRange>true</tooltipShowMoodRange>
+			</li>
+		</comps>
+	</PreceptDef>
+	<!-- ========== [ESCP_BeastfolkLeatherApparel_Horrible] ========== -->
+	<ThoughtDef>
+		<defName>ESCP_BeastfolkLeatherApparel_Horrible</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_BeastfolkLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>beastfolk leather {0}</label>
+				<description>Wearing beastfolk leather is wrong.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} (+1)</label>
+				<description>I feel really uncomfortable with all this beastfolk leather apparel.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} (+2)</label>
+				<description>Why am I wearing so much beastfolk leather? This is horrible!</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} etc</label>
+				<description>I look like a freak, this is horrifying!</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+		</stages>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+	</ThoughtDef>
+	<!-- ========== [ESCP_BeastfolkLeather_Disapproved] ========== -->
+	<PreceptDef>
+		<defName>ESCP_BeastfolkLeather_Disapproved</defName>
+		<issue>ESCP_BeastfolkLeather</issue>
+		<label>disapproved</label>
+		<description>Wearing beastfolk leather is an ugly thing to do.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+		<associatedMemes>
+			<li>PainIsVirtue</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>ESCP_BeastfolkLeatherApparel_Disapproved</thought>
+				<description>Beastfolk leather apparel</description>
+				<tooltipShowMoodRange>true</tooltipShowMoodRange>
+			</li>
+		</comps>
+	</PreceptDef>
+	<!-- ========== [ESCP_BeastfolkLeatherApparel_Disapproved] ========== -->
+	<ThoughtDef>
+		<defName>ESCP_BeastfolkLeatherApparel_Disapproved</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_BeastfolkLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>beastfolk leather {0}</label>
+				<description>I should not be wearing beastfolk leather apparel.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} (+1)</label>
+				<description>I'm dressed in beastfolk skin. I do not like this.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} (+2)</label>
+				<description>Why am I wearing so much beastfolk leather apparel? We should have something else to wear for me...</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} etc</label>
+				<description>I should really wear non-beastfolk leather apparel. I look like a crazy person.</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+		</stages>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+	</ThoughtDef>
+	<!-- ========== [ESCP_BeastfolkLeather_Acceptable] ========== -->
+	<PreceptDef>
+		<defName>ESCP_BeastfolkLeather_Acceptable</defName>
+		<issue>ESCP_BeastfolkLeather</issue>
+		<label>acceptable</label>
+		<description>Beastfolk leather is just leather, like any other.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+		<associatedMemes>
+			<li>PainIsVirtue</li>
+		</associatedMemes>
+	</PreceptDef>
+	<!-- ========== [ESCP_BeastfolkLeather_Preferred] ========== -->
+	<PreceptDef>
+		<defName>ESCP_BeastfolkLeather_Preferred</defName>
+		<issue>ESCP_BeastfolkLeather</issue>
+		<label>preferred</label>
+		<description>To wear beastfolk leather is a noble and necessary part of life.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<exclusionTags>
+			<li>MeatEatingBadCannibalGood</li>
+		</exclusionTags>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>ESCP_BeastfolkLeatherApparel_Preferred</thought>
+				<description>Beastfolk leather apparel</description>
+				<tooltipShowMoodRange>true</tooltipShowMoodRange>
+			</li>
+		</comps>
+	</PreceptDef>
+	<!-- ========== [ESCP_BeastfolkLeatherApparel_Preferred] ========== -->
+	<ThoughtDef>
+		<defName>ESCP_BeastfolkLeatherApparel_Preferred</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_BeastfolkLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>beastfolk leather {0}</label>
+				<description>I feel good wearing beastfolk leather apparel.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} (+1)</label>
+				<description>I enjoy wearing the skin of others.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} (+2)</label>
+				<description>I wear the faces of my enemies. This makes me happy.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} etc</label>
+				<description>I look like a real cannibal. Who could doubt me?</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>
+		<nullifyingTraits>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+	</ThoughtDef>
+	<!-- ========== [ESCP_BeastfolkLeather_Loved] ========== -->
+	<PreceptDef>
+		<defName>ESCP_BeastfolkLeather_Loved</defName>
+		<issue>ESCP_BeastfolkLeather</issue>
+		<label>loved</label>
+		<description>Wearing beastfolk leather is important. All clothing should be made of it.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>0</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<requiredMemes>
+			<li>Cannibal</li>
+		</requiredMemes>
+		<exclusionTags>
+			<li>MeatEatingBadCannibalGood</li>
+		</exclusionTags>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>ESCP_BeastfolkLeatherApparel_Loved</thought>
+				<description>Beastfolk leather apparel</description>
+				<tooltipShowMoodRange>true</tooltipShowMoodRange>
+			</li>
+		</comps>
+	</PreceptDef>
+	<!-- ========== [ESCP_BeastfolkLeatherApparel_Loved] ========== -->
+	<ThoughtDef>
+		<defName>ESCP_BeastfolkLeatherApparel_Loved</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_BeastfolkLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>beastfolk leather {0}</label>
+				<description>I enjoy wearing the faces of others.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} (+1)</label>
+				<description>This will scare them. All will know my power.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} (+2)</label>
+				<description>The faces on my clothes aren't smiling, but they make *me* happy.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} etc</label>
+				<description>The flesh! The flesh signals my triumph!</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+		</stages>
+		<nullifyingTraits>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+	</ThoughtDef>
+	<!-- ========== [ESCP_BeastfolkLeather_Exalted] ========== -->
+	<PreceptDef>
+		<defName>ESCP_BeastfolkLeather_Exalted</defName>
+		<issue>ESCP_BeastfolkLeather</issue>
+		<label>exalted</label>
+		<description>Beastfolk leather is morality. Why would you ever wear clothing made of anything else.</description>
+		<impact>Low</impact>
+		<displayOrderInImpact>1000</displayOrderInImpact>
+		<requiredMemes>
+			<li>Cannibal</li>
+		</requiredMemes>
+		<exclusionTags>
+			<li>MeatEatingBadCannibalGood</li>
+		</exclusionTags>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>ESCP_BeastfolkLeatherApparel_Exalted</thought>
+				<description>Beastfolk leather apparel</description>
+				<tooltipShowMoodRange>true</tooltipShowMoodRange>
+			</li>
+		</comps>
+	</PreceptDef>
+	<!-- ========== [ESCP_BeastfolkLeatherApparel_Exalted] ========== -->
+	<ThoughtDef>
+		<defName>ESCP_BeastfolkLeatherApparel_Exalted</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_BeastfolkLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>beastfolk leather {0}</label>
+				<description>I enjoy wearing the suffering of others.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} (+1)</label>
+				<description>This will scare them. All will know my power.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} (+2)</label>
+				<description>The faces on my clothes aren't smiling, but they make *me* happy.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+			<li>
+				<label>beastfolk leather {0} etc</label>
+				<description>The flesh! The flesh signals my triumph!</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+		<nullifyingTraits>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+	</ThoughtDef>
+</Defs>

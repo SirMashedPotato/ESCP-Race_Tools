@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========== [ESCP_PlayerFactionBase_Industrial] ========== -->
+	<!-- Just need to set <basicMemberKind>Colonist</basicMemberKind> -->
+	<FactionDef ParentName="PlayerFactionBase" Name="ESCP_PlayerFactionBase_Industrial" Abstract="True">
+		<description>A colony of recently-arrived off-worlders.</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>colonist</pawnSingular>
+		<pawnsPlural>colonists</pawnsPlural>
+		<techLevel>Industrial</techLevel>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<allowedCultures>
+			<li>Astropolitan</li>
+		</allowedCultures>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>ClassicStart</li>
+			<li>ClassicStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+	<!-- ========== [ESCP_PlayerFactionBase_Tribal] ========== -->
+	<!-- Just need to set <basicMemberKind>Colonist</basicMemberKind> -->
+	<FactionDef ParentName="PlayerFactionBase" Name="ESCP_PlayerFactionBase_Tribal" Abstract="True">
+		<isPlayer>true</isPlayer>
+		<categoryTag>Tribal</categoryTag>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<techLevel>Neolithic</techLevel>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<allowedCultures Inherit="False"/>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+		</disallowedMemes>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		<forageabilityFactor>1.7</forageabilityFactor>
+		<startingResearchTags>
+			<li>TribalStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>TribalStart</li>
+			<li>TribalStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+				<li>WoodLog</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<recipePrerequisiteTags>
+			<li>Tribal</li>
+		</recipePrerequisiteTags>
+	</FactionDef>
+	<!-- ========== [ESCP_PlayerFactionBase_Medieval] ========== -->
+	<!-- Just need to set <basicMemberKind>Colonist</basicMemberKind> -->
+	<FactionDef ParentName="ESCP_PlayerFactionBase_Tribal" Name="ESCP_PlayerFactionBase_Medieval" Abstract="True">
+		<categoryTag>Medieval</categoryTag>
+		<pawnSingular>subject</pawnSingular>
+		<pawnsPlural>subjects</pawnsPlural>
+		<techLevel>Medieval</techLevel>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<forageabilityFactor>1.3</forageabilityFactor>
+		<startingResearchTags>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_MedievalStart</li>
+			<li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_MedievalStart</li>
+		</startingResearchTags>
+	</FactionDef>
+</Defs>

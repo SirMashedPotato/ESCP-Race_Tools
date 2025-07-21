@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_ImperialArchaeologicalSocietyExcavator]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialArchaeologicalSocietyBase">
+		<defName>ESCP_GenericBackstory_Adulthood_ImperialArchaeologicalSocietyExcavator</defName>
+		<title>Imperial Archaeological Society excavator</title>
+		<titleShort>excavator</titleShort>
+		<baseDesc>[PAWN_nameDef] was one of the many excavators working in the local Dwemer ruins. Work there was hard, for one had to be extremely cautions of the surroundings. [PAWN_pronoun] could never be completely sure what was just a statue, and what wasn't. It was tough work, but it was worth it. The pay was good, and [PAWN_nameDef] enjoyed knowing that [PAWN_pronoun] was helping uncover the secrets of the past.</baseDesc>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Construction</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Mining</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+		<maleCommonality>60</maleCommonality>
+		<femaleCommonality>60</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_ImperialArchaeologicalSocietyAnalyst]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialArchaeologicalSocietyBase">
+		<defName>ESCP_GenericBackstory_Adulthood_ImperialArchaeologicalSocietyAnalyst</defName>
+		<title>Imperial Archaeological Society analyst</title>
+		<titleShort>analyst</titleShort>
+		<baseDesc>[PAWN_nameDef] joined the Imperial Archaeological Society thinking [PAWN_pronoun] would spend most days stuck behind a desk, staring at strange rocks and rusted metal. Of course [PAWN_nameDef] was right, but somehow [PAWN_pronoun] wound up enjoying it.</baseDesc>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Crafting</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+		<maleCommonality>60</maleCommonality>
+		<femaleCommonality>60</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_ImperialArchaeologicalSocietyResearcher]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialArchaeologicalSocietyBase">
+		<defName>ESCP_GenericBackstory_Adulthood_ImperialArchaeologicalSocietyResearcher</defName>
+		<title>Imperial Archaeological Society researcher</title>
+		<titleShort>researcher</titleShort>
+		<baseDesc>As a reasonably high ranking member of the Imperial Archaeological Society, [PAWN_nameDef] had the privilege of being sent out into the field, and examining ancient ruins in person. [PAWN_pronoun] uncovered a great many things, including that one really shouldn't pull strange levers in Dwemer ruins.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>5</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<maleCommonality>60</maleCommonality>
+		<femaleCommonality>60</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_ImperialArchaeologicalSocietyExcavator]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialArchaeologicalSocietyBase">
+		<defName>ESCP_GenericBackstory_Adulthood_ImperialArchaeologicalSocietyDelver</defName>
+		<title>Imperial Archaeological Society delver</title>
+		<titleShort>delver</titleShort>
+		<baseDesc>[PAWN_nameDef] decided to join the Imperial Archaeological Society, hoping to spend days translating aged tomes, and inspecting ancient pottery. Thanks to [PAWN_possessive] slight build, and decent skills with a sword, [PAWN_nameDef] was instead tasked with delving into the unknown, and ensuring the ruins were safe for the rest of the field team.</baseDesc>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+		<maleCommonality>60</maleCommonality>
+		<femaleCommonality>60</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_ImperialLegionGuide]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialLegionBase">
+		<defName>ESCP_GenericBackstory_Adulthood_ImperialLegionGuide</defName>
+		<title>Imperial Legion guide</title>
+		<titleShort>Legion guide</titleShort>
+		<baseDesc>[PAWN_nameDef] was recruited by the local Legion fort, due to [PAWN_possessive] extensive knowledge of the surrounding lands. Accepting the offer was a risky choice, as the locals weren't exactly fond of the Legion. But the coin was too good an offer to pass up.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Shooting</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<maleCommonality>60</maleCommonality>
+		<femaleCommonality>60</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_ImperialLegionSoldier]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialLegionBase">
+		<defName>ESCP_GenericBackstory_Adulthood_ImperialLegionSoldier</defName>
+		<title>Imperial Legion soldier</title>
+		<titleShort>Legion soldier</titleShort>
+		<baseDesc>[PAWN_nameDef] wanted to help bring [PAWN_possessive] home into the future, and decided the only logical way of achieving this was by enlisting at the local Legion Fort. Turns out most days were simply spent wandering around the fort, trying to ensure weapons and armour didn't rust. Much to [PAWN_nameDef]'s disappointment, it seemed the future had to wait for a while.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Shooting</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<maleCommonality>60</maleCommonality>
+		<femaleCommonality>60</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_ImperialLegionSoldierAlt]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialLegionBase">
+		<defName>ESCP_GenericBackstory_Adulthood_ImperialLegionSoldierAlt</defName>
+		<title>Imperial Legion soldier</title>
+		<titleShort>Legion soldier</titleShort>
+		<baseDesc>[PAWN_nameDef] wanted to help bring [PAWN_possessive] home into the future, and decided the only logical way of achieving this was by enlisting at the local Legion Fort. Turns out that was a terrible idea, as mere days later [PAWN_nameDef] was sent off to deal with deranged cultists. Needless to say, [PAWN_possessive] 'nerves of steel' didn't even stand a chance.</baseDesc>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Shooting</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>-2</value>
+			</li>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<defName>Nerves</defName>
+				<degree>-1</degree>
+				<chance>50</chance>
+			</li>
+			<li>
+				<defName>Nerves</defName>
+				<degree>-2</degree>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<maleCommonality>10</maleCommonality>
+		<femaleCommonality>10</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_ImperialLegionDockHand]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialLegionBase">
+		<defName>ESCP_GenericBackstory_Adulthood_ImperialLegionDockHand</defName>
+		<title>Imperial Legion dock hand</title>
+		<titleShort>Legion dock hand</titleShort>
+		<baseDesc>The Imperial Legion had a great need for skilled dock hands, mostly because they deemed themselves above the employment of slaves. For [PAWN_nameDef], having suffered head trauma from [PAWN_possessive] time in the local arena, this was the perfect job.</baseDesc>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Crafting</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>5</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<maleCommonality>50</maleCommonality>
+		<femaleCommonality>50</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

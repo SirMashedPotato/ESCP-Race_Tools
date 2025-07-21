@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{817C8AF8-69EE-4501-92DB-C9E486D256EA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ESCP_RaceTools</RootNamespace>
+    <AssemblyName>ESCP_RaceTools</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.3.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.3.3\lib\net472\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>I:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>I:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>I:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>I:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompAbility\CompAbilityEffect_DoDamage.cs" />
+    <Compile Include="CompAbility\CompAbilityEffect_GiveAncestralHediff.cs" />
+    <Compile Include="CompAbility\CompAbilityEffect_ReleaseGas.cs" />
+    <Compile Include="CompAbility\CompAbilityEffect_CharmTarget.cs" />
+    <Compile Include="CompAbility\Properties\CompProperties_AbilityDoDamage.cs" />
+    <Compile Include="CompAbility\Properties\CompProperties_AbilityEnterBeserk.cs" />
+    <Compile Include="CompAbility\Properties\CompProperties_AbilityCharmTarget.cs" />
+    <Compile Include="CompAbility\Properties\CompProperties_AbilityControlAnimal.cs" />
+    <Compile Include="CompAbility\CompAbilityEffect_ControlAnimal.cs" />
+    <Compile Include="CompAbility\CompAbilityEffect_EnterBeserk.cs" />
+    <Compile Include="CompAbility\Properties\CompProperties_AbilityReleaseGas.cs" />
+    <Compile Include="Comp\Comp_DunmerGraveWhisper.cs" />
+    <Compile Include="Comp\Comp_MeditationPulse.cs" />
+    <Compile Include="Comp\Properties\CompProperties_DunmerGraveWhisper.cs" />
+    <Compile Include="Comp\Properties\CompProperties_BeastMasterSpawnInit.cs" />
+    <Compile Include="Comp\Properties\CompProperties_BeserkerRage.cs" />
+    <Compile Include="Comp\Comp_BeastMasterInit.cs" />
+    <Compile Include="Comp\Comp_BeserkerRage.cs" />
+    <Compile Include="Comp\Properties\CompProperties_MeditationPulse.cs" />
+    <Compile Include="Comp\Properties\CompProperties_TurnToThing.cs" />
+    <Compile Include="Comp\Comp_TurnToThing.cs" />
+    <Compile Include="DeathActionWorker\DeathActionWorker_HistoryEventOnDeath.cs" />
+    <Compile Include="DefModExtensions\BeastMaster.cs" />
+    <Compile Include="DefModExtensions\FactionGoodwillProperties.cs" />
+    <Compile Include="DefModExtensions\NLFacialAnimationsBlocker.cs" />
+    <Compile Include="DefModExtensions\RomanceRestriction.cs" />
+    <Compile Include="Harmony\CanEquipPatch.cs" />
+    <Compile Include="Harmony\FoodPoisoningResistancePatch.cs" />
+    <Compile Include="DefModExtensions\IdeoCultureProperties.cs" />
+    <Compile Include="DefModExtensions\IdeoProperties.cs" />
+    <Compile Include="DefModExtensions\ThoughtDefProperties.cs" />
+    <Compile Include="Harmony\Biotech_BirthPatch.cs" />
+    <Compile Include="Harmony\CorpseTrading.cs" />
+    <Compile Include="Harmony\ExpectationOffset.cs" />
+    <Compile Include="DefModExtensions\FactionProperties.cs" />
+    <Compile Include="DefModExtensions\IdeoOrginProperties.cs" />
+    <Compile Include="DefModExtensions\PlantProperties.cs" />
+    <Compile Include="DefModExtensions\RaceProperties.cs" />
+    <Compile Include="DefOf\DutyDefOf.cs" />
+    <Compile Include="DefOf\HediffDefOf.cs" />
+    <Compile Include="DefOf\ThoughtDefOf.cs" />
+    <Compile Include="Harmony\HeatstrokeSwitchPatch.cs" />
+    <Compile Include="Harmony\HypothermiaSwitchPatch.cs" />
+    <Compile Include="Harmony\PawnGeneratorPatch.cs" />
+    <Compile Include="Harmony\Romance.cs" />
+    <Compile Include="Harmony\SettlementPreferencePatch.cs" />
+    <Compile Include="Harmony\Harmony.cs" />
+    <Compile Include="DefModExtensions\SettlementPreference.cs" />
+    <Compile Include="Harmony\UniqueDeityNamePatch.cs" />
+    <Compile Include="HediffComp\HediffComp_BeastMaster.cs" />
+    <Compile Include="HediffComp\HediffComp_BeastMasterSpawner.cs" />
+    <Compile Include="HediffComp\HediffComp_ViolentMeditation.cs" />
+    <Compile Include="HediffComp\Properties\HediffCompProperties_ViolentMeditation.cs" />
+    <Compile Include="Ideo\GoodWillWorkers\GoodWillWorker_PreceptAndFactionTagCompatibility.cs" />
+    <Compile Include="Ideo\GoodWillWorkers\GoodWillWorker_UniversalFactionTagCompatibility.cs" />
+    <Compile Include="Ideo\GoodWillWorkers\GoodWillWorker_UniversalFactionTagCompatibility_Inverted.cs" />
+    <Compile Include="Ideo\RoleRequirements\RoleRequirement_PsychicSensitivity.cs" />
+    <Compile Include="Ideo\RoleRequirements\RoleRequirement_RaceMulti.cs" />
+    <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_AkaviriLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_BeastfolkLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_GoblinKenLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_MerLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\LeatherListInit.cs" />
+    <Compile Include="LeatherThoughtWorkers\ThoughtWorker_AkaviriLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\ThoughtWorker_BeastfolkLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\ThoughtWorker_GoblinKenLeatherApparel.cs" />
+    <Compile Include="LeatherThoughtWorkers\ThoughtWorker_MerLeatherApparel.cs" />
+    <Compile Include="ModSettings\ESCP_RaceTools_Mod.cs" />
+    <Compile Include="ModSettings\ESCP_RaceTools_ModSettings.cs" />
+    <Compile Include="ModSettings\ModSettingsUtility_Tooltips.cs" />
+    <Compile Include="Rituals\DunmerSeance\RitualAttachableOutcomeEffectWorker_DunmerAncestorKnowledge.cs" />
+    <Compile Include="Rituals\RitualObligationTargetWorker_FilledDunmerGrave.cs" />
+    <Compile Include="Rituals\RitualOutcomeComp_RacePresentNotSubstituted.cs" />
+    <Compile Include="Rituals\DunmerSeance\RitualOutcomeEffectWorker_DunmerSeance.cs" />
+    <Compile Include="StockGenerator\StockGenerator_BuyCorpses.cs" />
+    <Compile Include="ThingClass\Building_AshBurialPit.cs" />
+    <Compile Include="ThingClass\PlantBuildingPod.cs" />
+    <Compile Include="ThoughtWorker\ThoughtWorker_UniversalBackstoryOpinion.cs" />
+    <Compile Include="ThoughtWorker\ThoughtWorker_UniversalBackstoryOpinion_Shared.cs" />
+    <Compile Include="ThoughtWorker\ThoughtWorker_UniversalBackstoryOpinion_SharedUnqiue.cs" />
+    <Compile Include="ThoughtWorker\ThoughtWorker_UniversalTraitOpinion.cs" />
+    <Compile Include="Utility\BeastMasterUtility.cs" />
+    <Compile Include="Utility\ESCP_AbilityUtility.cs" />
+    <Compile Include="HediffComp\Properties\HediffCompProperties_GiveHediffsInRange.cs" />
+    <Compile Include="HediffComp\Properties\HediffCompProperties_UntameOnEnd.cs" />
+    <Compile Include="HediffComp\HediffComp_GiveHediffsInRange.cs" />
+    <Compile Include="HediffComp\HediffComp_UntameOnEnd.cs" />
+    <Compile Include="Ideo\RoleRequirements\RoleRequirement_Race.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\OnStartupUtility.cs" />
+    <Compile Include="Utility\RaceToolsUtility.cs" />
+    <Compile Include="Utility\SettlementPreferenceUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

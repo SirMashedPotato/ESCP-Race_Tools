@@ -1,0 +1,7 @@
+REQUIRES HARMONY
+Just put this in your race ThingDef
+Prevents wounds becoming infected
+
+<modExtensions>
+	<li Class="PreventWoundInfection.PawnProperties"/>
+</modExtensions>

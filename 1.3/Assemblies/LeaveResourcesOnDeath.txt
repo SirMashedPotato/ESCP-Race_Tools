@@ -1,0 +1,4 @@
+Just put this in your building ThingDef
+Building leaves all resources when deconstructed
+
+<thingClass>LeaveResourcesOnDeath.Building_LeaveAllOnDeconstruct</thingClass>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AchievementsExpanded.AchievementTabDef>
+		<defName>ESCP_AchievementsTab</defName>
+		<label>ESCP</label>
+	</AchievementsExpanded.AchievementTabDef>
+</Defs>
