@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Backstories meant for the more 'civilised' races/factions -->
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassA]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassA</defName>
+		<title>poet</title>
+		<titleShort>poet</titleShort>
+		<description>[PAWN_nameDef] always seemed to have a way with words, and as such decided to put it to use as a poet. [PAWN_possessive] lyrical musings often left listeners stunned... usually because they just didn't understand anything [PAWN_pronoun] was saying. Yet after each reading [PAWN_nameDef] would be met with thunderous applause.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Artistic>4</Artistic>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>ManualSkilled</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassB]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassB</defName>
+		<title>writer</title>
+		<titleShort>writer</titleShort>
+		<description>[PAWN_nameDef] was incredibly skilled with [PAWN_possessive] words, and wrote many books that could often be found in someones private library. These books were almost never found  in the residence of some common peasant, as they were needlessly expensive, and somewhat boring. But the nobles liked [PAWN_nameDef]'s work, or at least liked displaying it.</description>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<Artistic>3</Artistic>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassC]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassC</defName>
+		<title>bard</title>
+		<titleShort>bard</titleShort>
+		<description>As a relatively skilled bard, [PAWN_nameDef] would usually be found in a high class establishment, singing the favourite songs of the locals. Annoyingly, this was usually the same three songs. This always disappointed [PAWN_nameDef], as no one ever wanted to hear the songs [PAWN_pronoun] [PAWN_objective]self had carefully constructed.</description>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<Artistic>4</Artistic>
+			<Social>3</Social>
+		</skillGains>
+		<workDisables>
+			<li>ManualSkilled</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+		<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassD]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassD</defName>
+		<title>actor</title>
+		<titleShort>actor</titleShort>
+		<description>[PAWN_nameDef] was adept at blending into any role. From a painter, to a soldier, it was as if [PAWN_pronoun] was a completely different person. One time [PAWN_nameDef] was even meant to take on the role of a maid, but after reading the script [PAWN_pronoun] quickly declined the offer.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Artistic>3</Artistic>
+			<Social>4</Social>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassE]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassE</defName>
+		<title>sculptor</title>
+		<titleShort>sculptor</titleShort>
+		<description>[PAWN_nameDef] carefully crafted some of the most beautiful sculptures to ever exist. Many could be found in the private gardens of nobles throughout the lands. [PAWN_nameDef] always ensured they would find a good home, as long as the person was willing to pay [PAWN_possessive] exorbitant prices.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Artistic>4</Artistic>
+			<Construction>3</Construction>
+		</skillGains>
+		<workDisables>
+			<li>Animals</li>
+			<li>Cooking</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassF]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassF</defName>
+		<title>painter</title>
+		<titleShort>painter</titleShort>
+		<description>[PAWN_nameDef] was well known for [PAWN_possessive] skill with a paint brush, and was often commissioned to paint portraits of noble families. No one else would ask for [PAWN_nameDef], partly due to the costly prices, but mostly due to [PAWN_nameDef] being extremely 'eccentric'.</description>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<Artistic>4</Artistic>
+			<Crafting>3</Crafting>
+		</skillGains>
+		<workDisables>
+			<li>Cooking</li>
+			<li>Mining</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassG]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassG</defName>
+		<title>architect</title>
+		<titleShort>architect</titleShort>
+		<description>[PAWN_nameDef] was the brilliant mind behind some of the most beautiful architectural feats in [PAWN_possessive] home city. From towers, to bridges, and even a library, [PAWN_nameDef] told other people how to build them all.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Artistic>3</Artistic>
+			<Construction>4</Construction>
+		</skillGains>
+		<workDisables>
+			<li>PlantWork</li>
+			<li>Mining</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassH]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassH</defName>
+		<title>florist</title>
+		<titleShort>florist</titleShort>
+		<description>[PAWN_nameDef] had turned arranging flowers into an art form. Many of the displays in noble houses were created by [PAWN_objective]. Of course the nobles kept coming back for replacements, so [PAWN_nameDef] was never out of work.</description>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<Artistic>4</Artistic>
+			<Plants>3</Plants>
+		</skillGains>
+		<workDisables>
+			<li>Animals</li>
+			<li>Mining</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassI]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassI</defName>
+		<title>horticulturist</title>
+		<titleShort>horticulturist</titleShort>
+		<description>A skilled gardener, [PAWN_nameDef] had managed to collect a wide variety of exotic flowers, some of which shouldn't of even been able to grow out of their homeland. [PAWN_nameDef] welcomed anyone to marvel at the fields of flowers, as long as they could afford the reasonable entry fee.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Artistic>3</Artistic>
+			<Plants>4</Plants>
+		</skillGains>
+		<workDisables>
+			<li>Hunting</li>
+			<li>Mining</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassJ]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassJ</defName>
+		<title>chef</title>
+		<titleShort>chef</titleShort>
+		<description>Once a well known chef, [PAWN_nameDef] had served many nobles exquisite, and very expensive, dishes. While the meals were a sight to look at, most would be hard pressed to tell them apart from 'lesser' dishes based purely on taste. Of course the name [PAWN_nameDef] was enough by itself, and nobles kept coming back for [PAWN_possessive] meals.</description>
+		<bodyTypeGlobal>Fat</bodyTypeGlobal>
+		<skillGains>
+			<Artistic>4</Artistic>
+			<Cooking>3</Cooking>
+		</skillGains>
+		<workDisables>
+			<li>Constructing</li>
+			<li>Mining</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassK]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassK</defName>
+		<title>baker</title>
+		<titleShort>baker</titleShort>
+		<description>[PAWN_nameDef] once owned a rather well known, and obscenely expensive, bakery. While [PAWN_possessive] works were well known by those that could afford them, [PAWN_possessive] special sweetrolls were considered by many to be perfection. A work of art that [PAWN_nameDef] had spent untold moons refining.</description>
+		<bodyTypeGlobal>Fat</bodyTypeGlobal>
+		<skillGains>
+			<Artistic>3</Artistic>
+			<Cooking>4</Cooking>
+		</skillGains>
+		<workDisables>
+			<li>Constructing</li>
+			<li>Mining</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_HighClassL]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_HighClassBase">
+		<defName>ESCP_GenericBackstory_Adulthood_HighClassL</defName>
+		<title>clothier</title>
+		<titleShort>clothier</titleShort>
+		<description>[PAWN_nameDef] was highly skilled with a needle and thread, and put that skill to great use. Many of the local nobles wore clothes painstakingly made by [PAWN_objective] to all sorts of social events, which meant [PAWN_nameDef] had an ever increasing list of potential clients.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Artistic>3</Artistic>
+			<Crafting>4</Crafting>
+		</skillGains>
+		<workDisables>
+			<li>Animals</li>
+			<li>Mining</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

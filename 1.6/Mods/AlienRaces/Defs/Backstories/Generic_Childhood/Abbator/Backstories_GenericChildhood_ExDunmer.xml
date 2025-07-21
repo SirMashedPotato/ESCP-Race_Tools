@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- All of these are originally from, or based on backstories from, Dunmer. Made by Abbator -->
+	<!-- ==========[ESCP_GenericBackstory_Abbator_Childhood_StreetRat]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Abbator_Childhood_StreetRat</defName>
+		<title>street rat</title>
+		<titleShort>street rat</titleShort>
+		<description>[PAWN_nameDef] spent [PAWN_possessive] childhood on the streets. Life was tough, and [PAWN_nameDef] had to learn to beg, steal, or worse to survive.</description>
+		<skillGains>
+			<Melee>2</Melee>
+			<Social>1</Social>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Abbator_Childhood_ApprenticeMage]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Abbator_Childhood_ApprenticeMage</defName>
+		<title>mage's apprentice</title>
+		<titleShort>apprentice</titleShort>
+		<description>[PAWN_nameDef] studied the arcane arts as a mage's apprentice. [PAWN_pronoun] spent [PAWN_possessive] days learning to read ageing tomes, to harness the forces of magicka within, as well as how to sweep a broom.</description>
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Social>1</Social>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Abbator_Childhood_HouseServant]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Abbator_Childhood_HouseServant</defName>
+		<title>house servant</title>
+		<titleShort>servant</titleShort>
+		<description>[PAWN_nameDef] was a servant for a wealthy family. [PAWN_pronoun] cooked, cleaned, and handled the daily affairs of the household.</description>
+		<skillGains>
+			<Cooking>2</Cooking>
+			<Social>1</Social>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Abbator_Childhood_FieldHand]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Abbator_Childhood_FieldHand</defName>
+		<title>plantation field-hand</title>
+		<titleShort>field-hand</titleShort>
+		<description>[PAWN_nameDef] grew up on a plantation, working as a field-hand. [PAWN_pronoun] is no stranger to hard work, and long days spent in the fields made for a green thumb.</description>
+		<skillGains>
+			<Animals>1</Animals>
+			<Plants>2</Plants>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Abbator_Childhood_AlchemistAssistant]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Abbator_Childhood_AlchemistAssistant</defName>
+		<title>alchemist's assistant</title>
+		<titleShort>assistant</titleShort>
+		<description>[PAWN_nameDef] worked as an assistant to an alchemist. [PAWN_pronoun] learned about plants and herbs from all over the world and how to concoct them into useful potions and tonics.</description>
+		<skillGains>
+			<Intellectual>1</Intellectual>
+			<Medicine>1</Medicine>
+			<Plants>1</Plants>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Abbator_Childhood_TempleAttendant]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Abbator_Childhood_TempleAttendant</defName>
+		<title>temple attendant</title>
+		<titleShort>attendant</titleShort>
+		<description>[PAWN_nameDef] spent [PAWN_possessive] childhood as an attendant at the local temple. [PAWN_pronoun] kept the candles lit and the floors clean, greeted the faithful as they came to worship, and learned from the priests to read from the lessons of the gods and lay hands on the sick or needy.</description>
+		<skillGains>
+			<Medicine>1</Medicine>
+			<Social>2</Social>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Abbator_Childhood_TempleAttendant]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Abbator_Childhood_ShipMate</defName>
+		<title>ship's mate</title>
+		<titleShort>ship's mate</titleShort>
+		<description>[PAWN_nameDef] was a mate on the ship of a travelling trader. Though [PAWN_pronoun] spent most of [PAWN_possessive] time below deck tending to the needs of the captain and [PAWN_possessive] fellow sailors, life on the trade winds afforded [PAWN_nameDef] the opportunity to see lands far and wide and to learn how to sell goods for the best profit.</description>
+		<skillGains>
+			<Cooking>2</Cooking>
+			<Social>1</Social>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Abbator_Childhood_AdventurersPage]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Abbator_Childhood_AdventurersPage</defName>
+		<title>adventurer's page</title>
+		<titleShort>page</titleShort>
+		<description>[PAWN_nameDef] was a page for an adventurer. [PAWN_pronoun] carried and cared for [PAWN_possessive] masters gear, learned to hold a shield and swing a sword, and was taught to model [PAWN_possessive] behaviour on the heroic spirit of the noble warriors of old.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Crafting>2</Crafting>
+			<Melee>1</Melee>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Abbator_Childhood_ShopkeepsAssistant]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Abbator_Childhood_ShopkeepsAssistant</defName>
+		<title>shopkeep's assistant</title>
+		<titleShort>assistant</titleShort>
+		<description>[PAWN_nameDef] was an assistant to a reasonably well off shopkeep. [PAWN_pronoun] kept the shelves stocked and store presentable, and learned to sell goods and wares for a profit.</description>
+		<skillGains>
+			<Crafting>1</Crafting>
+			<Social>2</Social>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Abbator_Childhood_BlacksmithsApprentice]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Abbator_Childhood_BlacksmithsApprentice</defName>
+		<title>blacksmith's apprentice</title>
+		<titleShort>apprentice</titleShort>
+		<description>[PAWN_nameDef] was an apprentice to a knowledgeable blacksmith. [PAWN_pronoun] kept the fires of the forge burning hot and learned how to swing a hammer.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Construction>1</Construction>
+			<Crafting>2</Crafting>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Abbator_Childhood_DwemerHistoryStudent]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Abbator_Childhood_DwemerHistoryStudent</defName>
+		<title>Dwemer history student</title>
+		<titleShort>apprentice</titleShort>
+		<description>[PAWN_nameDef] was a student studying the history of the Dwemer. [PAWN_possessive] fascination with the lost race kept [PAWN_possessive] nose in the books, but [PAWN_pronoun] learned much about the strange machines and constructs that the were left behind.</description>
+		<skillGains>
+			<Construction>2</Construction>
+			<Crafting>2</Crafting>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>ESCP_AyleidBackstory_Exclusion</li>
+			<li>ESCP_ChimerBackstory_Exclusion</li>
+			<li>ESCP_DwemerBackstory_Exclusion</li>
+			<li>ESCP_FalmerBackstory_Exclusion</li>
+		</spawnCategories>
+		<maleCommonality>50</maleCommonality>
+		<femaleCommonality>50</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Abbator_Childhood_BanditChild]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Abbator_Childhood_BanditChild</defName>
+		<title>bandit child</title>
+		<titleShort>bandit</titleShort>
+		<description>[PAWN_nameDef] was the child of bandits. [PAWN_pronoun] grew up on the run from the law and learned how to swindle the gullible, or to batter the brave.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Melee>1</Melee>
+			<Shooting>1</Shooting>
+			<Social>1</Social>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Abbator_Childhood_YoungAdventurer]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Abbator_Childhood_YoungAdventurer</defName>
+		<title>young adventurer</title>
+		<titleShort>adventurer</titleShort>
+		<description>[PAWN_nameDef] was always a wayward soul. As soon as [PAWN_pronoun] was old enough, [PAWN_pronoun] left home and set out with a band of adventurers seeking glory and plunder, never looking back on the boring life [PAWN_pronoun] left behind.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Medicine>1</Medicine>
+			<Melee>1</Melee>
+			<Shooting>1</Shooting>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Abbator_Childhood_HealerInTraining]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryChildhood_Base">
+		<defName>ESCP_GenericBackstory_Abbator_Childhood_HealerInTraining</defName>
+		<title>healer in training</title>
+		<titleShort>healer</titleShort>
+		<description>[PAWN_nameDef] spent [PAWN_possessive] early life learning to be a healer. [PAWN_pronoun] was taught to lay hands on the weak and mix potions to heal the ails of the sick.</description>
+		<skillGains>
+			<Medicine>2</Medicine>
+			<Plants>1</Plants>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

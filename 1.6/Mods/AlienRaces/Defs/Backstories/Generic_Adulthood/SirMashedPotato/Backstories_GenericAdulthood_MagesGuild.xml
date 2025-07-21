@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_MagesGuildAlchemist]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_MagesGuildBase">
+		<defName>ESCP_GenericBackstory_Adulthood_MagesGuildAlchemist</defName>
+		<title>Mages Guild alchemist</title>
+		<titleShort>guild alchemist</titleShort>
+		<description>[PAWN_nameDef] was tasked with the study of the local flora, where to best to find them, and how to make use of them. From mushrooms, to flowers, [PAWN_nameDef] had spent countless hours studying it, yet promotion still seemed to be a distant dream.</description>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<Intellectual>3</Intellectual>
+			<Plants>3</Plants>
+		</skillGains>
+		<maleCommonality>80</maleCommonality>
+		<femaleCommonality>80</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_MagesGuildScholar]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_MagesGuildBase">
+		<defName>ESCP_GenericBackstory_Adulthood_MagesGuildScholar</defName>
+		<title>Mages Guild scholar</title>
+		<titleShort>guild scholar</titleShort>
+		<description>Ever obsessed with the Dwemer, [PAWN_nameDef] made it [PAWN_pronoun] life goal to to study their eternal contraptions. While many days were spent deciphering schematics, most were simply spent attempting to locate them in the first place.</description>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<Crafting>3</Crafting>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<maleCommonality>70</maleCommonality>
+		<femaleCommonality>70</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_MagesGuildHealer]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_MagesGuildBase">
+		<defName>ESCP_GenericBackstory_Adulthood_MagesGuildHealer</defName>
+		<title>Mages Guild healer</title>
+		<titleShort>guild healer</titleShort>
+		<description>Fully devoted to the arts of Restoration, [PAWN_nameDef] was one of many healers to be found among the Mages Guild. While [PAWN_pronoun] could have made use of [PAWN_possessive] skills working for the local Temple, [PAWN_nameDef] found the expected pay there rather lacking.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Intellectual>3</Intellectual>
+			<Medicine>3</Medicine>
+		</skillGains>
+		<maleCommonality>80</maleCommonality>
+		<femaleCommonality>80</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_MagesGuildEnchanter]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_MagesGuildBase">
+		<defName>ESCP_GenericBackstory_Adulthood_MagesGuildEnchanter</defName>
+		<title>Mages Guild enchanter</title>
+		<titleShort>guild enchanter</titleShort>
+		<description>[PAWN_nameDef] was one of the enchanters found at [PAWN_possessive] local Mages Guild hall. Turns out enchanting equipment was a very good way to earn coins, which [PAWN_nameDef] was very pleased with.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Crafting>3</Crafting>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<maleCommonality>80</maleCommonality>
+		<femaleCommonality>80</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_MagesGuildGuide]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_MagesGuildBase">
+		<defName>ESCP_GenericBackstory_Adulthood_MagesGuildGuide</defName>
+		<title>Mages Guild guide</title>
+		<titleShort>guild guide</titleShort>
+		<description>[PAWN_nameDef] was one of the few Guild Guides, experts in the art of Mysticism. A highly important role, as the guide network allowed for near instantaneous travel between guild halls, all for a reasonable fee of course.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Social>3</Social>
+			<Intellectual>6</Intellectual>
+		</skillGains>
+		<maleCommonality>60</maleCommonality>
+		<femaleCommonality>60</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_MagesGuildResearcher]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_MagesGuildBase">
+		<defName>ESCP_GenericBackstory_Adulthood_MagesGuildResearcher</defName>
+		<title>Mages Guild researcher</title>
+		<titleShort>guild researcher</titleShort>
+		<description>[PAWN_nameDef] was sent on a wild goose chase, tasked with investigating the disappearance of the Dwemer. Of course this was a nigh impossible task, for if the greatest minds hadn't figured it out yet, how could [PAWN_nameDef]?</description>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<Intellectual>9</Intellectual>
+		</skillGains>
+		<maleCommonality>30</maleCommonality>
+		<femaleCommonality>30</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

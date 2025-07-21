@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_FightersGuildAssociate]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_FightersGuildBase">
+		<defName>ESCP_GenericBackstory_Adulthood_FightersGuildAssociate</defName>
+		<title>Fighters Guild associate</title>
+		<titleShort>guild associate</titleShort>
+		<description>As a low ranking Associate of the Fighters Guild, [PAWN_nameDef] was usually given the least desirable assignments, the ones that paid the least, and the ones that promised no fame. This usually meant clearing out a rat infestation from someones house. Though [PAWN_nameDef] persevered, for eventually [PAWN_pronoun] would receive a promotion.</description>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<Crafting>1</Crafting>
+			<Melee>3</Melee>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_FightersGuildApprentice]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_FightersGuildBase">
+		<defName>ESCP_GenericBackstory_Adulthood_FightersGuildApprentice</defName>
+		<title>Fighters Guild apprentice</title>
+		<titleShort>guild apprentice</titleShort>
+		<description>While technically a promotion, [PAWN_nameDef] somehow wound up spending even less time working meaningful jobs as an Apprentice. There was no glory to find, and very little coin to be made. Instead, [PAWN_nameDef] spent most days repairing armour, and sharpening blades.</description>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<Crafting>3</Crafting>
+			<Melee>2</Melee>
+		</skillGains>
+		<maleCommonality>90</maleCommonality>
+		<femaleCommonality>90</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_FightersGuildJourneyman]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_FightersGuildBase">
+		<defName>ESCP_GenericBackstory_Adulthood_FightersGuildJourneyman</defName>
+		<title>Fighters Guild journeyman</title>
+		<titleShort>guild journeyman</titleShort>
+		<description>Being a Journeyman, [PAWN_nameDef] was occasionally given some dangerous assignments. Sometimes it would involve clearing poachers out of a kwama egg mine, sometimes dealing with a gang holed up in an ancient tomb, or sometimes [PAWN_nameDef] had to kill a few rats in someones house.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Crafting>1</Crafting>
+			<Melee>4</Melee>
+			<Shooting>2</Shooting>
+		</skillGains>
+		<maleCommonality>80</maleCommonality>
+		<femaleCommonality>80</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_FightersGuildProtector]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_FightersGuildBase">
+		<defName>ESCP_GenericBackstory_Adulthood_FightersGuildProtector</defName>
+		<title>Fighters Guild protector</title>
+		<titleShort>guild protector</titleShort>
+		<description>[PAWN_nameDef] was ecstatic when they were promoted to Protector. This joy quickly faded when [PAWN_pronoun] found out [PAWN_possessive] first job was to protect some noble, not even a particularly wealthy one at that.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Crafting>2</Crafting>
+			<Melee>5</Melee>
+			<Shooting>3</Shooting>
+		</skillGains>
+		<maleCommonality>60</maleCommonality>
+		<femaleCommonality>60</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_FightersGuildDrillmaster]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_FightersGuildBase">
+		<defName>ESCP_GenericBackstory_Adulthood_FightersGuildDrillmaster</defName>
+		<title>Fighters Guild drillmaster</title>
+		<titleShort>guild drillmaster</titleShort>
+		<description>Having served in the legion, [PAWN_nameDef] knew full what to expect in combat. [PAWN_pronoun] made great use of the knowledge training the recruits of the Fighters Guild. Most would never be promoted past journeyman, but occasionally [PAWN_nameDef] saw something special in one.</description>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<skillGains>
+			<Crafting>2</Crafting>
+			<Melee>5</Melee>
+			<Shooting>3</Shooting>
+		</skillGains>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

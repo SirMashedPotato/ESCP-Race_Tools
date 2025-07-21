@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_ImperialCultPriest]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialCultBase">
+		<defName>ESCP_GenericBackstory_Adulthood_ImperialCultPriest</defName>
+		<title>Imperial Cult priest</title>
+		<titleShort>Cult priest</titleShort>
+		<description>[PAWN_nameDef] was always rather skilled at aiding the woes and maledictions of those in need. It seemed only logical to [PAWN_nameDef] that [PAWN_pronoun] should put [PAWN_possessive] skills to work... just not for the local temple.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Medicine>3</Medicine>
+			<Social>3</Social>
+		</skillGains>
+		<maleCommonality>50</maleCommonality>
+		<femaleCommonality>50</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_ImperialCultAcolyte]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialCultBase">
+		<defName>ESCP_GenericBackstory_Adulthood_ImperialCultAcolyte</defName>
+		<title>Imperial Cult acolyte</title>
+		<titleShort>Cult acolyte</titleShort>
+		<description>Disillusioned with the local temple, [PAWN_nameDef] decided to lend [PAWN_possessive] hands elsewhere. While most locals scorn the Imperial Cult, [PAWN_nameDef] figured [PAWN_pronoun] would give them a chance.</description>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<skillGains>
+			<Intellectual>3</Intellectual>
+			<Social>3</Social>
+		</skillGains>
+		<maleCommonality>50</maleCommonality>
+		<femaleCommonality>50</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_GenericBackstory_Adulthood_ImperialCultDisciple]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_ImperialCultBase">
+		<defName>ESCP_GenericBackstory_Adulthood_ImperialCultDisciple</defName>
+		<title>Imperial Cult disciple</title>
+		<titleShort>Cult disciple</titleShort>
+		<description>As a reasonably high ranking member of the Imperial Cult, [PAWN_nameDef] was given a fair number of benefits. [PAWN_nameDef] also had to endure the harsh words of those [PAWN_pronoun] once called friends, a few of which once considered [PAWN_objective] family.</description>
+		<bodyTypeGlobal>Fat</bodyTypeGlobal>
+		<skillGains>
+			<Intellectual>4</Intellectual>
+			<Social>6</Social>
+		</skillGains>
+		<maleCommonality>30</maleCommonality>
+		<femaleCommonality>30</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

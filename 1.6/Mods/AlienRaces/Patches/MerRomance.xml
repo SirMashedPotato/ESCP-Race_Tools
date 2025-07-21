@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Way Better Romance</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class ="PatchOperationAddModExtension">
+                    <xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ESCP_BaseRace_TrueMer"]</xpath>
+                    <value>
+                        <li Class="BetterRomance.CasualSexSettings">
+                            <!--<caresAboutCheating>True</caresAboutCheating>-->
+                            <hookupRate>50</hookupRate>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ESCP_BaseRace_TrueMer"]</xpath>
+                    <value>
+                        <li Class="BetterRomance.RegularSexSettings">
+                            <minAgeForSex>16</minAgeForSex>                            <!--default-->
+                            <maxAgeForSex>300</maxAgeForSex>                            <!--human 80, same as life expectancy-->
+                            <maxAgeGap>150</maxAgeGap>                            <!--human 40, half of life expectancy-->
+                            <declineAtAge>120</declineAtAge>                            <!--human 37.5% of life expectancy-->
+                        </li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

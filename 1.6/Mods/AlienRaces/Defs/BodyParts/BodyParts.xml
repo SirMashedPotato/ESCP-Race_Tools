@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--Tails-->
+    <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase" MayRequireAnyOf="theo.escp.khajiit,theo.escp.argonians">
+        <defName>ESCP_InstallClothTail</defName>
+        <label>install cloth tail</label>
+        <description>Installs cloth tail.</description>
+        <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+        <jobString>Installing cloth tail.</jobString>
+        <workAmount>2000</workAmount>
+        <recipeUsers>
+            <li MayRequire="theo.escp.khajiit">ESCP_AlfiqRace</li>
+            <li MayRequire="theo.escp.khajiit">ESCP_SencheRace</li>
+            <li MayRequire="theo.escp.khajiit">ESCP_KhajiitRace</li>
+            <li MayRequire="theo.escp.khajiit">ESCP_OhmesRahtRace</li>
+            <li MayRequire="theo.escp.argonians">ESCP_ArgonianRace</li>
+            <li MayRequire="theo.escp.argonians">ESCP_NagaRace</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ESCP_ClothTail</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+            <thingDefs>
+                <li>ESCP_ClothTail</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Tail</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>ESCP_ClothTail</addsHediff>
+    </RecipeDef>
+
+    <HediffDef ParentName="AddedBodyPartBase" MayRequireAnyOf="theo.escp.khajiit,theo.escp.argonians">
+        <defName>ESCP_ClothTail</defName>
+        <description>A belted cloth tail meant to comfort beastkin who lost their natural ones, if only a little.</description>
+        <label>cloth tail</label>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>0</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartProstheticBase" MayRequireAnyOf="theo.escp.khajiit,theo.escp.argonians">
+        <defName>ESCP_ClothTail</defName>
+        <label>cloth tail</label>
+        <description>Cloth tail attachable with a belt. Offers some comfort to those who lost theirs.</description>
+        <techLevel>Neolithic</techLevel>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+        <tradeTags>
+            <li>BasicProstheses</li>
+        </tradeTags>
+        <thingCategories>
+            <li>BodyPartsSimple</li>
+        </thingCategories>
+        <graphicData>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(154,124,104)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>400</MarketValue>
+            <Mass>.3</Mass>
+            <DeteriorationRate>2</DeteriorationRate>
+            <WorkToMake>2000</WorkToMake>
+        </statBases>
+        <costList>
+            <Cloth>10</Cloth>
+            <Leather_Plain>2</Leather_Plain>
+        </costList>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Tailor</effectWorking>
+            <researchPrerequisite MayRequireAnyOf="nunahuralshamikh.medp,joedaly.medmeds.mo">CrudeLimbs</researchPrerequisite>
+            <recipeUsers>
+                <li>CraftingSpot</li>
+                <li>HandTailoringBench</li>
+                <li>ElectricTailoringBench</li>
+                <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Workbench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+</Defs>

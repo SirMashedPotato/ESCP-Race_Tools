@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Defs>
-	<AchievementsExpanded.Reward_MapIncident Name="ESCP_AchievementReward_PawnJoins_Base" Abstract="true">
-		<tab>ESCP_AchievementsTab</tab>
-		<cost>150</cost>
-	</AchievementsExpanded.Reward_MapIncident>
-</Defs>
