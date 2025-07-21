@@ -12,7 +12,7 @@ namespace ESCP_RaceTools
         /// </summary>
         [HarmonyPatch(typeof(ExpectationsUtility))]
         [HarmonyPatch("CurrentExpectationFor")]
-        [HarmonyPatch(new Type[] { typeof(Pawn) })]
+        [HarmonyPatch([typeof(Pawn)])]
         public static class ExpectationsUtility_CurrentExpectationFor_Patch
         {
             [HarmonyPostfix]

@@ -3,29 +3,33 @@ using Verse;
 using RimWorld;
 using System.Linq;
 using RimWorld.Planet;
-using System.Text;
 
 namespace ESCP_RaceTools
 {
     public static class SettlementPreferenceUtility
     {
-        public static bool GetTileID(Faction faction, out int tileID)
+        public static bool GetTileID(PlanetLayer layer, Faction faction, out PlanetTile tileID)
         {
             tileID = 0;
             bool defaultToVanilla = false;  //return true if any checks fail, causes vanilla code to take over
             var modExt = SettlementPreference.Get(faction.def);
-            bool flag = ESCP_RaceTools_ModSettings.SettlementPreferenceLogging;
+            bool logFlag = ESCP_RaceTools_ModSettings.SettlementPreferenceLogging;
 
             /* modified from  TileFinder.RandomSettlementTileFor */
             int limit = (int)ESCP_RaceTools_ModSettings.SettlementPreferenceIterations;
             for (int i = 0; i < limit; i++)
             {
-                if ((from _ in Enumerable.Range(0, 100) select Rand.Range(0, Find.WorldGrid.TilesCount)).TryRandomElementByWeight(delegate (int x)
+                if ((from _ in Enumerable.Range(0, 100) select Rand.Range(0, layer.TilesCount)).TryRandomElementByWeight(delegate (int x)
                 {
                     defaultToVanilla = false;
-                    Tile tile = Find.WorldGrid[x];
+                    Tile tile = layer.Tiles[x];
                     string logMessage = "Faction: " + faction + ", checking tile: " + tile + ", ";
-                    if (tile is not SurfaceTile surfaceTile || !surfaceTile.PrimaryBiome.canBuildBase || !surfaceTile.PrimaryBiome.implemented)
+                    if (!tile.PrimaryBiome.canBuildBase || !tile.PrimaryBiome.implemented)
+                    {
+                        return 0f;
+                    }
+
+                    if (tile is not SurfaceTile surfaceTile)
                     {
                         return 0f;
                     }
@@ -33,7 +37,7 @@ namespace ESCP_RaceTools
                     /* modExt checks */
                     if (!modExt.biomeKeyWords.NullOrEmpty() && !modExt.biomeKeyWords.Any(y => surfaceTile.PrimaryBiome.defName.Contains(y)))
                     {
-                        if (flag)
+                        if (logFlag)
                         {
                             logMessage += "failed biomeKeyWords, ";
                         }
@@ -44,7 +48,7 @@ namespace ESCP_RaceTools
                     {
                         if (GenTemperature.MinTemperatureAtTile(x) < modExt.temperatureRangeMin || GenTemperature.MaxTemperatureAtTile(x) > modExt.temperatureRangeMax)
                         {
-                            if (flag)
+                            if (logFlag)
                             {
                                 logMessage += "failed CheckTemperatureRange, ";
                             }
@@ -56,7 +60,7 @@ namespace ESCP_RaceTools
                     {
                         if (surfaceTile.elevation < modExt.elevationRangeMin || surfaceTile.elevation > modExt.elevationRangeMax)
                         {
-                            if (flag)
+                            if (logFlag)
                             {
                                 logMessage += "failed CheckAltitudeRange, ";
                             }
@@ -68,7 +72,7 @@ namespace ESCP_RaceTools
                     {
                         if (surfaceTile.swampiness < modExt.swampinessRangeMin || surfaceTile.swampiness > modExt.swampinessRangeMax)
                         {
-                            if (flag)
+                            if (logFlag)
                             {
                                 logMessage += "failed CheckSwampinessRange, ";
                             }
@@ -76,11 +80,11 @@ namespace ESCP_RaceTools
                         }
                     }
 
-                    if (modExt.useSwampinessRange)
+                    if (modExt.useRainfallRange)
                     {
                         if (surfaceTile.rainfall < modExt.rainfallRangeMin || surfaceTile.rainfall > modExt.rainfallRangeMax)
                         {
-                            if (flag)
+                            if (logFlag)
                             {
                                 logMessage += "failed CheckRainfallRange, ";
                             }
@@ -88,9 +92,9 @@ namespace ESCP_RaceTools
                         }
                     }
 
-                    if (modExt.likedBiomeList != null && !modExt.likedBiomeList.Contains(surfaceTile.PrimaryBiome.defName))
+                    if (modExt.likedBiomeList != null && (!modExt.likedBiomeList.Contains(surfaceTile.PrimaryBiome.defName)))
                     {
-                        if (flag)
+                        if (logFlag)
                         {
                             logMessage += "failed likedBiomeList, ";
                         }
@@ -99,7 +103,7 @@ namespace ESCP_RaceTools
 
                     if (modExt.dislikedBiomeList != null && modExt.dislikedBiomeList.Contains(surfaceTile.PrimaryBiome.defName))
                     {
-                        if (flag)
+                        if (logFlag)
                         {
                             logMessage += "failed dislikedBiomeList, ";
                         }
@@ -108,7 +112,7 @@ namespace ESCP_RaceTools
 
                     if (modExt.requiredHillLevels != null && !modExt.requiredHillLevels.Contains(surfaceTile.hilliness))
                     {
-                        if (flag)
+                        if (logFlag)
                         {
                             logMessage += "failed requiredHillLevels, ";
                         }
@@ -117,27 +121,16 @@ namespace ESCP_RaceTools
 
                     if (modExt.disallowedHillLevels != null && modExt.disallowedHillLevels.Contains(surfaceTile.hilliness))
                     {
-                        if (flag)
+                        if (logFlag)
                         {
                             logMessage += "failed disallowedHillLevels, ";
                         }
                         defaultToVanilla = true;
                     }
 
-                    /* Extra check for impassible hilliness, only triggers if both required and disallowed are null */
-
-                    if (modExt.requiredHillLevels == null && modExt.disallowedHillLevels == null && surfaceTile.hilliness == Hilliness.Impassable)
+                    if (modExt.requiresWater && !(CheckTileBiomeNeighbours(x, BiomeDefOf.Ocean) || CheckTileBiomeNeighbours(x, BiomeDefOf.Lake) || !surfaceTile.Rivers.NullOrEmpty()))
                     {
-                        if (flag)
-                        {
-                            logMessage += "failed impassible hills check, ";
-                        }
-                        defaultToVanilla = true;
-                    }
-
-                    if (modExt.requiresWater && (!CheckTileBiomeNeighbours(x, BiomeDefOf.Ocean) && !CheckTileBiomeNeighbours(x, BiomeDefOf.Lake) && surfaceTile.Rivers == null))
-                    {
-                        if (flag)
+                        if (logFlag)
                         {
                             logMessage += "failed requiresWater, ";
                         }
@@ -146,7 +139,7 @@ namespace ESCP_RaceTools
 
                     if (modExt.onlyCoastal && !CheckTileBiomeNeighbours(x, BiomeDefOf.Ocean))
                     {
-                        if (flag)
+                        if (logFlag)
                         {
                             logMessage += "failed onlyCoastal, ";
                         }
@@ -155,25 +148,25 @@ namespace ESCP_RaceTools
 
                     if (modExt.onlyLakeside && !CheckTileBiomeNeighbours(x, BiomeDefOf.Lake))
                     {
-                        if (flag)
+                        if (logFlag)
                         {
                             logMessage += "failed onlyLakeside, ";
                         }
                         defaultToVanilla = true;
                     }
 
-                    if (modExt.onlyRiver && surfaceTile.Rivers == null)
+                    if (modExt.onlyRiver && surfaceTile.Rivers.NullOrEmpty())
                     {
-                        if (flag)
+                        if (logFlag)
                         {
                             logMessage += "failed onlyRiver, ";
                         }
                         defaultToVanilla = true;
                     }
 
-                    if (modExt.onlyRoad && surfaceTile.Roads == null)
+                    if (modExt.onlyRoad && surfaceTile.Roads.NullOrEmpty())
                     {
-                        if (flag)
+                        if (logFlag)
                         {
                             logMessage += "failed onlyRoad, ";
                         }
@@ -184,7 +177,7 @@ namespace ESCP_RaceTools
                     {
                         if (surfaceTile.pollution < modExt.pollutionRangeMin || surfaceTile.pollution > modExt.pollutionRangeMax)
                         {
-                            if (flag)
+                            if (logFlag)
                             {
                                 logMessage += "failed checkPollutionRange, ";
                             }
@@ -194,7 +187,7 @@ namespace ESCP_RaceTools
 
                     /* logging */
 
-                    if (flag && !defaultToVanilla)
+                    if (logFlag && !defaultToVanilla)
                     {
                         Log.Message(logMessage + " valid tile = " + !defaultToVanilla);
                     }
@@ -209,7 +202,7 @@ namespace ESCP_RaceTools
                     {
                         float num2 = surfaceTile.PrimaryBiome.settlementSelectionWeight;
                         Faction faction2 = faction;
-                        if (((faction2 != null) ? faction2.def.minSettlementTemperatureChanceCurve : null) != null)
+                        if ((faction2?.def.minSettlementTemperatureChanceCurve) != null)
                         {
                             num2 *= faction.def.minSettlementTemperatureChanceCurve.Evaluate(GenTemperature.MinTemperatureAtTile(x));
                         }
@@ -222,9 +215,9 @@ namespace ESCP_RaceTools
                     return 0;
 
                 }, out int num))
-                    if (!defaultToVanilla && FinalCheckTileIsValid(num, null))
+                    if (!defaultToVanilla && TileFinder.IsValidTileForNewSettlement(num, null))
                     {
-                        if (flag)
+                        if (logFlag)
                         {
                             Log.Message("Faction: " + faction + ", passed all checks for tile: " + Find.WorldGrid[num]);
                         }
@@ -233,7 +226,7 @@ namespace ESCP_RaceTools
                     }
             }
 
-            if (flag)
+            if (logFlag)
             {
                 Log.Error("Failed to find faction base tile for " + faction + ", using ESCP_RaceTools.SettlementPreference. Defaulting to standard selection.");
             }
@@ -241,68 +234,9 @@ namespace ESCP_RaceTools
             return true;
         }
 
-        public static bool FinalCheckTileIsValid(int tile, StringBuilder reason = null)
+        public static bool CheckTileBiomeNeighbours(PlanetTile tile, BiomeDef b)
         {
-            Tile tile2 = Find.WorldGrid[tile];
-            if (!tile2.PrimaryBiome.canBuildBase)
-            {
-                if (reason != null)
-                {
-                    reason.Append("CannotLandBiome".Translate(tile2.PrimaryBiome.LabelCap));
-                }
-                return false;
-            }
-            if (!tile2.PrimaryBiome.implemented)
-            {
-                if (reason != null)
-                {
-                    reason.Append("BiomeNotImplemented".Translate() + ": " + tile2.PrimaryBiome.LabelCap);
-                }
-                return false;
-            }
-            /* removed hilliness check */
-            Settlement settlement = Find.WorldObjects.SettlementBaseAt(tile);
-            if (settlement != null)
-            {
-                if (reason != null)
-                {
-                    if (settlement.Faction == null)
-                    {
-                        reason.Append("TileOccupied".Translate());
-                    }
-                    else if (settlement.Faction == Faction.OfPlayer)
-                    {
-                        reason.Append("YourBaseAlreadyThere".Translate());
-                    }
-                    else
-                    {
-                        reason.Append("BaseAlreadyThere".Translate(settlement.Faction.Name));
-                    }
-                }
-                return false;
-            }
-            if (Find.WorldObjects.AnySettlementBaseAtOrAdjacent(tile))
-            {
-                if (reason != null)
-                {
-                    reason.Append("FactionBaseAdjacent".Translate());
-                }
-                return false;
-            }
-            if (Find.WorldObjects.AnyMapParentAt(tile) || Current.Game.FindMap(tile) != null || Find.WorldObjects.AnyWorldObjectOfDefAt(WorldObjectDefOf.AbandonedSettlement, tile))
-            {
-                if (reason != null)
-                {
-                    reason.Append("TileOccupied".Translate());
-                }
-                return false;
-            }
-            return true;
-        }
-
-        public static bool CheckTileBiomeNeighbours(int tile, BiomeDef b)
-        {
-            List<PlanetTile> tileList = new List<PlanetTile>();
+            List<PlanetTile> tileList = [];
             Find.WorldGrid.GetTileNeighbors(tile, tileList);
             foreach (int x in tileList)
             {
