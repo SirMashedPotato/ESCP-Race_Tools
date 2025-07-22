@@ -4,14 +4,7 @@ namespace ESCP_RaceTools
 {
     class HediffComp_ViolentMeditation : HediffComp
     {
-
-        public HediffCompProperties_ViolentMeditation Props
-        {
-            get
-            {
-                return (HediffCompProperties_ViolentMeditation)props;
-            }
-        }
+        public HediffCompProperties_ViolentMeditation Props => (HediffCompProperties_ViolentMeditation)props;
 
         public override void Notify_PawnPostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
         {

@@ -6,13 +6,7 @@ namespace ESCP_RaceTools
 {
 	class Comp_DunmerGraveWhisper : ThingComp
 	{
-		public CompProperties_DunmerGraveWhisper Props
-		{
-			get
-			{
-				return (CompProperties_DunmerGraveWhisper)this.props;
-			}
-		}
+		public CompProperties_DunmerGraveWhisper Props => (CompProperties_DunmerGraveWhisper)props;
 
 		public int nextTicks = 5;
 		public int ticks = 0;
@@ -23,7 +17,7 @@ namespace ESCP_RaceTools
 			Scribe_Values.Look(ref ticks, "ESCP_DunmerGraveWhisper_Ticks", 1, false);
 		}
 
-		public override void CompTickRare()
+        public override void CompTickRare()
         {
             base.CompTickRare();
 

@@ -6,10 +6,8 @@ namespace ESCP_RaceTools
 {
 	class CompProperties_BeserkerRage : CompProperties
 	{
-		public CompProperties_BeserkerRage()
-		{
-			compClass = typeof(Comp_BeserkerRage);
-		}
+		public CompProperties_BeserkerRage() => compClass = typeof(Comp_BeserkerRage);
+
 		public float requiredPain = 0.6f;
 		public HediffDef hediffDef;
 		public bool enableAugments = false;

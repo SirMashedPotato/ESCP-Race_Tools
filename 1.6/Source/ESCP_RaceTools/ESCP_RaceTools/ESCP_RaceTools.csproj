@@ -77,9 +77,7 @@
     <Compile Include="Comp\Comp_MeditationPulse.cs" />
     <Compile Include="Comp\Comp_ShieldExtended .cs" />
     <Compile Include="Comp\Properties\CompProperties_DunmerGraveWhisper.cs" />
-    <Compile Include="Comp\Properties\CompProperties_BeastMasterSpawnInit.cs" />
     <Compile Include="Comp\Properties\CompProperties_BeserkerRage.cs" />
-    <Compile Include="Comp\Comp_BeastMasterInit.cs" />
     <Compile Include="Comp\Comp_BeserkerRage.cs" />
     <Compile Include="Comp\Properties\CompProperties_MeditationPulse.cs" />
     <Compile Include="Comp\Properties\CompProperties_ShieldExtended .cs" />

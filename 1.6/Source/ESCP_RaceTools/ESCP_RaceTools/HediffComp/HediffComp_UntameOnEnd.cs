@@ -5,13 +5,7 @@ namespace ESCP_RaceTools
 {
     class HediffComp_UntameOnEnd : HediffComp
     {
-		public HediffCompProperties_UntameOnEnd Props
-		{
-			get
-			{
-				return (HediffCompProperties_UntameOnEnd)this.props;
-			}
-		}
+		public HediffCompProperties_UntameOnEnd Props => (HediffCompProperties_UntameOnEnd)props;
 
         public override void CompPostPostRemoved()
         {
@@ -22,7 +16,7 @@ namespace ESCP_RaceTools
                 {
 					pawn.SetFaction(null, null);
 					Pawn_Ownership ownership = pawn.ownership;
-					if (ownership != null)
+                    if (ownership != null)
 					{
 						ownership.UnclaimAll();
 					}

@@ -10,54 +10,45 @@ namespace ESCP_RaceTools
 	/// </summary>
     public class HediffComp_GiveHediffsInRange : HediffComp
     {
-		public HediffCompProperties_GiveHediffsInRange Props
-		{
-			get
-			{
-				return (HediffCompProperties_GiveHediffsInRange)this.props;
-			}
-		}
+		public HediffCompProperties_GiveHediffsInRange Props => (HediffCompProperties_GiveHediffsInRange)props;
 
 		public override void CompPostTick(ref float severityAdjustment)
 		{
-			if (!this.parent.pawn.Awake() || this.parent.pawn.health == null || this.parent.pawn.health.InPainShock || !this.parent.pawn.Spawned)
+			if (!parent.pawn.Awake() || parent.pawn.health == null || parent.pawn.health.InPainShock || !parent.pawn.Spawned)
 			{
 				return;
 			}
-			if (!this.Props.hideMoteWhenNotDrafted || this.parent.pawn.Drafted)
+			if (!Props.hideMoteWhenNotDrafted || parent.pawn.Drafted)
 			{
-				if (this.Props.mote != null && (this.mote == null || this.mote.Destroyed))
+				if (Props.mote != null && (mote == null || mote.Destroyed))
 				{
-					this.mote = MoteMaker.MakeAttachedOverlay(this.parent.pawn, this.Props.mote, Vector3.zero, 1f, -1f);
+					mote = MoteMaker.MakeAttachedOverlay(parent.pawn, Props.mote, Vector3.zero, 1f, -1f);
 				}
-				if (this.mote != null)
-				{
-					this.mote.Maintain();
-				}
+				mote?.Maintain();
 			}
 			List<Pawn> list;
-			if (this.Props.onlyPawnsInSameFaction && this.parent.pawn.Faction != null)
+			if (Props.onlyPawnsInSameFaction && parent.pawn.Faction != null)
 			{
-				list = this.parent.pawn.Map.mapPawns.PawnsInFaction(this.parent.pawn.Faction);
+				list = parent.pawn.Map.mapPawns.PawnsInFaction(parent.pawn.Faction);
 			}
 			else
 			{
-				list = this.parent.pawn.Map.mapPawns.AllPawns;
+				list = parent.pawn.Map.mapPawns.AllPawns;
 			}
 			foreach (Pawn pawn in list)
 			{
-				if (((Props.allowAnimals && !pawn.RaceProps.IsMechanoid) || (!Props.allowAnimals && pawn.RaceProps.Humanlike)) && !pawn.Dead && pawn.health != null && pawn != this.parent.pawn && pawn.Position.DistanceTo(this.parent.pawn.Position) <= this.Props.range && this.Props.targetingParameters.CanTarget(pawn, null))
+				if (((Props.allowAnimals && !pawn.RaceProps.IsMechanoid) || (!Props.allowAnimals && pawn.RaceProps.Humanlike)) && !pawn.Dead && pawn.health != null && pawn != parent.pawn && pawn.Position.DistanceTo(parent.pawn.Position) <= Props.range && Props.targetingParameters.CanTarget(pawn, null))
 				{
-					Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(this.Props.hediff, false);
+					Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(Props.hediff, false);
 					if (hediff == null)
 					{
-						hediff = pawn.health.AddHediff(this.Props.hediff, pawn.health.hediffSet.GetBrain(), null, null);
-						hediff.Severity = this.Props.initialSeverity;
+						hediff = pawn.health.AddHediff(Props.hediff, pawn.health.hediffSet.GetBrain(), null, null);
+						hediff.Severity = Props.initialSeverity;
 						HediffComp_Link hediffComp_Link = hediff.TryGetComp<HediffComp_Link>();
 						if (hediffComp_Link != null)
 						{
 							hediffComp_Link.drawConnection = true;
-							hediffComp_Link.other = this.parent.pawn;
+							hediffComp_Link.other = parent.pawn;
 						}
 					}
 					HediffComp_Disappears hediffComp_Disappears = hediff.TryGetComp<HediffComp_Disappears>();

@@ -7,13 +7,7 @@ namespace ESCP_RaceTools
 {
 	class Comp_BeserkerRage : ThingComp
 	{
-		public CompProperties_BeserkerRage Props
-		{
-			get
-			{
-				return (CompProperties_BeserkerRage)this.props;
-			}
-		}
+		public CompProperties_BeserkerRage Props => (CompProperties_BeserkerRage)props;
 
         public override void PostPostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
         {

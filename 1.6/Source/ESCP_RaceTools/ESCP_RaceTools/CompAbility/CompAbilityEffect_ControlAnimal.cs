@@ -5,13 +5,7 @@ namespace ESCP_RaceTools
 {
     class CompAbilityEffect_ControlAnimal : CompAbilityEffect_WithDuration
 	{
-		public new CompProperties_ControlAnimal Props
-		{
-			get
-			{
-				return (CompProperties_ControlAnimal)props;
-			}
-		}
+		public new CompProperties_ControlAnimal Props => (CompProperties_ControlAnimal)props;
 
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {

@@ -8,13 +8,7 @@ namespace ESCP_RaceTools
 	/// </summary>
 	public class CompAbilityEffect_GiveAncestralHediff : CompAbilityEffect_WithDuration
 	{
-		public new CompProperties_AbilityGiveHediff Props
-		{
-			get
-			{
-				return (CompProperties_AbilityGiveHediff)props;
-			}
-		}
+		public new CompProperties_AbilityGiveHediff Props => (CompProperties_AbilityGiveHediff)props;
 
 		public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
 		{

@@ -7,13 +7,7 @@ namespace ESCP_RaceTools
 {
     class Comp_TurnToThing : ThingComp
 	{
-		public CompProperties_TurnToThing Props
-		{
-			get
-			{
-				return (CompProperties_TurnToThing)props;
-			}
-		}
+		public CompProperties_TurnToThing Props => (CompProperties_TurnToThing)props;
 
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {

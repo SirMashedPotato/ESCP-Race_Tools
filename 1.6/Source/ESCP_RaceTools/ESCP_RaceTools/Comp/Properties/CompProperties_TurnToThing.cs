@@ -4,10 +4,8 @@ namespace ESCP_RaceTools
 {
     class CompProperties_TurnToThing : CompProperties
 	{
-		public CompProperties_TurnToThing()
-		{
-			compClass = typeof(Comp_TurnToThing);
-		}
+		public CompProperties_TurnToThing() => compClass = typeof(Comp_TurnToThing);
+
 		public ThingDef thingDef;
 		public string texPath;
 		public string label;

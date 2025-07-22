@@ -5,13 +5,7 @@ namespace ESCP_RaceTools
 {
     class CompAbilityEffect_ReleaseGas : CompAbilityEffect
     {
-        public new CompProperties_ReleaseGas Props
-        {
-            get
-            {
-                return (CompProperties_ReleaseGas)props;
-            }
-        }
+        public new CompProperties_ReleaseGas Props => (CompProperties_ReleaseGas)props;
 
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {

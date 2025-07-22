@@ -6,13 +6,7 @@ namespace ESCP_RaceTools
     class CompEffect_AbilityEnterBeserk : CompAbilityEffect
     {
 
-		public new CompProperties_AbilityEnterBeserk Props
-		{
-			get
-			{
-				return (CompProperties_AbilityEnterBeserk)this.props;
-			}
-		}
+		public new CompProperties_AbilityEnterBeserk Props => (CompProperties_AbilityEnterBeserk)props;
 		
 		public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
 		{

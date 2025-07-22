@@ -6,32 +6,22 @@ namespace ESCP_RaceTools
 {
     class Comp_MeditationPulse : ThingComp
 	{
-		public CompProperties_MeditationPulse Props
-		{
-			get
-			{
-				return (CompProperties_MeditationPulse)props;
-			}
-		}
+		public CompProperties_MeditationPulse Props => (CompProperties_MeditationPulse)props;
 
-		public int ticks = 0;
-
-		public override void PostExposeData()
-		{
-			base.PostExposeData();
-            Scribe_Values.Look(ref ticks, "ESCP_Comp_MeditationPulse_Ticks", 1, false);
-		}
-
-		public override void CompTick()
+        public override void CompTickInterval(int delta)
         {
-            base.CompTick();
-			if(ticks++ >= Props.ticksBetween && parent.Spawned && parent.Map != null)
-            {
+            base.CompTickInterval(delta);
+			if (parent.IsHashIntervalTick(Props.ticksBetween, delta))
+			{
+				if (!parent.Spawned && parent.Map == null)
+				{
+					return;
+				}
+
 				Pawn p = parent as Pawn;
-                if (!p.Dead && p.Faction != null && p.Faction == Faction.OfPlayer)
-                {
+				if (!p.Dead && p.Faction != null && p.Faction == Faction.OfPlayer)
+				{
 					DoPulse(p);
-					ticks = 0;
 				}
 			}
         }
@@ -55,7 +45,6 @@ namespace ESCP_RaceTools
 			{
 				FleckMaker.AttachedOverlay(parent, Props.fleck, Vector3.zero, 1f, 1f);
 			}
-
 		}
 	}
 }

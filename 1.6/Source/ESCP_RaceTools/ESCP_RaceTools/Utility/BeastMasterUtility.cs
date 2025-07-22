@@ -10,7 +10,7 @@ namespace ESCP_RaceTools
     {
         public static List<Pawn> ReadyAdditionalSpawns(Pawn pawn)
         {
-            List<Pawn> additonalPawns = new List<Pawn>();
+            List<Pawn> additonalPawns = new();
             var modExt = BeastMaster.Get(pawn.kindDef);
             if (modExt.pawnKinds != null)
             {
@@ -19,7 +19,7 @@ namespace ESCP_RaceTools
                 while(currentCombatPower < modExt.maxTotalCombatPower && currentNumber < modExt.maxNumberOfPawns)
                 {
                     Pawn newPawn;
-                    PawnGenerationRequest request = new PawnGenerationRequest(PawnKindDef.Named(modExt.pawnKinds.RandomElement())) 
+                    PawnGenerationRequest request = new(PawnKindDef.Named(modExt.pawnKinds.RandomElement())) 
                     { 
                         Tile = pawn.Tile,
                         Faction = pawn.Faction,
@@ -42,7 +42,7 @@ namespace ESCP_RaceTools
                     if (ESCP_RaceTools_ModSettings.BeastMasterLogging) Log.Message("Spawned " + newPawn + ", for master " + pawn + ", " + (modExt.maxTotalCombatPower - (newPawn.kindDef.combatPower + currentCombatPower)) + " combat power left");
                     if (newPawn.AnimalOrWildMan())
                     {
-                        newPawn.health.AddHediff(HediffDefOf.ESCP_BeastMasterTraining, newPawn.health.hediffSet.GetBrain() != null ? newPawn.health.hediffSet.GetBrain() : null);
+                        newPawn.health.AddHediff(HediffDefOf.ESCP_BeastMasterTraining, newPawn.health.hediffSet.GetBrain() ?? null);
                     }
                     //newPawn.jobs.StartJob(new Job(JobDefOf.Follow, pawn, 1000000));
                     newPawn.mindState.duty = new PawnDuty(DutyDefOf.ESCP_EscortAndDefendMaster, pawn, 4);   //causes the pawn to follow and protect their master until one of them dies, in theory

@@ -6,10 +6,7 @@ namespace ESCP_RaceTools
     class CompProperties_MeditationPulse : CompProperties
     {
 
-        public CompProperties_MeditationPulse()
-        {
-            compClass = typeof(Comp_MeditationPulse);
-        }
+        public CompProperties_MeditationPulse() => compClass = typeof(Comp_MeditationPulse);
 
         public MeditationFocusDef focusDef;
         public float amount = 0.1f;

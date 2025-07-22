@@ -16,10 +16,10 @@ namespace ESCP_RaceTools
                 {
                     if (ModsConfig.IdeologyActive)
                     {
-                        List<Pawn> pawns = new List<Pawn>(corpse.Map.mapPawns.FreeColonistsSpawned);
+                        List<Pawn> pawns = [.. corpse.Map.mapPawns.FreeColonistsSpawned];
                         foreach(Pawn p in pawns)
                         {
-                            HistoryEvent historyEvent = new HistoryEvent(props.eventOnDeath, p.Named(HistoryEventArgsNames.Doer));
+                            HistoryEvent historyEvent = new(props.eventOnDeath, p.Named(HistoryEventArgsNames.Doer));
                             Find.HistoryEventsManager.RecordEvent(historyEvent, true);
                         }
                     }

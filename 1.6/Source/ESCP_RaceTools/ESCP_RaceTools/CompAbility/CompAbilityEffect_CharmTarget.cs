@@ -5,13 +5,7 @@ namespace ESCP_RaceTools
 {
     class CompEffect_AbilityCharmTarget : CompAbilityEffect
     {
-		public new CompProperties_CharmTarget Props
-		{
-			get
-			{
-				return (CompProperties_CharmTarget)props;
-			}
-		}
+		public new CompProperties_CharmTarget Props => (CompProperties_CharmTarget)props;
 
 		public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
 		{

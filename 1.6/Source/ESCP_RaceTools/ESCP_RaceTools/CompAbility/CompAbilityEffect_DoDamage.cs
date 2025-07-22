@@ -5,13 +5,7 @@ namespace ESCP_RaceTools
 {
     class CompAbilityEffect_DoDamage : CompAbilityEffect
     {
-        public new CompProperties_AbilityDoDamage Props
-        {
-            get
-            {
-                return (CompProperties_AbilityDoDamage)this.props;
-            }
-        }
+        public new CompProperties_AbilityDoDamage Props => (CompProperties_AbilityDoDamage)props;
 
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {

@@ -4,13 +4,7 @@ namespace ESCP_RaceTools
 {
     class HediffComp_BeastMaster : HediffComp
     {
-		public Pawn Master
-		{
-			get
-			{
-				return master;
-			}
-		}
+		public Pawn Master => master;
 
 		public void SetMaster(Pawn p)
 		{

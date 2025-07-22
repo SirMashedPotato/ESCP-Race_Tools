@@ -7,21 +7,9 @@ namespace ESCP_RaceTools
     [StaticConstructorOnStartup]
     public class Comp_ShieldExtended : CompShield
     {
-        public new CompProperties_ShieldExtended Props
-        {
-            get
-            {
-                return (CompProperties_ShieldExtended)props;
-            }
-        }
+        public new CompProperties_ShieldExtended Props => (CompProperties_ShieldExtended)props;
 
-        private bool IsBuiltIn
-        {
-            get
-            {
-                return !IsApparel;
-            }
-        }
+        private bool IsBuiltIn => !IsApparel;
 
         public override void CompDrawWornExtras()
         {
@@ -56,7 +44,7 @@ namespace ESCP_RaceTools
 					num -= num3;
 				}*/
                 float angle = Rand.Range(0, 360);
-                Vector3 s = new Vector3(num, 1f, num);
+                Vector3 s = new(num, 1f, num);
                 Matrix4x4 matrix = default;
                 matrix.SetTRS(vector, Quaternion.AngleAxis(angle, Vector3.up), s);
                 Material BubbleMat = MaterialPool.MatFrom(Props.texPath, ShaderDatabase.Transparent);
