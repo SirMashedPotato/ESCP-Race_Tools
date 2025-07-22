@@ -11,8 +11,7 @@ namespace ESCP_RaceTools
     [HarmonyPatch("ApplyBirthOutcome")]
     public static class PregnancyUtility_ApplyBirthOutcome_Patch
     {
-        [HarmonyPostfix]
-        public static void ApplyBirthOutcome_Patch(ref Thing __result, Pawn father = null)
+        public static void Postfix(ref Thing __result, Pawn father = null)
         {
             if (father != null)
             {

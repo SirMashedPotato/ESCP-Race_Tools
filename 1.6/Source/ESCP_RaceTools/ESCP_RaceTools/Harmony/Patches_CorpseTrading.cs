@@ -11,8 +11,7 @@ namespace ESCP_RaceTools
     [HarmonyPatch("EverPlayerSellable")]
     public static class TradeUtility_EverPlayerSellable_CorpsePatch
     {
-        [HarmonyPostfix]
-        public static void EverPlayerSellable_CorpseFix(ThingDef def, ref bool __result)
+        public static void Postfix(ThingDef def, ref bool __result)
         {
             if (!__result)
             {
@@ -31,8 +30,7 @@ namespace ESCP_RaceTools
     [HarmonyPatch("HandlesThingDef")]
     public static class StockGenerator_BuyExpensiveSimple_CorpsePatch
     {
-        [HarmonyPostfix]
-        public static void StockGenerator_BuyExpensiveSimple_CorpseFix(ThingDef thingDef, ref bool __result)
+        public static void Postfix(ThingDef thingDef, ref bool __result)
         {
             if (__result)
             {

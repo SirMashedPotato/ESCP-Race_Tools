@@ -11,8 +11,7 @@ namespace ESCP_RaceTools
     [HarmonyPatch("GenerateInitialHediffs")]
     public static class PawnGenerator_GenerateInitialHediffs_Patch
     {
-        [HarmonyPostfix]
-        public static void PawnGenerator_Patch(Pawn pawn)
+        public static void Postfix(Pawn pawn)
         {
             RaceProperties props = RaceProperties.Get(pawn.def);
             if (props != null)

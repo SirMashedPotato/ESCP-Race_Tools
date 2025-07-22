@@ -8,6 +8,11 @@ namespace ESCP_RaceTools
 {
     public static class SettlementPreferenceUtility
     {
+        /// <summary>
+        /// TODO
+        /// Should probably be converted to a worker class system, with a list of classes defined in the mod extension
+        /// That way every settlement isn't going through every single check
+        /// </summary>
         public static bool GetTileID(PlanetLayer layer, Faction faction, out PlanetTile tileID)
         {
             tileID = 0;

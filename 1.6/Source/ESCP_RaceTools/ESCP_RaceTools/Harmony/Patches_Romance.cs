@@ -77,8 +77,7 @@ namespace ESCP_RaceTools
     [HarmonyPatch("RomanceEligiblePair")]
     public static class RelationsUtility_RomanceEligiblePair_Patch
     {
-        [HarmonyPostfix]
-        public static void RomanceEligiblePair_Patch(Pawn initiator, Pawn target, bool forOpinionExplanation, ref AcceptanceReport __result)
+        public static void Postfix(Pawn initiator, Pawn target, bool forOpinionExplanation, ref AcceptanceReport __result)
         {
             if (__result)
             {
@@ -98,8 +97,7 @@ namespace ESCP_RaceTools
     [HarmonyPatch("RandomSelectionWeight")]
     public static class InteractionWorker_RomanceAttempt_RandomSelectionWeight_Patch
     {
-        [HarmonyPostfix]
-        public static void RomanceRandomSelectionWeight_Patch(Pawn initiator, Pawn recipient, ref float __result)
+        public static void Postfix(Pawn initiator, Pawn recipient, ref float __result)
         {
             if (__result > 0f)
             {
@@ -116,8 +114,7 @@ namespace ESCP_RaceTools
     [HarmonyPatch("SuccessChance")]
     public static class InteractionWorker_RomanceAttempt_SuccessChance_Patch
     {
-        [HarmonyPostfix]
-        public static void RomanceSuccessChance_Patch(Pawn initiator, Pawn recipient, ref float __result)
+        public static void Postfix(Pawn initiator, Pawn recipient, ref float __result)
         {
             if (__result > 0f)
             {

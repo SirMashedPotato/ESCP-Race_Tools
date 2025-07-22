@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace ESCP_RaceTools
 {
-    public static class HypothermiaSwitchPatch
+    public static class Patch_HediffGiver_Hypothermia
     {
 		/// <summary>
 		/// Patch that can prevent specific races from recieving hypothermia
@@ -16,8 +16,7 @@ namespace ESCP_RaceTools
         [HarmonyPatch("OnIntervalPassed")]
         public static class HediffGiver_Hypothermia_OnIntervalPassed_Patch
         {
-            [HarmonyPrefix]
-            public static bool HypothermiaPatch(Pawn pawn)
+            public static bool Prefix(Pawn pawn)
             {
                 if (ESCP_RaceTools_ModSettings.EnableHypothermiaSwitch)
                 {
@@ -74,16 +73,15 @@ namespace ESCP_RaceTools
 					float num3 = 0.025f * firstHediffOfDef.Severity;
 					if (Rand.Value < num3)
 					{
-						BodyPartRecord bodyPartRecord;
-						if ((from x in pawn.RaceProps.body.AllPartsVulnerableToFrostbite
-							 where !hediffSet.PartIsMissing(x)
-							 select x).TryRandomElementByWeight((BodyPartRecord x) => x.def.frostbiteVulnerability, out bodyPartRecord))
-						{
-							int num4 = Mathf.CeilToInt(bodyPartRecord.def.hitPoints * 0.5f);
-							DamageInfo dinfo = new DamageInfo(DamageDefOf.Frostbite, num4, 0f, -1f, null, bodyPartRecord, null, DamageInfo.SourceCategory.ThingOrUnknown, null, true, true);
-							pawn.TakeDamage(dinfo);
-						}
-					}
+                        if ((from x in pawn.RaceProps.body.AllPartsVulnerableToFrostbite
+                             where !hediffSet.PartIsMissing(x)
+                             select x).TryRandomElementByWeight((BodyPartRecord x) => x.def.frostbiteVulnerability, out BodyPartRecord bodyPartRecord))
+                        {
+                            int num4 = Mathf.CeilToInt(bodyPartRecord.def.hitPoints * 0.5f);
+                            DamageInfo dinfo = new(DamageDefOf.Frostbite, num4, 0f, -1f, null, bodyPartRecord, null, DamageInfo.SourceCategory.ThingOrUnknown, null, true, true);
+                            pawn.TakeDamage(dinfo);
+                        }
+                    }
 				}
 			}
 		}

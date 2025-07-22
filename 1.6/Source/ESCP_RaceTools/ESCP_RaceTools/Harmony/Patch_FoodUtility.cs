@@ -8,8 +8,7 @@ namespace ESCP_RaceTools
 	[HarmonyPatch("GetFoodPoisonChanceFactor")]
 	public static class FoodUtility_GetFoodPoisonChanceFactor_Patch
 	{
-		[HarmonyPostfix]
-		public static void FoodPoisoningResistancePatch(Pawn ingester, ref float __result)
+		public static void Postfix(Pawn ingester, ref float __result)
 		{
 			if (__result > 0f)
 			{

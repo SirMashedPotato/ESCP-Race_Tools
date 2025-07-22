@@ -6,7 +6,7 @@ using Verse.AI.Group;
 
 namespace ESCP_RaceTools
 {
-	public static class HeatstrokeSwitchPatch
+	public static class Patch_HediffGiver_Heat
 	{
 		/// <summary>
 		/// Patch that can prevent specific races from recieving heatstroke
@@ -16,8 +16,7 @@ namespace ESCP_RaceTools
 		[HarmonyPatch("OnIntervalPassed")]
 		public static class HediffGiver_Heat_OnIntervalPassed_Patch
 		{
-			[HarmonyPrefix]
-			public static bool HeatstrokePatch(Pawn pawn)
+			public static bool Prefix(Pawn pawn)
 			{
 				if (ESCP_RaceTools_ModSettings.EnableHeatstrokeSwitch)
 				{
@@ -75,7 +74,7 @@ namespace ESCP_RaceTools
 					float num5 = ambientTemperature - num4;
 					num5 = HediffGiver_Heat.TemperatureOverageAdjustmentCurve.Evaluate(num5);
 					int num6 = Mathf.Max(GenMath.RoundRandom(num5 * 0.06f), 3);
-					DamageInfo dinfo = new DamageInfo(DamageDefOf.Burn, num6, 0f, -1f, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown, null, true, true);
+					DamageInfo dinfo = new(DamageDefOf.Burn, num6, 0f, -1f, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown, null, true, true);
 					dinfo.SetBodyRegion(BodyPartHeight.Undefined, BodyPartDepth.Outside);
 					pawn.TakeDamage(dinfo);
 					if (pawn.Faction == Faction.OfPlayer)
@@ -87,10 +86,7 @@ namespace ESCP_RaceTools
 						}
 					}
 					Lord lord = pawn.GetLord();
-					if (lord != null)
-					{
-						lord.ReceiveMemo(HediffGiver_Heat.MemoPawnBurnedByAir);
-					}
+                    lord?.ReceiveMemo(HediffGiver_Heat.MemoPawnBurnedByAir);
 				}
 			}
 		}
